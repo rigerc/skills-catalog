@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-10-28",
+  "snapshot_date": "2026-10-31",
   "source": "Nosey modular product specification; October 27 snapshot plus October 28 curated stack patch; October 28 user-supplied technology skill mappings",
   "remote_availability": "not_checked",
   "notes": [
@@ -12,10 +12,10 @@
     "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion."
   ],
   "counts": {
-    "distinct_skills": 346,
-    "technologies_with_skills": 178,
-    "technologies_detect_only": 68,
-    "technology_combinations": 34,
+    "distinct_skills": 341,
+    "technologies_with_skills": 176,
+    "technologies_detect_only": 70,
+    "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
   "skills": [
@@ -216,19 +216,6 @@
       "id": "angular/angular/adev-writing-guide",
       "repository": "angular/angular",
       "skill_name": "adev-writing-guide",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "angular"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "angular/angular/pr_review",
-      "repository": "angular/angular",
-      "skill_name": "pr_review",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [
@@ -2853,24 +2840,6 @@
       }
     },
     {
-      "id": "Kaakati/rails-enterprise-dev/sidekiq-async-patterns",
-      "repository": "Kaakati/rails-enterprise-dev",
-      "skill_name": "sidekiq-async-patterns",
-      "skill_md_url": "https://github.com/Kaakati/rails-enterprise-dev/blob/main/plugins/rails-enterprise-dev/skills/sidekiq-async-patterns/SKILL.md",
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [
-          "rails-sidekiq"
-        ],
-        "frontend_essential": false
-      },
-      "source_research": {
-        "license_reported": "No license declared",
-        "size_reported": "26.0 KB",
-        "reviewed_for_security": false
-      }
-    },
-    {
       "id": "kadajett/agent-nestjs-skills/nestjs-best-practices",
       "repository": "kadajett/agent-nestjs-skills",
       "skill_name": "nestjs-best-practices",
@@ -3487,33 +3456,6 @@
       }
     },
     {
-      "id": "pluginagentmarketplace/custom-plugin-python/machine-learning",
-      "repository": "pluginagentmarketplace/custom-plugin-python",
-      "skill_name": "machine-learning",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "numpy"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis",
-      "repository": "pluginagentmarketplace/custom-plugin-python",
-      "skill_name": "pandas-data-analysis",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "numpy",
-          "pandas"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "pproenca/dot-skills/react-hook-form",
       "repository": "pproenca/dot-skills",
       "skill_name": "react-hook-form",
@@ -3538,19 +3480,6 @@
         "combination_ids": [
           "react-hook-form-zod"
         ],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "pramoddutta/qaskills/storybook-testing",
-      "repository": "pramoddutta/qaskills",
-      "skill_name": "storybook-testing",
-      "skill_md_url": "https://github.com/pramoddutta/qaskills/blob/main/seed-skills/storybook-testing/SKILL.md",
-      "recommended_for": {
-        "technology_ids": [
-          "storybook"
-        ],
-        "combination_ids": [],
         "frontend_essential": false
       }
     },

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-10-28T03:10:08.678Z",
-  "release_blocked": true,
-  "unresolved_count": 13,
+  "audited_at": "2026-10-30T23:23:57.234Z",
+  "release_blocked": false,
+  "unresolved_count": 0,
   "entries": [
     {
       "id": "addyosmani/web-quality-skills/accessibility",
@@ -47,232 +47,42 @@
     {
       "id": "affaan-m/everything-claude-code/django-patterns",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:10:00.172Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "candidate_paths": [
-        {
-          "path": ".kiro/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "7def430731339070bd67db56ac45e1728e3c0eb6",
-          "name": "django-patterns"
-        },
-        {
-          "path": "docs/es/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "c69cca6381ab44f2dc93105b3784d06dc41e286e",
-          "name": "django-patterns"
-        },
-        {
-          "path": "docs/ja-JP/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "336e1625fc6947eae646a2142776aa6e2136cd4a",
-          "name": "django-patterns"
-        },
-        {
-          "path": "docs/tr/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "0efcdead0ebb635ed03a5eb61d6e8ee189d5c169",
-          "name": "django-patterns"
-        },
-        {
-          "path": "docs/zh-CN/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "bcd2f09b6f2eeefad3634de158b18c95d1884632",
-          "name": "django-patterns"
-        },
-        {
-          "path": "pi/core/skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "9d30f4ea76c88646adf4eaed3924ccb9d52fc3aa",
-          "name": "django-patterns"
-        },
-        {
-          "path": "skills/django-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "9d30f4ea76c88646adf4eaed3924ccb9d52fc3aa",
-          "name": "django-patterns"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-patterns/SKILL.md",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
       "id": "affaan-m/everything-claude-code/django-security",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:10:02.007Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "candidate_paths": [
-        {
-          "path": ".kiro/skills/django-security/SKILL.md",
-          "mode": "100644",
-          "blob": "f5cd27d9e80e64cdaf76e1c3e870ce4eeca6120f",
-          "name": "django-security"
-        },
-        {
-          "path": "docs/ja-JP/skills/django-security/SKILL.md",
-          "mode": "100644",
-          "blob": "55d20725d2a44009047e7fe7f525bc4592b45bd1",
-          "name": "django-security"
-        },
-        {
-          "path": "docs/zh-CN/skills/django-security/SKILL.md",
-          "mode": "100644",
-          "blob": "4a1b0a7a5fe98ec5cc3600fac5748bd6b55c9922",
-          "name": "django-security"
-        },
-        {
-          "path": "pi/core/skills/django-security/SKILL.md",
-          "mode": "100644",
-          "blob": "9f25cc764248536fcb4d8240053f3e9540afda90",
-          "name": "django-security"
-        },
-        {
-          "path": "skills/django-security/SKILL.md",
-          "mode": "100644",
-          "blob": "9f25cc764248536fcb4d8240053f3e9540afda90",
-          "name": "django-security"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-security/SKILL.md",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
       "id": "affaan-m/everything-claude-code/java-coding-standards",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:10:03.770Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "candidate_paths": [
-        {
-          "path": ".kiro/skills/java-coding-standards/SKILL.md",
-          "mode": "100644",
-          "blob": "f28c62e7ffc8d0a7c84294f0ca45dcc592614295",
-          "name": "java-coding-standards"
-        },
-        {
-          "path": "docs/ja-JP/skills/java-coding-standards/SKILL.md",
-          "mode": "100644",
-          "blob": "80f98ceba54c30bfc7a1956524944217f25f5954",
-          "name": "java-coding-standards"
-        },
-        {
-          "path": "docs/zh-CN/skills/java-coding-standards/SKILL.md",
-          "mode": "100644",
-          "blob": "8f233893ca3c90713ac6ecc711e3942aa7b3042e",
-          "name": "java-coding-standards"
-        },
-        {
-          "path": "pi/core/skills/java-coding-standards/SKILL.md",
-          "mode": "100644",
-          "blob": "47b34a0f802f776fc84ee9c40eab786053aa47b8",
-          "name": "java-coding-standards"
-        },
-        {
-          "path": "skills/java-coding-standards/SKILL.md",
-          "mode": "100644",
-          "blob": "47b34a0f802f776fc84ee9c40eab786053aa47b8",
-          "name": "java-coding-standards"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/java-coding-standards/SKILL.md",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
       "id": "affaan-m/everything-claude-code/laravel-patterns",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:10:05.996Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "candidate_paths": [
-        {
-          "path": "docs/es/skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "f4956c7f31c60f3e6ab6f0469e8868f42accde1b",
-          "name": "laravel-patterns"
-        },
-        {
-          "path": "docs/ja-JP/skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "9ed883611e6e1805c8145d98b82355ae9a98cbdb",
-          "name": "laravel-patterns"
-        },
-        {
-          "path": "docs/tr/skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "35bf222930cedee4cbb279de9e89cdf1fde3e3a7",
-          "name": "laravel-patterns"
-        },
-        {
-          "path": "docs/zh-CN/skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "667590a32294a4243140d929cf738f2ee06b6f66",
-          "name": "laravel-patterns"
-        },
-        {
-          "path": "pi/core/skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "a3ce33fdfa0550f2ec9e5186d0924a2382e644bc",
-          "name": "laravel-patterns"
-        },
-        {
-          "path": "skills/laravel-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "a3ce33fdfa0550f2ec9e5186d0924a2382e644bc",
-          "name": "laravel-patterns"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/laravel-patterns/SKILL.md",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
       "id": "affaan-m/everything-claude-code/python-patterns",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:10:08.674Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "candidate_paths": [
-        {
-          "path": ".kiro/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "1ebf2d07703c77414f87cc5a02fa3031f6edd665",
-          "name": "python-patterns"
-        },
-        {
-          "path": "docs/es/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "04a20e11adc03359cbe9ebcc2f30881a52301411",
-          "name": "python-patterns"
-        },
-        {
-          "path": "docs/ja-JP/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "a1e2b04c4c6fdb66ebeeab90f7272f396d29135a",
-          "name": "python-patterns"
-        },
-        {
-          "path": "docs/tr/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "75e95b14b63f5d31c3b49ed5b494c4b4345d9bfe",
-          "name": "python-patterns"
-        },
-        {
-          "path": "docs/zh-CN/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "577195073aed745a1a7fa507d73deb79bff9f6b0",
-          "name": "python-patterns"
-        },
-        {
-          "path": "pi/core/skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "ced3d588d816fb6880dfef4d67f30cab9d1b82df",
-          "name": "python-patterns"
-        },
-        {
-          "path": "skills/python-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "ced3d588d816fb6880dfef4d67f30cab9d1b82df",
-          "name": "python-patterns"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/python-patterns/SKILL.md",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
       "id": "aj-geddes/useful-ai-prompts/flask-api-development",
@@ -313,22 +123,6 @@
       "checked_at": "2026-10-28T02:34:59.706Z",
       "url": "https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/adev-writing-guide/SKILL.md",
       "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9"
-    },
-    {
-      "id": "angular/angular/pr_review",
-      "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.268Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
-      "candidate_paths": [
-        {
-          "path": ".agent/skills/pr_review/SKILL.md",
-          "mode": "100644",
-          "blob": "c565fa73610bd43216e6847405986946cf237eeb",
-          "name": "PR Review"
-        }
-      ]
     },
     {
       "id": "angular/angular/reference-compiler-cli",
@@ -1017,46 +811,18 @@
     {
       "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.534Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
-      "candidate_paths": [
-        {
-          "path": "plugins/ruby-type-signature-skills/skills/generating-sorbet/SKILL.md",
-          "mode": "100644",
-          "blob": "b5c64ff184d56f63b32f347b91d5c09f8c70a12e",
-          "name": "generating-sorbet"
-        },
-        {
-          "path": "source/plugins/ruby-type-signature-skills/skills/generating-sorbet/SKILL.md",
-          "mode": "100644",
-          "blob": "369e31ed45e8741d5c71ccf033c7984209d95503",
-          "name": "generating-sorbet"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/DmitryPogrebnoy/ruby-agent-skills/blob/cb2e3552a62026584003e1515ac635bc5eef45c3/plugins/ruby-type-signature-skills/skills/generating-sorbet/SKILL.md",
+      "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3"
     },
     {
       "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline",
       "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:59.364Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
-      "candidate_paths": [
-        {
-          "path": "plugins/ruby-type-signature-skills/skills/generating-sorbet-inline/SKILL.md",
-          "mode": "100644",
-          "blob": "688da146d2194cde2be1b1ecd9a9ba0c878235e5",
-          "name": "generating-sorbet-inline"
-        },
-        {
-          "path": "source/plugins/ruby-type-signature-skills/skills/generating-sorbet-inline/SKILL.md",
-          "mode": "100644",
-          "blob": "01b5799cbd4c3e60d416730c163898ceb5fe7481",
-          "name": "generating-sorbet-inline"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/DmitryPogrebnoy/ruby-agent-skills/blob/cb2e3552a62026584003e1515ac635bc5eef45c3/plugins/ruby-type-signature-skills/skills/generating-sorbet-inline/SKILL.md",
+      "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3"
     },
     {
       "id": "docker/skills/docker-project-foundations",
@@ -1972,22 +1738,6 @@
       "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62"
     },
     {
-      "id": "Kaakati/rails-enterprise-dev/sidekiq-async-patterns",
-      "batch": null,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.049Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "bd0b7c1cc37baf06cc6acaa7e21ddc5c488d103f",
-      "candidate_paths": [
-        {
-          "path": "plugins/rails-enterprise-dev/skills/sidekiq-async-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "445447ebbde7647d027b24056d4dff48a798bf4b",
-          "name": "Sidekiq & Async Patterns"
-        }
-      ]
-    },
-    {
       "id": "kadajett/agent-nestjs-skills/nestjs-best-practices",
       "batch": 6,
       "status": "verified",
@@ -2507,38 +2257,6 @@
       "commit": "adbdacbf26cb29a5008f06af6f1bb601d5aa56f2"
     },
     {
-      "id": "pluginagentmarketplace/custom-plugin-python/machine-learning",
-      "batch": 7,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.010Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "44155176545a0add3265a1b8ac8e632bd1b75934",
-      "candidate_paths": [
-        {
-          "path": "skills/machine-learning/SKILL.md",
-          "mode": "100644",
-          "blob": "5eb938522b7cb5f2c79e7452802214dbdcee64c5",
-          "name": "Machine Learning"
-        }
-      ]
-    },
-    {
-      "id": "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis",
-      "batch": 7,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.459Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "44155176545a0add3265a1b8ac8e632bd1b75934",
-      "candidate_paths": [
-        {
-          "path": "skills/pandas-data-analysis/SKILL.md",
-          "mode": "100644",
-          "blob": "0efeed4cd748420371978159d0ee51249aa96b33",
-          "name": "Pandas Data Analysis"
-        }
-      ]
-    },
-    {
       "id": "pproenca/dot-skills/react-hook-form",
       "batch": 7,
       "status": "verified",
@@ -2553,22 +2271,6 @@
       "checked_at": "2026-10-28T02:35:13.959Z",
       "url": "https://github.com/pproenca/dot-skills/blob/cf93c57cac89d6fc3e4194686000411567f5caf3/skills/.curated/zod/SKILL.md",
       "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3"
-    },
-    {
-      "id": "pramoddutta/qaskills/storybook-testing",
-      "batch": null,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.040Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "6fc32e4adb7449fd5136746efc7f085357fca6c8",
-      "candidate_paths": [
-        {
-          "path": "seed-skills/storybook-testing/SKILL.md",
-          "mode": "100644",
-          "blob": "1879475460e6a33722a1bb33ce0caea403976fc6",
-          "name": "Storybook Interaction Testing"
-        }
-      ]
     },
     {
       "id": "prisma/skills/prisma-cli",
@@ -2860,36 +2562,10 @@
     {
       "id": "sickn33/antigravity-awesome-skills/nodejs-best-practices",
       "batch": 8,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.656Z",
-      "reason": "Multiple matching paths have different contents; canonical path requires review",
-      "snapshot_commit": "b7f6ad814a903f912962ea3cccad8c02766f753b",
-      "candidate_paths": [
-        {
-          "path": "plugins/agentic-awesome-skills-claude/skills/nodejs-best-practices/SKILL.md",
-          "mode": "100644",
-          "blob": "3c996a8bde023e62de61f6f3a1476449b5790524",
-          "name": "nodejs-best-practices"
-        },
-        {
-          "path": "plugins/agentic-awesome-skills/skills/nodejs-best-practices/SKILL.md",
-          "mode": "100644",
-          "blob": "3c996a8bde023e62de61f6f3a1476449b5790524",
-          "name": "nodejs-best-practices"
-        },
-        {
-          "path": "plugins/agentic-bundle-web-app/skills/nodejs-best-practices/SKILL.md",
-          "mode": "100644",
-          "blob": "7f62db9f81dba2352a8b5a88b44d891501d732c6",
-          "name": "nodejs-best-practices"
-        },
-        {
-          "path": "skills/nodejs-best-practices/SKILL.md",
-          "mode": "100644",
-          "blob": "3c996a8bde023e62de61f6f3a1476449b5790524",
-          "name": "nodejs-best-practices"
-        }
-      ]
+      "status": "verified",
+      "checked_at": "2026-10-30T23:20:04.385Z",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/b7f6ad814a903f912962ea3cccad8c02766f753b/skills/nodejs-best-practices/SKILL.md",
+      "commit": "b7f6ad814a903f912962ea3cccad8c02766f753b"
     },
     {
       "id": "sleekdotdesign/agent-skills/design-mobile-apps",

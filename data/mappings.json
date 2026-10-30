@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-10-28",
+  "snapshot_date": "2026-10-31",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 246,
-    "mapped_technologies": 178,
-    "detect_only_technologies": 68,
-    "combinations": 34,
-    "distinct_referenced_skills": 346
+    "mapped_technologies": 176,
+    "detect_only_technologies": 70,
+    "combinations": 33,
+    "distinct_referenced_skills": 341
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -2676,7 +2676,7 @@
       "id": "numpy",
       "name": "NumPy",
       "category": "Data, databases and queues",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "detection": {
         "coverage": "documented_examples_only",
         "signals": [
@@ -2689,10 +2689,7 @@
         ],
         "raw": "py: `numpy`"
       },
-      "skill_ids": [
-        "pluginagentmarketplace/custom-plugin-python/machine-learning",
-        "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis"
-      ],
+      "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
     },
@@ -2714,8 +2711,7 @@
         "raw": "py: `pandas`"
       },
       "skill_ids": [
-        "jeffallan/claude-skills/pandas-pro",
-        "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis"
+        "jeffallan/claude-skills/pandas-pro"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -4930,8 +4926,7 @@
         "angular/angular/reference-core",
         "angular/angular/reference-signal-forms",
         "angular/angular/reference-compiler-cli",
-        "angular/angular/adev-writing-guide",
-        "angular/angular/pr_review"
+        "angular/angular/adev-writing-guide"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5373,15 +5368,13 @@
       "id": "storybook",
       "name": "Storybook",
       "category": "Web frameworks, UI and styling",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [
-        "pramoddutta/qaskills/storybook-testing"
-      ],
+      "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -5898,20 +5891,6 @@
         "igmarin/ruby-core-skills/triage-bug"
       ],
       "source_document": "specification/04-catalog/10-technology-combinations.md"
-    },
-    {
-      "id": "rails-sidekiq",
-      "name": "Ruby on Rails + Sidekiq",
-      "requires": [
-        "rails",
-        "sidekiq"
-      ],
-      "skill_ids": [
-        "Kaakati/rails-enterprise-dev/sidekiq-async-patterns"
-      ],
-      "source_document": "specification/04-catalog/10-technology-combinations.md",
-      "curated_primary_only": true,
-      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
     },
     {
       "id": "react-clerk",

@@ -2466,7 +2466,7 @@
     },
     {
       "technology_id": "numpy",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "origin": "documented_examples_plus_derived_supplements",
       "logic": "any",
       "signals": [
@@ -4739,7 +4739,7 @@
     },
     {
       "technology_id": "storybook",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
