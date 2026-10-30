@@ -14,8 +14,8 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Mapped technologies | **178** |
 | Detect-only technologies | **68** |
 | Combinations | **34** |
-| Verified skill sources | **333** |
-| Unresolved sources | **13** |
+| Verified skill sources | **341** |
+| Unresolved sources | **5** |
 
 Snapshot date: **2026-10-28**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
 

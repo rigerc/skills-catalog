@@ -9,11 +9,11 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `affaan-m/ECC/django-celery` | affaan-m/ECC | django-celery | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-celery/SKILL.md) | 0 | 1 |
 | `affaan-m/ECC/fastapi-patterns` | affaan-m/ECC | fastapi-patterns | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/fastapi-patterns/SKILL.md) | 0 | 1 |
 | `affaan-m/ECC/prisma-patterns` | affaan-m/ECC | prisma-patterns | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/prisma-patterns/SKILL.md) | 0 | 1 |
-| `affaan-m/everything-claude-code/django-patterns` | affaan-m/everything-claude-code | django-patterns | Unresolved | 1 | 0 |
-| `affaan-m/everything-claude-code/django-security` | affaan-m/everything-claude-code | django-security | Unresolved | 1 | 0 |
-| `affaan-m/everything-claude-code/java-coding-standards` | affaan-m/everything-claude-code | java-coding-standards | Unresolved | 1 | 0 |
-| `affaan-m/everything-claude-code/laravel-patterns` | affaan-m/everything-claude-code | laravel-patterns | Unresolved | 1 | 0 |
-| `affaan-m/everything-claude-code/python-patterns` | affaan-m/everything-claude-code | python-patterns | Unresolved | 1 | 0 |
+| `affaan-m/everything-claude-code/django-patterns` | affaan-m/everything-claude-code | django-patterns | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-patterns/SKILL.md) | 1 | 0 |
+| `affaan-m/everything-claude-code/django-security` | affaan-m/everything-claude-code | django-security | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-security/SKILL.md) | 1 | 0 |
+| `affaan-m/everything-claude-code/java-coding-standards` | affaan-m/everything-claude-code | java-coding-standards | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/java-coding-standards/SKILL.md) | 1 | 0 |
+| `affaan-m/everything-claude-code/laravel-patterns` | affaan-m/everything-claude-code | laravel-patterns | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/laravel-patterns/SKILL.md) | 1 | 0 |
+| `affaan-m/everything-claude-code/python-patterns` | affaan-m/everything-claude-code | python-patterns | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/python-patterns/SKILL.md) | 1 | 0 |
 | `aj-geddes/useful-ai-prompts/flask-api-development` | aj-geddes/useful-ai-prompts | flask-api-development | [Verified source](https://github.com/aj-geddes/useful-ai-prompts/blob/3f5182cfd739fc113f4af5244a1cf342ad7f7911/skills/flask-api-development/SKILL.md) | 1 | 0 |
 | `aj-geddes/useful-ai-prompts/nodejs-express-server` | aj-geddes/useful-ai-prompts | nodejs-express-server | [Verified source](https://github.com/aj-geddes/useful-ai-prompts/blob/3f5182cfd739fc113f4af5244a1cf342ad7f7911/skills/nodejs-express-server/SKILL.md) | 0 | 1 |
 | `akin-ozer/cc-devops-skills/gitlab-ci-generator` | akin-ozer/cc-devops-skills | gitlab-ci-generator | [Verified source](https://github.com/akin-ozer/cc-devops-skills/blob/276af751e659315aaf56d3ad13d7c26f4e72e28a/devops-skills-plugin/skills/gitlab-ci-generator/SKILL.md) | 1 | 0 |
@@ -103,8 +103,8 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `delexw/claude-code-misc/oxlint` | delexw/claude-code-misc | oxlint | [Verified source](https://github.com/delexw/claude-code-misc/blob/c729be07588f3b64a3878cc9f5e99c362388554c/skills/oxlint/SKILL.md) | 1 | 0 |
 | `denoland/skills/deno` | denoland/skills | deno | [Verified source](https://github.com/denoland/skills/blob/d5f6ace6b113aee71ba5286612fa1bde34c7d102/skills/deno/SKILL.md) | 1 | 0 |
 | `devon-systems/hoenn/nix` | devon-systems/hoenn | nix | [Verified source](https://github.com/devon-systems/hoenn/blob/b96f381c915387c1730eef28af9b3d6bb1121018/nix/modules/aly/skills/nix/SKILL.md) | 1 | 0 |
-| `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet` | DmitryPogrebnoy/ruby-agent-skills | generating-sorbet | Unresolved | 1 | 0 |
-| `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline` | DmitryPogrebnoy/ruby-agent-skills | generating-sorbet-inline | Unresolved | 1 | 0 |
+| `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet` | DmitryPogrebnoy/ruby-agent-skills | generating-sorbet | [Verified source](https://github.com/DmitryPogrebnoy/ruby-agent-skills/blob/cb2e3552a62026584003e1515ac635bc5eef45c3/plugins/ruby-type-signature-skills/skills/generating-sorbet/SKILL.md) | 1 | 0 |
+| `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline` | DmitryPogrebnoy/ruby-agent-skills | generating-sorbet-inline | [Verified source](https://github.com/DmitryPogrebnoy/ruby-agent-skills/blob/cb2e3552a62026584003e1515ac635bc5eef45c3/plugins/ruby-type-signature-skills/skills/generating-sorbet-inline/SKILL.md) | 1 | 0 |
 | `docker/skills/docker-project-foundations` | docker/skills | docker-project-foundations | [Verified source](https://github.com/docker/skills/blob/179c9cfd04c89ae50cd5d5d68b939797a8fd03d3/skills/docker-project-foundations/SKILL.md) | 1 | 0 |
 | `ejirocodes/agent-skills/svelte5-best-practices` | ejirocodes/agent-skills | svelte5-best-practices | [Verified source](https://github.com/ejirocodes/agent-skills/blob/6e805e4cc8a4378444c791d4a08e304347152bd0/svelte/skills/svelte5-best-practices/SKILL.md) | 1 | 0 |
 | `elysiajs/skills/elysia` | elysiajs/skills | elysia | [Verified source](https://github.com/elysiajs/skills/blob/1466d85aa4f2a0fec91f71311e65bbfa91aa7dc5/elysia/SKILL.md) | 1 | 0 |
@@ -305,7 +305,7 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `sergiodxa/agent-skills/ruby-on-rails-best-practices` | sergiodxa/agent-skills | ruby-on-rails-best-practices | [Verified source](https://github.com/sergiodxa/agent-skills/blob/40e21b46189d5c7de6610b68a25280af863f8775/skills/ruby-on-rails-best-practices/SKILL.md) | 1 | 0 |
 | `shadcn/ui/shadcn` | shadcn/ui | shadcn | [Verified source](https://github.com/shadcn/ui/blob/96da9cc7f1aa10580a3741664e2a77c721206c00/skills/shadcn/SKILL.md) | 1 | 1 |
 | `sharanharsoor/skills/fastmcp` | sharanharsoor/skills | fastmcp | [Verified source](https://github.com/sharanharsoor/skills/blob/f90a28d8cdf534551048b72219a14b7b7a090c5c/fastmcp/SKILL.md) | 1 | 0 |
-| `sickn33/antigravity-awesome-skills/nodejs-best-practices` | sickn33/antigravity-awesome-skills | nodejs-best-practices | Unresolved | 1 | 0 |
+| `sickn33/antigravity-awesome-skills/nodejs-best-practices` | sickn33/antigravity-awesome-skills | nodejs-best-practices | [Verified source](https://github.com/sickn33/agentic-awesome-skills/blob/b7f6ad814a903f912962ea3cccad8c02766f753b/skills/nodejs-best-practices/SKILL.md) | 1 | 0 |
 | `sleekdotdesign/agent-skills/design-mobile-apps` | sleekdotdesign/agent-skills | design-mobile-apps | [Verified source](https://github.com/sleekdotdesign/agent-skills/blob/fb90438ab2263b7a87cdce1ca7747d371fccb438/skills/design-mobile-apps/SKILL.md) | 1 | 1 |
 | `smnandre/symfony-ux-skills/symfony-ux` | smnandre/symfony-ux-skills | symfony-ux | [Verified source](https://github.com/smnandre/symfony-ux-skills/blob/1e99301a6255724eca9c49ce9cdb8c241771ab05/skills/symfony-ux/SKILL.md) | 1 | 0 |
 | `spences10/svelte-skills-kit/sveltekit-structure` | spences10/svelte-skills-kit | sveltekit-structure | [Verified source](https://github.com/spences10/svelte-skills-kit/blob/5fe49891cf19b451c846ed613712c4d9545dd24f/plugins/svelte-skills/skills/sveltekit-structure/SKILL.md) | 1 | 0 |
@@ -351,4 +351,4 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `yonesuke/skills/polars` | yonesuke/skills | polars | [Verified source](https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md) | 1 | 0 |
 | `zxkane/aws-skills/aws-sst-development` | zxkane/aws-skills | aws-sst-development | [Verified source](https://github.com/zxkane/aws-skills/blob/68530c6f296ccd2f5e99c79782f3e0fbf962c51a/plugins/aws-iac/skills/aws-sst-development/SKILL.md) | 1 | 0 |
 
-**346 skills** · 333 verified · 13 unresolved.
+**346 skills** · 341 verified · 5 unresolved.
