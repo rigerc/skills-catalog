@@ -48,6 +48,8 @@ Snapshot date: **2026-10-28**. Source verification is historical evidence, **not
 
 ## Authoring and validation
 
+Start with [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow, including [adding skills](docs/adding-skills.md), [adding technologies](docs/adding-technologies.md), and [adding mappings](docs/adding-mappings.md).
+
 Requires Node.js 22+; no npm dependencies.
 
 ```sh
