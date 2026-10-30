@@ -10,14 +10,14 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 
 | Metric | Total |
 | --- | ---: |
-| Skills | **346** |
-| Mapped technologies | **178** |
-| Detect-only technologies | **68** |
-| Combinations | **34** |
+| Skills | **341** |
+| Mapped technologies | **176** |
+| Detect-only technologies | **70** |
+| Combinations | **33** |
 | Verified skill sources | **341** |
-| Unresolved sources | **5** |
+| Unresolved sources | **0** |
 
-Snapshot date: **2026-10-28**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
+Snapshot date: **2026-10-31**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
 
 ## Browse the data
 
@@ -38,13 +38,13 @@ Snapshot date: **2026-10-28**. Source verification is historical evidence, **not
 | Build tools, monorepos and release | 27 | 10 | 17 |
 | Cloud, infrastructure and CI/CD | 17 | 17 | 0 |
 | Creative, media and graphics | 5 | 5 | 0 |
-| Data, databases and queues | 27 | 23 | 4 |
+| Data, databases and queues | 27 | 22 | 5 |
 | Go ecosystem | 18 | 17 | 1 |
 | Languages, runtimes and scripting | 23 | 13 | 10 |
 | Mobile, desktop and extensions | 15 | 12 | 3 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |
 | Testing and quality | 21 | 14 | 7 |
-| Web frameworks, UI and styling | 35 | 24 | 11 |
+| Web frameworks, UI and styling | 35 | 23 | 12 |
 
 ## Authoring and validation
 

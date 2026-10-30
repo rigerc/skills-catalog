@@ -19,7 +19,6 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `akin-ozer/cc-devops-skills/gitlab-ci-generator` | akin-ozer/cc-devops-skills | gitlab-ci-generator | [Verified source](https://github.com/akin-ozer/cc-devops-skills/blob/276af751e659315aaf56d3ad13d7c26f4e72e28a/devops-skills-plugin/skills/gitlab-ci-generator/SKILL.md) | 1 | 0 |
 | `akin-ozer/cc-devops-skills/makefile-generator` | akin-ozer/cc-devops-skills | makefile-generator | [Verified source](https://github.com/akin-ozer/cc-devops-skills/blob/276af751e659315aaf56d3ad13d7c26f4e72e28a/devops-skills-plugin/skills/makefile-generator/SKILL.md) | 1 | 0 |
 | `angular/angular/adev-writing-guide` | angular/angular | adev-writing-guide | [Verified source](https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/adev-writing-guide/SKILL.md) | 1 | 0 |
-| `angular/angular/pr_review` | angular/angular | pr_review | Unresolved | 1 | 0 |
 | `angular/angular/reference-compiler-cli` | angular/angular | reference-compiler-cli | [Verified source](https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/reference-compiler-cli/SKILL.md) | 1 | 0 |
 | `angular/angular/reference-core` | angular/angular | reference-core | [Verified source](https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/reference-core/SKILL.md) | 1 | 0 |
 | `angular/angular/reference-signal-forms` | angular/angular | reference-signal-forms | [Verified source](https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/reference-signal-forms/SKILL.md) | 1 | 0 |
@@ -219,7 +218,6 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `jeremylongshore/tons-of-skills-marketplace/generating-grpc-services` | jeremylongshore/tons-of-skills-marketplace | generating-grpc-services | [Verified source](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ab85a061f7bcc039dac13ee193de7a4cd4388571/plugins/api-development/grpc-service-generator/skills/generating-grpc-services/SKILL.md) | 1 | 0 |
 | `jeremylongshore/tons-of-skills-marketplace/sentry-performance-tracing` | jeremylongshore/tons-of-skills-marketplace | sentry-performance-tracing | [Verified source](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ab85a061f7bcc039dac13ee193de7a4cd4388571/plugins/saas-packs/sentry-pack/skills/sentry-performance-tracing/SKILL.md) | 1 | 0 |
 | `K-Dense-AI/scientific-agent-skills/transformers` | K-Dense-AI/scientific-agent-skills | transformers | [Verified source](https://github.com/K-Dense-AI/scientific-agent-skills/blob/5f2bc0341354fd5590aef76a533ada1e1e5b4e62/skills/transformers/SKILL.md) | 1 | 0 |
-| `Kaakati/rails-enterprise-dev/sidekiq-async-patterns` | Kaakati/rails-enterprise-dev | sidekiq-async-patterns | Unresolved | 0 | 1 |
 | `kadajett/agent-nestjs-skills/nestjs-best-practices` | kadajett/agent-nestjs-skills | nestjs-best-practices | [Verified source](https://github.com/kadajett/agent-nestjs-skills/blob/3986e0cede33958e000f959031cbee0cd83c2941/skills/nestjs-best-practices/SKILL.md) | 1 | 0 |
 | `kevmoo/dash_skills/dart-best-practices` | kevmoo/dash_skills | dart-best-practices | [Verified source](https://github.com/kevmoo/dash_skills/blob/48791b7c899ac895bc0aae7a9a6312df3d3e3ca3/skills/dart-best-practices/SKILL.md) | 1 | 0 |
 | `Kotlin/kotlin-agent-skills/kotlin-tooling-agp9-migration` | Kotlin/kotlin-agent-skills | kotlin-tooling-agp9-migration | [Verified source](https://github.com/Kotlin/kotlin-agent-skills/blob/c2f90697bf71966a117a13340d5fff787f004140/skills/kotlin-tooling-agp9-migration/SKILL.md) | 1 | 0 |
@@ -266,11 +264,8 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `pingdotgg/t3code/changesets` | pingdotgg/t3code | changesets | [Verified source](https://github.com/pingdotgg/t3code/blob/67661cfbb57fd353845c6f3c8c96663560031d1e/.repos/effect-smol/.agents/skills/changesets/SKILL.md) | 1 | 0 |
 | `planetscale/database-skills/mysql` | planetscale/database-skills | mysql | [Verified source](https://github.com/planetscale/database-skills/blob/f6ed002d03084cb39c01d1d58904d47a36f5322a/skills/mysql/SKILL.md) | 1 | 0 |
 | `pluginagentmarketplace/custom-plugin-nodejs/express-rest-api` | pluginagentmarketplace/custom-plugin-nodejs | express-rest-api | [Verified source](https://github.com/pluginagentmarketplace/custom-plugin-nodejs/blob/adbdacbf26cb29a5008f06af6f1bb601d5aa56f2/skills/express-rest-api/SKILL.md) | 1 | 0 |
-| `pluginagentmarketplace/custom-plugin-python/machine-learning` | pluginagentmarketplace/custom-plugin-python | machine-learning | Unresolved | 1 | 0 |
-| `pluginagentmarketplace/custom-plugin-python/pandas-data-analysis` | pluginagentmarketplace/custom-plugin-python | pandas-data-analysis | Unresolved | 2 | 0 |
 | `pproenca/dot-skills/react-hook-form` | pproenca/dot-skills | react-hook-form | [Verified source](https://github.com/pproenca/dot-skills/blob/cf93c57cac89d6fc3e4194686000411567f5caf3/skills/.curated/react-hook-form/SKILL.md) | 1 | 0 |
 | `pproenca/dot-skills/zod` | pproenca/dot-skills | zod | [Verified source](https://github.com/pproenca/dot-skills/blob/cf93c57cac89d6fc3e4194686000411567f5caf3/skills/.curated/zod/SKILL.md) | 1 | 1 |
-| `pramoddutta/qaskills/storybook-testing` | pramoddutta/qaskills | storybook-testing | Unresolved | 1 | 0 |
 | `prisma/skills/prisma-cli` | prisma/skills | prisma-cli | [Verified source](https://github.com/prisma/skills/blob/c71e8ea254dbc5dba27af773b735679163395cf9/prisma-cli/SKILL.md) | 1 | 0 |
 | `prisma/skills/prisma-client-api` | prisma/skills | prisma-client-api | [Verified source](https://github.com/prisma/skills/blob/c71e8ea254dbc5dba27af773b735679163395cf9/prisma-client-api/SKILL.md) | 1 | 0 |
 | `prisma/skills/prisma-database-setup` | prisma/skills | prisma-database-setup | [Verified source](https://github.com/prisma/skills/blob/c71e8ea254dbc5dba27af773b735679163395cf9/prisma-database-setup/SKILL.md) | 1 | 0 |
@@ -351,4 +346,4 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `yonesuke/skills/polars` | yonesuke/skills | polars | [Verified source](https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md) | 1 | 0 |
 | `zxkane/aws-skills/aws-sst-development` | zxkane/aws-skills | aws-sst-development | [Verified source](https://github.com/zxkane/aws-skills/blob/68530c6f296ccd2f5e99c79782f3e0fbf962c51a/plugins/aws-iac/skills/aws-sst-development/SKILL.md) | 1 | 0 |
 
-**346 skills** · 341 verified · 5 unresolved.
+**341 skills** · 341 verified · 0 unresolved.

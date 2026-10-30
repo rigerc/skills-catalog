@@ -149,8 +149,8 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | MongoDB | `mongodb` | Mapped | `hoodini/ai-agents-skills/mongodb` |
 | MySQL / MariaDB clients | `mysql` | Mapped | `planetscale/database-skills/mysql` |
 | Neon Postgres | `neon` | Mapped | `neondatabase/agent-skills/neon-postgres` |
-| NumPy | `numpy` | Mapped | `pluginagentmarketplace/custom-plugin-python/machine-learning`, `pluginagentmarketplace/custom-plugin-python/pandas-data-analysis` |
-| Pandas | `pandas` | Mapped | `jeffallan/claude-skills/pandas-pro`, `pluginagentmarketplace/custom-plugin-python/pandas-data-analysis` |
+| NumPy | `numpy` | Detect-only | — |
+| Pandas | `pandas` | Mapped | `jeffallan/claude-skills/pandas-pro` |
 | Polars | `polars` | Mapped | `yonesuke/skills/polars` |
 | PostgreSQL (JS/Python) | `postgres` | Mapped | `github/awesome-copilot/postgresql-code-review`, `github/awesome-copilot/postgresql-optimization` |
 | Prisma | `prisma` | Mapped | `prisma/skills/prisma-database-setup`, `prisma/skills/prisma-client-api`, `prisma/skills/prisma-cli`, `prisma/skills/prisma-postgres` |
@@ -277,7 +277,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 
 | Technology | ID | Status | Recommended skill IDs |
 | --- | --- | --- | --- |
-| Angular | `angular` | Mapped | `angular/skills/angular-developer`, `angular/angular/reference-core`, `angular/angular/reference-signal-forms`, `angular/angular/reference-compiler-cli`, `angular/angular/adev-writing-guide`, `angular/angular/pr_review` |
+| Angular | `angular` | Mapped | `angular/skills/angular-developer`, `angular/angular/reference-core`, `angular/angular/reference-signal-forms`, `angular/angular/reference-compiler-cli`, `angular/angular/adev-writing-guide` |
 | Astro | `astro` | Mapped | `astrolicious/agent-skills/astro` |
 | Chakra UI | `chakra-ui` | Detect-only | — |
 | CodeMirror | `codemirror` | Detect-only | — |
@@ -300,7 +300,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | remark / rehype / unified | `remark-rehype-unified` | Detect-only | — |
 | shadcn/ui | `shadcn` | Mapped | `shadcn/ui/shadcn` |
 | SolidJS | `solidjs` | Detect-only | — |
-| Storybook | `storybook` | Mapped | `pramoddutta/qaskills/storybook-testing` |
+| Storybook | `storybook` | Detect-only | — |
 | Svelte | `svelte` | Mapped | `ejirocodes/agent-skills/svelte5-best-practices`, `sveltejs/ai-tools/svelte-code-writer` |
 | SvelteKit | `sveltekit` | Mapped | `spences10/svelte-skills-kit/sveltekit-structure` |
 | Tailwind CSS | `tailwind` | Mapped | `giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns` |
@@ -339,7 +339,6 @@ Requires are evaluated together using Nosey's normal scope policy.
 | Node.js + Express | `node-express` | `node` + `express` | `aj-geddes/useful-ai-prompts/nodejs-express-server` |
 | Nuxt + Clerk | `nuxt-clerk` | `nuxt` + `clerk` | `clerk/skills/clerk-nuxt-patterns` |
 | Ruby on Rails + RSpec | `rails-rspec` | `rails` + `rspec` | `igmarin/rails-agent-skills/plan-tests`, `igmarin/ruby-core-skills/triage-bug` |
-| Ruby on Rails + Sidekiq | `rails-sidekiq` | `rails` + `sidekiq` | `Kaakati/rails-enterprise-dev/sidekiq-async-patterns` |
 | React + Clerk | `react-clerk` | `react` + `clerk` | `clerk/skills/clerk-react-patterns` |
 | React Hook Form + Zod | `react-hook-form-zod` | `react-hook-form` + `zod` | `pproenca/dot-skills/zod` |
 | React Native + Expo | `react-native-expo` | `react-native` + `expo` | `expo/skills/expo-native-ui`, `sleekdotdesign/agent-skills/design-mobile-apps` |

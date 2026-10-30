@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-10-30T23:20:04.385Z",
-  "release_blocked": true,
-  "unresolved_count": 5,
+  "audited_at": "2026-10-30T23:23:57.234Z",
+  "release_blocked": false,
+  "unresolved_count": 0,
   "entries": [
     {
       "id": "addyosmani/web-quality-skills/accessibility",
@@ -123,22 +123,6 @@
       "checked_at": "2026-10-28T02:34:59.706Z",
       "url": "https://github.com/angular/angular/blob/b81b37d58b966882c6cea7cf1f76e990bb2059e9/.agent/skills/adev-writing-guide/SKILL.md",
       "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9"
-    },
-    {
-      "id": "angular/angular/pr_review",
-      "batch": 1,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.268Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
-      "candidate_paths": [
-        {
-          "path": ".agent/skills/pr_review/SKILL.md",
-          "mode": "100644",
-          "blob": "c565fa73610bd43216e6847405986946cf237eeb",
-          "name": "PR Review"
-        }
-      ]
     },
     {
       "id": "angular/angular/reference-compiler-cli",
@@ -1754,22 +1738,6 @@
       "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62"
     },
     {
-      "id": "Kaakati/rails-enterprise-dev/sidekiq-async-patterns",
-      "batch": null,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.049Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "bd0b7c1cc37baf06cc6acaa7e21ddc5c488d103f",
-      "candidate_paths": [
-        {
-          "path": "plugins/rails-enterprise-dev/skills/sidekiq-async-patterns/SKILL.md",
-          "mode": "100644",
-          "blob": "445447ebbde7647d027b24056d4dff48a798bf4b",
-          "name": "Sidekiq & Async Patterns"
-        }
-      ]
-    },
-    {
       "id": "kadajett/agent-nestjs-skills/nestjs-best-practices",
       "batch": 6,
       "status": "verified",
@@ -2289,38 +2257,6 @@
       "commit": "adbdacbf26cb29a5008f06af6f1bb601d5aa56f2"
     },
     {
-      "id": "pluginagentmarketplace/custom-plugin-python/machine-learning",
-      "batch": 7,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.010Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "44155176545a0add3265a1b8ac8e632bd1b75934",
-      "candidate_paths": [
-        {
-          "path": "skills/machine-learning/SKILL.md",
-          "mode": "100644",
-          "blob": "5eb938522b7cb5f2c79e7452802214dbdcee64c5",
-          "name": "Machine Learning"
-        }
-      ]
-    },
-    {
-      "id": "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis",
-      "batch": 7,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.459Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "44155176545a0add3265a1b8ac8e632bd1b75934",
-      "candidate_paths": [
-        {
-          "path": "skills/pandas-data-analysis/SKILL.md",
-          "mode": "100644",
-          "blob": "0efeed4cd748420371978159d0ee51249aa96b33",
-          "name": "Pandas Data Analysis"
-        }
-      ]
-    },
-    {
       "id": "pproenca/dot-skills/react-hook-form",
       "batch": 7,
       "status": "verified",
@@ -2335,22 +2271,6 @@
       "checked_at": "2026-10-28T02:35:13.959Z",
       "url": "https://github.com/pproenca/dot-skills/blob/cf93c57cac89d6fc3e4194686000411567f5caf3/skills/.curated/zod/SKILL.md",
       "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3"
-    },
-    {
-      "id": "pramoddutta/qaskills/storybook-testing",
-      "batch": null,
-      "status": "unresolved",
-      "checked_at": "2026-10-28T03:09:58.040Z",
-      "reason": "Upstream frontmatter name is not a safe operational skill name",
-      "snapshot_commit": "6fc32e4adb7449fd5136746efc7f085357fca6c8",
-      "candidate_paths": [
-        {
-          "path": "seed-skills/storybook-testing/SKILL.md",
-          "mode": "100644",
-          "blob": "1879475460e6a33722a1bb33ce0caea403976fc6",
-          "name": "Storybook Interaction Testing"
-        }
-      ]
     },
     {
       "id": "prisma/skills/prisma-cli",
