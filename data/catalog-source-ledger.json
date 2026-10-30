@@ -3033,13 +3033,6 @@
       "commit": "68530c6f296ccd2f5e99c79782f3e0fbf962c51a"
     },
     {
-      "id": "Paldom/python-skills/agent-guardrails",
-      "status": "verified",
-      "checked_at": "2026-10-30T23:29:34.731Z",
-      "url": "https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/agent-guardrails/SKILL.md",
-      "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
-    },
-    {
       "id": "Paldom/python-skills/python-ci",
       "status": "verified",
       "checked_at": "2026-10-30T23:29:34.731Z",

@@ -12,7 +12,7 @@
     "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion."
   ],
   "counts": {
-    "distinct_skills": 350,
+    "distinct_skills": 349,
     "technologies_with_skills": 177,
     "technologies_detect_only": 69,
     "technology_combinations": 33,
@@ -4519,17 +4519,6 @@
         "technology_ids": [
           "sst"
         ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "Paldom/python-skills/agent-guardrails",
-      "repository": "Paldom/python-skills",
-      "skill_name": "agent-guardrails",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }

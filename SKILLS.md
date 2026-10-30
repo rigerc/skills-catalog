@@ -260,7 +260,6 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `ombulabs/claude-code_rails-upgrade-skill/rails-upgrade` | ombulabs/claude-code_rails-upgrade-skill | rails-upgrade | [Verified source](https://github.com/ombulabs/claude-code_rails-upgrade-skill/blob/83e05bc7e697c20aaa1bc6be7df0eec0ef39d51e/rails-upgrade/SKILL.md) | 1 | 0 |
 | `openai/skills/aspnet-core` | openai/skills | aspnet-core | [Verified source](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/aspnet-core/SKILL.md) | 1 | 0 |
 | `openai/skills/cloudflare-deploy` | openai/skills | cloudflare-deploy | [Verified source](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/SKILL.md) | 1 | 0 |
-| `Paldom/python-skills/agent-guardrails` | Paldom/python-skills | agent-guardrails | [Verified source](https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/agent-guardrails/SKILL.md) | 0 | 0 |
 | `Paldom/python-skills/python-ci` | Paldom/python-skills | python-ci | [Verified source](https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/python-ci/SKILL.md) | 1 | 0 |
 | `Paldom/python-skills/python-lint` | Paldom/python-skills | python-lint | [Verified source](https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/python-lint/SKILL.md) | 2 | 0 |
 | `Paldom/python-skills/python-packaging` | Paldom/python-skills | python-packaging | [Verified source](https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/python-packaging/SKILL.md) | 2 | 0 |
@@ -355,4 +354,4 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `yonesuke/skills/polars` | yonesuke/skills | polars | [Verified source](https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md) | 1 | 0 |
 | `zxkane/aws-skills/aws-sst-development` | zxkane/aws-skills | aws-sst-development | [Verified source](https://github.com/zxkane/aws-skills/blob/68530c6f296ccd2f5e99c79782f3e0fbf962c51a/plugins/aws-iac/skills/aws-sst-development/SKILL.md) | 1 | 0 |
 
-**350 skills** · 350 verified · 0 unresolved.
+**349 skills** · 349 verified · 0 unresolved.
