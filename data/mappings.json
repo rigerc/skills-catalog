@@ -1,0 +1,6147 @@
+{
+  "schema_version": 1,
+  "catalog_id": "nosey-built-in",
+  "snapshot_date": "2026-10-28",
+  "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
+  "counts": {
+    "technologies": 246,
+    "mapped_technologies": 178,
+    "detect_only_technologies": 68,
+    "combinations": 34,
+    "distinct_referenced_skills": 346
+  },
+  "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
+  "repository_aliases": {
+    "affaan-m/everything-claude-code": "affaan-m/ECC"
+  },
+  "technologies": [
+    {
+      "id": "anthropic-sdk",
+      "name": "Anthropic SDK",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@anthropic-ai/sdk"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "anthropic"
+            ]
+          }
+        ],
+        "raw": "npm: `@anthropic-ai/sdk`; py: `anthropic`"
+      },
+      "skill_ids": [
+        "anthropics/skills/claude-api"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "cloudflare-agents",
+      "name": "Cloudflare Agents",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "agents"
+            ]
+          }
+        ],
+        "raw": "npm: `agents`"
+      },
+      "skill_ids": [
+        "cloudflare/skills/agents-sdk",
+        "cloudflare/skills/sandbox-stable"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cloudflare-ai",
+      "name": "Cloudflare AI",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@cloudflare/ai"
+            ]
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "npm: `@cloudflare/ai`; content match"
+      },
+      "skill_ids": [
+        "cloudflare/skills/agents-sdk"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "context7-mcp",
+      "name": "Context7 MCP",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@mendable/firecrawl-js"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "firecrawl-py"
+            ]
+          }
+        ],
+        "raw": "npm: `@mendable/firecrawl-js`; py: `firecrawl-py`"
+      },
+      "skill_ids": [
+        "firecrawl/cli/firecrawl"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "google-genai",
+      "name": "Google Gen AI",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@google/genai"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "google-genai"
+            ]
+          }
+        ],
+        "raw": "npm: `@google/genai`; py: `google-genai`"
+      },
+      "skill_ids": [
+        "google-gemini/gemini-skills/gemini-api-dev"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "K-Dense-AI/scientific-agent-skills/transformers"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "langchain"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "langchain",
+              "langchain-core",
+              "langchain-openai"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 1,
+            "details_documented": false
+          }
+        ],
+        "raw": "npm: `langchain`; py: `langchain`, `langchain-core`, `langchain-openai` +1; npm pattern: 1"
+      },
+      "skill_ids": [
+        "langchain-ai/langchain-skills/langchain-rag"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "langfuse",
+              "@langfuse/tracing"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "langfuse"
+            ]
+          }
+        ],
+        "raw": "npm: `langfuse`, `@langfuse/tracing`; py: `langfuse`"
+      },
+      "skill_ids": [
+        "langfuse/skills/langfuse"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@langchain/langgraph"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "langgraph"
+            ]
+          }
+        ],
+        "raw": "npm: `@langchain/langgraph`; py: `langgraph`"
+      },
+      "skill_ids": [
+        "langchain-ai/deepagents/langgraph-docs"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "mastra",
+      "name": "Mastra",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@mastra/core"
+            ]
+          }
+        ],
+        "raw": "npm: `@mastra/core`"
+      },
+      "skill_ids": [
+        "mastra-ai/skills/mastra"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "mcp-sdk",
+      "name": "Model Context Protocol SDK",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@modelcontextprotocol/sdk"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "mcp"
+            ]
+          }
+        ],
+        "raw": "npm: `@modelcontextprotocol/sdk`; py: `mcp`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/mcp-implementation-security-review",
+        "github/awesome-copilot/mcp-release-qa"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "openai-agents-sdk",
+      "name": "OpenAI Agents SDK",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "openai-docs-mcp",
+      "name": "OpenAI Docs MCP",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "openai-sdk",
+      "name": "OpenAI SDK",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "opentelemetry",
+      "name": "OpenTelemetry",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@opentelemetry/api",
+              "@opentelemetry/sdk-node",
+              "@opentelemetry/sdk-trace-node"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "opentelemetry-api",
+              "opentelemetry-sdk"
+            ]
+          }
+        ],
+        "raw": "npm: `@opentelemetry/api`, `@opentelemetry/sdk-node`, `@opentelemetry/sdk-trace-node`; py: `opentelemetry-api`, `opentelemetry-sdk`"
+      },
+      "skill_ids": [
+        "confident-ai/deepeval/deepeval-otel"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "mcp-playwright",
+      "name": "Playwright MCP",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "mcp_server_config",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "MCP server config"
+      },
+      "skill_ids": [
+        "anthropics/skills/webapp-testing",
+        "github/awesome-copilot/playwright-generate-test",
+        "github/awesome-copilot/playwright-explore-website",
+        "github/awesome-copilot/playwright-automation-fill-in-form"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "pydantic-ai",
+      "name": "Pydantic AI",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "vercel-ai",
+      "name": "Vercel AI SDK",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "ai",
+              "@ai-sdk/openai",
+              "@ai-sdk/anthropic"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "npm: `ai`, `@ai-sdk/openai`, `@ai-sdk/anthropic` +1"
+      },
+      "skill_ids": [
+        "vercel/ai/use-ai-sdk"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "auth-js",
+      "name": "Auth.js",
+      "category": "Auth and payments",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "better-auth",
+      "name": "Better Auth",
+      "category": "Auth and payments",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "better-auth"
+            ]
+          }
+        ],
+        "raw": "npm: `better-auth`"
+      },
+      "skill_ids": [
+        "better-auth/skills/best-practices",
+        "better-auth/skills/emailAndPassword",
+        "better-auth/skills/organization",
+        "better-auth/skills/twoFactor"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "clerk",
+      "name": "Clerk",
+      "category": "Auth and payments",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@clerk/nextjs",
+              "@clerk/remix",
+              "@clerk/astro"
+            ],
+            "additional_unlisted_examples": 10
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 1,
+            "details_documented": false
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false,
+            "reported_count": 2
+          }
+        ],
+        "raw": "npm: `@clerk/nextjs`, `@clerk/remix`, `@clerk/astro` +10; npm pattern: 1; content match (x2)"
+      },
+      "skill_ids": [
+        "clerk/skills/clerk",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk-custom-ui",
+        "clerk/skills/clerk-backend-api",
+        "clerk/skills/clerk-orgs",
+        "clerk/skills/clerk-webhooks",
+        "clerk/skills/clerk-testing"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "category": "Auth and payments",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "stripe",
+              "@stripe/stripe-js",
+              "@stripe/react-stripe-js"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "stripe"
+            ]
+          },
+          {
+            "kind": "gem",
+            "examples": [
+              "stripe"
+            ]
+          },
+          {
+            "kind": "composer",
+            "examples": [
+              "stripe/stripe-php"
+            ]
+          }
+        ],
+        "raw": "npm: `stripe`, `@stripe/stripe-js`, `@stripe/react-stripe-js`; py: `stripe`; gem: `stripe`; composer: `stripe/stripe-php`"
+      },
+      "skill_ids": [
+        "stripe/ai/stripe-best-practices",
+        "stripe/ai/upgrade-stripe"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "workos",
+      "name": "WorkOS",
+      "category": "Auth and payments",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "global.json",
+              "NuGet.Config",
+              "Directory.Build.props"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "file: `global.json`, `NuGet.Config`, `Directory.Build.props` +1; content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/dotnet-best-practices",
+        "github/awesome-copilot/dotnet-design-pattern-review",
+        "github/awesome-copilot/dotnet-upgrade",
+        "github/awesome-copilot/dotnet-timezone",
+        "github/awesome-copilot/nuget-manager"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "adonisjs",
+      "name": "AdonisJS",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "aspnetcore",
+      "name": "ASP.NET Core",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/containerize-aspnetcore",
+        "openai/skills/aspnet-core"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "aspnet-minimal-api",
+      "name": "ASP.NET Minimal API",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/aspnet-minimal-api-openapi"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "axum",
+      "name": "Axum",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "aspnet-blazor",
+      "name": "Blazor",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/fluentui-blazor"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".csproj",
+              ".cs"
+            ]
+          }
+        ],
+        "raw": "ext: `.csproj`, `.cs`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/csharp-xunit",
+        "github/awesome-copilot/csharp-async",
+        "github/awesome-copilot/csharp-docs",
+        "github/awesome-copilot/csharp-nunit",
+        "github/awesome-copilot/csharp-mstest",
+        "github/awesome-copilot/csharp-tunit"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "django"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "manage.py"
+            ]
+          }
+        ],
+        "raw": "py: `django`; file: `manage.py`"
+      },
+      "skill_ids": [
+        "vintasoftware/django-ai-plugins/django-expert",
+        "affaan-m/everything-claude-code/django-patterns",
+        "affaan-m/everything-claude-code/django-security"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "elysia",
+      "name": "Elysia",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "elysia"
+            ]
+          }
+        ],
+        "raw": "npm: `elysia`"
+      },
+      "skill_ids": [
+        "elysiajs/skills/elysia"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "fastapi"
+            ]
+          }
+        ],
+        "raw": "py: `fastapi`"
+      },
+      "skill_ids": [
+        "fastapi/fastapi/fastapi",
+        "wshobson/agents/fastapi-templates",
+        "mindrally/skills/fastapi-python"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "fastify",
+      "name": "Fastify",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "fastify"
+            ]
+          }
+        ],
+        "raw": "npm: `fastify`"
+      },
+      "skill_ids": [
+        "mcollina/skills/fastify"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "fastmcp",
+      "name": "FastMCP",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "fastmcp"
+            ]
+          }
+        ],
+        "raw": "py: `fastmcp`"
+      },
+      "skill_ids": [
+        "sharanharsoor/skills/fastmcp"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "flask"
+            ]
+          }
+        ],
+        "raw": "py: `flask`"
+      },
+      "skill_ids": [
+        "aj-geddes/useful-ai-prompts/flask-api-development"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "graphql",
+              "graphql-request",
+              "graphql-yoga"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/99designs/gqlgen",
+              "github.com/graph-gophers/graphql-go"
+            ]
+          }
+        ],
+        "raw": "npm: `graphql`, `graphql-request`, `graphql-yoga` +1; go: `github.com/99designs/gqlgen`, `github.com/graph-gophers/graphql-go`"
+      },
+      "skill_ids": [
+        "apollographql/skills/graphql-operations"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "jeremylongshore/tons-of-skills-marketplace/generating-grpc-services"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "hono",
+      "name": "Hono",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "hono"
+            ]
+          }
+        ],
+        "raw": "npm: `hono`"
+      },
+      "skill_ids": [
+        "honojs/skills/hono"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "pom.xml"
+            ]
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "file: `pom.xml`; content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/java-docs",
+        "github/awesome-copilot/java-development",
+        "github/awesome-copilot/java-debugging",
+        "github/awesome-copilot/java-diagnostics",
+        "github/awesome-copilot/java-junit",
+        "github/awesome-copilot/java-testcontainers",
+        "github/awesome-copilot/java-upgrade",
+        "affaan-m/everything-claude-code/java-coding-standards"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "artisan",
+              "bootstrap/app.php"
+            ]
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "file: `artisan`, `bootstrap/app.php`; content match"
+      },
+      "skill_ids": [
+        "jeffallan/claude-skills/laravel-specialist",
+        "affaan-m/everything-claude-code/laravel-patterns"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@nestjs/core"
+            ]
+          }
+        ],
+        "raw": "npm: `@nestjs/core`"
+      },
+      "skill_ids": [
+        "kadajett/agent-nestjs-skills/nestjs-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "hex",
+            "examples": [
+              "phoenix"
+            ]
+          }
+        ],
+        "raw": "hex: `phoenix`"
+      },
+      "skill_ids": [
+        "georgeguimaraes/elixir-agent-tools/phoenix"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "requests",
+      "name": "Requests",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "requests"
+            ]
+          }
+        ],
+        "raw": "py: `requests`"
+      },
+      "skill_ids": [
+        "affaan-m/everything-claude-code/python-patterns"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "springboot",
+      "name": "Spring Boot",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false,
+            "reported_count": 2
+          }
+        ],
+        "raw": "content match (x2)"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/java-springboot"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "symfony",
+      "name": "Symfony",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "composer",
+            "examples": [
+              "symfony/framework-bundle",
+              "symfony/symfony"
+            ]
+          }
+        ],
+        "raw": "composer: `symfony/framework-bundle`, `symfony/symfony`"
+      },
+      "skill_ids": [
+        "smnandre/symfony-ux-skills/symfony-ux"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "wp-config.php",
+              "wp-login.php"
+            ]
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 1,
+            "details_documented": false
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "file: `wp-config.php`, `wp-login.php`; npm pattern: 1; content match"
+      },
+      "skill_ids": [
+        "wordpress/agent-skills/wp-plugin-development",
+        "wordpress/agent-skills/wp-rest-api",
+        "wordpress/agent-skills/wp-block-themes",
+        "wordpress/agent-skills/wp-block-development",
+        "wordpress/agent-skills/wp-performance",
+        "wordpress/agent-skills/wordpress-router",
+        "wordpress/agent-skills/wp-project-triage",
+        "wordpress/agent-skills/wp-wpcli-and-ops"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "babel",
+      "name": "Babel",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "bazel",
+      "name": "Bazel",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "MODULE.bazel",
+              "WORKSPACE.bazel",
+              "WORKSPACE"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "file: `MODULE.bazel`, `WORKSPACE.bazel`, `WORKSPACE` +2"
+      },
+      "skill_ids": [
+        "ccheney/robust-skills/bazel"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "changesets",
+      "name": "Changesets",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@changesets/cli"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              ".changeset/config.json"
+            ]
+          }
+        ],
+        "raw": "npm: `@changesets/cli`; file: `.changeset/config.json`"
+      },
+      "skill_ids": [
+        "pingdotgg/t3code/changesets"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "direnv",
+      "name": "direnv",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "esbuild",
+      "name": "esbuild",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "Mindrally/skills/esbuild-bundler"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "make",
+      "name": "GNU Make / Make",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "Makefile",
+              "makefile",
+              "GNUmakefile"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "file: `Makefile`, `makefile`, `GNUmakefile` +1"
+      },
+      "skill_ids": [
+        "akin-ozer/cc-devops-skills/makefile-generator"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "just",
+      "name": "Just",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "justfile",
+              "Justfile",
+              "JUSTFILE"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "file: `justfile`, `Justfile`, `JUSTFILE` +1"
+      },
+      "skill_ids": [
+        "paulrberg/agent-skills/cli-just"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "meson",
+      "name": "Meson",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "mise",
+      "name": "mise",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "moonrepo",
+      "name": "moonrepo",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "nodemon",
+      "name": "nodemon",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "nx",
+      "name": "Nx",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "rolldown",
+      "name": "Rolldown",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "rollup",
+      "name": "Rollup",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "Mindrally/skills/rollup-bundler"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "rspack",
+      "name": "Rspack",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "semantic-release",
+      "name": "semantic-release",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "task",
+      "name": "Task",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "tsdown",
+      "name": "tsdown",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "tsup",
+      "name": "tsup",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "turborepo",
+      "name": "Turborepo",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "turbo"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "turbo.json"
+            ]
+          }
+        ],
+        "raw": "npm: `turbo`; file: `turbo.json`"
+      },
+      "skill_ids": [
+        "vercel/turborepo/turborepo"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "typedoc",
+      "name": "TypeDoc",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "uv",
+      "name": "uv",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "vamseeachanta/workspace-hub/uv-package-manager"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "vite"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "vite.config.js",
+              "vite.config.ts",
+              "vite.config.mjs"
+            ]
+          }
+        ],
+        "raw": "npm: `vite`; file: `vite.config.js`, `vite.config.ts`, `vite.config.mjs`"
+      },
+      "skill_ids": [
+        "antfu/skills/vite"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "vite-plus",
+      "name": "Vite+",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "webpack",
+      "name": "webpack",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "Mindrally/skills/webpack-bundler"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "aws-sdk",
+              "aws-cdk",
+              "aws-cdk-lib"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "boto3",
+              "botocore",
+              "aws-cdk-lib"
+            ]
+          },
+          {
+            "kind": "gem",
+            "examples": [
+              "aws-sdk",
+              "aws-sdk-s3"
+            ]
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 2,
+            "details_documented": false
+          }
+        ],
+        "raw": "npm: `aws-sdk`, `aws-cdk`, `aws-cdk-lib`; py: `boto3`, `botocore`, `aws-cdk-lib`; gem: `aws-sdk`, `aws-sdk-s3`; npm pattern: 2"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/aws-cloudwatch-investigation",
+        "github/awesome-copilot/aws-cost-optimize",
+        "github/awesome-copilot/aws-resource-health-diagnose",
+        "github/awesome-copilot/aws-resource-query",
+        "github/awesome-copilot/aws-well-architected-review"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "azure-identity",
+              "azure-storage-blob",
+              "azure-cosmos"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 1,
+            "details_documented": false
+          }
+        ],
+        "raw": "py: `azure-identity`, `azure-storage-blob`, `azure-cosmos` +1; npm pattern: 1"
+      },
+      "skill_ids": [
+        "microsoft/github-copilot-for-azure/azure-deploy",
+        "microsoft/github-copilot-for-azure/azure-ai",
+        "microsoft/github-copilot-for-azure/azure-diagnostics",
+        "github/awesome-copilot/azure-architecture-autopilot",
+        "github/awesome-copilot/azure-deployment-preflight",
+        "github/awesome-copilot/azure-developer-cli",
+        "github/awesome-copilot/azure-pricing",
+        "github/awesome-copilot/azure-resource-health-diagnose",
+        "github/awesome-copilot/azure-resource-visualizer",
+        "github/awesome-copilot/azure-well-architected-review",
+        "github/awesome-copilot/az-cost-optimize"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "wrangler",
+              "@cloudflare/workers-types",
+              "@astrojs/cloudflare"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "wrangler.toml",
+              "wrangler.json",
+              "wrangler.jsonc"
+            ]
+          }
+        ],
+        "raw": "npm: `wrangler`, `@cloudflare/workers-types`, `@astrojs/cloudflare`; file: `wrangler.toml`, `wrangler.json`, `wrangler.jsonc`"
+      },
+      "skill_ids": [
+        "cloudflare/skills/cloudflare",
+        "cloudflare/skills/wrangler",
+        "cloudflare/skills/workers-best-practices",
+        "cloudflare/skills/web-perf",
+        "openai/skills/cloudflare-deploy"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "dependabot",
+      "name": "Dependabot",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              ".github/dependabot.yml",
+              ".github/dependabot.yaml"
+            ]
+          }
+        ],
+        "raw": "file: `.github/dependabot.yml`, `.github/dependabot.yaml`"
+      },
+      "skill_ids": [
+        "cli/cli/dependabot-triager",
+        "github/awesome-copilot/dependabot"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "Dockerfile",
+              "Dockerfile.dev",
+              "Dockerfile.prod"
+            ],
+            "additional_unlisted_examples": 4
+          }
+        ],
+        "raw": "file: `Dockerfile`, `Dockerfile.dev`, `Dockerfile.prod` +4"
+      },
+      "skill_ids": [
+        "docker/skills/docker-project-foundations",
+        "github/awesome-copilot/multi-stage-dockerfile"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cloudflare-durable-objects",
+      "name": "Durable Objects",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "cloudflare/skills/durable-objects"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              ".github/workflows"
+            ]
+          }
+        ],
+        "raw": "file: `.github/workflows`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/github-actions-efficiency",
+        "github/awesome-copilot/github-actions-hardening",
+        "github/awesome-copilot/github-actions-runtime-upgrade-conventions",
+        "github/awesome-copilot/create-github-action-workflow-specification"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab CI/CD",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              ".gitlab-ci.yml",
+              ".gitlab-ci.yaml"
+            ]
+          }
+        ],
+        "raw": "file: `.gitlab-ci.yml`, `.gitlab-ci.yaml`"
+      },
+      "skill_ids": [
+        "akin-ozer/cc-devops-skills/gitlab-ci-generator"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "google-cloud",
+      "name": "Google Cloud",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "google-cloud-storage",
+              "google-cloud-bigquery",
+              "google-cloud-pubsub"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "npm_pattern",
+            "examples": [],
+            "reported_pattern_count": 1,
+            "details_documented": false
+          }
+        ],
+        "raw": "py: `google-cloud-storage`, `google-cloud-bigquery`, `google-cloud-pubsub` +1; npm pattern: 1"
+      },
+      "skill_ids": [
+        "rominirani/antigravity-skills/always-verify-gcp"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "TerminalSkills/skills/kubernetes-helm"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "TerminalSkills/skills/kubernetes-helm"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "pulumi",
+      "name": "Pulumi",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@pulumi/pulumi"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "pulumi"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "Pulumi.yaml",
+              "Pulumi.yml"
+            ]
+          }
+        ],
+        "raw": "npm: `@pulumi/pulumi`; py: `pulumi`; file: `Pulumi.yaml`, `Pulumi.yml`"
+      },
+      "skill_ids": [
+        "pulumi/agent-skills/pulumi-component"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "renovate",
+      "name": "Renovate",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "renovate"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "renovate.json",
+              "renovate.json5",
+              ".renovaterc"
+            ],
+            "additional_unlisted_examples": 3
+          }
+        ],
+        "raw": "npm: `renovate`; file: `renovate.json`, `renovate.json5`, `.renovaterc` +3"
+      },
+      "skill_ids": [
+        "backnotprop/plannotator/review-renovate"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "jeremylongshore/tons-of-skills-marketplace/sentry-performance-tracing"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "sst",
+      "name": "SST",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "sst"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "sst.config.ts",
+              "sst.config.js"
+            ]
+          }
+        ],
+        "raw": "npm: `sst`; file: `sst.config.ts`, `sst.config.js`"
+      },
+      "skill_ids": [
+        "zxkane/aws-skills/aws-sst-development"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              ".terraform.lock.hcl",
+              "terraform.tfvars",
+              "main.tf"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "file: `.terraform.lock.hcl`, `terraform.tfvars`, `main.tf` +2"
+      },
+      "skill_ids": [
+        "hashicorp/agent-skills/terraform-style-guide",
+        "hashicorp/agent-skills/refactor-module",
+        "hashicorp/agent-skills/terraform-stacks",
+        "wshobson/agents/terraform-module-library"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "Vercel",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "vercel",
+              "@astrojs/vercel"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "vercel.json",
+              ".vercel"
+            ]
+          }
+        ],
+        "raw": "npm: `vercel`, `@astrojs/vercel`; file: `vercel.json`, `.vercel`"
+      },
+      "skill_ids": [
+        "vercel-labs/agent-skills/deploy-to-vercel"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "elevenlabs",
+              "@elevenlabs/elevenlabs-js"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "elevenlabs"
+            ]
+          }
+        ],
+        "raw": "npm: `elevenlabs`, `@elevenlabs/elevenlabs-js`; py: `elevenlabs`"
+      },
+      "skill_ids": [
+        "inferen-sh/skills/elevenlabs-tts",
+        "inferen-sh/skills/elevenlabs-music"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "gsap"
+            ]
+          }
+        ],
+        "raw": "npm: `gsap`"
+      },
+      "skill_ids": [
+        "greensock/gsap-skills/gsap-core",
+        "greensock/gsap-skills/gsap-scrolltrigger",
+        "greensock/gsap-skills/gsap-performance",
+        "greensock/gsap-skills/gsap-plugins",
+        "greensock/gsap-skills/gsap-timeline",
+        "greensock/gsap-skills/gsap-utils",
+        "greensock/gsap-skills/gsap-frameworks"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "@react-three/fiber",
+      "name": "React Three Fiber",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@react-three/fiber"
+            ]
+          }
+        ],
+        "raw": "npm: `@react-three/fiber`"
+      },
+      "skill_ids": [
+        "cloudai-x/threejs-skills/threejs-react-three-fiber"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "remotion",
+              "@remotion/cli"
+            ]
+          }
+        ],
+        "raw": "npm: `remotion`, `@remotion/cli`"
+      },
+      "skill_ids": [
+        "remotion-dev/skills/remotion-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "three"
+            ]
+          }
+        ],
+        "raw": "npm: `three`"
+      },
+      "skill_ids": [
+        "cloudai-x/threejs-skills/threejs-animation",
+        "cloudai-x/threejs-skills/threejs-fundamentals",
+        "cloudai-x/threejs-skills/threejs-shaders",
+        "cloudai-x/threejs-skills/threejs-geometry",
+        "cloudai-x/threejs-skills/threejs-interaction",
+        "cloudai-x/threejs-skills/threejs-materials",
+        "cloudai-x/threejs-skills/threejs-postprocessing",
+        "cloudai-x/threejs-skills/threejs-lighting",
+        "cloudai-x/threejs-skills/threejs-textures",
+        "cloudai-x/threejs-skills/threejs-loaders"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "bullmq",
+      "name": "BullMQ",
+      "category": "Data, databases and queues",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "celery",
+      "name": "Celery",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "celery"
+            ]
+          }
+        ],
+        "raw": "py: `celery`"
+      },
+      "skill_ids": [
+        "wshobson/agents/python-background-jobs"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@clickhouse/client"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "clickhouse-connect",
+              "clickhouse-driver"
+            ]
+          }
+        ],
+        "raw": "npm: `@clickhouse/client`; py: `clickhouse-connect`, `clickhouse-driver`"
+      },
+      "skill_ids": [
+        "clickhouse/agent-skills/clickhouse-architecture-advisor"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "convex",
+      "name": "Convex",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "convex"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "convex"
+            ]
+          }
+        ],
+        "raw": "npm: `convex`; file: `convex`"
+      },
+      "skill_ids": [
+        "convex/agent-skills/convex"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "drizzle",
+      "name": "Drizzle ORM",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "drizzle-orm",
+              "drizzle-kit"
+            ]
+          }
+        ],
+        "raw": "npm: `drizzle-orm`, `drizzle-kit`"
+      },
+      "skill_ids": [
+        "bobmatnyc/claude-mpm-skills/drizzle"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "duckdb",
+      "name": "DuckDB",
+      "category": "Data, databases and queues",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "firebase",
+              "firebase-admin",
+              "firebase-functions"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "firebase.json"
+            ]
+          }
+        ],
+        "raw": "npm: `firebase`, `firebase-admin`, `firebase-functions`; file: `firebase.json`"
+      },
+      "skill_ids": [
+        "firebase/agent-skills/firebase-auth-basics"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "inngest",
+      "name": "Inngest",
+      "category": "Data, databases and queues",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "instantdb",
+      "name": "InstantDB",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@instantdb/core",
+              "@instantdb/react",
+              "@instantdb/react-native"
+            ],
+            "additional_unlisted_examples": 2
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "instant.schema.ts",
+              "instant.perms.ts"
+            ]
+          }
+        ],
+        "raw": "npm: `@instantdb/core`, `@instantdb/react`, `@instantdb/react-native` +2; file: `instant.schema.ts`, `instant.perms.ts`"
+      },
+      "skill_ids": [
+        "instantdb/skills/instantdb"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "mongodb",
+              "mongoose"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "pymongo",
+              "motor"
+            ]
+          }
+        ],
+        "raw": "npm: `mongodb`, `mongoose`; py: `pymongo`, `motor`"
+      },
+      "skill_ids": [
+        "hoodini/ai-agents-skills/mongodb"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL / MariaDB clients",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "mysql2",
+              "mysql"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "pymysql",
+              "mysql-connector-python",
+              "aiomysql"
+            ]
+          }
+        ],
+        "raw": "npm: `mysql2`, `mysql`; py: `pymysql`, `mysql-connector-python`, `aiomysql`"
+      },
+      "skill_ids": [
+        "planetscale/database-skills/mysql"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "neon",
+      "name": "Neon Postgres",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@neondatabase/serverless"
+            ]
+          }
+        ],
+        "raw": "npm: `@neondatabase/serverless`"
+      },
+      "skill_ids": [
+        "neondatabase/agent-skills/neon-postgres"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "numpy"
+            ]
+          }
+        ],
+        "raw": "py: `numpy`"
+      },
+      "skill_ids": [
+        "pluginagentmarketplace/custom-plugin-python/machine-learning",
+        "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "pandas"
+            ]
+          }
+        ],
+        "raw": "py: `pandas`"
+      },
+      "skill_ids": [
+        "jeffallan/claude-skills/pandas-pro",
+        "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "polars",
+      "name": "Polars",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "nodejs-polars"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "polars"
+            ]
+          }
+        ],
+        "raw": "npm: `nodejs-polars`; py: `polars`"
+      },
+      "skill_ids": [
+        "yonesuke/skills/polars"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL (JS/Python)",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "pg",
+              "postgres"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "psycopg",
+              "psycopg2",
+              "psycopg2-binary"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "npm: `pg`, `postgres`; py: `psycopg`, `psycopg2`, `psycopg2-binary` +2"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/postgresql-code-review",
+        "github/awesome-copilot/postgresql-optimization"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "prisma",
+              "@prisma/client"
+            ]
+          }
+        ],
+        "raw": "npm: `prisma`, `@prisma/client`"
+      },
+      "skill_ids": [
+        "prisma/skills/prisma-database-setup",
+        "prisma/skills/prisma-client-api",
+        "prisma/skills/prisma-cli",
+        "prisma/skills/prisma-postgres"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "pydantic",
+      "name": "Pydantic",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "pydantic"
+            ]
+          }
+        ],
+        "raw": "py: `pydantic`"
+      },
+      "skill_ids": [
+        "bobmatnyc/claude-mpm-skills/pydantic"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@qdrant/js-client-rest"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "qdrant-client"
+            ]
+          }
+        ],
+        "raw": "npm: `@qdrant/js-client-rest`; py: `qdrant-client`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/qdrant-clients-sdk",
+        "github/awesome-copilot/qdrant-deployment-options",
+        "github/awesome-copilot/qdrant-model-migration",
+        "github/awesome-copilot/qdrant-monitoring",
+        "github/awesome-copilot/qdrant-performance-optimization",
+        "github/awesome-copilot/qdrant-scaling",
+        "github/awesome-copilot/qdrant-search-quality",
+        "github/awesome-copilot/qdrant-version-upgrade"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "redis",
+              "ioredis",
+              "@upstash/redis"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "redis"
+            ]
+          }
+        ],
+        "raw": "npm: `redis`, `ioredis`, `@upstash/redis`; py: `redis`"
+      },
+      "skill_ids": [
+        "redis/agent-skills/redis-core"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-Learn",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "scikit-learn"
+            ]
+          }
+        ],
+        "raw": "py: `scikit-learn`"
+      },
+      "skill_ids": [
+        "davila7/claude-code-templates/scikit-learn",
+        "davila7/claude-code-templates/senior-data-scientist"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sqlalchemy",
+      "name": "SQLAlchemy",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "sqlalchemy"
+            ]
+          }
+        ],
+        "raw": "py: `sqlalchemy`"
+      },
+      "skill_ids": [
+        "bobmatnyc/claude-mpm-skills/sqlalchemy",
+        "wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "Data, databases and queues",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@supabase/supabase-js",
+              "@supabase/ssr"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "supabase"
+            ]
+          }
+        ],
+        "raw": "npm: `@supabase/supabase-js`, `@supabase/ssr`; py: `supabase`"
+      },
+      "skill_ids": [
+        "supabase/agent-skills/supabase-postgres-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "temporal",
+      "name": "Temporal",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@temporalio/client",
+              "@temporalio/worker",
+              "@temporalio/workflow"
+            ]
+          },
+          {
+            "kind": "py",
+            "examples": [
+              "temporalio"
+            ]
+          }
+        ],
+        "raw": "npm: `@temporalio/client`, `@temporalio/worker`, `@temporalio/workflow`; py: `temporalio`"
+      },
+      "skill_ids": [
+        "temporalio/skill-temporal-developer/skill-temporal-developer"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "trigger-dev",
+      "name": "Trigger.dev",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@trigger.dev/sdk"
+            ]
+          }
+        ],
+        "raw": "npm: `@trigger.dev/sdk`"
+      },
+      "skill_ids": [
+        "triggerdotdev/skills/trigger-setup"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "zod",
+      "name": "Zod",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "zod"
+            ]
+          }
+        ],
+        "raw": "npm: `zod`"
+      },
+      "skill_ids": [
+        "pproenca/dot-skills/zod"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cobra",
+      "name": "Cobra",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/spf13/cobra"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/spf13/cobra`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-spf13-cobra"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "category": "Go ecosystem",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "go.mod",
+              "go.work"
+            ]
+          }
+        ],
+        "raw": "file: `go.mod`, `go.work`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-code-style",
+        "samber/cc-skills-golang/golang-error-handling",
+        "samber/cc-skills-golang/golang-security",
+        "samber/cc-skills-golang/golang-testing"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "go-graphql",
+      "name": "Go GraphQL",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/99designs/gqlgen",
+              "github.com/graph-gophers/graphql-go"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/99designs/gqlgen`, `github.com/graph-gophers/graphql-go`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-graphql"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "go-grpc",
+      "name": "Go gRPC",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "google.golang.org/grpc"
+            ]
+          }
+        ],
+        "raw": "go: `google.golang.org/grpc`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-grpc"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "google-wire",
+      "name": "Google Wire",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/google/wire"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/google/wire`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-google-wire"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-do",
+      "name": "samber/do",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/do",
+              "github.com/samber/do/v2"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/do`, `github.com/samber/do/v2`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-do"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-hot",
+      "name": "samber/hot",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/hot"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/hot`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-hot"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-lo",
+      "name": "samber/lo",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/lo"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/lo`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-lo"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-mo",
+      "name": "samber/mo",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/mo"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/mo`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-mo"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-oops",
+      "name": "samber/oops",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/oops"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/oops`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-oops"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-ro",
+      "name": "samber/ro",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/ro"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/ro`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-ro"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "samber-slog",
+      "name": "samber/slog",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/samber/slog-multi",
+              "github.com/samber/slog-sampling",
+              "github.com/samber/slog-formatter"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/samber/slog-multi`, `github.com/samber/slog-sampling`, `github.com/samber/slog-formatter`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-samber-slog"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "swagger",
+      "name": "Swagger",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/swaggo/swag",
+              "github.com/swaggo/gin-swagger",
+              "github.com/swaggo/echo-swagger"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "go: `github.com/swaggo/swag`, `github.com/swaggo/gin-swagger`, `github.com/swaggo/echo-swagger` +2"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-swagger"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "testify",
+      "name": "Testify",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/stretchr/testify"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/stretchr/testify`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-stretchr-testify"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "uber-dig",
+      "name": "Uber Dig",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "go.uber.org/dig"
+            ]
+          }
+        ],
+        "raw": "go: `go.uber.org/dig`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-uber-dig"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "uber-fx",
+      "name": "Uber Fx",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "go.uber.org/fx"
+            ]
+          }
+        ],
+        "raw": "go: `go.uber.org/fx`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-uber-fx"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "viper",
+      "name": "Viper",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/spf13/viper"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/spf13/viper`"
+      },
+      "skill_ids": [
+        "samber/cc-skills-golang/golang-spf13-viper"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".sh",
+              ".bash"
+            ]
+          }
+        ],
+        "raw": "ext: `.sh`, `.bash`"
+      },
+      "skill_ids": [
+        "wshobson/agents/bash-defensive-patterns"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "bun",
+      "name": "Bun",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "bun.lockb",
+              "bun.lock",
+              "bunfig.toml"
+            ]
+          }
+        ],
+        "raw": "file: `bun.lockb`, `bun.lock`, `bunfig.toml`"
+      },
+      "skill_ids": [
+        "midudev/autoskills/bun"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".cpp",
+              ".cxx",
+              ".cc"
+            ],
+            "additional_unlisted_examples": 3
+          }
+        ],
+        "raw": "ext: `.cpp`, `.cxx`, `.cc` +3"
+      },
+      "skill_ids": [
+        "jeffallan/claude-skills/cpp-pro"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "deno",
+      "name": "Deno",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "deno.json",
+              "deno.jsonc"
+            ]
+          }
+        ],
+        "raw": "file: `deno.json`, `deno.jsonc`"
+      },
+      "skill_ids": [
+        "denoland/skills/deno"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "mix.exs"
+            ]
+          }
+        ],
+        "raw": "file: `mix.exs`"
+      },
+      "skill_ids": [
+        "georgeguimaraes/elixir-agent-tools/elixir"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "home-assistant",
+      "name": "Home Assistant",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "jinja",
+      "name": "Jinja",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "nix",
+      "name": "Nix",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".nix"
+            ]
+          }
+        ],
+        "raw": "ext: `.nix`"
+      },
+      "skill_ids": [
+        "devon-systems/hoenn/nix"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "express",
+              "fastify",
+              "koa"
+            ],
+            "additional_unlisted_examples": 4
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "npm: `express`, `fastify`, `koa` +4; content match"
+      },
+      "skill_ids": [
+        "wshobson/agents/nodejs-backend-patterns",
+        "sickn33/antigravity-awesome-skills/nodejs-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "composer.json",
+              "composer.lock"
+            ]
+          }
+        ],
+        "raw": "file: `composer.json`, `composer.lock`"
+      },
+      "skill_ids": [
+        "jeffallan/claude-skills/php-pro"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "pyproject.toml",
+              "requirements.txt",
+              "setup.py"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "file: `pyproject.toml`, `requirements.txt`, `setup.py` +2"
+      },
+      "skill_ids": [
+        "inferen-sh/skills/python-executor",
+        "wshobson/agents/python-testing-patterns",
+        "github/awesome-copilot/python-pypi-package-builder"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "qml",
+      "name": "QML",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "Gemfile",
+              "Gemfile.lock",
+              ".ruby-version"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "file: `Gemfile`, `Gemfile.lock`, `.ruby-version` +1"
+      },
+      "skill_ids": [
+        "lucianghinda/superpowers-ruby/ruby"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "Cargo.toml"
+            ]
+          }
+        ],
+        "raw": "file: `Cargo.toml`"
+      },
+      "skill_ids": [
+        "apollographql/skills/rust-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "supercollider",
+      "name": "SuperCollider",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "typescript"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "tsconfig.json"
+            ]
+          }
+        ],
+        "raw": "npm: `typescript`; file: `tsconfig.json`"
+      },
+      "skill_ids": [
+        "wshobson/agents/typescript-advanced-types"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "vala",
+      "name": "Vala",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "batch",
+      "name": "Windows batch",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".bat",
+              ".cmd"
+            ]
+          }
+        ],
+        "raw": "ext: `.bat`, `.cmd`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/batch-files"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "zsh",
+      "name": "Zsh",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "krutikJain/android-agent-skills/android-kotlin-core",
+        "krutikJain/android-agent-skills/android-compose-foundations",
+        "krutikJain/android-agent-skills/android-architecture-clean",
+        "krutikJain/android-agent-skills/android-di-hilt",
+        "krutikJain/android-agent-skills/android-gradle-build-logic",
+        "krutikJain/android-agent-skills/android-coroutines-flow",
+        "krutikJain/android-agent-skills/android-networking-retrofit-okhttp",
+        "krutikJain/android-agent-skills/android-testing-unit"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "capacitor",
+      "name": "Capacitor",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "chrome-extension",
+      "name": "Chrome Extension",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "mindrally/skills/chrome-extension-development"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "pubspec.yaml"
+            ]
+          }
+        ],
+        "raw": "file: `pubspec.yaml`"
+      },
+      "skill_ids": [
+        "kevmoo/dash_skills/dart-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "expo"
+            ]
+          }
+        ],
+        "raw": "npm: `expo`"
+      },
+      "skill_ids": [
+        "expo/skills/expo-native-ui",
+        "expo/skills/expo-data-fetching",
+        "expo/skills/expo-upgrade",
+        "expo/skills/expo-dev-client",
+        "expo/skills/eas-app-stores",
+        "expo/skills/eas-workflows",
+        "expo/skills/eas-hosting",
+        "expo/skills/expo-dom"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "jeffallan/claude-skills/flutter-expert",
+        "madteacher/mad-agents-skills/flutter-animations",
+        "madteacher/mad-agents-skills/flutter-testing"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "kotlin-multiplatform",
+      "name": "Kotlin Multiplatform",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "Kotlin/kotlin-agent-skills/kotlin-tooling-cocoapods-spm-migration",
+        "Kotlin/kotlin-agent-skills/kotlin-tooling-agp9-migration"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "obsidian",
+              "obsidian-plugin-cli"
+            ]
+          }
+        ],
+        "raw": "npm: `obsidian`, `obsidian-plugin-cli`"
+      },
+      "skill_ids": [
+        "laude-institute/headlong/obsidian"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "react-native"
+            ]
+          }
+        ],
+        "raw": "npm: `react-native`"
+      },
+      "skill_ids": [
+        "sleekdotdesign/agent-skills/design-mobile-apps"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "Package.swift"
+            ]
+          },
+          {
+            "kind": "ext",
+            "examples": [
+              ".swift"
+            ]
+          }
+        ],
+        "raw": "file: `Package.swift`; ext: `.swift`"
+      },
+      "skill_ids": [
+        "avdlee/swift-concurrency-agent-skill/swift-concurrency"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "swiftui",
+      "name": "SwiftUI",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "avdlee/swiftui-agent-skill/swiftui-expert-skill",
+        "avdlee/swift-concurrency-agent-skill/swift-concurrency",
+        "avdlee/xcode-build-optimization-agent-skill/xcode-build-orchestrator",
+        "avdlee/swift-testing-agent-skill/swift-testing-expert",
+        "avdlee/core-data-agent-skill/core-data-expert"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "tauri",
+      "name": "Tauri",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@tauri-apps/api",
+              "@tauri-apps/cli"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "src-tauri/tauri.conf.json"
+            ]
+          }
+        ],
+        "raw": "npm: `@tauri-apps/api`, `@tauri-apps/cli`; file: `src-tauri/tauri.conf.json`"
+      },
+      "skill_ids": [
+        "nodnarbnitram/claude-code-extensions/tauri-v2"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "userscripts",
+      "name": "Userscripts",
+      "category": "Mobile, desktop and extensions",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "activeadmin",
+      "name": "ActiveAdmin",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "devise",
+      "name": "Devise",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "postgresql-ruby",
+      "name": "PostgreSQL (Ruby)",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "redis-ruby",
+      "name": "Redis (Ruby)",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "redis",
+              "sidekiq",
+              "resque"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "gem: `redis`, `sidekiq`, `resque` +1"
+      },
+      "skill_ids": [
+        "redis/agent-skills/redis-core"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "rails",
+      "name": "Ruby on Rails",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "rails"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "config/routes.rb",
+              "config/application.rb",
+              "bin/rails"
+            ]
+          }
+        ],
+        "raw": "gem: `rails`; file: `config/routes.rb`, `config/application.rb`, `bin/rails`"
+      },
+      "skill_ids": [
+        "sergiodxa/agent-skills/ruby-on-rails-best-practices",
+        "lucianghinda/superpowers-ruby/rails-guides",
+        "igmarin/rails-agent-skills/apply-stack-conventions",
+        "igmarin/rails-agent-skills/review-migration",
+        "igmarin/rails-agent-skills/security-check",
+        "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sidekiq",
+      "name": "Sidekiq",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "sidekiq"
+            ]
+          }
+        ],
+        "raw": "gem: `sidekiq`"
+      },
+      "skill_ids": [
+        "igmarin/rails-agent-skills/implement-background-job"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "ava",
+      "name": "AVA",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "biome",
+      "name": "Biome",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "commitlint",
+      "name": "commitlint",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "cypress"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "cypress.config.js",
+              "cypress.config.cjs",
+              "cypress.config.ts"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "npm: `cypress`; file: `cypress.config.js`, `cypress.config.cjs`, `cypress.config.ts` +1"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/cypress-flake-fixer"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "claude-dev-suite/claude-dev-suite/typescript-eslint"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "husky",
+      "name": "Husky",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "mattpocock/skills/setup-pre-commit"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "jest",
+              "@jest/core"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "jest.config.js",
+              "jest.config.cjs",
+              "jest.config.mjs"
+            ],
+            "additional_unlisted_examples": 3
+          }
+        ],
+        "raw": "npm: `jest`, `@jest/core`; file: `jest.config.js`, `jest.config.cjs`, `jest.config.mjs` +3"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/javascript-typescript-jest"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "knip",
+      "name": "Knip",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "knip"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "knip.json",
+              "knip.jsonc",
+              "knip.ts"
+            ],
+            "additional_unlisted_examples": 5
+          }
+        ],
+        "raw": "npm: `knip`; file: `knip.json`, `knip.jsonc`, `knip.ts` +5"
+      },
+      "skill_ids": [
+        "webpro/skills/configure-knip"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "lefthook",
+      "name": "Lefthook",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "lint-staged",
+      "name": "lint-staged",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "mattpocock/skills/setup-pre-commit"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "oxlint",
+      "name": "oxlint",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "oxlint"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              ".oxlintrc.json",
+              "oxlint.config.ts"
+            ]
+          }
+        ],
+        "raw": "npm: `oxlint`; file: `.oxlintrc.json`, `oxlint.config.ts`"
+      },
+      "skill_ids": [
+        "delexw/claude-code-misc/oxlint"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@playwright/test",
+              "playwright"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "playwright.config.ts",
+              "playwright.config.js"
+            ]
+          }
+        ],
+        "raw": "npm: `@playwright/test`, `playwright`; file: `playwright.config.ts`, `playwright.config.js`"
+      },
+      "skill_ids": [
+        "currents-dev/playwright-best-practices-skill/playwright-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "pre-commit",
+      "name": "pre-commit",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "thebushidocollective/han/prettier-configuration"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "pytest",
+      "name": "Pytest",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "pytest"
+            ]
+          }
+        ],
+        "raw": "py: `pytest`"
+      },
+      "skill_ids": [
+        "wshobson/agents/python-testing-patterns",
+        "github/awesome-copilot/pytest-coverage"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "rspec",
+      "name": "RSpec",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "rspec",
+              "rspec-rails"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              ".rspec"
+            ]
+          }
+        ],
+        "raw": "gem: `rspec`, `rspec-rails`; file: `.rspec`"
+      },
+      "skill_ids": [
+        "igmarin/rails-agent-skills/test-service",
+        "lucianghinda/superpowers-ruby/test-driven-development"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "rubocop",
+      "name": "RuboCop",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "ruff",
+      "name": "Ruff",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "ruff"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "ruff.toml",
+              ".ruff.toml"
+            ]
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "py: `ruff`; file: `ruff.toml`, `.ruff.toml`; content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/ruff-recursive-fix"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sorbet",
+      "name": "Sorbet",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "sorbet",
+              "sorbet-runtime"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "sorbet/config"
+            ]
+          }
+        ],
+        "raw": "gem: `sorbet`, `sorbet-runtime`; file: `sorbet/config`"
+      },
+      "skill_ids": [
+        "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
+        "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "vitest"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "vitest.config.ts",
+              "vitest.config.js",
+              "vitest.config.mts"
+            ]
+          }
+        ],
+        "raw": "npm: `vitest`; file: `vitest.config.ts`, `vitest.config.js`, `vitest.config.mts`"
+      },
+      "skill_ids": [
+        "antfu/skills/vitest"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "xo",
+      "name": "XO",
+      "category": "Testing and quality",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@angular/core"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "angular.json"
+            ]
+          }
+        ],
+        "raw": "npm: `@angular/core`; file: `angular.json`"
+      },
+      "skill_ids": [
+        "angular/skills/angular-developer",
+        "angular/angular/reference-core",
+        "angular/angular/reference-signal-forms",
+        "angular/angular/reference-compiler-cli",
+        "angular/angular/adev-writing-guide",
+        "angular/angular/pr_review"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "astro",
+      "name": "Astro",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "astro"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "astro.config.mjs",
+              "astro.config.js",
+              "astro.config.ts"
+            ]
+          }
+        ],
+        "raw": "npm: `astro`; file: `astro.config.mjs`, `astro.config.js`, `astro.config.ts`"
+      },
+      "skill_ids": [
+        "astrolicious/agent-skills/astro"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "chakra-ui",
+      "name": "Chakra UI",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "codemirror",
+      "name": "CodeMirror",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "d3",
+      "name": "D3",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "ink",
+      "name": "Ink",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "lit",
+      "name": "Lit",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "msw",
+      "name": "Mock Service Worker",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "msw"
+            ]
+          }
+        ],
+        "raw": "npm: `msw`"
+      },
+      "skill_ids": [
+        "pymodel/react-frontend-skills/msw"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "monaco-editor",
+      "name": "Monaco Editor",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "next"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "next.config.js",
+              "next.config.mjs",
+              "next.config.ts"
+            ]
+          }
+        ],
+        "raw": "npm: `next`; file: `next.config.js`, `next.config.mjs`, `next.config.ts`"
+      },
+      "skill_ids": [
+        "vercel/next.js/next-cache-components-adoption"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "nuxt"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "nuxt.config.js",
+              "nuxt.config.ts"
+            ]
+          }
+        ],
+        "raw": "npm: `nuxt`; file: `nuxt.config.js`, `nuxt.config.ts`"
+      },
+      "skill_ids": [
+        "antfu/skills/nuxt"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "pinia",
+      "name": "Pinia",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "pinia"
+            ]
+          }
+        ],
+        "raw": "npm: `pinia`"
+      },
+      "skill_ids": [
+        "vuejs-ai/skills/vue-pinia-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "preact",
+      "name": "Preact",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "preact",
+              "preact-render-to-string"
+            ]
+          }
+        ],
+        "raw": "npm: `preact`, `preact-render-to-string`"
+      },
+      "skill_ids": [
+        "av/skills/preact-buildless-frontend"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "qwik",
+      "name": "Qwik",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "claude-dev-suite/claude-dev-suite/radix-ui"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "react",
+              "react-dom"
+            ]
+          }
+        ],
+        "raw": "npm: `react`, `react-dom`"
+      },
+      "skill_ids": [
+        "vercel-labs/agent-skills/react-best-practices",
+        "vercel-labs/agent-skills/composition-patterns"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "react-hook-form",
+      "name": "React Hook Form",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "react-hook-form"
+            ]
+          }
+        ],
+        "raw": "npm: `react-hook-form`"
+      },
+      "skill_ids": [
+        "pproenca/dot-skills/react-hook-form"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "react-router",
+      "name": "React Router",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "react-router",
+              "react-router-dom",
+              "@react-router/node"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "npm: `react-router`, `react-router-dom`, `@react-router/node` +2"
+      },
+      "skill_ids": [
+        "remix-run/react-router/react-router"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "recharts",
+      "name": "Recharts",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "TerminalSkills/skills/recharts"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "davila7/claude-code-templates/react-state-management"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "remark-rehype-unified",
+      "name": "remark / rehype / unified",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn/ui",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "components.json"
+            ]
+          }
+        ],
+        "raw": "file: `components.json`"
+      },
+      "skill_ids": [
+        "shadcn/ui/shadcn"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "solidjs",
+      "name": "SolidJS",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "pramoddutta/qaskills/storybook-testing"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "svelte",
+              "@sveltejs/kit"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "svelte.config.js"
+            ]
+          }
+        ],
+        "raw": "npm: `svelte`, `@sveltejs/kit`; file: `svelte.config.js`"
+      },
+      "skill_ids": [
+        "ejirocodes/agent-skills/svelte5-best-practices",
+        "sveltejs/ai-tools/svelte-code-writer"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "sveltekit",
+      "name": "SvelteKit",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@sveltejs/kit"
+            ]
+          }
+        ],
+        "raw": "npm: `@sveltejs/kit`"
+      },
+      "skill_ids": [
+        "spences10/svelte-skills-kit/sveltekit-structure"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "tailwindcss",
+              "@tailwindcss/vite"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "tailwind.config.js",
+              "tailwind.config.ts",
+              "tailwind.config.cjs"
+            ]
+          }
+        ],
+        "raw": "npm: `tailwindcss`, `@tailwindcss/vite`; file: `tailwind.config.js`, `tailwind.config.ts`, `tailwind.config.cjs`"
+      },
+      "skill_ids": [
+        "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "tanstack-form",
+      "name": "TanStack Form",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "tanstack-query",
+      "name": "TanStack Query",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@tanstack/react-query",
+              "@tanstack/vue-query",
+              "@tanstack/solid-query"
+            ],
+            "additional_unlisted_examples": 2
+          }
+        ],
+        "raw": "npm: `@tanstack/react-query`, `@tanstack/vue-query`, `@tanstack/solid-query` +2"
+      },
+      "skill_ids": [
+        "deckardger/tanstack-agent-skills/tanstack-query"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "tanstack-start",
+      "name": "TanStack Start",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@tanstack/react-start",
+              "@tanstack/start"
+            ]
+          }
+        ],
+        "raw": "npm: `@tanstack/react-start`, `@tanstack/start`"
+      },
+      "skill_ids": [
+        "tanstack-skills/tanstack-skills/tanstack-start"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "tanstack-table",
+      "name": "TanStack Table",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "TerminalSkills/skills/tanstack-table"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "trpc",
+      "name": "tRPC",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "unocss",
+      "name": "UnoCSS",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "unocss",
+              "@unocss/vite"
+            ]
+          },
+          {
+            "kind": "file",
+            "examples": [
+              "uno.config.ts",
+              "uno.config.js",
+              "uno.config.mjs"
+            ]
+          }
+        ],
+        "raw": "npm: `unocss`, `@unocss/vite`; file: `uno.config.ts`, `uno.config.js`, `uno.config.mjs`"
+      },
+      "skill_ids": [
+        "antfu/skills/unocss"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "vue"
+            ]
+          }
+        ],
+        "raw": "npm: `vue`"
+      },
+      "skill_ids": [
+        "hyf0/vue-skills/vue-debug-guides",
+        "antfu/skills/vue",
+        "vuejs-ai/skills/vue-best-practices"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "zustand",
+      "name": "Zustand",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [
+        "Mindrally/skills/zustand-state-management"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    }
+  ],
+  "combinations": [
+    {
+      "id": "android-clerk",
+      "name": "Android + Clerk",
+      "requires": [
+        "android",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-android",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "astro-clerk",
+      "name": "Astro + Clerk",
+      "requires": [
+        "astro",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-astro-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "chrome-extension-clerk",
+      "name": "Chrome Extension + Clerk",
+      "requires": [
+        "chrome-extension",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-chrome-extension-patterns",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "cloudflare-vite",
+      "name": "Cloudflare + Vite",
+      "requires": [
+        "cloudflare",
+        "vite"
+      ],
+      "skill_ids": [
+        "cloudflare/vinext/migrate-to-vinext"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "django-celery",
+      "name": "Django + Celery",
+      "requires": [
+        "django",
+        "celery"
+      ],
+      "skill_ids": [
+        "affaan-m/ECC/django-celery"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "docker-node",
+      "name": "Docker + Node.js",
+      "requires": [
+        "docker",
+        "node"
+      ],
+      "skill_ids": [
+        "bobmatnyc/claude-mpm-skills/docker"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "docker-python",
+      "name": "Docker + Python",
+      "requires": [
+        "docker",
+        "python"
+      ],
+      "skill_ids": [
+        "bobmatnyc/claude-mpm-skills/docker"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "expo-clerk",
+      "name": "Expo + Clerk",
+      "requires": [
+        "expo",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-expo"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "fastapi-sqlalchemy",
+      "name": "FastAPI + SQLAlchemy",
+      "requires": [
+        "fastapi",
+        "sqlalchemy"
+      ],
+      "skill_ids": [
+        "affaan-m/ECC/fastapi-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "gsap-react",
+      "name": "GSAP + React",
+      "requires": [
+        "gsap",
+        "react"
+      ],
+      "skill_ids": [
+        "greensock/gsap-skills/gsap-react"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "nextjs-clerk",
+      "name": "Next.js + Clerk",
+      "requires": [
+        "nextjs",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-nextjs-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "nextjs-drizzle",
+      "name": "Next.js + Drizzle",
+      "requires": [
+        "nextjs",
+        "drizzle"
+      ],
+      "skill_ids": [
+        "davila7/claude-code-templates/drizzle-orm-expert"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "nextjs-playwright",
+      "name": "Next.js + Playwright",
+      "requires": [
+        "nextjs",
+        "playwright"
+      ],
+      "skill_ids": [
+        "currents-dev/playwright-best-practices-skill/playwright-best-practices"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "nextjs-prisma",
+      "name": "Next.js + Prisma",
+      "requires": [
+        "nextjs",
+        "prisma"
+      ],
+      "skill_ids": [
+        "affaan-m/ECC/prisma-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "nextjs-supabase",
+      "name": "Next.js + Supabase",
+      "requires": [
+        "nextjs",
+        "supabase"
+      ],
+      "skill_ids": [
+        "supabase/agent-skills/supabase-postgres-best-practices"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "nextjs-trpc",
+      "name": "Next.js + tRPC",
+      "requires": [
+        "nextjs",
+        "trpc"
+      ],
+      "skill_ids": [
+        "Mindrally/skills/trpc"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "nextjs-vercel-ai",
+      "name": "Next.js + Vercel AI SDK",
+      "requires": [
+        "nextjs",
+        "vercel-ai"
+      ],
+      "skill_ids": [
+        "vercel/ai/use-ai-sdk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "node-express",
+      "name": "Node.js + Express",
+      "requires": [
+        "node",
+        "express"
+      ],
+      "skill_ids": [
+        "aj-geddes/useful-ai-prompts/nodejs-express-server"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "nuxt-clerk",
+      "name": "Nuxt + Clerk",
+      "requires": [
+        "nuxt",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-nuxt-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "rails-rspec",
+      "name": "Ruby on Rails + RSpec",
+      "requires": [
+        "rails",
+        "rspec"
+      ],
+      "skill_ids": [
+        "igmarin/rails-agent-skills/plan-tests",
+        "igmarin/ruby-core-skills/triage-bug"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "rails-sidekiq",
+      "name": "Ruby on Rails + Sidekiq",
+      "requires": [
+        "rails",
+        "sidekiq"
+      ],
+      "skill_ids": [
+        "Kaakati/rails-enterprise-dev/sidekiq-async-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "react-clerk",
+      "name": "React + Clerk",
+      "requires": [
+        "react",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-react-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-hook-form-zod",
+      "name": "React Hook Form + Zod",
+      "requires": [
+        "react-hook-form",
+        "zod"
+      ],
+      "skill_ids": [
+        "pproenca/dot-skills/zod"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-native-expo",
+      "name": "React Native + Expo",
+      "requires": [
+        "react-native",
+        "expo"
+      ],
+      "skill_ids": [
+        "expo/skills/expo-native-ui",
+        "sleekdotdesign/agent-skills/design-mobile-apps"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-react-three-fiber",
+      "name": "React + React Three Fiber",
+      "requires": [
+        "threejs",
+        "react",
+        "@react-three/fiber"
+      ],
+      "skill_ids": [
+        "vercel-labs/json-render/react-three-fiber"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-router-clerk",
+      "name": "React Router + Clerk",
+      "requires": [
+        "react-router",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-react-router-patterns",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-shadcn",
+      "name": "React + shadcn/ui",
+      "requires": [
+        "react",
+        "shadcn"
+      ],
+      "skill_ids": [
+        "shadcn/ui/shadcn",
+        "vercel-labs/agent-skills/react-best-practices"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "react-tanstack-query",
+      "name": "React + TanStack Query",
+      "requires": [
+        "react",
+        "tanstack-query"
+      ],
+      "skill_ids": [
+        "Mindrally/skills/tanstack-query"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "react-zustand",
+      "name": "React + Zustand",
+      "requires": [
+        "react",
+        "zustand"
+      ],
+      "skill_ids": [
+        "Mindrally/skills/zustand-state-management"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md",
+      "curated_primary_only": true,
+      "source_patch": "specification/04-catalog/10b-framework-stack-catalog-patch.json"
+    },
+    {
+      "id": "swiftui-clerk",
+      "name": "SwiftUI + Clerk",
+      "requires": [
+        "swiftui",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-swift",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "tailwind-shadcn",
+      "name": "Tailwind CSS + shadcn/ui",
+      "requires": [
+        "tailwind",
+        "shadcn"
+      ],
+      "skill_ids": [
+        "secondsky/claude-skills/tailwind-v4-shadcn"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "tanstack-clerk",
+      "name": "TanStack Start + Clerk",
+      "requires": [
+        "tanstack-start",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-tanstack-patterns",
+        "clerk/skills/clerk-setup",
+        "clerk/skills/clerk"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "terraform-azure",
+      "name": "Terraform + Azure",
+      "requires": [
+        "terraform",
+        "azure"
+      ],
+      "skill_ids": [
+        "github/awesome-copilot/terraform-azurerm-set-diff-analyzer"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "vue-clerk",
+      "name": "Vue + Clerk",
+      "requires": [
+        "vue",
+        "clerk"
+      ],
+      "skill_ids": [
+        "clerk/skills/clerk-vue-patterns"
+      ],
+      "source_document": "specification/04-catalog/10-technology-combinations.md"
+    }
+  ],
+  "frontend_essentials": {
+    "skill_ids": [
+      "anthropics/skills/frontend-design",
+      "addyosmani/web-quality-skills/accessibility",
+      "addyosmani/web-quality-skills/seo"
+    ],
+    "disable_cli_flag": "--no-frontend-bonus",
+    "recognized_npm_dependencies": [
+      "react-dom",
+      "vue",
+      "svelte",
+      "astro",
+      "next",
+      "@angular/core",
+      "solid-js",
+      "lit",
+      "preact",
+      "nuxt",
+      "@sveltejs/kit"
+    ],
+    "recognized_files": [
+      "index.html"
+    ],
+    "recognized_source_extensions": "documented but not enumerated in the source specification",
+    "excluded_directories": [
+      "docs",
+      "tests",
+      "fixtures",
+      "examples"
+    ],
+    "not_qualifying_alone": [
+      "ink",
+      "react-native"
+    ],
+    "source_document": "specification/04-catalog/11-frontend-essentials-and-agent-detection.md"
+  },
+  "mcp_scan_context": {
+    "project_local_config_files": [
+      ".mcp.json",
+      ".cursor/mcp.json",
+      ".vscode/mcp.json",
+      ".codex/config.toml"
+    ],
+    "supported_runners": [
+      "npx",
+      "npm exec",
+      "pnpm dlx",
+      "yarn dlx",
+      "bunx",
+      "uvx",
+      "uv tool run"
+    ],
+    "documented_recognitions": [
+      "Context7",
+      "Playwright",
+      "Chrome DevTools",
+      "OpenAI Docs"
+    ],
+    "disabled_servers_do_not_trigger_skills": true,
+    "source_document": "specification/04-catalog/08-catalog-and-detection.md"
+  }
+}

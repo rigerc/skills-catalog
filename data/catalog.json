@@ -1,0 +1,4598 @@
+{
+  "schema_version": 1,
+  "catalog_id": "nosey-built-in",
+  "snapshot_date": "2026-10-28",
+  "source": "Nosey modular product specification; October 27 snapshot plus October 28 curated stack patch; October 28 user-supplied technology skill mappings",
+  "remote_availability": "not_checked",
+  "notes": [
+    "These entries are recommendations specified by the documentation; this JSON does not verify remote existence, installation compatibility, security or licensing.",
+    "skill_md_url is null where the documentation does not provide an exact SKILL.md path; do not treat a GitHub repository name as proof that a specific skill exists.",
+    "Source repository names and letter case are preserved as documented. The affaan-m/everything-claude-code to affaan-m/ECC repository alias is recorded in mappings.json, not silently rewritten.",
+    "October 28 stakeholder decision requires each built-in skill to have an explicit validated source URL before release. Current missing URLs are a release-blocking completion task; do not fabricate them.",
+    "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion."
+  ],
+  "counts": {
+    "distinct_skills": 346,
+    "technologies_with_skills": 178,
+    "technologies_detect_only": 68,
+    "technology_combinations": 34,
+    "frontend_essential_skills": 3
+  },
+  "skills": [
+    {
+      "id": "addyosmani/web-quality-skills/accessibility",
+      "repository": "addyosmani/web-quality-skills",
+      "skill_name": "accessibility",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": true
+      }
+    },
+    {
+      "id": "addyosmani/web-quality-skills/seo",
+      "repository": "addyosmani/web-quality-skills",
+      "skill_name": "seo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": true
+      }
+    },
+    {
+      "id": "affaan-m/ECC/django-celery",
+      "repository": "affaan-m/ECC",
+      "skill_name": "django-celery",
+      "skill_md_url": "https://github.com/affaan-m/ECC/blob/main/skills/django-celery/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "django-celery"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "MIT",
+        "size_reported": "13.1 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "affaan-m/ECC/fastapi-patterns",
+      "repository": "affaan-m/ECC",
+      "skill_name": "fastapi-patterns",
+      "skill_md_url": "https://github.com/affaan-m/ECC/blob/main/skills/fastapi-patterns/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "fastapi-sqlalchemy"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "MIT",
+        "size_reported": "15.6 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "affaan-m/ECC/prisma-patterns",
+      "repository": "affaan-m/ECC",
+      "skill_name": "prisma-patterns",
+      "skill_md_url": "https://github.com/affaan-m/ECC/blob/main/skills/prisma-patterns/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "nextjs-prisma"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "MIT",
+        "size_reported": "15.2 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "affaan-m/everything-claude-code/django-patterns",
+      "repository": "affaan-m/everything-claude-code",
+      "skill_name": "django-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "django"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "affaan-m/everything-claude-code/django-security",
+      "repository": "affaan-m/everything-claude-code",
+      "skill_name": "django-security",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "django"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "affaan-m/everything-claude-code/java-coding-standards",
+      "repository": "affaan-m/everything-claude-code",
+      "skill_name": "java-coding-standards",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "affaan-m/everything-claude-code/laravel-patterns",
+      "repository": "affaan-m/everything-claude-code",
+      "skill_name": "laravel-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "laravel"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "affaan-m/everything-claude-code/python-patterns",
+      "repository": "affaan-m/everything-claude-code",
+      "skill_name": "python-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "requests"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "aj-geddes/useful-ai-prompts/flask-api-development",
+      "repository": "aj-geddes/useful-ai-prompts",
+      "skill_name": "flask-api-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "flask"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "aj-geddes/useful-ai-prompts/nodejs-express-server",
+      "repository": "aj-geddes/useful-ai-prompts",
+      "skill_name": "nodejs-express-server",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "node-express"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "akin-ozer/cc-devops-skills/gitlab-ci-generator",
+      "repository": "akin-ozer/cc-devops-skills",
+      "skill_name": "gitlab-ci-generator",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gitlab-ci"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "akin-ozer/cc-devops-skills/makefile-generator",
+      "repository": "akin-ozer/cc-devops-skills",
+      "skill_name": "makefile-generator",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "make"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/angular/adev-writing-guide",
+      "repository": "angular/angular",
+      "skill_name": "adev-writing-guide",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/angular/pr_review",
+      "repository": "angular/angular",
+      "skill_name": "pr_review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/angular/reference-compiler-cli",
+      "repository": "angular/angular",
+      "skill_name": "reference-compiler-cli",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/angular/reference-core",
+      "repository": "angular/angular",
+      "skill_name": "reference-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/angular/reference-signal-forms",
+      "repository": "angular/angular",
+      "skill_name": "reference-signal-forms",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "angular/skills/angular-developer",
+      "repository": "angular/skills",
+      "skill_name": "angular-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "angular"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "antfu/skills/nuxt",
+      "repository": "antfu/skills",
+      "skill_name": "nuxt",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "nuxt"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "antfu/skills/unocss",
+      "repository": "antfu/skills",
+      "skill_name": "unocss",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "unocss"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "antfu/skills/vite",
+      "repository": "antfu/skills",
+      "skill_name": "vite",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vite"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "antfu/skills/vitest",
+      "repository": "antfu/skills",
+      "skill_name": "vitest",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vitest"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "antfu/skills/vue",
+      "repository": "antfu/skills",
+      "skill_name": "vue",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vue"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "anthropics/skills/claude-api",
+      "repository": "anthropics/skills",
+      "skill_name": "claude-api",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "anthropic-sdk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "anthropics/skills/frontend-design",
+      "repository": "anthropics/skills",
+      "skill_name": "frontend-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": true
+      }
+    },
+    {
+      "id": "anthropics/skills/webapp-testing",
+      "repository": "anthropics/skills",
+      "skill_name": "webapp-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-playwright"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "apollographql/skills/graphql-operations",
+      "repository": "apollographql/skills",
+      "skill_name": "graphql-operations",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "graphql"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "apollographql/skills/rust-best-practices",
+      "repository": "apollographql/skills",
+      "skill_name": "rust-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rust"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "astrolicious/agent-skills/astro",
+      "repository": "astrolicious/agent-skills",
+      "skill_name": "astro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "astro"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "av/skills/preact-buildless-frontend",
+      "repository": "av/skills",
+      "skill_name": "preact-buildless-frontend",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "preact"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "avdlee/core-data-agent-skill/core-data-expert",
+      "repository": "avdlee/core-data-agent-skill",
+      "skill_name": "core-data-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swiftui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "avdlee/swift-concurrency-agent-skill/swift-concurrency",
+      "repository": "avdlee/swift-concurrency-agent-skill",
+      "skill_name": "swift-concurrency",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swift",
+          "swiftui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "avdlee/swift-testing-agent-skill/swift-testing-expert",
+      "repository": "avdlee/swift-testing-agent-skill",
+      "skill_name": "swift-testing-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swiftui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "avdlee/swiftui-agent-skill/swiftui-expert-skill",
+      "repository": "avdlee/swiftui-agent-skill",
+      "skill_name": "swiftui-expert-skill",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swiftui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "avdlee/xcode-build-optimization-agent-skill/xcode-build-orchestrator",
+      "repository": "avdlee/xcode-build-optimization-agent-skill",
+      "skill_name": "xcode-build-orchestrator",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swiftui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "backnotprop/plannotator/review-renovate",
+      "repository": "backnotprop/plannotator",
+      "skill_name": "review-renovate",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "renovate"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "better-auth/skills/best-practices",
+      "repository": "better-auth/skills",
+      "skill_name": "best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "better-auth"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "better-auth/skills/emailAndPassword",
+      "repository": "better-auth/skills",
+      "skill_name": "emailAndPassword",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "better-auth"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "better-auth/skills/organization",
+      "repository": "better-auth/skills",
+      "skill_name": "organization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "better-auth"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "better-auth/skills/twoFactor",
+      "repository": "better-auth/skills",
+      "skill_name": "twoFactor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "better-auth"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/docker",
+      "repository": "bobmatnyc/claude-mpm-skills",
+      "skill_name": "docker",
+      "skill_md_url": "https://github.com/bobmatnyc/claude-mpm-skills/blob/main/toolchains/universal/infrastructure/docker/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "docker-node",
+          "docker-python"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "MIT",
+        "size_reported": "29.6 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/drizzle",
+      "repository": "bobmatnyc/claude-mpm-skills",
+      "skill_name": "drizzle",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "drizzle"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/pydantic",
+      "repository": "bobmatnyc/claude-mpm-skills",
+      "skill_name": "pydantic",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pydantic"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/sqlalchemy",
+      "repository": "bobmatnyc/claude-mpm-skills",
+      "skill_name": "sqlalchemy",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sqlalchemy"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "ccheney/robust-skills/bazel",
+      "repository": "ccheney/robust-skills",
+      "skill_name": "bazel",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "bazel"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "claude-dev-suite/claude-dev-suite/radix-ui",
+      "repository": "claude-dev-suite/claude-dev-suite",
+      "skill_name": "radix-ui",
+      "skill_md_url": "https://github.com/claude-dev-suite/claude-dev-suite/blob/main/skills/styling/radix-ui/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "radix-ui"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "claude-dev-suite/claude-dev-suite/typescript-eslint",
+      "repository": "claude-dev-suite/claude-dev-suite",
+      "skill_name": "typescript-eslint",
+      "skill_md_url": "https://github.com/claude-dev-suite/claude-dev-suite/blob/main/skills/quality/typescript-eslint/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "eslint"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk",
+      "repository": "clerk/skills",
+      "skill_name": "clerk",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [
+          "android-clerk",
+          "chrome-extension-clerk",
+          "react-router-clerk",
+          "swiftui-clerk",
+          "tanstack-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-android",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-android",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "android-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-astro-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-astro-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "astro-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-backend-api",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-backend-api",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-chrome-extension-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-chrome-extension-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "chrome-extension-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-custom-ui",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-custom-ui",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-expo",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-expo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "expo-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-nextjs-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-nextjs-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "nextjs-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-nuxt-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-nuxt-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "nuxt-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-orgs",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-orgs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-react-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-react-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "react-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-react-router-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-react-router-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "react-router-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-setup",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-setup",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [
+          "android-clerk",
+          "chrome-extension-clerk",
+          "react-router-clerk",
+          "swiftui-clerk",
+          "tanstack-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-swift",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-swift",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "swiftui-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-tanstack-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-tanstack-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "tanstack-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-testing",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-vue-patterns",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-vue-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "vue-clerk"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clerk/skills/clerk-webhooks",
+      "repository": "clerk/skills",
+      "skill_name": "clerk-webhooks",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clerk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cli/cli/dependabot-triager",
+      "repository": "cli/cli",
+      "skill_name": "dependabot-triager",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dependabot"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "clickhouse/agent-skills/clickhouse-architecture-advisor",
+      "repository": "clickhouse/agent-skills",
+      "skill_name": "clickhouse-architecture-advisor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "clickhouse"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-animation",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-animation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-fundamentals",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-fundamentals",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-geometry",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-geometry",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-interaction",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-interaction",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-lighting",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-lighting",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-loaders",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-loaders",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-materials",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-materials",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-postprocessing",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-postprocessing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-react-three-fiber",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-react-three-fiber",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "@react-three/fiber"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-shaders",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-shaders",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-textures",
+      "repository": "cloudai-x/threejs-skills",
+      "skill_name": "threejs-textures",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "threejs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/agents-sdk",
+      "repository": "cloudflare/skills",
+      "skill_name": "agents-sdk",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare-agents",
+          "cloudflare-ai"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/cloudflare",
+      "repository": "cloudflare/skills",
+      "skill_name": "cloudflare",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/durable-objects",
+      "repository": "cloudflare/skills",
+      "skill_name": "durable-objects",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare-durable-objects"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/sandbox-stable",
+      "repository": "cloudflare/skills",
+      "skill_name": "sandbox-stable",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare-agents"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/web-perf",
+      "repository": "cloudflare/skills",
+      "skill_name": "web-perf",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/workers-best-practices",
+      "repository": "cloudflare/skills",
+      "skill_name": "workers-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/skills/wrangler",
+      "repository": "cloudflare/skills",
+      "skill_name": "wrangler",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cloudflare/vinext/migrate-to-vinext",
+      "repository": "cloudflare/vinext",
+      "skill_name": "migrate-to-vinext",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "cloudflare-vite"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "confident-ai/deepeval/deepeval-otel",
+      "repository": "confident-ai/deepeval",
+      "skill_name": "deepeval-otel",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "opentelemetry"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "convex/agent-skills/convex",
+      "repository": "convex/agent-skills",
+      "skill_name": "convex",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "convex"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "currents-dev/playwright-best-practices-skill/playwright-best-practices",
+      "repository": "currents-dev/playwright-best-practices-skill",
+      "skill_name": "playwright-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "playwright"
+        ],
+        "combination_ids": [
+          "nextjs-playwright"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "davila7/claude-code-templates/drizzle-orm-expert",
+      "repository": "davila7/claude-code-templates",
+      "skill_name": "drizzle-orm-expert",
+      "skill_md_url": "https://github.com/davila7/claude-code-templates/blob/main/cli-tool/components/skills/web-development/drizzle-orm-expert/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "nextjs-drizzle"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "MIT",
+        "size_reported": "10.4 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "davila7/claude-code-templates/react-state-management",
+      "repository": "davila7/claude-code-templates",
+      "skill_name": "react-state-management",
+      "skill_md_url": "https://github.com/davila7/claude-code-templates/blob/main/cli-tool/components/skills/web-development/react-state-management/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "redux"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "davila7/claude-code-templates/scikit-learn",
+      "repository": "davila7/claude-code-templates",
+      "skill_name": "scikit-learn",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "scikit-learn"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "davila7/claude-code-templates/senior-data-scientist",
+      "repository": "davila7/claude-code-templates",
+      "skill_name": "senior-data-scientist",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "scikit-learn"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "deckardger/tanstack-agent-skills/tanstack-query",
+      "repository": "deckardger/tanstack-agent-skills",
+      "skill_name": "tanstack-query",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "tanstack-query"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "delexw/claude-code-misc/oxlint",
+      "repository": "delexw/claude-code-misc",
+      "skill_name": "oxlint",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "oxlint"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "denoland/skills/deno",
+      "repository": "denoland/skills",
+      "skill_name": "deno",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "deno"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "devon-systems/hoenn/nix",
+      "repository": "devon-systems/hoenn",
+      "skill_name": "nix",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "nix"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
+      "repository": "DmitryPogrebnoy/ruby-agent-skills",
+      "skill_name": "generating-sorbet",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sorbet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline",
+      "repository": "DmitryPogrebnoy/ruby-agent-skills",
+      "skill_name": "generating-sorbet-inline",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sorbet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "docker/skills/docker-project-foundations",
+      "repository": "docker/skills",
+      "skill_name": "docker-project-foundations",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "docker"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "ejirocodes/agent-skills/svelte5-best-practices",
+      "repository": "ejirocodes/agent-skills",
+      "skill_name": "svelte5-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "svelte"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "elysiajs/skills/elysia",
+      "repository": "elysiajs/skills",
+      "skill_name": "elysia",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "elysia"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/eas-app-stores",
+      "repository": "expo/skills",
+      "skill_name": "eas-app-stores",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/eas-hosting",
+      "repository": "expo/skills",
+      "skill_name": "eas-hosting",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/eas-workflows",
+      "repository": "expo/skills",
+      "skill_name": "eas-workflows",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/expo-data-fetching",
+      "repository": "expo/skills",
+      "skill_name": "expo-data-fetching",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/expo-dev-client",
+      "repository": "expo/skills",
+      "skill_name": "expo-dev-client",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/expo-dom",
+      "repository": "expo/skills",
+      "skill_name": "expo-dom",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/expo-native-ui",
+      "repository": "expo/skills",
+      "skill_name": "expo-native-ui",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [
+          "react-native-expo"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "expo/skills/expo-upgrade",
+      "repository": "expo/skills",
+      "skill_name": "expo-upgrade",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "expo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "fastapi/fastapi/fastapi",
+      "repository": "fastapi/fastapi",
+      "skill_name": "fastapi",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "fastapi"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "firebase/agent-skills/firebase-auth-basics",
+      "repository": "firebase/agent-skills",
+      "skill_name": "firebase-auth-basics",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "firebase"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "firecrawl/cli/firecrawl",
+      "repository": "firecrawl/cli",
+      "skill_name": "firecrawl",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "firecrawl"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/elixir",
+      "repository": "georgeguimaraes/elixir-agent-tools",
+      "skill_name": "elixir",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "elixir"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/phoenix",
+      "repository": "georgeguimaraes/elixir-agent-tools",
+      "skill_name": "phoenix",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "phoenix"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aspnet-minimal-api-openapi",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aspnet-minimal-api-openapi",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aspnet-minimal-api"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aws-cloudwatch-investigation",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aws-cloudwatch-investigation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aws"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aws-cost-optimize",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aws-cost-optimize",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aws"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aws-resource-health-diagnose",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aws-resource-health-diagnose",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aws"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aws-resource-query",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aws-resource-query",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aws"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/aws-well-architected-review",
+      "repository": "github/awesome-copilot",
+      "skill_name": "aws-well-architected-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aws"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/az-cost-optimize",
+      "repository": "github/awesome-copilot",
+      "skill_name": "az-cost-optimize",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-architecture-autopilot",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-architecture-autopilot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-deployment-preflight",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-deployment-preflight",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-developer-cli",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-developer-cli",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-pricing",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-pricing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-resource-health-diagnose",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-resource-health-diagnose",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-resource-visualizer",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-resource-visualizer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/azure-well-architected-review",
+      "repository": "github/awesome-copilot",
+      "skill_name": "azure-well-architected-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/batch-files",
+      "repository": "github/awesome-copilot",
+      "skill_name": "batch-files",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "batch"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/containerize-aspnetcore",
+      "repository": "github/awesome-copilot",
+      "skill_name": "containerize-aspnetcore",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aspnetcore"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/create-github-action-workflow-specification",
+      "repository": "github/awesome-copilot",
+      "skill_name": "create-github-action-workflow-specification",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "github-actions"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-async",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-async",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-docs",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-docs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-mstest",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-mstest",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-nunit",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-nunit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-tunit",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-tunit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/csharp-xunit",
+      "repository": "github/awesome-copilot",
+      "skill_name": "csharp-xunit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "csharp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/cypress-flake-fixer",
+      "repository": "github/awesome-copilot",
+      "skill_name": "cypress-flake-fixer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cypress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/dependabot",
+      "repository": "github/awesome-copilot",
+      "skill_name": "dependabot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dependabot"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-best-practices",
+      "repository": "github/awesome-copilot",
+      "skill_name": "dotnet-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dotnet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-design-pattern-review",
+      "repository": "github/awesome-copilot",
+      "skill_name": "dotnet-design-pattern-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dotnet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-timezone",
+      "repository": "github/awesome-copilot",
+      "skill_name": "dotnet-timezone",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dotnet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-upgrade",
+      "repository": "github/awesome-copilot",
+      "skill_name": "dotnet-upgrade",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dotnet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/fluentui-blazor",
+      "repository": "github/awesome-copilot",
+      "skill_name": "fluentui-blazor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aspnet-blazor"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-efficiency",
+      "repository": "github/awesome-copilot",
+      "skill_name": "github-actions-efficiency",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "github-actions"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-hardening",
+      "repository": "github/awesome-copilot",
+      "skill_name": "github-actions-hardening",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "github-actions"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-runtime-upgrade-conventions",
+      "repository": "github/awesome-copilot",
+      "skill_name": "github-actions-runtime-upgrade-conventions",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "github-actions"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-debugging",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-debugging",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-development",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-diagnostics",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-diagnostics",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-docs",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-docs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-junit",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-junit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-springboot",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-springboot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "springboot"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-testcontainers",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-testcontainers",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/java-upgrade",
+      "repository": "github/awesome-copilot",
+      "skill_name": "java-upgrade",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "java"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/javascript-typescript-jest",
+      "repository": "github/awesome-copilot",
+      "skill_name": "javascript-typescript-jest",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "jest"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/mcp-implementation-security-review",
+      "repository": "github/awesome-copilot",
+      "skill_name": "mcp-implementation-security-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-sdk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/mcp-release-qa",
+      "repository": "github/awesome-copilot",
+      "skill_name": "mcp-release-qa",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-sdk"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/multi-stage-dockerfile",
+      "repository": "github/awesome-copilot",
+      "skill_name": "multi-stage-dockerfile",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "docker"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/nuget-manager",
+      "repository": "github/awesome-copilot",
+      "skill_name": "nuget-manager",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dotnet"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/playwright-automation-fill-in-form",
+      "repository": "github/awesome-copilot",
+      "skill_name": "playwright-automation-fill-in-form",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-playwright"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/playwright-explore-website",
+      "repository": "github/awesome-copilot",
+      "skill_name": "playwright-explore-website",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-playwright"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/playwright-generate-test",
+      "repository": "github/awesome-copilot",
+      "skill_name": "playwright-generate-test",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mcp-playwright"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/postgresql-code-review",
+      "repository": "github/awesome-copilot",
+      "skill_name": "postgresql-code-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "postgres"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/postgresql-optimization",
+      "repository": "github/awesome-copilot",
+      "skill_name": "postgresql-optimization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "postgres"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/pytest-coverage",
+      "repository": "github/awesome-copilot",
+      "skill_name": "pytest-coverage",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pytest"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/python-pypi-package-builder",
+      "repository": "github/awesome-copilot",
+      "skill_name": "python-pypi-package-builder",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-clients-sdk",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-clients-sdk",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-deployment-options",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-deployment-options",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-model-migration",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-model-migration",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-monitoring",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-monitoring",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-performance-optimization",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-performance-optimization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-scaling",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-scaling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-search-quality",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-search-quality",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-version-upgrade",
+      "repository": "github/awesome-copilot",
+      "skill_name": "qdrant-version-upgrade",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "qdrant"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/ruff-recursive-fix",
+      "repository": "github/awesome-copilot",
+      "skill_name": "ruff-recursive-fix",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "ruff"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "github/awesome-copilot/terraform-azurerm-set-diff-analyzer",
+      "repository": "github/awesome-copilot",
+      "skill_name": "terraform-azurerm-set-diff-analyzer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "terraform-azure"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns",
+      "repository": "giuseppe-trisciuoglio/developer-kit",
+      "skill_name": "tailwind-css-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "tailwind"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "google-gemini/gemini-skills/gemini-api-dev",
+      "repository": "google-gemini/gemini-skills",
+      "skill_name": "gemini-api-dev",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "google-genai"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-core",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-frameworks",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-frameworks",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-performance",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-performance",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-plugins",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-plugins",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-react",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-react",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "gsap-react"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-scrolltrigger",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-scrolltrigger",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-timeline",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-timeline",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-utils",
+      "repository": "greensock/gsap-skills",
+      "skill_name": "gsap-utils",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "gsap"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "hashicorp/agent-skills/refactor-module",
+      "repository": "hashicorp/agent-skills",
+      "skill_name": "refactor-module",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "terraform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-stacks",
+      "repository": "hashicorp/agent-skills",
+      "skill_name": "terraform-stacks",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "terraform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-style-guide",
+      "repository": "hashicorp/agent-skills",
+      "skill_name": "terraform-style-guide",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "terraform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "honojs/skills/hono",
+      "repository": "honojs/skills",
+      "skill_name": "hono",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "hono"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "hoodini/ai-agents-skills/mongodb",
+      "repository": "hoodini/ai-agents-skills",
+      "skill_name": "mongodb",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mongodb"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "hyf0/vue-skills/vue-debug-guides",
+      "repository": "hyf0/vue-skills",
+      "skill_name": "vue-debug-guides",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vue"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/apply-stack-conventions",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "apply-stack-conventions",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/implement-background-job",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "implement-background-job",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sidekiq"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/plan-tests",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "plan-tests",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "rails-rspec"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/review-migration",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "review-migration",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/security-check",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "security-check",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/rails-agent-skills/test-service",
+      "repository": "igmarin/rails-agent-skills",
+      "skill_name": "test-service",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rspec"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "igmarin/ruby-core-skills/triage-bug",
+      "repository": "igmarin/ruby-core-skills",
+      "skill_name": "triage-bug",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "rails-rspec"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "inferen-sh/skills/elevenlabs-music",
+      "repository": "inferen-sh/skills",
+      "skill_name": "elevenlabs-music",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "elevenlabs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "inferen-sh/skills/elevenlabs-tts",
+      "repository": "inferen-sh/skills",
+      "skill_name": "elevenlabs-tts",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "elevenlabs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "inferen-sh/skills/python-executor",
+      "repository": "inferen-sh/skills",
+      "skill_name": "python-executor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "instantdb/skills/instantdb",
+      "repository": "instantdb/skills",
+      "skill_name": "instantdb",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "instantdb"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeffallan/claude-skills/cpp-pro",
+      "repository": "jeffallan/claude-skills",
+      "skill_name": "cpp-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cpp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeffallan/claude-skills/flutter-expert",
+      "repository": "jeffallan/claude-skills",
+      "skill_name": "flutter-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "flutter"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeffallan/claude-skills/laravel-specialist",
+      "repository": "jeffallan/claude-skills",
+      "skill_name": "laravel-specialist",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "laravel"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeffallan/claude-skills/pandas-pro",
+      "repository": "jeffallan/claude-skills",
+      "skill_name": "pandas-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pandas"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeffallan/claude-skills/php-pro",
+      "repository": "jeffallan/claude-skills",
+      "skill_name": "php-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "php"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeremylongshore/tons-of-skills-marketplace/generating-grpc-services",
+      "repository": "jeremylongshore/tons-of-skills-marketplace",
+      "skill_name": "generating-grpc-services",
+      "skill_md_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/main/plugins/api-development/grpc-service-generator/skills/generating-grpc-services/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "grpc"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "jeremylongshore/tons-of-skills-marketplace/sentry-performance-tracing",
+      "repository": "jeremylongshore/tons-of-skills-marketplace",
+      "skill_name": "sentry-performance-tracing",
+      "skill_md_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/main/plugins/saas-packs/sentry-pack/skills/sentry-performance-tracing/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "sentry"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "K-Dense-AI/scientific-agent-skills/transformers",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "skill_name": "transformers",
+      "skill_md_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/transformers/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "hugging-face"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Kaakati/rails-enterprise-dev/sidekiq-async-patterns",
+      "repository": "Kaakati/rails-enterprise-dev",
+      "skill_name": "sidekiq-async-patterns",
+      "skill_md_url": "https://github.com/Kaakati/rails-enterprise-dev/blob/main/plugins/rails-enterprise-dev/skills/sidekiq-async-patterns/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "rails-sidekiq"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "No license declared",
+        "size_reported": "26.0 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "kadajett/agent-nestjs-skills/nestjs-best-practices",
+      "repository": "kadajett/agent-nestjs-skills",
+      "skill_name": "nestjs-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "nestjs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kevmoo/dash_skills/dart-best-practices",
+      "repository": "kevmoo/dash_skills",
+      "skill_name": "dart-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "dart"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-agp9-migration",
+      "repository": "Kotlin/kotlin-agent-skills",
+      "skill_name": "kotlin-tooling-agp9-migration",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "kotlin-multiplatform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-cocoapods-spm-migration",
+      "repository": "Kotlin/kotlin-agent-skills",
+      "skill_name": "kotlin-tooling-cocoapods-spm-migration",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "kotlin-multiplatform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin",
+      "repository": "kotlin/kotlin-agent-skills",
+      "skill_name": "kotlin-tooling-java-to-kotlin",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "kotlin"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-architecture-clean",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-architecture-clean",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-compose-foundations",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-compose-foundations",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-coroutines-flow",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-coroutines-flow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-di-hilt",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-di-hilt",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-gradle-build-logic",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-gradle-build-logic",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-kotlin-core",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-kotlin-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-networking-retrofit-okhttp",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-networking-retrofit-okhttp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "krutikJain/android-agent-skills/android-testing-unit",
+      "repository": "krutikJain/android-agent-skills",
+      "skill_name": "android-testing-unit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "android"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "langchain-ai/deepagents/langgraph-docs",
+      "repository": "langchain-ai/deepagents",
+      "skill_name": "langgraph-docs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "langgraph"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "langchain-ai/langchain-skills/langchain-rag",
+      "repository": "langchain-ai/langchain-skills",
+      "skill_name": "langchain-rag",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "langchain"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "langfuse/skills/langfuse",
+      "repository": "langfuse/skills",
+      "skill_name": "langfuse",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "langfuse"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "laude-institute/headlong/obsidian",
+      "repository": "laude-institute/headlong",
+      "skill_name": "obsidian",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "obsidian"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "lucianghinda/superpowers-ruby/rails-guides",
+      "repository": "lucianghinda/superpowers-ruby",
+      "skill_name": "rails-guides",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "lucianghinda/superpowers-ruby/ruby",
+      "repository": "lucianghinda/superpowers-ruby",
+      "skill_name": "ruby",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "ruby"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "lucianghinda/superpowers-ruby/test-driven-development",
+      "repository": "lucianghinda/superpowers-ruby",
+      "skill_name": "test-driven-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rspec"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "madteacher/mad-agents-skills/flutter-animations",
+      "repository": "madteacher/mad-agents-skills",
+      "skill_name": "flutter-animations",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "flutter"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "madteacher/mad-agents-skills/flutter-testing",
+      "repository": "madteacher/mad-agents-skills",
+      "skill_name": "flutter-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "flutter"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mastra-ai/skills/mastra",
+      "repository": "mastra-ai/skills",
+      "skill_name": "mastra",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mastra"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/setup-pre-commit",
+      "repository": "mattpocock/skills",
+      "skill_name": "setup-pre-commit",
+      "skill_md_url": "https://github.com/mattpocock/skills/blob/main/skills/misc/setup-pre-commit/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "husky",
+          "lint-staged"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mcollina/skills/fastify",
+      "repository": "mcollina/skills",
+      "skill_name": "fastify",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "fastify"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-ai",
+      "repository": "microsoft/github-copilot-for-azure",
+      "skill_name": "azure-ai",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-deploy",
+      "repository": "microsoft/github-copilot-for-azure",
+      "skill_name": "azure-deploy",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-diagnostics",
+      "repository": "microsoft/github-copilot-for-azure",
+      "skill_name": "azure-diagnostics",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "azure"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "midudev/autoskills/bun",
+      "repository": "midudev/autoskills",
+      "skill_name": "bun",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "bun"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mindrally/skills/chrome-extension-development",
+      "repository": "mindrally/skills",
+      "skill_name": "chrome-extension-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "chrome-extension"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/esbuild-bundler",
+      "repository": "Mindrally/skills",
+      "skill_name": "esbuild-bundler",
+      "skill_md_url": "https://github.com/mindrally/skills/blob/main/esbuild-bundler/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "esbuild"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mindrally/skills/fastapi-python",
+      "repository": "mindrally/skills",
+      "skill_name": "fastapi-python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "fastapi"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rollup-bundler",
+      "repository": "Mindrally/skills",
+      "skill_name": "rollup-bundler",
+      "skill_md_url": "https://github.com/mindrally/skills/blob/main/rollup-bundler/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "rollup"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tanstack-query",
+      "repository": "Mindrally/skills",
+      "skill_name": "tanstack-query",
+      "skill_md_url": "https://github.com/Mindrally/skills/blob/main/tanstack-query/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "react-tanstack-query"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "Apache-2.0",
+        "size_reported": "14.5 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/trpc",
+      "repository": "Mindrally/skills",
+      "skill_name": "trpc",
+      "skill_md_url": "https://github.com/Mindrally/skills/blob/main/trpc/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "nextjs-trpc"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "Apache-2.0",
+        "size_reported": "6.1 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/webpack-bundler",
+      "repository": "Mindrally/skills",
+      "skill_name": "webpack-bundler",
+      "skill_md_url": "https://github.com/mindrally/skills/blob/main/webpack-bundler/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "webpack"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/zustand-state-management",
+      "repository": "Mindrally/skills",
+      "skill_name": "zustand-state-management",
+      "skill_md_url": "https://github.com/mindrally/skills/blob/main/zustand-state-management/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "zustand"
+        ],
+        "combination_ids": [
+          "react-zustand"
+        ],
+        "frontend_essential": false
+      },
+      "source_research": {
+        "license_reported": "Apache-2.0",
+        "size_reported": "7.3 KB",
+        "reviewed_for_security": false
+      }
+    },
+    {
+      "id": "neondatabase/agent-skills/neon-postgres",
+      "repository": "neondatabase/agent-skills",
+      "skill_name": "neon-postgres",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "neon"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "nodnarbnitram/claude-code-extensions/tauri-v2",
+      "repository": "nodnarbnitram/claude-code-extensions",
+      "skill_name": "tauri-v2",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "tauri"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade",
+      "repository": "ombulabs/claude-code_rails-upgrade-skill",
+      "skill_name": "rails-upgrade",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "openai/skills/aspnet-core",
+      "repository": "openai/skills",
+      "skill_name": "aspnet-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "aspnetcore"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "openai/skills/cloudflare-deploy",
+      "repository": "openai/skills",
+      "skill_name": "cloudflare-deploy",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cloudflare"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "paulrberg/agent-skills/cli-just",
+      "repository": "paulrberg/agent-skills",
+      "skill_name": "cli-just",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "just"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pingdotgg/t3code/changesets",
+      "repository": "pingdotgg/t3code",
+      "skill_name": "changesets",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "changesets"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "planetscale/database-skills/mysql",
+      "repository": "planetscale/database-skills",
+      "skill_name": "mysql",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "mysql"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api",
+      "repository": "pluginagentmarketplace/custom-plugin-nodejs",
+      "skill_name": "express-rest-api",
+      "skill_md_url": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs/blob/main/skills/express-rest-api/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "express"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pluginagentmarketplace/custom-plugin-python/machine-learning",
+      "repository": "pluginagentmarketplace/custom-plugin-python",
+      "skill_name": "machine-learning",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "numpy"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pluginagentmarketplace/custom-plugin-python/pandas-data-analysis",
+      "repository": "pluginagentmarketplace/custom-plugin-python",
+      "skill_name": "pandas-data-analysis",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "numpy",
+          "pandas"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pproenca/dot-skills/react-hook-form",
+      "repository": "pproenca/dot-skills",
+      "skill_name": "react-hook-form",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "react-hook-form"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pproenca/dot-skills/zod",
+      "repository": "pproenca/dot-skills",
+      "skill_name": "zod",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "zod"
+        ],
+        "combination_ids": [
+          "react-hook-form-zod"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pramoddutta/qaskills/storybook-testing",
+      "repository": "pramoddutta/qaskills",
+      "skill_name": "storybook-testing",
+      "skill_md_url": "https://github.com/pramoddutta/qaskills/blob/main/seed-skills/storybook-testing/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "storybook"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prisma/skills/prisma-cli",
+      "repository": "prisma/skills",
+      "skill_name": "prisma-cli",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "prisma"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prisma/skills/prisma-client-api",
+      "repository": "prisma/skills",
+      "skill_name": "prisma-client-api",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "prisma"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prisma/skills/prisma-database-setup",
+      "repository": "prisma/skills",
+      "skill_name": "prisma-database-setup",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "prisma"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prisma/skills/prisma-postgres",
+      "repository": "prisma/skills",
+      "skill_name": "prisma-postgres",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "prisma"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pulumi/agent-skills/pulumi-component",
+      "repository": "pulumi/agent-skills",
+      "skill_name": "pulumi-component",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pulumi"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "pymodel/react-frontend-skills/msw",
+      "repository": "pymodel/react-frontend-skills",
+      "skill_name": "msw",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "msw"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "redis/agent-skills/redis-core",
+      "repository": "redis/agent-skills",
+      "skill_name": "redis-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "redis",
+          "redis-ruby"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "remix-run/react-router/react-router",
+      "repository": "remix-run/react-router",
+      "skill_name": "react-router",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "react-router"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "remotion-dev/skills/remotion-best-practices",
+      "repository": "remotion-dev/skills",
+      "skill_name": "remotion-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "remotion"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "rominirani/antigravity-skills/always-verify-gcp",
+      "repository": "rominirani/antigravity-skills",
+      "skill_name": "always-verify-gcp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "google-cloud"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-code-style",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-code-style",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-error-handling",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-error-handling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-google-wire",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-google-wire",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "google-wire"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-graphql",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-graphql",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go-graphql"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-grpc",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-grpc",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go-grpc"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-do",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-do",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-do"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-hot",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-hot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-hot"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-lo",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-lo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-lo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-mo",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-mo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-mo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-oops",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-oops",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-oops"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-ro",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-ro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-ro"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-slog",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-samber-slog",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "samber-slog"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-security",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-security",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-spf13-cobra",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-spf13-cobra",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "cobra"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-spf13-viper",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-spf13-viper",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "viper"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-stretchr-testify",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-stretchr-testify",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "testify"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-swagger",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-swagger",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "swagger"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-testing",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "go"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-uber-dig",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-uber-dig",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "uber-dig"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-uber-fx",
+      "repository": "samber/cc-skills-golang",
+      "skill_name": "golang-uber-fx",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "uber-fx"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "secondsky/claude-skills/tailwind-v4-shadcn",
+      "repository": "secondsky/claude-skills",
+      "skill_name": "tailwind-v4-shadcn",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "tailwind-shadcn"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sergiodxa/agent-skills/ruby-on-rails-best-practices",
+      "repository": "sergiodxa/agent-skills",
+      "skill_name": "ruby-on-rails-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "rails"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "shadcn/ui/shadcn",
+      "repository": "shadcn/ui",
+      "skill_name": "shadcn",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "shadcn"
+        ],
+        "combination_ids": [
+          "react-shadcn"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sharanharsoor/skills/fastmcp",
+      "repository": "sharanharsoor/skills",
+      "skill_name": "fastmcp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "fastmcp"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sickn33/antigravity-awesome-skills/nodejs-best-practices",
+      "repository": "sickn33/antigravity-awesome-skills",
+      "skill_name": "nodejs-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "node"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sleekdotdesign/agent-skills/design-mobile-apps",
+      "repository": "sleekdotdesign/agent-skills",
+      "skill_name": "design-mobile-apps",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "react-native"
+        ],
+        "combination_ids": [
+          "react-native-expo"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "smnandre/symfony-ux-skills/symfony-ux",
+      "repository": "smnandre/symfony-ux-skills",
+      "skill_name": "symfony-ux",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "symfony"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "spences10/svelte-skills-kit/sveltekit-structure",
+      "repository": "spences10/svelte-skills-kit",
+      "skill_name": "sveltekit-structure",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sveltekit"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "stripe/ai/stripe-best-practices",
+      "repository": "stripe/ai",
+      "skill_name": "stripe-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "stripe"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "stripe/ai/upgrade-stripe",
+      "repository": "stripe/ai",
+      "skill_name": "upgrade-stripe",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "stripe"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "supabase/agent-skills/supabase-postgres-best-practices",
+      "repository": "supabase/agent-skills",
+      "skill_name": "supabase-postgres-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "supabase"
+        ],
+        "combination_ids": [
+          "nextjs-supabase"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sveltejs/ai-tools/svelte-code-writer",
+      "repository": "sveltejs/ai-tools",
+      "skill_name": "svelte-code-writer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "svelte"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tanstack-skills/tanstack-skills/tanstack-start",
+      "repository": "tanstack-skills/tanstack-skills",
+      "skill_name": "tanstack-start",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "tanstack-start"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "temporalio/skill-temporal-developer/skill-temporal-developer",
+      "repository": "temporalio/skill-temporal-developer",
+      "skill_name": "skill-temporal-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "temporal"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "TerminalSkills/skills/kubernetes-helm",
+      "repository": "TerminalSkills/skills",
+      "skill_name": "kubernetes-helm",
+      "skill_md_url": "https://github.com/terminalskills/skills/blob/main/skills/kubernetes-helm/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "kubernetes",
+          "helm"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "TerminalSkills/skills/recharts",
+      "repository": "TerminalSkills/skills",
+      "skill_name": "recharts",
+      "skill_md_url": "https://github.com/terminalskills/skills/blob/main/skills/recharts/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "recharts"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "TerminalSkills/skills/tanstack-table",
+      "repository": "TerminalSkills/skills",
+      "skill_name": "tanstack-table",
+      "skill_md_url": "https://github.com/terminalskills/skills/blob/main/skills/tanstack-table/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "tanstack-table"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "thebushidocollective/han/prettier-configuration",
+      "repository": "thebushidocollective/han",
+      "skill_name": "prettier-configuration",
+      "skill_md_url": "https://github.com/thebushidocollective/han/blob/main/plugins/validation/prettier/skills/prettier-configuration/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "prettier"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "triggerdotdev/skills/trigger-setup",
+      "repository": "triggerdotdev/skills",
+      "skill_name": "trigger-setup",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "trigger-dev"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vamseeachanta/workspace-hub/uv-package-manager",
+      "repository": "vamseeachanta/workspace-hub",
+      "skill_name": "uv-package-manager",
+      "skill_md_url": "https://github.com/vamseeachanta/workspace-hub/blob/main/.agents/skills/development/devtools/uv-package-manager/SKILL.md",
+      "recommended_for": {
+        "technology_ids": [
+          "uv"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel-labs/agent-skills/composition-patterns",
+      "repository": "vercel-labs/agent-skills",
+      "skill_name": "composition-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "react"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel-labs/agent-skills/deploy-to-vercel",
+      "repository": "vercel-labs/agent-skills",
+      "skill_name": "deploy-to-vercel",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vercel-deploy"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel-labs/agent-skills/react-best-practices",
+      "repository": "vercel-labs/agent-skills",
+      "skill_name": "react-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "react"
+        ],
+        "combination_ids": [
+          "react-shadcn"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel-labs/json-render/react-three-fiber",
+      "repository": "vercel-labs/json-render",
+      "skill_name": "react-three-fiber",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [
+          "react-react-three-fiber"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel/ai/use-ai-sdk",
+      "repository": "vercel/ai",
+      "skill_name": "use-ai-sdk",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vercel-ai"
+        ],
+        "combination_ids": [
+          "nextjs-vercel-ai"
+        ],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel/next.js/next-cache-components-adoption",
+      "repository": "vercel/next.js",
+      "skill_name": "next-cache-components-adoption",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "nextjs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vercel/turborepo/turborepo",
+      "repository": "vercel/turborepo",
+      "skill_name": "turborepo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "turborepo"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vintasoftware/django-ai-plugins/django-expert",
+      "repository": "vintasoftware/django-ai-plugins",
+      "skill_name": "django-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "django"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vuejs-ai/skills/vue-best-practices",
+      "repository": "vuejs-ai/skills",
+      "skill_name": "vue-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "vue"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "vuejs-ai/skills/vue-pinia-best-practices",
+      "repository": "vuejs-ai/skills",
+      "skill_name": "vue-pinia-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pinia"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "webpro/skills/configure-knip",
+      "repository": "webpro/skills",
+      "skill_name": "configure-knip",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "knip"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review",
+      "repository": "wispbit-ai/skills",
+      "skill_name": "sqlalchemy-alembic-expert-best-practices-code-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sqlalchemy"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wordpress-router",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wordpress-router",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-block-development",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-block-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-block-themes",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-block-themes",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-performance",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-performance",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-plugin-development",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-plugin-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-project-triage",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-project-triage",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-rest-api",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-rest-api",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wordpress/agent-skills/wp-wpcli-and-ops",
+      "repository": "wordpress/agent-skills",
+      "skill_name": "wp-wpcli-and-ops",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "wordpress"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/bash-defensive-patterns",
+      "repository": "wshobson/agents",
+      "skill_name": "bash-defensive-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "bash"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/fastapi-templates",
+      "repository": "wshobson/agents",
+      "skill_name": "fastapi-templates",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "fastapi"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/nodejs-backend-patterns",
+      "repository": "wshobson/agents",
+      "skill_name": "nodejs-backend-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "node"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/python-background-jobs",
+      "repository": "wshobson/agents",
+      "skill_name": "python-background-jobs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "celery"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/python-testing-patterns",
+      "repository": "wshobson/agents",
+      "skill_name": "python-testing-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "pytest",
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/terraform-module-library",
+      "repository": "wshobson/agents",
+      "skill_name": "terraform-module-library",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "terraform"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wshobson/agents/typescript-advanced-types",
+      "repository": "wshobson/agents",
+      "skill_name": "typescript-advanced-types",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "typescript"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "yonesuke/skills/polars",
+      "repository": "yonesuke/skills",
+      "skill_name": "polars",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "polars"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "zxkane/aws-skills/aws-sst-development",
+      "repository": "zxkane/aws-skills",
+      "skill_name": "aws-sst-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "sst"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    }
+  ]
+}
