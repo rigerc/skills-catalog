@@ -12,7 +12,7 @@
     "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion."
   ],
   "counts": {
-    "distinct_skills": 349,
+    "distinct_skills": 746,
     "technologies_with_skills": 177,
     "technologies_detect_only": 69,
     "technology_combinations": 33,
@@ -4627,6 +4627,4373 @@
         "technology_ids": [
           "python"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/ask-matt",
+      "repository": "mattpocock/skills",
+      "skill_name": "ask-matt",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/code-review",
+      "repository": "mattpocock/skills",
+      "skill_name": "code-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/codebase-design",
+      "repository": "mattpocock/skills",
+      "skill_name": "codebase-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/diagnosing-bugs",
+      "repository": "mattpocock/skills",
+      "skill_name": "diagnosing-bugs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/domain-modeling",
+      "repository": "mattpocock/skills",
+      "skill_name": "domain-modeling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/grill-with-docs",
+      "repository": "mattpocock/skills",
+      "skill_name": "grill-with-docs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/implement-spec",
+      "repository": "mattpocock/skills",
+      "skill_name": "implement-spec",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/implement",
+      "repository": "mattpocock/skills",
+      "skill_name": "implement",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/improve-codebase-architecture",
+      "repository": "mattpocock/skills",
+      "skill_name": "improve-codebase-architecture",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/pr",
+      "repository": "mattpocock/skills",
+      "skill_name": "pr",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/prototype",
+      "repository": "mattpocock/skills",
+      "skill_name": "prototype",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/research",
+      "repository": "mattpocock/skills",
+      "skill_name": "research",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/retro",
+      "repository": "mattpocock/skills",
+      "skill_name": "retro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/setup-matt-pocock-skills",
+      "repository": "mattpocock/skills",
+      "skill_name": "setup-matt-pocock-skills",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/tdd",
+      "repository": "mattpocock/skills",
+      "skill_name": "tdd",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/to-spec",
+      "repository": "mattpocock/skills",
+      "skill_name": "to-spec",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/to-tickets",
+      "repository": "mattpocock/skills",
+      "skill_name": "to-tickets",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/triage",
+      "repository": "mattpocock/skills",
+      "skill_name": "triage",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/wayfinder",
+      "repository": "mattpocock/skills",
+      "skill_name": "wayfinder",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/wizard",
+      "repository": "mattpocock/skills",
+      "skill_name": "wizard",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/chief-of-staff",
+      "repository": "mattpocock/skills",
+      "skill_name": "chief-of-staff",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/claude-handoff",
+      "repository": "mattpocock/skills",
+      "skill_name": "claude-handoff",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/loop-me",
+      "repository": "mattpocock/skills",
+      "skill_name": "loop-me",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/setup-ts-deep-modules",
+      "repository": "mattpocock/skills",
+      "skill_name": "setup-ts-deep-modules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/writing-beats",
+      "repository": "mattpocock/skills",
+      "skill_name": "writing-beats",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/writing-fragments",
+      "repository": "mattpocock/skills",
+      "skill_name": "writing-fragments",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/writing-shape",
+      "repository": "mattpocock/skills",
+      "skill_name": "writing-shape",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/git-guardrails-claude-code",
+      "repository": "mattpocock/skills",
+      "skill_name": "git-guardrails-claude-code",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/migrate-to-shoehorn",
+      "repository": "mattpocock/skills",
+      "skill_name": "migrate-to-shoehorn",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/scaffold-exercises",
+      "repository": "mattpocock/skills",
+      "skill_name": "scaffold-exercises",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/grill-me",
+      "repository": "mattpocock/skills",
+      "skill_name": "grill-me",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/grilling",
+      "repository": "mattpocock/skills",
+      "skill_name": "grilling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/handoff",
+      "repository": "mattpocock/skills",
+      "skill_name": "handoff",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/teach",
+      "repository": "mattpocock/skills",
+      "skill_name": "teach",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/to-questionnaire",
+      "repository": "mattpocock/skills",
+      "skill_name": "to-questionnaire",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/wait-what",
+      "repository": "mattpocock/skills",
+      "skill_name": "wait-what",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mattpocock/skills/writing-for-agents",
+      "repository": "mattpocock/skills",
+      "skill_name": "writing-for-agents",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/defuddle",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "defuddle",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/json-canvas",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "json-canvas",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/knap",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "knap",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-bases",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "obsidian-bases",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-cli",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "obsidian-cli",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-markdown",
+      "repository": "kepano/obsidian-skills",
+      "skill_name": "obsidian-markdown",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/angular-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "angular-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/api-designer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "api-designer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/architecture-designer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "architecture-designer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/atlassian-mcp",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "atlassian-mcp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/chaos-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "chaos-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/cli-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "cli-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/cloud-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "cloud-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/code-documenter",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "code-documenter",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/code-reviewer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "code-reviewer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/csharp-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "csharp-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/database-optimizer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "database-optimizer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/debugging-wizard",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "debugging-wizard",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/devops-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "devops-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/django-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "django-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/django-storages-s3",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "django-storages-s3",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/dotnet-core-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "dotnet-core-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/embedded-systems",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "embedded-systems",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/fastapi-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "fastapi-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/feature-forge",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "feature-forge",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/fine-tuning-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "fine-tuning-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/fullstack-guardian",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "fullstack-guardian",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/game-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "game-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/golang-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "golang-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/graphql-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "graphql-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/java-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "java-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/javascript-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "javascript-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/kotlin-specialist",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "kotlin-specialist",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/kubernetes-specialist",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "kubernetes-specialist",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/legacy-modernizer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "legacy-modernizer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/mcp-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "mcp-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/microservices-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "microservices-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/ml-pipeline",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "ml-pipeline",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/monitoring-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "monitoring-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/nestjs-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "nestjs-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/nextjs-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "nextjs-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/playwright-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "playwright-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/postgres-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "postgres-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/prompt-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "prompt-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/python-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "python-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/rag-architect",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "rag-architect",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/rails-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "rails-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/react-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "react-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/react-native-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "react-native-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/rust-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "rust-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/salesforce-developer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "salesforce-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/secure-code-guardian",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "secure-code-guardian",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/security-reviewer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "security-reviewer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/shopify-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "shopify-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/spark-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "spark-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/spec-miner",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "spec-miner",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/spring-boot-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "spring-boot-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/sql-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "sql-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/sre-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "sre-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/swift-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "swift-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/terraform-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "terraform-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/test-master",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "test-master",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/the-fool",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "the-fool",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/typescript-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "typescript-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/vue-expert-js",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "vue-expert-js",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/vue-expert",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "vue-expert",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/websocket-engineer",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "websocket-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Jeffallan/claude-skills/wordpress-pro",
+      "repository": "Jeffallan/claude-skills",
+      "skill_name": "wordpress-pro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-api-design",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-api-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-architecture-review",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-architecture-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-cli",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-cli",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-injection",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-dependency-injection",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-design-patterns",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-design-patterns",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-graphql",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-graphql",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-grpc",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-grpc",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-interface-design",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-interface-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-openapi",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-openapi",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-project-layout",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-project-layout",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-code-review",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-code-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-coding-standards",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-coding-standards",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-context",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-context",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-data-structures",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-data-structures",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-documentation",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-documentation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-error-handling",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-error-handling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-modernize",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-modernize",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-naming",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-naming",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-database",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-database",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-concurrency-review",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-concurrency-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-defensive-coding",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-defensive-coding",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-observability",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-observability",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-performance-review",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-performance-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-security-audit",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-security-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-troubleshooting",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-troubleshooting",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-quality",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-test-quality",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-table-driven",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-test-table-driven",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/git-commit",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "git-commit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-binary-size",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-binary-size",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-build-release",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-build-release",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-ci",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-ci",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-audit",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-dependency-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-refactoring",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-refactoring",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-semantic-tools",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-semantic-tools",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-skills-router",
+      "repository": "eduardo-sl/go-agent-skills",
+      "skill_name": "go-skills-router",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/accessibility-a11y",
+      "repository": "Mindrally/skills",
+      "skill_name": "accessibility-a11y",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/alpine-js",
+      "repository": "Mindrally/skills",
+      "skill_name": "alpine-js",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/analytics-data-analysis",
+      "repository": "Mindrally/skills",
+      "skill_name": "analytics-data-analysis",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/android-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "android-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/angular-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "angular-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/angular",
+      "repository": "Mindrally/skills",
+      "skill_name": "angular",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/anime-js",
+      "repository": "Mindrally/skills",
+      "skill_name": "anime-js",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/anthropic-claude-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "anthropic-claude-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/api-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "api-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/apollo-graphql",
+      "repository": "Mindrally/skills",
+      "skill_name": "apollo-graphql",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/aspnet-core",
+      "repository": "Mindrally/skills",
+      "skill_name": "aspnet-core",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/astro",
+      "repository": "Mindrally/skills",
+      "skill_name": "astro",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/auth0-authentication",
+      "repository": "Mindrally/skills",
+      "skill_name": "auth0-authentication",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/autogen-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "autogen-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/automl-hyperparameter-optimization",
+      "repository": "Mindrally/skills",
+      "skill_name": "automl-hyperparameter-optimization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/aws-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "aws-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/azure",
+      "repository": "Mindrally/skills",
+      "skill_name": "azure",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/backend-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "backend-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/bash-scripting",
+      "repository": "Mindrally/skills",
+      "skill_name": "bash-scripting",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/beautifulsoup-parsing",
+      "repository": "Mindrally/skills",
+      "skill_name": "beautifulsoup-parsing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/bitbucket-workflow",
+      "repository": "Mindrally/skills",
+      "skill_name": "bitbucket-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/blazor",
+      "repository": "Mindrally/skills",
+      "skill_name": "blazor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/blender-python-addon",
+      "repository": "Mindrally/skills",
+      "skill_name": "blender-python-addon",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/blockchain",
+      "repository": "Mindrally/skills",
+      "skill_name": "blockchain",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/bootstrap",
+      "repository": "Mindrally/skills",
+      "skill_name": "bootstrap",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/business-central-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "business-central-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/c-sharp",
+      "repository": "Mindrally/skills",
+      "skill_name": "c-sharp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/cheerio-parsing",
+      "repository": "Mindrally/skills",
+      "skill_name": "cheerio-parsing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ci-cd-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "ci-cd-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/clean-architecture",
+      "repository": "Mindrally/skills",
+      "skill_name": "clean-architecture",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/clean-code",
+      "repository": "Mindrally/skills",
+      "skill_name": "clean-code",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/clerk-authentication",
+      "repository": "Mindrally/skills",
+      "skill_name": "clerk-authentication",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/cloudflare-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "cloudflare-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/computer-vision-opencv",
+      "repository": "Mindrally/skills",
+      "skill_name": "computer-vision-opencv",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/convex",
+      "repository": "Mindrally/skills",
+      "skill_name": "convex",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/cpp",
+      "repository": "Mindrally/skills",
+      "skill_name": "cpp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/css",
+      "repository": "Mindrally/skills",
+      "skill_name": "css",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/cypress",
+      "repository": "Mindrally/skills",
+      "skill_name": "cypress",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/data-analysis-jupyter",
+      "repository": "Mindrally/skills",
+      "skill_name": "data-analysis-jupyter",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/data-analyst",
+      "repository": "Mindrally/skills",
+      "skill_name": "data-analyst",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/data-jupyter-python",
+      "repository": "Mindrally/skills",
+      "skill_name": "data-jupyter-python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/deep-learning-python",
+      "repository": "Mindrally/skills",
+      "skill_name": "deep-learning-python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/deep-learning-pytorch",
+      "repository": "Mindrally/skills",
+      "skill_name": "deep-learning-pytorch",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/deep-learning",
+      "repository": "Mindrally/skills",
+      "skill_name": "deep-learning",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/deno-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "deno-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/design-systems",
+      "repository": "Mindrally/skills",
+      "skill_name": "design-systems",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/devops",
+      "repository": "Mindrally/skills",
+      "skill_name": "devops",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/django-python",
+      "repository": "Mindrally/skills",
+      "skill_name": "django-python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/django-rest-api-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "django-rest-api-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/docker",
+      "repository": "Mindrally/skills",
+      "skill_name": "docker",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/dotnet",
+      "repository": "Mindrally/skills",
+      "skill_name": "dotnet",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/drizzle-orm",
+      "repository": "Mindrally/skills",
+      "skill_name": "drizzle-orm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/drupal-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "drupal-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/elasticsearch-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "elasticsearch-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/electron-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "electron-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/elixir",
+      "repository": "Mindrally/skills",
+      "skill_name": "elixir",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/embedded-stm32",
+      "repository": "Mindrally/skills",
+      "skill_name": "embedded-stm32",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ethereum",
+      "repository": "Mindrally/skills",
+      "skill_name": "ethereum",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/expo-react-native-javascript-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "expo-react-native-javascript-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/expo-react-native-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "expo-react-native-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/express-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "express-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/fastapi-microservices-serverless",
+      "repository": "Mindrally/skills",
+      "skill_name": "fastapi-microservices-serverless",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/fastify-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "fastify-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/figma-integration",
+      "repository": "Mindrally/skills",
+      "skill_name": "figma-integration",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/firebase-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "firebase-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/flask-python",
+      "repository": "Mindrally/skills",
+      "skill_name": "flask-python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/flutter",
+      "repository": "Mindrally/skills",
+      "skill_name": "flutter",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/fortran",
+      "repository": "Mindrally/skills",
+      "skill_name": "fortran",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/fpga",
+      "repository": "Mindrally/skills",
+      "skill_name": "fpga",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/framer-motion",
+      "repository": "Mindrally/skills",
+      "skill_name": "framer-motion",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/front-end-developer",
+      "repository": "Mindrally/skills",
+      "skill_name": "front-end-developer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/game-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "game-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/gamemaker-gml",
+      "repository": "Mindrally/skills",
+      "skill_name": "gamemaker-gml",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/gcp-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "gcp-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/general-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "general-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ghost",
+      "repository": "Mindrally/skills",
+      "skill_name": "ghost",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/git-workflow",
+      "repository": "Mindrally/skills",
+      "skill_name": "git-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/gitflow",
+      "repository": "Mindrally/skills",
+      "skill_name": "gitflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/github-workflow",
+      "repository": "Mindrally/skills",
+      "skill_name": "github-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/gitlab-workflow",
+      "repository": "Mindrally/skills",
+      "skill_name": "gitlab-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/go-api-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "go-api-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/go-backend-microservices",
+      "repository": "Mindrally/skills",
+      "skill_name": "go-backend-microservices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/go",
+      "repository": "Mindrally/skills",
+      "skill_name": "go",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/google-adk",
+      "repository": "Mindrally/skills",
+      "skill_name": "google-adk",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/graalvm",
+      "repository": "Mindrally/skills",
+      "skill_name": "graalvm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/graphql-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "graphql-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/graphql",
+      "repository": "Mindrally/skills",
+      "skill_name": "graphql",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/grpc-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "grpc-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/gsap",
+      "repository": "Mindrally/skills",
+      "skill_name": "gsap",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/harmony-arkts",
+      "repository": "Mindrally/skills",
+      "skill_name": "harmony-arkts",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/hono-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "hono-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/html",
+      "repository": "Mindrally/skills",
+      "skill_name": "html",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/htmx",
+      "repository": "Mindrally/skills",
+      "skill_name": "htmx",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/internationalization-i18n",
+      "repository": "Mindrally/skills",
+      "skill_name": "internationalization-i18n",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ionic",
+      "repository": "Mindrally/skills",
+      "skill_name": "ionic",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/java-quarkus-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "java-quarkus-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/java-spring-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "java-spring-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/java",
+      "repository": "Mindrally/skills",
+      "skill_name": "java",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/jax-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "jax-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/jest",
+      "repository": "Mindrally/skills",
+      "skill_name": "jest",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/julia",
+      "repository": "Mindrally/skills",
+      "skill_name": "julia",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/jwt-security",
+      "repository": "Mindrally/skills",
+      "skill_name": "jwt-security",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/kafka-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "kafka-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/koa-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "koa-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/kotlin-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "kotlin-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/kubernetes",
+      "repository": "Mindrally/skills",
+      "skill_name": "kubernetes",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/kysely",
+      "repository": "Mindrally/skills",
+      "skill_name": "kysely",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/langchain-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "langchain-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/laravel-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "laravel-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/laravel",
+      "repository": "Mindrally/skills",
+      "skill_name": "laravel",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/lerna",
+      "repository": "Mindrally/skills",
+      "skill_name": "lerna",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/less-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "less-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/llamaindex-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "llamaindex-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/llm",
+      "repository": "Mindrally/skills",
+      "skill_name": "llm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/localization-l10n",
+      "repository": "Mindrally/skills",
+      "skill_name": "localization-l10n",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/logging-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "logging-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/lottie",
+      "repository": "Mindrally/skills",
+      "skill_name": "lottie",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/lua",
+      "repository": "Mindrally/skills",
+      "skill_name": "lua",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/machine-learning",
+      "repository": "Mindrally/skills",
+      "skill_name": "machine-learning",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/matplotlib-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "matplotlib-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/medusa-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "medusa-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/meta-prompt",
+      "repository": "Mindrally/skills",
+      "skill_name": "meta-prompt",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/micronaut",
+      "repository": "Mindrally/skills",
+      "skill_name": "micronaut",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/microservices",
+      "repository": "Mindrally/skills",
+      "skill_name": "microservices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/modern-web-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "modern-web-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/mongodb-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "mongodb-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/monitoring-guidelines",
+      "repository": "Mindrally/skills",
+      "skill_name": "monitoring-guidelines",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/monorepo-tamagui",
+      "repository": "Mindrally/skills",
+      "skill_name": "monorepo-tamagui",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/monorepo",
+      "repository": "Mindrally/skills",
+      "skill_name": "monorepo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/motion",
+      "repository": "Mindrally/skills",
+      "skill_name": "motion",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/mqtt-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "mqtt-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/mysql-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "mysql-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nestjs-clean-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "nestjs-clean-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/netlify-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "netlify-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/network-troubleshooting",
+      "repository": "Mindrally/skills",
+      "skill_name": "network-troubleshooting",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nextauth-authentication",
+      "repository": "Mindrally/skills",
+      "skill_name": "nextauth-authentication",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nextjs-react-redux-typescript-cursor-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "nextjs-react-redux-typescript-cursor-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nextjs-react-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "nextjs-react-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nextjs-typescript-tailwindcss-supabase",
+      "repository": "Mindrally/skills",
+      "skill_name": "nextjs-typescript-tailwindcss-supabase",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nlp-natural-language-processing",
+      "repository": "Mindrally/skills",
+      "skill_name": "nlp-natural-language-processing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nodejs-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "nodejs-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/numpy-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "numpy-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nuxtjs-vue-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "nuxtjs-vue-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/nx",
+      "repository": "Mindrally/skills",
+      "skill_name": "nx",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/oauth-implementation",
+      "repository": "Mindrally/skills",
+      "skill_name": "oauth-implementation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/observability-guidelines",
+      "repository": "Mindrally/skills",
+      "skill_name": "observability-guidelines",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/odoo-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "odoo-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/onchainkit",
+      "repository": "Mindrally/skills",
+      "skill_name": "onchainkit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/openai-api-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "openai-api-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/optimized-nextjs-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "optimized-nextjs-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pandas-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "pandas-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/parcel-bundler",
+      "repository": "Mindrally/skills",
+      "skill_name": "parcel-bundler",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/performance-optimization",
+      "repository": "Mindrally/skills",
+      "skill_name": "performance-optimization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/phoenix",
+      "repository": "Mindrally/skills",
+      "skill_name": "phoenix",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/php-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "php-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pixi-js",
+      "repository": "Mindrally/skills",
+      "skill_name": "pixi-js",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/playwright-cursor-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "playwright-cursor-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/playwright",
+      "repository": "Mindrally/skills",
+      "skill_name": "playwright",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pnpm",
+      "repository": "Mindrally/skills",
+      "skill_name": "pnpm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/postcss-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "postcss-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/postgresql-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "postgresql-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pr-review",
+      "repository": "Mindrally/skills",
+      "skill_name": "pr-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/prisma-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "prisma-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/prisma",
+      "repository": "Mindrally/skills",
+      "skill_name": "prisma",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/puppeteer-automation",
+      "repository": "Mindrally/skills",
+      "skill_name": "puppeteer-automation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pwa-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "pwa-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pyspark-etl",
+      "repository": "Mindrally/skills",
+      "skill_name": "pyspark-etl",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/python-cybersecurity-tool-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "python-cybersecurity-tool-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/python-odoo-cursor-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "python-odoo-cursor-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/python-testing",
+      "repository": "Mindrally/skills",
+      "skill_name": "python-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/python-uv",
+      "repository": "Mindrally/skills",
+      "skill_name": "python-uv",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/python",
+      "repository": "Mindrally/skills",
+      "skill_name": "python",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/pytorch",
+      "repository": "Mindrally/skills",
+      "skill_name": "pytorch",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/quarkus",
+      "repository": "Mindrally/skills",
+      "skill_name": "quarkus",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rabbitmq-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "rabbitmq-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/react-native-cursor-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "react-native-cursor-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/react-native-r3f",
+      "repository": "Mindrally/skills",
+      "skill_name": "react-native-r3f",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/react-query",
+      "repository": "Mindrally/skills",
+      "skill_name": "react-query",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/react-router-v7",
+      "repository": "Mindrally/skills",
+      "skill_name": "react-router-v7",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/react",
+      "repository": "Mindrally/skills",
+      "skill_name": "react",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/readme-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "readme-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/redis-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "redis-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/redux-toolkit",
+      "repository": "Mindrally/skills",
+      "skill_name": "redux-toolkit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/remix",
+      "repository": "Mindrally/skills",
+      "skill_name": "remix",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/responsive-design",
+      "repository": "Mindrally/skills",
+      "skill_name": "responsive-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rest-api-django",
+      "repository": "Mindrally/skills",
+      "skill_name": "rest-api-django",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/robocorp-cursor-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "robocorp-cursor-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ros2-robotics",
+      "repository": "Mindrally/skills",
+      "skill_name": "ros2-robotics",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rspec",
+      "repository": "Mindrally/skills",
+      "skill_name": "rspec",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rtl-internationalization",
+      "repository": "Mindrally/skills",
+      "skill_name": "rtl-internationalization",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ruby-rails",
+      "repository": "Mindrally/skills",
+      "skill_name": "ruby-rails",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ruby",
+      "repository": "Mindrally/skills",
+      "skill_name": "ruby",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/rust",
+      "repository": "Mindrally/skills",
+      "skill_name": "rust",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/salesforce-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "salesforce-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/salesforce-dx",
+      "repository": "Mindrally/skills",
+      "skill_name": "salesforce-dx",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/sanity",
+      "repository": "Mindrally/skills",
+      "skill_name": "sanity",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/sass-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "sass-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/scikit-learn-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "scikit-learn-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/scipy-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "scipy-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/scrapy-web-scraping",
+      "repository": "Mindrally/skills",
+      "skill_name": "scrapy-web-scraping",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/scss-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "scss-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/security-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "security-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/security-devsecops",
+      "repository": "Mindrally/skills",
+      "skill_name": "security-devsecops",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/selenium-automation",
+      "repository": "Mindrally/skills",
+      "skill_name": "selenium-automation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/seo-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "seo-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/sequelize",
+      "repository": "Mindrally/skills",
+      "skill_name": "sequelize",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/serverless",
+      "repository": "Mindrally/skills",
+      "skill_name": "serverless",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/shopify-theme-development-guidelines",
+      "repository": "Mindrally/skills",
+      "skill_name": "shopify-theme-development-guidelines",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/shopify",
+      "repository": "Mindrally/skills",
+      "skill_name": "shopify",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/snowflake-cortex-ai",
+      "repository": "Mindrally/skills",
+      "skill_name": "snowflake-cortex-ai",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/snowflake-data-engineering",
+      "repository": "Mindrally/skills",
+      "skill_name": "snowflake-data-engineering",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/snowflake-snowpark-dbt",
+      "repository": "Mindrally/skills",
+      "skill_name": "snowflake-snowpark-dbt",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/solana",
+      "repository": "Mindrally/skills",
+      "skill_name": "solana",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/solidity",
+      "repository": "Mindrally/skills",
+      "skill_name": "solidity",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/spring-boot",
+      "repository": "Mindrally/skills",
+      "skill_name": "spring-boot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/spring-framework",
+      "repository": "Mindrally/skills",
+      "skill_name": "spring-framework",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/sql-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "sql-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/storybook",
+      "repository": "Mindrally/skills",
+      "skill_name": "storybook",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/stripe",
+      "repository": "Mindrally/skills",
+      "skill_name": "stripe",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/styled-components-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "styled-components-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/supabase-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "supabase-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/supabase",
+      "repository": "Mindrally/skills",
+      "skill_name": "supabase",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/svelte",
+      "repository": "Mindrally/skills",
+      "skill_name": "svelte",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/sveltekit",
+      "repository": "Mindrally/skills",
+      "skill_name": "sveltekit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/swift",
+      "repository": "Mindrally/skills",
+      "skill_name": "swift",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/swiftui-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "swiftui-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/swr",
+      "repository": "Mindrally/skills",
+      "skill_name": "swr",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/systemverilog",
+      "repository": "Mindrally/skills",
+      "skill_name": "systemverilog",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tailwindcss",
+      "repository": "Mindrally/skills",
+      "skill_name": "tailwindcss",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tanstack-router",
+      "repository": "Mindrally/skills",
+      "skill_name": "tanstack-router",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tanstack-start",
+      "repository": "Mindrally/skills",
+      "skill_name": "tanstack-start",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tauri-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "tauri-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/technical-writing",
+      "repository": "Mindrally/skills",
+      "skill_name": "technical-writing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/tensorflow-deep-learning",
+      "repository": "Mindrally/skills",
+      "skill_name": "tensorflow-deep-learning",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/terraform",
+      "repository": "Mindrally/skills",
+      "skill_name": "terraform",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/testing",
+      "repository": "Mindrally/skills",
+      "skill_name": "testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/three-js",
+      "repository": "Mindrally/skills",
+      "skill_name": "three-js",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/transformers-huggingface",
+      "repository": "Mindrally/skills",
+      "skill_name": "transformers-huggingface",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/turbopack-bundler",
+      "repository": "Mindrally/skills",
+      "skill_name": "turbopack-bundler",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/turborepo",
+      "repository": "Mindrally/skills",
+      "skill_name": "turborepo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/typeorm",
+      "repository": "Mindrally/skills",
+      "skill_name": "typeorm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ui-design",
+      "repository": "Mindrally/skills",
+      "skill_name": "ui-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/unity",
+      "repository": "Mindrally/skills",
+      "skill_name": "unity",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/ux-design",
+      "repository": "Mindrally/skills",
+      "skill_name": "ux-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/vercel-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "vercel-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/viewcomfy-api-rules",
+      "repository": "Mindrally/skills",
+      "skill_name": "viewcomfy-api-rules",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/vite",
+      "repository": "Mindrally/skills",
+      "skill_name": "vite",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/vue-pinia",
+      "repository": "Mindrally/skills",
+      "skill_name": "vue-pinia",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/vue-typescript",
+      "repository": "Mindrally/skills",
+      "skill_name": "vue-typescript",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/vuejs-typescript-best-practices",
+      "repository": "Mindrally/skills",
+      "skill_name": "vuejs-typescript-best-practices",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/web-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "web-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/web-scraping",
+      "repository": "Mindrally/skills",
+      "skill_name": "web-scraping",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/websocket-development",
+      "repository": "Mindrally/skills",
+      "skill_name": "websocket-development",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/woocommerce",
+      "repository": "Mindrally/skills",
+      "skill_name": "woocommerce",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/wordpress",
+      "repository": "Mindrally/skills",
+      "skill_name": "wordpress",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Mindrally/skills/zod-schema-validation",
+      "repository": "Mindrally/skills",
+      "skill_name": "zod-schema-validation",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }

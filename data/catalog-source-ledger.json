@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-10-30T23:23:57.234Z",
+  "audited_at": "2026-10-30T23:57:40.687Z",
   "release_blocked": false,
   "unresolved_count": 0,
   "entries": [
@@ -3087,6 +3087,2785 @@
       "checked_at": "2026-10-30T23:29:34.731Z",
       "url": "https://github.com/Paldom/python-skills/blob/70aa0cf9926285dbef6ac39bc36990ece230cd09/skills/python-typing/SKILL.md",
       "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+    },
+    {
+      "id": "mattpocock/skills/ask-matt",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/ask-matt/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/code-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/code-review/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/codebase-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/codebase-design/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/diagnosing-bugs",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/diagnosing-bugs/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/domain-modeling",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/domain-modeling/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/grill-with-docs",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/grill-with-docs/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/implement-spec",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/implement-spec/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/implement",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/implement/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/improve-codebase-architecture",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/improve-codebase-architecture/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/pr",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/pr/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/prototype",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/prototype/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/research",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/research/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/retro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/retro/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/setup-matt-pocock-skills",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/tdd",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/tdd/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/to-spec",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/to-spec/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/to-tickets",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/to-tickets/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/triage",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/triage/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/wayfinder",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/wayfinder/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/wizard",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/engineering/wizard/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/chief-of-staff",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/chief-of-staff/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/claude-handoff",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/claude-handoff/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/loop-me",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/loop-me/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/setup-ts-deep-modules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/writing-beats",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/writing-beats/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/writing-fragments",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/writing-fragments/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/writing-shape",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/in-progress/writing-shape/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/git-guardrails-claude-code",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/misc/git-guardrails-claude-code/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/migrate-to-shoehorn",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/misc/migrate-to-shoehorn/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/scaffold-exercises",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/misc/scaffold-exercises/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/grill-me",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/grill-me/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/grilling",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/grilling/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/handoff",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/handoff/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/teach",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/teach/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/to-questionnaire",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/to-questionnaire/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/wait-what",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/wait-what/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "mattpocock/skills/writing-for-agents",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/mattpocock/skills/blob/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa/skills/productivity/writing-for-agents/SKILL.md",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
+    },
+    {
+      "id": "kepano/obsidian-skills/defuddle",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/defuddle/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "kepano/obsidian-skills/json-canvas",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/json-canvas/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "kepano/obsidian-skills/knap",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/knap/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-bases",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/obsidian-bases/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-cli",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/obsidian-cli/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-markdown",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/kepano/obsidian-skills/blob/3ccff5338ea700537839b21900aa5358a0402c98/skills/obsidian-markdown/SKILL.md",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98"
+    },
+    {
+      "id": "Jeffallan/claude-skills/angular-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/angular-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/api-designer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/api-designer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/architecture-designer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/architecture-designer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/atlassian-mcp",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/atlassian-mcp/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/chaos-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/chaos-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/cli-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/cli-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/cloud-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/cloud-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/code-documenter",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/code-documenter/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/code-reviewer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/code-reviewer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/csharp-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/csharp-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/database-optimizer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/database-optimizer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/debugging-wizard",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/debugging-wizard/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/devops-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/devops-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/django-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/django-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/django-storages-s3",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/django-storages-s3/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/dotnet-core-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/dotnet-core-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/embedded-systems",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/embedded-systems/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/fastapi-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/fastapi-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/feature-forge",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/feature-forge/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/fine-tuning-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/fine-tuning-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/fullstack-guardian",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/fullstack-guardian/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/game-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/game-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/golang-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/golang-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/graphql-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/graphql-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/java-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/java-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/javascript-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/javascript-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/kotlin-specialist",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/kotlin-specialist/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/kubernetes-specialist",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/kubernetes-specialist/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/legacy-modernizer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/legacy-modernizer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/mcp-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/mcp-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/microservices-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/microservices-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/ml-pipeline",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/ml-pipeline/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/monitoring-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/monitoring-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/nestjs-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/nestjs-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/nextjs-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/nextjs-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/playwright-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/playwright-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/postgres-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/postgres-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/prompt-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/prompt-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/python-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/python-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/rag-architect",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/rag-architect/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/rails-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/rails-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/react-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/react-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/react-native-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/react-native-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/rust-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/rust-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/salesforce-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/salesforce-developer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/secure-code-guardian",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/secure-code-guardian/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/security-reviewer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/security-reviewer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/shopify-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/shopify-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/spark-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/spark-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/spec-miner",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/spec-miner/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/spring-boot-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/spring-boot-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/sql-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/sql-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/sre-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/sre-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/swift-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/swift-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/terraform-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/terraform-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/test-master",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/test-master/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/the-fool",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/the-fool/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/typescript-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/typescript-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/vue-expert-js",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/vue-expert-js/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/vue-expert",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/vue-expert/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/websocket-engineer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/websocket-engineer/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "Jeffallan/claude-skills/wordpress-pro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/wordpress-pro/SKILL.md",
+      "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-api-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-api-design/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-architecture-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-architecture-review/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-cli",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-cli/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-injection",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-dependency-injection/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-design-patterns",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-design-patterns/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-graphql",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-graphql/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-grpc",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-grpc/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-interface-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-interface-design/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-openapi",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-openapi/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-project-layout",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(architecture)/go-project-layout/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-code-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-code-review/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-coding-standards",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-coding-standards/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-context",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-context/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-data-structures",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-data-structures/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-documentation",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-documentation/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-error-handling",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-error-handling/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-modernize",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-modernize/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-naming",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(code-quality)/go-naming/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-database",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(data)/go-database/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-concurrency-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-concurrency-review/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-defensive-coding",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-defensive-coding/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-observability",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-observability/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-performance-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-performance-review/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-security-audit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-security-audit/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-troubleshooting",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(safety)/go-troubleshooting/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-quality",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(testing)/go-test-quality/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-table-driven",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(testing)/go-test-table-driven/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/git-commit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/git-commit/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-binary-size",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-binary-size/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-build-release",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-build-release/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-ci",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-ci/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-audit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-dependency-audit/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-refactoring",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-refactoring/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-semantic-tools",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-semantic-tools/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-skills-router",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/eduardo-sl/go-agent-skills/blob/e25b517bbd0c11db35f75a83a14f18848c1abdb0/skills/(workflow)/go-skills-router/SKILL.md",
+      "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+    },
+    {
+      "id": "Mindrally/skills/accessibility-a11y",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/accessibility-a11y/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/alpine-js",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/alpine-js/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/analytics-data-analysis",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/analytics-data-analysis/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/android-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/android-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/angular-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/angular-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/angular",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/angular/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/anime-js",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/anime-js/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/anthropic-claude-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/anthropic-claude-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/api-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/api-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/apollo-graphql",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/apollo-graphql/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/aspnet-core",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/aspnet-core/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/astro",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/astro/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/auth0-authentication",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/auth0-authentication/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/autogen-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/autogen-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/automl-hyperparameter-optimization",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/automl-hyperparameter-optimization/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/aws-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/aws-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/azure",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/azure/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/backend-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/backend-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/bash-scripting",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/bash-scripting/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/beautifulsoup-parsing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/beautifulsoup-parsing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/bitbucket-workflow",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/bitbucket-workflow/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/blazor",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/blazor/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/blender-python-addon",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/blender-python-addon/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/blockchain",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/blockchain/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/bootstrap",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/bootstrap/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/business-central-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/business-central-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/c-sharp",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/c-sharp/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/cheerio-parsing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/cheerio-parsing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ci-cd-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ci-cd-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/clean-architecture",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/clean-architecture/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/clean-code",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/clean-code/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/clerk-authentication",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/clerk-authentication/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/cloudflare-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/cloudflare-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/computer-vision-opencv",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/computer-vision-opencv/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/convex",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/convex/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/cpp",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/cpp/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/css",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/css/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/cypress",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/cypress/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/data-analysis-jupyter",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/data-analysis-jupyter/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/data-analyst",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/data-analyst/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/data-jupyter-python",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/data-jupyter-python/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/deep-learning-python",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/deep-learning-python/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/deep-learning-pytorch",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/deep-learning-pytorch/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/deep-learning",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/deep-learning/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/deno-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/deno-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/design-systems",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/design-systems/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/devops",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/devops/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/django-python",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/django-python/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/django-rest-api-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/django-rest-api-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/docker",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/docker/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/dotnet",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/dotnet/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/drizzle-orm",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/drizzle-orm/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/drupal-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/drupal-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/elasticsearch-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/elasticsearch-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/electron-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/electron-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/elixir",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/elixir/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/embedded-stm32",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/embedded-stm32/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ethereum",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ethereum/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/expo-react-native-javascript-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/expo-react-native-javascript-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/expo-react-native-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/expo-react-native-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/express-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/express-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/fastapi-microservices-serverless",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/fastapi-microservices-serverless/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/fastify-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/fastify-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/figma-integration",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/figma-integration/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/firebase-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/firebase-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/flask-python",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/flask-python/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/flutter",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/flutter/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/fortran",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/fortran/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/fpga",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/fpga/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/framer-motion",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/framer-motion/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/front-end-developer",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/front-end-developer/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/game-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/game-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/gamemaker-gml",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/gamemaker-gml/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/gcp-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/gcp-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/general-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/general-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ghost",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ghost/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/git-workflow",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/git-workflow/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/gitflow",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/gitflow/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/github-workflow",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/github-workflow/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/gitlab-workflow",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/gitlab-workflow/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/go-api-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/go-api-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/go-backend-microservices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/go-backend-microservices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/go",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/go/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/google-adk",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/google-adk/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/graalvm",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/graalvm/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/graphql-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/graphql-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/graphql",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/graphql/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/grpc-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/grpc-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/gsap",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/gsap/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/harmony-arkts",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/harmony-arkts/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/hono-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/hono-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/html",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/html/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/htmx",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/htmx/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/internationalization-i18n",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/internationalization-i18n/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ionic",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ionic/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/java-quarkus-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/java-quarkus-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/java-spring-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/java-spring-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/java",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/java/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/jax-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/jax-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/jest",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/jest/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/julia",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/julia/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/jwt-security",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/jwt-security/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/kafka-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/kafka-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/koa-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/koa-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/kotlin-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/kotlin-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/kubernetes",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/kubernetes/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/kysely",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/kysely/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/langchain-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/langchain-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/laravel-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/laravel-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/laravel",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/laravel/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/lerna",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/lerna/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/less-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/less-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/llamaindex-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/llamaindex-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/llm",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/llm/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/localization-l10n",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/localization-l10n/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/logging-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/logging-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/lottie",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/lottie/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/lua",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/lua/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/machine-learning",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/machine-learning/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/matplotlib-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/matplotlib-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/medusa-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/medusa-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/meta-prompt",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/meta-prompt/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/micronaut",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/micronaut/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/microservices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/microservices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/modern-web-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/modern-web-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/mongodb-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/mongodb-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/monitoring-guidelines",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/monitoring-guidelines/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/monorepo-tamagui",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/monorepo-tamagui/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/monorepo",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/monorepo/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/motion",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/motion/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/mqtt-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/mqtt-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/mysql-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/mysql-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nestjs-clean-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nestjs-clean-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/netlify-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/netlify-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/network-troubleshooting",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/network-troubleshooting/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nextauth-authentication",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nextauth-authentication/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nextjs-react-redux-typescript-cursor-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nextjs-react-redux-typescript-cursor-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nextjs-react-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nextjs-react-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nextjs-typescript-tailwindcss-supabase",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nextjs-typescript-tailwindcss-supabase/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nlp-natural-language-processing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nlp-natural-language-processing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nodejs-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nodejs-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/numpy-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/numpy-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nuxtjs-vue-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nuxtjs-vue-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/nx",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nx/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/oauth-implementation",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/oauth-implementation/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/observability-guidelines",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/observability-guidelines/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/odoo-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/odoo-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/onchainkit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/onchainkit/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/openai-api-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/openai-api-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/optimized-nextjs-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/optimized-nextjs-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pandas-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pandas-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/parcel-bundler",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/parcel-bundler/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/performance-optimization",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/performance-optimization/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/phoenix",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/phoenix/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/php-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/php-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pixi-js",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pixi-js/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/playwright-cursor-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/playwright-cursor-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/playwright",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/playwright/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pnpm",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pnpm/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/postcss-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/postcss-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/postgresql-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/postgresql-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pr-review",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pr-review/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/prisma-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/prisma-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/prisma",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/prisma/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/puppeteer-automation",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/puppeteer-automation/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pwa-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pwa-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pyspark-etl",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pyspark-etl/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/python-cybersecurity-tool-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python-cybersecurity-tool-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/python-odoo-cursor-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python-odoo-cursor-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/python-testing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python-testing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/python-uv",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python-uv/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/python",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/pytorch",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/pytorch/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/quarkus",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/quarkus/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/rabbitmq-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/rabbitmq-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/react-native-cursor-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/react-native-cursor-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/react-native-r3f",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/react-native-r3f/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/react-query",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/react-query/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/react-router-v7",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/react-router-v7/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/react",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/react/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/readme-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/readme-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/redis-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/redis-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/redux-toolkit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/redux-toolkit/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/remix",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/remix/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/responsive-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/responsive-design/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/rest-api-django",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/rest-api-django/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/robocorp-cursor-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/robocorp-cursor-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ros2-robotics",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ros2-robotics/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/rspec",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/rspec/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/rtl-internationalization",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/rtl-internationalization/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ruby-rails",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ruby-rails/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ruby",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ruby/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/rust",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/rust/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/salesforce-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/salesforce-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/salesforce-dx",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/salesforce-dx/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/sanity",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/sanity/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/sass-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/sass-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/scikit-learn-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/scikit-learn-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/scipy-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/scipy-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/scrapy-web-scraping",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/scrapy-web-scraping/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/scss-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/scss-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/security-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/security-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/security-devsecops",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/security-devsecops/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/selenium-automation",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/selenium-automation/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/seo-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/seo-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/sequelize",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/sequelize/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/serverless",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/serverless/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/shopify-theme-development-guidelines",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/shopify-theme-development-guidelines/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/shopify",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/shopify/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/snowflake-cortex-ai",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/snowflake-cortex-ai/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/snowflake-data-engineering",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/snowflake-data-engineering/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/snowflake-snowpark-dbt",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/snowflake-snowpark-dbt/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/solana",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/solana/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/solidity",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/solidity/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/spring-boot",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/spring-boot/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/spring-framework",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/spring-framework/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/sql-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/sql-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/storybook",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/storybook/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/stripe",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/stripe/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/styled-components-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/styled-components-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/supabase-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/supabase-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/supabase",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/supabase/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/svelte",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/svelte/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/sveltekit",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/sveltekit/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/swift",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/swift/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/swiftui-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/swiftui-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/swr",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/swr/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/systemverilog",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/systemverilog/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/tailwindcss",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/tailwindcss/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/tanstack-router",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/tanstack-router/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/tanstack-start",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/tanstack-start/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/tauri-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/tauri-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/technical-writing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/technical-writing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/tensorflow-deep-learning",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/tensorflow-deep-learning/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/terraform",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/terraform/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/testing",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/testing/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/three-js",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/three-js/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/transformers-huggingface",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/transformers-huggingface/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/turbopack-bundler",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/turbopack-bundler/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/turborepo",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/turborepo/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/typeorm",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/typeorm/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ui-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ui-design/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/unity",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/unity/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/ux-design",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/ux-design/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/vercel-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/vercel-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/viewcomfy-api-rules",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/viewcomfy-api-rules/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/vite",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/vite/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/vue-pinia",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/vue-pinia/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/vue-typescript",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/vue-typescript/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/vuejs-typescript-best-practices",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/vuejs-typescript-best-practices/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/web-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/web-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/web-scraping",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/web-scraping/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/websocket-development",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/websocket-development/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/woocommerce",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/woocommerce/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/wordpress",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/wordpress/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+    },
+    {
+      "id": "Mindrally/skills/zod-schema-validation",
+      "status": "verified",
+      "checked_at": "2026-10-30T23:57:40.687Z",
+      "url": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/zod-schema-validation/SKILL.md",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
     }
   ]
 }
