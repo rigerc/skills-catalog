@@ -12,9 +12,9 @@
     "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion."
   ],
   "counts": {
-    "distinct_skills": 341,
-    "technologies_with_skills": 176,
-    "technologies_detect_only": 70,
+    "distinct_skills": 349,
+    "technologies_with_skills": 177,
+    "technologies_detect_only": 69,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
@@ -4518,6 +4518,114 @@
       "recommended_for": {
         "technology_ids": [
           "sst"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-ci",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-ci",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-lint",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-lint",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python",
+          "ruff"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-packaging",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-packaging",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python",
+          "uv"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-precommit",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-precommit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python",
+          "pre-commit"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-release",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-release",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-supply-chain",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-supply-chain",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-testing",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-testing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python",
+          "pytest"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Paldom/python-skills/python-typing",
+      "repository": "Paldom/python-skills",
+      "skill_name": "python-typing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "python"
         ],
         "combination_ids": [],
         "frontend_essential": false

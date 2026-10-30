@@ -10,11 +10,11 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 
 | Metric | Total |
 | --- | ---: |
-| Skills | **341** |
-| Mapped technologies | **176** |
-| Detect-only technologies | **70** |
+| Skills | **349** |
+| Mapped technologies | **177** |
+| Detect-only technologies | **69** |
 | Combinations | **33** |
-| Verified skill sources | **341** |
+| Verified skill sources | **349** |
 | Unresolved sources | **0** |
 
 Snapshot date: **2026-10-31**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
@@ -43,7 +43,7 @@ Snapshot date: **2026-10-31**. Source verification is historical evidence, **not
 | Languages, runtimes and scripting | 23 | 13 | 10 |
 | Mobile, desktop and extensions | 15 | 12 | 3 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |
-| Testing and quality | 21 | 14 | 7 |
+| Testing and quality | 21 | 15 | 6 |
 | Web frameworks, UI and styling | 35 | 23 | 12 |
 
 ## Authoring and validation

@@ -5,10 +5,10 @@
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 246,
-    "mapped_technologies": 176,
-    "detect_only_technologies": 70,
+    "mapped_technologies": 177,
+    "detect_only_technologies": 69,
     "combinations": 33,
-    "distinct_referenced_skills": 341
+    "distinct_referenced_skills": 349
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -1678,7 +1678,8 @@
         "raw": ""
       },
       "skill_ids": [
-        "vamseeachanta/workspace-hub/uv-package-manager"
+        "vamseeachanta/workspace-hub/uv-package-manager",
+        "Paldom/python-skills/python-packaging"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -3789,7 +3790,15 @@
       "skill_ids": [
         "inferen-sh/skills/python-executor",
         "wshobson/agents/python-testing-patterns",
-        "github/awesome-copilot/python-pypi-package-builder"
+        "github/awesome-copilot/python-pypi-package-builder",
+        "Paldom/python-skills/python-ci",
+        "Paldom/python-skills/python-lint",
+        "Paldom/python-skills/python-packaging",
+        "Paldom/python-skills/python-precommit",
+        "Paldom/python-skills/python-release",
+        "Paldom/python-skills/python-supply-chain",
+        "Paldom/python-skills/python-testing",
+        "Paldom/python-skills/python-typing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -4692,13 +4701,15 @@
       "id": "pre-commit",
       "name": "pre-commit",
       "category": "Testing and quality",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Paldom/python-skills/python-precommit"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -4737,7 +4748,8 @@
       },
       "skill_ids": [
         "wshobson/agents/python-testing-patterns",
-        "github/awesome-copilot/pytest-coverage"
+        "github/awesome-copilot/pytest-coverage",
+        "Paldom/python-skills/python-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4817,7 +4829,8 @@
         "raw": "py: `ruff`; file: `ruff.toml`, `.ruff.toml`; content match"
       },
       "skill_ids": [
-        "github/awesome-copilot/ruff-recursive-fix"
+        "github/awesome-copilot/ruff-recursive-fix",
+        "Paldom/python-skills/python-lint"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
