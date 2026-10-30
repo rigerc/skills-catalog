@@ -55,6 +55,26 @@ test('rejects missing, zero-byte, directory, and inaccessible sources', async ()
   assert.doesNotMatch(forbidden.reason, /missing/i);
 });
 
+test('allows GitHub same-file redirects for renamed repositories only', async () => {
+  const calls = [];
+  const target = 'https://api.github.com/repositories/123456/contents/skills/my-skill/SKILL.md?ref=' + good.commit;
+  const result = await checkSource(good, {
+    fetchImpl: async (url) => {
+      calls.push(url);
+      if (calls.length === 1) return fake(301, {}, {location: target})();
+      return fake(200, {type: 'file', name: 'SKILL.md', size: 1})();
+    },
+  });
+  assert.equal(result.status, 'verified');
+  assert.equal(calls.length, 2);
+  assert.equal(calls[1], target);
+  const unsafe = await checkSource(good, {
+    fetchImpl: fake(301, {}, {location: 'https://attacker.example/steal'}),
+  });
+  assert.equal(unsafe.status, 'error');
+  assert.match(unsafe.reason, /Unexpected GitHub API redirect/);
+});
+
 test('retries transient responses before succeeding', async () => {
   let calls = 0;
   const result = await checkSource(good, {

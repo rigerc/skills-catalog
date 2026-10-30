@@ -66,9 +66,24 @@ export async function checkSource(entry, options = {}) {
   for (let attempt = 1; attempt <= attempts; attempt++) {
     let response;
     try {
-      response = await request(apiUrl, {
-        headers, redirect: 'error', signal: AbortSignal.timeout(20000),
-      });
+      const options = {headers, redirect: 'manual', signal: AbortSignal.timeout(20000)};
+      response = await request(apiUrl, options);
+      if ([301, 302, 307, 308].includes(response.status)) {
+        // GitHub's Contents API redirects renamed repositories to /repositories/<id>.
+        // Follow only that same-host, same-commit, same-file canonicalization.
+        const location = response.headers?.get?.('location');
+        const target = new URL(location ?? '', apiUrl);
+        const original = new URL(apiUrl);
+        const originalFilePath = original.pathname.split('/contents/')[1];
+        const targetFilePath = target.pathname.split('/contents/')[1];
+        if (target.origin !== 'https://api.github.com' ||
+            !/^\/repositories\/[0-9]+\/contents\//.test(target.pathname) ||
+            targetFilePath !== originalFilePath || target.search !== original.search ||
+            target.hash || target.username || target.password) {
+          return {id, status: 'error', reason: 'Unexpected GitHub API redirect'};
+        }
+        response = await request(target.href, {...options, redirect: 'error'});
+      }
     } catch (error) {
       if (attempt < attempts) { await sleep(attempt * 1000); continue; }
       return {id, status: 'error', reason: 'Network error: ' + String(error.message ?? error)};

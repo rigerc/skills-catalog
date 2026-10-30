@@ -8,7 +8,7 @@ The check reads `data/catalog-source-ledger.json` and looks up **every** entry w
 - A successful response at that exact commit.
 - The path to resolve to a **nonempty regular file** with the exact name `SKILL.md`.
 
-HTTP **404/410** is reported as **missing** and fails the check. Empty files and paths that resolve to directories or other objects also fail. Network, authorization, and rate-limit problems are reported separately as errors rather than misreported as missing skills; they still fail CI because existence could not be confirmed. Transient failures are retried.
+HTTP **404/410** is reported as **missing** and fails the check. Empty files and paths that resolve to directories or other objects also fail. Network, authorization, and rate-limit problems are reported separately as errors rather than misreported as missing skills; they still fail CI because existence could not be confirmed. Transient failures are retried. GitHub's same-origin redirects to its canonical repository-ID endpoint are followed only if the pinned commit and file path are unchanged; cross-host or otherwise unexpected redirects fail.
 
 Entries that are **already `unresolved`** are listed in the job summary but **are not falsely counted as verified**, and do not cause an automatic failure. Their source must be investigated and updated through a reviewed PR.
 
