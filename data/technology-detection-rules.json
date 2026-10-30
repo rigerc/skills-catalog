@@ -1,0 +1,5018 @@
+{
+  "schema_version": 1,
+  "catalog_id": "nosey-built-in",
+  "provenance": "Draft, authored from supplied mappings.json plus new derived signals on 2026-10-28; locally fixture-tested; not production-repository validated; mapping_status updated for 20 technologies given explicit skill references, signals unchanged",
+  "policy": {
+    "case_sensitive_package_names": true,
+    "py_package_normalization": "PEP503",
+    "scan_scope": "eligible packages and repository root",
+    "source_code_execution": false,
+    "no_symlinks": true,
+    "content_max_bytes": 65536,
+    "mcp_only_enabled": true,
+    "evidence": "positive signal with project-relative file; no confidence percent"
+  },
+  "rules": [
+    {
+      "technology_id": "anthropic-sdk",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@anthropic-ai/sdk"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "anthropic"
+        }
+      ]
+    },
+    {
+      "technology_id": "chrome-devtools-mcp",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "mcp_package",
+          "name": "chrome-devtools-mcp"
+        },
+        {
+          "type": "mcp_package",
+          "name": "@anthropic-ai/chrome-devtools-mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "cloudflare-agents",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "agents"
+        }
+      ]
+    },
+    {
+      "technology_id": "cloudflare-ai",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@cloudflare/ai"
+        }
+      ]
+    },
+    {
+      "technology_id": "context7-mcp",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "mcp_package",
+          "name": "@upstash/context7-mcp"
+        },
+        {
+          "type": "mcp_package",
+          "name": "context7-mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "firecrawl",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@mendable/firecrawl-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "firecrawl-py"
+        }
+      ]
+    },
+    {
+      "technology_id": "google-genai",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@google/genai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "google-genai"
+        }
+      ]
+    },
+    {
+      "technology_id": "hugging-face",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "huggingface-hub"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "transformers"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "datasets"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@huggingface/inference"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@huggingface/transformers"
+        }
+      ]
+    },
+    {
+      "technology_id": "langchain",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "langchain"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "langchain"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "langchain-core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "langchain-openai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@langchain/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@langchain/openai"
+        }
+      ]
+    },
+    {
+      "technology_id": "langfuse",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "langfuse"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@langfuse/tracing"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "langfuse"
+        }
+      ]
+    },
+    {
+      "technology_id": "langgraph",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@langchain/langgraph"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "langgraph"
+        }
+      ]
+    },
+    {
+      "technology_id": "litellm",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "litellm"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "litellm"
+        }
+      ]
+    },
+    {
+      "technology_id": "llamaindex",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "llama-index"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "llama-index-core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "llamaindex"
+        }
+      ]
+    },
+    {
+      "technology_id": "mastra",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@mastra/core"
+        }
+      ]
+    },
+    {
+      "technology_id": "mcp-sdk",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@modelcontextprotocol/sdk"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "openai-agents-sdk",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "openai-agents"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@openai/agents"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@openai/agents-core"
+        }
+      ]
+    },
+    {
+      "technology_id": "openai-docs-mcp",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "mcp_package",
+          "name": "@openai/docs-mcp"
+        },
+        {
+          "type": "mcp_package",
+          "name": "openai-docs-mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "openai-sdk",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "openai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "openai"
+        }
+      ]
+    },
+    {
+      "technology_id": "opentelemetry",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@opentelemetry/api"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@opentelemetry/sdk-node"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@opentelemetry/sdk-trace-node"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "opentelemetry-api"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "opentelemetry-sdk"
+        }
+      ]
+    },
+    {
+      "technology_id": "mcp-playwright",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "mcp_package",
+          "name": "@playwright/mcp"
+        },
+        {
+          "type": "mcp_package",
+          "name": "@playwright/test-mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "pydantic-ai",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pydantic-ai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pydantic-ai-slim"
+        }
+      ]
+    },
+    {
+      "technology_id": "vercel-ai",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "ai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@ai-sdk/openai"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "technology_id": "auth-js",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "next-auth"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth/express"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth/sveltekit"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth/solid-start"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth/prisma-adapter"
+        }
+      ]
+    },
+    {
+      "technology_id": "better-auth",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "better-auth"
+        }
+      ]
+    },
+    {
+      "technology_id": "clerk",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/nextjs"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/remix"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/astro"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/clerk-react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/express"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clerk/backend"
+        }
+      ]
+    },
+    {
+      "technology_id": "stripe",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "stripe"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@stripe/stripe-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@stripe/react-stripe-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "stripe"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "stripe"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "composer",
+          "name": "stripe/stripe-php"
+        }
+      ]
+    },
+    {
+      "technology_id": "workos",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@workos-inc/node"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@workos-inc/authkit-nextjs"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@workos-inc/authkit-react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "workos"
+        }
+      ]
+    },
+    {
+      "technology_id": "dotnet",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "global.json"
+        },
+        {
+          "type": "path",
+          "path": "NuGet.Config"
+        },
+        {
+          "type": "path",
+          "path": "Directory.Build.props"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.csproj"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.fsproj"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.sln"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.slnx"
+        }
+      ]
+    },
+    {
+      "technology_id": "adonisjs",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@adonisjs/core"
+        },
+        {
+          "type": "path",
+          "path": "adonisrc.ts"
+        },
+        {
+          "type": "path",
+          "path": "adonisrc.js"
+        },
+        {
+          "type": "path",
+          "path": "adonisrc.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "aspnetcore",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@microsoft/aspnetcore"
+        }
+      ]
+    },
+    {
+      "technology_id": "aspnet-minimal-api",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.cs",
+          "regex": "\\bWebApplication\\.CreateBuilder\\s*\\(",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "axum",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "crate",
+          "name": "axum"
+        }
+      ]
+    },
+    {
+      "technology_id": "aspnet-blazor",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.razor",
+          "regex": "(?m)^\\s*@(?:page|code|using)\\b",
+          "case_sensitive": false
+        },
+        {
+          "type": "path",
+          "path": "_Imports.razor"
+        },
+        {
+          "type": "path",
+          "path": "App.razor"
+        }
+      ]
+    },
+    {
+      "technology_id": "csharp",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".csproj"
+        },
+        {
+          "type": "extension",
+          "suffix": ".cs"
+        }
+      ]
+    },
+    {
+      "technology_id": "django",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "django"
+        },
+        {
+          "type": "path",
+          "path": "manage.py"
+        }
+      ]
+    },
+    {
+      "technology_id": "elysia",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "elysia"
+        }
+      ]
+    },
+    {
+      "technology_id": "express",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "express"
+        }
+      ]
+    },
+    {
+      "technology_id": "fastapi",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "fastapi"
+        }
+      ]
+    },
+    {
+      "technology_id": "fastify",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "fastify"
+        }
+      ]
+    },
+    {
+      "technology_id": "fastmcp",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "fastmcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "flask",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "flask"
+        }
+      ]
+    },
+    {
+      "technology_id": "graphql",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "graphql"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "graphql-request"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "graphql-yoga"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/99designs/gqlgen"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/graph-gophers/graphql-go"
+        }
+      ]
+    },
+    {
+      "technology_id": "grpc",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@grpc/grpc-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "grpc"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@connectrpc/connect"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "grpcio"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "google.golang.org/grpc"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "crate",
+          "name": "tonic"
+        }
+      ]
+    },
+    {
+      "technology_id": "hono",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "hono"
+        }
+      ]
+    },
+    {
+      "technology_id": "java",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "pom.xml"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.java"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.gradle"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.gradle.kts"
+        }
+      ]
+    },
+    {
+      "technology_id": "laravel",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "artisan"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "composer",
+          "name": "laravel/framework"
+        }
+      ]
+    },
+    {
+      "technology_id": "nestjs",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@nestjs/core"
+        }
+      ]
+    },
+    {
+      "technology_id": "phoenix",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "hex",
+          "name": "phoenix"
+        }
+      ]
+    },
+    {
+      "technology_id": "requests",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "requests"
+        }
+      ]
+    },
+    {
+      "technology_id": "springboot",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "pom.xml",
+          "regex": "org\\.springframework\\.boot|spring-boot-starter",
+          "case_sensitive": false
+        },
+        {
+          "type": "content",
+          "path_glob": "build.gradle*",
+          "regex": "org\\.springframework\\.boot|spring-boot-starter",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "symfony",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "composer",
+          "name": "symfony/framework-bundle"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "composer",
+          "name": "symfony/symfony"
+        }
+      ]
+    },
+    {
+      "technology_id": "wordpress",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "wp-config.php"
+        },
+        {
+          "type": "path",
+          "path": "wp-login.php"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@wordpress/scripts"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@wordpress/element"
+        }
+      ]
+    },
+    {
+      "technology_id": "babel",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@babel/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "babel-core"
+        },
+        {
+          "type": "path",
+          "path": "babel.config.js"
+        },
+        {
+          "type": "path",
+          "path": "babel.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "babel.config.json"
+        },
+        {
+          "type": "path",
+          "path": ".babelrc"
+        },
+        {
+          "type": "path",
+          "path": ".babelrc.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "bazel",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "MODULE.bazel"
+        },
+        {
+          "type": "path",
+          "path": "WORKSPACE.bazel"
+        },
+        {
+          "type": "path",
+          "path": "WORKSPACE"
+        }
+      ]
+    },
+    {
+      "technology_id": "changesets",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@changesets/cli"
+        },
+        {
+          "type": "path",
+          "path": ".changeset/config.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "cmake",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "CMakeLists.txt"
+        },
+        {
+          "type": "path",
+          "path": "CMakePresets.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "direnv",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".envrc"
+        }
+      ]
+    },
+    {
+      "technology_id": "esbuild",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "esbuild"
+        },
+        {
+          "type": "path",
+          "path": "esbuild.config.js"
+        },
+        {
+          "type": "path",
+          "path": "esbuild.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "make",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Makefile"
+        },
+        {
+          "type": "path",
+          "path": "makefile"
+        },
+        {
+          "type": "path",
+          "path": "GNUmakefile"
+        }
+      ]
+    },
+    {
+      "technology_id": "just",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "justfile"
+        },
+        {
+          "type": "path",
+          "path": "Justfile"
+        },
+        {
+          "type": "path",
+          "path": "JUSTFILE"
+        }
+      ]
+    },
+    {
+      "technology_id": "meson",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "meson.build"
+        },
+        {
+          "type": "path",
+          "path": "meson_options.txt"
+        },
+        {
+          "type": "path",
+          "path": "meson.options"
+        }
+      ]
+    },
+    {
+      "technology_id": "mise",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "mise.toml"
+        },
+        {
+          "type": "path",
+          "path": ".mise.toml"
+        }
+      ]
+    },
+    {
+      "technology_id": "moonrepo",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@moonrepo/cli"
+        },
+        {
+          "type": "path",
+          "path": ".moon/workspace.yml"
+        },
+        {
+          "type": "path",
+          "path": ".moon/workspace.yaml"
+        },
+        {
+          "type": "path",
+          "path": "moon.yml"
+        },
+        {
+          "type": "path",
+          "path": "moon.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "nodemon",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "nodemon"
+        },
+        {
+          "type": "path",
+          "path": "nodemon.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "nx",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "nx"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@nrwl/workspace"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@nx/workspace"
+        },
+        {
+          "type": "path",
+          "path": "nx.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "poetry",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "pyproject.toml",
+          "regex": "(?m)^\\s*\\[tool\\.poetry\\]\\s*$",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "rolldown",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "rolldown"
+        },
+        {
+          "type": "path",
+          "path": "rolldown.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "rolldown.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "rollup",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "rollup"
+        },
+        {
+          "type": "path",
+          "path": "rollup.config.js"
+        },
+        {
+          "type": "path",
+          "path": "rollup.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "rollup.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "rspack",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@rspack/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@rspack/cli"
+        },
+        {
+          "type": "path",
+          "path": "rspack.config.js"
+        },
+        {
+          "type": "path",
+          "path": "rspack.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "semantic-release",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "semantic-release"
+        },
+        {
+          "type": "path",
+          "path": ".releaserc"
+        },
+        {
+          "type": "path",
+          "path": ".releaserc.json"
+        },
+        {
+          "type": "path",
+          "path": ".releaserc.yml"
+        },
+        {
+          "type": "path",
+          "path": "release.config.js"
+        },
+        {
+          "type": "path",
+          "path": "release.config.cjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "task",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Taskfile.yml"
+        },
+        {
+          "type": "path",
+          "path": "Taskfile.yaml"
+        },
+        {
+          "type": "path",
+          "path": "Taskfile.dist.yml"
+        },
+        {
+          "type": "path",
+          "path": "Taskfile.dist.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "tsdown",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "tsdown"
+        },
+        {
+          "type": "path",
+          "path": "tsdown.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "tsdown.config.mts"
+        }
+      ]
+    },
+    {
+      "technology_id": "tsup",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "tsup"
+        },
+        {
+          "type": "path",
+          "path": "tsup.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "tsup.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "turborepo",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "turbo"
+        },
+        {
+          "type": "path",
+          "path": "turbo.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "typedoc",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "typedoc"
+        },
+        {
+          "type": "path",
+          "path": "typedoc.json"
+        },
+        {
+          "type": "path",
+          "path": "typedoc.jsonc"
+        }
+      ]
+    },
+    {
+      "technology_id": "uv",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "uv.lock"
+        },
+        {
+          "type": "path",
+          "path": "uv.toml"
+        },
+        {
+          "type": "content",
+          "path_glob": "pyproject.toml",
+          "regex": "(?m)^\\s*\\[tool\\.uv(?:\\.|\\])",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "vite",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "vite"
+        },
+        {
+          "type": "path",
+          "path": "vite.config.js"
+        },
+        {
+          "type": "path",
+          "path": "vite.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "vite.config.mjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "vite-plus",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "vite-plus"
+        },
+        {
+          "type": "path",
+          "path": "vite-plus.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "vite-plus.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "webpack",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "webpack"
+        },
+        {
+          "type": "path",
+          "path": "webpack.config.js"
+        },
+        {
+          "type": "path",
+          "path": "webpack.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "webpack.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "aws",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "aws-sdk"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "aws-cdk"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "aws-cdk-lib"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "boto3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "botocore"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "aws-cdk-lib"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "aws-sdk"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "aws-sdk-s3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@aws-sdk/client-s3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@aws-sdk/client-dynamodb"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@aws-cdk/core"
+        }
+      ]
+    },
+    {
+      "technology_id": "azure",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "azure-identity"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "azure-storage-blob"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "azure-cosmos"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@azure/identity"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@azure/storage-blob"
+        }
+      ]
+    },
+    {
+      "technology_id": "cloudflare",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "wrangler"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@cloudflare/workers-types"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@astrojs/cloudflare"
+        },
+        {
+          "type": "path",
+          "path": "wrangler.toml"
+        },
+        {
+          "type": "path",
+          "path": "wrangler.json"
+        },
+        {
+          "type": "path",
+          "path": "wrangler.jsonc"
+        }
+      ]
+    },
+    {
+      "technology_id": "dependabot",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".github/dependabot.yml"
+        },
+        {
+          "type": "path",
+          "path": ".github/dependabot.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "docker",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Dockerfile"
+        },
+        {
+          "type": "path",
+          "path": "Dockerfile.dev"
+        },
+        {
+          "type": "path",
+          "path": "Dockerfile.prod"
+        }
+      ]
+    },
+    {
+      "technology_id": "cloudflare-durable-objects",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "wrangler.toml",
+          "regex": "(?m)^\\s*\\[durable_objects\\]",
+          "case_sensitive": false
+        },
+        {
+          "type": "content",
+          "path_glob": "wrangler.json*",
+          "regex": "\"durable_objects\"\\s*:",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "github-actions",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "glob",
+          "pattern": ".github/workflows/*.yml"
+        },
+        {
+          "type": "glob",
+          "pattern": ".github/workflows/*.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "gitlab-ci",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".gitlab-ci.yml"
+        },
+        {
+          "type": "path",
+          "path": ".gitlab-ci.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "google-cloud",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "google-cloud-storage"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "google-cloud-bigquery"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "google-cloud-pubsub"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@google-cloud/storage"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@google-cloud/bigquery"
+        }
+      ]
+    },
+    {
+      "technology_id": "helm",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Chart.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "charts/*/Chart.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "kubernetes",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "glob",
+          "pattern": "k8s/*.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "k8s/*.yml"
+        },
+        {
+          "type": "glob",
+          "pattern": "kubernetes/*.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "kubernetes/*.yml"
+        },
+        {
+          "type": "glob",
+          "pattern": "manifests/*.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "manifests/*.yml"
+        },
+        {
+          "type": "path",
+          "path": "kustomization.yaml"
+        },
+        {
+          "type": "path",
+          "path": "kustomization.yml"
+        }
+      ]
+    },
+    {
+      "technology_id": "pulumi",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@pulumi/pulumi"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pulumi"
+        },
+        {
+          "type": "path",
+          "path": "Pulumi.yaml"
+        },
+        {
+          "type": "path",
+          "path": "Pulumi.yml"
+        }
+      ]
+    },
+    {
+      "technology_id": "renovate",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "renovate"
+        },
+        {
+          "type": "path",
+          "path": "renovate.json"
+        },
+        {
+          "type": "path",
+          "path": "renovate.json5"
+        },
+        {
+          "type": "path",
+          "path": ".renovaterc"
+        }
+      ]
+    },
+    {
+      "technology_id": "sentry",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sentry/node"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sentry/nextjs"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sentry/react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sentry/browser"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sentry/vue"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "sentry-sdk"
+        }
+      ]
+    },
+    {
+      "technology_id": "sst",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "sst"
+        },
+        {
+          "type": "path",
+          "path": "sst.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "sst.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "terraform",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".terraform.lock.hcl"
+        },
+        {
+          "type": "path",
+          "path": "terraform.tfvars"
+        },
+        {
+          "type": "path",
+          "path": "main.tf"
+        }
+      ]
+    },
+    {
+      "technology_id": "vercel-deploy",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "vercel"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@astrojs/vercel"
+        },
+        {
+          "type": "path",
+          "path": "vercel.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "elevenlabs",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "elevenlabs"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@elevenlabs/elevenlabs-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "elevenlabs"
+        }
+      ]
+    },
+    {
+      "technology_id": "gsap",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "gsap"
+        }
+      ]
+    },
+    {
+      "technology_id": "@react-three/fiber",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@react-three/fiber"
+        }
+      ]
+    },
+    {
+      "technology_id": "remotion",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "remotion"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@remotion/cli"
+        }
+      ]
+    },
+    {
+      "technology_id": "threejs",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "three"
+        }
+      ]
+    },
+    {
+      "technology_id": "bullmq",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "bullmq"
+        }
+      ]
+    },
+    {
+      "technology_id": "celery",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "celery"
+        }
+      ]
+    },
+    {
+      "technology_id": "clickhouse",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@clickhouse/client"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "clickhouse-connect"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "clickhouse-driver"
+        }
+      ]
+    },
+    {
+      "technology_id": "convex",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "convex"
+        },
+        {
+          "type": "glob",
+          "pattern": "convex/schema.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "drizzle",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "drizzle-orm"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "drizzle-kit"
+        }
+      ]
+    },
+    {
+      "technology_id": "duckdb",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "duckdb"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@duckdb/node-api"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "duckdb"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "crate",
+          "name": "duckdb"
+        }
+      ]
+    },
+    {
+      "technology_id": "firebase",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "firebase"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "firebase-admin"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "firebase-functions"
+        },
+        {
+          "type": "path",
+          "path": "firebase.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "inngest",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "inngest"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "inngest"
+        }
+      ]
+    },
+    {
+      "technology_id": "instantdb",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@instantdb/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@instantdb/react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@instantdb/react-native"
+        },
+        {
+          "type": "path",
+          "path": "instant.schema.ts"
+        },
+        {
+          "type": "path",
+          "path": "instant.perms.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "mongodb",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "mongodb"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "mongoose"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pymongo"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "motor"
+        }
+      ]
+    },
+    {
+      "technology_id": "mysql",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "mysql2"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "mysql"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pymysql"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "mysql-connector-python"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "aiomysql"
+        }
+      ]
+    },
+    {
+      "technology_id": "neon",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@neondatabase/serverless"
+        }
+      ]
+    },
+    {
+      "technology_id": "numpy",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "numpy"
+        }
+      ]
+    },
+    {
+      "technology_id": "pandas",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pandas"
+        }
+      ]
+    },
+    {
+      "technology_id": "polars",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "nodejs-polars"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "polars"
+        }
+      ]
+    },
+    {
+      "technology_id": "postgres",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "pg"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "postgres"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "psycopg"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "psycopg2"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "psycopg2-binary"
+        }
+      ]
+    },
+    {
+      "technology_id": "prisma",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "prisma"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@prisma/client"
+        }
+      ]
+    },
+    {
+      "technology_id": "pydantic",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pydantic"
+        }
+      ]
+    },
+    {
+      "technology_id": "qdrant",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@qdrant/js-client-rest"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "qdrant-client"
+        }
+      ]
+    },
+    {
+      "technology_id": "redis",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "redis"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "ioredis"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@upstash/redis"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "redis"
+        }
+      ]
+    },
+    {
+      "technology_id": "scikit-learn",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "scikit-learn"
+        }
+      ]
+    },
+    {
+      "technology_id": "sqlalchemy",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "sqlalchemy"
+        }
+      ]
+    },
+    {
+      "technology_id": "sqlite",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "better-sqlite3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "sqlite3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@libsql/client"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "aiosqlite"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pysqlite3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "sqlite3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "modernc.org/sqlite"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/mattn/go-sqlite3"
+        }
+      ]
+    },
+    {
+      "technology_id": "supabase",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@supabase/supabase-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@supabase/ssr"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "supabase"
+        }
+      ]
+    },
+    {
+      "technology_id": "temporal",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@temporalio/client"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@temporalio/worker"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@temporalio/workflow"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "temporalio"
+        }
+      ]
+    },
+    {
+      "technology_id": "trigger-dev",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@trigger.dev/sdk"
+        }
+      ]
+    },
+    {
+      "technology_id": "zod",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "zod"
+        }
+      ]
+    },
+    {
+      "technology_id": "cobra",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/spf13/cobra"
+        }
+      ]
+    },
+    {
+      "technology_id": "gin",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/gin-gonic/gin"
+        }
+      ]
+    },
+    {
+      "technology_id": "go",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "go.mod"
+        },
+        {
+          "type": "path",
+          "path": "go.work"
+        }
+      ]
+    },
+    {
+      "technology_id": "go-graphql",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/99designs/gqlgen"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/graph-gophers/graphql-go"
+        }
+      ]
+    },
+    {
+      "technology_id": "go-grpc",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "google.golang.org/grpc"
+        }
+      ]
+    },
+    {
+      "technology_id": "google-wire",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/google/wire"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-do",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/do"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/do/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-hot",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/hot"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-lo",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/lo"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-mo",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/mo"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-oops",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/oops"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-ro",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/ro"
+        }
+      ]
+    },
+    {
+      "technology_id": "samber-slog",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/slog-multi"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/slog-sampling"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/samber/slog-formatter"
+        }
+      ]
+    },
+    {
+      "technology_id": "swagger",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/swaggo/swag"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/swaggo/gin-swagger"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/swaggo/echo-swagger"
+        }
+      ]
+    },
+    {
+      "technology_id": "testify",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/stretchr/testify"
+        }
+      ]
+    },
+    {
+      "technology_id": "uber-dig",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "go.uber.org/dig"
+        }
+      ]
+    },
+    {
+      "technology_id": "uber-fx",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "go.uber.org/fx"
+        }
+      ]
+    },
+    {
+      "technology_id": "viper",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/spf13/viper"
+        }
+      ]
+    },
+    {
+      "technology_id": "bash",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".sh"
+        },
+        {
+          "type": "extension",
+          "suffix": ".bash"
+        }
+      ]
+    },
+    {
+      "technology_id": "bun",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "bun.lockb"
+        },
+        {
+          "type": "path",
+          "path": "bun.lock"
+        },
+        {
+          "type": "path",
+          "path": "bunfig.toml"
+        }
+      ]
+    },
+    {
+      "technology_id": "cpp",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".cpp"
+        },
+        {
+          "type": "extension",
+          "suffix": ".cxx"
+        },
+        {
+          "type": "extension",
+          "suffix": ".cc"
+        }
+      ]
+    },
+    {
+      "technology_id": "deno",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "deno.json"
+        },
+        {
+          "type": "path",
+          "path": "deno.jsonc"
+        }
+      ]
+    },
+    {
+      "technology_id": "elixir",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "mix.exs"
+        }
+      ]
+    },
+    {
+      "technology_id": "fish",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".fish"
+        },
+        {
+          "type": "path",
+          "path": "config.fish"
+        }
+      ]
+    },
+    {
+      "technology_id": "haskell",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".hs"
+        },
+        {
+          "type": "extension",
+          "suffix": ".lhs"
+        },
+        {
+          "type": "path",
+          "path": "stack.yaml"
+        },
+        {
+          "type": "path",
+          "path": "cabal.project"
+        }
+      ]
+    },
+    {
+      "technology_id": "home-assistant",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "configuration.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "custom_components/*/manifest.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "jinja",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "jinja2"
+        },
+        {
+          "type": "extension",
+          "suffix": ".jinja"
+        },
+        {
+          "type": "extension",
+          "suffix": ".jinja2"
+        },
+        {
+          "type": "extension",
+          "suffix": ".j2"
+        }
+      ]
+    },
+    {
+      "technology_id": "lua",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".lua"
+        },
+        {
+          "type": "path",
+          "path": ".luarc.json"
+        },
+        {
+          "type": "path",
+          "path": ".luacheckrc"
+        }
+      ]
+    },
+    {
+      "technology_id": "nix",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".nix"
+        }
+      ]
+    },
+    {
+      "technology_id": "node",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "package.json"
+        },
+        {
+          "type": "path",
+          "path": ".nvmrc"
+        }
+      ]
+    },
+    {
+      "technology_id": "php",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "composer.json"
+        },
+        {
+          "type": "path",
+          "path": "composer.lock"
+        }
+      ]
+    },
+    {
+      "technology_id": "powershell",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".ps1"
+        },
+        {
+          "type": "extension",
+          "suffix": ".psm1"
+        },
+        {
+          "type": "extension",
+          "suffix": ".psd1"
+        }
+      ]
+    },
+    {
+      "technology_id": "python",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "pyproject.toml"
+        },
+        {
+          "type": "path",
+          "path": "requirements.txt"
+        },
+        {
+          "type": "path",
+          "path": "setup.py"
+        },
+        {
+          "type": "path",
+          "path": "requirements-dev.txt"
+        },
+        {
+          "type": "path",
+          "path": "requirements-prod.txt"
+        },
+        {
+          "type": "path",
+          "path": "Pipfile"
+        },
+        {
+          "type": "path",
+          "path": "setup.cfg"
+        }
+      ]
+    },
+    {
+      "technology_id": "qml",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".qml"
+        },
+        {
+          "type": "path",
+          "path": "qmldir"
+        }
+      ]
+    },
+    {
+      "technology_id": "ruby",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Gemfile"
+        },
+        {
+          "type": "path",
+          "path": "Gemfile.lock"
+        },
+        {
+          "type": "path",
+          "path": ".ruby-version"
+        }
+      ]
+    },
+    {
+      "technology_id": "rust",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Cargo.toml"
+        }
+      ]
+    },
+    {
+      "technology_id": "supercollider",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".sc"
+        },
+        {
+          "type": "extension",
+          "suffix": ".scd"
+        }
+      ]
+    },
+    {
+      "technology_id": "typescript",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "typescript"
+        },
+        {
+          "type": "path",
+          "path": "tsconfig.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "vala",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".vala"
+        },
+        {
+          "type": "extension",
+          "suffix": ".vapi"
+        }
+      ]
+    },
+    {
+      "technology_id": "batch",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".bat"
+        },
+        {
+          "type": "extension",
+          "suffix": ".cmd"
+        }
+      ]
+    },
+    {
+      "technology_id": "zsh",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".zsh"
+        },
+        {
+          "type": "path",
+          "path": ".zshrc"
+        },
+        {
+          "type": "path",
+          "path": ".zshenv"
+        }
+      ]
+    },
+    {
+      "technology_id": "android",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "AndroidManifest.xml"
+        },
+        {
+          "type": "content",
+          "path_glob": "build.gradle*",
+          "regex": "com\\.android\\.(application|library)",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "capacitor",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@capacitor/core"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@capacitor/cli"
+        },
+        {
+          "type": "path",
+          "path": "capacitor.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "capacitor.config.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "chrome-extension",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "manifest.json",
+          "regex": "\"manifest_version\"\\s*:\\s*[23]",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "dart",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "pubspec.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "electron",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "electron"
+        },
+        {
+          "type": "path",
+          "path": "electron-builder.yml"
+        },
+        {
+          "type": "path",
+          "path": "electron-builder.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "expo",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "expo"
+        }
+      ]
+    },
+    {
+      "technology_id": "flutter",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "pubspec.yaml",
+          "regex": "(?m)^\\s*flutter\\s*:",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "kotlin",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "glob",
+          "pattern": "*.kt"
+        },
+        {
+          "type": "glob",
+          "pattern": "*.kts"
+        }
+      ]
+    },
+    {
+      "technology_id": "kotlin-multiplatform",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "build.gradle*",
+          "regex": "org\\.jetbrains\\.kotlin\\.multiplatform|kotlin\\s*\\(\\s*[\\'\\\"]multiplatform",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "obsidian",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "obsidian"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "obsidian-plugin-cli"
+        }
+      ]
+    },
+    {
+      "technology_id": "react-native",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-native"
+        }
+      ]
+    },
+    {
+      "technology_id": "swift",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "Package.swift"
+        },
+        {
+          "type": "extension",
+          "suffix": ".swift"
+        }
+      ]
+    },
+    {
+      "technology_id": "swiftui",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.swift",
+          "regex": "\\bimport\\s+SwiftUI\\b",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "tauri",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tauri-apps/api"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tauri-apps/cli"
+        },
+        {
+          "type": "path",
+          "path": "src-tauri/tauri.conf.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "userscripts",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.user.js",
+          "regex": "(?m)^\\s*//\\s*==UserScript==\\s*$",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "activeadmin",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "activeadmin"
+        }
+      ]
+    },
+    {
+      "technology_id": "devise",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "devise"
+        }
+      ]
+    },
+    {
+      "technology_id": "postgresql-ruby",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "pg"
+        }
+      ]
+    },
+    {
+      "technology_id": "redis-ruby",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "redis"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "sidekiq"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "resque"
+        }
+      ]
+    },
+    {
+      "technology_id": "rails",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "rails"
+        },
+        {
+          "type": "path",
+          "path": "config/routes.rb"
+        },
+        {
+          "type": "path",
+          "path": "config/application.rb"
+        },
+        {
+          "type": "path",
+          "path": "bin/rails"
+        }
+      ]
+    },
+    {
+      "technology_id": "sidekiq",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "sidekiq"
+        }
+      ]
+    },
+    {
+      "technology_id": "ava",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "ava"
+        },
+        {
+          "type": "path",
+          "path": "ava.config.js"
+        },
+        {
+          "type": "path",
+          "path": "ava.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "ava.config.mjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "biome",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@biomejs/biome"
+        },
+        {
+          "type": "path",
+          "path": "biome.json"
+        },
+        {
+          "type": "path",
+          "path": "biome.jsonc"
+        }
+      ]
+    },
+    {
+      "technology_id": "commitlint",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@commitlint/cli"
+        },
+        {
+          "type": "path",
+          "path": "commitlint.config.js"
+        },
+        {
+          "type": "path",
+          "path": "commitlint.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "commitlint.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "cypress",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "cypress"
+        },
+        {
+          "type": "path",
+          "path": "cypress.config.js"
+        },
+        {
+          "type": "path",
+          "path": "cypress.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "cypress.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "eslint",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "eslint"
+        },
+        {
+          "type": "path",
+          "path": "eslint.config.js"
+        },
+        {
+          "type": "path",
+          "path": "eslint.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "eslint.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc.json"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "husky",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "husky"
+        },
+        {
+          "type": "path",
+          "path": ".husky/pre-commit"
+        },
+        {
+          "type": "path",
+          "path": ".husky/commit-msg"
+        }
+      ]
+    },
+    {
+      "technology_id": "jest",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "jest"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@jest/core"
+        },
+        {
+          "type": "path",
+          "path": "jest.config.js"
+        },
+        {
+          "type": "path",
+          "path": "jest.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "jest.config.mjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "knip",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "knip"
+        },
+        {
+          "type": "path",
+          "path": "knip.json"
+        },
+        {
+          "type": "path",
+          "path": "knip.jsonc"
+        },
+        {
+          "type": "path",
+          "path": "knip.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "lefthook",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "lefthook"
+        },
+        {
+          "type": "path",
+          "path": "lefthook.yml"
+        },
+        {
+          "type": "path",
+          "path": "lefthook.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "lint-staged",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "lint-staged"
+        },
+        {
+          "type": "path",
+          "path": ".lintstagedrc"
+        },
+        {
+          "type": "path",
+          "path": ".lintstagedrc.json"
+        },
+        {
+          "type": "path",
+          "path": "lint-staged.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "oxlint",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "oxlint"
+        },
+        {
+          "type": "path",
+          "path": ".oxlintrc.json"
+        },
+        {
+          "type": "path",
+          "path": "oxlint.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "playwright",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@playwright/test"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "playwright"
+        },
+        {
+          "type": "path",
+          "path": "playwright.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "playwright.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "pre-commit",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pre-commit"
+        },
+        {
+          "type": "path",
+          "path": ".pre-commit-config.yaml"
+        },
+        {
+          "type": "path",
+          "path": ".pre-commit-config.yml"
+        }
+      ]
+    },
+    {
+      "technology_id": "prettier",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "prettier"
+        },
+        {
+          "type": "path",
+          "path": ".prettierrc"
+        },
+        {
+          "type": "path",
+          "path": ".prettierrc.json"
+        },
+        {
+          "type": "path",
+          "path": ".prettierrc.yml"
+        },
+        {
+          "type": "path",
+          "path": "prettier.config.js"
+        },
+        {
+          "type": "path",
+          "path": "prettier.config.cjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "pytest",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pytest"
+        }
+      ]
+    },
+    {
+      "technology_id": "rspec",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "rspec"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "rspec-rails"
+        },
+        {
+          "type": "path",
+          "path": ".rspec"
+        }
+      ]
+    },
+    {
+      "technology_id": "rubocop",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "rubocop"
+        },
+        {
+          "type": "path",
+          "path": ".rubocop.yml"
+        }
+      ]
+    },
+    {
+      "technology_id": "ruff",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "ruff"
+        },
+        {
+          "type": "path",
+          "path": "ruff.toml"
+        },
+        {
+          "type": "path",
+          "path": ".ruff.toml"
+        },
+        {
+          "type": "content",
+          "path_glob": "pyproject.toml",
+          "regex": "(?m)^\\s*\\[tool\\.ruff(?:\\]|\\.)",
+          "case_sensitive": false
+        }
+      ]
+    },
+    {
+      "technology_id": "sorbet",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "sorbet"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "gem",
+          "name": "sorbet-runtime"
+        },
+        {
+          "type": "path",
+          "path": "sorbet/config"
+        }
+      ]
+    },
+    {
+      "technology_id": "vitest",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "vitest"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.js"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.mts"
+        }
+      ]
+    },
+    {
+      "technology_id": "xo",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "xo"
+        },
+        {
+          "type": "path",
+          "path": ".xo-config.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "angular",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@angular/core"
+        },
+        {
+          "type": "path",
+          "path": "angular.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "astro",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "astro"
+        },
+        {
+          "type": "path",
+          "path": "astro.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "astro.config.js"
+        },
+        {
+          "type": "path",
+          "path": "astro.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "chakra-ui",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@chakra-ui/react"
+        }
+      ]
+    },
+    {
+      "technology_id": "codemirror",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "codemirror"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@codemirror/state"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@codemirror/view"
+        }
+      ]
+    },
+    {
+      "technology_id": "d3",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "d3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "d3-selection"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "d3-scale"
+        }
+      ]
+    },
+    {
+      "technology_id": "ink",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "ink"
+        }
+      ]
+    },
+    {
+      "technology_id": "lit",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "lit"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "lit-element"
+        }
+      ]
+    },
+    {
+      "technology_id": "msw",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "msw"
+        }
+      ]
+    },
+    {
+      "technology_id": "monaco-editor",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "monaco-editor"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@monaco-editor/react"
+        }
+      ]
+    },
+    {
+      "technology_id": "nextjs",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "next"
+        },
+        {
+          "type": "path",
+          "path": "next.config.js"
+        },
+        {
+          "type": "path",
+          "path": "next.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "next.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "nuxt",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "nuxt"
+        },
+        {
+          "type": "path",
+          "path": "nuxt.config.js"
+        },
+        {
+          "type": "path",
+          "path": "nuxt.config.ts"
+        }
+      ]
+    },
+    {
+      "technology_id": "pinia",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "pinia"
+        }
+      ]
+    },
+    {
+      "technology_id": "preact",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "preact"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "preact-render-to-string"
+        }
+      ]
+    },
+    {
+      "technology_id": "qwik",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@builder.io/qwik"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@builder.io/qwik-city"
+        }
+      ]
+    },
+    {
+      "technology_id": "radix-ui",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@radix-ui/react-dialog"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@radix-ui/react-slot"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@radix-ui/react-dropdown-menu"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "radix-ui"
+        }
+      ]
+    },
+    {
+      "technology_id": "react",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-dom"
+        }
+      ]
+    },
+    {
+      "technology_id": "react-hook-form",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-hook-form"
+        }
+      ]
+    },
+    {
+      "technology_id": "react-router",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-router"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-router-dom"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@react-router/node"
+        }
+      ]
+    },
+    {
+      "technology_id": "recharts",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "recharts"
+        }
+      ]
+    },
+    {
+      "technology_id": "redux",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "redux"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "react-redux"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@reduxjs/toolkit"
+        }
+      ]
+    },
+    {
+      "technology_id": "remark-rehype-unified",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "remark"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "remark-parse"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "rehype"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "rehype-parse"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "unified"
+        }
+      ]
+    },
+    {
+      "technology_id": "shadcn",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "components.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "solidjs",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "solid-js"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@solidjs/start"
+        }
+      ]
+    },
+    {
+      "technology_id": "storybook",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "storybook"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@storybook/react"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@storybook/vue3"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@storybook/svelte"
+        },
+        {
+          "type": "path",
+          "path": ".storybook/main.ts"
+        },
+        {
+          "type": "path",
+          "path": ".storybook/main.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "svelte",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "svelte"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sveltejs/kit"
+        },
+        {
+          "type": "path",
+          "path": "svelte.config.js"
+        }
+      ]
+    },
+    {
+      "technology_id": "sveltekit",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@sveltejs/kit"
+        }
+      ]
+    },
+    {
+      "technology_id": "tailwind",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "tailwindcss"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tailwindcss/vite"
+        },
+        {
+          "type": "path",
+          "path": "tailwind.config.js"
+        },
+        {
+          "type": "path",
+          "path": "tailwind.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "tailwind.config.cjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "tanstack-form",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/react-form"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/vue-form"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/solid-form"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/form-core"
+        }
+      ]
+    },
+    {
+      "technology_id": "tanstack-query",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/react-query"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/vue-query"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/solid-query"
+        }
+      ]
+    },
+    {
+      "technology_id": "tanstack-start",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/react-start"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/start"
+        }
+      ]
+    },
+    {
+      "technology_id": "tanstack-table",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/react-table"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/vue-table"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/solid-table"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@tanstack/table-core"
+        }
+      ]
+    },
+    {
+      "technology_id": "trpc",
+      "mapping_status": "detect_only",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@trpc/server"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@trpc/client"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@trpc/react-query"
+        }
+      ]
+    },
+    {
+      "technology_id": "unocss",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "unocss"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@unocss/vite"
+        },
+        {
+          "type": "path",
+          "path": "uno.config.ts"
+        },
+        {
+          "type": "path",
+          "path": "uno.config.js"
+        },
+        {
+          "type": "path",
+          "path": "uno.config.mjs"
+        }
+      ]
+    },
+    {
+      "technology_id": "vue",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "vue"
+        }
+      ]
+    },
+    {
+      "technology_id": "zustand",
+      "mapping_status": "mapped",
+      "origin": "derived_and_review_required",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "zustand"
+        }
+      ]
+    }
+  ]
+}
