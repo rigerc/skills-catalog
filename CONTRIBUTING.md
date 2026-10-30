@@ -36,6 +36,7 @@ Requires Node.js **22+**, with no npm install needed.
 
    ```sh
    node scripts/catalog.mjs --validate
+   node scripts/check-duplicate-skills.mjs
    node scripts/catalog.mjs --write
    node scripts/catalog.mjs --check
    node --test tests/*.test.mjs
@@ -45,7 +46,7 @@ Requires Node.js **22+**, with no npm install needed.
 
 ### Pull request checklist
 
-- [ ] Every new skill ID is unique after repository alias resolution and has **one** ledger entry.
+- [ ] Every new skill ID is unique after repository alias resolution, has **one** ledger entry, and does not reuse another skill's repository/name or upstream `SKILL.md` path.
 - [ ] Every technology referenced by a mapping exists and has **one** corresponding detection rule.
 - [ ] Technology `mapping_status` agrees with `skill_ids` and its detection rule.
 - [ ] Every recommendation references a real skill and the skill's `recommended_for` backlink agrees.
@@ -54,7 +55,7 @@ Requires Node.js **22+**, with no npm install needed.
 - [ ] Generated docs are current; validation and tests pass.
 - [ ] New/changed scanner signals are narrow enough to avoid common false positives, with evidence or a fixture in the PR.
 
-**What CI checks:** schema versions, counts, unique IDs, known references, matching mapping/detection statuses, provenance entry coverage, and generated-document drift. **What still needs review:** whether recommendations are appropriate, reverse backlinks exactly mirror every forward mapping, real-world URL/source safety, and scanner signal precision. Passing CI is not an independent security or availability audit.
+**What CI checks:** schema versions, counts, unique IDs, duplicate repository/skill names, duplicate pinned upstream `SKILL.md` paths (even across commits), known references, matching mapping/detection statuses, provenance entry coverage, and generated-document drift. Same-named skills in different repositories are allowed; semantic similarity or copied contents across distinct upstream files still requires human review. **What still needs review:** whether recommendations are appropriate, reverse backlinks exactly mirror every forward mapping, real-world URL/source safety, and scanner signal precision. Passing CI is not an independent security or availability audit.
 
 ## Release into Nosey
 
