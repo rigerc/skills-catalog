@@ -96,7 +96,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | tsup | `tsup` | Detect-only | — |
 | Turborepo | `turborepo` | Mapped | `vercel/turborepo/turborepo` |
 | TypeDoc | `typedoc` | Detect-only | — |
-| uv | `uv` | Mapped | `vamseeachanta/workspace-hub/uv-package-manager` |
+| uv | `uv` | Mapped | `vamseeachanta/workspace-hub/uv-package-manager`, `Paldom/python-skills/python-packaging` |
 | Vite | `vite` | Mapped | `antfu/skills/vite` |
 | Vite+ | `vite-plus` | Detect-only | — |
 | webpack | `webpack` | Mapped | `Mindrally/skills/webpack-bundler` |
@@ -207,7 +207,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Node.js | `node` | Mapped | `wshobson/agents/nodejs-backend-patterns`, `sickn33/antigravity-awesome-skills/nodejs-best-practices` |
 | PHP | `php` | Mapped | `jeffallan/claude-skills/php-pro` |
 | PowerShell | `powershell` | Detect-only | — |
-| Python | `python` | Mapped | `inferen-sh/skills/python-executor`, `wshobson/agents/python-testing-patterns`, `github/awesome-copilot/python-pypi-package-builder` |
+| Python | `python` | Mapped | `inferen-sh/skills/python-executor`, `wshobson/agents/python-testing-patterns`, `github/awesome-copilot/python-pypi-package-builder`, `Paldom/python-skills/python-ci`, `Paldom/python-skills/python-lint`, `Paldom/python-skills/python-packaging`, `Paldom/python-skills/python-precommit`, `Paldom/python-skills/python-release`, `Paldom/python-skills/python-supply-chain`, `Paldom/python-skills/python-testing`, `Paldom/python-skills/python-typing` |
 | QML | `qml` | Detect-only | — |
 | Ruby | `ruby` | Mapped | `lucianghinda/superpowers-ruby/ruby` |
 | Rust | `rust` | Mapped | `apollographql/skills/rust-best-practices` |
@@ -263,12 +263,12 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | lint-staged | `lint-staged` | Mapped | `mattpocock/skills/setup-pre-commit` |
 | oxlint | `oxlint` | Mapped | `delexw/claude-code-misc/oxlint` |
 | Playwright | `playwright` | Mapped | `currents-dev/playwright-best-practices-skill/playwright-best-practices` |
-| pre-commit | `pre-commit` | Detect-only | — |
+| pre-commit | `pre-commit` | Mapped | `Paldom/python-skills/python-precommit` |
 | Prettier | `prettier` | Mapped | `thebushidocollective/han/prettier-configuration` |
-| Pytest | `pytest` | Mapped | `wshobson/agents/python-testing-patterns`, `github/awesome-copilot/pytest-coverage` |
+| Pytest | `pytest` | Mapped | `wshobson/agents/python-testing-patterns`, `github/awesome-copilot/pytest-coverage`, `Paldom/python-skills/python-testing` |
 | RSpec | `rspec` | Mapped | `igmarin/rails-agent-skills/test-service`, `lucianghinda/superpowers-ruby/test-driven-development` |
 | RuboCop | `rubocop` | Detect-only | — |
-| Ruff | `ruff` | Mapped | `github/awesome-copilot/ruff-recursive-fix` |
+| Ruff | `ruff` | Mapped | `github/awesome-copilot/ruff-recursive-fix`, `Paldom/python-skills/python-lint` |
 | Sorbet | `sorbet` | Mapped | `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet`, `DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline` |
 | Vitest | `vitest` | Mapped | `antfu/skills/vitest` |
 | XO | `xo` | Detect-only | — |

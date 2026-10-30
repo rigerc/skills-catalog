@@ -4103,7 +4103,7 @@
     },
     {
       "technology_id": "pre-commit",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
