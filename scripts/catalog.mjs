@@ -3,6 +3,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {findUnmappedSkills, renderUnmapped} from './unmapped.mjs';
 const root=fileURLToPath(new URL('..',import.meta.url));
 export const load=()=>Object.fromEntries([
  ['c','catalog.json'],['m','mappings.json'],['l','catalog-source-ledger.json'],['d','technology-detection-rules.json']
@@ -60,7 +61,7 @@ export const validate=function validate(c,m,l,d){
   return{skills:skills.length,technologies:technologies.length,mapped:mapped.length,detect_only:unmapped.length,combinations:combinations.length,verified,unresolved};
 };
 export const render=function render(c,m,l,d){
- const stats=validate(c,m,l,d),esc=x=>String(x??"").replace(/\|/g,"\\|").replace(/\r?\n/g," "),code=x=>"`"+String(x).replace(/`/g,"")+"`";
+ const stats=validate(c,m,l,d),unmappedSkillCount=findUnmappedSkills(c,m).length,esc=x=>String(x??"").replace(/\|/g,"\\|").replace(/\r?\n/g," "),code=x=>"`"+String(x).replace(/`/g,"")+"`";
  const cats=new Map(),provenance=new Map(l.entries.map(x=>[x.id,x]));
  for(const t of m.technologies){const x=cats.get(t.category)??{all:0,mapped:0};x.all++;if(t.mapping_status==="mapped")x.mapped++;cats.set(t.category,x)}
  const sortedCats=[...cats.keys()].sort((a,b)=>a.localeCompare(b));
@@ -78,6 +79,7 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Metric | Total |
 | --- | ---: |
 | Skills | **${stats.skills}** |
+| Skills without mappings | **${unmappedSkillCount}** |
 | Mapped technologies | **${stats.mapped}** |
 | Detect-only technologies | **${stats.detect_only}** |
 | Combinations | **${stats.combinations}** |
@@ -91,6 +93,7 @@ Snapshot date: **${esc(c.snapshot_date)}**. Source verification is historical ev
 - [All skills and source verification](SKILLS.md)
 - [Technology mappings and combinations](TECHNOLOGIES.md)
 - [Skill registry](data/catalog.json)
+- [Unmapped skills (generated)](data/unmapped.json)
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)
 - [Provenance and unresolved-source ledger](data/catalog-source-ledger.json)
@@ -111,12 +114,13 @@ Requires Node.js 22+; no npm dependencies.
 node scripts/catalog.mjs --validate
 node scripts/catalog.mjs --write
 node scripts/catalog.mjs --check
+node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 \`\`\`
 
-CI enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, and generated documentation. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
-The four \`data/*.json\` files are one versioned source snapshot. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
+The four canonical source JSON files under \`data/\` are one versioned snapshot; \`data/unmapped.json\` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
 `;
  const SKILLS=`# Skills
 
@@ -151,7 +155,7 @@ ${m.combinations.slice().sort((a,b)=>a.id.localeCompare(b.id)).map(x=>`| ${esc(x
 
 ${m.frontend_essentials.skill_ids.map(code).join(", ")}
 `;
- return{"README.md":README,"SKILLS.md":SKILLS,"TECHNOLOGIES.md":TECHNOLOGIES};
+ return{"README.md":README,"SKILLS.md":SKILLS,"TECHNOLOGIES.md":TECHNOLOGIES,"data/unmapped.json":renderUnmapped(c,m)};
 };
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const [cmd,...extra]=process.argv.slice(2);

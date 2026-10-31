@@ -30,6 +30,7 @@ jobs:
             README.md
             SKILLS.md
             TECHNOLOGIES.md
+            data/unmapped.json
           commit-message: 'docs: regenerate catalog'
           title: 'docs: regenerate catalog index'
           body: 'Generated from the canonical JSON snapshot. Review before merging.'
