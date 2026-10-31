@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sourceLocation, findUpdates, applyUpdates, reportMarkdown, githubJson} from '../scripts/update-skill-sources.mjs';
+import {sourceLocation, findUpdates, applyUpdates, reportMarkdown, githubJson, remoteHead, rawSkillUrl, readRawSkill, gitBlobHash, findUpdatesWithoutApi} from '../scripts/update-skill-sources.mjs';
 import {load} from '../scripts/catalog.mjs';
 
 const A = 'a'.repeat(40);
@@ -108,4 +108,108 @@ test('retries transient HTTP errors and rejects cross-host redirects', async () 
   await assert.rejects(() => githubJson('https://api.github.com/repos/demo/skills', {
     fetchImpl: async () => response(301, {}, 'https://attacker.example/repo'),
   }), /Unsafe GitHub API URL/);
+});
+
+
+test('Git blob hashes match immutable Git object hashes', () => {
+  assert.equal(gitBlobHash(Buffer.from('hello\n')), 'ce013625030ba8dba906f756967f9e9ca394464a');
+  assert.equal(gitBlobHash(Buffer.from('hello\n')), gitBlobHash(new Uint8Array(Buffer.from('hello\n'))));
+});
+
+test('findUpdatesWithoutApi skips downloads for up-to-date upstream repositories', async () => {
+  let heads = 0;
+  const result = await findUpdatesWithoutApi([entry('alpha'), entry('beta')], {
+    resolveHead: async () => {heads++; return A;},
+    readSkill: async () => {throw Error('Unexpected raw download');},
+  });
+  assert.equal(heads, 1);
+  assert.equal(result.rawDownloads, 0);
+  assert.equal(result.apiRequests, 0);
+  assert.deepEqual(result.updates, []);
+  assert.equal(result.checked, 2);
+});
+
+test('findUpdatesWithoutApi compares actual file bytes and only proposes changed skills', async () => {
+  const hits = [];
+  const raw = {
+    [A + '/skills/alpha/SKILL.md']: 'same',
+    [B + '/skills/alpha/SKILL.md']: 'same',
+    [A + '/skills/beta/SKILL.md']: 'old',
+    [B + '/skills/beta/SKILL.md']: 'new',
+  };
+  const result = await findUpdatesWithoutApi([entry('beta'), entry('alpha'),
+    {id: 'unresolved/skill', status: 'unresolved', reason: 'Unknown source'}], {
+    resolveHead: async r => {assert.equal(r, repo); return B;},
+    readSkill: async (r, sha, path) => {
+      hits.push(sha + '/' + path);
+      return Buffer.from(raw[sha + '/' + path]);
+    },
+  });
+  assert.equal(result.repositories, 1);
+  assert.equal(result.headLookups, 1);
+  assert.equal(result.rawDownloads, 4);
+  assert.equal(result.apiRequests, 0);
+  assert.equal(result.unresolved.length, 1);
+  assert.deepEqual(result.updates.map(x => x.id), [repo + '/beta']);
+  assert.equal(result.updates[0].newCommit, B);
+  assert.equal(result.updates[0].oldBlob, gitBlobHash(Buffer.from('old')));
+  assert.equal(new Set(hits).size, 4);
+});
+
+test('upstream raw request failure stops updates instead of publishing partial results', async () => {
+  await assert.rejects(() => findUpdatesWithoutApi([entry('alpha'), entry('beta')], {
+    concurrency: 1,
+    resolveHead: async () => B,
+    readSkill: async () => {throw Error('HTTP 429 rate limited');},
+  }), /HTTP 429/);
+});
+
+test('raw source paths are commit-pinned and reject unsafe locations', () => {
+  assert.equal(rawSkillUrl('demo/skills', A, 'skills/my-skill/SKILL.md'),
+    'https://raw.githubusercontent.com/demo/skills/' + A + '/skills/my-skill/SKILL.md');
+  assert.throws(() => rawSkillUrl('demo/skills', 'main', 'skills/my-skill/SKILL.md'));
+  assert.throws(() => rawSkillUrl('demo/skills', A, '../SKILL.md'));
+  assert.throws(() => rawSkillUrl('bad/skills/extra', A, 'SKILL.md'));
+});
+
+test('raw file download rejects HTTP rate limit responses without retrying', async () => {
+  let calls = 0;
+  await assert.rejects(() => readRawSkill('demo/skills', A, 'skills/alpha/SKILL.md', {
+    fetchImpl: async () => {
+      calls++;
+      return {ok: false, status: 429, headers: {get: () => null}};
+    },
+    sleep: async () => {},
+  }), /rate limit/);
+  assert.equal(calls, 1);
+});
+
+test('raw file download reads bytes and refuses empty responses', async () => {
+  const makeResponse = bytes => ({
+    ok: true, status: 200,
+    headers: {get: () => null},
+    body: new ReadableStream({start(controller) {
+      if (bytes.length) controller.enqueue(new Uint8Array(bytes));
+      controller.close();
+    }}),
+  });
+  const result = await readRawSkill('demo/skills', A, 'SKILL.md', {
+    fetchImpl: async () => makeResponse(Buffer.from('A skill\n')),
+  });
+  assert.deepEqual(result, Buffer.from('A skill\n'));
+  await assert.rejects(() => readRawSkill('demo/skills', A, 'SKILL.md', {
+    fetchImpl: async () => makeResponse(Buffer.alloc(0)),
+  }), /Empty upstream/);
+});
+
+test('upstream git HEAD is validated without calling the GitHub API', async () => {
+  const head = await remoteHead('demo/skills', {exec: async (name, args) => {
+    assert.equal(name, 'git');
+    assert.ok(args.includes('https://github.com/demo/skills.git'));
+    return {stdout: B + '\tHEAD\n'};
+  }});
+  assert.equal(head, B);
+  await assert.rejects(() => remoteHead('demo/skills', {
+    exec: async () => ({stdout: 'invalid\tHEAD\n'}),
+  }), /Invalid or missing/);
 });

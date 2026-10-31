@@ -65,15 +65,15 @@ After this PR merges, Nosey's catalog-sync workflow can open an update PR based 
 
 The [Update upstream skill sources](.github/workflows/update-skill-sources.yml) workflow runs every Tuesday at **06:37 UTC** and can be started manually from **Actions → Update upstream skill sources → Run workflow**. It checks every verified skill against the upstream repository's latest default-branch commit, compares the exact SKILL.md blob, and opens or refreshes a review PR only when the file content changed. It does not automatically merge.
 
-The updater reuses the verified source path; it never guesses a new location for moved/deleted skills. Unresolved sources are skipped and reported. Missing files, truncated Git trees, API failures, and rate limits fail the job without publishing partial updates. The generated README/SKILLS documents and snapshot dates are refreshed together.
+The updater reuses verified source paths and never guesses a replacement for moved/deleted skills. It resolves one Git HEAD per upstream repository and compares raw `SKILL.md` file bytes at the pinned and latest commits. It uses **no GitHub REST/GraphQL API requests** to check for updates. Unresolved entries are skipped and reported; missing/oversized files, raw-host throttling, and Git failures stop the job without publishing partial updates. The generated README/SKILLS documents and snapshot dates are refreshed together.
 
-For local use, supply a GitHub API token (Node.js 22+), then run:
+For local use, install Node.js 22+ and Git; no API token is needed:
 
 ~~~sh
-GITHUB_TOKEN="$YOUR_TOKEN" node scripts/update-skill-sources.mjs --check
-GITHUB_TOKEN="$YOUR_TOKEN" node scripts/update-skill-sources.mjs --write
+node scripts/update-skill-sources.mjs --check
+node scripts/update-skill-sources.mjs --write
 ~~~
 
-Review the upstream commit diffs, security, compatibility, and licensing before merging. Pinned source updates change where Nosey reads skill files; they do **not** download or execute upstream instructions in CI.
+Review the upstream commit diffs, security, compatibility, and licensing before merging. Pinned source updates change where Nosey reads skill files. The workflow downloads only bounded raw `SKILL.md` bytes for comparison and **never executes** upstream instructions. Raw and Git requests remain subject to GitHub's own traffic controls.
 
 To permit automatic PR creation, enable **Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests**. The workflow uses the built-in `github.token`, so no separate credential is necessary. PRs created by that token may not trigger a second pull-request workflow run; the updater runs local catalog validation and tests before opening the PR.
