@@ -257,7 +257,7 @@
     },
     {
       "technology_id": "llamaindex",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -350,7 +350,7 @@
     },
     {
       "technology_id": "openai-sdk",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -458,7 +458,7 @@
     },
     {
       "technology_id": "auth-js",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -1321,7 +1321,7 @@
     },
     {
       "technology_id": "nx",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -2466,7 +2466,7 @@
     },
     {
       "technology_id": "numpy",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "documented_examples_plus_derived_supplements",
       "logic": "any",
       "signals": [
@@ -3203,7 +3203,7 @@
     },
     {
       "technology_id": "lua",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -3526,7 +3526,7 @@
     },
     {
       "technology_id": "electron",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -4739,7 +4739,7 @@
     },
     {
       "technology_id": "storybook",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -4937,7 +4937,7 @@
     },
     {
       "technology_id": "trpc",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [

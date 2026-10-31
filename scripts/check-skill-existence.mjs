@@ -13,7 +13,7 @@ import {fileURLToPath} from 'node:url';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const SHA = /^[0-9a-f]{40}$/;
 const OWNER_REPO = /^[A-Za-z0-9_.-]+$/;
-const FILE_SEGMENT = /^[A-Za-z0-9._@+-]+$/;
+const FILE_SEGMENT = /^[A-Za-z0-9._@+()-]+$/;
 const CONCURRENCY = 5;
 const MAX_ATTEMPTS = 3;
 
@@ -21,7 +21,8 @@ export function parseVerifiedSource(entry) {
   if (!entry || entry.status !== 'verified' || !SHA.test(entry.commit ?? '')) {
     throw new Error('Expected a verified source with a 40-character commit SHA');
   }
-  if (typeof entry.url !== 'string' || /[%\\\\]/.test(entry.url)) {
+  if (typeof entry.url !== 'string' || /[%\\\\]/.test(entry.url) ||
+      /\/\.{1,2}(?:\/|$)/.test(entry.url)) {
     throw new Error('Encoded or unsafe source URL: ' + entry.id);
   }
   let url;
