@@ -28,8 +28,7 @@ jobs:
           node-version: '22'
       - name: Validate catalog before upstream requests
         run: node scripts/catalog.mjs --validate
-      - name: Verify only newly added or changed pinned SKILL.md sources
+      - name: Verify changed pinned SKILL.md files without API quota
         env:
-          GITHUB_TOKEN: ${{ github.token }}
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: node scripts/check-changed-skill-sources.mjs --base "$BASE_SHA"
