@@ -1,0 +1,13 @@
+{
+  "name": "nosey-skills-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Canonical data contracts and source catalog for Nosey",
+  "scripts": {
+    "validate:schemas": "node scripts/validate-schemas.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey executable technology detection rules v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "provenance",
+    "policy",
+    "rules"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_sensitive_package_names",
+        "py_package_normalization",
+        "scan_scope",
+        "source_code_execution",
+        "no_symlinks",
+        "content_max_bytes",
+        "mcp_only_enabled",
+        "evidence"
+      ],
+      "properties": {
+        "case_sensitive_package_names": {
+          "type": "boolean"
+        },
+        "py_package_normalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scan_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_code_execution": {
+          "const": false
+        },
+        "no_symlinks": {
+          "const": true
+        },
+        "content_max_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65536
+        },
+        "mcp_only_enabled": {
+          "const": true
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "technology_id",
+          "mapping_status",
+          "origin",
+          "logic",
+          "signals"
+        ],
+        "properties": {
+          "technology_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mapping_status": {
+            "enum": [
+              "mapped",
+              "detect_only"
+            ]
+          },
+          "origin": {
+            "type": "string",
+            "minLength": 1
+          },
+          "logic": {
+            "const": "any"
+          },
+          "signals": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "ecosystem",
+                    "name"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "dependency"
+                    },
+                    "ecosystem": {
+                      "enum": [
+                        "npm",
+                        "py",
+                        "gem",
+                        "go",
+                        "crate",
+                        "hex",
+                        "composer"
+                      ]
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "path"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "path"
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "pattern"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "glob"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "suffix"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "extension"
+                    },
+                    "suffix": {
+                      "type": "string",
+                      "pattern": "^\\."
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "path_glob",
+                    "regex",
+                    "case_sensitive"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "content"
+                    },
+                    "path_glob": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "regex": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 512
+                    },
+                    "case_sensitive": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "name"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "mcp_package"
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              ]
+            },
+            "minItems": 1
+          }
+        }
+      },
+      "minItems": 0
+    }
+  }
+}

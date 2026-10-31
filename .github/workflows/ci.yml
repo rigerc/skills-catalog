@@ -18,6 +18,10 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22'
+      - name: Install JSON Schema development validator
+        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund
+      - name: Validate JSON Schemas and negative cases
+        run: npm run validate:schemas -- --self-test
       - run: node scripts/catalog.mjs --check
       - name: Check generated unmapped skills index
         run: node scripts/unmapped.mjs --check

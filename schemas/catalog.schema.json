@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey built-in skill catalog v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "snapshot_date",
+    "source",
+    "remote_availability",
+    "notes",
+    "counts",
+    "skills"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "remote_availability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "distinct_skills",
+        "technologies_with_skills",
+        "technologies_detect_only",
+        "technology_combinations",
+        "frontend_essential_skills"
+      ],
+      "properties": {
+        "distinct_skills": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "technologies_with_skills": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "technologies_detect_only": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "technology_combinations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "frontend_essential_skills": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "repository",
+          "skill_name",
+          "skill_md_url",
+          "recommended_for"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repository": {
+            "type": "string",
+            "minLength": 1
+          },
+          "skill_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "skill_md_url": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^https://github\\.com/.+/SKILL\\.md$"
+              }
+            ]
+          },
+          "recommended_for": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "technology_ids",
+              "combination_ids",
+              "frontend_essential"
+            ],
+            "properties": {
+              "technology_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "combination_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "frontend_essential": {
+                "type": "boolean"
+              }
+            }
+          },
+          "source_research": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "license_reported",
+              "size_reported",
+              "reviewed_for_security"
+            ],
+            "properties": {
+              "license_reported": {
+                "type": "string",
+                "minLength": 1
+              },
+              "size_reported": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_for_security": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "minItems": 0
+    }
+  }
+}
