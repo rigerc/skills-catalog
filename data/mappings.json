@@ -5,8 +5,8 @@
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 246,
-    "mapped_technologies": 177,
-    "detect_only_technologies": 69,
+    "mapped_technologies": 186,
+    "detect_only_technologies": 60,
     "combinations": 33,
     "distinct_referenced_skills": 746
   },
@@ -231,7 +231,8 @@
         "raw": "npm: `langchain`; py: `langchain`, `langchain-core`, `langchain-openai` +1; npm pattern: 1"
       },
       "skill_ids": [
-        "langchain-ai/langchain-skills/langchain-rag"
+        "langchain-ai/langchain-skills/langchain-rag",
+        "Mindrally/skills/langchain-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
@@ -313,13 +314,15 @@
       "id": "llamaindex",
       "name": "LlamaIndex",
       "category": "AI, LLM and MCP",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/llamaindex-development"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -371,7 +374,8 @@
       },
       "skill_ids": [
         "github/awesome-copilot/mcp-implementation-security-review",
-        "github/awesome-copilot/mcp-release-qa"
+        "github/awesome-copilot/mcp-release-qa",
+        "Jeffallan/claude-skills/mcp-developer"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
@@ -408,13 +412,15 @@
       "id": "openai-sdk",
       "name": "OpenAI SDK",
       "category": "AI, LLM and MCP",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/openai-api-development"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -519,13 +525,15 @@
       "id": "auth-js",
       "name": "Auth.js",
       "category": "Auth and payments",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/nextauth-authentication"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -638,7 +646,8 @@
       },
       "skill_ids": [
         "stripe/ai/stripe-best-practices",
-        "stripe/ai/upgrade-stripe"
+        "stripe/ai/upgrade-stripe",
+        "Mindrally/skills/stripe"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/07-authentication-payments.md",
       "id_provenance": "explicit_in_specification"
@@ -687,7 +696,9 @@
         "github/awesome-copilot/dotnet-design-pattern-review",
         "github/awesome-copilot/dotnet-upgrade",
         "github/awesome-copilot/dotnet-timezone",
-        "github/awesome-copilot/nuget-manager"
+        "github/awesome-copilot/nuget-manager",
+        "Mindrally/skills/dotnet",
+        "Jeffallan/claude-skills/dotnet-core-expert"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -724,7 +735,9 @@
       },
       "skill_ids": [
         "github/awesome-copilot/containerize-aspnetcore",
-        "openai/skills/aspnet-core"
+        "openai/skills/aspnet-core",
+        "Jeffallan/claude-skills/dotnet-core-expert",
+        "Mindrally/skills/aspnet-core"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -782,7 +795,8 @@
         "raw": "content match"
       },
       "skill_ids": [
-        "github/awesome-copilot/fluentui-blazor"
+        "github/awesome-copilot/fluentui-blazor",
+        "Mindrally/skills/blazor"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -811,7 +825,9 @@
         "github/awesome-copilot/csharp-docs",
         "github/awesome-copilot/csharp-nunit",
         "github/awesome-copilot/csharp-mstest",
-        "github/awesome-copilot/csharp-tunit"
+        "github/awesome-copilot/csharp-tunit",
+        "Jeffallan/claude-skills/csharp-developer",
+        "Mindrally/skills/c-sharp"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -842,7 +858,11 @@
       "skill_ids": [
         "vintasoftware/django-ai-plugins/django-expert",
         "affaan-m/everything-claude-code/django-patterns",
-        "affaan-m/everything-claude-code/django-security"
+        "affaan-m/everything-claude-code/django-security",
+        "Jeffallan/claude-skills/django-expert",
+        "Mindrally/skills/django-python",
+        "Mindrally/skills/django-rest-api-development",
+        "Mindrally/skills/rest-api-django"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -881,7 +901,8 @@
         "raw": ""
       },
       "skill_ids": [
-        "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api"
+        "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api",
+        "Mindrally/skills/express-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -906,7 +927,9 @@
       "skill_ids": [
         "fastapi/fastapi/fastapi",
         "wshobson/agents/fastapi-templates",
-        "mindrally/skills/fastapi-python"
+        "mindrally/skills/fastapi-python",
+        "Jeffallan/claude-skills/fastapi-expert",
+        "Mindrally/skills/fastapi-microservices-serverless"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -929,7 +952,8 @@
         "raw": "npm: `fastify`"
       },
       "skill_ids": [
-        "mcollina/skills/fastify"
+        "mcollina/skills/fastify",
+        "Mindrally/skills/fastify-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -975,7 +999,8 @@
         "raw": "py: `flask`"
       },
       "skill_ids": [
-        "aj-geddes/useful-ai-prompts/flask-api-development"
+        "aj-geddes/useful-ai-prompts/flask-api-development",
+        "Mindrally/skills/flask-python"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1008,7 +1033,11 @@
         "raw": "npm: `graphql`, `graphql-request`, `graphql-yoga` +1; go: `github.com/99designs/gqlgen`, `github.com/graph-gophers/graphql-go`"
       },
       "skill_ids": [
-        "apollographql/skills/graphql-operations"
+        "apollographql/skills/graphql-operations",
+        "Mindrally/skills/graphql",
+        "Jeffallan/claude-skills/graphql-architect",
+        "Mindrally/skills/apollo-graphql",
+        "Mindrally/skills/graphql-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1024,7 +1053,8 @@
         "raw": ""
       },
       "skill_ids": [
-        "jeremylongshore/tons-of-skills-marketplace/generating-grpc-services"
+        "jeremylongshore/tons-of-skills-marketplace/generating-grpc-services",
+        "Mindrally/skills/grpc-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -1047,7 +1077,8 @@
         "raw": "npm: `hono`"
       },
       "skill_ids": [
-        "honojs/skills/hono"
+        "honojs/skills/hono",
+        "Mindrally/skills/hono-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1082,7 +1113,9 @@
         "github/awesome-copilot/java-junit",
         "github/awesome-copilot/java-testcontainers",
         "github/awesome-copilot/java-upgrade",
-        "affaan-m/everything-claude-code/java-coding-standards"
+        "affaan-m/everything-claude-code/java-coding-standards",
+        "Mindrally/skills/java",
+        "Jeffallan/claude-skills/java-architect"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1112,7 +1145,9 @@
       },
       "skill_ids": [
         "jeffallan/claude-skills/laravel-specialist",
-        "affaan-m/everything-claude-code/laravel-patterns"
+        "affaan-m/everything-claude-code/laravel-patterns",
+        "Mindrally/skills/laravel",
+        "Mindrally/skills/laravel-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1135,7 +1170,9 @@
         "raw": "npm: `@nestjs/core`"
       },
       "skill_ids": [
-        "kadajett/agent-nestjs-skills/nestjs-best-practices"
+        "kadajett/agent-nestjs-skills/nestjs-best-practices",
+        "Jeffallan/claude-skills/nestjs-expert",
+        "Mindrally/skills/nestjs-clean-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1158,7 +1195,8 @@
         "raw": "hex: `phoenix`"
       },
       "skill_ids": [
-        "georgeguimaraes/elixir-agent-tools/phoenix"
+        "georgeguimaraes/elixir-agent-tools/phoenix",
+        "Mindrally/skills/phoenix"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1204,7 +1242,10 @@
         "raw": "content match (x2)"
       },
       "skill_ids": [
-        "github/awesome-copilot/java-springboot"
+        "github/awesome-copilot/java-springboot",
+        "Jeffallan/claude-skills/spring-boot-engineer",
+        "Mindrally/skills/java-spring-development",
+        "Mindrally/skills/spring-boot"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1270,7 +1311,9 @@
         "wordpress/agent-skills/wp-performance",
         "wordpress/agent-skills/wordpress-router",
         "wordpress/agent-skills/wp-project-triage",
-        "wordpress/agent-skills/wp-wpcli-and-ops"
+        "wordpress/agent-skills/wp-wpcli-and-ops",
+        "Mindrally/skills/wordpress",
+        "Jeffallan/claude-skills/wordpress-pro"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1500,13 +1543,15 @@
       "id": "nx",
       "name": "Nx",
       "category": "Build tools, monorepos and release",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/nx"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -1648,7 +1693,8 @@
         "raw": "npm: `turbo`; file: `turbo.json`"
       },
       "skill_ids": [
-        "vercel/turborepo/turborepo"
+        "vercel/turborepo/turborepo",
+        "Mindrally/skills/turborepo"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "explicit_in_specification"
@@ -1679,7 +1725,8 @@
       },
       "skill_ids": [
         "vamseeachanta/workspace-hub/uv-package-manager",
-        "Paldom/python-skills/python-packaging"
+        "Paldom/python-skills/python-packaging",
+        "Mindrally/skills/python-uv"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -1710,7 +1757,8 @@
         "raw": "npm: `vite`; file: `vite.config.js`, `vite.config.ts`, `vite.config.mjs`"
       },
       "skill_ids": [
-        "antfu/skills/vite"
+        "antfu/skills/vite",
+        "Mindrally/skills/vite"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "explicit_in_specification"
@@ -1790,7 +1838,8 @@
         "github/awesome-copilot/aws-cost-optimize",
         "github/awesome-copilot/aws-resource-health-diagnose",
         "github/awesome-copilot/aws-resource-query",
-        "github/awesome-copilot/aws-well-architected-review"
+        "github/awesome-copilot/aws-well-architected-review",
+        "Mindrally/skills/aws-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -1832,7 +1881,8 @@
         "github/awesome-copilot/azure-resource-health-diagnose",
         "github/awesome-copilot/azure-resource-visualizer",
         "github/awesome-copilot/azure-well-architected-review",
-        "github/awesome-copilot/az-cost-optimize"
+        "github/awesome-copilot/az-cost-optimize",
+        "Mindrally/skills/azure"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -1869,7 +1919,8 @@
         "cloudflare/skills/wrangler",
         "cloudflare/skills/workers-best-practices",
         "cloudflare/skills/web-perf",
-        "openai/skills/cloudflare-deploy"
+        "openai/skills/cloudflare-deploy",
+        "Mindrally/skills/cloudflare-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -1921,7 +1972,8 @@
       },
       "skill_ids": [
         "docker/skills/docker-project-foundations",
-        "github/awesome-copilot/multi-stage-dockerfile"
+        "github/awesome-copilot/multi-stage-dockerfile",
+        "Mindrally/skills/docker"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2025,7 +2077,8 @@
         "raw": "py: `google-cloud-storage`, `google-cloud-bigquery`, `google-cloud-pubsub` +1; npm pattern: 1"
       },
       "skill_ids": [
-        "rominirani/antigravity-skills/always-verify-gcp"
+        "rominirani/antigravity-skills/always-verify-gcp",
+        "Mindrally/skills/gcp-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2057,7 +2110,9 @@
         "raw": ""
       },
       "skill_ids": [
-        "TerminalSkills/skills/kubernetes-helm"
+        "TerminalSkills/skills/kubernetes-helm",
+        "Mindrally/skills/kubernetes",
+        "Jeffallan/claude-skills/kubernetes-specialist"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -2200,7 +2255,9 @@
         "hashicorp/agent-skills/terraform-style-guide",
         "hashicorp/agent-skills/refactor-module",
         "hashicorp/agent-skills/terraform-stacks",
-        "wshobson/agents/terraform-module-library"
+        "wshobson/agents/terraform-module-library",
+        "Mindrally/skills/terraform",
+        "Jeffallan/claude-skills/terraform-engineer"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2291,7 +2348,8 @@
         "greensock/gsap-skills/gsap-plugins",
         "greensock/gsap-skills/gsap-timeline",
         "greensock/gsap-skills/gsap-utils",
-        "greensock/gsap-skills/gsap-frameworks"
+        "greensock/gsap-skills/gsap-frameworks",
+        "Mindrally/skills/gsap"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
       "id_provenance": "explicit_in_specification"
@@ -2370,7 +2428,8 @@
         "cloudai-x/threejs-skills/threejs-postprocessing",
         "cloudai-x/threejs-skills/threejs-lighting",
         "cloudai-x/threejs-skills/threejs-textures",
-        "cloudai-x/threejs-skills/threejs-loaders"
+        "cloudai-x/threejs-skills/threejs-loaders",
+        "Mindrally/skills/three-js"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
       "id_provenance": "explicit_in_specification"
@@ -2466,7 +2525,8 @@
         "raw": "npm: `convex`; file: `convex`"
       },
       "skill_ids": [
-        "convex/agent-skills/convex"
+        "convex/agent-skills/convex",
+        "Mindrally/skills/convex"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2490,7 +2550,8 @@
         "raw": "npm: `drizzle-orm`, `drizzle-kit`"
       },
       "skill_ids": [
-        "bobmatnyc/claude-mpm-skills/drizzle"
+        "bobmatnyc/claude-mpm-skills/drizzle",
+        "Mindrally/skills/drizzle-orm"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2535,7 +2596,8 @@
         "raw": "npm: `firebase`, `firebase-admin`, `firebase-functions`; file: `firebase.json`"
       },
       "skill_ids": [
-        "firebase/agent-skills/firebase-auth-basics"
+        "firebase/agent-skills/firebase-auth-basics",
+        "Mindrally/skills/firebase-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2613,7 +2675,8 @@
         "raw": "npm: `mongodb`, `mongoose`; py: `pymongo`, `motor`"
       },
       "skill_ids": [
-        "hoodini/ai-agents-skills/mongodb"
+        "hoodini/ai-agents-skills/mongodb",
+        "Mindrally/skills/mongodb-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2645,7 +2708,8 @@
         "raw": "npm: `mysql2`, `mysql`; py: `pymysql`, `mysql-connector-python`, `aiomysql`"
       },
       "skill_ids": [
-        "planetscale/database-skills/mysql"
+        "planetscale/database-skills/mysql",
+        "Mindrally/skills/mysql-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2677,7 +2741,7 @@
       "id": "numpy",
       "name": "NumPy",
       "category": "Data, databases and queues",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "documented_examples_only",
         "signals": [
@@ -2690,7 +2754,9 @@
         ],
         "raw": "py: `numpy`"
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/numpy-best-practices"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
     },
@@ -2712,7 +2778,8 @@
         "raw": "py: `pandas`"
       },
       "skill_ids": [
-        "jeffallan/claude-skills/pandas-pro"
+        "jeffallan/claude-skills/pandas-pro",
+        "Mindrally/skills/pandas-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2775,7 +2842,9 @@
       },
       "skill_ids": [
         "github/awesome-copilot/postgresql-code-review",
-        "github/awesome-copilot/postgresql-optimization"
+        "github/awesome-copilot/postgresql-optimization",
+        "Jeffallan/claude-skills/postgres-pro",
+        "Mindrally/skills/postgresql-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2802,7 +2871,9 @@
         "prisma/skills/prisma-database-setup",
         "prisma/skills/prisma-client-api",
         "prisma/skills/prisma-cli",
-        "prisma/skills/prisma-postgres"
+        "prisma/skills/prisma-postgres",
+        "Mindrally/skills/prisma",
+        "Mindrally/skills/prisma-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2892,7 +2963,8 @@
         "raw": "npm: `redis`, `ioredis`, `@upstash/redis`; py: `redis`"
       },
       "skill_ids": [
-        "redis/agent-skills/redis-core"
+        "redis/agent-skills/redis-core",
+        "Mindrally/skills/redis-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2916,7 +2988,8 @@
       },
       "skill_ids": [
         "davila7/claude-code-templates/scikit-learn",
-        "davila7/claude-code-templates/senior-data-scientist"
+        "davila7/claude-code-templates/senior-data-scientist",
+        "Mindrally/skills/scikit-learn-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2984,7 +3057,9 @@
         "raw": "npm: `@supabase/supabase-js`, `@supabase/ssr`; py: `supabase`"
       },
       "skill_ids": [
-        "supabase/agent-skills/supabase-postgres-best-practices"
+        "supabase/agent-skills/supabase-postgres-best-practices",
+        "Mindrally/skills/supabase",
+        "Mindrally/skills/supabase-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -3061,7 +3136,8 @@
         "raw": "npm: `zod`"
       },
       "skill_ids": [
-        "pproenca/dot-skills/zod"
+        "pproenca/dot-skills/zod",
+        "Mindrally/skills/zod-schema-validation"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -3125,7 +3201,45 @@
         "samber/cc-skills-golang/golang-code-style",
         "samber/cc-skills-golang/golang-error-handling",
         "samber/cc-skills-golang/golang-security",
-        "samber/cc-skills-golang/golang-testing"
+        "samber/cc-skills-golang/golang-testing",
+        "Mindrally/skills/go",
+        "eduardo-sl/go-agent-skills/go-api-design",
+        "eduardo-sl/go-agent-skills/go-architecture-review",
+        "eduardo-sl/go-agent-skills/go-cli",
+        "eduardo-sl/go-agent-skills/go-dependency-injection",
+        "eduardo-sl/go-agent-skills/go-design-patterns",
+        "eduardo-sl/go-agent-skills/go-graphql",
+        "eduardo-sl/go-agent-skills/go-grpc",
+        "eduardo-sl/go-agent-skills/go-interface-design",
+        "eduardo-sl/go-agent-skills/go-openapi",
+        "eduardo-sl/go-agent-skills/go-project-layout",
+        "eduardo-sl/go-agent-skills/go-code-review",
+        "eduardo-sl/go-agent-skills/go-coding-standards",
+        "eduardo-sl/go-agent-skills/go-context",
+        "eduardo-sl/go-agent-skills/go-data-structures",
+        "eduardo-sl/go-agent-skills/go-documentation",
+        "eduardo-sl/go-agent-skills/go-error-handling",
+        "eduardo-sl/go-agent-skills/go-modernize",
+        "eduardo-sl/go-agent-skills/go-naming",
+        "eduardo-sl/go-agent-skills/go-database",
+        "eduardo-sl/go-agent-skills/go-concurrency-review",
+        "eduardo-sl/go-agent-skills/go-defensive-coding",
+        "eduardo-sl/go-agent-skills/go-observability",
+        "eduardo-sl/go-agent-skills/go-performance-review",
+        "eduardo-sl/go-agent-skills/go-security-audit",
+        "eduardo-sl/go-agent-skills/go-troubleshooting",
+        "eduardo-sl/go-agent-skills/go-test-quality",
+        "eduardo-sl/go-agent-skills/go-test-table-driven",
+        "eduardo-sl/go-agent-skills/go-binary-size",
+        "eduardo-sl/go-agent-skills/go-build-release",
+        "eduardo-sl/go-agent-skills/go-ci",
+        "eduardo-sl/go-agent-skills/go-dependency-audit",
+        "eduardo-sl/go-agent-skills/go-refactoring",
+        "eduardo-sl/go-agent-skills/go-semantic-tools",
+        "eduardo-sl/go-agent-skills/go-skills-router",
+        "Jeffallan/claude-skills/golang-pro",
+        "Mindrally/skills/go-api-development",
+        "Mindrally/skills/go-backend-microservices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
       "id_provenance": "explicit_in_specification"
@@ -3149,7 +3263,8 @@
         "raw": "go: `github.com/99designs/gqlgen`, `github.com/graph-gophers/graphql-go`"
       },
       "skill_ids": [
-        "samber/cc-skills-golang/golang-graphql"
+        "samber/cc-skills-golang/golang-graphql",
+        "eduardo-sl/go-agent-skills/go-graphql"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
       "id_provenance": "explicit_in_specification"
@@ -3172,7 +3287,8 @@
         "raw": "go: `google.golang.org/grpc`"
       },
       "skill_ids": [
-        "samber/cc-skills-golang/golang-grpc"
+        "samber/cc-skills-golang/golang-grpc",
+        "eduardo-sl/go-agent-skills/go-grpc"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
       "id_provenance": "explicit_in_specification"
@@ -3501,7 +3617,8 @@
         "raw": "ext: `.sh`, `.bash`"
       },
       "skill_ids": [
-        "wshobson/agents/bash-defensive-patterns"
+        "wshobson/agents/bash-defensive-patterns",
+        "Mindrally/skills/bash-scripting"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3552,7 +3669,8 @@
         "raw": "ext: `.cpp`, `.cxx`, `.cc` +3"
       },
       "skill_ids": [
-        "jeffallan/claude-skills/cpp-pro"
+        "jeffallan/claude-skills/cpp-pro",
+        "Mindrally/skills/cpp"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3599,7 +3717,8 @@
         "raw": "file: `mix.exs`"
       },
       "skill_ids": [
-        "georgeguimaraes/elixir-agent-tools/elixir"
+        "georgeguimaraes/elixir-agent-tools/elixir",
+        "Mindrally/skills/elixir"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3664,13 +3783,15 @@
       "id": "lua",
       "name": "Lua",
       "category": "Languages, runtimes and scripting",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/lua"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -3724,7 +3845,8 @@
       },
       "skill_ids": [
         "wshobson/agents/nodejs-backend-patterns",
-        "sickn33/antigravity-awesome-skills/nodejs-best-practices"
+        "sickn33/antigravity-awesome-skills/nodejs-best-practices",
+        "Mindrally/skills/nodejs-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3748,7 +3870,8 @@
         "raw": "file: `composer.json`, `composer.lock`"
       },
       "skill_ids": [
-        "jeffallan/claude-skills/php-pro"
+        "jeffallan/claude-skills/php-pro",
+        "Mindrally/skills/php-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3798,7 +3921,11 @@
         "Paldom/python-skills/python-release",
         "Paldom/python-skills/python-supply-chain",
         "Paldom/python-skills/python-testing",
-        "Paldom/python-skills/python-typing"
+        "Paldom/python-skills/python-typing",
+        "Mindrally/skills/python",
+        "Jeffallan/claude-skills/python-pro",
+        "Mindrally/skills/python-testing",
+        "Mindrally/skills/python-uv"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3838,7 +3965,8 @@
         "raw": "file: `Gemfile`, `Gemfile.lock`, `.ruby-version` +1"
       },
       "skill_ids": [
-        "lucianghinda/superpowers-ruby/ruby"
+        "lucianghinda/superpowers-ruby/ruby",
+        "Mindrally/skills/ruby"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3861,7 +3989,9 @@
         "raw": "file: `Cargo.toml`"
       },
       "skill_ids": [
-        "apollographql/skills/rust-best-practices"
+        "apollographql/skills/rust-best-practices",
+        "Mindrally/skills/rust",
+        "Jeffallan/claude-skills/rust-engineer"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3904,7 +4034,9 @@
         "raw": "npm: `typescript`; file: `tsconfig.json`"
       },
       "skill_ids": [
-        "wshobson/agents/typescript-advanced-types"
+        "wshobson/agents/typescript-advanced-types",
+        "Mindrally/skills/typescript",
+        "Jeffallan/claude-skills/typescript-pro"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -4053,13 +4185,15 @@
       "id": "electron",
       "name": "Electron",
       "category": "Mobile, desktop and extensions",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/electron-development"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -4088,7 +4222,9 @@
         "expo/skills/eas-app-stores",
         "expo/skills/eas-workflows",
         "expo/skills/eas-hosting",
-        "expo/skills/expo-dom"
+        "expo/skills/expo-dom",
+        "Mindrally/skills/expo-react-native-typescript",
+        "Mindrally/skills/expo-react-native-javascript-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4112,7 +4248,8 @@
       "skill_ids": [
         "jeffallan/claude-skills/flutter-expert",
         "madteacher/mad-agents-skills/flutter-animations",
-        "madteacher/mad-agents-skills/flutter-testing"
+        "madteacher/mad-agents-skills/flutter-testing",
+        "Mindrally/skills/flutter"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4134,7 +4271,9 @@
         "raw": "content match"
       },
       "skill_ids": [
-        "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin"
+        "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin",
+        "Jeffallan/claude-skills/kotlin-specialist",
+        "Mindrally/skills/kotlin-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4181,7 +4320,11 @@
         "raw": "npm: `obsidian`, `obsidian-plugin-cli`"
       },
       "skill_ids": [
-        "laude-institute/headlong/obsidian"
+        "laude-institute/headlong/obsidian",
+        "kepano/obsidian-skills/json-canvas",
+        "kepano/obsidian-skills/obsidian-bases",
+        "kepano/obsidian-skills/obsidian-cli",
+        "kepano/obsidian-skills/obsidian-markdown"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4204,7 +4347,12 @@
         "raw": "npm: `react-native`"
       },
       "skill_ids": [
-        "sleekdotdesign/agent-skills/design-mobile-apps"
+        "sleekdotdesign/agent-skills/design-mobile-apps",
+        "Jeffallan/claude-skills/react-native-expert",
+        "Mindrally/skills/react-native-cursor-rules",
+        "Mindrally/skills/react-native-r3f",
+        "Mindrally/skills/expo-react-native-typescript",
+        "Mindrally/skills/expo-react-native-javascript-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4233,7 +4381,9 @@
         "raw": "file: `Package.swift`; ext: `.swift`"
       },
       "skill_ids": [
-        "avdlee/swift-concurrency-agent-skill/swift-concurrency"
+        "avdlee/swift-concurrency-agent-skill/swift-concurrency",
+        "Mindrally/skills/swift",
+        "Jeffallan/claude-skills/swift-expert"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4259,7 +4409,8 @@
         "avdlee/swift-concurrency-agent-skill/swift-concurrency",
         "avdlee/xcode-build-optimization-agent-skill/xcode-build-orchestrator",
         "avdlee/swift-testing-agent-skill/swift-testing-expert",
-        "avdlee/core-data-agent-skill/core-data-expert"
+        "avdlee/core-data-agent-skill/core-data-expert",
+        "Mindrally/skills/swiftui-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4289,7 +4440,8 @@
         "raw": "npm: `@tauri-apps/api`, `@tauri-apps/cli`; file: `src-tauri/tauri.conf.json`"
       },
       "skill_ids": [
-        "nodnarbnitram/claude-code-extensions/tauri-v2"
+        "nodnarbnitram/claude-code-extensions/tauri-v2",
+        "Mindrally/skills/tauri-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4407,7 +4559,9 @@
         "igmarin/rails-agent-skills/apply-stack-conventions",
         "igmarin/rails-agent-skills/review-migration",
         "igmarin/rails-agent-skills/security-check",
-        "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade"
+        "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade",
+        "Jeffallan/claude-skills/rails-expert",
+        "Mindrally/skills/ruby-rails"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
       "id_provenance": "explicit_in_specification"
@@ -4504,7 +4658,8 @@
         "raw": "npm: `cypress`; file: `cypress.config.js`, `cypress.config.cjs`, `cypress.config.ts` +1"
       },
       "skill_ids": [
-        "github/awesome-copilot/cypress-flake-fixer"
+        "github/awesome-copilot/cypress-flake-fixer",
+        "Mindrally/skills/cypress"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4569,7 +4724,8 @@
         "raw": "npm: `jest`, `@jest/core`; file: `jest.config.js`, `jest.config.cjs`, `jest.config.mjs` +3"
       },
       "skill_ids": [
-        "github/awesome-copilot/javascript-typescript-jest"
+        "github/awesome-copilot/javascript-typescript-jest",
+        "Mindrally/skills/jest"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4692,7 +4848,10 @@
         "raw": "npm: `@playwright/test`, `playwright`; file: `playwright.config.ts`, `playwright.config.js`"
       },
       "skill_ids": [
-        "currents-dev/playwright-best-practices-skill/playwright-best-practices"
+        "currents-dev/playwright-best-practices-skill/playwright-best-practices",
+        "Mindrally/skills/playwright",
+        "Jeffallan/claude-skills/playwright-expert",
+        "Mindrally/skills/playwright-cursor-rules"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4780,7 +4939,8 @@
       },
       "skill_ids": [
         "igmarin/rails-agent-skills/test-service",
-        "lucianghinda/superpowers-ruby/test-driven-development"
+        "lucianghinda/superpowers-ruby/test-driven-development",
+        "Mindrally/skills/rspec"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4939,7 +5099,10 @@
         "angular/angular/reference-core",
         "angular/angular/reference-signal-forms",
         "angular/angular/reference-compiler-cli",
-        "angular/angular/adev-writing-guide"
+        "angular/angular/adev-writing-guide",
+        "Mindrally/skills/angular",
+        "Jeffallan/claude-skills/angular-architect",
+        "Mindrally/skills/angular-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -4970,7 +5133,8 @@
         "raw": "npm: `astro`; file: `astro.config.mjs`, `astro.config.js`, `astro.config.ts`"
       },
       "skill_ids": [
-        "astrolicious/agent-skills/astro"
+        "astrolicious/agent-skills/astro",
+        "Mindrally/skills/astro"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5108,7 +5272,10 @@
         "raw": "npm: `next`; file: `next.config.js`, `next.config.mjs`, `next.config.ts`"
       },
       "skill_ids": [
-        "vercel/next.js/next-cache-components-adoption"
+        "vercel/next.js/next-cache-components-adoption",
+        "Jeffallan/claude-skills/nextjs-developer",
+        "Mindrally/skills/nextjs-react-typescript",
+        "Mindrally/skills/optimized-nextjs-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5138,7 +5305,8 @@
         "raw": "npm: `nuxt`; file: `nuxt.config.js`, `nuxt.config.ts`"
       },
       "skill_ids": [
-        "antfu/skills/nuxt"
+        "antfu/skills/nuxt",
+        "Mindrally/skills/nuxtjs-vue-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5161,7 +5329,8 @@
         "raw": "npm: `pinia`"
       },
       "skill_ids": [
-        "vuejs-ai/skills/vue-pinia-best-practices"
+        "vuejs-ai/skills/vue-pinia-best-practices",
+        "Mindrally/skills/vue-pinia"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5240,7 +5409,9 @@
       },
       "skill_ids": [
         "vercel-labs/agent-skills/react-best-practices",
-        "vercel-labs/agent-skills/composition-patterns"
+        "vercel-labs/agent-skills/composition-patterns",
+        "Mindrally/skills/react",
+        "Jeffallan/claude-skills/react-expert"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5289,7 +5460,8 @@
         "raw": "npm: `react-router`, `react-router-dom`, `@react-router/node` +2"
       },
       "skill_ids": [
-        "remix-run/react-router/react-router"
+        "remix-run/react-router/react-router",
+        "Mindrally/skills/react-router-v7"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5321,7 +5493,8 @@
         "raw": ""
       },
       "skill_ids": [
-        "davila7/claude-code-templates/react-state-management"
+        "davila7/claude-code-templates/react-state-management",
+        "Mindrally/skills/redux-toolkit"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -5381,13 +5554,15 @@
       "id": "storybook",
       "name": "Storybook",
       "category": "Web frameworks, UI and styling",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/storybook"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -5417,7 +5592,8 @@
       },
       "skill_ids": [
         "ejirocodes/agent-skills/svelte5-best-practices",
-        "sveltejs/ai-tools/svelte-code-writer"
+        "sveltejs/ai-tools/svelte-code-writer",
+        "Mindrally/skills/svelte"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5440,7 +5616,8 @@
         "raw": "npm: `@sveltejs/kit`"
       },
       "skill_ids": [
-        "spences10/svelte-skills-kit/sveltekit-structure"
+        "spences10/svelte-skills-kit/sveltekit-structure",
+        "Mindrally/skills/sveltekit"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5472,7 +5649,8 @@
         "raw": "npm: `tailwindcss`, `@tailwindcss/vite`; file: `tailwind.config.js`, `tailwind.config.ts`, `tailwind.config.cjs`"
       },
       "skill_ids": [
-        "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns"
+        "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns",
+        "Mindrally/skills/tailwindcss"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5512,7 +5690,9 @@
         "raw": "npm: `@tanstack/react-query`, `@tanstack/vue-query`, `@tanstack/solid-query` +2"
       },
       "skill_ids": [
-        "deckardger/tanstack-agent-skills/tanstack-query"
+        "deckardger/tanstack-agent-skills/tanstack-query",
+        "Mindrally/skills/tanstack-query",
+        "Mindrally/skills/react-query"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5536,7 +5716,8 @@
         "raw": "npm: `@tanstack/react-start`, `@tanstack/start`"
       },
       "skill_ids": [
-        "tanstack-skills/tanstack-skills/tanstack-start"
+        "tanstack-skills/tanstack-skills/tanstack-start",
+        "Mindrally/skills/tanstack-start"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5561,13 +5742,15 @@
       "id": "trpc",
       "name": "tRPC",
       "category": "Web frameworks, UI and styling",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "Mindrally/skills/trpc"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -5623,7 +5806,11 @@
       "skill_ids": [
         "hyf0/vue-skills/vue-debug-guides",
         "antfu/skills/vue",
-        "vuejs-ai/skills/vue-best-practices"
+        "vuejs-ai/skills/vue-best-practices",
+        "Jeffallan/claude-skills/vue-expert",
+        "Jeffallan/claude-skills/vue-expert-js",
+        "Mindrally/skills/vue-typescript",
+        "Mindrally/skills/vuejs-typescript-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5838,7 +6025,8 @@
         "supabase"
       ],
       "skill_ids": [
-        "supabase/agent-skills/supabase-postgres-best-practices"
+        "supabase/agent-skills/supabase-postgres-best-practices",
+        "Mindrally/skills/nextjs-typescript-tailwindcss-supabase"
       ],
       "source_document": "specification/04-catalog/10-technology-combinations.md"
     },
@@ -5938,7 +6126,9 @@
       ],
       "skill_ids": [
         "expo/skills/expo-native-ui",
-        "sleekdotdesign/agent-skills/design-mobile-apps"
+        "sleekdotdesign/agent-skills/design-mobile-apps",
+        "Mindrally/skills/expo-react-native-typescript",
+        "Mindrally/skills/expo-react-native-javascript-best-practices"
       ],
       "source_document": "specification/04-catalog/10-technology-combinations.md"
     },
@@ -5990,7 +6180,8 @@
         "tanstack-query"
       ],
       "skill_ids": [
-        "Mindrally/skills/tanstack-query"
+        "Mindrally/skills/tanstack-query",
+        "Mindrally/skills/react-query"
       ],
       "source_document": "specification/04-catalog/10-technology-combinations.md",
       "curated_primary_only": true,

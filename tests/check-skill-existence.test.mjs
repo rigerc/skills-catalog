@@ -30,6 +30,20 @@ test('parses only exact, commit-pinned GitHub skill documents', () => {
   ]) assert.throws(() => parseVerifiedSource({...good, url}));
 });
 
+test('accepts safe literal parentheses in pinned source directories', () => {
+  const url = 'https://github.com/eduardo-sl/go-agent-skills/blob/' + good.commit +
+    '/skills/(architecture)/go-api-design/SKILL.md';
+  const parsed = parseVerifiedSource({...good, id: 'go-api-design', url});
+  assert.equal(parsed.apiUrl,
+    'https://api.github.com/repos/eduardo-sl/go-agent-skills/contents/' +
+    'skills/(architecture)/go-api-design/SKILL.md?ref=' + good.commit);
+  for (const bad of [
+    url.replace('(architecture)', '%28architecture%29'),
+    url.replace('(architecture)', '..'),
+    url.replace('(architecture)', '<script>'),
+  ]) assert.throws(() => parseVerifiedSource({...good, url: bad}));
+});
+
 test('accepts a regular nonempty SKILL.md', async () => {
   let requested;
   const result = await checkSource(good, {

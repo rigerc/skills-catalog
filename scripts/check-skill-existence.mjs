@@ -13,7 +13,7 @@ import {fileURLToPath} from 'node:url';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const SHA = /^[0-9a-f]{40}$/;
 const OWNER_REPO = /^[A-Za-z0-9_.-]+$/;
-const FILE_SEGMENT = /^[A-Za-z0-9._@+-]+$/;
+const FILE_SEGMENT = /^[A-Za-z0-9._@+()-]+$/;
 const CONCURRENCY = 5;
 const MAX_ATTEMPTS = 3;
 

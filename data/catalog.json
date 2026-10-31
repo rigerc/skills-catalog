@@ -13,8 +13,8 @@
   ],
   "counts": {
     "distinct_skills": 746,
-    "technologies_with_skills": 177,
-    "technologies_detect_only": 69,
+    "technologies_with_skills": 186,
+    "technologies_detect_only": 60,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
@@ -3275,7 +3275,9 @@
       "skill_name": "tanstack-query",
       "skill_md_url": "https://github.com/Mindrally/skills/blob/main/tanstack-query/SKILL.md",
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "tanstack-query"
+        ],
         "combination_ids": [
           "react-tanstack-query"
         ],
@@ -3293,7 +3295,9 @@
       "skill_name": "trpc",
       "skill_md_url": "https://github.com/Mindrally/skills/blob/main/trpc/SKILL.md",
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "trpc"
+        ],
         "combination_ids": [
           "nextjs-trpc"
         ],
@@ -5055,7 +5059,9 @@
       "skill_name": "json-canvas",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "obsidian"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5077,7 +5083,9 @@
       "skill_name": "obsidian-bases",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "obsidian"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5088,7 +5096,9 @@
       "skill_name": "obsidian-cli",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "obsidian"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5099,7 +5109,9 @@
       "skill_name": "obsidian-markdown",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "obsidian"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5110,7 +5122,9 @@
       "skill_name": "angular-architect",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5209,7 +5223,9 @@
       "skill_name": "csharp-developer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "csharp"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5253,7 +5269,9 @@
       "skill_name": "django-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "django"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5275,7 +5293,10 @@
       "skill_name": "dotnet-core-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dotnet",
+          "aspnetcore"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5297,7 +5318,9 @@
       "skill_name": "fastapi-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "fastapi"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5352,7 +5375,9 @@
       "skill_name": "golang-pro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5363,7 +5388,9 @@
       "skill_name": "graphql-architect",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "graphql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5374,7 +5401,9 @@
       "skill_name": "java-architect",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5396,7 +5425,9 @@
       "skill_name": "kotlin-specialist",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5407,7 +5438,9 @@
       "skill_name": "kubernetes-specialist",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kubernetes"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5429,7 +5462,9 @@
       "skill_name": "mcp-developer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "mcp-sdk"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5473,7 +5508,9 @@
       "skill_name": "nestjs-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5484,7 +5521,9 @@
       "skill_name": "nextjs-developer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5495,7 +5534,9 @@
       "skill_name": "playwright-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "playwright"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5506,7 +5547,9 @@
       "skill_name": "postgres-pro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "postgres"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5528,7 +5571,9 @@
       "skill_name": "python-pro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5550,7 +5595,9 @@
       "skill_name": "rails-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "rails"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5561,7 +5608,9 @@
       "skill_name": "react-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5572,7 +5621,9 @@
       "skill_name": "react-native-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5583,7 +5634,9 @@
       "skill_name": "rust-engineer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "rust"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5660,7 +5713,9 @@
       "skill_name": "spring-boot-engineer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5693,7 +5748,9 @@
       "skill_name": "swift-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5704,7 +5761,9 @@
       "skill_name": "terraform-engineer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "terraform"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5737,7 +5796,9 @@
       "skill_name": "typescript-pro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5748,7 +5809,9 @@
       "skill_name": "vue-expert-js",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "vue"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5759,7 +5822,9 @@
       "skill_name": "vue-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "vue"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5781,7 +5846,9 @@
       "skill_name": "wordpress-pro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "wordpress"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5792,7 +5859,9 @@
       "skill_name": "go-api-design",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5803,7 +5872,9 @@
       "skill_name": "go-architecture-review",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5814,7 +5885,9 @@
       "skill_name": "go-cli",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5825,7 +5898,9 @@
       "skill_name": "go-dependency-injection",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5836,7 +5911,9 @@
       "skill_name": "go-design-patterns",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5847,7 +5924,10 @@
       "skill_name": "go-graphql",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go",
+          "go-graphql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5858,7 +5938,10 @@
       "skill_name": "go-grpc",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go",
+          "go-grpc"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5869,7 +5952,9 @@
       "skill_name": "go-interface-design",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5880,7 +5965,9 @@
       "skill_name": "go-openapi",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5891,7 +5978,9 @@
       "skill_name": "go-project-layout",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5902,7 +5991,9 @@
       "skill_name": "go-code-review",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5913,7 +6004,9 @@
       "skill_name": "go-coding-standards",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5924,7 +6017,9 @@
       "skill_name": "go-context",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5935,7 +6030,9 @@
       "skill_name": "go-data-structures",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5946,7 +6043,9 @@
       "skill_name": "go-documentation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5957,7 +6056,9 @@
       "skill_name": "go-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5968,7 +6069,9 @@
       "skill_name": "go-modernize",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5979,7 +6082,9 @@
       "skill_name": "go-naming",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5990,7 +6095,9 @@
       "skill_name": "go-database",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6001,7 +6108,9 @@
       "skill_name": "go-concurrency-review",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6012,7 +6121,9 @@
       "skill_name": "go-defensive-coding",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6023,7 +6134,9 @@
       "skill_name": "go-observability",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6034,7 +6147,9 @@
       "skill_name": "go-performance-review",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6045,7 +6160,9 @@
       "skill_name": "go-security-audit",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6056,7 +6173,9 @@
       "skill_name": "go-troubleshooting",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6067,7 +6186,9 @@
       "skill_name": "go-test-quality",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6078,7 +6199,9 @@
       "skill_name": "go-test-table-driven",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6100,7 +6223,9 @@
       "skill_name": "go-binary-size",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6111,7 +6236,9 @@
       "skill_name": "go-build-release",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6122,7 +6249,9 @@
       "skill_name": "go-ci",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6133,7 +6262,9 @@
       "skill_name": "go-dependency-audit",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6144,7 +6275,9 @@
       "skill_name": "go-refactoring",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6155,7 +6288,9 @@
       "skill_name": "go-semantic-tools",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6166,7 +6301,9 @@
       "skill_name": "go-skills-router",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6221,7 +6358,9 @@
       "skill_name": "angular-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6232,7 +6371,9 @@
       "skill_name": "angular",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6276,7 +6417,9 @@
       "skill_name": "apollo-graphql",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "graphql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6287,7 +6430,9 @@
       "skill_name": "aspnet-core",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "aspnetcore"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6298,7 +6443,9 @@
       "skill_name": "astro",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "astro"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6342,7 +6489,9 @@
       "skill_name": "aws-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "aws"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6353,7 +6502,9 @@
       "skill_name": "azure",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "azure"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6375,7 +6526,9 @@
       "skill_name": "bash-scripting",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "bash"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6408,7 +6561,9 @@
       "skill_name": "blazor",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "aspnet-blazor"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6463,7 +6618,9 @@
       "skill_name": "c-sharp",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "csharp"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6529,7 +6686,9 @@
       "skill_name": "cloudflare-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "cloudflare"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6551,7 +6710,9 @@
       "skill_name": "convex",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "convex"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6562,7 +6723,9 @@
       "skill_name": "cpp",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "cpp"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6584,7 +6747,9 @@
       "skill_name": "cypress",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "cypress"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6694,7 +6859,9 @@
       "skill_name": "django-python",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "django"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6705,7 +6872,9 @@
       "skill_name": "django-rest-api-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "django"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6716,7 +6885,9 @@
       "skill_name": "docker",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "docker"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6727,7 +6898,9 @@
       "skill_name": "dotnet",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dotnet"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6738,7 +6911,9 @@
       "skill_name": "drizzle-orm",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "drizzle"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6771,7 +6946,9 @@
       "skill_name": "electron-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "electron"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6782,7 +6959,9 @@
       "skill_name": "elixir",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "elixir"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6815,8 +6994,13 @@
       "skill_name": "expo-react-native-javascript-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
+        "technology_ids": [
+          "expo",
+          "react-native"
+        ],
+        "combination_ids": [
+          "react-native-expo"
+        ],
         "frontend_essential": false
       }
     },
@@ -6826,8 +7010,13 @@
       "skill_name": "expo-react-native-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
+        "technology_ids": [
+          "expo",
+          "react-native"
+        ],
+        "combination_ids": [
+          "react-native-expo"
+        ],
         "frontend_essential": false
       }
     },
@@ -6837,7 +7026,9 @@
       "skill_name": "express-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "express"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6848,7 +7039,9 @@
       "skill_name": "fastapi-microservices-serverless",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "fastapi"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6859,7 +7052,9 @@
       "skill_name": "fastify-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "fastify"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6881,7 +7076,9 @@
       "skill_name": "firebase-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "firebase"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6892,7 +7089,9 @@
       "skill_name": "flask-python",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flask"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6903,7 +7102,9 @@
       "skill_name": "flutter",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6980,7 +7181,9 @@
       "skill_name": "gcp-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "google-cloud"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7057,7 +7260,9 @@
       "skill_name": "go-api-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7068,7 +7273,9 @@
       "skill_name": "go-backend-microservices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7079,7 +7286,9 @@
       "skill_name": "go",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7112,7 +7321,9 @@
       "skill_name": "graphql-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "graphql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7123,7 +7334,9 @@
       "skill_name": "graphql",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "graphql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7134,7 +7347,9 @@
       "skill_name": "grpc-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "grpc"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7145,7 +7360,9 @@
       "skill_name": "gsap",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "gsap"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7167,7 +7384,9 @@
       "skill_name": "hono-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "hono"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7233,7 +7452,9 @@
       "skill_name": "java-spring-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7244,7 +7465,9 @@
       "skill_name": "java",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7266,7 +7489,9 @@
       "skill_name": "jest",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "jest"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7321,7 +7546,9 @@
       "skill_name": "kotlin-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7332,7 +7559,9 @@
       "skill_name": "kubernetes",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kubernetes"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7354,7 +7583,9 @@
       "skill_name": "langchain-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "langchain"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7365,7 +7596,9 @@
       "skill_name": "laravel-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7376,7 +7609,9 @@
       "skill_name": "laravel",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7409,7 +7644,9 @@
       "skill_name": "llamaindex-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "llamaindex"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7464,7 +7701,9 @@
       "skill_name": "lua",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "lua"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7552,7 +7791,9 @@
       "skill_name": "mongodb-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "mongodb"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7618,7 +7859,9 @@
       "skill_name": "mysql-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "mysql"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7629,7 +7872,9 @@
       "skill_name": "nestjs-clean-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7662,7 +7907,9 @@
       "skill_name": "nextauth-authentication",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "auth-js"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7684,7 +7931,9 @@
       "skill_name": "nextjs-react-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7696,7 +7945,9 @@
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
-        "combination_ids": [],
+        "combination_ids": [
+          "nextjs-supabase"
+        ],
         "frontend_essential": false
       }
     },
@@ -7717,7 +7968,9 @@
       "skill_name": "nodejs-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "node"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7728,7 +7981,9 @@
       "skill_name": "numpy-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "numpy"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7739,7 +7994,9 @@
       "skill_name": "nuxtjs-vue-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nuxt"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7750,7 +8007,9 @@
       "skill_name": "nx",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nx"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7805,7 +8064,9 @@
       "skill_name": "openai-api-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "openai-sdk"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7816,7 +8077,9 @@
       "skill_name": "optimized-nextjs-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7827,7 +8090,9 @@
       "skill_name": "pandas-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "pandas"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7860,7 +8125,9 @@
       "skill_name": "phoenix",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "phoenix"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7871,7 +8138,9 @@
       "skill_name": "php-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7893,7 +8162,9 @@
       "skill_name": "playwright-cursor-rules",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "playwright"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7904,7 +8175,9 @@
       "skill_name": "playwright",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "playwright"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7937,7 +8210,9 @@
       "skill_name": "postgresql-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "postgres"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7959,7 +8234,9 @@
       "skill_name": "prisma-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "prisma"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -7970,7 +8247,9 @@
       "skill_name": "prisma",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "prisma"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8036,7 +8315,9 @@
       "skill_name": "python-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8047,7 +8328,10 @@
       "skill_name": "python-uv",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python",
+          "uv"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8058,7 +8342,9 @@
       "skill_name": "python",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8102,7 +8388,9 @@
       "skill_name": "react-native-cursor-rules",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8113,7 +8401,9 @@
       "skill_name": "react-native-r3f",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8124,8 +8414,12 @@
       "skill_name": "react-query",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
+        "technology_ids": [
+          "tanstack-query"
+        ],
+        "combination_ids": [
+          "react-tanstack-query"
+        ],
         "frontend_essential": false
       }
     },
@@ -8135,7 +8429,9 @@
       "skill_name": "react-router-v7",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react-router"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8146,7 +8442,9 @@
       "skill_name": "react",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8168,7 +8466,9 @@
       "skill_name": "redis-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "redis"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8179,7 +8479,9 @@
       "skill_name": "redux-toolkit",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "redux"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8212,7 +8514,9 @@
       "skill_name": "rest-api-django",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "django"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8245,7 +8549,9 @@
       "skill_name": "rspec",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "rspec"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8267,7 +8573,9 @@
       "skill_name": "ruby-rails",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "rails"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8278,7 +8586,9 @@
       "skill_name": "ruby",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "ruby"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8289,7 +8599,9 @@
       "skill_name": "rust",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "rust"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8344,7 +8656,9 @@
       "skill_name": "scikit-learn-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "scikit-learn"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8531,7 +8845,9 @@
       "skill_name": "spring-boot",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8564,7 +8880,9 @@
       "skill_name": "storybook",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "storybook"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8575,7 +8893,9 @@
       "skill_name": "stripe",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "stripe"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8597,7 +8917,9 @@
       "skill_name": "supabase-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "supabase"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8608,7 +8930,9 @@
       "skill_name": "supabase",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "supabase"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8619,7 +8943,9 @@
       "skill_name": "svelte",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "svelte"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8630,7 +8956,9 @@
       "skill_name": "sveltekit",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "sveltekit"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8641,7 +8969,9 @@
       "skill_name": "swift",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8652,7 +8982,9 @@
       "skill_name": "swiftui-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swiftui"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8685,7 +9017,9 @@
       "skill_name": "tailwindcss",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "tailwind"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8707,7 +9041,9 @@
       "skill_name": "tanstack-start",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "tanstack-start"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8718,7 +9054,9 @@
       "skill_name": "tauri-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "tauri"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8751,7 +9089,9 @@
       "skill_name": "terraform",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "terraform"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8773,7 +9113,9 @@
       "skill_name": "three-js",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "threejs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8806,7 +9148,9 @@
       "skill_name": "turborepo",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "turborepo"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8828,7 +9172,9 @@
       "skill_name": "typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8894,7 +9240,9 @@
       "skill_name": "vite",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "vite"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8905,7 +9253,9 @@
       "skill_name": "vue-pinia",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "pinia"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8916,7 +9266,9 @@
       "skill_name": "vue-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "vue"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8927,7 +9279,9 @@
       "skill_name": "vuejs-typescript-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "vue"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8982,7 +9336,9 @@
       "skill_name": "wordpress",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "wordpress"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8993,7 +9349,9 @@
       "skill_name": "zod-schema-validation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "zod"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }

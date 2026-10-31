@@ -11,8 +11,8 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Metric | Total |
 | --- | ---: |
 | Skills | **746** |
-| Mapped technologies | **177** |
-| Detect-only technologies | **69** |
+| Mapped technologies | **186** |
+| Detect-only technologies | **60** |
 | Combinations | **33** |
 | Verified skill sources | **746** |
 | Unresolved sources | **0** |
@@ -32,19 +32,19 @@ Snapshot date: **2026-10-31**. Source verification is historical evidence, **not
 
 | Category | Technologies | Mapped | Detect-only |
 | --- | ---: | ---: | ---: |
-| AI, LLM and MCP | 22 | 14 | 8 |
-| Auth and payments | 5 | 3 | 2 |
+| AI, LLM and MCP | 22 | 16 | 6 |
+| Auth and payments | 5 | 4 | 1 |
 | Backend frameworks and APIs | 25 | 23 | 2 |
-| Build tools, monorepos and release | 27 | 10 | 17 |
+| Build tools, monorepos and release | 27 | 11 | 16 |
 | Cloud, infrastructure and CI/CD | 17 | 17 | 0 |
 | Creative, media and graphics | 5 | 5 | 0 |
-| Data, databases and queues | 27 | 22 | 5 |
+| Data, databases and queues | 27 | 23 | 4 |
 | Go ecosystem | 18 | 17 | 1 |
-| Languages, runtimes and scripting | 23 | 13 | 10 |
-| Mobile, desktop and extensions | 15 | 12 | 3 |
+| Languages, runtimes and scripting | 23 | 14 | 9 |
+| Mobile, desktop and extensions | 15 | 13 | 2 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |
 | Testing and quality | 21 | 15 | 6 |
-| Web frameworks, UI and styling | 35 | 23 | 12 |
+| Web frameworks, UI and styling | 35 | 25 | 10 |
 
 ## Authoring and validation
 
