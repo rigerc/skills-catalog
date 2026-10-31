@@ -11,6 +11,7 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Metric | Total |
 | --- | ---: |
 | Skills | **746** |
+| Skills without mappings | **226** |
 | Mapped technologies | **186** |
 | Detect-only technologies | **60** |
 | Combinations | **33** |
@@ -24,6 +25,7 @@ Snapshot date: **2026-10-31**. Source verification is historical evidence, **not
 - [All skills and source verification](SKILLS.md)
 - [Technology mappings and combinations](TECHNOLOGIES.md)
 - [Skill registry](data/catalog.json)
+- [Unmapped skills (generated)](data/unmapped.json)
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)
 - [Provenance and unresolved-source ledger](data/catalog-source-ledger.json)
@@ -56,9 +58,10 @@ Requires Node.js 22+; no npm dependencies.
 node scripts/catalog.mjs --validate
 node scripts/catalog.mjs --write
 node scripts/catalog.mjs --check
+node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 ```
 
-CI enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, and generated documentation. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
 The four `data/*.json` files are one versioned source snapshot. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom `registry.json` format.
