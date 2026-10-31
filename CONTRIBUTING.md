@@ -59,3 +59,18 @@ Requires Node.js **22+**, with no npm install needed.
 ## Release into Nosey
 
 After this PR merges, Nosey's catalog-sync workflow can open an update PR based on the new `skills-catalog/main` commit. The update records the exact commit and blob hashes in `catalog-source.lock.json`. Nosey retains its offline packaged snapshot until that update PR is reviewed and merged; merging here alone does not change an installed Nosey release.
+
+## Refreshing pinned upstream sources
+
+The [Update upstream skill sources](.github/workflows/update-skill-sources.yml) workflow runs every Tuesday at **06:37 UTC** and can be started manually from **Actions → Update upstream skill sources → Run workflow**. It checks every verified skill against the upstream repository's latest default-branch commit, compares the exact SKILL.md blob, and opens or refreshes a review PR only when the file content changed. It does not automatically merge.
+
+The updater reuses the verified source path; it never guesses a new location for moved/deleted skills. Unresolved sources are skipped and reported. Missing files, truncated Git trees, API failures, and rate limits fail the job without publishing partial updates. The generated README/SKILLS documents and snapshot dates are refreshed together.
+
+For local use, supply a GitHub API token (Node.js 22+), then run:
+
+~~~sh
+GITHUB_TOKEN="$YOUR_TOKEN" node scripts/update-skill-sources.mjs --check
+GITHUB_TOKEN="$YOUR_TOKEN" node scripts/update-skill-sources.mjs --write
+~~~
+
+Review the upstream commit diffs, security, compatibility, and licensing before merging. Pinned source updates change where Nosey reads skill files; they do **not** download or execute upstream instructions in CI.
