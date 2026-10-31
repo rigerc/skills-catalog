@@ -1,6 +1,6 @@
 # Checking upstream skill existence
 
-CI runs [check-skill-existence.mjs](../scripts/check-skill-existence.mjs) after local catalog validation, on pull requests, pushes to main, manual dispatches, and weekly scheduled checks.
+The [upstream skill existence workflow](../.github/workflows/verify-skill-sources.yml) runs [check-skill-existence.mjs](../scripts/check-skill-existence.mjs) **only when `data/catalog.json` or `data/catalog-source-ledger.json` changes** in a pull request or a push to `main`. It validates the catalog locally first, then queries the pinned upstream skill files. Changes limited to mappings, documentation, scripts, or workflow configuration do not trigger the remote check. This existence workflow has no manual or scheduled trigger; general catalog validation remains independent in `ci.yml`.
 
 The check reads `data/catalog-source-ledger.json` and looks up **every** entry whose status is `verified` in the GitHub Contents API. It requires:
 
