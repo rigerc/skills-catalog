@@ -1,85 +1,145 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {changedSources, sourceCoordinates, checkChangedSources, apiJson} from '../scripts/check-changed-skill-sources.mjs';
+import {
+  changedSources, sourceCoordinates, rawSourceUrl, checkRawSource, checkChangedSources,
+} from '../scripts/check-changed-skill-sources.mjs';
 
-const A = 'a'.repeat(40), B = 'b'.repeat(40), C = 'c'.repeat(40), D = 'd'.repeat(40);
-const make = (name, commit = A, repo = 'demo/repo') => ({
-  id: repo + '/' + name, status: 'verified', commit,
-  url: 'https://github.com/' + repo + '/blob/' + commit + '/skills/' + name + '/SKILL.md',
+const A = 'a'.repeat(40);
+const B = 'b'.repeat(40);
+const make = (name, commit = A, repository = 'demo/repo') => ({
+  id: repository + '/' + name,
+  status: 'verified',
+  commit,
+  url: 'https://github.com/' + repository + '/blob/' + commit +
+    '/skills/' + name + '/SKILL.md',
   checked_at: '2026-01-01',
 });
-const tree = files => ({truncated: false, tree: Object.entries(files).map(([path, size]) => (
-  {path, type: 'blob', size, sha: C}))});
-const fake = (options = {}) => {
-  const calls = [];
-  const request = async url => {
-    calls.push(url);
-    if (url.endsWith('/git/commits/' + A)) return {tree: {sha: B}};
-    if (url.endsWith('/git/commits/' + D)) return {tree: {sha: B}};
-    if (url.endsWith('/git/trees/' + B + '?recursive=1')) return options.tree ??
-      tree({'skills/alpha/SKILL.md': 12, 'skills/beta/SKILL.md': 26, 'skills/gamma/SKILL.md': 0});
-    if (url.endsWith('/git/trees/' + B)) return {truncated: false, tree: [{path: 'skills', type: 'tree', sha: C}]};
-    if (url.endsWith('/git/trees/' + C)) return {truncated: false, tree: [
-      {path: 'alpha', type: 'tree', sha: D}, {path: 'beta', type: 'tree', sha: D}]};
-    if (url.endsWith('/git/trees/' + D)) return {truncated: false, tree: [{path: 'SKILL.md', type: 'blob', size: 50}]};
-    throw Error('Unexpected request: ' + url);
-  };
-  return {request, calls};
-};
+const response = (body, status = 200) => new Response(body, {status});
 
-test('checks new or changed source pins, not timestamp-only edits', () => {
+test('only new, newly verified or repinned skills need a remote existence check', () => {
   const old = [make('alpha'), make('beta')];
-  const current = [{...old[0], checked_at: 'later'}, make('beta', D), make('new')];
-  assert.deepEqual(changedSources(current, old).map(x => x.id), ['demo/repo/beta', 'demo/repo/new']);
-  assert.deepEqual(changedSources([make('alpha')], [{...make('alpha'), status: 'unresolved'}])
-    .map(x => x.id), ['demo/repo/alpha']);
-  assert.deepEqual(changedSources([{...old[0], url: make('beta').url}], old)
-    .map(x => x.id), ['demo/repo/alpha']);
+  const current = [
+    {...old[0], checked_at: '2026-11-01'}, make('beta', B),
+    make('new'), {id: 'unresolved', status: 'unresolved', reason: 'Unknown'},
+  ];
+  assert.deepEqual(changedSources(current, old).map(e => e.id),
+    ['demo/repo/beta', 'demo/repo/new']);
+  assert.deepEqual(changedSources([make('alpha')], [
+    {...make('alpha'), status: 'unresolved'},
+  ]).map(e => e.id), ['demo/repo/alpha']);
+  assert.deepEqual(changedSources([{
+    ...old[0], url: make('beta').url,
+  }], old).map(e => e.id), ['demo/repo/alpha']);
 });
 
-test('derives repository and file path from pinned URLs', () => {
-  assert.deepEqual(sourceCoordinates(make('alpha')), {repo: 'demo/repo', path: 'skills/alpha/SKILL.md'});
-});
-
-test('checks four skills in one repository/commit with only two API requests', async () => {
-  const f = fake();
-  const r = await checkChangedSources([make('alpha'), make('beta'), make('gamma'), make('absent')], f);
-  assert.equal(r.requests, 2);
-  assert.equal(f.calls.length, 2);
-  assert.deepEqual(r.results.map(x => x.status), ['verified', 'verified', 'invalid', 'missing']);
-});
-
-test('uses separate trees for distinct immutable commits', async () => {
-  const f = fake();
-  const r = await checkChangedSources([make('alpha'), make('beta', D)], f);
-  assert.equal(r.groups, 2);
-  assert.equal(r.requests, 4);
-  assert.ok(r.results.every(x => x.status === 'verified'));
-});
-
-test('handles truncated recursive trees with targeted non-recursive traversal', async () => {
-  const f = fake({tree: {truncated: true, tree: []}});
-  const r = await checkChangedSources([make('alpha')], f);
-  assert.equal(r.results[0].status, 'verified');
-  assert.equal(r.requests, 5);
-});
-
-test('reports GitHub failures without marking sources verified', async () => {
-  const r = await checkChangedSources([make('alpha'), make('beta')], {
-    request: async () => { throw Error('rate limit exhausted'); },
+test('raw URL uses the exact immutable file location, not a REST endpoint', () => {
+  assert.deepEqual(sourceCoordinates(make('alpha')), {
+    repo: 'demo/repo', path: 'skills/alpha/SKILL.md',
   });
-  assert.deepEqual(r.results.map(x => x.status), ['error', 'error']);
+  assert.equal(rawSourceUrl(make('alpha')),
+    'https://raw.githubusercontent.com/demo/repo/' + A + '/skills/alpha/SKILL.md');
+  assert.match(rawSourceUrl(make('my-skill')), /^https:\/\/raw\.githubusercontent\.com/);
+  assert.throws(() => rawSourceUrl({...make('alpha'),
+    url: make('alpha').url.replace(A, 'main')}), /pinned GitHub SKILL.md/);
+  assert.throws(() => rawSourceUrl({...make('alpha'),
+    url: 'https://evil.example/' + A + '/SKILL.md'}));
 });
 
-test('stops immediately on reported rate-limit exhaustion', async () => {
+test('reads a nonempty pinned SKILL.md without using GitHub REST', async () => {
   let calls = 0;
-  await assert.rejects(() => apiJson('https://api.github.com/repos/x/y', {
+  const result = await checkRawSource(make('alpha'), {
+    fetchImpl: async (url, options) => {
+      calls++;
+      assert.equal(url, rawSourceUrl(make('alpha')));
+      assert.equal(options.redirect, 'manual');
+      assert.equal(options.headers.Authorization, undefined);
+      return response('---\nname: alpha\n---\n');
+    },
+  });
+  assert.deepEqual(result, {id: 'demo/repo/alpha', status: 'verified', bytes: 20});
+  assert.equal(calls, 1);
+});
+
+test('missing and empty files fail without false positives', async () => {
+  for (const status of [404, 410]) {
+    const result = await checkRawSource(make('alpha'), {
+      fetchImpl: async () => response('Missing', status),
+    });
+    assert.equal(result.status, 'missing');
+  }
+  const empty = await checkRawSource(make('alpha'), {
+    fetchImpl: async () => response(''),
+  });
+  assert.equal(empty.status, 'invalid');
+  assert.match(empty.reason, /empty/);
+});
+
+test('refuses oversized files and never executes their content', async () => {
+  const result = await checkRawSource(make('alpha'), {
+    maxBytes: 4,
+    fetchImpl: async () => response('0123456789'),
+  });
+  assert.equal(result.status, 'invalid');
+  assert.match(result.reason, /size limit/);
+});
+
+test('deduplicates identical pinned URLs and retains skill-specific results', async () => {
+  const copy = {...make('alpha'), id: 'alias/repo/alpha'};
+  let calls = 0;
+  const result = await checkChangedSources([make('alpha'), copy, make('beta')], {
     fetchImpl: async () => {
       calls++;
-      return {status: 403, ok: false,
-        headers: {get: k => k === 'x-ratelimit-remaining' ? '0' : null}};
+      return response('valid skill\n');
     },
-    sleep: async () => {},
-  }), /rate limit exhausted/);
+  });
+  assert.equal(result.rawRequests, 2);
+  assert.equal(calls, 2);
+  assert.equal(result.apiRequests, 0);
+  assert.equal(result.uniqueSources, 2);
+  assert.deepEqual(result.results.map(r => r.id),
+    ['demo/repo/alpha', 'alias/repo/alpha', 'demo/repo/beta']);
+  assert.ok(result.results.every(r => r.status === 'verified'));
+});
+
+test('catalog-only edits with no repinned sources cause no network calls', async () => {
+  const result = await checkChangedSources([], {
+    fetchImpl: async () => {throw Error('Network call was not expected');},
+  });
+  assert.equal(result.rawRequests, 0);
+  assert.equal(result.apiRequests, 0);
+  assert.deepEqual(result.results, []);
+});
+
+test('raw-host throttling stops dispatching remaining sources', async () => {
+  let calls = 0;
+  const result = await checkChangedSources([make('alpha'), make('beta'), make('gamma')], {
+    concurrency: 1,
+    fetchImpl: async () => {
+      calls++;
+      return response('Rate limit', 429);
+    },
+  });
   assert.equal(calls, 1);
+  assert.equal(result.apiRequests, 0);
+  assert.deepEqual(result.results.map(r => r.status), ['error', 'error', 'error']);
+  assert.match(result.results[1].reason, /halted/);
+});
+
+test('retries transient server errors but not redirects or forbidden responses', async () => {
+  let calls = 0;
+  const success = await checkRawSource(make('alpha'), {
+    sleep: async () => {},
+    fetchImpl: async () => {
+      calls++;
+      return calls === 1 ? response('Unavailable', 503) : response('ok');
+    },
+  });
+  assert.equal(success.status, 'verified');
+  assert.equal(calls, 2);
+  for (const status of [301, 403]) {
+    const failed = await checkRawSource(make('alpha'), {
+      fetchImpl: async () => response('Refused', status),
+    });
+    assert.equal(failed.status, 'error');
+  }
 });
