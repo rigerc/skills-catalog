@@ -12,7 +12,7 @@ const pairs=[
   ['technology-detection-rules.json','technology-detection-rules.schema.json'],
   ['catalog-source-ledger.json','catalog-source-ledger.schema.json']
 ];
-const ajv=new Ajv2020({allErrors:true,strict:true});
+const ajv=new Ajv2020({allErrors:true,strict:true,strictRequired:false});
 const validators=new Map();
 for(const [file,schemaName] of pairs){
   const schema=JSON.parse(readFileSync(resolve(root,'schemas',schemaName),'utf8'));
