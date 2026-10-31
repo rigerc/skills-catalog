@@ -1,0 +1,370 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey built-in technology mappings v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "snapshot_date",
+    "source",
+    "counts",
+    "detection_coverage_note",
+    "repository_aliases",
+    "technologies",
+    "combinations",
+    "frontend_essentials",
+    "mcp_scan_context"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "technologies",
+        "mapped_technologies",
+        "detect_only_technologies",
+        "combinations",
+        "distinct_referenced_skills"
+      ],
+      "properties": {
+        "technologies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapped_technologies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "detect_only_technologies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "combinations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "distinct_referenced_skills": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "detection_coverage_note": {
+      "type": "string"
+    },
+    "repository_aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "category",
+          "mapping_status",
+          "detection",
+          "skill_ids",
+          "source_document",
+          "id_provenance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mapping_status": {
+            "enum": [
+              "mapped",
+              "detect_only"
+            ]
+          },
+          "detection": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "coverage",
+              "signals",
+              "raw"
+            ],
+            "properties": {
+              "coverage": {
+                "enum": [
+                  "documented_examples_only",
+                  "undocumented"
+                ]
+              },
+              "signals": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "examples"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "examples": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 0
+                    },
+                    "details_documented": {
+                      "type": "boolean"
+                    },
+                    "additional_unlisted_examples": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "reported_pattern_count": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "reported_count": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "minItems": 0
+              },
+              "raw": {
+                "type": "string"
+              }
+            }
+          },
+          "skill_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "source_document": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id_provenance": {
+            "enum": [
+              "explicit_in_specification",
+              "derived_from_display_name_not_explicit_in_specification"
+            ]
+          }
+        }
+      },
+      "minItems": 0
+    },
+    "combinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "requires",
+          "skill_ids",
+          "source_document"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "uniqueItems": true
+          },
+          "skill_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "source_document": {
+            "type": "string",
+            "minLength": 1
+          },
+          "curated_primary_only": {
+            "type": "boolean"
+          },
+          "source_patch": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "minItems": 0
+    },
+    "frontend_essentials": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skill_ids",
+        "disable_cli_flag",
+        "recognized_npm_dependencies",
+        "recognized_files",
+        "recognized_source_extensions",
+        "excluded_directories",
+        "not_qualifying_alone",
+        "source_document"
+      ],
+      "properties": {
+        "skill_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "disable_cli_flag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recognized_npm_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "recognized_files": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "recognized_source_extensions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excluded_directories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "not_qualifying_alone": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "source_document": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "mcp_scan_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project_local_config_files",
+        "supported_runners",
+        "documented_recognitions",
+        "disabled_servers_do_not_trigger_skills",
+        "source_document"
+      ],
+      "properties": {
+        "project_local_config_files": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "supported_runners": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "documented_recognitions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "disabled_servers_do_not_trigger_skills": {
+          "type": "boolean"
+        },
+        "source_document": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

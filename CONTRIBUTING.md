@@ -26,6 +26,22 @@ The four documents form **one versioned snapshot**. Use an existing entry as the
 
 The built-in catalog format here is **not** the additive custom `registry.json` format exposed by Nosey's `registry init` command. Creating a `skills/` folder in this repository does not register a new built-in skill; this catalog indexes external skill sources.
 
+## JSON Schema contracts and ownership
+
+The four canonical JSON files in `data/` each have a **Draft 2020-12 JSON Schema** in [`schemas/`](schemas/). Schema changes belong in this repository and are reviewed by catalog maintainers; changes affecting consumers require coordinated review with Nosey. Keep `schema_version: 1` for compatible changes. A breaking contract change requires a new version and a coordinated Nosey migration.
+
+Schemas enforce document structure, required fields, enums, signal-specific fields, and source-ledger entry shapes. `scripts/catalog.mjs` remains responsible for cross-document semantics: uniqueness, references, synchronized statuses, counts, aliases, and pinned source consistency. JSON Schema validation does not prove upstream safety or actual scanner accuracy.
+
+The normal Node.js catalog commands remain dependency-free. For schema validation, install the **development-only** Ajv validator and run both layers:
+
+```sh
+npm install --ignore-scripts --no-package-lock
+npm run validate:schemas -- --self-test
+node scripts/catalog.mjs --validate
+```
+
+CI runs these checks for each PR; `--self-test` additionally tests invalid document variants. Do not edit generated `data/unmapped.json` or define a schema for Nosey's separate custom `registry.json` here.
+
 ## Local workflow
 
 Requires Node.js **22+**, with no npm install needed.
@@ -53,6 +69,7 @@ Requires Node.js **22+**, with no npm install needed.
 - [ ] Technology `mapping_status` agrees with `skill_ids` and its detection rule.
 - [ ] Every recommendation references a real skill and the skill's `recommended_for` backlink agrees.
 - [ ] Counts, shared catalog identity, and snapshot dates are updated consistently.
+- [ ] The four canonical JSON files satisfy their versioned schemas; breaking changes have a coordinated migration.
 - [ ] Unresolved sources remain visibly unresolved; verified sources have checked, immutable commit-pinned `SKILL.md` URLs.
 - [ ] Generated docs and `data/unmapped.json` are current; validation and tests pass.
 - [ ] New/changed scanner signals are narrow enough to avoid common false positives, with evidence or a fixture in the PR.

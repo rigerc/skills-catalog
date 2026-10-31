@@ -97,6 +97,7 @@ Snapshot date: **${esc(c.snapshot_date)}**. Source verification is historical ev
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)
 - [Provenance and unresolved-source ledger](data/catalog-source-ledger.json)
+- [JSON Schema contracts](schemas/)
 
 ## Technology coverage
 
@@ -108,7 +109,7 @@ ${categoryRows}
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow, including [adding skills](docs/adding-skills.md), [adding technologies](docs/adding-technologies.md), and [adding mappings](docs/adding-mappings.md).
 
-Requires Node.js 22+; no npm dependencies.
+Core catalog commands require Node.js 22+ without npm packages. For JSON Schema checks, install the optional development validator with \`npm install --no-package-lock\` and run \`npm run validate:schemas\`.
 
 \`\`\`sh
 node scripts/catalog.mjs --validate
@@ -118,7 +119,7 @@ node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 \`\`\`
 
-CI enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI validates four JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
 The four canonical source JSON files under \`data/\` are one versioned snapshot; \`data/unmapped.json\` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
 `;
