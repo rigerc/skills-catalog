@@ -21,7 +21,8 @@ export function parseVerifiedSource(entry) {
   if (!entry || entry.status !== 'verified' || !SHA.test(entry.commit ?? '')) {
     throw new Error('Expected a verified source with a 40-character commit SHA');
   }
-  if (typeof entry.url !== 'string' || /[%\\\\]/.test(entry.url)) {
+  if (typeof entry.url !== 'string' || /[%\\\\]/.test(entry.url) ||
+      /\/\.{1,2}(?:\/|$)/.test(entry.url)) {
     throw new Error('Encoded or unsafe source URL: ' + entry.id);
   }
   let url;
