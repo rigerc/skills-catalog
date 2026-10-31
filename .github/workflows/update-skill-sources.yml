@@ -44,6 +44,7 @@ jobs:
             README.md
             SKILLS.md
             TECHNOLOGIES.md
+            data/unmapped.json
           commit-message: 'chore: refresh pinned upstream skill sources'
           title: 'chore: update changed upstream SKILL.md sources'
           body-path: ${{ runner.temp }}/skill-updates.md
