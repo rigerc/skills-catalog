@@ -1,20 +1,20 @@
 # Checking upstream skill existence
 
-The [upstream skill existence workflow](../.github/workflows/verify-skill-sources.yml) runs [check-skill-existence.mjs](../scripts/check-skill-existence.mjs) **only when `data/catalog.json` or `data/catalog-source-ledger.json` changes** in a pull request or a push to `main`. It validates the catalog locally first, then queries the pinned upstream skill files. Changes limited to mappings, documentation, scripts, or workflow configuration do not trigger the remote check. This existence workflow has no manual or scheduled trigger; general catalog validation remains independent in `ci.yml`.
+The [upstream skill existence workflow](../.github/workflows/verify-skill-sources.yml) runs [check-changed-skill-sources.mjs](../scripts/check-changed-skill-sources.mjs) **only when `data/catalog.json` or `data/catalog-source-ledger.json` changes** in a pull request or a push to `main`. It validates the catalog locally first and compares source entries against the relevant base commit. It sends upstream requests **only for newly added sources, unresolved-to-verified changes, and sources whose pinned commit or URL changed**. Changes to verification timestamps alone require no requests. Changes limited to mappings, documentation, scripts, or workflow configuration do not trigger the remote check. This workflow has no manual or scheduled trigger; general catalog validation remains independent in `ci.yml`.
 
-The check reads `data/catalog-source-ledger.json` and looks up **every** entry whose status is `verified` in the GitHub Contents API. It requires:
+The CI check reads `data/catalog-source-ledger.json` and groups changed verified entries by upstream repository and pinned commit. For each group it retrieves the Git commit tree and checks each recorded `SKILL.md` path against the Git tree metadata, typically **two API requests per repository/commit group** instead of one per skill. Truncated recursive trees are traversed by directory, without treating omitted paths as missing. It requires:
 
 - An HTTPS GitHub URL ending in `SKILL.md` with a **full commit SHA** matching the ledger.
 - A successful response at that exact commit.
 - The path to resolve to a **nonempty regular file** with the exact name `SKILL.md`.
 
-HTTP **404/410** is reported as **missing** and fails the check. Empty files and paths that resolve to directories or other objects also fail. Network, authorization, and rate-limit problems are reported separately as errors rather than misreported as missing skills; they still fail CI because existence could not be confirmed. Transient failures are retried. GitHub's same-origin redirects to its canonical repository-ID endpoint are followed only if the pinned commit and file path are unchanged; cross-host or otherwise unexpected redirects fail.
+Missing paths and empty blobs are reported as failures. HTTP 404/410, network failures, authorization errors, and rate limits are reported as API errors rather than misreported as missing files; they fail CI because existence could not be confirmed. Transient failures are retried. Rate-limit exhaustion stops further work without repeated requests. Only same-host canonical repository-ID redirects preserving the requested Git object are allowed.
 
 Entries that are **already `unresolved`** are listed in the job summary but **are not falsely counted as verified**, and do not cause an automatic failure. Their source must be investigated and updated through a reviewed PR.
 
 ## Local use
 
-For a full check, provide a read-only GitHub API token. No external repositories or scripts are cloned or executed:
+For an **explicit full-catalog audit**, use the original per-file checker with a read-only GitHub API token. It is **not** called by CI because it consumes roughly one request per skill. No external repositories or scripts are cloned or executed:
 
 ```sh
 GITHUB_TOKEN="$YOUR_TOKEN" node scripts/check-skill-existence.mjs
@@ -26,7 +26,7 @@ To check just one skill, `--id` can be used without a token, subject to GitHub's
 node scripts/check-skill-existence.mjs --id anthropics/skills/claude-api
 ```
 
-The check examines the **recorded immutable commit**, not upstream's moving default branch. Consequently, it does not assert that a skill still exists on upstream `main` or that its contents are trustworthy. A source can pass the existence check and still require manual safety, quality, and licensing review.
+Both checkers examine the **recorded immutable commit**, not upstream's moving default branch. Consequently, it does not assert that a skill still exists on upstream `main` or that its contents are trustworthy. A source can pass the existence check and still require manual safety, quality, and licensing review.
 
 ## Resolving a failure
 
