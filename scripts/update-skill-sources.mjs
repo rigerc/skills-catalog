@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 /** Propose reviewed updates to verified, commit-pinned upstream SKILL.md files. */
 import {appendFileSync, writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {load, render, validate} from './catalog.mjs';
@@ -66,6 +69,156 @@ export function sourceLocation(entry) {
   const match = new URL(apiUrl).pathname.match(/^\/repos\/([^/]+)\/([^/]+)\/contents\/(.+)$/);
   if (!match) throw new Error('Invalid source API path: ' + entry.id);
   return {repo: match[1] + '/' + match[2], path: match[3]};
+}
+
+
+const runCommand = promisify(execFile);
+const MAX_SKILL_BYTES = 8 * 1024 * 1024;
+const REPOSITORY = /^[a-z0-9_.-]+\/[a-z0-9_.-]+$/i;
+
+export async function remoteHead(repo, {exec = runCommand} = {}) {
+  if (!REPOSITORY.test(repo)) throw new Error('Invalid upstream repository: ' + repo);
+  const {stdout} = await exec('git', ['ls-remote', '--exit-code',
+    'https://github.com/' + repo + '.git', 'HEAD'], {
+    timeout: 45000, maxBuffer: 8192,
+    env: {...process.env, GIT_TERMINAL_PROMPT: '0'},
+  });
+  const match = stdout.trim().match(/^([0-9a-f]{40})\s+HEAD$/);
+  if (!match) throw new Error('Invalid or missing upstream HEAD for ' + repo);
+  return match[1];
+}
+
+export function rawSkillUrl(repo, sha, path) {
+  if (!REPOSITORY.test(repo) || !SHA.test(sha) ||
+      typeof path !== 'string' || !path.endsWith('/SKILL.md') &&
+      path !== 'SKILL.md' || path.split('/').some(s =>
+        !s || s === '.' || s === '..' || /[%\\?#]/.test(s))) {
+    throw new Error('Invalid immutable upstream skill location');
+  }
+  return 'https://raw.githubusercontent.com/' + repo + '/' + sha + '/' +
+    path.split('/').map(encodeURIComponent).join('/');
+}
+
+/** Read bounded raw bytes, without GitHub REST/GraphQL API authentication or quota. */
+export async function readRawSkill(repo, sha, path, {
+  fetchImpl = fetch, sleep = pause, maxBytes = MAX_SKILL_BYTES,
+} = {}) {
+  const url = rawSkillUrl(repo, sha, path);
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    let response;
+    try {
+      response = await fetchImpl(url, {
+        redirect: 'manual', signal: AbortSignal.timeout(25000),
+        headers: {'User-Agent': 'nosey-skills-catalog-updater'},
+      });
+    } catch (error) {
+      if (attempt < 2) {await sleep(1000); continue;}
+      throw new Error('Upstream raw download failed for ' + repo + '/' + path + ': ' + error.message);
+    }
+    if (!response.ok) {
+      if (attempt < 2 && [500, 502, 503, 504].includes(response.status)) {
+        await sleep(1000);
+        continue;
+      }
+      throw new Error('Upstream raw SKILL.md returned HTTP ' + response.status +
+        ' for ' + repo + '/' + path +
+        ([403, 429].includes(response.status) ? ' (possible rate limit; aborting)' : ''));
+    }
+    const announced = Number(response.headers?.get('content-length'));
+    if (announced > maxBytes) throw new Error('Upstream SKILL.md exceeds size limit: ' + repo + '/' + path);
+    const reader = response.body?.getReader?.();
+    if (!reader) throw new Error('Upstream raw response has no readable body: ' + repo + '/' + path);
+    const chunks = [];
+    let size = 0;
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      size += value.byteLength;
+      if (size > maxBytes) {
+        await reader.cancel();
+        throw new Error('Upstream SKILL.md exceeds size limit: ' + repo + '/' + path);
+      }
+      chunks.push(Buffer.from(value));
+    }
+    if (size === 0) throw new Error('Empty upstream SKILL.md: ' + repo + '/' + path);
+    return Buffer.concat(chunks, size);
+  }
+  throw new Error('Upstream raw retries exhausted');
+}
+
+export function gitBlobHash(bytes) {
+  const buffer = Buffer.isBuffer(bytes) ? bytes : Buffer.from(bytes);
+  return createHash('sha1').update('blob ' + buffer.length + '\0').update(buffer).digest('hex');
+}
+
+/**
+ * Git transport avoids GitHub REST quotas entirely. A repository's remote HEAD
+ * is queried once, and only files at changed upstream commits are fetched.
+ * Both pinned and latest file bytes are hashed using Git blob semantics.
+ * No remote instructions or code are executed.
+ */
+export async function findUpdatesWithoutApi(entries, {
+  resolveHead = remoteHead, readSkill = readRawSkill, concurrency = 2,
+} = {}) {
+  const unresolved = entries.filter(e => e.status === 'unresolved');
+  const groups = new Map();
+  for (const entry of entries) {
+    if (entry.status === 'unresolved') continue;
+    const {repo, path} = sourceLocation(entry);
+    const key = repo.toLowerCase();
+    if (!groups.has(key)) groups.set(key, {repo, items: []});
+    groups.get(key).items.push({entry, path: path.split('/').map(decodeURIComponent).join('/')});
+  }
+  const list = [...groups.values()];
+  const updates = [];
+  let headLookups = 0;
+  let rawDownloads = 0;
+  let cursor = 0;
+  let error;
+  async function worker() {
+    while (!error && cursor < list.length) {
+      const {repo, items} = list[cursor++];
+      try {
+        headLookups++;
+        const latest = await resolveHead(repo);
+        if (!SHA.test(latest ?? '')) throw new Error('Invalid upstream HEAD for ' + repo);
+        const cache = new Map();
+        async function hashFile(commit, path) {
+          const key = commit + '/' + path;
+          if (!cache.has(key)) {
+            rawDownloads++;
+            cache.set(key, Promise.resolve().then(() => readSkill(repo, commit, path))
+              .then(bytes => {
+                if (!(Buffer.isBuffer(bytes) || bytes instanceof Uint8Array) ||
+                    bytes.length === 0 || bytes.length > MAX_SKILL_BYTES) {
+                  throw new Error('Empty or oversized upstream SKILL.md: ' + repo + '/' + path);
+                }
+                return gitBlobHash(bytes);
+              }));
+          }
+          return cache.get(key);
+        }
+        for (const {entry, path} of items) {
+          if (error) return;
+          // Git's commit pin is already HEAD; the immutable source cannot be newer.
+          if (entry.commit === latest) continue;
+          const newBlob = await hashFile(latest, path);
+          const oldBlob = await hashFile(entry.commit, path);
+          if (newBlob !== oldBlob) {
+            updates.push({id: entry.id, repo, path, oldCommit: entry.commit,
+              newCommit: latest, oldBlob, newBlob});
+          }
+        }
+      } catch (cause) {
+        error ??= cause;
+      }
+    }
+  }
+  await Promise.all(Array.from({length: Math.min(concurrency, list.length)}, () => worker()));
+  if (error) throw error; // Never write a partial PR on missing sources or throttling.
+  updates.sort((a, b) => a.id.localeCompare(b.id));
+  return {updates, checked: entries.length - unresolved.length, unresolved,
+    repositories: groups.size, headLookups, rawDownloads, apiRequests: 0};
 }
 
 function treeFiles(tree, repo) {
@@ -192,12 +345,12 @@ async function main() {
     process.exitCode = 2;
     return;
   }
-  const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
-  if (!token) throw new Error('GITHUB_TOKEN is required to check every upstream source');
   const {c, m, l, d} = load();
   validate(c, m, l, d);
   const now = new Date().toISOString();
-  const result = await findUpdates(l.entries, {request: url => githubJson(url, {token})});
+  const result = await findUpdatesWithoutApi(l.entries);
+  console.log('Upstream checks: ' + result.headLookups + ' git HEAD lookups, ' +
+    result.rawDownloads + ' raw skill downloads, 0 GitHub API requests');
   const report = reportMarkdown(result);
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
