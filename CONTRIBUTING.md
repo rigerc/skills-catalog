@@ -18,10 +18,11 @@ For a new technology **with** a new skill recommendation, follow all three guide
 - **`data/mappings.json`**: technology IDs and metadata, descriptive detection examples, technology-to-skill mappings, combinations, frontend essentials, and repository aliases.
 - **`data/technology-detection-rules.json`**: executable scanner signals for every technology. This is distinct from the descriptive examples in `mappings.json`.
 - **`data/catalog-source-ledger.json`**: one evidence record for every skill, either commit-pinned `verified` or explicitly `unresolved`.
+- **`data/unmapped.json`**: generated, alphabetized index of skills with no technology, combination, or frontend-essential mapping; do not edit manually.
 
 The four documents form **one versioned snapshot**. Use an existing entry as the shape reference. Keep `schema_version: 1`, the shared `catalog_id`, and the matching `catalog.json` / `mappings.json` `snapshot_date` values consistent.
 
-`README.md`, `SKILLS.md`, and `TECHNOLOGIES.md` are **generated**. Do not hand-edit them. If their layout or fixed explanatory text needs changing, edit `scripts/catalog.mjs` instead, then regenerate.
+`README.md`, `SKILLS.md`, `TECHNOLOGIES.md`, and `data/unmapped.json` are **generated**. Do not hand-edit them. If their layout or fixed explanatory text needs changing, edit `scripts/catalog.mjs` instead, then regenerate.
 
 The built-in catalog format here is **not** the additive custom `registry.json` format exposed by Nosey's `registry init` command. Creating a `skills/` folder in this repository does not register a new built-in skill; this catalog indexes external skill sources.
 
@@ -39,6 +40,7 @@ Requires Node.js **22+**, with no npm install needed.
    node scripts/check-duplicate-skills.mjs
    node scripts/catalog.mjs --write
    node scripts/catalog.mjs --check
+   node scripts/unmapped.mjs --check
    node --test tests/*.test.mjs
    ```
 
@@ -52,10 +54,16 @@ Requires Node.js **22+**, with no npm install needed.
 - [ ] Every recommendation references a real skill and the skill's `recommended_for` backlink agrees.
 - [ ] Counts, shared catalog identity, and snapshot dates are updated consistently.
 - [ ] Unresolved sources remain visibly unresolved; verified sources have checked, immutable commit-pinned `SKILL.md` URLs.
-- [ ] Generated docs are current; validation and tests pass.
+- [ ] Generated docs and `data/unmapped.json` are current; validation and tests pass.
 - [ ] New/changed scanner signals are narrow enough to avoid common false positives, with evidence or a fixture in the PR.
 
-**What CI checks:** schema versions, counts, unique IDs, duplicate repository/skill names, duplicate pinned upstream `SKILL.md` paths (even across commits), known references, matching mapping/detection statuses, provenance entry coverage, and generated-document drift. Same-named skills in different repositories are allowed; semantic similarity or copied contents across distinct upstream files still requires human review. **What still needs review:** whether recommendations are appropriate, reverse backlinks exactly mirror every forward mapping, real-world URL/source safety, and scanner signal precision. Passing CI is not an independent security or availability audit.
+**What CI checks:** schema versions, counts, unique IDs, duplicate repository/skill names, duplicate pinned upstream `SKILL.md` paths (even across commits), known references, matching mapping/detection statuses, provenance entry coverage, generated-document drift, and `data/unmapped.json` freshness. Same-named skills in different repositories are allowed; semantic similarity or copied contents across distinct upstream files still requires human review. **What still needs review:** whether recommendations are appropriate, reverse backlinks exactly mirror every forward mapping, real-world URL/source safety, and scanner signal precision. Passing CI is not an independent security or availability audit.
+
+## Unmapped skill index
+
+`data/unmapped.json` lists all catalog skills that appear in **none** of the forward skill references in `mappings.json`: `technologies[].skill_ids`, `combinations[].skill_ids`, or `frontend_essentials.skill_ids`. The index contains canonical IDs, repositories, and skill names; repository aliases are normalized for comparison. A skill mapped only as a frontend essential or in a combination is **not** unmapped. Reverse `recommended_for` metadata alone does not count as a mapping.
+
+Regenerate it together with the Markdown documents using `node scripts/catalog.mjs --write`. CI runs `node scripts/unmapped.mjs --check` and also checks the index through `node scripts/catalog.mjs --check`. The documentation and upstream-update workflows include this generated file when opening PRs.
 
 ## Release into Nosey
 
