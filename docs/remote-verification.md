@@ -2,13 +2,13 @@
 
 The [upstream skill existence workflow](../.github/workflows/verify-skill-sources.yml) runs [check-changed-skill-sources.mjs](../scripts/check-changed-skill-sources.mjs) **only when `data/catalog.json` or `data/catalog-source-ledger.json` changes** in a pull request or a push to `main`. It validates the catalog locally first and compares source entries against the relevant base commit. It sends upstream requests **only for newly added sources, unresolved-to-verified changes, and sources whose pinned commit or URL changed**. Changes to verification timestamps alone require no requests. Changes limited to mappings, documentation, scripts, or workflow configuration do not trigger the remote check. This workflow has no manual or scheduled trigger; general catalog validation remains independent in `ci.yml`.
 
-The CI check reads `data/catalog-source-ledger.json` and groups changed verified entries by upstream repository and pinned commit. For each group it retrieves the Git commit tree and checks each recorded `SKILL.md` path against the Git tree metadata, typically **two API requests per repository/commit group** instead of one per skill. Truncated recursive trees are traversed by directory, without treating omitted paths as missing. It requires:
+The CI check reads `data/catalog-source-ledger.json` and requests only changed, commit-pinned `SKILL.md` files from **`raw.githubusercontent.com`**. Because the ledger already records the precise upstream commit and path, it needs neither GitHub REST/GraphQL APIs nor a Git HEAD lookup. Identical pinned URLs are downloaded once, with at most two concurrent requests. Each streamed response is capped at 8 MiB. For catalog-only or timestamp-only changes, it makes **zero network requests**. It requires:
 
 - An HTTPS GitHub URL ending in `SKILL.md` with a **full commit SHA** matching the ledger.
 - A successful response at that exact commit.
 - The path to resolve to a **nonempty regular file** with the exact name `SKILL.md`.
 
-Missing paths and empty blobs are reported as failures. HTTP 404/410, network failures, authorization errors, and rate limits are reported as API errors rather than misreported as missing files; they fail CI because existence could not be confirmed. Transient failures are retried. Rate-limit exhaustion stops further work without repeated requests. Only same-host canonical repository-ID redirects preserving the requested Git object are allowed.
+HTTP **404/410** is reported as missing, and empty or oversized files fail the check. Network failures, HTTP 403/429 throttling, and unexpected redirects are reported as errors rather than falsely counted as valid files. Transient transport and 5xx failures are retried once. The job stops dispatching new requests when the raw host denies or throttles access; it never executes upstream content. Raw-host traffic may be independently throttled by GitHub, but these checks do **not** consume the GitHub API request quota.
 
 Entries that are **already `unresolved`** are listed in the job summary but **are not falsely counted as verified**, and do not cause an automatic failure. Their source must be investigated and updated through a reviewed PR.
 
@@ -32,7 +32,7 @@ Both checkers examine the **recorded immutable commit**, not upstream's moving d
 
 For a missing file, review the source repository, the pinned commit, and the precise `SKILL.md` path. If the skill moved, verify a new commit and correct URL, then update the ledger's `commit`, `url`, and actual `checked_at`. If the skill no longer exists, mark its ledger record `unresolved` and give a reason; revisit mapped recommendations instead of inventing a replacement. Never replace the pinned commit with a branch name to silence CI.
 
-For HTTP 403/429, inspect GitHub API permissions and rate-limit headers. A network error should be retried, not used to downgrade valid source records.
+For HTTP 403/429 in CI, investigate raw-host access or throttling rather than GitHub REST API quota. An intermittent network error should be retried, not used to downgrade valid source records.
 
 The check complements (and does not replace) `node scripts/catalog.mjs --check`, mapping consistency checks, generated docs validation, and the regression tests.
 
