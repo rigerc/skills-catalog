@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-10-30T23:57:40.687Z",
+  "audited_at": "2026-10-31T00:19:34.695Z",
   "release_blocked": false,
   "unresolved_count": 0,
   "entries": [
@@ -492,9 +492,9 @@
       "id": "clerk/skills/clerk-setup",
       "batch": 2,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:07.139Z",
-      "url": "https://github.com/clerk/skills/blob/55206a48259bb327090ec5dbd22cfb5d4fa9de25/skills/clerk-setup/SKILL.md",
-      "commit": "55206a48259bb327090ec5dbd22cfb5d4fa9de25"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/clerk/skills/blob/b0d994e9cd954556ec747754484ad80565d67c15/skills/clerk-setup/SKILL.md",
+      "commit": "b0d994e9cd954556ec747754484ad80565d67c15"
     },
     {
       "id": "clerk/skills/clerk-swift",
@@ -644,57 +644,57 @@
       "id": "cloudflare/skills/agents-sdk",
       "batch": 2,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:02.419Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/agents-sdk/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/agents-sdk/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/cloudflare",
       "batch": 2,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:02.848Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/cloudflare/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/cloudflare/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/durable-objects",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:03.289Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/durable-objects/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/durable-objects/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/sandbox-stable",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:03.737Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/sandbox-stable/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/sandbox-stable/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/web-perf",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:04.175Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/web-perf/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/web-perf/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/workers-best-practices",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:04.592Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/workers-best-practices/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/workers-best-practices/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/skills/wrangler",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:05.004Z",
-      "url": "https://github.com/cloudflare/skills/blob/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/wrangler/SKILL.md",
-      "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/cloudflare/skills/blob/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/wrangler/SKILL.md",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
     },
     {
       "id": "cloudflare/vinext/migrate-to-vinext",
@@ -853,65 +853,65 @@
       "id": "expo/skills/eas-app-stores",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:05.159Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/eas-app-stores/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/eas-app-stores/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/eas-hosting",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:05.604Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/eas-hosting/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/eas-hosting/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/eas-workflows",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:06.029Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/eas-workflows/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/eas-workflows/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/expo-data-fetching",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:06.443Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/expo-data-fetching/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-data-fetching/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/expo-dev-client",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:06.843Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/expo-dev-client/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-dev-client/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/expo-dom",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:07.248Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/expo-dom/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-dom/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/expo-native-ui",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:07.652Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/expo-native-ui/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "expo/skills/expo-upgrade",
       "batch": 3,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:08.107Z",
-      "url": "https://github.com/expo/skills/blob/8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db/plugins/expo/skills/expo-upgrade/SKILL.md",
-      "commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-upgrade/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
     },
     {
       "id": "fastapi/fastapi/fastapi",
@@ -1469,9 +1469,9 @@
       "id": "google-gemini/gemini-skills/gemini-api-dev",
       "batch": 5,
       "status": "verified",
-      "checked_at": "2026-10-28T02:35:06.296Z",
-      "url": "https://github.com/google-gemini/gemini-skills/blob/ee9da52195752ca83c2fca701d96bcb5a9c08d2d/skills/gemini-api-dev/SKILL.md",
-      "commit": "ee9da52195752ca83c2fca701d96bcb5a9c08d2d"
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/google-gemini/gemini-skills/blob/39d81f4c7de5e56631d07e4ea766d3fe9752ce5d/skills/gemini-api-dev/SKILL.md",
+      "commit": "39d81f4c7de5e56631d07e4ea766d3fe9752ce5d"
     },
     {
       "id": "greensock/gsap-skills/gsap-core",
@@ -2158,9 +2158,9 @@
       "id": "neondatabase/agent-skills/neon-postgres",
       "batch": 6,
       "status": "verified",
-      "checked_at": "2026-10-28T03:09:03.422Z",
-      "url": "https://github.com/neondatabase/agent-skills/blob/9df568a3f88a361ea33db00453ff754d07b3b3e1/skills/neon-postgres/SKILL.md",
-      "commit": "9df568a3f88a361ea33db00453ff754d07b3b3e1",
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/neondatabase/agent-skills/blob/d3da7cb5436edbb2bc8c00747fafd31ddf0644f4/skills/neon-postgres/SKILL.md",
+      "commit": "d3da7cb5436edbb2bc8c00747fafd31ddf0644f4",
       "selection_reason": "Identical regular blobs; selected canonical skills root",
       "candidate_paths": [
         {
@@ -2596,9 +2596,9 @@
       "id": "stripe/ai/stripe-best-practices",
       "batch": 8,
       "status": "verified",
-      "checked_at": "2026-10-28T03:09:06.867Z",
-      "url": "https://github.com/stripe/ai/blob/6780831d12912f6a592f7a94d2bae0dc70eda6bb/skills/stripe-best-practices/SKILL.md",
-      "commit": "6780831d12912f6a592f7a94d2bae0dc70eda6bb",
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/stripe/ai/blob/bb4cf23be76d7073ad9560730335afedb7e04a5f/skills/stripe-best-practices/SKILL.md",
+      "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
       "selection_reason": "Identical regular blobs; selected canonical skills root",
       "candidate_paths": [
         {
@@ -2637,9 +2637,9 @@
       "id": "stripe/ai/upgrade-stripe",
       "batch": 8,
       "status": "verified",
-      "checked_at": "2026-10-28T03:09:08.110Z",
-      "url": "https://github.com/stripe/ai/blob/6780831d12912f6a592f7a94d2bae0dc70eda6bb/skills/upgrade-stripe/SKILL.md",
-      "commit": "6780831d12912f6a592f7a94d2bae0dc70eda6bb",
+      "checked_at": "2026-10-31T00:19:34.695Z",
+      "url": "https://github.com/stripe/ai/blob/bb4cf23be76d7073ad9560730335afedb7e04a5f/skills/upgrade-stripe/SKILL.md",
+      "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
       "selection_reason": "Identical regular blobs; selected canonical skills root",
       "candidate_paths": [
         {
