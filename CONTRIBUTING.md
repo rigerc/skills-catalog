@@ -74,3 +74,5 @@ GITHUB_TOKEN="$YOUR_TOKEN" node scripts/update-skill-sources.mjs --write
 ~~~
 
 Review the upstream commit diffs, security, compatibility, and licensing before merging. Pinned source updates change where Nosey reads skill files; they do **not** download or execute upstream instructions in CI.
+
+To permit automatic PR creation, enable **Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests**. The workflow uses the built-in `github.token`, so no separate credential is necessary. PRs created by that token may not trigger a second pull-request workflow run; the updater runs local catalog validation and tests before opening the PR.
