@@ -19,4 +19,6 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/catalog.mjs --check
+      - name: Check for duplicate skills
+        run: node scripts/check-duplicate-skills.mjs
       - run: node --test tests/*.test.mjs
