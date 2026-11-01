@@ -2966,6 +2966,12 @@
       "has_evals": false
     },
     {
+      "id": "laude-institute/headlong/obsidian",
+      "commit": "2e39a3f94fb9acbd0d73f6b0aecc9f83dc14547e",
+      "source_tree_sha": "2e39a3f94fb9acbd0d73f6b0aecc9f83dc14547e",
+      "has_evals": false
+    },
+    {
       "id": "madteacher/mad-agents-skills/flutter-animations",
       "commit": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
       "source_tree_sha": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
@@ -2975,6 +2981,30 @@
       "id": "madteacher/mad-agents-skills/flutter-testing",
       "commit": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
       "source_tree_sha": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
+      "has_evals": false
+    },
+    {
+      "id": "mastra-ai/skills/mastra",
+      "commit": "34180fa43c67fe38197f30d8d975fb73454156aa",
+      "source_tree_sha": "34180fa43c67fe38197f30d8d975fb73454156aa",
+      "has_evals": false
+    },
+    {
+      "id": "mattpocock/skills/git-guardrails-claude-code",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "source_tree_sha": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "has_evals": false
+    },
+    {
+      "id": "mattpocock/skills/setup-pre-commit",
+      "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "source_tree_sha": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "has_evals": false
+    },
+    {
+      "id": "mcollina/skills/fastify",
+      "commit": "c75d70dbfbe991d8cec42aeda0b64ff14fbb9ac7",
+      "source_tree_sha": "c75d70dbfbe991d8cec42aeda0b64ff14fbb9ac7",
       "has_evals": false
     },
     {
@@ -2993,6 +3023,12 @@
       "id": "microsoft/github-copilot-for-azure/azure-diagnostics",
       "commit": "519346ca4b9552569a6390577340049059df2640",
       "source_tree_sha": "519346ca4b9552569a6390577340049059df2640",
+      "has_evals": false
+    },
+    {
+      "id": "midudev/autoskills/bun",
+      "commit": "2dbab03b41988327e5c714d3fb233ebbce915e8c",
+      "source_tree_sha": "2dbab03b41988327e5c714d3fb233ebbce915e8c",
       "has_evals": false
     },
     {
@@ -3758,6 +3794,24 @@
       "has_evals": false
     },
     {
+      "id": "neondatabase/agent-skills/neon-postgres",
+      "commit": "d3da7cb5436edbb2bc8c00747fafd31ddf0644f4",
+      "source_tree_sha": "d3da7cb5436edbb2bc8c00747fafd31ddf0644f4",
+      "has_evals": false
+    },
+    {
+      "id": "nodnarbnitram/claude-code-extensions/tauri-v2",
+      "commit": "35e7f7deae689e12b94f9c242b8f59efe0f66476",
+      "source_tree_sha": "35e7f7deae689e12b94f9c242b8f59efe0f66476",
+      "has_evals": false
+    },
+    {
+      "id": "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade",
+      "commit": "83e05bc7e697c20aaa1bc6be7df0eec0ef39d51e",
+      "source_tree_sha": "83e05bc7e697c20aaa1bc6be7df0eec0ef39d51e",
+      "has_evals": false
+    },
+    {
       "id": "openai/skills/aspnet-core",
       "commit": "49f948faa9258a0c61caceaf225e179651397431",
       "source_tree_sha": "49f948faa9258a0c61caceaf225e179651397431",
@@ -3818,6 +3872,30 @@
       "has_evals": true
     },
     {
+      "id": "paulrberg/agent-skills/cli-just",
+      "commit": "b6abe0d3fc63e5c1cf4d786f42722b2ce545e23a",
+      "source_tree_sha": "b6abe0d3fc63e5c1cf4d786f42722b2ce545e23a",
+      "has_evals": false
+    },
+    {
+      "id": "pingdotgg/t3code/changesets",
+      "commit": "67661cfbb57fd353845c6f3c8c96663560031d1e",
+      "source_tree_sha": "67661cfbb57fd353845c6f3c8c96663560031d1e",
+      "has_evals": false
+    },
+    {
+      "id": "planetscale/database-skills/mysql",
+      "commit": "f6ed002d03084cb39c01d1d58904d47a36f5322a",
+      "source_tree_sha": "f6ed002d03084cb39c01d1d58904d47a36f5322a",
+      "has_evals": false
+    },
+    {
+      "id": "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api",
+      "commit": "adbdacbf26cb29a5008f06af6f1bb601d5aa56f2",
+      "source_tree_sha": "adbdacbf26cb29a5008f06af6f1bb601d5aa56f2",
+      "has_evals": false
+    },
+    {
       "id": "pproenca/dot-skills/react-hook-form",
       "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3",
       "source_tree_sha": "cf93c57cac89d6fc3e4194686000411567f5caf3",
@@ -3851,6 +3929,24 @@
       "id": "prisma/skills/prisma-postgres",
       "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
       "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "has_evals": false
+    },
+    {
+      "id": "pulumi/agent-skills/pulumi-component",
+      "commit": "2517e28e4bc029424e9c9ee48016394296be0f6a",
+      "source_tree_sha": "2517e28e4bc029424e9c9ee48016394296be0f6a",
+      "has_evals": false
+    },
+    {
+      "id": "pymodel/react-frontend-skills/msw",
+      "commit": "b210600fdf49441ee1efeca2cbdc05599ec03019",
+      "source_tree_sha": "b210600fdf49441ee1efeca2cbdc05599ec03019",
+      "has_evals": false
+    },
+    {
+      "id": "redis/agent-skills/redis-core",
+      "commit": "a84871d065f398fed55e1633f66b66f731eb4e2b",
+      "source_tree_sha": "a84871d065f398fed55e1633f66b66f731eb4e2b",
       "has_evals": false
     },
     {
