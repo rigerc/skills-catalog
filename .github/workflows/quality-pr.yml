@@ -1,6 +1,6 @@
 name: Skill quality gate
 # Always runs a lightweight plan step so the required status check exists on all PRs.
-# Installs the validator and downloads upstream content only for changed pins.
+# Installs the validator and downloads full skill directories for changed pins or newly recommended skills.
 # Report-only initially; enable --enforce after calibration.
 on:
   pull_request:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22'
-      - name: Plan changed pinned skills (no upstream requests)
+      - name: Plan changed pins and newly recommended skills (no upstream requests)
         id: plan
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || inputs.base_sha || '' }}
@@ -64,7 +64,7 @@ jobs:
         run: |
           echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
           "$RUNNER_TEMP/bin/skill-validator" --version
-      - name: Check changed pinned skills
+      - name: Check changed pins and newly recommended skills
         if: steps.plan.outputs.targets != '0'
         env:
           BASE_SHA: ${{ steps.plan.outputs.base_sha }}
