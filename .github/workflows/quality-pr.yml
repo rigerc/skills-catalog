@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22'
@@ -30,20 +30,38 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha || inputs.base_sha || '' }}
         run: |
           if [ -z "$BASE_SHA" ]; then
-            BASE_SHA="$(git rev-parse origin/main)"
+            git fetch --no-tags --depth=1 origin main
+            BASE_SHA="$(git rev-parse FETCH_HEAD)"
+          fi
+          if ! [[ "$BASE_SHA" =~ ^[a-f0-9]{40}$ ]]; then
+            echo "base_sha must be a full 40-character Git SHA" >&2
+            exit 1
+          fi
+          if ! git cat-file -e "$BASE_SHA:data/catalog-source-ledger.json" 2>/dev/null; then
+            git fetch --no-tags --depth=1 origin "$BASE_SHA"
           fi
           echo "base_sha=$BASE_SHA" >> "$GITHUB_OUTPUT"
           node scripts/quality.mjs --plan --base "$BASE_SHA"
-      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+          echo "validator_version=$(node scripts/quality.mjs --print-version)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        id: validator-cache
         if: steps.plan.outputs.targets != '0'
+        with:
+          path: ${{ runner.temp }}/bin/skill-validator
+          key: ${{ runner.os }}-${{ runner.arch }}-skill-validator-${{ steps.plan.outputs.validator_version }}-go125
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        if: steps.plan.outputs.targets != '0' && steps.validator-cache.outputs.cache-hit != 'true'
         with:
           go-version: '1.25'
           cache: false
       - name: Install pinned skill-validator
+        if: steps.plan.outputs.targets != '0' && steps.validator-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "$RUNNER_TEMP/bin"
+          GOBIN="$RUNNER_TEMP/bin" go install "github.com/agent-ecosystem/skill-validator/cmd/skill-validator@${{ steps.plan.outputs.validator_version }}"
+      - name: Use pinned skill-validator
         if: steps.plan.outputs.targets != '0'
         run: |
-          VERSION="$(node scripts/quality.mjs --print-version)"
-          GOBIN="$RUNNER_TEMP/bin" go install "github.com/agent-ecosystem/skill-validator/cmd/skill-validator@${VERSION}"
           echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
           "$RUNNER_TEMP/bin/skill-validator" --version
       - name: Check changed pinned skills
