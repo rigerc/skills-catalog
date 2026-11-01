@@ -164,6 +164,14 @@
       "credit_url": "https://github.com/beatra-ai/beatra-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/brendangregg-use-tsa",
+      "name": "brendangregg-use-tsa",
+      "original_repository": "thecsdoctor/brendangregg-use-tsa-skill",
+      "commit": "b9f4dd6cebfd871551f10ab84b51b31ec459fe60",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/thecsdoctor/brendangregg-use-tsa-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
       "name": "browser-testing-with-devtools",
       "original_repository": "addyosmani/agent-skills",
@@ -194,6 +202,14 @@
       "commit": "aff85675ae2fdcca1e5824230b1be86ab4b89198",
       "path": "SKILL.md",
       "credit_url": "https://github.com/gongdear/cline-pilot"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/cron-doctor",
+      "name": "cron-doctor",
+      "original_repository": "takeaseatventure/devops-skills",
+      "commit": "7b5f4eb40b008b030adde8afe4012141ac1f702c",
+      "path": "skills/cron-doctor/SKILL.md",
+      "credit_url": "https://github.com/takeaseatventure/devops-skills"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/de-ai-writer",
@@ -274,6 +290,14 @@
       "commit": "d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0",
       "path": "skills/frontend-lighthouse/SKILL.md",
       "credit_url": "https://github.com/stareezy-1/frontend-architecture-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/fsi-compliance-checker",
+      "name": "fsi-compliance-checker",
+      "original_repository": "timwukp/agent-skills-best-practice",
+      "commit": "0a67102a22e6958154baf632b9ac4eeec7f1fa9c",
+      "path": "skills/skills/fsi-compliance-checker/SKILL.md",
+      "credit_url": "https://github.com/timwukp/agent-skills-best-practice"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
@@ -484,6 +508,14 @@
       "credit_url": "https://github.com/fclairamb/solidping-plugin"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/sql-sentinel",
+      "name": "sql-sentinel",
+      "original_repository": "takeaseatventure/sql-sentinel",
+      "commit": "71335dea347b9fd9c67c92ca1b302ae4f8a76435",
+      "path": "skills/sql-sentinel/SKILL.md",
+      "credit_url": "https://github.com/takeaseatventure/sql-sentinel"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/sshepherd",
       "name": "sshepherd",
       "original_repository": "Antheurus/sshepherd",
@@ -506,6 +538,14 @@
       "commit": "a4f393b891c8d7d0d81c53580651c570cd3d4e6c",
       "path": "SKILL.md",
       "credit_url": "https://github.com/moooai/takeout-coupon"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/talivia-agent-kit",
+      "name": "talivia-agent-kit",
+      "original_repository": "talivia-group/agent",
+      "commit": "f4ed3fc6b554ad5183a57ae13ca2a9bd5162c12a",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/talivia-group/agent"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/talking-avatar-video",
@@ -594,6 +634,14 @@
       "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
       "path": "skills/why-did-this-post-flop/SKILL.md",
       "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/youtube-transcript-skills",
+      "name": "youtube-transcript-skills",
+      "original_repository": "tubeagentkit/youtube-transcript-skills",
+      "commit": "97d5ad332dd3872edfb6beddda5f8587a4bfc863",
+      "path": "skills/youtube-transcript/SKILL.md",
+      "credit_url": "https://github.com/tubeagentkit/youtube-transcript-skills"
     }
   ]
 }
