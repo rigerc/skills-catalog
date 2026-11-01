@@ -8,6 +8,7 @@ import Ajv2020 from 'ajv/dist/2020.js';
 const root=fileURLToPath(new URL('..',import.meta.url));
 const pairs=[
   ['catalog.json','catalog.schema.json'],
+  ['evals-index.json','evals-index.schema.json'],
   ['mappings.json','mappings.schema.json'],
   ['technology-detection-rules.json','technology-detection-rules.schema.json'],
   ['catalog-source-ledger.json','catalog-source-ledger.schema.json'],
@@ -33,6 +34,10 @@ for(const [file] of pairs){
 if(process.argv.includes('--self-test')){
   const samples=[
     ['catalog.json',d=>{delete d.skills[0].repository},'missing skill identity'],
+    ['catalog.json',d=>{delete d.skills[0].has_evals},'missing eval marker'],
+    ['catalog.json',d=>{d.skills[0].has_evals='yes'},'non-boolean eval marker'],
+    ['evals-index.json',d=>{d.entries[0].has_evals='yes'},'invalid eval evidence'],
+    ['evals-index.json',d=>{d.entries[0].commit='main'},'unpinned eval evidence'],
     ['mappings.json',d=>{d.technologies[0].mapping_status='unknown'},'invalid mapping status'],
     ['technology-detection-rules.json',d=>{d.rules[0].signals=[{type:'dependency',ecosystem:'npm'}]},'incomplete dependency signal'],
     ['technology-detection-rules.json',d=>{d.policy.source_code_execution=true},'unsafe scanner policy'],
