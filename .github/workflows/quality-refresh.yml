@@ -75,6 +75,7 @@ jobs:
           npm install --ignore-scripts --no-package-lock --no-audit --no-fund
           npm run validate:schemas -- --skip-unmapped
           node scripts/quality.mjs --check
+          node scripts/manifest.mjs --check
       - uses: peter-evans/create-pull-request@v7
         if: steps.plan.outputs.groups != '0'
         with:
