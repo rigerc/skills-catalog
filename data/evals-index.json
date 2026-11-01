@@ -890,6 +890,12 @@
       "has_evals": false
     },
     {
+      "id": "firecrawl/cli/firecrawl",
+      "commit": "a9a46fe23af001d726a05d8448d25a7188b42fdc",
+      "source_tree_sha": "a9a46fe23af001d726a05d8448d25a7188b42fdc",
+      "has_evals": false
+    },
+    {
       "id": "georgeguimaraes/elixir-agent-tools/elixir",
       "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
       "source_tree_sha": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
@@ -1277,6 +1283,18 @@
       "id": "github/awesome-copilot/terraform-azurerm-set-diff-analyzer",
       "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3",
       "source_tree_sha": "98b45a78d3ed316e78f005b60594d5c4a50588e3",
+      "has_evals": false
+    },
+    {
+      "id": "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns",
+      "commit": "fe73fb33a09ee6562eeec7415a3f9a3bcf795177",
+      "source_tree_sha": "fe73fb33a09ee6562eeec7415a3f9a3bcf795177",
+      "has_evals": false
+    },
+    {
+      "id": "google-gemini/gemini-skills/gemini-api-dev",
+      "commit": "39d81f4c7de5e56631d07e4ea766d3fe9752ce5d",
+      "source_tree_sha": "39d81f4c7de5e56631d07e4ea766d3fe9752ce5d",
       "has_evals": false
     },
     {
@@ -2564,6 +2582,18 @@
       "has_evals": true
     },
     {
+      "id": "honojs/skills/hono",
+      "commit": "e54ce51f6effaeb574ebd2629e89e086e14a2db3",
+      "source_tree_sha": "e54ce51f6effaeb574ebd2629e89e086e14a2db3",
+      "has_evals": false
+    },
+    {
+      "id": "hoodini/ai-agents-skills/mongodb",
+      "commit": "20aebb8eef3801e369829efbdb8ec23d0900c0a8",
+      "source_tree_sha": "20aebb8eef3801e369829efbdb8ec23d0900c0a8",
+      "has_evals": false
+    },
+    {
       "id": "igmarin/rails-agent-skills/apply-stack-conventions",
       "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
       "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
@@ -2597,6 +2627,18 @@
       "id": "igmarin/rails-agent-skills/test-service",
       "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
       "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/ruby-core-skills/triage-bug",
+      "commit": "01b4c2080b10f0979e743dddef10817f4e931b57",
+      "source_tree_sha": "01b4c2080b10f0979e743dddef10817f4e931b57",
+      "has_evals": false
+    },
+    {
+      "id": "instantdb/skills/instantdb",
+      "commit": "b80dea74f99ffb7a8d0726805d63ec97a1e4b5cd",
+      "source_tree_sha": "b80dea74f99ffb7a8d0726805d63ec97a1e4b5cd",
       "has_evals": false
     },
     {
@@ -2792,6 +2834,24 @@
       "has_evals": false
     },
     {
+      "id": "Junaid-PK/laravel-development-workflow/laravel-development-workflow",
+      "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
+      "source_tree_sha": "e8747afc1a427ae16e70ec01ad994788e71936a4",
+      "has_evals": false
+    },
+    {
+      "id": "K-Dense-AI/scientific-agent-skills/transformers",
+      "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+      "source_tree_sha": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+      "has_evals": false
+    },
+    {
+      "id": "kadajett/agent-nestjs-skills/nestjs-best-practices",
+      "commit": "3986e0cede33958e000f959031cbee0cd83c2941",
+      "source_tree_sha": "3986e0cede33958e000f959031cbee0cd83c2941",
+      "has_evals": false
+    },
+    {
       "id": "kepano/obsidian-skills/json-canvas",
       "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
       "source_tree_sha": "3ccff5338ea700537839b21900aa5358a0402c98",
@@ -2816,6 +2876,12 @@
       "has_evals": false
     },
     {
+      "id": "kevmoo/dash_skills/dart-best-practices",
+      "commit": "48791b7c899ac895bc0aae7a9a6312df3d3e3ca3",
+      "source_tree_sha": "48791b7c899ac895bc0aae7a9a6312df3d3e3ca3",
+      "has_evals": true
+    },
+    {
       "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-agp9-migration",
       "commit": "c2f90697bf71966a117a13340d5fff787f004140",
       "source_tree_sha": "c2f90697bf71966a117a13340d5fff787f004140",
@@ -2823,6 +2889,12 @@
     },
     {
       "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-cocoapods-spm-migration",
+      "commit": "c2f90697bf71966a117a13340d5fff787f004140",
+      "source_tree_sha": "c2f90697bf71966a117a13340d5fff787f004140",
+      "has_evals": false
+    },
+    {
+      "id": "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin",
       "commit": "c2f90697bf71966a117a13340d5fff787f004140",
       "source_tree_sha": "c2f90697bf71966a117a13340d5fff787f004140",
       "has_evals": false
@@ -2873,6 +2945,24 @@
       "id": "krutikJain/android-agent-skills/android-testing-unit",
       "commit": "c5bf6731b8441019418784484cca1578413e6ad3",
       "source_tree_sha": "c5bf6731b8441019418784484cca1578413e6ad3",
+      "has_evals": false
+    },
+    {
+      "id": "langchain-ai/deepagents/langgraph-docs",
+      "commit": "4ff926659cfb1281b01d6821052135cef151dde3",
+      "source_tree_sha": "4ff926659cfb1281b01d6821052135cef151dde3",
+      "has_evals": false
+    },
+    {
+      "id": "langchain-ai/langchain-skills/langchain-rag",
+      "commit": "126c384d8552dcb476b226c244172186cc3f4328",
+      "source_tree_sha": "126c384d8552dcb476b226c244172186cc3f4328",
+      "has_evals": false
+    },
+    {
+      "id": "langfuse/skills/langfuse",
+      "commit": "298b316eb9a5d302811c4182fb9c1ee81a449257",
+      "source_tree_sha": "298b316eb9a5d302811c4182fb9c1ee81a449257",
       "has_evals": false
     },
     {
