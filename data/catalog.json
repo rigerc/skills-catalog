@@ -2,7 +2,7 @@
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
   "snapshot_date": "2026-11-01",
-  "source": "Nosey modular product specification; October 27 snapshot plus October 28 curated stack patch; October 28 user-supplied technology skill mappings; 2026-11-01 pinned agent-skills-standard develop import; 2026-11-01 pinned sickn33/agentic-awesome-skills v20.3.0 bundle-selected top-level import (data/bundles.json at 1ed5976b000fc0df2910d32ed33717794da1bee2)",
+  "source": "Nosey modular product specification; October 27 snapshot plus October 28 curated stack patch; October 28 user-supplied technology skill mappings; 2026-11-01 pinned agent-skills-standard develop import; 2026-11-01 pinned sickn33/agentic-awesome-skills v20.3.0 bundle-selected top-level import (data/bundles.json at 1ed5976b000fc0df2910d32ed33717794da1bee2); original-source attribution for 91 imports from pinned upstream source-credits.json",
   "remote_availability": "not_checked",
   "notes": [
     "These entries are recommendations specified by the documentation; this JSON does not verify remote existence, installation compatibility, security or licensing.",
@@ -11,7 +11,8 @@
     "October 28 stakeholder decision requires each built-in skill to have an explicit validated source URL before release. Current missing URLs are a release-blocking completion task; do not fabricate them.",
     "October 28 follow-up: 20 formerly detect-only technologies now map to 18 explicit supplied skill URLs (17 net-new skill IDs; Zustand reuses an existing catalog entry). Babel remains detect-only; remote validation/security review is not implied by inclusion.",
     "2026-11-01 sickn33/agentic-awesome-skills: only root-level SKILL.md entries listed in the 11 bundles or common of data/bundles.json at 1ed5976b000fc0df2910d32ed33717794da1bee2 are indexed. Existing exact-name collision, offensive/unknown risk label, missing-manifest and nested-skill exclusions remain. Duplicate bundle entries are deduplicated. Bundle membership and upstream risk labels are not a security review.",
-    "The upstream repository licenses original written material under CC BY 4.0 with third-party exceptions. Only commit-pinned links are indexed; check individual upstream notices before reuse."
+    "The upstream repository licenses original written material under CC BY 4.0 with third-party exceptions. Only commit-pinned links are indexed; check individual upstream notices before reuse.",
+    "Original-source attribution uses data/source-credits.json at the same pinned upstream commit; 91 explicitly credited skills have uniquely resolved commit-pinned SKILL.md paths and canonical original-repository identities. Skills without an unambiguous original skill file retain the pinned bundle copy as their install source."
   ],
   "counts": {
     "distinct_skills": 2601,
@@ -21,6 +22,39 @@
     "frontend_essential_skills": 3
   },
   "skills": [
+    {
+      "id": "2slides/slides-generation-2slides-skills/2slides-ppt-generator",
+      "repository": "2slides/slides-generation-2slides-skills",
+      "skill_name": "2slides-ppt-generator",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "addyosmani/agent-skills/browser-testing-with-devtools",
+      "repository": "addyosmani/agent-skills",
+      "skill_name": "browser-testing-with-devtools",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "addyosmani/agent-skills/using-agent-skills",
+      "repository": "addyosmani/agent-skills",
+      "skill_name": "using-agent-skills",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
     {
       "id": "addyosmani/web-quality-skills/accessibility",
       "repository": "addyosmani/web-quality-skills",
@@ -163,6 +197,17 @@
       }
     },
     {
+      "id": "agentbody/skills/people-data",
+      "repository": "agentbody/skills",
+      "skill_name": "people-data",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "aj-geddes/useful-ai-prompts/flask-api-development",
       "repository": "aj-geddes/useful-ai-prompts",
       "skill_name": "flask-api-development",
@@ -210,6 +255,50 @@
         "technology_ids": [
           "make"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "alapha888/session-handoff-kit/session-handoff",
+      "repository": "alapha888/session-handoff-kit",
+      "skill_name": "session-handoff",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "alexyc9381/shark-skill/shark",
+      "repository": "alexyc9381/shark-skill",
+      "skill_name": "shark",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "alfredtech2026/shopify-app-review-brief/shopify-review-triage",
+      "repository": "alfredtech2026/shopify-app-review-brief",
+      "skill_name": "shopify-review-triage",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "amElnagdy/review-skills/debate-review",
+      "repository": "amElnagdy/review-skills",
+      "skill_name": "debate-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -345,6 +434,28 @@
       }
     },
     {
+      "id": "Antheurus/anywrite/anywrite",
+      "repository": "Antheurus/anywrite",
+      "skill_name": "anywrite",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Antheurus/sshepherd/sshepherd",
+      "repository": "Antheurus/sshepherd",
+      "skill_name": "sshepherd",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "anthropics/skills/claude-api",
       "repository": "anthropics/skills",
       "skill_name": "claude-api",
@@ -377,6 +488,17 @@
         "technology_ids": [
           "mcp-playwright"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "aomi-labs/skills/aomi-transact",
+      "repository": "aomi-labs/skills",
+      "skill_name": "aomi-transact",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -500,6 +622,17 @@
       }
     },
     {
+      "id": "awss1i/assay/assay",
+      "repository": "awss1i/assay",
+      "skill_name": "assay",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "backnotprop/plannotator/review-renovate",
       "repository": "backnotprop/plannotator",
       "skill_name": "review-renovate",
@@ -508,6 +641,193 @@
         "technology_ids": [
           "renovate"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-headshot-generator-skill/ai-headshot-studio",
+      "repository": "beatra-ai/ai-headshot-generator-skill",
+      "skill_name": "ai-headshot-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-image-generator-skill/ai-image-generation-studio",
+      "repository": "beatra-ai/ai-image-generator-skill",
+      "skill_name": "ai-image-generation-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-logo-maker-skill/ai-logo-maker",
+      "repository": "beatra-ai/ai-logo-maker-skill",
+      "skill_name": "ai-logo-maker",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-media-generator-skill/beatra",
+      "repository": "beatra-ai/ai-media-generator-skill",
+      "skill_name": "beatra",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-music-generator-skill/music-generation-studio",
+      "repository": "beatra-ai/ai-music-generator-skill",
+      "skill_name": "music-generation-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-podcast-voiceover-skill/ai-podcast-voiceover",
+      "repository": "beatra-ai/ai-podcast-voiceover-skill",
+      "skill_name": "ai-podcast-voiceover",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-poster-maker-skill/poster-design-studio",
+      "repository": "beatra-ai/ai-poster-maker-skill",
+      "skill_name": "poster-design-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-product-photography-skill/product-photo-studio",
+      "repository": "beatra-ai/ai-product-photography-skill",
+      "skill_name": "product-photo-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-voice-cloning-skill/voice-cloning-studio",
+      "repository": "beatra-ai/ai-voice-cloning-skill",
+      "skill_name": "voice-cloning-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ai-voiceover-generator-skill/voiceover-narration-studio",
+      "repository": "beatra-ai/ai-voiceover-generator-skill",
+      "skill_name": "voiceover-narration-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/beatra-skills/beatra-ai-video-studio",
+      "repository": "beatra-ai/beatra-skills",
+      "skill_name": "beatra-ai-video-studio",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/ecommerce-product-images-skill/ecommerce-listing-image-set",
+      "repository": "beatra-ai/ecommerce-product-images-skill",
+      "skill_name": "ecommerce-listing-image-set",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/lyrics-to-song-skill/suno-lyrics-to-song",
+      "repository": "beatra-ai/lyrics-to-song-skill",
+      "skill_name": "suno-lyrics-to-song",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/multilingual-voiceover-skill/ai-multilingual-dubbing",
+      "repository": "beatra-ai/multilingual-voiceover-skill",
+      "skill_name": "ai-multilingual-dubbing",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/photo-to-anime-skill/ai-photo-restyler",
+      "repository": "beatra-ai/photo-to-anime-skill",
+      "skill_name": "ai-photo-restyler",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/talking-avatar-video-skill/talking-avatar-video",
+      "repository": "beatra-ai/talking-avatar-video-skill",
+      "skill_name": "talking-avatar-video",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "beatra-ai/viral-video-remake-skill/viral-video-teardown-remake",
+      "repository": "beatra-ai/viral-video-remake-skill",
+      "skill_name": "viral-video-teardown-remake",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -631,6 +951,30 @@
         "technology_ids": [
           "bazel"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "chaunsin/agent-skills/drizzle-migration-conflict",
+      "repository": "chaunsin/agent-skills",
+      "skill_name": "drizzle-migration-conflict",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "drizzle"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "chaunsin/agent-skills/pre-release-review",
+      "repository": "chaunsin/agent-skills",
+      "skill_name": "pre-release-review",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -1182,6 +1526,28 @@
       }
     },
     {
+      "id": "CodeShuX/mockhunter/mock-hunter",
+      "repository": "CodeShuX/mockhunter",
+      "skill_name": "mock-hunter",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "commitshow/production-audit/production-audit",
+      "repository": "commitshow/production-audit",
+      "skill_name": "production-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "confident-ai/deepeval/deepeval-otel",
       "repository": "confident-ai/deepeval",
       "skill_name": "deepeval-otel",
@@ -1195,6 +1561,28 @@
       }
     },
     {
+      "id": "connerkward/lookdev-auto-skill/lookdev-auto",
+      "repository": "connerkward/lookdev-auto-skill",
+      "skill_name": "lookdev-auto",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "connerkward/mcp-apple-notes/apple-notes-search",
+      "repository": "connerkward/mcp-apple-notes",
+      "skill_name": "apple-notes-search",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "convex/agent-skills/convex",
       "repository": "convex/agent-skills",
       "skill_name": "convex",
@@ -1203,6 +1591,39 @@
         "technology_ids": [
           "convex"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "CosmoBlk/email-marketing-bible/email-marketing-bible",
+      "repository": "CosmoBlk/email-marketing-bible",
+      "skill_name": "email-marketing-bible",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cruisekkk/time-ledger/time-ledger",
+      "repository": "cruisekkk/time-ledger",
+      "skill_name": "time-ledger",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "cruisekkk/trading-ledger/trading-ledger",
+      "repository": "cruisekkk/trading-ledger",
+      "skill_name": "trading-ledger",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -1971,6 +2392,17 @@
       }
     },
     {
+      "id": "fclairamb/solidping-plugin/solidping",
+      "repository": "fclairamb/solidping-plugin",
+      "skill_name": "solidping",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "firebase/agent-skills/firebase-auth-basics",
       "repository": "firebase/agent-skills",
       "skill_name": "firebase-auth-basics",
@@ -1997,6 +2429,17 @@
       }
     },
     {
+      "id": "FlowLLM-AI/AxonX/axonx",
+      "repository": "FlowLLM-AI/AxonX",
+      "skill_name": "axonx",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "georgeguimaraes/elixir-agent-tools/elixir",
       "repository": "georgeguimaraes/elixir-agent-tools",
       "skill_name": "elixir",
@@ -2018,6 +2461,17 @@
         "technology_ids": [
           "phoenix"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "getchordlabs/chord/chord-onchain-trading",
+      "repository": "getchordlabs/chord",
+      "skill_name": "chord-onchain-trading",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -2855,6 +3309,28 @@
       }
     },
     {
+      "id": "glukicov/slideops/slideops",
+      "repository": "glukicov/slideops",
+      "skill_name": "slideops",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "gongdear/cline-pilot/cline-pilot",
+      "repository": "gongdear/cline-pilot",
+      "skill_name": "cline-pilot",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "google-gemini/gemini-skills/gemini-api-dev",
       "repository": "google-gemini/gemini-skills",
       "skill_name": "gemini-api-dev",
@@ -2863,6 +3339,17 @@
         "technology_ids": [
           "google-genai"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "gooseworks-ai/goose-skills/ad-campaign-analyzer",
+      "repository": "gooseworks-ai/goose-skills",
+      "skill_name": "ad-campaign-analyzer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -2967,6 +3454,28 @@
         "technology_ids": [
           "gsap"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Hanyuyuan6/remote-gpu-trainer/remote-gpu-trainer",
+      "repository": "Hanyuyuan6/remote-gpu-trainer",
+      "skill_name": "remote-gpu-trainer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "harshmaur/apify-reddit-scraper-skill/apify-reddit-scraper",
+      "repository": "harshmaur/apify-reddit-scraper-skill",
+      "skill_name": "apify-reddit-scraper",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8167,6 +8676,30 @@
       }
     },
     {
+      "id": "jiawood2006/hermes-skills/de-ai-writer",
+      "repository": "jiawood2006/hermes-skills",
+      "skill_name": "de-ai-writer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Junaid-PK/laravel-development-workflow/laravel-development-workflow",
+      "repository": "Junaid-PK/laravel-development-workflow",
+      "skill_name": "laravel-development-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "laravel"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "K-Dense-AI/scientific-agent-skills/transformers",
       "repository": "K-Dense-AI/scientific-agent-skills",
       "skill_name": "transformers",
@@ -8475,6 +9008,28 @@
       }
     },
     {
+      "id": "lewiswigmore/agent-skills/vscode-extension-guide-en",
+      "repository": "lewiswigmore/agent-skills",
+      "skill_name": "vscode-extension-guide-en",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "lognorm/lognorm-mcp/lognorm",
+      "repository": "lognorm/lognorm-mcp",
+      "skill_name": "lognorm",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "lucianghinda/superpowers-ruby/rails-guides",
       "repository": "lucianghinda/superpowers-ruby",
       "skill_name": "rails-guides",
@@ -8509,6 +9064,17 @@
         "technology_ids": [
           "rspec"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "luoyuctl/agenttrace/agenttrace-session-audit",
+      "repository": "luoyuctl/agenttrace",
+      "skill_name": "agenttrace-session-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -8982,6 +9548,17 @@
         "technology_ids": [
           "fastify"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "merc1305/findMate/find-complementary-founders",
+      "repository": "merc1305/findMate",
+      "skill_name": "find-complementary-founders",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12212,6 +12789,105 @@
       }
     },
     {
+      "id": "mishanefedov/skill-issue/skill-issue",
+      "repository": "mishanefedov/skill-issue",
+      "skill_name": "skill-issue",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mnemoverse/agent-memory-discipline/agent-memory-discipline",
+      "repository": "mnemoverse/agent-memory-discipline",
+      "skill_name": "agent-memory-discipline",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "MohammadHijjawi97/since-cutoff/since-cutoff",
+      "repository": "MohammadHijjawi97/since-cutoff",
+      "skill_name": "since-cutoff",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "moooai/parcel-coupon/parcel-coupon",
+      "repository": "moooai/parcel-coupon",
+      "skill_name": "parcel-coupon",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "moooai/takeout-coupon/takeout-coupon",
+      "repository": "moooai/takeout-coupon",
+      "skill_name": "takeout-coupon",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "moooai/trip-coupon/trip-coupon",
+      "repository": "moooai/trip-coupon",
+      "skill_name": "trip-coupon",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "multica-ai/andrej-karpathy-skills/andrej-karpathy",
+      "repository": "multica-ai/andrej-karpathy-skills",
+      "skill_name": "andrej-karpathy",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "mycelos-ai/bumblebee-skill/bumblebee",
+      "repository": "mycelos-ai/bumblebee-skill",
+      "skill_name": "bumblebee",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Necmttn/ax/ax-extract-workflow",
+      "repository": "Necmttn/ax",
+      "skill_name": "ax-extract-workflow",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "neondatabase/agent-skills/neon-postgres",
       "repository": "neondatabase/agent-skills",
       "skill_name": "neon-postgres",
@@ -12272,6 +12948,17 @@
         "technology_ids": [
           "cloudflare"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Outreachgenie/outreachgenie-linkedin-mcp/outreachgenie-list-audit",
+      "repository": "Outreachgenie/outreachgenie-linkedin-mcp",
+      "skill_name": "outreachgenie-list-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12465,6 +13152,39 @@
       }
     },
     {
+      "id": "prateeks367/voicemoat-skills/draft-my-comments",
+      "repository": "prateeks367/voicemoat-skills",
+      "skill_name": "draft-my-comments",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prateeks367/voicemoat-skills/get-seen-in-replies",
+      "repository": "prateeks367/voicemoat-skills",
+      "skill_name": "get-seen-in-replies",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "prateeks367/voicemoat-skills/why-did-this-post-flop",
+      "repository": "prateeks367/voicemoat-skills",
+      "skill_name": "why-did-this-post-flop",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "prisma/skills/prisma-cli",
       "repository": "prisma/skills",
       "skill_name": "prisma-cli",
@@ -12538,6 +13258,28 @@
         "technology_ids": [
           "msw"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "qinghui316/ecl-harness-engineer/ecl-harness-engineer",
+      "repository": "qinghui316/ecl-harness-engineer",
+      "skill_name": "ecl-harness-engineer",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "rainmanjam/poka-yoke/poka-yoke",
+      "repository": "rainmanjam/poka-yoke",
+      "skill_name": "poka-yoke",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12856,6 +13598,41 @@
       }
     },
     {
+      "id": "sandbaseai/awesome-workbuddy/skill-security-audit",
+      "repository": "sandbaseai/awesome-workbuddy",
+      "skill_name": "skill-security-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "sandbaseai/cli/sandbase-mcp",
+      "repository": "sandbaseai/cli",
+      "skill_name": "sandbase-mcp",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "Search-3D/electron-drive-skill/electron-drive-skill",
+      "repository": "Search-3D/electron-drive-skill",
+      "skill_name": "electron-drive-skill",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "electron"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "secondsky/claude-skills/tailwind-v4-shadcn",
       "repository": "secondsky/claude-skills",
       "skill_name": "tailwind-v4-shadcn",
@@ -12913,17 +13690,6 @@
       "id": "sickn33/agentic-awesome-skills/007",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "007",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/2slides-ppt-generator",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "2slides-ppt-generator",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -13053,17 +13819,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ad-campaign-analyzer",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ad-campaign-analyzer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ad-creative",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ad-creative",
@@ -13144,17 +13899,6 @@
       "id": "sickn33/agentic-awesome-skills/agent-harness-fault-injection",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "agent-harness-fault-injection",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/agent-memory-discipline",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "agent-memory-discipline",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -13287,17 +14031,6 @@
       "id": "sickn33/agentic-awesome-skills/agents-v2-py",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "agents-v2-py",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/agenttrace-session-audit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "agenttrace-session-audit",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -13449,28 +14182,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-headshot-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-image-generation-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-image-generation-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-image-realism",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ai-image-realism",
@@ -13504,17 +14215,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-logo-maker",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-logo-maker",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-meta-tag-writer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ai-meta-tag-writer",
@@ -13537,42 +14237,9 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-multilingual-dubbing",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-multilingual-dubbing",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-photo-restyler",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-photo-restyler",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-pipeline-orchestration",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ai-pipeline-orchestration",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-podcast-voiceover",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ai-podcast-voiceover",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -13812,17 +14479,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/andrej-karpathy",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "andrej-karpathy",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/android_ui_verification",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "android_ui_verification",
@@ -13943,17 +14599,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/anti-slop-design",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "anti-slop-design",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/anti-ui-slop",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "anti-ui-slop",
@@ -13979,28 +14624,6 @@
       "id": "sickn33/agentic-awesome-skills/antigravity-workflows",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "antigravity-workflows",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/anywrite",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "anywrite",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/aomi-transact",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "aomi-transact",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -14251,17 +14874,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/apify-reddit-scraper",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "apify-reddit-scraper",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/apify-ultimate-scraper",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "apify-ultimate-scraper",
@@ -14298,17 +14910,6 @@
       "id": "sickn33/agentic-awesome-skills/appium-skill",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "appium-skill",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/apple-notes-search",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "apple-notes-search",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -14383,17 +14984,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/assay",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "assay",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/asset-inventory",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "asset-inventory",
@@ -14441,17 +15031,6 @@
       "id": "sickn33/agentic-awesome-skills/atlas-cloud-media",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "atlas-cloud-media",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/atlas-contract",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "atlas-contract",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -14707,28 +15286,6 @@
       "id": "sickn33/agentic-awesome-skills/awt-e2e-testing",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "awt-e2e-testing",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ax-extract-workflow",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/axonx",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "axonx",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -16281,28 +16838,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/beatra",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "beatra",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/beatra-ai-video-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "beatra-ai-video-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/bevy-ecs-expert",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "bevy-ecs-expert",
@@ -16446,17 +16981,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/brendangregg-use-tsa",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "brendangregg-use-tsa",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/brevo-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "brevo-automation",
@@ -16534,17 +17058,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "browser-testing-with-devtools",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/buddy-program-manager",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "buddy-program-manager",
@@ -16608,17 +17121,6 @@
         "technology_ids": [
           "bullmq"
         ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/bumblebee",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "bumblebee",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -16879,17 +17381,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/chord-onchain-trading",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "chord-onchain-trading",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/chrome-extension-developer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "chrome-extension-developer",
@@ -17040,17 +17531,6 @@
       "id": "sickn33/agentic-awesome-skills/clients-accounts",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "clients-accounts",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/cline-pilot",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "cline-pilot",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -17600,17 +18080,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/cron-doctor",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "cron-doctor",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/cross-chain-relayer-audit",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "cross-chain-relayer-audit",
@@ -18045,28 +18514,6 @@
       "id": "sickn33/agentic-awesome-skills/dbt-transformation-patterns",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "dbt-transformation-patterns",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/de-ai-writer",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "de-ai-writer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/debate-review",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "debate-review",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -18641,30 +19088,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/draft-my-comments",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "draft-my-comments",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/drizzle-migration-conflict",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "drizzle-migration-conflict",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "drizzle"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/dropbox-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "dropbox-automation",
@@ -18753,55 +19176,9 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ecl-harness-engineer",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ecl-harness-engineer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "ecommerce-listing-image-set",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/electron-drive-skill",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "electron-drive-skill",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "electron"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/email-issue-fixer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "email-issue-fixer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/email-marketing-bible",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "email-marketing-bible",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -19319,17 +19696,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/find-complementary-founders",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "find-complementary-founders",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/firebase",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "firebase",
@@ -19688,17 +20054,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/frontend-lighthouse",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "frontend-lighthouse",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/frontend-mobile-development-component-scaffold",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "frontend-mobile-development-component-scaffold",
@@ -19801,17 +20156,6 @@
       "id": "sickn33/agentic-awesome-skills/frontend-ui-engineering",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "frontend-ui-engineering",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/fsi-compliance-checker",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "fsi-compliance-checker",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -19963,17 +20307,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/geo-audit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "geo-audit",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/geo-brand-mentions",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "geo-brand-mentions",
@@ -20032,28 +20365,6 @@
       "id": "sickn33/agentic-awesome-skills/geo-schema",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "geo-schema",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/geo-technical",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "geo-technical",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "get-seen-in-replies",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -20901,17 +21212,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/idea-os",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "idea-os",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/identity-access-management",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "identity-access-management",
@@ -21718,19 +22018,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/laravel-development-workflow",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "laravel-development-workflow",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [
-          "laravel"
-        ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/laravel-expert",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "laravel-expert",
@@ -22241,17 +22528,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/lognorm",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "lognorm",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/logo-image-design",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "logo-image-design",
@@ -22332,17 +22608,6 @@
       "id": "sickn33/agentic-awesome-skills/longbridge-research",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "longbridge-research",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/lookdev-auto",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "lookdev-auto",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -22670,17 +22935,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/marlin-bed-leveling",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "marlin-bed-leveling",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/matplotlib",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "matplotlib",
@@ -22969,17 +23223,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/mock-hunter",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "mock-hunter",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/model-serving-kubernetes",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "model-serving-kubernetes",
@@ -23258,17 +23501,6 @@
       "id": "sickn33/agentic-awesome-skills/multi-tenant-llm-hosting",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "multi-tenant-llm-hosting",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/music-generation-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "music-generation-studio",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -24175,17 +24407,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/open-dynamic-workflows",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "open-dynamic-workflows",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/openapi-spec-generation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "openapi-spec-generation",
@@ -24307,17 +24528,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/outreachgenie-list-audit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "outreachgenie-list-audit",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/page-speed-score-simulator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "page-speed-score-simulator",
@@ -24373,31 +24583,9 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/papers-skill",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "papers-skill",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/paragraph-keyword-optimizer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "paragraph-keyword-optimizer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/parcel-coupon",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "parcel-coupon",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -24505,17 +24693,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/people-data",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "people-data",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/people-directory",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "people-directory",
@@ -24585,17 +24762,6 @@
       "id": "sickn33/agentic-awesome-skills/pipedrive-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "pipedrive-automation",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/placecall",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "placecall",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -24685,17 +24851,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/poka-yoke",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "poka-yoke",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/policy-acknowledgement",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "policy-acknowledgement",
@@ -24732,17 +24887,6 @@
       "id": "sickn33/agentic-awesome-skills/post",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "post",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/poster-design-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "poster-design-studio",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -24898,17 +25042,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/pre-release-review",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "pre-release-review",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/pre-ship-gate",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "pre-ship-gate",
@@ -25024,28 +25157,6 @@
       "id": "sickn33/agentic-awesome-skills/product-design-harness",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "product-design-harness",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/product-photo-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "product-photo-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/production-audit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "production-audit",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -25639,17 +25750,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "remote-gpu-trainer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/remote-work-tracker",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "remote-work-tracker",
@@ -25934,17 +26034,6 @@
       "id": "sickn33/agentic-awesome-skills/salesforce-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "salesforce-automation",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/sandbase-mcp",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "sandbase-mcp",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -26802,28 +26891,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/session-handoff",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "session-handoff",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/shark",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "shark",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/sharp-edges",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "sharp-edges",
@@ -26901,31 +26968,9 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/shopify-review-triage",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "shopify-review-triage",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/simplify-code",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "simplify-code",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/since-cutoff",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "since-cutoff",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27033,17 +27078,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/skill-issue",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "skill-issue",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/skill-optimizer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "skill-optimizer",
@@ -27058,17 +27092,6 @@
       "id": "sickn33/agentic-awesome-skills/skill-scanner",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "skill-scanner",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/skill-security-audit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "skill-security-audit",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27146,17 +27169,6 @@
       "id": "sickn33/agentic-awesome-skills/slack-gif-creator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "slack-gif-creator",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/slideops",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "slideops",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27278,17 +27290,6 @@
       "id": "sickn33/agentic-awesome-skills/solidity-security",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "solidity-security",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/solidping",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "solidping",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27440,17 +27441,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/sql-sentinel",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "sql-sentinel",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/square-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "square-automation",
@@ -27487,17 +27477,6 @@
       "id": "sickn33/agentic-awesome-skills/sred-work-summary",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "sred-work-summary",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/sshepherd",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "sshepherd",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27645,17 +27624,6 @@
       "id": "sickn33/agentic-awesome-skills/styleseed-design-review",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "styleseed-design-review",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/suno-lyrics-to-song",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "suno-lyrics-to-song",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -27817,39 +27785,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/takeout-coupon",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "takeout-coupon",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/talivia-agent-kit",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "talivia-agent-kit",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/talking-avatar-video",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "talking-avatar-video",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/tanstack-query-expert",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "tanstack-query-expert",
@@ -27858,17 +27793,6 @@
         "technology_ids": [
           "tanstack-query"
         ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/tastegate",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "tastegate",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -28258,17 +28182,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/time-ledger",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "time-ledger",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/time-tracking",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "time-tracking",
@@ -28379,17 +28292,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/trading-ledger",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "trading-ledger",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/traffic-potential-calculator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "traffic-potential-calculator",
@@ -28453,17 +28355,6 @@
         "technology_ids": [
           "trigger-dev"
         ],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/trip-coupon",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "trip-coupon",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -28761,17 +28652,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/using-agent-skills",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "using-agent-skills",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/using-n8n-mcp-skills",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "using-n8n-mcp-skills",
@@ -28808,17 +28688,6 @@
       "id": "sickn33/agentic-awesome-skills/ux-audit",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ux-audit",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/uxkin-research",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "uxkin-research",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -28983,17 +28852,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/viral-video-teardown-remake",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "viral-video-teardown-remake",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/visibility-index-calculator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "visibility-index-calculator",
@@ -29032,39 +28890,6 @@
       "id": "sickn33/agentic-awesome-skills/voice-ai-development",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "voice-ai-development",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/voice-cloning-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "voice-cloning-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/voiceover-narration-studio",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "voiceover-narration-studio",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/vscode-extension-guide-en",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "vscode-extension-guide-en",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -29326,17 +29151,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/why-did-this-post-flop",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "why-did-this-post-flop",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/wiki-builder",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "wiki-builder",
@@ -29351,17 +29165,6 @@
       "id": "sickn33/agentic-awesome-skills/wiki-page-writer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "wiki-page-writer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/wiki-yylo",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "wiki-yylo",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -29510,17 +29313,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/workflow-yylo",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "workflow-yylo",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/wp-site-health-auditor",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "wp-site-health-auditor",
@@ -29631,17 +29423,6 @@
       }
     },
     {
-      "id": "sickn33/agentic-awesome-skills/yao-meta-skill",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "yao-meta-skill",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/yes-md",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "yes-md",
@@ -29700,17 +29481,6 @@
       "id": "sickn33/agentic-awesome-skills/youtube-seo-optimizer",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "youtube-seo-optimizer",
-      "skill_md_url": null,
-      "recommended_for": {
-        "technology_ids": [],
-        "combination_ids": [],
-        "frontend_essential": false
-      }
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/youtube-transcript-skills",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "youtube-transcript-skills",
       "skill_md_url": null,
       "recommended_for": {
         "technology_ids": [],
@@ -29846,6 +29616,17 @@
       }
     },
     {
+      "id": "Slashworks-biz/idea-os/idea-os",
+      "repository": "Slashworks-biz/idea-os",
+      "skill_name": "idea-os",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "sleekdotdesign/agent-skills/design-mobile-apps",
       "repository": "sleekdotdesign/agent-skills",
       "skill_name": "design-mobile-apps",
@@ -29882,6 +29663,28 @@
         "technology_ids": [
           "sveltekit"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "stareezy-1/frontend-architecture-skill/frontend-lighthouse",
+      "repository": "stareezy-1/frontend-architecture-skill",
+      "skill_name": "frontend-lighthouse",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "stas4000/tastegate/tastegate",
+      "repository": "stas4000/tastegate",
+      "skill_name": "tastegate",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -29928,6 +29731,17 @@
       }
     },
     {
+      "id": "Suraj1235/open-dynamic-workflows/open-dynamic-workflows",
+      "repository": "Suraj1235/open-dynamic-workflows",
+      "skill_name": "open-dynamic-workflows",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "sveltejs/ai-tools/svelte-code-writer",
       "repository": "sveltejs/ai-tools",
       "skill_name": "svelte-code-writer",
@@ -29936,6 +29750,39 @@
         "technology_ids": [
           "svelte"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "takeaseatventure/devops-skills/cron-doctor",
+      "repository": "takeaseatventure/devops-skills",
+      "skill_name": "cron-doctor",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "takeaseatventure/sql-sentinel/sql-sentinel",
+      "repository": "takeaseatventure/sql-sentinel",
+      "skill_name": "sql-sentinel",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "talivia-group/agent/talivia-agent-kit",
+      "repository": "talivia-group/agent",
+      "skill_name": "talivia-agent-kit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -30020,6 +29867,28 @@
       }
     },
     {
+      "id": "thecsdoctor/brendangregg-use-tsa-skill/brendangregg-use-tsa",
+      "repository": "thecsdoctor/brendangregg-use-tsa-skill",
+      "skill_name": "brendangregg-use-tsa",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "timwukp/agent-skills-best-practice/fsi-compliance-checker",
+      "repository": "timwukp/agent-skills-best-practice",
+      "skill_name": "fsi-compliance-checker",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "triggerdotdev/skills/trigger-setup",
       "repository": "triggerdotdev/skills",
       "skill_name": "trigger-setup",
@@ -30028,6 +29897,28 @@
         "technology_ids": [
           "trigger-dev"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tubeagentkit/youtube-transcript-skills/youtube-transcript-skills",
+      "repository": "tubeagentkit/youtube-transcript-skills",
+      "skill_name": "youtube-transcript-skills",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "uxkin/agent/uxkin-research",
+      "repository": "uxkin/agent",
+      "skill_name": "uxkin-research",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -30154,6 +30045,17 @@
       }
     },
     {
+      "id": "voygr-tech/placecall/placecall",
+      "repository": "voygr-tech/placecall",
+      "skill_name": "placecall",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "vuejs-ai/skills/vue-best-practices",
       "repository": "vuejs-ai/skills",
       "skill_name": "vue-best-practices",
@@ -30188,6 +30090,17 @@
         "technology_ids": [
           "knip"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wede-wx/atlas/atlas-contract",
+      "repository": "wede-wx/atlas",
+      "skill_name": "atlas-contract",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -30402,6 +30315,50 @@
       }
     },
     {
+      "id": "wwewtech/anti-slop-design/anti-slop-design",
+      "repository": "wwewtech/anti-slop-design",
+      "skill_name": "anti-slop-design",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "wwewtech/marlin-bed-leveling/marlin-bed-leveling",
+      "repository": "wwewtech/marlin-bed-leveling",
+      "skill_name": "marlin-bed-leveling",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "xwmxcz/papers-skill/papers-skill",
+      "repository": "xwmxcz/papers-skill",
+      "skill_name": "papers-skill",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "yaojingang/yao-meta-skill/yao-meta-skill",
+      "repository": "yaojingang/yao-meta-skill",
+      "skill_name": "yao-meta-skill",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
       "id": "yonesuke/skills/polars",
       "repository": "yonesuke/skills",
       "skill_name": "polars",
@@ -30410,6 +30367,50 @@
         "technology_ids": [
           "polars"
         ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "yylo-dev/yylo-skills/wiki-yylo",
+      "repository": "yylo-dev/yylo-skills",
+      "skill_name": "wiki-yylo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "yylo-dev/yylo-skills/workflow-yylo",
+      "repository": "yylo-dev/yylo-skills",
+      "skill_name": "workflow-yylo",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "zubair-trabzada/geo-seo-claude/geo-audit",
+      "repository": "zubair-trabzada/geo-seo-claude",
+      "skill_name": "geo-audit",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "zubair-trabzada/geo-seo-claude/geo-technical",
+      "repository": "zubair-trabzada/geo-seo-claude",
+      "skill_name": "geo-technical",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [],
         "combination_ids": [],
         "frontend_essential": false
       }
