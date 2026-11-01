@@ -24,6 +24,10 @@ jobs:
       - name: Validate canonical JSON Schemas and negative cases
         run: npm run validate:schemas -- --self-test --skip-unmapped
       - run: node scripts/catalog.mjs --check --skip-unmapped
+      - name: Verify skill eval markers against pinned upstream Git trees
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/verify-evals.mjs --check
       - name: Check quality results invariants (offline)
         run: node scripts/quality.mjs --check
       - name: Check for duplicate skills
