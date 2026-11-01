@@ -71,6 +71,8 @@ export const render=function render(c,m,l,d){
 
 Nosey synchronizes a commit-pinned copy from this repository into its packaged backend, keeping scans and recommendations offline-first. Make changes **here**, not in Nosey's generated copies.
 
+**Interactive catalog:** [Browse skills and technologies](https://rigerc.github.io/skills-catalog/).
+
 > Generated from \`data/\`. Edit the JSON source files, then run \`node scripts/catalog.mjs --write\`.
 
 ## Snapshot
