@@ -17,7 +17,7 @@
   "counts": {
     "distinct_skills": 2601,
     "technologies_with_skills": 213,
-    "technologies_detect_only": 55,
+    "technologies_detect_only": 67,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
