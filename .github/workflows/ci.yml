@@ -21,7 +21,7 @@ jobs:
           node-version: '22'
       - name: Install JSON Schema development validator
         run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund
-      - name: Validate JSON Schemas and negative cases
+      - name: Validate five JSON Schemas and negative cases (including unmapped index)
         run: npm run validate:schemas -- --self-test
       - run: node scripts/catalog.mjs --check
       - name: Verify the reviewed catalog notice artifact

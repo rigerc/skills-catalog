@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey generated unmapped skills index v1",
+  "description": "Deterministic, generated index of skills without forward technology, combination, or frontend-essential mappings. Do not edit directly.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "snapshot_date",
+    "count",
+    "skills"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of skills; must equal skills.length (enforced by generator checks)."
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/skill"
+      },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "repository",
+        "skill_name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[^/\\s]+/[^/\\s]+/[^/\\s]+$"
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^[^/\\s]+/[^/\\s]+$"
+        },
+        "skill_name": {
+          "type": "string",
+          "pattern": "^[^/\\s]+$"
+        }
+      }
+    }
+  }
+}

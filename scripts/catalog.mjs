@@ -3,7 +3,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {findUnmappedSkills, renderUnmapped} from './unmapped.mjs';
+import {canonicalSkillId, findUnmappedSkills, renderUnmapped} from './unmapped.mjs';
 const root=fileURLToPath(new URL('..',import.meta.url));
 export const load=()=>Object.fromEntries([
  ['c','catalog.json'],['m','mappings.json'],['l','catalog-source-ledger.json'],['d','technology-detection-rules.json']
@@ -18,10 +18,8 @@ export const validate=function validate(c,m,l,d){
   const aliases=m.repository_aliases??{};
   function canonical(id){
     if(typeof id!=="string")return "";
-    const seen=new Set();let cur=id;
-    while(true){if(seen.has(cur)){fail("cyclic alias "+id);return cur}seen.add(cur);
-      const prefix=Object.keys(aliases).filter(k=>cur.startsWith(k+"/")).sort((a,b)=>b.length-a.length)[0];
-      if(!prefix)return cur;cur=aliases[prefix]+cur.slice(prefix.length)}
+    try{return canonicalSkillId(id,aliases)}
+    catch(e){fail(e.message);return id.toLowerCase()}
   }
   function IDs(items,label){const set=new Set();for(const id of items){if(!id||set.has(id.toLowerCase()))fail(label+": duplicate/empty "+id);set.add((id??"").toLowerCase())}return set}
   const skillsIDs=IDs(skills.map(x=>canonical(x.id)),"skills"),techIDs=IDs(technologies.map(x=>x.id),"technologies"),
@@ -42,6 +40,7 @@ export const validate=function validate(c,m,l,d){
     for(const id of x.skill_ids??[])checkSkill(id,"combination "+x.id)}
   for(const id of m.frontend_essentials?.skill_ids??[])checkSkill(id,"frontend essentials");
   for(const s of skills){if(!s.id||!s.repository||!s.skill_name)fail("incomplete skill identity");
+    if(s.id!==`${s.repository}/${s.skill_name}`)fail("skill identity mismatch "+s.id);
     for(const id of s.recommended_for?.technology_ids??[])if(!techIDs.has(id.toLowerCase()))fail("unknown technology backlink "+id);
     for(const id of s.recommended_for?.combination_ids??[])if(!comboIDs.has(id.toLowerCase()))fail("unknown combination backlink "+id)}
   for(const id of skillsIDs)if(!ledgerIDs.has(id))fail("missing ledger entry "+id);
@@ -119,7 +118,7 @@ node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 \`\`\`
 
-CI validates four JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI validates five JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
 The four canonical source JSON files under \`data/\` are one versioned snapshot; \`data/unmapped.json\` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
 `;

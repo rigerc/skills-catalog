@@ -10,7 +10,8 @@ const pairs=[
   ['catalog.json','catalog.schema.json'],
   ['mappings.json','mappings.schema.json'],
   ['technology-detection-rules.json','technology-detection-rules.schema.json'],
-  ['catalog-source-ledger.json','catalog-source-ledger.schema.json']
+  ['catalog-source-ledger.json','catalog-source-ledger.schema.json'],
+  ['unmapped.json','unmapped.schema.json']
 ];
 const ajv=new Ajv2020({allErrors:true,strict:true,strictRequired:false});
 const validators=new Map();
@@ -34,7 +35,14 @@ if(process.argv.includes('--self-test')){
     ['technology-detection-rules.json',d=>{d.rules[0].signals=[{type:'dependency',ecosystem:'npm'}]},'incomplete dependency signal'],
     ['technology-detection-rules.json',d=>{d.policy.source_code_execution=true},'unsafe scanner policy'],
     ['catalog-source-ledger.json',d=>{d.entries[0].commit='main'},'unpinned verified source'],
-    ['catalog-source-ledger.json',d=>{d.entries[0]={id:d.entries[0].id,status:'unresolved'}},'unresolved entry without reason']
+    ['catalog-source-ledger.json',d=>{d.entries[0]={id:d.entries[0].id,status:'unresolved'}},'unresolved entry without reason'],
+    ['catalog-source-ledger.json',d=>{d.entries[0].reason='stale status'},'verified source carrying unresolved reason'],
+    ['catalog.json',d=>{d.skills[0].id='not-a-canonical-id'},'malformed canonical skill ID'],
+    ['mappings.json',d=>{d.technologies[0].skill_ids=[]},'mapped technology without recommendations'],
+    ['technology-detection-rules.json',d=>{d.rules[0].signals=[{type:'path',path:'../private'}]},'unsafe scanner path'],
+    ['unmapped.json',d=>{d.skills[0].id='invalid'},'malformed unmapped skill ID'],
+    ['unmapped.json',d=>{delete d.skills[0].skill_name},'incomplete unmapped entry'],
+    ['unmapped.json',d=>{d.skills.push({...d.skills[0]})},'duplicated unmapped skill entry']
   ];
   for(const [file,mutate,label] of samples){
     const data=JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
