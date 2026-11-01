@@ -1,16 +1,8 @@
 name: Open JEV — experimental incremental skill evaluation
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'data/catalog.json'
-      - 'data/catalog-source-ledger.json'
-      - 'config/open-jev-questions.json'
-      - 'scripts/open-jev-*.mjs'
-      - '.github/workflows/nosey-open-jev.yml'
-  schedule:
-    - cron: '19 4 * * 1'
+  # Manual canary only until output and policy are reviewed. Enable scheduled
+  # incremental runs after the first successful, labeled calibration set.
   workflow_dispatch:
     inputs:
       max_skills:
