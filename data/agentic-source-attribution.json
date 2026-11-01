@@ -20,6 +20,22 @@
       "credit_url": "https://github.com/gooseworks-ai/goose-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/agent-memory-discipline",
+      "name": "agent-memory-discipline",
+      "original_repository": "mnemoverse/agent-memory-discipline",
+      "commit": "61d63865e079290410499c86cbf7e97edb547fdd",
+      "path": "skills/agent-memory-discipline/SKILL.md",
+      "credit_url": "https://github.com/mnemoverse/agent-memory-discipline"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agenttrace-session-audit",
+      "name": "agenttrace-session-audit",
+      "original_repository": "luoyuctl/agenttrace",
+      "commit": "15ed07f24f4d504dcf9c32d40caed36cd9e6c470",
+      "path": "skills/agenttrace-session-audit/SKILL.md",
+      "credit_url": "https://github.com/luoyuctl/agenttrace"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
       "name": "ai-headshot-studio",
       "original_repository": "beatra-ai/ai-headshot-generator-skill",
@@ -164,6 +180,14 @@
       "credit_url": "https://github.com/gongdear/cline-pilot"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/de-ai-writer",
+      "name": "de-ai-writer",
+      "original_repository": "jiawood2006/hermes-skills",
+      "commit": "07450aa5ef29fe471ca4562ecdd613aafa40e8a0",
+      "path": "skills/de-ai-writer/SKILL.md",
+      "credit_url": "https://github.com/jiawood2006/hermes-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/debate-review",
       "name": "debate-review",
       "original_repository": "amElnagdy/review-skills",
@@ -204,6 +228,14 @@
       "credit_url": "https://github.com/CosmoBlk/email-marketing-bible"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/find-complementary-founders",
+      "name": "find-complementary-founders",
+      "original_repository": "merc1305/findMate",
+      "commit": "0fcdf8e841ea5cdf02a00807ac061a674fdae41a",
+      "path": "skills/find-complementary-founders/SKILL.md",
+      "credit_url": "https://github.com/merc1305/findMate"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/idea-os",
       "name": "idea-os",
       "original_repository": "Slashworks-biz/idea-os",
@@ -218,6 +250,14 @@
       "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
       "path": "SKILL.md",
       "credit_url": "https://github.com/Junaid-PK/laravel-development-workflow"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lognorm",
+      "name": "lognorm",
+      "original_repository": "lognorm/lognorm-mcp",
+      "commit": "74ee2ffbbf4980ca7ae2836fb3426ccc92d6c527",
+      "path": "skills/lognorm/SKILL.md",
+      "credit_url": "https://github.com/lognorm/lognorm-mcp"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/lookdev-auto",
@@ -340,6 +380,14 @@
       "credit_url": "https://github.com/MohammadHijjawi97/since-cutoff"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/skill-issue",
+      "name": "skill-issue",
+      "original_repository": "mishanefedov/skill-issue",
+      "commit": "949282fa8cfa22283806057f0277b01698839836",
+      "path": "skills/skill-issue/SKILL.md",
+      "credit_url": "https://github.com/mishanefedov/skill-issue"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/slideops",
       "name": "slideops",
       "original_repository": "glukicov/slideops",
@@ -426,6 +474,14 @@
       "commit": "9bd7fdbfbeec99194762ccfc433100fbffade3bd",
       "path": "skills/voiceover-narration-studio/SKILL.md",
       "credit_url": "https://github.com/beatra-ai/ai-voiceover-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/vscode-extension-guide-en",
+      "name": "vscode-extension-guide-en",
+      "original_repository": "lewiswigmore/agent-skills",
+      "commit": "3f72f3b284e46a4da63035ca22c40c240affad8d",
+      "path": "skills/vscode-extension-guide-en/SKILL.md",
+      "credit_url": "https://github.com/lewiswigmore/agent-skills"
     }
   ]
 }
