@@ -2,7 +2,7 @@
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
   "snapshot_date": "2026-11-01",
-  "count": 1761,
+  "count": 1749,
   "skills": [
     {
       "id": "2slides/slides-generation-2slides-skills/2slides-ppt-generator",
@@ -1310,11 +1310,6 @@
       "skill_name": "accessibility-a11y"
     },
     {
-      "id": "Mindrally/skills/alpine-js",
-      "repository": "Mindrally/skills",
-      "skill_name": "alpine-js"
-    },
-    {
       "id": "Mindrally/skills/analytics-data-analysis",
       "repository": "Mindrally/skills",
       "skill_name": "analytics-data-analysis"
@@ -1325,11 +1320,6 @@
       "skill_name": "android-development"
     },
     {
-      "id": "Mindrally/skills/anime-js",
-      "repository": "Mindrally/skills",
-      "skill_name": "anime-js"
-    },
-    {
       "id": "Mindrally/skills/anthropic-claude-development",
       "repository": "Mindrally/skills",
       "skill_name": "anthropic-claude-development"
@@ -1338,11 +1328,6 @@
       "id": "Mindrally/skills/api-development",
       "repository": "Mindrally/skills",
       "skill_name": "api-development"
-    },
-    {
-      "id": "Mindrally/skills/auth0-authentication",
-      "repository": "Mindrally/skills",
-      "skill_name": "auth0-authentication"
     },
     {
       "id": "Mindrally/skills/autogen-development",
@@ -1785,19 +1770,9 @@
       "skill_name": "pr-review"
     },
     {
-      "id": "Mindrally/skills/puppeteer-automation",
-      "repository": "Mindrally/skills",
-      "skill_name": "puppeteer-automation"
-    },
-    {
       "id": "Mindrally/skills/pwa-development",
       "repository": "Mindrally/skills",
       "skill_name": "pwa-development"
-    },
-    {
-      "id": "Mindrally/skills/pyspark-etl",
-      "repository": "Mindrally/skills",
-      "skill_name": "pyspark-etl"
     },
     {
       "id": "Mindrally/skills/python-cybersecurity-tool-development",
@@ -1808,11 +1783,6 @@
       "id": "Mindrally/skills/python-odoo-cursor-rules",
       "repository": "Mindrally/skills",
       "skill_name": "python-odoo-cursor-rules"
-    },
-    {
-      "id": "Mindrally/skills/pytorch",
-      "repository": "Mindrally/skills",
-      "skill_name": "pytorch"
     },
     {
       "id": "Mindrally/skills/quarkus",
@@ -1900,11 +1870,6 @@
       "skill_name": "security-devsecops"
     },
     {
-      "id": "Mindrally/skills/selenium-automation",
-      "repository": "Mindrally/skills",
-      "skill_name": "selenium-automation"
-    },
-    {
       "id": "Mindrally/skills/seo-best-practices",
       "repository": "Mindrally/skills",
       "skill_name": "seo-best-practices"
@@ -1988,11 +1953,6 @@
       "id": "Mindrally/skills/technical-writing",
       "repository": "Mindrally/skills",
       "skill_name": "technical-writing"
-    },
-    {
-      "id": "Mindrally/skills/tensorflow-deep-learning",
-      "repository": "Mindrally/skills",
-      "skill_name": "tensorflow-deep-learning"
     },
     {
       "id": "Mindrally/skills/testing",
@@ -2433,11 +2393,6 @@
       "id": "sickn33/agentic-awesome-skills/ai-storyboard-generator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "ai-storyboard-generator"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/airflow-dag-patterns",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "airflow-dag-patterns"
     },
     {
       "id": "sickn33/agentic-awesome-skills/airtable-automation",
@@ -3800,11 +3755,6 @@
       "skill_name": "clarvia-aeo-check"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/claude-d3js-skill",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "claude-d3js-skill"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/claude-monitor",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "claude-monitor"
@@ -4013,11 +3963,6 @@
       "id": "sickn33/agentic-awesome-skills/context-optimization",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "context-optimization"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/context7-auto-research",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "context7-auto-research"
     },
     {
       "id": "sickn33/agentic-awesome-skills/contract-document-renewal",
@@ -7643,11 +7588,6 @@
       "id": "sickn33/agentic-awesome-skills/shopify-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "shopify-automation"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/shopify-development",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "shopify-development"
     },
     {
       "id": "sickn33/agentic-awesome-skills/shopify-firebase-app",

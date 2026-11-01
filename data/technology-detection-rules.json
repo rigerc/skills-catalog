@@ -75,7 +75,7 @@
     },
     {
       "technology_id": "context7-mcp",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -4378,7 +4378,7 @@
     },
     {
       "technology_id": "d3",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -5011,6 +5011,150 @@
           "type": "dependency",
           "ecosystem": "npm",
           "name": "zustand"
+        }
+      ]
+    },
+    {
+      "technology_id": "alpine-js",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "alpinejs"
+        }
+      ]
+    },
+    {
+      "technology_id": "anime-js",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "animejs"
+        }
+      ]
+    },
+    {
+      "technology_id": "auth0",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@auth0/auth0-react"
+        }
+      ]
+    },
+    {
+      "technology_id": "pyspark",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "pyspark"
+        }
+      ]
+    },
+    {
+      "technology_id": "pytorch",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "torch"
+        }
+      ]
+    },
+    {
+      "technology_id": "tensorflow",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "tensorflow"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "tensorflow-cpu"
+        }
+      ]
+    },
+    {
+      "technology_id": "selenium",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "selenium"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "selenium-webdriver"
+        }
+      ]
+    },
+    {
+      "technology_id": "puppeteer",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "puppeteer"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "puppeteer-core"
+        }
+      ]
+    },
+    {
+      "technology_id": "apache-airflow",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "apache-airflow"
+        }
+      ]
+    },
+    {
+      "technology_id": "shopify",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "shopify.app.toml"
         }
       ]
     }

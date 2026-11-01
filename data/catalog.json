@@ -16,8 +16,8 @@
   ],
   "counts": {
     "distinct_skills": 2601,
-    "technologies_with_skills": 189,
-    "technologies_detect_only": 57,
+    "technologies_with_skills": 201,
+    "technologies_detect_only": 55,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
@@ -9632,7 +9632,9 @@
       "skill_name": "alpine-js",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "alpine-js"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -9691,7 +9693,9 @@
       "skill_name": "anime-js",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "anime-js"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -9763,7 +9767,9 @@
       "skill_name": "auth0-authentication",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "auth0"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -11606,7 +11612,9 @@
       "skill_name": "puppeteer-automation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "puppeteer"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -11628,7 +11636,9 @@
       "skill_name": "pyspark-etl",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "pyspark"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -11701,7 +11711,9 @@
       "skill_name": "pytorch",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "pytorch"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12083,7 +12095,9 @@
       "skill_name": "selenium-automation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "selenium"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12457,7 +12471,9 @@
       "skill_name": "tensorflow-deep-learning",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "tensorflow"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -14330,7 +14346,9 @@
       "skill_name": "airflow-dag-patterns",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "apache-airflow"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -17476,7 +17494,9 @@
       "skill_name": "claude-d3js-skill",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "d3"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -17962,7 +17982,9 @@
       "skill_name": "context7-auto-research",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "context7-mcp"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -26951,7 +26973,9 @@
       "skill_name": "shopify-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "shopify"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
