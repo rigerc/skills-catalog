@@ -127,13 +127,15 @@ export async function inspect(entries, getTree, concurrency = 4) {
   return results.sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/** Shared authenticated Git tree transport, also used by the source repinning workflow. */
+export const githubTree = (repo, sha, recursive) =>
+  githubJson('https://api.github.com/repos/' + repo.split('/').map(encodeURIComponent).join('/') +
+    '/git/trees/' + encodeURIComponent(sha) + (recursive ? '?recursive=1' : ''));
+
 export async function main(argv) {
   if (argv.length !== 1 || !['--check', '--write'].includes(argv[0])) throw Error('Usage: node scripts/verify-evals.mjs --check | --write');
   const catalog = read('catalog.json'), ledger = read('catalog-source-ledger.json'), stored = read('evals-index.json');
-  const getTree = (repo, sha, recursive) =>
-    githubJson('https://api.github.com/repos/' + repo.split('/').map(encodeURIComponent).join('/') +
-      '/git/trees/' + encodeURIComponent(sha) + (recursive ? '?recursive=1' : ''));
-  const actual = await inspect(ledger.entries, getTree);
+  const actual = await inspect(ledger.entries, githubTree);
   const updated = {schema_version: 1, entries: actual};
   if (argv[0] === '--write') {
     const byId = new Map(actual.map(x => [x.id, x]));
