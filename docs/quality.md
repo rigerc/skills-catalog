@@ -305,6 +305,12 @@ required; inference is local.
 docker compose -f docker/kev/compose.yaml up -d --build
 ```
 
+Useful `justfile` shortcuts (see the file header for `KEV_*` overrides):
+`just kev-serve` starts the native server, `just kev-health` prints serving
+provenance, `just kev-smoke` runs the smoke test, `just kev-eval --limit 10`
+evaluates, `just kev-eval --force` re-scores everything uncached, and
+`just kev-check` validates the saved scores offline.
+
 Requirements: Linux Docker with the NVIDIA Container Toolkit and a CUDA GPU
 (any 4 GB GPU or larger serves Kev-0.8B; the first start downloads roughly
 3 GB of weights into the persistent `kev-model-cache` volume). See
