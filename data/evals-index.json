@@ -2,6 +2,18 @@
   "schema_version": 1,
   "entries": [
     {
+      "id": "addyosmani/web-quality-skills/accessibility",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "source_tree_sha": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "has_evals": false
+    },
+    {
+      "id": "addyosmani/web-quality-skills/seo",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "source_tree_sha": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "has_evals": false
+    },
+    {
       "id": "affaan-m/ECC/django-celery",
       "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
       "source_tree_sha": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
@@ -47,6 +59,30 @@
       "id": "affaan-m/everything-claude-code/python-patterns",
       "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
       "source_tree_sha": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
+      "has_evals": false
+    },
+    {
+      "id": "aj-geddes/useful-ai-prompts/flask-api-development",
+      "commit": "3f5182cfd739fc113f4af5244a1cf342ad7f7911",
+      "source_tree_sha": "3f5182cfd739fc113f4af5244a1cf342ad7f7911",
+      "has_evals": false
+    },
+    {
+      "id": "aj-geddes/useful-ai-prompts/nodejs-express-server",
+      "commit": "3f5182cfd739fc113f4af5244a1cf342ad7f7911",
+      "source_tree_sha": "3f5182cfd739fc113f4af5244a1cf342ad7f7911",
+      "has_evals": false
+    },
+    {
+      "id": "akin-ozer/cc-devops-skills/gitlab-ci-generator",
+      "commit": "276af751e659315aaf56d3ad13d7c26f4e72e28a",
+      "source_tree_sha": "276af751e659315aaf56d3ad13d7c26f4e72e28a",
+      "has_evals": false
+    },
+    {
+      "id": "akin-ozer/cc-devops-skills/makefile-generator",
+      "commit": "276af751e659315aaf56d3ad13d7c26f4e72e28a",
+      "source_tree_sha": "276af751e659315aaf56d3ad13d7c26f4e72e28a",
       "has_evals": false
     },
     {
@@ -122,6 +158,18 @@
       "has_evals": false
     },
     {
+      "id": "apollographql/skills/graphql-operations",
+      "commit": "ff4534868e089580c2e09563c20f86a410179628",
+      "source_tree_sha": "ff4534868e089580c2e09563c20f86a410179628",
+      "has_evals": false
+    },
+    {
+      "id": "apollographql/skills/rust-best-practices",
+      "commit": "ff4534868e089580c2e09563c20f86a410179628",
+      "source_tree_sha": "ff4534868e089580c2e09563c20f86a410179628",
+      "has_evals": false
+    },
+    {
       "id": "better-auth/skills/best-practices",
       "commit": "20c9e88a5c007461a703f1c213572b073196113e",
       "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
@@ -167,6 +215,18 @@
       "id": "bobmatnyc/claude-mpm-skills/sqlalchemy",
       "commit": "718070a7d622921b01687799a1f9613f36c6f615",
       "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
+      "id": "claude-dev-suite/claude-dev-suite/radix-ui",
+      "commit": "e10ab644ba43abe2abc923399226df4af7337214",
+      "source_tree_sha": "e10ab644ba43abe2abc923399226df4af7337214",
+      "has_evals": false
+    },
+    {
+      "id": "claude-dev-suite/claude-dev-suite/typescript-eslint",
+      "commit": "e10ab644ba43abe2abc923399226df4af7337214",
+      "source_tree_sha": "e10ab644ba43abe2abc923399226df4af7337214",
       "has_evals": false
     },
     {
@@ -401,6 +461,18 @@
       "id": "davila7/claude-code-templates/senior-data-scientist",
       "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
       "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "has_evals": false
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
+      "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
+      "source_tree_sha": "cb2e3552a62026584003e1515ac635bc5eef45c3",
+      "has_evals": false
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline",
+      "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
+      "source_tree_sha": "cb2e3552a62026584003e1515ac635bc5eef45c3",
       "has_evals": false
     },
     {
@@ -653,6 +725,18 @@
       "id": "expo/skills/expo-upgrade",
       "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
       "source_tree_sha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "has_evals": false
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/elixir",
+      "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
+      "source_tree_sha": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
+      "has_evals": false
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/phoenix",
+      "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
+      "source_tree_sha": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44",
       "has_evals": false
     },
     {
@@ -1079,6 +1163,24 @@
       "id": "greensock/gsap-skills/gsap-utils",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "source_tree_sha": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "has_evals": false
+    },
+    {
+      "id": "hashicorp/agent-skills/refactor-module",
+      "commit": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "source_tree_sha": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "has_evals": false
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-stacks",
+      "commit": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "source_tree_sha": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "has_evals": false
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-style-guide",
+      "commit": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "source_tree_sha": "f706481af9b8fedb66de909f6243ad29601afa0c",
       "has_evals": false
     },
     {
@@ -2552,6 +2654,18 @@
       "has_evals": false
     },
     {
+      "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-agp9-migration",
+      "commit": "c2f90697bf71966a117a13340d5fff787f004140",
+      "source_tree_sha": "c2f90697bf71966a117a13340d5fff787f004140",
+      "has_evals": false
+    },
+    {
+      "id": "Kotlin/kotlin-agent-skills/kotlin-tooling-cocoapods-spm-migration",
+      "commit": "c2f90697bf71966a117a13340d5fff787f004140",
+      "source_tree_sha": "c2f90697bf71966a117a13340d5fff787f004140",
+      "has_evals": false
+    },
+    {
       "id": "krutikJain/android-agent-skills/android-architecture-clean",
       "commit": "c5bf6731b8441019418784484cca1578413e6ad3",
       "source_tree_sha": "c5bf6731b8441019418784484cca1578413e6ad3",
@@ -2597,6 +2711,36 @@
       "id": "krutikJain/android-agent-skills/android-testing-unit",
       "commit": "c5bf6731b8441019418784484cca1578413e6ad3",
       "source_tree_sha": "c5bf6731b8441019418784484cca1578413e6ad3",
+      "has_evals": false
+    },
+    {
+      "id": "madteacher/mad-agents-skills/flutter-animations",
+      "commit": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
+      "source_tree_sha": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
+      "has_evals": false
+    },
+    {
+      "id": "madteacher/mad-agents-skills/flutter-testing",
+      "commit": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
+      "source_tree_sha": "2fb67e384c6d91f32025bd96400d33b73f21bdc7",
+      "has_evals": false
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-ai",
+      "commit": "519346ca4b9552569a6390577340049059df2640",
+      "source_tree_sha": "519346ca4b9552569a6390577340049059df2640",
+      "has_evals": false
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-deploy",
+      "commit": "519346ca4b9552569a6390577340049059df2640",
+      "source_tree_sha": "519346ca4b9552569a6390577340049059df2640",
+      "has_evals": false
+    },
+    {
+      "id": "microsoft/github-copilot-for-azure/azure-diagnostics",
+      "commit": "519346ca4b9552569a6390577340049059df2640",
+      "source_tree_sha": "519346ca4b9552569a6390577340049059df2640",
       "has_evals": false
     },
     {
@@ -2673,6 +2817,12 @@
     },
     {
       "id": "Mindrally/skills/c-sharp",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "source_tree_sha": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "has_evals": false
+    },
+    {
+      "id": "mindrally/skills/chrome-extension-development",
       "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
       "source_tree_sha": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
       "has_evals": false
@@ -2769,6 +2919,12 @@
     },
     {
       "id": "Mindrally/skills/fastapi-microservices-serverless",
+      "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "source_tree_sha": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "has_evals": false
+    },
+    {
+      "id": "mindrally/skills/fastapi-python",
       "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
       "source_tree_sha": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
       "has_evals": false
@@ -3347,6 +3503,18 @@
       "id": "Mindrally/skills/zustand-state-management",
       "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
       "source_tree_sha": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "has_evals": false
+    },
+    {
+      "id": "openai/skills/aspnet-core",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_tree_sha": "49f948faa9258a0c61caceaf225e179651397431",
+      "has_evals": false
+    },
+    {
+      "id": "openai/skills/cloudflare-deploy",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_tree_sha": "49f948faa9258a0c61caceaf225e179651397431",
       "has_evals": false
     },
     {
@@ -4301,6 +4469,42 @@
       "id": "sickn33/agentic-awesome-skills/zustand-store-ts",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2",
       "source_tree_sha": "1ed5976b000fc0df2910d32ed33717794da1bee2",
+      "has_evals": false
+    },
+    {
+      "id": "TerminalSkills/skills/kubernetes-helm",
+      "commit": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "source_tree_sha": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "has_evals": false
+    },
+    {
+      "id": "TerminalSkills/skills/recharts",
+      "commit": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "source_tree_sha": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "has_evals": false
+    },
+    {
+      "id": "TerminalSkills/skills/tanstack-table",
+      "commit": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "source_tree_sha": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "has_evals": false
+    },
+    {
+      "id": "vercel-labs/agent-skills/composition-patterns",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "source_tree_sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "has_evals": false
+    },
+    {
+      "id": "vercel-labs/agent-skills/deploy-to-vercel",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "source_tree_sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "has_evals": false
+    },
+    {
+      "id": "vercel-labs/agent-skills/react-best-practices",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "source_tree_sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
       "has_evals": false
     },
     {
