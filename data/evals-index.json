@@ -4942,6 +4942,16 @@
       "has_evals": false
     },
     {
+      "id": "triggerdotdev/skills/trigger-setup",
+      "commit": "8ef5ae6f0cac95c2995abe4c72af1ebef78bcdfd",
+      "has_evals": false
+    },
+    {
+      "id": "vamseeachanta/workspace-hub/uv-package-manager",
+      "commit": "b046b633edc1509cd5a04e34894814e02922c1db",
+      "has_evals": false
+    },
+    {
       "id": "vercel-labs/agent-skills/composition-patterns",
       "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
       "source_tree_sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
@@ -4960,6 +4970,31 @@
       "has_evals": false
     },
     {
+      "id": "vercel-labs/json-render/react-three-fiber",
+      "commit": "c6f73d7d5f69acb80fc89faefd12c0865c8603d1",
+      "has_evals": false
+    },
+    {
+      "id": "vercel/ai/use-ai-sdk",
+      "commit": "50da4c5b04cf9fd39c51d60808127c72b2adfd80",
+      "has_evals": false
+    },
+    {
+      "id": "vercel/next.js/next-cache-components-adoption",
+      "commit": "7356b0bcb5f22371c15dcb413afe5fb28412f52d",
+      "has_evals": false
+    },
+    {
+      "id": "vercel/turborepo/turborepo",
+      "commit": "edace46216977186c109f26c9dd6137179d4a704",
+      "has_evals": false
+    },
+    {
+      "id": "vintasoftware/django-ai-plugins/django-expert",
+      "commit": "b8af2688d994747666e6a793d441365807d6772f",
+      "has_evals": false
+    },
+    {
       "id": "vuejs-ai/skills/vue-best-practices",
       "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
       "source_tree_sha": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
@@ -4969,6 +5004,16 @@
       "id": "vuejs-ai/skills/vue-pinia-best-practices",
       "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
       "source_tree_sha": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
+      "has_evals": false
+    },
+    {
+      "id": "webpro/skills/configure-knip",
+      "commit": "14c3bf406562bd4bcf0035315a116be57710b017",
+      "has_evals": false
+    },
+    {
+      "id": "wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review",
+      "commit": "8b2c7d0ceca0204634dd308970629c4cd4a5a05f",
       "has_evals": false
     },
     {
@@ -5059,6 +5104,16 @@
       "id": "wshobson/agents/typescript-advanced-types",
       "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
       "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "yonesuke/skills/polars",
+      "commit": "1e23d345446ea8a21771192bb1b3b19a9842a97f",
+      "has_evals": false
+    },
+    {
+      "id": "zxkane/aws-skills/aws-sst-development",
+      "commit": "68530c6f296ccd2f5e99c79782f3e0fbf962c51a",
       "has_evals": false
     }
   ]
