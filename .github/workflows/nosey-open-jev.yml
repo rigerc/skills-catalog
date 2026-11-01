@@ -1,0 +1,119 @@
+name: Open JEV — experimental incremental skill evaluation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/catalog.json'
+      - 'data/catalog-source-ledger.json'
+      - 'config/open-jev-questions.json'
+      - 'scripts/open-jev-*.mjs'
+      - '.github/workflows/nosey-open-jev.yml'
+  schedule:
+    - cron: '19 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      max_skills:
+        description: 'Maximum changed/unevaluated pinned skills (0–64)'
+        default: '8'
+permissions:
+  contents: read
+concurrency:
+  group: experimental-open-jev
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - id: plan
+        env:
+          MAX_SKILLS: ${{ inputs.max_skills || '8' }}
+        run: node scripts/open-jev-plan.mjs --limit "$MAX_SKILLS" --out .nosey-eval/plan.json
+
+  evaluate:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    continue-on-error: true
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch pinned SKILL.md as inert, bounded data
+        env:
+          SKILL_ID: ${{ matrix.id }}
+        run: node scripts/open-jev-prepare.mjs --id "$SKILL_ID" --out .nosey-eval/state.json --meta .nosey-eval/meta.json
+      - id: jev
+        name: Evaluate using the reviewed, SHA-pinned Open JEV action
+        uses: intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b
+        with:
+          state-file: .nosey-eval/state.json
+          questions-file: config/open-jev-questions.json
+          model-release: model-v1
+      - name: Validate and normalize five typed scores
+        env:
+          RESULT_FILE: ${{ steps.jev.outputs.result-file }}
+          RESULT_KEY: ${{ matrix.key }}
+        run: node scripts/open-jev-normalize.mjs --meta .nosey-eval/meta.json --result "$RESULT_FILE" --out ".nosey-eval/results/$RESULT_KEY.json"
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: open-jev-result-${{ matrix.key }}
+          path: .nosey-eval/results/*.json
+          retention-days: 14
+
+  merge:
+    needs: [plan, evaluate]
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.count != '0'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Retrieve successful score artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: open-jev-result-*
+          path: .nosey-eval/results
+          merge-multiple: true
+        continue-on-error: true
+      - name: Merge only pin- and fingerprint-matching evaluations
+        run: |
+          node scripts/open-jev-merge.mjs --dir .nosey-eval/results --out data/open-jev-scores.json
+          node scripts/open-jev-check.mjs
+      - name: Open review PR; never write model scores directly to main
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/open-jev-evaluations
+          delete-branch: true
+          commit-message: 'chore: refresh Open JEV skill evaluations'
+          title: 'chore: refresh experimental Open JEV evaluations'
+          body: |
+            Model-only typed score evidence from SHA-pinned Open JEV.
+            No security certification; scores remain informational, not ranking or installation criteria.
+          add-paths: |
+            data/open-jev-scores.json
