@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experimental Open JEV skill evaluations",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "generated_at",
+    "evaluator",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evaluator": {
+      "type": "object",
+      "required": [
+        "provider",
+        "action_ref",
+        "model_release",
+        "state_format_version",
+        "questions_sha256",
+        "fingerprint",
+        "ranking_calibrated"
+      ],
+      "properties": {
+        "provider": {
+          "const": "open-jev-action"
+        },
+        "action_ref": {
+          "type": "string"
+        },
+        "model_release": {
+          "type": "string"
+        },
+        "state_format_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "questions_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "ranking_calibrated": {
+          "const": false
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "source",
+          "input_sha256",
+          "fingerprint",
+          "evaluated_at",
+          "scores",
+          "overall_score"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "evaluated"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "repository",
+              "path",
+              "commit"
+            ],
+            "properties": {
+              "repository": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string",
+                "pattern": "SKILL\\.md$"
+              },
+              "commit": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$"
+              }
+            }
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "fingerprint": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "evaluated_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "scores": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "trigger_clarity",
+              "instruction_quality",
+              "correctness",
+              "safety",
+              "context_efficiency"
+            ],
+            "properties": {
+              "trigger_clarity": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "score",
+                  "confidence",
+                  "mode"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "mode": {
+                    "const": "model"
+                  }
+                }
+              },
+              "instruction_quality": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "score",
+                  "confidence",
+                  "mode"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "mode": {
+                    "const": "model"
+                  }
+                }
+              },
+              "correctness": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "score",
+                  "confidence",
+                  "mode"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "mode": {
+                    "const": "model"
+                  }
+                }
+              },
+              "safety": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "score",
+                  "confidence",
+                  "mode"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "mode": {
+                    "const": "model"
+                  }
+                }
+              },
+              "context_efficiency": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "score",
+                  "confidence",
+                  "mode"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "mode": {
+                    "const": "model"
+                  }
+                }
+              }
+            }
+          },
+          "overall_score": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 5
+          }
+        }
+      }
+    }
+  }
+}
