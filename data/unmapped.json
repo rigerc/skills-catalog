@@ -2,7 +2,7 @@
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
   "snapshot_date": "2026-11-01",
-  "count": 1737,
+  "count": 1734,
   "skills": [
     {
       "id": "2slides/slides-generation-2slides-skills/2slides-ppt-generator",
@@ -1150,11 +1150,6 @@
       "skill_name": "domain-modeling"
     },
     {
-      "id": "mattpocock/skills/git-guardrails-claude-code",
-      "repository": "mattpocock/skills",
-      "skill_name": "git-guardrails-claude-code"
-    },
-    {
       "id": "mattpocock/skills/grill-me",
       "repository": "mattpocock/skills",
       "skill_name": "grill-me"
@@ -1705,11 +1700,6 @@
       "skill_name": "network-troubleshooting"
     },
     {
-      "id": "Mindrally/skills/nextjs-react-redux-typescript-cursor-rules",
-      "repository": "Mindrally/skills",
-      "skill_name": "nextjs-react-redux-typescript-cursor-rules"
-    },
-    {
       "id": "Mindrally/skills/nlp-natural-language-processing",
       "repository": "Mindrally/skills",
       "skill_name": "nlp-natural-language-processing"
@@ -1773,11 +1763,6 @@
       "id": "Mindrally/skills/python-cybersecurity-tool-development",
       "repository": "Mindrally/skills",
       "skill_name": "python-cybersecurity-tool-development"
-    },
-    {
-      "id": "Mindrally/skills/python-odoo-cursor-rules",
-      "repository": "Mindrally/skills",
-      "skill_name": "python-odoo-cursor-rules"
     },
     {
       "id": "Mindrally/skills/rabbitmq-development",
