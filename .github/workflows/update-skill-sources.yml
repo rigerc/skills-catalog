@@ -29,6 +29,7 @@ jobs:
       - name: Validate updated catalog and generated docs
         run: |
           node scripts/catalog.mjs --check
+          node scripts/manifest.mjs --check
           node --test tests/*.test.mjs
       - name: Open or update a review PR when sources changed
         uses: peter-evans/create-pull-request@v7
