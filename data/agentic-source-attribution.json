@@ -12,12 +12,52 @@
       "credit_url": "https://github.com/2slides/slides-generation-2slides-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
+      "name": "ai-headshot-studio",
+      "original_repository": "beatra-ai/ai-headshot-generator-skill",
+      "commit": "8757b8920563b1ccb6193944ba79c6384fd7a848",
+      "path": "skills/ai-headshot-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-headshot-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-image-generation-studio",
+      "name": "ai-image-generation-studio",
+      "original_repository": "beatra-ai/ai-image-generator-skill",
+      "commit": "86abbefd47ad8a3422212edd6466a861d8d8daf4",
+      "path": "skills/ai-image-generation-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-image-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-logo-maker",
+      "name": "ai-logo-maker",
+      "original_repository": "beatra-ai/ai-logo-maker-skill",
+      "commit": "90e90857620c65a11f355ba21d03d0445d0e6d59",
+      "path": "skills/ai-logo-maker/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-logo-maker-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/anywrite",
       "name": "anywrite",
       "original_repository": "Antheurus/anywrite",
       "commit": "1f7bbf7f15edba3b88b689054bc152538ffbda65",
       "path": "SKILL.md",
       "credit_url": "https://github.com/Antheurus/anywrite"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/aomi-transact",
+      "name": "aomi-transact",
+      "original_repository": "aomi-labs/skills",
+      "commit": "0f17a9d30b9787b2245b115e287842ef8b1d8ec8",
+      "path": "aomi-transact/SKILL.md",
+      "credit_url": "https://github.com/aomi-labs/skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/assay",
+      "name": "assay",
+      "original_repository": "awss1i/assay",
+      "commit": "2e3109827a6382ef5d82fc73333b6b5f2d6577b2",
+      "path": "plugins/assay/skills/checking-a-page/SKILL.md",
+      "credit_url": "https://github.com/awss1i/assay"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
@@ -36,12 +76,28 @@
       "credit_url": "https://github.com/FlowLLM-AI/AxonX"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/beatra",
+      "name": "beatra",
+      "original_repository": "beatra-ai/ai-media-generator-skill",
+      "commit": "6c9d1a4097f0ed574a7dee14697531a24a0e10b6",
+      "path": "skills/beatra/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-media-generator-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
       "name": "browser-testing-with-devtools",
       "original_repository": "addyosmani/agent-skills",
       "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
       "path": "skills/browser-testing-with-devtools/SKILL.md",
       "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/debate-review",
+      "name": "debate-review",
+      "original_repository": "amElnagdy/review-skills",
+      "commit": "3cfce3963b4d4d99a8b9059f1ece6726405b7bd3",
+      "path": "skills/debate-review/SKILL.md",
+      "credit_url": "https://github.com/amElnagdy/review-skills"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/electron-drive-skill",
@@ -84,6 +140,14 @@
       "credit_url": "https://github.com/CodeShuX/mockhunter"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/music-generation-studio",
+      "name": "music-generation-studio",
+      "original_repository": "beatra-ai/ai-music-generator-skill",
+      "commit": "6598ea6d36a023e2462eab2533c857de64f829ae",
+      "path": "skills/music-generation-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-music-generator-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/open-dynamic-workflows",
       "name": "open-dynamic-workflows",
       "original_repository": "Suraj1235/open-dynamic-workflows",
@@ -122,6 +186,22 @@
       "commit": "0ce03c20669b668606c90ba49ebad80d6fbdcfe0",
       "path": "SKILL.md",
       "credit_url": "https://github.com/alapha888/session-handoff-kit"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shark",
+      "name": "shark",
+      "original_repository": "alexyc9381/shark-skill",
+      "commit": "9800fb3b13be67a0ab49ea05d120c6a90b3e2b6d",
+      "path": "skills/shark/SKILL.md",
+      "credit_url": "https://github.com/alexyc9381/shark-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shopify-review-triage",
+      "name": "shopify-review-triage",
+      "original_repository": "alfredtech2026/shopify-app-review-brief",
+      "commit": "d0ba0611a6ee36af9fbff80452e6f31b1f04d2fa",
+      "path": "docs/skills/shopify-review-triage/SKILL.md",
+      "credit_url": "https://github.com/alfredtech2026/shopify-app-review-brief"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/since-cutoff",
