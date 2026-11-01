@@ -10,7 +10,7 @@ import {readRawSkill} from './update-skill-sources.mjs';
 import {run} from './quality.mjs';
 import {RequestError, requestJson} from './evaluation-http.mjs';
 import {JEV_ENDPOINTS, jevEndpoint, jevConfig, validateJevOptions, validateJevEvaluation,
-  reviewJev, loadJevSdk} from './jev-evaluator.mjs';
+  reviewJev, loadJevSdk, verifyKev} from './jev-evaluator.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const PROVIDERS = {
@@ -33,6 +33,7 @@ export const DEFAULTS = {
   output: resolve(ROOT, 'data/scores.json'),
   opencodeBin: 'opencode',
   jevEndpoint: 'typesafe',
+  kevBaseUrl: 'http://127.0.0.1:8009',
 };
 export const CRITERIA = {
   trigger_clarity: 'Clear purpose, when to use it, and scope boundaries.',
@@ -120,9 +121,11 @@ function pacer(spacing, sleep) {
 }
 
 export async function reviewSkill(source, bytes, options, {
-  fetchImpl = fetch, sleep = pause, beforeRequest = async () => {}, apiKey, exec = run, jevSdk,
+  fetchImpl = fetch, sleep = pause, beforeRequest = async () => {}, apiKey, exec = run, jevSdk, kevProvenance,
 } = {}) {
-  if (options.provider === 'jev') return reviewJev(source, bytes, options, {sdk: jevSdk, fetchImpl, sleep, beforeRequest, apiKey});
+  if (options.provider === 'jev') {
+    return reviewJev(source, bytes, options, {sdk: jevSdk, fetchImpl, sleep, beforeRequest, apiKey, kevProvenance});
+  }
   if (usesCli(options)) return reviewWithOpenCode(source, bytes, options, {exec, beforeRequest});
   const provider = PROVIDERS[options.provider];
   if (!provider) throw new Error('Unsupported provider: ' + options.provider);
@@ -324,6 +327,13 @@ export function checkScores(doc, catalog, ledger) {
       const scores = entry.evaluation.scores;
       if (entry.result_kind === 'prose_review') validateEvaluation(entry.evaluation);
       else {
+        if (doc.evaluator?.jev_endpoint === 'kev') {
+          const provenance = entry.server_provenance;
+          if (provenance?.checkpoint !== doc.evaluator.kev?.checkpoint || provenance?.device !== 'cuda' ||
+              provenance?.truncate_states !== false) {
+            throw new Error('missing or mismatched Kev server provenance');
+          }
+        }
         for (const score of Object.values(scores)) {
           if (!Number.isFinite(score.native_score) || score.native_score < 0 || score.native_score > 4 ||
               score.score !== score.native_score + 1) throw new Error('invalid native score transformation');
@@ -422,10 +432,13 @@ export async function evaluateSkills(catalog, ledger, previous, options, {
   // Parse all selected source URLs before making any requests.
   for (const skill of todo) sourceCoordinates(sources.get(skill.id));
   if (options.dryRun) return {...buildReport(catalog, ledger, entries, config), planned: targets.length};
-  if (todo.length && !usesCli(options) && !apiKey?.trim()) {
+  const localKev = (options.jevEndpoint ?? 'typesafe') === 'kev';
+  if (todo.length && !usesCli(options) && !localKev && !apiKey?.trim()) {
     throw new Error(provider.key + ' is required (or use --dry-run)');
   }
   if (todo.length && options.provider === 'jev') jevSdk ??= await loadJev();
+  // A local Kev run verifies its serving checkpoint, CUDA device and no-truncation configuration once,
+  // before any skill request; a mismatch or unreachable server stops the run instead of falling back.
   let index = 0;
   let stopped = null;
   const waitForSlot = pacer(options.requestSpacing, sleep);
@@ -433,6 +446,13 @@ export async function evaluateSkills(catalog, ledger, previous, options, {
     await waitForSlot();
     if (stopped) throw new RequestError(stopped, true);
   };
+  let kevProvenance;
+  if (todo.length && localKev) {
+    kevProvenance = await verifyKev(options, {fetchImpl: async (url, init) => {
+      await beforeRequest();
+      return fetchImpl(url, init);
+    }, sleep, apiKey: apiKey || undefined});
+  }
   const checkpoint = () => onCheckpoint(buildReport(catalog, ledger, entries, config, stopped, previous));
   async function worker() {
     while (!stopped && index < targets.length) {
@@ -450,7 +470,7 @@ export async function evaluateSkills(catalog, ledger, previous, options, {
             return fetchImpl(url, init);
           }});
         stage = 'evaluation';
-        const result = await reviewSkill(source, bytes, options, {fetchImpl, sleep, beforeRequest, apiKey, exec, jevSdk});
+        const result = await reviewSkill(source, bytes, options, {fetchImpl, sleep, beforeRequest, apiKey, exec, jevSdk, kevProvenance});
         entries.set(skill.id, {...base, status: 'evaluated', content_sha256: hash(bytes), ...result});
       } catch (error) {
         const message = String(error.message).split(apiKey || '\0').join('[redacted]').slice(0, 500);
@@ -474,6 +494,7 @@ API providers use OPENAI_API_KEY, OPENROUTER_API_KEY, or OPENCODE_GO_API_KEY.
 OpenCode Go defaults to free DeepSeek V4.1 Flash through the OpenCode 2+ CLI.
 Existing successful results are reused automatically.
 Jev uses TYPESAFE_API_KEY, OPENROUTER_API_KEY, or OPENCODE_API_KEY by endpoint.
+The local kev endpoint needs no credential unless the server sets KEV_API_KEY.
 
   --dry-run                  Plan without network access, credentials, or writes
   --sync                     Refresh coverage/repository means and prune retired skills offline
@@ -482,7 +503,10 @@ Jev uses TYPESAFE_API_KEY, OPENROUTER_API_KEY, or OPENCODE_API_KEY by endpoint.
   --limit N                  Maximum number of pending skills to attempt
   --force                    Re-evaluate even successful cached results
   --provider PROVIDER        openai (default), openrouter, opencode-go (alias: opencode), jev
-  --jev-endpoint ENDPOINT    typesafe (default), openrouter (paid input), opencode-go (free Jev)
+  --jev-endpoint ENDPOINT    typesafe (default), openrouter (paid input), opencode-go (free Jev),
+                             kev (local Docker Kev-4B)
+  --kev-base-url URL         Base URL of a running Kev server (default http://127.0.0.1:8009);
+                             requires --provider jev --jev-endpoint kev
   --model MODEL              Defaults: gpt-6-luna; openai/gpt-6-luna; deepseek-v4.1-flash-free
                              Jev: jev-1.14.0; typesafe/jev-1.14; jev-1.13-free by endpoint
   --opencode-bin PATH        OpenCode 2+ executable for free models (default: opencode)
@@ -507,6 +531,7 @@ export function parseArgs(argv) {
     ['--max-file-bytes', 'maxFileBytes'], ['--limit', 'limit'],
     ['--opencode-bin', 'opencodeBin'],
     ['--jev-endpoint', 'jevEndpoint'],
+    ['--kev-base-url', 'kevBaseUrl'],
   ]);
   const numeric = new Set(['concurrency', 'requestSpacing', 'retries', 'timeoutSeconds', 'maxOutputTokens', 'maxFileBytes', 'limit']);
   for (let i = 0; i < argv.length; i++) {
@@ -539,10 +564,13 @@ export function parseArgs(argv) {
   if (options.provider === 'opencode') options.provider = 'opencode-go';
   if ([options.check, options.sync, options.dryRun].filter(Boolean).length > 1) throw new Error('Choose only one of --check, --sync, or --dry-run');
   if ((options.check || options.sync) && ['--force', '--limit', '--ids', '--provider', '--model', '--jev-endpoint',
-    '--reasoning-effort', '--max-output-tokens'].some(arg => explicit.has(arg))) {
+    '--kev-base-url', '--reasoning-effort', '--max-output-tokens'].some(arg => explicit.has(arg))) {
     throw new Error('--check and --sync use the saved evaluator configuration; evaluation options do not apply');
   }
   if (!Object.hasOwn(PROVIDERS, options.provider)) throw new Error('Unsupported provider: ' + options.provider);
+  if (explicit.has('--kev-base-url') && !(options.provider === 'jev' && (options.jevEndpoint ?? 'typesafe') === 'kev')) {
+    throw new Error('--kev-base-url requires --provider jev --jev-endpoint kev');
+  }
   if (options.provider === 'jev') {
     if (!explicitModel) options.model = jevEndpoint(options).model;
     for (const arg of ['--reasoning-effort', '--max-output-tokens']) {

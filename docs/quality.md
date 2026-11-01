@@ -287,3 +287,109 @@ Exit codes: `0` for a successful run or offline plan, `1` for configuration/repo
 `2` for a stopped run or a report containing failed/unresolved skills. Pending skills
 from an intentional `--limit` or `--ids` selection do not cause an error. This script
 does not run automatically in CI or change the canonical quality data.
+
+### Local Kev evaluation (Docker)
+
+The `kev` Jev endpoint runs the same five-dimension score contract against a
+locally hosted [Kev](https://github.com/jaredpalmer/kev) 1.0 checkpoint. Kev
+implements TypeSafe's System One API, so the evaluator reuses the existing Jev
+questions, response validation, score transformation, and checkpointing instead
+of a separate pipeline. No TypeSafe, OpenRouter, or OpenCode credential is
+required; inference is local.
+
+#### Start the server
+
+```sh
+docker compose -f docker/kev/compose.yaml up -d --build
+```
+
+Requirements: Linux Docker with the NVIDIA Container Toolkit and a CUDA GPU
+(an L40S is the reference GPU for Kev-4B; the first start downloads roughly
+10 GB of weights into the persistent `kev-model-cache` volume). See
+[`docker/kev/README.md`](../docker/kev/README.md) for details. The container
+
+- serves `jaredpalmer/kev-4b@v1.0` (Hub revision `139fdd94`), installed from the
+  Kev GitHub source at the pinned `kev-1.0` ref — never from the unrelated PyPI
+  package named `kev`;
+- runs with `--device cuda`, which fails instead of falling back to CPU;
+- sets `KEV_TRUNCATE_STATES=0`, so oversized states get HTTP 422 and are never
+  silently cut;
+- binds to `127.0.0.1:8009` on the host (loopback only).
+
+Optionally set `KEV_API_KEY` (Compose and evaluator must match) and
+`KEV_DTYPE=fp32` for the exact fp32 evaluation path (default is bf16).
+
+#### Evaluate
+
+```sh
+# Offline plan: no running server or credentials needed to see what would run.
+npm run evaluate:skills -- --provider jev --jev-endpoint kev --dry-run
+
+# Start with a sample.
+npm run evaluate:skills -- --provider jev --jev-endpoint kev --limit 10 \
+  --output results/kev-4b-evaluations.json
+
+# All remaining skills, resuming successful scores automatically.
+npm run evaluate:skills -- --provider jev --jev-endpoint kev \
+  --output results/kev-4b-evaluations.json
+
+# Custom base URL (for example, a remote LAN host).
+npm run evaluate:skills -- --provider jev --jev-endpoint kev \
+  --kev-base-url http://10.0.0.7:8009 --limit 10
+```
+
+`--model kev-latest` is the default request model; `jev-latest` is also accepted
+(the server treats both as an alias for the loaded checkpoint). Chat-only
+options (`--reasoning-effort`, `--max-output-tokens`) and other Jev endpoints'
+models are rejected for this route. Keep a separate `--output` file: kev scores
+live in their own report, exactly like other Jev endpoints.
+
+#### Serving verification and provenance
+
+Before the first skill request of a run, the evaluator reads `GET /v1/models`
+and refuses to evaluate unless the server reports
+
+- the pinned checkpoint run `jaredpalmer/kev-4b@v1.0`,
+- a CUDA device, and
+- `truncate_states: false`.
+
+A mismatch or unreachable server stops the run (exit code 1) before any skill
+is evaluated; there is no automatic fallback to a cloud evaluator. Each saved
+entry records a `server_provenance` snapshot (checkpoint, base, device, backend,
+dtype, temperature, `max_state_tokens`, truncation state). The evaluator
+fingerprint includes the checkpoint pin and base URL, so changing either
+invalidates cached scores as any other evaluator change would.
+
+Responses carry Kev's `x-typesafe-request-id`, which is recorded as the
+response ID. Native fractional scores, probability distributions, legend texts,
+and optional confidences are preserved verbatim; token usage is recorded when
+the server reports it. No cost, prose feedback, or other metadata is invented —
+a local server that reports none leaves the fields unknown.
+
+#### Failure classification
+
+A truncating response (`truncated: true`, `usage.state_tokens` beyond what the
+model read) never becomes a successful score, and its skill is recorded as
+`not_evaluated` with `resource_limit`. HTTP failures follow the shared Jev
+policies: 429 and 5xx retry within the documented limits, credential or
+authentication errors stop dispatch while preserving checkpoints, and an
+over-limit 422 from `KEV_TRUNCATE_STATES=0` fails only the affected skill.
+
+#### Troubleshooting
+
+- **"Local Kev is unreachable"** — the container is not running, still
+  downloading weights, or crashed on startup: `docker compose
+  -f docker/kev/compose.yaml logs kev`, and give the first start time (health
+  check allows a 30-minute startup window).
+- **"kev_device: CUDA is required"** — no NVIDIA GPU is visible; ensure the
+  NVIDIA Container Toolkit is installed, then rebuild with `docker compose
+  -f docker/kev/compose.yaml up -d --build`. The evaluator never continues on
+  CPU or MPS for this endpoint.
+- **"kev_checkpoint_mismatch"** — the server is running a different `--run`;
+  restart it with the pinned `jaredpalmer/kev-4b@v1.0`.
+- **HTTP 422** on evaluation — the skill document is longer than the server's
+  context; the skill is skipped (never truncated). The scored mean-level and
+  distributions themselves remain the model's answers.
+- **Smoke test** — after the server is up:
+  `node docker/kev/smoke-test.mjs [base-url]` verifies provenance and one
+  five-question request with full answer validation.

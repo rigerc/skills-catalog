@@ -12,7 +12,27 @@ export const JEV_ENDPOINTS = {
     endpoint: 'https://openrouter.ai/api/v1/systemone', billing: 'paid input; free output', contextErrors: true},
   'opencode-go': {name: 'OpenCode free Jev', model: 'jev-1.13-free', key: 'OPENCODE_API_KEY',
     endpoint: 'https://opencode.ai/inference/systemone/v1/systemone', billing: 'limited-time free input and output', contextErrors: true},
+  kev: {name: 'Local Kev', model: 'kev-latest', key: 'KEV_API_KEY', local: true,
+    endpoint: 'http://127.0.0.1:8009/v1/systemone', billing: 'local Kev-4B inference, no service cost', contextErrors: true},
 };
+
+/** Docker-hosted Kev-4B serving defaults (docker/kev/compose.yaml); see docs/quality.md. */
+export const KEV_DEFAULT_BASE_URL = 'http://127.0.0.1:8009';
+export const KEV_CHECKPOINT = 'jaredpalmer/kev-4b@v1.0';   // the `--run` argument of the pinned serving image
+export const KEV_CHECKPOINT_REVISION = '139fdd94';          // documented Hub revision of the Kev-4B Kev 1.0 weights
+export function kevBaseUrl(options = {}) {
+  const raw = options.kevBaseUrl ?? KEV_DEFAULT_BASE_URL;
+  let url;
+  try {
+    url = new URL(raw);
+  } catch {throw new Error('Invalid Kev base URL: ' + raw);}
+  if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+    throw new Error('Kev base URL must be an http(s) URL: ' + raw);
+  }
+  return url.origin + url.pathname.replace(/\/+$/, '');
+}
+export function kevSystemOneEndpoint(options) {return kevBaseUrl(options) + '/v1/systemone';}
+export function kevModelsEndpoint(options) {return kevBaseUrl(options) + '/v1/models';}
 const hash = value => createHash('sha256').update(value).digest('hex');
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const exactKeys = (value, keys) => record(value) && Object.keys(value).length === keys.length &&
@@ -69,7 +89,8 @@ export const JEV_LIMITATIONS = [
 export function jevEndpoint(options) {
   const name = options.jevEndpoint ?? 'typesafe';
   if (!Object.hasOwn(JEV_ENDPOINTS, name)) throw new Error('Unsupported Jev endpoint: ' + name);
-  return JEV_ENDPOINTS[name];
+  const endpoint = JEV_ENDPOINTS[name];
+  return endpoint.local ? {...endpoint, endpoint: kevSystemOneEndpoint(options)} : endpoint;
 }
 
 export function validateJevOptions(options) {
@@ -77,9 +98,11 @@ export function validateJevOptions(options) {
   const model = options.model;
   const valid = (options.jevEndpoint ?? 'typesafe') === 'opencode-go' ? model === 'jev-1.13-free'
     : options.jevEndpoint === 'openrouter' ? /^(?:typesafe\/jev-\d+\.\d+(?:\.\d+)?(?:-\d+)?|~typesafe\/jev-(?:latest|preview))$/.test(model)
-      : /^jev-(?:\d+\.\d+(?:\.\d+)?(?:-\d+)?|latest|preview)$/.test(model);
+      : options.jevEndpoint === 'kev' ? /^(?:kev|jev)-latest$/.test(model)
+        : /^jev-(?:\d+\.\d+(?:\.\d+)?(?:-\d+)?|latest|preview)$/.test(model);
   if (!valid) throw new Error('Unsupported model for ' + endpoint.name + ': ' + model +
-    ((options.jevEndpoint ?? 'typesafe') === 'opencode-go' ? ' (only jev-1.13-free is enabled)' : ''));
+    ((options.jevEndpoint ?? 'typesafe') === 'opencode-go' ? ' (only jev-1.13-free is enabled)'
+      : options.jevEndpoint === 'kev' ? ' (only kev-latest or jev-latest, as served by the Kev server)' : ''));
 }
 
 export function jevConfig(options) {
@@ -90,6 +113,13 @@ export function jevConfig(options) {
     package: {name: JEV_PACKAGE, version: JEV_PACKAGE_VERSION}, adapter_version: 1, result_schema: 2,
     questions: JEV_QUESTIONS, score_transform: 'native_score + 1; equal-weight mean',
     probability_tolerance: PROBABILITY_TOLERANCE};
+  if (endpoint.local) {
+    config.kev = {
+      base_url: kevBaseUrl(options), checkpoint: KEV_CHECKPOINT, checkpoint_revision: KEV_CHECKPOINT_REVISION,
+      required_device: 'cuda', truncate_states: false,
+      provenance: '/v1/models checkpoint, device and truncation settings verified before evaluation',
+    };
+  }
   return {...config, fingerprint: hash(JSON.stringify(config))};
 }
 
@@ -149,6 +179,52 @@ function evaluationFromAnswers(answers) {
   return validateJevEvaluation({scores, limitations: [...JEV_LIMITATIONS]});
 }
 
+/**
+ * Read and constrain the loaded-checkpoint card from a Kev server's /v1/models. Mutations of the
+ * served checkpoint, a non-CUDA device, or truncating serving each stop evaluation before any skill request.
+ */
+export function kevProvenance(models, url) {
+  const cards = Array.isArray(models?.models) ? models.models : [];
+  const card = cards.find(item => item?.run === KEV_CHECKPOINT) ?? cards[0];
+  if (!record(card)) throw new RequestError('Local Kev /v1/models reported no serving checkpoint', true, 'kev_checkpoint');
+  if (card.run !== KEV_CHECKPOINT) {
+    throw new RequestError('Local Kev is serving ' + JSON.stringify(card.run) +
+      '; expected the pinned ' + KEV_CHECKPOINT + ' (Hub revision ' + KEV_CHECKPOINT_REVISION + ')', true, 'kev_checkpoint_mismatch');
+  }
+  if (card.device !== 'cuda') {
+    throw new RequestError('Local Kev is running on device ' + JSON.stringify(card.device) + '; CUDA is required', true, 'kev_device');
+  }
+  if (card.truncate_states !== false) {
+    throw new RequestError('Local Kev was started with KEV_TRUNCATE_STATES=1; documents must never be truncated', true, 'kev_truncation');
+  }
+  if (![card.base, card.backend, card.dtype].every(value => typeof value === 'string' && value) ||
+      !Number.isInteger(card.max_state_tokens) || card.max_state_tokens < 1) {
+    throw new RequestError('Local Kev /v1/models is missing serving details', true, 'kev_checkpoint');
+  }
+  const temperature = Number(card.temperature);
+  if (!Number.isFinite(temperature)) throw new RequestError('Local Kev reported no usable temperature', true, 'kev_checkpoint');
+  return {models_url: url, checkpoint: KEV_CHECKPOINT, checkpoint_revision: KEV_CHECKPOINT_REVISION,
+    run: card.run, base: card.base, device: 'cuda', backend: card.backend,
+    dtype: card.dtype, temperature, max_state_tokens: card.max_state_tokens, truncate_states: false};
+}
+
+/** One-time per-run serving verification; failures stop the run before any skill is evaluated. */
+export async function verifyKev(options, {fetchImpl = fetch, apiKey, beforeRequest = async () => {}} = {}) {
+  const url = kevModelsEndpoint(options);
+  try {
+    await beforeRequest();
+    const response = await fetchImpl(url, {method: 'GET', redirect: 'error',
+      signal: AbortSignal.timeout(options.timeoutSeconds * 1000),
+      headers: {...(apiKey ? {Authorization: 'Bearer ' + apiKey} : {}), Accept: 'application/json'}});
+    if (!response.ok) throw new RequestError('Local Kev /v1/models returned HTTP ' + response.status, true, 'kev_verification');
+    return kevProvenance(await response.json(), url);
+  } catch (error) {
+    if (error instanceof RequestError) throw error;
+    throw new RequestError('Local Kev is unreachable at ' + url +
+      '; start it with: docker compose -f docker/kev/compose.yaml up -d --build', true, 'kev_unreachable');
+  }
+}
+
 export async function reviewJev(source, bytes, options, {sdk, ...httpOptions} = {}) {
   validateJevOptions(options);
   sdk ??= await loadJevSdk();
@@ -158,12 +234,21 @@ export async function reviewJev(source, bytes, options, {sdk, ...httpOptions} = 
   let transportFailure;
   let receipt;
   let submittedStateHash;
+  let serverProvenance;
+  const apiKey = httpOptions.apiKey;
+  if (endpoint.local) {
+    serverProvenance = httpOptions.kevProvenance ?? await verifyKev(options, {fetchImpl: httpOptions.fetchImpl,
+      apiKey, beforeRequest: httpOptions.beforeRequest});
+  }
   const judgment = await sdk.judge({model: options.model, state, questions: structuredClone(JEV_QUESTIONS)}, {
-    env: {TYPESAFE_API_KEY: httpOptions.apiKey},
+    env: {TYPESAFE_API_KEY: endpoint.local && !apiKey?.trim() ? 'local-kev' : httpOptions.apiKey},
     transport: async ({body}) => {
       try {
         submittedStateHash = hash(JSON.stringify(body.state));
         receipt = await requestJson(endpoint, JSON.stringify(body), options, httpOptions);
+        if (receipt.body.truncated === true) {
+          throw new RequestError('Local Kev truncated the submitted document; rerun with truncation disabled (KEV_TRUNCATE_STATES=0)', false, 'resource_limit');
+        }
         evaluationFromAnswers(receipt.body.answers); // stricter than the package's permissive parser
         return receipt.body;
       } catch (error) {transportFailure = error; throw error;}
@@ -182,5 +267,6 @@ export async function reviewJev(source, bytes, options, {sdk, ...httpOptions} = 
     requested_model: options.model, endpoint: endpoint.endpoint,
     original_state_sha256: hash(JSON.stringify(state)), submitted_state_sha256: submittedStateHash,
     response_id: receipt.requestId ?? receipt.body.id ?? null, usage: receipt.body.usage ?? null,
+    ...(endpoint.local ? {server_provenance: serverProvenance} : {}),
     ...(Number.isFinite(reportedCost) && reportedCost >= 0 ? {cost: reportedCost} : {})};
 }

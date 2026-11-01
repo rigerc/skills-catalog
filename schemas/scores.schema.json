@@ -214,14 +214,23 @@
           "enum": [
             "typesafe",
             "openrouter",
-            "opencode-go"
+            "opencode-go",
+            "kev"
           ]
         },
         "endpoint": {
-          "enum": [
-            "https://api.typesafe.ai/v1/systemone",
-            "https://openrouter.ai/api/v1/systemone",
-            "https://opencode.ai/inference/systemone/v1/systemone"
+          "oneOf": [
+            {
+              "enum": [
+                "https://api.typesafe.ai/v1/systemone",
+                "https://openrouter.ai/api/v1/systemone",
+                "https://opencode.ai/inference/systemone/v1/systemone"
+              ]
+            },
+            {
+              "type": "string",
+              "pattern": "^https?://(?!(?:api\\.typesafe\\.ai|openrouter\\.ai|opencode\\.ai)/)\\S+/v1/systemone$"
+            }
           ]
         },
         "model": {
@@ -298,6 +307,43 @@
           "type": "number",
           "exclusiveMinimum": 0,
           "maximum": 0.01
+        },
+        "kev": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Local Kev serving configuration; present only for the kev endpoint.",
+          "properties": {
+            "base_url": {
+              "type": "string",
+              "pattern": "^https?://\\S+$"
+            },
+            "checkpoint": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checkpoint_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "required_device": {
+              "const": "cuda"
+            },
+            "truncate_states": {
+              "const": false
+            },
+            "provenance": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "base_url",
+            "checkpoint",
+            "checkpoint_revision",
+            "required_device",
+            "truncate_states",
+            "provenance"
+          ]
         },
         "fingerprint": {
           "$ref": "#/$defs/sha256"
@@ -753,10 +799,18 @@
           "minLength": 1
         },
         "endpoint": {
-          "enum": [
-            "https://api.typesafe.ai/v1/systemone",
-            "https://openrouter.ai/api/v1/systemone",
-            "https://opencode.ai/inference/systemone/v1/systemone"
+          "oneOf": [
+            {
+              "enum": [
+                "https://api.typesafe.ai/v1/systemone",
+                "https://openrouter.ai/api/v1/systemone",
+                "https://opencode.ai/inference/systemone/v1/systemone"
+              ]
+            },
+            {
+              "type": "string",
+              "pattern": "^https?://(?!(?:api\\.typesafe\\.ai|openrouter\\.ai|opencode\\.ai)/)\\S+/v1/systemone$"
+            }
           ]
         },
         "original_state_sha256": {
@@ -764,6 +818,67 @@
         },
         "submitted_state_sha256": {
           "$ref": "#/$defs/sha256"
+        },
+        "server_provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Kev serving configuration verified via /v1/models before evaluation; kev endpoint only.",
+          "properties": {
+            "models_url": {
+              "type": "string",
+              "pattern": "^https?://\\S+/v1/models$"
+            },
+            "checkpoint": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checkpoint_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "run": {
+              "type": "string",
+              "minLength": 1
+            },
+            "base": {
+              "type": "string",
+              "minLength": 1
+            },
+            "device": {
+              "const": "cuda"
+            },
+            "backend": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dtype": {
+              "type": "string",
+              "minLength": 1
+            },
+            "temperature": {
+              "type": "number"
+            },
+            "max_state_tokens": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "truncate_states": {
+              "const": false
+            }
+          },
+          "required": [
+            "models_url",
+            "checkpoint",
+            "checkpoint_revision",
+            "run",
+            "base",
+            "device",
+            "backend",
+            "dtype",
+            "temperature",
+            "max_state_tokens",
+            "truncate_states"
+          ]
         },
         "result_kind": {
           "const": "jev_scores"
