@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {load, render} from '../scripts/catalog.mjs';
+import {load, render, validate} from '../scripts/catalog.mjs';
 import {canonicalSkillId, findUnmappedSkills, renderUnmapped} from '../scripts/unmapped.mjs';
 
 const skill = id => ({
@@ -66,6 +66,9 @@ test('committed unmapped.json matches canonical catalog and combined generator',
   assert.equal(parsed.catalog_id, c.catalog_id);
   assert.equal(parsed.snapshot_date, c.snapshot_date);
   assert.equal(parsed.count, parsed.skills.length);
+  for (const entry of parsed.skills) {
+    assert.equal(entry.id, `${entry.repository}/${entry.skill_name}`);
+  }
   const referenced = new Set([
     ...m.technologies.flatMap(t => t.skill_ids),
     ...m.combinations.flatMap(x => x.skill_ids),
@@ -74,4 +77,10 @@ test('committed unmapped.json matches canonical catalog and combined generator',
   for (const s of parsed.skills) {
     assert.ok(!referenced.has(canonicalSkillId(s.id, m.repository_aliases)), s.id);
   }
+});
+
+test('catalog validation rejects mismatched composite skill identities', () => {
+  const {c, m, l, d} = load();
+  c.skills[0].skill_name = 'incorrect-skill-name';
+  assert.throws(() => validate(c, m, l, d), /skill identity mismatch/);
 });
