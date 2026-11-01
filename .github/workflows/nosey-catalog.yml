@@ -1,0 +1,142 @@
+name: Nosey catalog — validated manifest and preserved Pages site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: nosey-pages-main
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Install validator
+        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund
+      - name: Validate canonical schemas and negative fixtures
+        run: npm run validate:schemas -- --self-test --skip-unmapped
+      - name: Preserve generated-document parity
+        run: |
+          node scripts/catalog.mjs --validate
+          node scripts/catalog.mjs --check
+          node scripts/unmapped.mjs --check
+      - name: Check deterministic quality and model report invariants
+        run: |
+          node scripts/quality.mjs --check
+          node scripts/evaluate-skills.mjs --check
+      - name: Check duplicate sources
+        run: node scripts/check-duplicate-skills.mjs
+      - name: Run existing Node and Python tests
+        run: |
+          node --test tests/*.test.mjs
+          python3 -m unittest discover -s tests -p 'test_detection_patterns.py' -v
+      - name: Compile twice from committed catalog and stable commit date
+        shell: bash
+        run: |
+          set -euo pipefail
+          AS_OF="$(git show -s --format=%cs "$GITHUB_SHA")"
+          node scripts/compile-catalog.mjs --revision "$GITHUB_SHA" --as-of "$AS_OF" --out dist/manifest.json
+          node scripts/compile-catalog.mjs --revision "$GITHUB_SHA" --as-of "$AS_OF" --out dist/manifest-2.json
+          cmp dist/manifest.json dist/manifest-2.json
+          node scripts/check-manifest.mjs --manifest dist/manifest.json
+      - name: Stage and verify original site + five raw JSON URLs
+        run: |
+          node scripts/stage-pages.mjs --in dist/manifest.json --site dist/site
+          node scripts/check-manifest.mjs --manifest dist/manifest.json --site dist/site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compiled-manifest
+          path: dist/manifest.json
+          retention-days: 7
+
+  publish:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: compiled-manifest
+          path: dist
+      - name: Prevent an older workflow from moving latest.json backwards
+        id: current
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD="$(git ls-remote origin refs/heads/main | cut -f1)"
+          if [ "$HEAD" = "$GITHUB_SHA" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skipping stale workflow run ($GITHUB_SHA; main is $HEAD)"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Restore immutable historical manifests
+        if: steps.current.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/site/manifests
+          if git ls-remote --exit-code --heads origin catalog-artifacts >/dev/null; then
+            git fetch origin catalog-artifacts:refs/heads/catalog-artifacts
+            git worktree add dist/archive catalog-artifacts
+            if [ -d dist/archive/manifests ]; then
+              cp -a dist/archive/manifests/. dist/site/manifests/
+            fi
+          else
+            git worktree add --detach dist/archive HEAD
+            git -C dist/archive checkout --orphan catalog-artifacts
+            git -C dist/archive rm -rf . || true
+          fi
+      - name: Stage original Pages site and new manifest
+        if: steps.current.outputs.publish == 'true'
+        run: |
+          node scripts/stage-pages.mjs --in dist/manifest.json --site dist/site
+          node scripts/check-manifest.mjs --manifest dist/manifest.json --site dist/site
+      - name: Retain every manifest by digest
+        if: steps.current.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/archive/manifests
+          cp -a dist/site/manifests/. dist/archive/manifests/
+          cp dist/site/latest.json dist/archive/latest.json
+          git -C dist/archive add manifests latest.json
+          git -C dist/archive -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Publish manifest for $GITHUB_SHA" || true
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          git -C dist/archive push origin HEAD:catalog-artifacts
+      - uses: actions/configure-pages@v5
+        if: steps.current.outputs.publish == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.current.outputs.publish == 'true'
+        with:
+          path: dist/site
+      - uses: actions/deploy-pages@v4
+        if: steps.current.outputs.publish == 'true'
+        id: deploy
