@@ -94,21 +94,6 @@ export function selectTargets(ledgerEntries, cache, {all = false, ids = null, on
   return targets;
 }
 
-/** Find skill IDs added to a technology or combination recommendation. A mapping-only
- * PR must validate newly recommended skills even when their verified source pins are stable. */
-export function newlyRecommendedSkills(current, previous) {
-  const added = new Set();
-  for (const kind of ['technologies', 'combinations']) {
-    const old = new Map((previous[kind] ?? []).map(group =>
-      [group.id, new Set(group.skill_ids ?? [])]));
-    for (const group of current[kind] ?? []) {
-      const before = old.get(group.id) ?? new Set();
-      for (const id of group.skill_ids ?? []) if (!before.has(id)) added.add(id);
-    }
-  }
-  return added;
-}
-
 export function groupTargets(targets) {
   const groups = new Map();
   for (const loc of targets) {
@@ -643,11 +628,11 @@ export function gateVerdict(entries, {waivers = [], skippedIds = [], today} = {}
 /* ---------- CLI ---------- */
 
 const readJson = file => JSON.parse(readFileSync(resolve(ROOT, file), 'utf8'));
-function dataAt(base, path) {
+function ledgerAt(base) {
   if (!SHA40.test(base ?? '')) throw new Error('--base must be a full 40-character Git SHA');
-  const data = execFileSync('git', ['show', base + ':' + path],
+  const data = execFileSync('git', ['show', base + ':data/catalog-source-ledger.json'],
     {cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024});
-  return JSON.parse(data);
+  return JSON.parse(data).entries;
 }
 
 function parseArgs(argv) {
@@ -692,16 +677,13 @@ async function main(argv) {
   }
   const cache = new Map(prev.entries.map(e => [e.id, e]));
   const gating = opts.mode === 'gate' || opts.mode === 'plan';
-  const only = gating ? new Set([
-    ...changedSources(ledger, dataAt(opts.base, 'data/catalog-source-ledger.json').entries).map(e => e.id),
-    ...newlyRecommendedSkills(readJson('data/mappings.json'), dataAt(opts.base, 'data/mappings.json')),
-  ]) : null;
+  const only = gating ? new Set(changedSources(ledger, ledgerAt(opts.base)).map(e => e.id)) : null;
   // A PR gate must re-validate changed pins; its cache comes from untrusted PR files.
   // --all also means actual re-evaluation, never just a tree-SHA cache hit.
   const targets = selectTargets(ledger, cache, {all: opts.all || gating, ids: opts.ids, only});
   if (opts.mode === 'plan' || opts.mode === 'plan-refresh') {
     const groups = groupTargets(targets).length;
-    console.log((gating ? 'Changed source pins or new recommendations' : 'Missing/stale pins') + ' needing evaluation: ' + targets.length +
+    console.log((gating ? 'Changed pins' : 'Missing/stale pins') + ' needing evaluation: ' + targets.length +
       ' across ' + groups + ' repository+commit groups');
     if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT,
       'targets=' + targets.length + '\ngroups=' + Math.min(groups, opts.maxGroups) + '\n');
@@ -713,7 +695,7 @@ async function main(argv) {
     maxGroups: opts.maxGroups, now: started, onGroup: (g, r) => console.log(
       g.repo + '@' + g.commit.slice(0, 10) + ': ' + r.entries.length + ' skills, ' + r.ms + ' ms, ' +
       (r.bytes / 1048576).toFixed(1) + ' MiB on disk, ' + r.reused + ' reused')});
-  const title = opts.mode === 'gate' ? 'Skill quality: new/repinned or newly recommended skills' : 'Skill quality refresh';
+  const title = opts.mode === 'gate' ? 'Skill quality: changed pins' : 'Skill quality refresh';
   const report = reportMarkdown(result.entries, {title, fetches: result.fetches, skipped: result.skipped, stopped: result.stopped});
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
