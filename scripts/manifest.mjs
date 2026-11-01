@@ -64,7 +64,7 @@ function checkedEntries(inputs) {
   }
 }
 
-function scoreOf(entry, ledger, evaluator) {
+export function scoreOf(entry, ledger, evaluator) {
   if (ledger.status !== 'verified') return {state: 'unresolved', overall: null,
     criteria: null, result_kind: null, model: null, evaluated_at: null};
   const state = !entry ? 'pending'
@@ -80,11 +80,11 @@ function scoreOf(entry, ledger, evaluator) {
   if (scored && !validNumbers(scores)) throw Error('Invalid score criteria for ' + entry.id);
   return {state, overall: scored ? entry.overall_score : null,
     criteria: scores, result_kind: scored ? entry.result_kind : null,
-    model: cleanText(entry?.model ?? evaluator.model, 100),
+    model: entry ? cleanText(entry.model ?? evaluator.model, 100) : null,
     evaluated_at: entry?.evaluated_at ?? null};
 }
 
-function qualityOf(entry, ledger, fp) {
+export function qualityOf(entry, ledger, fp) {
   if (ledger.status !== 'verified') return {state: 'unresolved', status: null, counts: null,
     findings: null, findings_truncated: false, validator_version: null, evaluated_at: null, metrics: null};
   let fresh = false;
@@ -121,7 +121,7 @@ function qualityOf(entry, ledger, fp) {
     evaluated_at: entry?.evaluated_at ?? null, metrics};
 }
 
-function metaOf(entry, source, research) {
+export function metaOf(entry, source, research) {
   const state = source.status !== 'verified' ? 'unresolved' : !entry ? 'pending'
     : entry.read_at_commit !== source.commit ? 'stale' : 'current';
   return {state,
@@ -251,7 +251,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   } else try {
     const inputs = loadInputs();
     const manifest = buildManifest(inputs, sourceCommit());
-    const output = JSON.stringify(manifest, null, 2) + '\n';
+    const output = JSON.stringify(manifest) + '\n';
     if (mode === '--write') writeFileSync(resolve(ROOT, 'data/manifest.json'), output);
     // --validate also accepts a previously generated artifact, if one exists.
     if (mode === '--validate' && existsSync(resolve(ROOT, 'data/manifest.json'))) {
