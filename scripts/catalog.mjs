@@ -141,7 +141,7 @@ The four canonical source JSON files under \`data/\` are one versioned snapshot;
 Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalog-source-ledger.json). **Verified** identifies a skill file at the recorded commit; it does not constitute a safety audit or guarantee of availability.
 
 | Canonical skill ID | Repository | Skill | Source | Evals | Technology mappings | Combinations |
-| --- | --- | --- | --- | --- | ---: | ---: |
+| --- | --- | --- | --- | --- | --- | ---: | ---: |
 ${c.skills.slice().sort((a,b)=>a.id.localeCompare(b.id)).map(s=>{const e=provenance.get(s.id);const status=e?.status==="verified"?`[Verified source](${e.url})`:"Unresolved";return `| ${code(s.id)} | ${esc(s.repository)} | ${esc(s.skill_name)} | ${status} | ${s.has_evals?"Yes":"No"} | ${s.recommended_for.technology_ids.length} | ${s.recommended_for.combination_ids.length} |`}).join("\n")}
 
 **${stats.skills} skills** · ${stats.verified} verified · ${stats.unresolved} unresolved.
