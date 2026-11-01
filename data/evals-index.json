@@ -50,6 +50,126 @@
       "has_evals": false
     },
     {
+      "id": "angular/angular/adev-writing-guide",
+      "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "source_tree_sha": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "has_evals": false
+    },
+    {
+      "id": "angular/angular/reference-compiler-cli",
+      "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "source_tree_sha": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "has_evals": false
+    },
+    {
+      "id": "angular/angular/reference-core",
+      "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "source_tree_sha": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "has_evals": false
+    },
+    {
+      "id": "angular/angular/reference-signal-forms",
+      "commit": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "source_tree_sha": "b81b37d58b966882c6cea7cf1f76e990bb2059e9",
+      "has_evals": false
+    },
+    {
+      "id": "antfu/skills/nuxt",
+      "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "has_evals": false
+    },
+    {
+      "id": "antfu/skills/unocss",
+      "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "has_evals": false
+    },
+    {
+      "id": "antfu/skills/vite",
+      "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "has_evals": false
+    },
+    {
+      "id": "antfu/skills/vitest",
+      "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "has_evals": false
+    },
+    {
+      "id": "antfu/skills/vue",
+      "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
+      "has_evals": false
+    },
+    {
+      "id": "anthropics/skills/claude-api",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "source_tree_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "has_evals": false
+    },
+    {
+      "id": "anthropics/skills/frontend-design",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "source_tree_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "has_evals": false
+    },
+    {
+      "id": "anthropics/skills/webapp-testing",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "source_tree_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "has_evals": false
+    },
+    {
+      "id": "better-auth/skills/best-practices",
+      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
+      "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
+      "has_evals": false
+    },
+    {
+      "id": "better-auth/skills/emailAndPassword",
+      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
+      "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
+      "has_evals": false
+    },
+    {
+      "id": "better-auth/skills/organization",
+      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
+      "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
+      "has_evals": false
+    },
+    {
+      "id": "better-auth/skills/twoFactor",
+      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
+      "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
+      "has_evals": false
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/docker",
+      "commit": "718070a7d622921b01687799a1f9613f36c6f615",
+      "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/drizzle",
+      "commit": "718070a7d622921b01687799a1f9613f36c6f615",
+      "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/pydantic",
+      "commit": "718070a7d622921b01687799a1f9613f36c6f615",
+      "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
+      "id": "bobmatnyc/claude-mpm-skills/sqlalchemy",
+      "commit": "718070a7d622921b01687799a1f9613f36c6f615",
+      "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
       "id": "clerk/skills/clerk",
       "commit": "55206a48259bb327090ec5dbd22cfb5d4fa9de25",
       "source_tree_sha": "55206a48259bb327090ec5dbd22cfb5d4fa9de25",
@@ -215,6 +335,72 @@
       "id": "cloudai-x/threejs-skills/threejs-textures",
       "commit": "0e181866f095b5f06d005133876e926515390d95",
       "source_tree_sha": "0e181866f095b5f06d005133876e926515390d95",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/agents-sdk",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/cloudflare",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/durable-objects",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/sandbox-stable",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/web-perf",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/workers-best-practices",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "cloudflare/skills/wrangler",
+      "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "source_tree_sha": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd",
+      "has_evals": false
+    },
+    {
+      "id": "davila7/claude-code-templates/drizzle-orm-expert",
+      "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "has_evals": false
+    },
+    {
+      "id": "davila7/claude-code-templates/react-state-management",
+      "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "has_evals": false
+    },
+    {
+      "id": "davila7/claude-code-templates/scikit-learn",
+      "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "has_evals": false
+    },
+    {
+      "id": "davila7/claude-code-templates/senior-data-scientist",
+      "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
+      "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
       "has_evals": false
     },
     {
@@ -2114,9 +2300,51 @@
       "has_evals": true
     },
     {
+      "id": "igmarin/rails-agent-skills/apply-stack-conventions",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/rails-agent-skills/implement-background-job",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/rails-agent-skills/plan-tests",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/rails-agent-skills/review-migration",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/rails-agent-skills/security-check",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
+      "id": "igmarin/rails-agent-skills/test-service",
+      "commit": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "source_tree_sha": "03195c52ee7760f1713df6c099181dd9764478ac",
+      "has_evals": false
+    },
+    {
       "id": "Jeffallan/claude-skills/angular-architect",
       "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
       "source_tree_sha": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+      "has_evals": false
+    },
+    {
+      "id": "jeffallan/claude-skills/cpp-pro",
+      "commit": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "source_tree_sha": "190e05a380b624187f5770451e1f41b9187cb63c",
       "has_evals": false
     },
     {
@@ -2141,6 +2369,12 @@
       "id": "Jeffallan/claude-skills/fastapi-expert",
       "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
       "source_tree_sha": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+      "has_evals": false
+    },
+    {
+      "id": "jeffallan/claude-skills/flutter-expert",
+      "commit": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "source_tree_sha": "190e05a380b624187f5770451e1f41b9187cb63c",
       "has_evals": false
     },
     {
@@ -2174,6 +2408,12 @@
       "has_evals": false
     },
     {
+      "id": "jeffallan/claude-skills/laravel-specialist",
+      "commit": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "source_tree_sha": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "has_evals": false
+    },
+    {
       "id": "Jeffallan/claude-skills/mcp-developer",
       "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
       "source_tree_sha": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
@@ -2189,6 +2429,18 @@
       "id": "Jeffallan/claude-skills/nextjs-developer",
       "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
       "source_tree_sha": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+      "has_evals": false
+    },
+    {
+      "id": "jeffallan/claude-skills/pandas-pro",
+      "commit": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "source_tree_sha": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "has_evals": false
+    },
+    {
+      "id": "jeffallan/claude-skills/php-pro",
+      "commit": "190e05a380b624187f5770451e1f41b9187cb63c",
+      "source_tree_sha": "190e05a380b624187f5770451e1f41b9187cb63c",
       "has_evals": false
     },
     {
@@ -2273,6 +2525,30 @@
       "id": "Jeffallan/claude-skills/wordpress-pro",
       "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
       "source_tree_sha": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+      "has_evals": false
+    },
+    {
+      "id": "kepano/obsidian-skills/json-canvas",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "source_tree_sha": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "has_evals": false
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-bases",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "source_tree_sha": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "has_evals": false
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-cli",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "source_tree_sha": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "has_evals": false
+    },
+    {
+      "id": "kepano/obsidian-skills/obsidian-markdown",
+      "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+      "source_tree_sha": "3ccff5338ea700537839b21900aa5358a0402c98",
       "has_evals": false
     },
     {
@@ -3120,6 +3396,30 @@
       "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09",
       "source_tree_sha": "70aa0cf9926285dbef6ac39bc36990ece230cd09",
       "has_evals": true
+    },
+    {
+      "id": "prisma/skills/prisma-cli",
+      "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "has_evals": false
+    },
+    {
+      "id": "prisma/skills/prisma-client-api",
+      "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "has_evals": false
+    },
+    {
+      "id": "prisma/skills/prisma-database-setup",
+      "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "has_evals": false
+    },
+    {
+      "id": "prisma/skills/prisma-postgres",
+      "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
+      "has_evals": false
     },
     {
       "id": "samber/cc-skills-golang/golang-code-style",
@@ -4049,6 +4349,48 @@
       "id": "wordpress/agent-skills/wp-wpcli-and-ops",
       "commit": "eff3785fc28c4380d172094518c66a6a997c95d4",
       "source_tree_sha": "eff3785fc28c4380d172094518c66a6a997c95d4",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/bash-defensive-patterns",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/fastapi-templates",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/nodejs-backend-patterns",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/python-background-jobs",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/python-testing-patterns",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/terraform-module-library",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "has_evals": false
+    },
+    {
+      "id": "wshobson/agents/typescript-advanced-types",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_tree_sha": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
       "has_evals": false
     }
   ]
