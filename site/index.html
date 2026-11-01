@@ -167,7 +167,7 @@ function qhtml(s){
 function row(s){
   const tags=s.ts.slice(0,2).map(t=>esc(t.name));
   const more=s.ts.length+s.cs.length-tags.length;
-  const b=[...tags,...(more>0?['+'+more]:[]),...(s.fe?['<i>frontend essential</i>']:[])].join(', ');
+  const b=[...tags,...(more>0?['+'+more]:[]),...(s.fe?['<i>frontend essential</i>']:[]),...(s.has_evals?['<span class="q">Evals</span>']:[])].join(', ');
   const sr=s.source_research;
   return `<details><summary><span class="n">${esc(s.skill_name)}</span><span class="p">${esc(s.repository)}</span><span class="b">${b}${s.q?` <span class="q" data-s="${s.qs}">${QL[s.qs]}</span>`:''}</span></summary><div class="d"><dl>
 <dt>ID</dt><dd><code>${esc(s.id)}</code></dd>
@@ -175,6 +175,7 @@ function row(s){
 ${s.url?`<dt>SKILL.md</dt><dd><a href="${esc(s.url)}" rel="noopener">Pinned at ${esc((s.commit||'').slice(0,7))}</a></dd>`:'<dt>SKILL.md</dt><dd class="m">No verified source URL</dd>'}
 ${s.ts.length?`<dt>Technologies</dt><dd>${s.ts.map(t=>`<button class="chip" data-k="tech" data-v="${esc(t.id)}">${esc(t.name)}</button>`).join('')}</dd>`:''}
 ${s.cs.length?`<dt>Combinations</dt><dd>${s.cs.map(c=>`<button class="chip" data-k="combo" data-v="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</dd>`:''}
+<dt>Evals</dt><dd>${s.has_evals?'Tracked evals/ files present':'No tracked evals/ files at pinned commit'}</dd>
 ${sr?`<dt>Reported</dt><dd>${esc(sr.license_reported)} license, ${esc(sr.size_reported)}, ${sr.reviewed_for_security?'security reviewed':'not security reviewed'}</dd>`:''}
 ${qhtml(s)}
 ${s.why?`<dt>Selection note</dt><dd>${esc(s.why)}</dd>`:''}
