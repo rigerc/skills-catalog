@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "credits_url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/data/source-credits.json",
-  "notes": "Explicitly credited imports with an original SKILL.md path uniquely resolved at a pinned commit; other imports retain the bundle mirror.",
+  "notes": "Explicit source-credits.json attributions from the pinned bundle snapshot. entries contain original skill files resolved at immutable commits; unresolved_credits have no uniquely confirmed original SKILL.md path and retain the commit-pinned bundle mirror as install source.",
   "entries": [
     {
       "old_id": "sickn33/agentic-awesome-skills/2slides-ppt-generator",
@@ -209,7 +209,7 @@
       "original_repository": "getchordlabs/chord",
       "commit": "00c41067e304d348b71841cb1c18910bf37e2859",
       "path": "skills/chord/SKILL.md",
-      "credit_url": "https://github.com/getchordlabs/chord"
+      "credit_url": "https://github.com/getchordlabs/chord/tree/main/skills/chord"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/cline-pilot",
@@ -561,7 +561,7 @@
       "original_repository": "fclairamb/solidping-plugin",
       "commit": "ba030a5167d6d6fd2b8c8d92bc6bb3378cffab87",
       "path": "skills/solidping-monitoring/SKILL.md",
-      "credit_url": "https://github.com/fclairamb/solidping-plugin"
+      "credit_url": "https://github.com/fclairamb/solidping-plugin/tree/main/skills/solidping-monitoring"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/sql-sentinel",
@@ -730,6 +730,224 @@
       "commit": "97d5ad332dd3872edfb6beddda5f8587a4bfc863",
       "path": "skills/youtube-transcript/SKILL.md",
       "credit_url": "https://github.com/tubeagentkit/youtube-transcript-skills"
+    }
+  ],
+  "unresolved_credits": [
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agentic-test-audit",
+      "credited_repository": "timini/agentic-verification",
+      "credit_url": "https://github.com/timini/agentic-verification",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agentic-verify",
+      "credited_repository": "timini/agentic-verification",
+      "credit_url": "https://github.com/timini/agentic-verification",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agy-auto",
+      "credited_repository": "onkarbadve/agy-auto",
+      "credit_url": "https://github.com/onkarbadve/agy-auto",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/altorank",
+      "credited_repository": "AltoRank/altorank",
+      "credit_url": "https://github.com/AltoRank/altorank",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/anti-ui-slop",
+      "credited_repository": "uizze/uizze",
+      "credit_url": "https://github.com/uizze/uizze",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/atlas-cloud-media",
+      "credited_repository": null,
+      "credit_url": null,
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/busabase",
+      "credited_repository": "busabase/skills",
+      "credit_url": "https://github.com/busabase/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ckw-design",
+      "credited_repository": "connerkward/ckw-design-skill",
+      "credit_url": "https://github.com/connerkward/ckw-design-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/curlshot",
+      "credited_repository": "SergiuPogor/curlshot-mcp",
+      "credit_url": "https://github.com/SergiuPogor/curlshot-mcp/tree/main/skills/curlshot",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/daily-gift",
+      "credited_repository": "openclaw/skills",
+      "credit_url": "https://github.com/openclaw/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/five-axis-code-review",
+      "credited_repository": "alapha888/agent-skills-en",
+      "credit_url": "https://github.com/alapha888/agent-skills-en",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/helium-mcp",
+      "credited_repository": "connerlambden/helium-mcp",
+      "credit_url": "https://github.com/connerlambden/helium-mcp",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lemmaly",
+      "credited_repository": "morsechimwai/lemmaly",
+      "credit_url": "https://github.com/morsechimwai/lemmaly",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkdigest-social-link-reader",
+      "credited_repository": "jcaiagent7143-ui/linkdigest-mcp",
+      "credit_url": "https://github.com/jcaiagent7143-ui/linkdigest-mcp",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkedin-content-generator",
+      "credited_repository": "sarveshtalele/linkedin-content-skill",
+      "credit_url": "https://github.com/sarveshtalele/linkedin-content-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkedin-post-writer",
+      "credited_repository": "sergebulaev/linkedin-skills",
+      "credit_url": "https://github.com/sergebulaev/linkedin-skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lintlang-audit",
+      "credited_repository": "hermes-labs-ai/lintlang",
+      "credit_url": "https://github.com/hermes-labs-ai/lintlang",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lovable-cleanup",
+      "credited_repository": "whoisabhishekadhikari/lovable-cleanup",
+      "credit_url": "https://github.com/whoisabhishekadhikari/lovable-cleanup",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/mirrord",
+      "credited_repository": "metalbear-co/skills",
+      "credit_url": "https://github.com/metalbear-co/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/nika",
+      "credited_repository": "supernovae-st/nika-agents",
+      "credit_url": "https://github.com/supernovae-st/nika-agents",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/nsfw-ai-spicyapi",
+      "credited_repository": "Spicy-API/nsfw-ai-skill",
+      "credit_url": "https://github.com/Spicy-API/nsfw-ai-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ontoly-software-graph",
+      "credited_repository": "0xsarwagya/ontoly",
+      "credit_url": "https://github.com/0xsarwagya/ontoly",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/pptx-deck-creation",
+      "credited_repository": "kimtth/agent-pptify-kit",
+      "credit_url": "https://github.com/kimtth/agent-pptify-kit",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/pre-ship-gate",
+      "credited_repository": "Sharrmavishal/operating-kit",
+      "credit_url": "https://github.com/Sharrmavishal/operating-kit",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/recsys-pipeline-architect",
+      "credited_repository": "mturac/recsys-pipeline-architect",
+      "credit_url": "https://github.com/mturac/recsys-pipeline-architect",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/riffkit",
+      "credited_repository": "riffkit/skill",
+      "credit_url": "https://github.com/riffkit/skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/scarf-single-cell",
+      "credited_repository": "NygenAnalytics/scarf",
+      "credit_url": "https://github.com/NygenAnalytics/scarf",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/screenstudio-alt",
+      "credited_repository": "connerkward/screenstudio-alternative-skill",
+      "credit_url": "https://github.com/connerkward/screenstudio-alternative-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/seo-drift",
+      "credited_repository": "nowork-studio/NotFair",
+      "credit_url": "https://github.com/nowork-studio/NotFair",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shipvela-publish",
+      "credited_repository": "stefanautomateed/shipvela-codex",
+      "credit_url": "https://github.com/stefanautomateed/shipvela-codex",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/system-prompt-lookup",
+      "credited_repository": "Continuum-AI-Corp/OrcaPromptVault",
+      "credit_url": "https://github.com/Continuum-AI-Corp/OrcaPromptVault",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/testdriver-e2e-testing",
+      "credited_repository": "testdriverai/testdriverai",
+      "credit_url": "https://github.com/testdriverai/testdriverai",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/tree-ring-memory",
+      "credited_repository": "TerminallyLazy/Tree-Ring-Memory",
+      "credit_url": "https://github.com/TerminallyLazy/Tree-Ring-Memory",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/unship",
+      "credited_repository": "mbenhard/unship",
+      "credit_url": "https://github.com/mbenhard/unship",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/us-property-data",
+      "credited_repository": "ZeroPointRepo/zillow-skills",
+      "credit_url": "https://github.com/ZeroPointRepo/zillow-skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/youtube-full",
+      "credited_repository": "ZeroPointRepo/youtube-skills",
+      "credit_url": "https://github.com/ZeroPointRepo/youtube-skills",
+      "status": "source_file_unresolved"
     }
   ]
 }
