@@ -26,6 +26,23 @@ jobs:
       - run: node scripts/catalog.mjs --check --skip-unmapped
       - name: Validate generated skills manifest (without committing it)
         run: node scripts/manifest.mjs --check
+      - name: Dry-run Pages cohort assembly and integrity
+        run: |
+          MANIFEST_SOURCE_COMMIT="$GITHUB_SHA" node scripts/manifest.mjs --write
+          mkdir -p _site/data
+          cp data/manifest.json data/mappings.json data/technology-detection-rules.json _site/data/
+          node --input-type=module -e '
+            import {readFileSync} from "node:fs";
+            import {createHash} from "node:crypto";
+            const root="_site/data/";
+            const manifest=JSON.parse(readFileSync(root+"manifest.json","utf8"));
+            const digest=path=>createHash("sha256").update(readFileSync(root+path)).digest("hex");
+            if (manifest.integrity.mappings!==digest("mappings.json") ||
+                manifest.integrity.rules!==digest("technology-detection-rules.json") ||
+                manifest.source_commit!==process.env.GITHUB_SHA)
+              throw Error("Pages cohort hash or source commit mismatch");
+            console.log("Pages cohort ready:", manifest.skills.length, "skills");
+          '
       - name: Check quality results invariants (offline)
         run: node scripts/quality.mjs --check
       - name: Check model score invariants (offline)
