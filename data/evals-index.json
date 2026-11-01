@@ -2834,6 +2834,16 @@
       "has_evals": false
     },
     {
+      "id": "jeremylongshore/tons-of-skills-marketplace/generating-grpc-services",
+      "commit": "ab85a061f7bcc039dac13ee193de7a4cd4388571",
+      "has_evals": false
+    },
+    {
+      "id": "jeremylongshore/tons-of-skills-marketplace/sentry-performance-tracing",
+      "commit": "ab85a061f7bcc039dac13ee193de7a4cd4388571",
+      "has_evals": false
+    },
+    {
       "id": "Junaid-PK/laravel-development-workflow/laravel-development-workflow",
       "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
       "source_tree_sha": "e8747afc1a427ae16e70ec01ad994788e71936a4",
@@ -4098,6 +4108,11 @@
       "id": "sergiodxa/agent-skills/ruby-on-rails-best-practices",
       "commit": "40e21b46189d5c7de6610b68a25280af863f8775",
       "has_evals": false
+    },
+    {
+      "id": "shadcn/ui/shadcn",
+      "commit": "96da9cc7f1aa10580a3741664e2a77c721206c00",
+      "has_evals": true
     },
     {
       "id": "sharanharsoor/skills/fastmcp",
