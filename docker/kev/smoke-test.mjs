@@ -3,7 +3,7 @@
  * /v1/models, then submits one five-question score request and validates the typed answers.
  * Usage: node docker/kev/smoke-test.mjs [base-url]   (default http://127.0.0.1:8009)
  * Optional: KEV_API_KEY is sent as bearer authentication when set. */
-import {JEV_QUESTIONS, validateJevEvaluation, kevBaseUrl, kevSystemOneEndpoint, verifyKev} from '../../scripts/jev-evaluator.mjs';
+import {JEV_QUESTIONS, JEV_LIMITATIONS, validateJevEvaluation, kevBaseUrl, kevSystemOneEndpoint, verifyKev} from '../../scripts/jev-evaluator.mjs';
 
 const options = {kevBaseUrl: process.argv[2], model: 'kev-latest'};
 const base = kevBaseUrl(options);
@@ -33,7 +33,7 @@ try {
     }
     return [key, {score: answer.score + 1, native_score: answer.score, legend: answer.legend, probabilities: answer.probabilities}];
   }));
-  validateJevEvaluation({scores, limitations: []});
+  validateJevEvaluation({scores, limitations: [...JEV_LIMITATIONS]});
   const overall = Object.values(scores).reduce((sum, s) => sum + s.score, 0) / Object.keys(JEV_QUESTIONS).length;
   console.log('Five-question request OK. Overall: ' + overall.toFixed(2) + '/5, request id: ' +
     (response.headers.get('x-typesafe-request-id') ?? 'none') + ', usage: ' + JSON.stringify(body.usage ?? null));

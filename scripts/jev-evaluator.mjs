@@ -13,7 +13,7 @@ export const JEV_ENDPOINTS = {
   'opencode-go': {name: 'OpenCode free Jev', model: 'jev-1.13-free', key: 'OPENCODE_API_KEY',
     endpoint: 'https://opencode.ai/inference/systemone/v1/systemone', billing: 'limited-time free input and output', contextErrors: true},
   kev: {name: 'Local Kev', model: 'kev-latest', key: 'KEV_API_KEY', local: true,
-    endpoint: 'http://127.0.0.1:8009/v1/systemone', billing: 'local Kev-4B inference, no service cost', contextErrors: true},
+    endpoint: 'http://127.0.0.1:8009/v1/systemone', billing: 'local Kev-0.8B inference, no service cost', contextErrors: true},
 };
 
 /** Docker-hosted Kev-0.8B serving defaults (docker/kev/compose.yaml); see docs/quality.md. */
@@ -214,7 +214,7 @@ export async function verifyKev(options, {fetchImpl = fetch, apiKey, beforeReque
   try {
     await beforeRequest();
     const response = await fetchImpl(url, {method: 'GET', redirect: 'error',
-      signal: AbortSignal.timeout(options.timeoutSeconds * 1000),
+      signal: AbortSignal.timeout((options.timeoutSeconds ?? 180) * 1000),
       headers: {...(apiKey ? {Authorization: 'Bearer ' + apiKey} : {}), Accept: 'application/json'}});
     if (!response.ok) throw new RequestError('Local Kev /v1/models returned HTTP ' + response.status, true, 'kev_verification');
     return kevProvenance(await response.json(), url);
