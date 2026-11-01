@@ -70,7 +70,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     ? readFileSync(env.QUALITY_PR_REPORT_FILE, 'utf8') : '';
   const body = formatComment({
     report, targets: env.QUALITY_TARGETS, repo: env.GITHUB_REPOSITORY,
-    runId: env.GITHUB_RUN_ID, sha: env.GITHUB_SHA,
+    runId: env.GITHUB_RUN_ID, sha: env.QUALITY_HEAD_SHA || env.GITHUB_SHA,
   });
   upsertComment({
     token: env.GITHUB_TOKEN, repo: env.GITHUB_REPOSITORY,
