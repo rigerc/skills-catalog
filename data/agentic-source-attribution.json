@@ -76,6 +76,14 @@
       "credit_url": "https://github.com/aomi-labs/skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/apple-notes-search",
+      "name": "apple-notes-search",
+      "original_repository": "connerkward/mcp-apple-notes",
+      "commit": "8a399dc8a31bcc7b99c5889735e256667ce54f80",
+      "path": "skills/apple-notes-search/SKILL.md",
+      "credit_url": "https://github.com/connerkward/mcp-apple-notes"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/assay",
       "name": "assay",
       "original_repository": "awss1i/assay",
@@ -132,6 +140,14 @@
       "credit_url": "https://github.com/amElnagdy/review-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/drizzle-migration-conflict",
+      "name": "drizzle-migration-conflict",
+      "original_repository": "chaunsin/agent-skills",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "path": "skills/drizzle-migration-conflict/SKILL.md",
+      "credit_url": "https://github.com/chaunsin/agent-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
       "name": "ecommerce-listing-image-set",
       "original_repository": "beatra-ai/ecommerce-product-images-skill",
@@ -170,6 +186,14 @@
       "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
       "path": "SKILL.md",
       "credit_url": "https://github.com/Junaid-PK/laravel-development-workflow"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lookdev-auto",
+      "name": "lookdev-auto",
+      "original_repository": "connerkward/lookdev-auto-skill",
+      "commit": "f8c2fa0a5d58bb8f5d045ff8d3b7ba9e9f1d74a0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/connerkward/lookdev-auto-skill"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/mock-hunter",
@@ -220,12 +244,28 @@
       "credit_url": "https://github.com/beatra-ai/ai-poster-maker-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/pre-release-review",
+      "name": "pre-release-review",
+      "original_repository": "chaunsin/agent-skills",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "path": "skills/pre-release-review/SKILL.md",
+      "credit_url": "https://github.com/chaunsin/agent-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/product-photo-studio",
       "name": "product-photo-studio",
       "original_repository": "beatra-ai/ai-product-photography-skill",
       "commit": "f06f3d7b37a29ef2e0b9ef5bae45302f34eb1535",
       "path": "skills/product-photo-studio/SKILL.md",
       "credit_url": "https://github.com/beatra-ai/ai-product-photography-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/production-audit",
+      "name": "production-audit",
+      "original_repository": "commitshow/production-audit",
+      "commit": "12c3bd37c6318a0f8b9b6fb075be2e1ab813f4a5",
+      "path": ".claude/skills/production-audit/SKILL.md",
+      "credit_url": "https://github.com/commitshow/production-audit"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
@@ -284,12 +324,28 @@
       "credit_url": "https://github.com/beatra-ai/lyrics-to-song-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/talking-avatar-video",
+      "name": "talking-avatar-video",
+      "original_repository": "beatra-ai/talking-avatar-video-skill",
+      "commit": "5d65df6ca3a201c4094138e9a6d88043f1edf130",
+      "path": "skills/talking-avatar-video/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/talking-avatar-video-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
       "name": "using-agent-skills",
       "original_repository": "addyosmani/agent-skills",
       "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
       "path": "skills/using-agent-skills/SKILL.md",
       "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/viral-video-teardown-remake",
+      "name": "viral-video-teardown-remake",
+      "original_repository": "beatra-ai/viral-video-remake-skill",
+      "commit": "6980d99f261749d903ecc743a6653c736873d45a",
+      "path": "skills/viral-video-teardown-remake/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/viral-video-remake-skill"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/voice-cloning-studio",
