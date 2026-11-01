@@ -24,6 +24,8 @@ jobs:
       - name: Validate canonical JSON Schemas and negative cases
         run: npm run validate:schemas -- --self-test --skip-unmapped
       - run: node scripts/catalog.mjs --check --skip-unmapped
+      - name: Validate generated skills manifest (without committing it)
+        run: node scripts/manifest.mjs --check
       - name: Check quality results invariants (offline)
         run: node scripts/quality.mjs --check
       - name: Check model score invariants (offline)
