@@ -9,7 +9,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Aider | `aider` | Detect-only | — |
 | Anthropic SDK | `anthropic-sdk` | Mapped | `anthropics/skills/claude-api` |
 | Chrome DevTools MCP | `chrome-devtools-mcp` | Detect-only | — |
-| Claude Code | `claude-code` | Detect-only | — |
+| Claude Code | `claude-code` | Mapped | `mattpocock/skills/git-guardrails-claude-code` |
 | Cline | `cline` | Detect-only | — |
 | Cloudflare Agents | `cloudflare-agents` | Mapped | `cloudflare/skills/agents-sdk`, `cloudflare/skills/sandbox-stable` |
 | Cloudflare AI | `cloudflare-ai` | Mapped | `cloudflare/skills/agents-sdk` |
@@ -357,6 +357,8 @@ Requires are evaluated together using Nosey's normal scope policy.
 | Astro + Clerk | `astro-clerk` | `astro` + `clerk` | `clerk/skills/clerk-astro-patterns` |
 | Chrome Extension + Clerk | `chrome-extension-clerk` | `chrome-extension` + `clerk` | `clerk/skills/clerk-chrome-extension-patterns`, `clerk/skills/clerk-setup`, `clerk/skills/clerk` |
 | Cloudflare + Vite | `cloudflare-vite` | `cloudflare` + `vite` | `cloudflare/vinext/migrate-to-vinext` |
+| Cursor + Next.js + Redux + TypeScript | `cursor-nextjs-redux-typescript` | `cursor` + `nextjs` + `redux` + `typescript` | `Mindrally/skills/nextjs-react-redux-typescript-cursor-rules` |
+| Cursor + Odoo | `cursor-odoo` | `cursor` + `odoo` | `Mindrally/skills/python-odoo-cursor-rules` |
 | Django + Celery | `django-celery` | `django` + `celery` | `affaan-m/ECC/django-celery` |
 | Docker + Node.js | `docker-node` | `docker` + `node` | `bobmatnyc/claude-mpm-skills/docker` |
 | Docker + Python | `docker-python` | `docker` + `python` | `bobmatnyc/claude-mpm-skills/docker` |
