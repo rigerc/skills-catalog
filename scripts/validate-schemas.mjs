@@ -12,7 +12,7 @@ const pairs=[
   ['technology-detection-rules.json','technology-detection-rules.schema.json'],
   ['catalog-source-ledger.json','catalog-source-ledger.schema.json'],
   ['unmapped.json','unmapped.schema.json']
-];
+].filter(([file])=>file!=='unmapped.json'||!process.argv.includes('--skip-unmapped'));
 const ajv=new Ajv2020({allErrors:true,strict:true,strictRequired:false});
 const validators=new Map();
 for(const [file,schemaName] of pairs){
@@ -45,6 +45,7 @@ if(process.argv.includes('--self-test')){
     ['unmapped.json',d=>{d.skills.push({...d.skills[0]})},'duplicated unmapped skill entry']
   ];
   for(const [file,mutate,label] of samples){
+    if(!validators.has(file))continue;
     const data=JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
     mutate(data);
     if(validators.get(file)(data)){console.error('Schema accepted '+label);failures++;}

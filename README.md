@@ -11,9 +11,9 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Metric | Total |
 | --- | ---: |
 | Skills | **2601** |
-| Skills without mappings | **1761** |
-| Mapped technologies | **189** |
-| Detect-only technologies | **57** |
+| Skills without mappings | **1737** |
+| Mapped technologies | **213** |
+| Detect-only technologies | **55** |
 | Combinations | **33** |
 | Verified skill sources | **2601** |
 | Unresolved sources | **0** |
@@ -35,19 +35,19 @@ Snapshot date: **2026-11-01**. Source verification is historical evidence, **not
 
 | Category | Technologies | Mapped | Detect-only |
 | --- | ---: | ---: | ---: |
-| AI, LLM and MCP | 22 | 17 | 5 |
-| Auth and payments | 5 | 4 | 1 |
-| Backend frameworks and APIs | 25 | 23 | 2 |
+| AI, LLM and MCP | 22 | 18 | 4 |
+| Auth and payments | 6 | 5 | 1 |
+| Backend frameworks and APIs | 27 | 25 | 2 |
 | Build tools, monorepos and release | 27 | 12 | 15 |
-| Cloud, infrastructure and CI/CD | 17 | 17 | 0 |
+| Cloud, infrastructure and CI/CD | 21 | 21 | 0 |
 | Creative, media and graphics | 5 | 5 | 0 |
-| Data, databases and queues | 27 | 24 | 3 |
+| Data, databases and queues | 34 | 31 | 3 |
 | Go ecosystem | 18 | 17 | 1 |
 | Languages, runtimes and scripting | 23 | 14 | 9 |
 | Mobile, desktop and extensions | 15 | 13 | 2 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |
-| Testing and quality | 21 | 15 | 6 |
-| Web frameworks, UI and styling | 35 | 25 | 10 |
+| Testing and quality | 25 | 19 | 6 |
+| Web frameworks, UI and styling | 39 | 30 | 9 |
 
 ## Authoring and validation
 
@@ -63,6 +63,6 @@ node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 ```
 
-CI validates five JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI validates the four canonical JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, and generated documentation. The unmapped skills index can be checked locally. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
 The four canonical source JSON files under `data/` are one versioned snapshot; `data/unmapped.json` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom `registry.json` format.

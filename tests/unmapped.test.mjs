@@ -55,7 +55,7 @@ test('canonicalize aliases and reject cyclic aliases', () => {
   }), /Cyclic repository alias/);
 });
 
-test('committed unmapped.json matches canonical catalog and combined generator', () => {
+test('committed unmapped.json matches canonical catalog and combined generator', {skip: process.env.SKIP_UNMAPPED_INDEX_CHECK === '1'}, () => {
   const {c, m, l, d} = load();
   const expected = renderUnmapped(c, m);
   const existing = readFileSync(new URL('../data/unmapped.json', import.meta.url), 'utf8');

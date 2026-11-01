@@ -186,7 +186,8 @@
           "id_provenance": {
             "enum": [
               "explicit_in_specification",
-              "derived_from_display_name_not_explicit_in_specification"
+              "derived_from_display_name_not_explicit_in_specification",
+              "author_defined"
             ]
           }
         },

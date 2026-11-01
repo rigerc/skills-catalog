@@ -4,9 +4,9 @@
   "snapshot_date": "2026-11-01",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
-    "technologies": 246,
-    "mapped_technologies": 189,
-    "detect_only_technologies": 57,
+    "technologies": 268,
+    "mapped_technologies": 213,
+    "detect_only_technologies": 55,
     "combinations": 33,
     "distinct_referenced_skills": 2601
   },
@@ -114,13 +114,15 @@
       "id": "context7-mcp",
       "name": "Context7 MCP",
       "category": "AI, LLM and MCP",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/context7-auto-research"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -5467,13 +5469,15 @@
       "id": "d3",
       "name": "D3",
       "category": "Web frameworks, UI and styling",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/claude-d3js-skill"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -6177,6 +6181,430 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "alpine-js",
+      "name": "Alpine.js",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "alpinejs"
+            ]
+          }
+        ],
+        "raw": "npm: alpinejs"
+      },
+      "skill_ids": [
+        "Mindrally/skills/alpine-js"
+      ],
+      "source_document": "https://www.alpinejs.dev/essentials/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "anime-js",
+      "name": "Anime.js",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "animejs"
+            ]
+          }
+        ],
+        "raw": "npm: animejs"
+      },
+      "skill_ids": [
+        "Mindrally/skills/anime-js"
+      ],
+      "source_document": "https://animejs.com/documentation/getting-started/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0",
+      "category": "Auth and payments",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@auth0/auth0-react"
+            ]
+          }
+        ],
+        "raw": "npm: @auth0/auth0-react"
+      },
+      "skill_ids": [
+        "Mindrally/skills/auth0-authentication"
+      ],
+      "source_document": "https://developer.auth0.com/resources/guides/spa/react/basic-authentication/v17-javascript-react-router-5",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "pyspark",
+      "name": "PySpark",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "pyspark"
+            ]
+          }
+        ],
+        "raw": "py: pyspark"
+      },
+      "skill_ids": [
+        "Mindrally/skills/pyspark-etl"
+      ],
+      "source_document": "https://spark.apache.org/docs/latest/api/python/getting_started/install.html",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "torch"
+            ]
+          }
+        ],
+        "raw": "py: torch"
+      },
+      "skill_ids": [
+        "Mindrally/skills/pytorch"
+      ],
+      "source_document": "https://pytorch.org/get-started/locally/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "tensorflow",
+              "tensorflow-cpu"
+            ]
+          }
+        ],
+        "raw": "py: tensorflow, tensorflow-cpu"
+      },
+      "skill_ids": [
+        "Mindrally/skills/tensorflow-deep-learning"
+      ],
+      "source_document": "https://www.tensorflow.org/install/pip",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "selenium"
+            ]
+          }
+        ],
+        "raw": "py: selenium"
+      },
+      "skill_ids": [
+        "Mindrally/skills/selenium-automation"
+      ],
+      "source_document": "https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "puppeteer",
+              "puppeteer-core"
+            ]
+          }
+        ],
+        "raw": "npm: puppeteer, puppeteer-core"
+      },
+      "skill_ids": [
+        "Mindrally/skills/puppeteer-automation"
+      ],
+      "source_document": "https://pptr.dev/guides/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "apache-airflow",
+      "name": "Apache Airflow",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "apache-airflow"
+            ]
+          }
+        ],
+        "raw": "py: apache-airflow"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/airflow-dag-patterns"
+      ],
+      "source_document": "https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "shopify.app.toml"
+            ]
+          }
+        ],
+        "raw": "file: shopify.app.toml"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/shopify-development"
+      ],
+      "source_document": "https://shopify.dev/docs/apps/build/cli-for-apps/app-structure",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "dbt_project.yml or Python dbt-core"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/dbt-transformation-patterns"
+      ],
+      "source_document": "https://docs.getdbt.com/reference/dbt_project.yml",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "sequelize",
+      "name": "Sequelize",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: sequelize"
+      },
+      "skill_ids": [
+        "Mindrally/skills/sequelize"
+      ],
+      "source_document": "https://sequelize.org/docs/v6/getting-started/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "htmx",
+      "name": "htmx",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: htmx.org"
+      },
+      "skill_ids": [
+        "Mindrally/skills/htmx"
+      ],
+      "source_document": "https://htmx.org/docs/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "robot-framework",
+      "name": "Robot Framework",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python robotframework or .robot files"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/robot-framework-skill"
+      ],
+      "source_document": "https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "kustomize",
+      "name": "Kustomize",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "kustomization.yaml"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/kustomize"
+      ],
+      "source_document": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python snowflake-connector-python"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/snowflake-development"
+      ],
+      "source_document": "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector-install",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: n8n"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/n8n-workflow-patterns"
+      ],
+      "source_document": "https://github.com/n8n-io/n8n-docs/blob/main/docs/connect/create-nodes/deploy-your-node/install-private-nodes.md",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "odoo",
+      "name": "Odoo",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python imports from odoo"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/odoo-module-developer"
+      ],
+      "source_document": "https://github.com/odoo/documentation/blob/20.0/content/developer/reference/backend/module.rst",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "k6",
+      "name": "k6",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "JavaScript or TypeScript imports of k6 modules"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/k6-load-testing"
+      ],
+      "source_document": "https://github.com/grafana/k6-docs/blob/main/docs/sources/k6/v2.3.x/get-started/write-your-first-test.md",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "quarkus",
+      "name": "Quarkus",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Quarkus Maven plugin or Gradle dependency"
+      },
+      "skill_ids": [
+        "Mindrally/skills/quarkus"
+      ],
+      "source_document": "https://quarkus.io/guides/maven-tooling",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "datadog.yaml agent configuration"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/datadog"
+      ],
+      "source_document": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "grafana-loki",
+      "name": "Grafana Loki",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "loki.yaml configuration"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/loki-logging"
+      ],
+      "source_document": "https://grafana.com/docs/loki/latest/configure/",
+      "id_provenance": "author_defined"
     }
   ],
   "combinations": [
