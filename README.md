@@ -12,12 +12,12 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 
 | Metric | Total |
 | --- | ---: |
-| Skills | **2601** |
-| Skills without mappings | **1734** |
+| Skills | **867** |
+| Skills without mappings | **0** |
 | Mapped technologies | **214** |
 | Detect-only technologies | **66** |
 | Combinations | **35** |
-| Verified skill sources | **2601** |
+| Verified skill sources | **867** |
 | Unresolved sources | **0** |
 
 Snapshot date: **2026-11-01**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
