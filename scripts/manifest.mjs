@@ -49,7 +49,7 @@ function checkedEntries(inputs) {
       (metadata && catalog.json.catalog_id !== metadata.json.catalog_id)) {
     throw Error('Catalog IDs disagree across manifest inputs');
   }
-  const scoreProblems = checkScores(scores.json, catalog.json, ledger.json).problems;
+  const scoreProblems = checkScores(scores.json, catalog.json, ledger.json.entries).problems;
   const qualityProblems = checkQuality(quality.json, ledger.json.entries).problems;
   if (scoreProblems.length || qualityProblems.length) {
     throw Error('Assessment inputs invalid: ' +
@@ -76,7 +76,7 @@ export function scoreOf(entry, ledger, evaluator) {
     : entry.status === 'evaluated' ? 'current' : 'not_evaluated';
   const scored = entry?.status === 'evaluated';
   const scores = scored ? Object.fromEntries(CRITERIA.map(k =>
-    [k, entry.evaluation?.scores?.[k]?.score ?? null])) : null;
+    [k, typeof entry.evaluation?.scores?.[k] === 'number' ? entry.evaluation.scores[k] : entry.evaluation?.scores?.[k]?.score ?? null])) : null;
   if (scored && !validNumbers(scores)) throw Error('Invalid score criteria for ' + entry.id);
   return {state, overall: scored ? entry.overall_score : null,
     criteria: scores, result_kind: scored ? entry.result_kind : null,
