@@ -67,9 +67,9 @@ export const render=function render(c,m,l,d){
  const categoryRows=sortedCats.map(x=>`| ${esc(x)} | ${cats.get(x).all} | ${cats.get(x).mapped} | ${cats.get(x).all-cats.get(x).mapped} |`).join("\n");
  const README=`# Nosey skills catalog
 
-**Canonical data source for the built-in catalog and technology mappings in [Nosey](https://github.com/rigerc/nosey-5).**
+**Canonical data source for the built-in catalog and technology mappings in [Nosey](https://github.com/rigerc/nosey-6).**
 
-Nosey synchronizes a commit-pinned copy from this repository into its packaged backend, keeping scans and recommendations offline-first. Make changes **here**, not in Nosey's generated copies.
+Nosey 0.5.0 consumes validated digest-pinned manifests published by this catalog and includes a bundled offline fallback. Canonical catalog changes belong **here**, not in Nosey's generated data.
 
 **Interactive catalog:** [Browse skills and technologies](https://rigerc.github.io/skills-catalog/).
 
@@ -121,7 +121,7 @@ node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 \`\`\`
 
-CI validates the four canonical JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, and generated documentation. The unmapped skills index can be checked locally. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI validates canonical JSON Schemas, skill identities, mapping references, detection rules, provenance, quality and generated documentation. A separate workflow proposes documentation regeneration PRs. A manifest publication workflow distributes digest-pinned snapshots while retaining this browsable catalog site.
 
 The four canonical source JSON files under \`data/\` are one versioned snapshot; \`data/unmapped.json\` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
 `;
