@@ -574,15 +574,16 @@ export function checkDoc(doc, ledgerEntries) {
 const cell = text => String(text ?? '').replace(/[|\r\n<>]/g, ' ').slice(0, 160);
 const annotate = text => String(text).replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A');
 
-export function reportMarkdown(entries, {title = 'Skill quality', fetches = 0, skipped = 0, stopped = null} = {}) {
+export function reportMarkdown(entries, {title = 'Skill quality', fetches = 0, skipped = 0, stopped = null, includePassed = false} = {}) {
   const summary = summarize(entries);
   const lines = ['## ' + title, '',
     '- Evaluated: **' + summary.total + '** (pass ' + summary.by_status.pass + ', warn ' + summary.by_status.warn +
       ', fail ' + summary.by_status.fail + ', not evaluated ' + summary.by_status.not_evaluated + ')',
     '- Git fetches: **' + fetches + '**; GitHub REST API requests: **0**'];
   if (skipped) lines.push('- Not attempted this run: **' + skipped + '**' + (stopped ? ' (stopped: ' + stopped + ')' : ''));
-  const notable = entries.filter(e => e.status !== 'pass').sort((a, b) =>
-    ['fail', 'not_evaluated', 'warn'].indexOf(a.status) - ['fail', 'not_evaluated', 'warn'].indexOf(b.status) || byId(a, b));
+  const order = ['fail', 'not_evaluated', 'warn', 'pass'];
+  const notable = entries.filter(e => includePassed || e.status !== 'pass').sort((a, b) =>
+    order.indexOf(a.status) - order.indexOf(b.status) || byId(a, b));
   if (notable.length) {
     lines.push('', '| Skill | Status | Errors | Warnings | First finding |', '| --- | --- | ---: | ---: | --- |');
     for (const e of notable.slice(0, 50)) {
@@ -699,6 +700,12 @@ async function main(argv) {
   const report = reportMarkdown(result.entries, {title, fetches: result.fetches, skipped: result.skipped, stopped: result.stopped});
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
+  if (opts.mode === 'gate' && process.env.QUALITY_PR_REPORT_FILE) {
+    writeFileSync(process.env.QUALITY_PR_REPORT_FILE, reportMarkdown(result.entries, {
+      title: 'Skill quality results for this PR', fetches: result.fetches,
+      skipped: result.skipped, stopped: result.stopped, includePassed: true,
+    }));
+  }
   if (opts.mode === 'gate') {
     const verdict = gateVerdict(result.entries, {waivers: waiverDoc.waivers, skippedIds: result.skippedIds});
     const level = opts.enforce ? 'error' : 'warning';
