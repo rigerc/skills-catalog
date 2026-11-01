@@ -6,15 +6,15 @@ import {fileURLToPath} from 'node:url';
 import {canonicalSkillId, findUnmappedSkills, renderUnmapped} from './unmapped.mjs';
 const root=fileURLToPath(new URL('..',import.meta.url));
 export const load=()=>Object.fromEntries([
- ['c','catalog.json'],['m','mappings.json'],['l','catalog-source-ledger.json'],['d','technology-detection-rules.json']
+ ['c','catalog.json'],['m','mappings.json'],['l','catalog-source-ledger.json'],['d','technology-detection-rules.json'],['e','evals-index.json']
 ].map(([key,name])=>[key,JSON.parse(readFileSync(resolve(root,'data',name),'utf8'))]));
-export const validate=function validate(c,m,l,d){
+export const validate=function validate(c,m,l,d,e=load().e){
   const err=[],fail=s=>err.push(s);
   const arr=(x,n)=>{if(!Array.isArray(x)){fail(n+" not an array");return[]}return x};
-  for(const [n,x] of Object.entries({catalog:c,mappings:m,ledger:l,detection:d}))if(x.schema_version!==1)fail(n+" schema_version != 1");
+  for(const [n,x] of Object.entries({catalog:c,mappings:m,ledger:l,detection:d,evals:e}))if(x.schema_version!==1)fail(n+" schema_version != 1");
   if(c.catalog_id!==m.catalog_id||d.catalog_id!==c.catalog_id)fail("catalog IDs disagree");
   if(c.snapshot_date!==m.snapshot_date)fail("snapshot dates disagree");
-  const skills=arr(c.skills,"skills"),technologies=arr(m.technologies,"technologies"),combinations=arr(m.combinations,"combinations"),rules=arr(d.rules,"rules"),entries=arr(l.entries,"ledger");
+  const skills=arr(c.skills,"skills"),technologies=arr(m.technologies,"technologies"),combinations=arr(m.combinations,"combinations"),rules=arr(d.rules,"rules"),entries=arr(l.entries,"ledger"),evals=arr(e.entries,"evals");
   const aliases=m.repository_aliases??{};
   function canonical(id){
     if(typeof id!=="string")return "";
@@ -23,7 +23,7 @@ export const validate=function validate(c,m,l,d){
   }
   function IDs(items,label){const set=new Set();for(const id of items){if(!id||set.has(id.toLowerCase()))fail(label+": duplicate/empty "+id);set.add((id??"").toLowerCase())}return set}
   const skillsIDs=IDs(skills.map(x=>canonical(x.id)),"skills"),techIDs=IDs(technologies.map(x=>x.id),"technologies"),
-    comboIDs=IDs(combinations.map(x=>x.id),"combinations"),ruleIDs=IDs(rules.map(x=>x.technology_id),"rules"),ledgerIDs=IDs(entries.map(x=>canonical(x.id)),"ledger");
+    comboIDs=IDs(combinations.map(x=>x.id),"combinations"),ruleIDs=IDs(rules.map(x=>x.technology_id),"rules"),ledgerIDs=IDs(entries.map(x=>canonical(x.id)),"ledger"),evalIDs=IDs(evals.map(x=>canonical(x.id)),"evals");
   function checkSkill(id,context){if(!skillsIDs.has(canonical(id).toLowerCase()))fail(context+": unknown skill "+id)}
   const mapped=technologies.filter(x=>x.mapping_status==="mapped"),unmapped=technologies.filter(x=>x.mapping_status==="detect_only");
   const expected={"catalog skills":[c.counts?.distinct_skills,skills.length],"mapped technologies":[c.counts?.technologies_with_skills,mapped.length],
@@ -43,6 +43,18 @@ export const validate=function validate(c,m,l,d){
     if(s.id!==`${s.repository}/${s.skill_name}`)fail("skill identity mismatch "+s.id);
     for(const id of s.recommended_for?.technology_ids??[])if(!techIDs.has(id.toLowerCase()))fail("unknown technology backlink "+id);
     for(const id of s.recommended_for?.combination_ids??[])if(!comboIDs.has(id.toLowerCase()))fail("unknown combination backlink "+id)}
+  const evalById=new Map(evals.map(x=>[x.id,x]));
+  const ledgerById=new Map(entries.map(x=>[x.id,x]));
+  for(const s of skills){
+    const evidence=evalById.get(s.id),source=ledgerById.get(s.id);
+    if(typeof s.has_evals!=="boolean")fail("missing/invalid has_evals for "+s.id);
+    if(!evidence)fail("missing eval evidence for "+s.id);
+    else {
+      if(typeof evidence.has_evals!=="boolean"||evidence.has_evals!==s.has_evals)fail("eval marker/evidence mismatch "+s.id);
+      if(!source||source.status!=="verified"||evidence.commit!==source.commit)fail("eval source pin mismatch "+s.id);
+    }
+  }
+  for(const id of evalIDs)if(!skillsIDs.has(id))fail("extraneous eval evidence "+id);
   for(const id of skillsIDs)if(!ledgerIDs.has(id))fail("missing ledger entry "+id);
   for(const id of ledgerIDs)if(!skillsIDs.has(id))fail("extraneous ledger entry "+id);
   for(const e of entries){if(e.status==="verified"){if(!/^[a-f0-9]{40}$/.test(e.commit??"")||typeof e.url!=="string"||!e.url.startsWith("https://github.com/")||!e.url.includes("/blob/"+e.commit+"/")||!e.url.endsWith("/SKILL.md"))fail("bad verified source "+e.id)}
@@ -128,9 +140,9 @@ The four canonical source JSON files under \`data/\` are one versioned snapshot;
 
 Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalog-source-ledger.json). **Verified** identifies a skill file at the recorded commit; it does not constitute a safety audit or guarantee of availability.
 
-| Canonical skill ID | Repository | Skill | Source | Technology mappings | Combinations |
+| Canonical skill ID | Repository | Skill | Source | Evals | Technology mappings | Combinations |
 | --- | --- | --- | --- | ---: | ---: |
-${c.skills.slice().sort((a,b)=>a.id.localeCompare(b.id)).map(s=>{const e=provenance.get(s.id);const status=e?.status==="verified"?`[Verified source](${e.url})`:"Unresolved";return `| ${code(s.id)} | ${esc(s.repository)} | ${esc(s.skill_name)} | ${status} | ${s.recommended_for.technology_ids.length} | ${s.recommended_for.combination_ids.length} |`}).join("\n")}
+${c.skills.slice().sort((a,b)=>a.id.localeCompare(b.id)).map(s=>{const e=provenance.get(s.id);const status=e?.status==="verified"?`[Verified source](${e.url})`:"Unresolved";return `| ${code(s.id)} | ${esc(s.repository)} | ${esc(s.skill_name)} | ${status} | ${s.has_evals?"Yes":"No"} | ${s.recommended_for.technology_ids.length} | ${s.recommended_for.combination_ids.length} |`}).join("\n")}
 
 **${stats.skills} skills** · ${stats.verified} verified · ${stats.unresolved} unresolved.
 `;
@@ -163,7 +175,7 @@ if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const [cmd,...extra]=process.argv.slice(2);
  if(extra.some(x=>x!=='--skip-unmapped')||extra.length>1||!['--check','--write','--validate'].includes(cmd)||extra.length&&cmd!=='--check'){console.error('Usage: node scripts/catalog.mjs --check [--skip-unmapped] | --write | --validate');process.exitCode=2}
  else try{
-  const {c,m,l,d}=load();const result=validate(c,m,l,d);
+  const {c,m,l,d,e}=load();const result=validate(c,m,l,d,e);
   if(cmd!=='--validate'){const docs=render(c,m,l,d);const stale=[];
    for(const [name,output] of Object.entries(docs)){if(name==='data/unmapped.json'&&extra.includes('--skip-unmapped'))continue;const path=resolve(root,name);
     if(cmd==='--write')writeFileSync(path,output,'utf8');
