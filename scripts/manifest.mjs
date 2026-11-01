@@ -161,7 +161,8 @@ export function buildManifest(inputs, sourceCommit) {
     const meta = metaOf(metaBy.get(skill.id), led, skill.source_research);
     counts.score[score.state]++; counts.quality[qualityResult.state]++; counts.meta[meta.state]++;
     const record = {id: skill.id, repository: skill.repository, skill_name: skill.skill_name,
-      source, meta, score, quality: qualityResult};
+      source, meta: metaBy.has(skill.id) || skill.source_research ? meta : null,
+      score, quality: qualityResult};
     if (!grouped.has(skill.repository)) grouped.set(skill.repository, []);
     grouped.get(skill.repository).push(record);
     return record;
