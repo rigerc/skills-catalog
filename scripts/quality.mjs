@@ -2,15 +2,17 @@
 /**
  * Offline skill-validator quality results for pinned catalog skills.
  *
- * Network model: git transport only (one blobless shallow fetch per distinct
- * repository+commit, then a sparse checkout of just the needed skill dirs).
+ * Network model: Git transport only (a treeless fetch for a few ledger-selected
+ * paths, otherwise a blobless fetch per repository+commit), followed by a
+ * sparse checkout of whole selected skill directories recursively.
  * No GitHub REST/GraphQL API calls. Fetched content is never executed; it is
  * only read by skill-validator. Live link checking and LLM scoring are not run.
  *
  *   node scripts/quality.mjs --check                 offline invariants (CI)
  *   node scripts/quality.mjs --write [--all]         refresh missing/stale entries
  *   node scripts/quality.mjs --gate --base <sha>     evaluate changed pins only; no write
- *   node scripts/quality.mjs --plan --base <sha>     count targets (no network)
+ *   node scripts/quality.mjs --plan --base <sha>     count changed targets (no network)
+ *   node scripts/quality.mjs --plan-refresh         count missing/stale targets (no network)
  *   node scripts/quality.mjs --print-version         validator version to install
  * Options: --ids a,b  --max-groups N  --deadline-minutes N  --concurrency N  --enforce
  * Env: SKILL_VALIDATOR_BIN (default skill-validator), QUALITY_GIT_BASE (tests).
@@ -185,7 +187,11 @@ export async function fetchGroup(group, work, {exec = run, base = process.env.QU
   const steps = [
     () => git(['init', '-q'], {timeout: remaining(deadline)}),
     () => git(['remote', 'add', 'origin', base + group.repo + '.git'], {timeout: remaining(deadline)}),
-    () => git(['fetch', '-q', '--depth=1', '--filter=blob:none', 'origin', group.commit], {timeout: remaining(deadline)}),
+    // For small groups, fetch the commit first, and lazily hydrate tree metadata
+    // only along selected ledger paths. For dense groups, reuse blobless trees.
+    () => git(['fetch', '-q', '--depth=1',
+      '--filter=' + (group.skills.length <= 4 && group.skills.every(s => s.dir) ? 'tree:0' : 'blob:none'),
+      'origin', group.commit], {timeout: remaining(deadline)}),
   ];
   for (const step of steps) {
     if (Date.now() >= deadline) return {ok: false, code: 'timeout', message: 'Repository group exceeded its deadline'};
@@ -195,31 +201,38 @@ export async function fetchGroup(group, work, {exec = run, base = process.env.QU
   return {ok: true, repoDir, git};
 }
 
-/** List tree metadata without fetching blobs: counts AND uncompressed sizes per skill. */
+/** Count every Git-tracked path inside each selected skill directory.
+ * Never use ls-tree -l on a partial clone: Git downloads missing blobs to
+ * determine their sizes. Check actual bytes on disk after targeted checkout.
+ * Small groups hydrate only tree objects along the ledger-selected paths.
+ */
 export async function planTrees(git, skills, {deadline = Infinity} = {}) {
-  const result = await git(['ls-tree', '-r', '-l', '-z', 'FETCH_HEAD'], {timeout: remaining(deadline)});
-  if (result.code !== 0 || result.timedOut || result.stdoutTruncated) {
-    return {ok: false, code: result.timedOut ? 'timeout' : 'resource_limit', message: 'Could not enumerate the complete pinned Git tree'};
-  }
-  const stats = new Map([['', {files: 0, bytes: 0}]]);
-  const rootFiles = {files: 0, bytes: 0};
   const wanted = new Set(skills.map(s => s.dir));
-  for (const dir of wanted) stats.set(dir, {files: 0, bytes: 0});
-  for (const line of result.out.split('\0')) {
-    if (!line) continue;
-    const tab = line.indexOf('\t');
-    if (tab < 0) return {ok: false, code: 'fetch_failed', message: 'Malformed git ls-tree output'};
-    const fields = line.slice(0, tab).split(' ');
-    const path = line.slice(tab + 1);
-    const type = fields[1];
-    const size = type === 'blob' ? Number(fields[3]) : 0;
-    if (!Number.isSafeInteger(size) || size < 0) return {ok: false, code: 'fetch_failed', message: 'Unknown Git tree blob size'};
-    const update = dir => {const s = stats.get(dir); s.files++; s.bytes += size;};
-    if (stats.has('')) update('');
-    if (!path.includes('/')) {rootFiles.files++; rootFiles.bytes += size;}
-    for (let i = path.lastIndexOf('/'); i > 0; i = path.lastIndexOf('/', i - 1)) {
-      const prefix = path.slice(0, i);
-      if (wanted.has(prefix)) update(prefix);
+  const stats = new Map([['', {files: 0}]]);
+  const rootFiles = {files: 0};
+  for (const dir of wanted) stats.set(dir, {files: 0});
+  const scoped = wanted.size <= 4 && !wanted.has('');
+  const trees = scoped ? [...wanted].map(dir => ({dir, rev: 'FETCH_HEAD:' + dir}))
+    : [{dir: '', rev: 'FETCH_HEAD'}];
+  for (const {dir, rev} of trees) {
+    if (Date.now() >= deadline) return {ok: false, code: 'timeout', message: 'Git tree enumeration exceeded deadline'};
+    const result = await git(['ls-tree', '-r', '-z', rev], {timeout: remaining(deadline)});
+    if (result.code !== 0 || result.timedOut || result.stdoutTruncated) {
+      return {ok: false, code: result.timedOut ? 'timeout' : 'fetch_failed',
+        message: 'Could not enumerate pinned Git tree: ' + dir};
+    }
+    for (const line of result.out.split('\0')) {
+      if (!line) continue;
+      const tab = line.indexOf('\t');
+      if (tab < 0) return {ok: false, code: 'fetch_failed', message: 'Malformed git ls-tree output'};
+      if (scoped) {stats.get(dir).files++; continue;}
+      const path = line.slice(tab + 1);
+      stats.get('').files++;
+      if (!path.includes('/')) rootFiles.files++;
+      for (let i = path.lastIndexOf('/'); i > 0; i = path.lastIndexOf('/', i - 1)) {
+        const prefix = path.slice(0, i);
+        if (wanted.has(prefix)) stats.get(prefix).files++;
+      }
     }
   }
   return {ok: true, stats, rootFiles};
@@ -228,8 +241,16 @@ export async function planTrees(git, skills, {deadline = Infinity} = {}) {
 export async function checkoutPlanned(fetched, dirs, {deadline = Infinity} = {}) {
   const {git} = fetched;
   if (!dirs.includes('')) {
-    const set = await git(['sparse-checkout', 'set', '--cone', '--stdin'],
-      {input: [...new Set(dirs)].join('\n') + '\n', timeout: remaining(deadline)});
+    // Git non-cone patterns are glob expressions: reject metacharacters so
+    // an untrusted upstream path cannot widen the checkout unexpectedly.
+    if (dirs.some(dir => /[\[\]*?\\\r\n]/.test(dir))) {
+      return {ok: false, code: 'fetch_failed', message: 'Skill path cannot be represented safely as a sparse-checkout pattern'};
+    }
+    // Slash-suffixed directory patterns include every nested tracked file,
+    // not just known folders (references/, scripts/, assets/, etc).
+    // Unlike cone mode, unrelated repository-root files are excluded.
+    const set = await git(['sparse-checkout', 'set', '--no-cone', '--stdin'],
+      {input: [...new Set(dirs)].map(dir => '/' + dir + '/').join('\n') + '\n', timeout: remaining(deadline)});
     if (set.code !== 0 || set.timedOut) return {ok: false, code: classifyGitFailure(set), message: clean(set.err)};
   }
   if (Date.now() >= deadline) return {ok: false, code: 'timeout', message: 'Repository group exceeded its deadline'};
@@ -238,8 +259,9 @@ export async function checkoutPlanned(fetched, dirs, {deadline = Infinity} = {})
     : {ok: false, code: classifyGitFailure(result), message: clean(result.err)};
 }
 
-export async function treeSha(git, dir) {
-  const result = await git(['rev-parse', dir ? 'FETCH_HEAD:' + dir : 'FETCH_HEAD^{tree}']);
+export async function treeSha(git, dir, {deadline = Infinity} = {}) {
+  const result = await git(['rev-parse', dir ? 'FETCH_HEAD:' + dir : 'FETCH_HEAD^{tree}'],
+    {timeout: remaining(deadline)});
   const sha = result.out.trim();
   return result.code === 0 && SHA40.test(sha) ? sha : undefined;
 }
@@ -331,9 +353,9 @@ const failed = (loc, fp, now, code, message, tree, tool) => ({
 });
 
 export async function evaluateGroup(group, {tool = TOOL, now, exec = run, base, bin, poolSize = 4,
-  validatorTimeout = 60000, cache = new Map(), limits = LIMITS} = {}) {
+  validatorTimeout = 60000, cache = new Map(), limits = LIMITS, runDeadline = Infinity} = {}) {
   const started = Date.now();
-  const deadline = started + limits.groupTimeoutMs;
+  const deadline = Math.min(started + limits.groupTimeoutMs, runDeadline);
   const fp = fingerprint(tool);
   const work = mkdtempSync(join(tmpdir(), 'quality-'));
   const stats = {fetches: 1, ms: 0, bytes: 0, reused: 0, resourceLimited: 0};
@@ -347,14 +369,14 @@ export async function evaluateGroup(group, {tool = TOOL, now, exec = run, base, 
       entries: group.skills.map(s => fail(s, planned.code, planned.message))};
     const entries = new Array(group.skills.length);
     const todo = [];
-    // Sparse cone checkouts include root-level files. Account for them even when
-    // only nested skill directories were explicitly requested.
-    let plannedGroupBytes = planned.rootFiles.bytes;
-    let plannedGroupFiles = planned.rootFiles.files;
+    // Non-cone sparse checkout includes only selected directories; root-level
+    // SKILL.md makes the whole repository the selected skill directory.
+    // Bytes are checked after checkout, never with ls-tree -l.
+    let plannedGroupFiles = group.skills.some(s => s.dir === '') ? planned.rootFiles.files : 0;
     const coveredDirs = new Set();
     for (const [index, loc] of group.skills.entries()) {
       if (Date.now() >= deadline) {entries[index] = fail(loc, 'timeout', 'Repository group deadline exceeded'); continue;}
-      const tree = await treeSha(fetched.git, loc.dir);
+      const tree = await treeSha(fetched.git, loc.dir, {deadline});
       const hit = cache.get(loc.id);
       if (tree && hit?.source?.tree_sha === tree && hit.fingerprint === fp &&
           !(hit.status === 'not_evaluated' && RETRYABLE.has(hit.not_evaluated?.code))) {
@@ -362,20 +384,18 @@ export async function evaluateGroup(group, {tool = TOOL, now, exec = run, base, 
         stats.reused++;
       } else {
         const size = planned.stats.get(loc.dir);
-        if (!size || size.files > limits.maxFilesPerSkill || size.bytes > limits.maxBytesPerSkill) {
-          entries[index] = fail(loc, 'resource_limit', 'Skill directory exceeds file/byte budget', tree);
+        if (!size || size.files > limits.maxFilesPerSkill) {
+          entries[index] = fail(loc, 'resource_limit', 'Skill directory exceeds tracked-file budget', tree);
           stats.resourceLimited++;
         } else {
           // Avoid double-counting skill subdirectories nested under another selected dir.
           const covered = [...coveredDirs].some(d => !d || loc.dir.startsWith(d + '/'));
-          const incrementBytes = loc.dir ? size.bytes : Math.max(0, size.bytes - plannedGroupBytes);
           const incrementFiles = loc.dir ? size.files : Math.max(0, size.files - plannedGroupFiles);
-          if (!covered && (plannedGroupBytes + incrementBytes > limits.maxBytesPerGroup ||
-              plannedGroupFiles + incrementFiles > limits.maxFilesPerGroup)) {
-            entries[index] = fail(loc, 'resource_limit', 'Repository group checkout budget exceeded', tree);
+          if (!covered && plannedGroupFiles + incrementFiles > limits.maxFilesPerGroup) {
+            entries[index] = fail(loc, 'resource_limit', 'Repository group tracked-file budget exceeded', tree);
             stats.resourceLimited++;
           } else {
-            if (!covered) {plannedGroupBytes += incrementBytes; plannedGroupFiles += incrementFiles; coveredDirs.add(loc.dir);}
+            if (!covered) {plannedGroupFiles += incrementFiles; coveredDirs.add(loc.dir);}
             todo.push({index, loc, tree});
           }
         }
@@ -440,7 +460,8 @@ export async function evaluate(targets, {concurrency = 2, deadline = Infinity, m
       const group = groups[next++];
       await spacer();
       if (stopped) return;
-      const result = await evaluateGroup(group, {...opts, limits});
+      if (Date.now() >= deadline) {stopped = 'deadline'; return;}
+      const result = await evaluateGroup(group, {...opts, limits, runDeadline: deadline});
       fetches += result.fetches;
       for (const k of Object.keys(totals)) totals[k] += result[k];
       results.push(...result.entries);
@@ -620,7 +641,7 @@ function parseArgs(argv) {
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     const value = () => {if (i + 1 >= argv.length) throw new Error('Missing value for ' + a); return argv[++i];};
-    if (['--check', '--write', '--gate', '--plan', '--print-version'].includes(a)) opts.mode = a.slice(2);
+    if (['--check', '--write', '--gate', '--plan', '--plan-refresh', '--print-version'].includes(a)) opts.mode = a.slice(2);
     else if (a === '--enforce') opts.enforce = true;
     else if (a === '--all') opts.all = true;
     else if (a === '--ids') opts.ids = new Set(value().split(',').filter(Boolean));
@@ -630,7 +651,7 @@ function parseArgs(argv) {
     else if (a === '--concurrency') opts.concurrency = Number(value());
     else throw new Error('Unknown argument: ' + a);
   }
-  if (!opts.mode) throw new Error('Usage: quality.mjs --check | --write [--all] | --gate --base <sha> [--enforce] | --plan --base <sha> | --print-version');
+  if (!opts.mode) throw new Error('Usage: quality.mjs --check | --write [--all] | --plan-refresh [--all] | --gate --base <sha> [--enforce] | --plan --base <sha> | --print-version');
   if ([opts.maxGroups, opts.deadlineMinutes, opts.concurrency].some(n => !Number.isFinite(n) && n !== Infinity || n < 0) || opts.concurrency === 0 || (opts.mode === 'gate' || opts.mode === 'plan') && !SHA40.test(opts.base ?? '')) throw new Error('Invalid numeric option');
   return opts;
 }
@@ -660,9 +681,12 @@ async function main(argv) {
   // A PR gate must re-validate changed pins; its cache comes from untrusted PR files.
   // --all also means actual re-evaluation, never just a tree-SHA cache hit.
   const targets = selectTargets(ledger, cache, {all: opts.all || gating, ids: opts.ids, only});
-  if (opts.mode === 'plan') {
-    console.log('Changed pins needing evaluation: ' + targets.length);
-    if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, 'targets=' + targets.length + '\n');
+  if (opts.mode === 'plan' || opts.mode === 'plan-refresh') {
+    const groups = groupTargets(targets).length;
+    console.log((gating ? 'Changed pins' : 'Missing/stale pins') + ' needing evaluation: ' + targets.length +
+      ' across ' + groups + ' repository+commit groups');
+    if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT,
+      'targets=' + targets.length + '\ngroups=' + Math.min(groups, opts.maxGroups) + '\n');
     return;
   }
   const deadline = opts.deadlineMinutes ? Date.now() + opts.deadlineMinutes * 60000 : Infinity;
