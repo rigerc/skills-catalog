@@ -36,6 +36,30 @@
       "credit_url": "https://github.com/beatra-ai/ai-logo-maker-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/ai-multilingual-dubbing",
+      "name": "ai-multilingual-dubbing",
+      "original_repository": "beatra-ai/multilingual-voiceover-skill",
+      "commit": "561cd0436686e1f7a163258967a73bfc938a56cd",
+      "path": "skills/ai-multilingual-dubbing/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/multilingual-voiceover-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-photo-restyler",
+      "name": "ai-photo-restyler",
+      "original_repository": "beatra-ai/photo-to-anime-skill",
+      "commit": "0bc3d42f2414ebc6f09c23e623a5cdca3b3f1f85",
+      "path": "skills/ai-photo-restyler/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/photo-to-anime-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-podcast-voiceover",
+      "name": "ai-podcast-voiceover",
+      "original_repository": "beatra-ai/ai-podcast-voiceover-skill",
+      "commit": "060adc8af2281c3c18d50d1d99090d4b69ab5c10",
+      "path": "skills/ai-podcast-voiceover/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-podcast-voiceover-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/anywrite",
       "name": "anywrite",
       "original_repository": "Antheurus/anywrite",
@@ -84,6 +108,14 @@
       "credit_url": "https://github.com/beatra-ai/ai-media-generator-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/beatra-ai-video-studio",
+      "name": "beatra-ai-video-studio",
+      "original_repository": "beatra-ai/beatra-skills",
+      "commit": "0626f52f6d60e6b7e7528ab3c2f14fb2665cd6e8",
+      "path": "skills/beatra-ai-video-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/beatra-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
       "name": "browser-testing-with-devtools",
       "original_repository": "addyosmani/agent-skills",
@@ -98,6 +130,14 @@
       "commit": "3cfce3963b4d4d99a8b9059f1ece6726405b7bd3",
       "path": "skills/debate-review/SKILL.md",
       "credit_url": "https://github.com/amElnagdy/review-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
+      "name": "ecommerce-listing-image-set",
+      "original_repository": "beatra-ai/ecommerce-product-images-skill",
+      "commit": "5ecd6f0e1e0f5db05ab3535c2fb0bce5f5a34c4c",
+      "path": "skills/ecommerce-listing-image-set/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ecommerce-product-images-skill"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/electron-drive-skill",
@@ -172,6 +212,22 @@
       "credit_url": "https://github.com/agentbody/skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/poster-design-studio",
+      "name": "poster-design-studio",
+      "original_repository": "beatra-ai/ai-poster-maker-skill",
+      "commit": "f6d657f320e45b0d05bd0bd432d293f4b5fa7379",
+      "path": "skills/poster-design-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-poster-maker-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/product-photo-studio",
+      "name": "product-photo-studio",
+      "original_repository": "beatra-ai/ai-product-photography-skill",
+      "commit": "f06f3d7b37a29ef2e0b9ef5bae45302f34eb1535",
+      "path": "skills/product-photo-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-product-photography-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
       "name": "remote-gpu-trainer",
       "original_repository": "Hanyuyuan6/remote-gpu-trainer",
@@ -220,12 +276,36 @@
       "credit_url": "https://github.com/Antheurus/sshepherd"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/suno-lyrics-to-song",
+      "name": "suno-lyrics-to-song",
+      "original_repository": "beatra-ai/lyrics-to-song-skill",
+      "commit": "900f15a7e7e03b3d1f53180d945464a9109a3085",
+      "path": "skills/suno-lyrics-to-song/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/lyrics-to-song-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
       "name": "using-agent-skills",
       "original_repository": "addyosmani/agent-skills",
       "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
       "path": "skills/using-agent-skills/SKILL.md",
       "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/voice-cloning-studio",
+      "name": "voice-cloning-studio",
+      "original_repository": "beatra-ai/ai-voice-cloning-skill",
+      "commit": "739cb27b0179630834dca67a879aee6360f308c9",
+      "path": "skills/voice-cloning-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-voice-cloning-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/voiceover-narration-studio",
+      "name": "voiceover-narration-studio",
+      "original_repository": "beatra-ai/ai-voiceover-generator-skill",
+      "commit": "9bd7fdbfbeec99194762ccfc433100fbffade3bd",
+      "path": "skills/voiceover-narration-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-voiceover-generator-skill"
     }
   ]
 }
