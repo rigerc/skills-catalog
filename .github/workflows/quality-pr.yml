@@ -14,6 +14,8 @@ permissions:
   contents: read
 jobs:
   gate:
+    env:
+      QUALITY_REPORT_FILE: skill-quality-pr-comment.md
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -69,3 +71,18 @@ jobs:
         env:
           BASE_SHA: ${{ steps.plan.outputs.base_sha }}
         run: node scripts/quality.mjs --gate --base "$BASE_SHA" --max-groups 20 --deadline-minutes 15
+      - name: Ensure a result is available for PR comments
+        if: ${{ always() && github.event_name == 'pull_request' }}
+        env:
+          QUALITY_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ ! -s "$QUALITY_REPORT_FILE" ]; then
+            printf '## Skill quality results\\n\\nThe gate did not produce a complete quality report. See the [workflow run](%s) for errors.\\n' "$QUALITY_RUN_URL" > "$QUALITY_REPORT_FILE"
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: ${{ always() && github.event_name == 'pull_request' }}
+        with:
+          name: skill-quality-pr-report
+          path: skill-quality-pr-comment.md
+          if-no-files-found: error
+          retention-days: 7
