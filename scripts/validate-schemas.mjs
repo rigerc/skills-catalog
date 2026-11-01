@@ -52,6 +52,11 @@ if(process.argv.includes('--self-test')){
   for(const [file,mutate,label] of samples){
     if(!validators.has(file))continue;
     const data=JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
+    // Negative cases need an entry even when the generated index is empty.
+    if(file==='unmapped.json'){
+      data.skills=[{id:'example/skills/example',repository:'example/skills',skill_name:'example'}];
+      data.count=data.skills.length;
+    }
     mutate(data);
     if(validators.get(file)(data)){console.error('Schema accepted '+label);failures++;}
   }

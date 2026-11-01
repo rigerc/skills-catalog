@@ -8,7 +8,7 @@
     "mapped_technologies": 214,
     "detect_only_technologies": 66,
     "combinations": 35,
-    "distinct_referenced_skills": 2601
+    "distinct_referenced_skills": 867
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
