@@ -597,6 +597,45 @@ export function reportMarkdown(entries, {title = 'Skill quality', fetches = 0, s
   return lines.join('\n') + '\n';
 }
 
+/** Reviewable PR comment, including passing skills and explicit no-work results. */
+export function prCommentMarkdown(entries, {fetches = 0, skippedIds = [], stopped = null} = {}) {
+  const totals = summarize(entries);
+  const lines = [
+    '## Skill quality results',
+    '',
+    'Checks cover **new or repinned verified skills** in this PR. **Report-only:** findings do not block merging.',
+    '',
+    '- Checked: **' + totals.total + '** (pass ' + totals.by_status.pass +
+      ', warn ' + totals.by_status.warn + ', fail ' + totals.by_status.fail +
+      ', not evaluated ' + totals.by_status.not_evaluated + ')',
+    '- Git fetch groups attempted: **' + fetches + '**; GitHub REST API requests by validator: **0**',
+  ];
+  if (skippedIds.length) lines.push('- **' + skippedIds.length + '** selected skills were not attempted' +
+    (stopped ? ' (stopped: ' + cell(stopped) + ')' : '') + '.');
+  if (!entries.length && !skippedIds.length) {
+    lines.push('', 'No new or repinned verified skills require quality checking in this PR.');
+  } else {
+    lines.push('', '| Skill | Result | Errors | Warnings | First finding |',
+      '| --- | --- | ---: | ---: | --- |');
+    const reportRows = entries.map(e => ({
+      id: e.id, status: e.status, errors: e.counts?.errors ?? 0, warnings: e.counts?.warnings ?? 0,
+      finding: e.status === 'not_evaluated' ? (e.not_evaluated?.code ?? 'unknown') + ': ' +
+        (e.not_evaluated?.message ?? '') : (e.findings?.find(f => f.level === 'error')?.message ??
+          e.findings?.find(f => f.level === 'warning')?.message ?? e.findings?.[0]?.message ?? '—'),
+    }));
+    for (const id of skippedIds) reportRows.push({id, status: 'not attempted', errors: '—',
+      warnings: '—', finding: stopped ?? 'run incomplete'});
+    const cellSafe = value => cell(value).replace(/[\[\]]/g, '').replace(/@/g, '@\\u200b');
+    for (const item of reportRows.slice(0, 60)) lines.push(
+      '| ' + cellSafe(item.id) + ' | ' + cellSafe(item.status) + ' | ' + item.errors +
+      ' | ' + item.warnings + ' | ' + cellSafe(item.finding) + ' |');
+    if (reportRows.length > 60) lines.push('', '**' + (reportRows.length - 60) +
+      ' additional skills** omitted; see the workflow logs.');
+  }
+  lines.push('', 'Quality results are not a security, licensing, or availability audit.');
+  return lines.join('\\n') + '\\n';
+}
+
 /* ---------- waivers and PR gate ---------- */
 export function findWaiver(waivers, entry, today = new Date().toISOString().slice(0, 10)) {
   return waivers.find(w => w.id === entry.id && w.commit === entry.source.commit &&
@@ -687,6 +726,8 @@ async function main(argv) {
       ' across ' + groups + ' repository+commit groups');
     if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT,
       'targets=' + targets.length + '\ngroups=' + Math.min(groups, opts.maxGroups) + '\n');
+    if (opts.mode === 'plan' && targets.length === 0 && process.env.QUALITY_REPORT_FILE)
+      writeFileSync(resolve(ROOT, process.env.QUALITY_REPORT_FILE), prCommentMarkdown([]));
     return;
   }
   const deadline = opts.deadlineMinutes ? Date.now() + opts.deadlineMinutes * 60000 : Infinity;
@@ -700,6 +741,9 @@ async function main(argv) {
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
   if (opts.mode === 'gate') {
+    if (process.env.QUALITY_REPORT_FILE)
+      writeFileSync(resolve(ROOT, process.env.QUALITY_REPORT_FILE), prCommentMarkdown(result.entries,
+        {fetches: result.fetches, skippedIds: result.skippedIds, stopped: result.stopped}));
     const verdict = gateVerdict(result.entries, {waivers: waiverDoc.waivers, skippedIds: result.skippedIds});
     const level = opts.enforce ? 'error' : 'warning';
     const prefix = opts.enforce ? '' : '[report-only] ';
