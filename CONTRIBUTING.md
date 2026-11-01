@@ -28,9 +28,9 @@ The built-in catalog format here is **not** the additive custom `registry.json` 
 
 ## JSON Schema contracts and ownership
 
-The four canonical JSON files in `data/` each have a **Draft 2020-12 JSON Schema** in [`schemas/`](schemas/). Schema changes belong in this repository and are reviewed by catalog maintainers; changes affecting consumers require coordinated review with Nosey. Keep `schema_version: 1` for compatible changes. A breaking contract change requires a new version and a coordinated Nosey migration.
+The four canonical JSON files in `data/` each have a **Draft 2020-12 JSON Schema** in [`schemas/`](schemas/). The generated `data/unmapped.json` has a fifth structural schema, `schemas/unmapped.schema.json`; it is still produced exclusively by the generator. Schema changes belong in this repository and are reviewed by catalog maintainers; changes affecting consumers require coordinated review with Nosey. Keep `schema_version: 1` for compatible changes. A breaking contract change requires a new version and a coordinated Nosey migration.
 
-Schemas enforce document structure, required fields, enums, signal-specific fields, and source-ledger entry shapes. `scripts/catalog.mjs` remains responsible for cross-document semantics: uniqueness, references, synchronized statuses, counts, aliases, and pinned source consistency. JSON Schema validation does not prove upstream safety or actual scanner accuracy.
+Schemas enforce document structure, required fields, enums, signal-specific fields, source-ledger entry shapes, and the generated unmapped index shape. The generator separately checks the index's count, membership, sorted order, and exact contents. `scripts/catalog.mjs` remains responsible for cross-document semantics: uniqueness, references, synchronized statuses, counts, aliases, and pinned source consistency. JSON Schema validation does not prove upstream safety or actual scanner accuracy.
 
 The normal Node.js catalog commands remain dependency-free. For schema validation, install the **development-only** Ajv validator and run both layers:
 
