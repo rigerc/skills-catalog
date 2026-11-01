@@ -36,6 +36,14 @@
       "credit_url": "https://github.com/FlowLLM-AI/AxonX"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
+      "name": "browser-testing-with-devtools",
+      "original_repository": "addyosmani/agent-skills",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "path": "skills/browser-testing-with-devtools/SKILL.md",
+      "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/electron-drive-skill",
       "name": "electron-drive-skill",
       "original_repository": "Search-3D/electron-drive-skill",
@@ -50,6 +58,14 @@
       "commit": "962648c1b147652244c4e4953e96c65421a79e70",
       "path": "skills/email-marketing-bible/SKILL.md",
       "credit_url": "https://github.com/CosmoBlk/email-marketing-bible"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/idea-os",
+      "name": "idea-os",
+      "original_repository": "Slashworks-biz/idea-os",
+      "commit": "2417d626d16838efeb2a99bebe45425be63cc6d6",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Slashworks-biz/idea-os"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/laravel-development-workflow",
@@ -68,6 +84,14 @@
       "credit_url": "https://github.com/CodeShuX/mockhunter"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/open-dynamic-workflows",
+      "name": "open-dynamic-workflows",
+      "original_repository": "Suraj1235/open-dynamic-workflows",
+      "commit": "972bb98494ea23f907df88850024bd7022b099d4",
+      "path": "packages/openclaw-adapter/skills/open-dynamic-workflows/SKILL.md",
+      "credit_url": "https://github.com/Suraj1235/open-dynamic-workflows"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/outreachgenie-list-audit",
       "name": "outreachgenie-list-audit",
       "original_repository": "Outreachgenie/outreachgenie-linkedin-mcp",
@@ -76,12 +100,28 @@
       "credit_url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/people-data",
+      "name": "people-data",
+      "original_repository": "agentbody/skills",
+      "commit": "2aba22eb7b8b63adf5f98de67a40a2e17d80bc38",
+      "path": "skills/people-data/SKILL.md",
+      "credit_url": "https://github.com/agentbody/skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
       "name": "remote-gpu-trainer",
       "original_repository": "Hanyuyuan6/remote-gpu-trainer",
       "commit": "fe01c55c8bae1ccbfaf2ae7708cdca7c1fdaf785",
       "path": "SKILL.md",
       "credit_url": "https://github.com/Hanyuyuan6/remote-gpu-trainer"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/session-handoff",
+      "name": "session-handoff",
+      "original_repository": "alapha888/session-handoff-kit",
+      "commit": "0ce03c20669b668606c90ba49ebad80d6fbdcfe0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/alapha888/session-handoff-kit"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/since-cutoff",
@@ -98,6 +138,14 @@
       "commit": "492ae7b40da6965363ab0a8656be24326fa5a99b",
       "path": "SKILL.md",
       "credit_url": "https://github.com/Antheurus/sshepherd"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
+      "name": "using-agent-skills",
+      "original_repository": "addyosmani/agent-skills",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "path": "skills/using-agent-skills/SKILL.md",
+      "credit_url": "https://github.com/addyosmani/agent-skills"
     }
   ]
 }
