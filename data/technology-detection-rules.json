@@ -5157,6 +5157,196 @@
           "path": "shopify.app.toml"
         }
       ]
+    },
+    {
+      "technology_id": "dbt",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "dbt_project.yml"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/dbt_project.yml"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "dbt-core"
+        }
+      ]
+    },
+    {
+      "technology_id": "sequelize",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "sequelize"
+        }
+      ]
+    },
+    {
+      "technology_id": "htmx",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "htmx.org"
+        }
+      ]
+    },
+    {
+      "technology_id": "robot-framework",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "robotframework"
+        },
+        {
+          "type": "extension",
+          "suffix": ".robot"
+        }
+      ]
+    },
+    {
+      "technology_id": "kustomize",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "kustomization.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/kustomization.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "snowflake",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "py",
+          "name": "snowflake-connector-python"
+        }
+      ]
+    },
+    {
+      "technology_id": "n8n",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "n8n"
+        }
+      ]
+    },
+    {
+      "technology_id": "odoo",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.py",
+          "regex": "(?m)^\\s*(?:from\\s+odoo(?:\\.[\\w.]+)?\\s+import\\b|import\\s+odoo(?:\\.[\\w.]+)?\\b)",
+          "case_sensitive": true
+        }
+      ]
+    },
+    {
+      "technology_id": "k6",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "*.js",
+          "regex": "(?m)^\\s*import\\s+[^;\\n]+?\\s+from\\s+[\"\\x27]k6(?:/[a-zA-Z0-9_-]+)?[\"\\x27]",
+          "case_sensitive": true
+        },
+        {
+          "type": "content",
+          "path_glob": "*.ts",
+          "regex": "(?m)^\\s*import\\s+[^;\\n]+?\\s+from\\s+[\"\\x27]k6(?:/[a-zA-Z0-9_-]+)?[\"\\x27]",
+          "case_sensitive": true
+        }
+      ]
+    },
+    {
+      "technology_id": "quarkus",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "pom.xml",
+          "regex": "(?m)^\\s*<artifactId>\\s*quarkus-maven-plugin\\s*</artifactId>",
+          "case_sensitive": true
+        },
+        {
+          "type": "content",
+          "path_glob": "build.gradle",
+          "regex": "(?m)^\\s*(?:implementation|api|testImplementation|compileOnly|runtimeOnly)\\s*\\(?\\s*[\"\\x27]io\\.quarkus:quarkus-[a-zA-Z0-9_.-]+",
+          "case_sensitive": true
+        },
+        {
+          "type": "content",
+          "path_glob": "build.gradle.kts",
+          "regex": "(?m)^\\s*(?:implementation|api|testImplementation|compileOnly|runtimeOnly)\\s*\\(?\\s*[\"\\x27]io\\.quarkus:quarkus-[a-zA-Z0-9_.-]+",
+          "case_sensitive": true
+        }
+      ]
+    },
+    {
+      "technology_id": "datadog",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "datadog.yaml"
+        }
+      ]
+    },
+    {
+      "technology_id": "grafana-loki",
+      "mapping_status": "mapped",
+      "origin": "maintainer_reviewed",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "loki.yaml"
+        }
+      ]
     }
   ]
 }

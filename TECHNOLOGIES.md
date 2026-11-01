@@ -64,7 +64,9 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Java | `java` | Mapped | `github/awesome-copilot/java-docs`, `github/awesome-copilot/java-development`, `github/awesome-copilot/java-debugging`, `github/awesome-copilot/java-diagnostics`, `github/awesome-copilot/java-junit`, `github/awesome-copilot/java-testcontainers`, `github/awesome-copilot/java-upgrade`, `affaan-m/everything-claude-code/java-coding-standards`, `Mindrally/skills/java`, `Jeffallan/claude-skills/java-architect`, `HoangNguyen0403/agent-skills-standard/java-best-practices`, `HoangNguyen0403/agent-skills-standard/java-concurrency`, `HoangNguyen0403/agent-skills-standard/java-language`, `HoangNguyen0403/agent-skills-standard/java-testing`, `HoangNguyen0403/agent-skills-standard/java-tooling`, `sickn33/agentic-awesome-skills/java-pro` |
 | Laravel | `laravel` | Mapped | `jeffallan/claude-skills/laravel-specialist`, `affaan-m/everything-claude-code/laravel-patterns`, `Mindrally/skills/laravel`, `Mindrally/skills/laravel-development`, `HoangNguyen0403/agent-skills-standard/laravel-api`, `HoangNguyen0403/agent-skills-standard/laravel-architecture`, `HoangNguyen0403/agent-skills-standard/laravel-background-processing`, `HoangNguyen0403/agent-skills-standard/laravel-clean-architecture`, `HoangNguyen0403/agent-skills-standard/laravel-database-expert`, `HoangNguyen0403/agent-skills-standard/laravel-eloquent`, `HoangNguyen0403/agent-skills-standard/laravel-security`, `HoangNguyen0403/agent-skills-standard/laravel-sessions-middleware`, `HoangNguyen0403/agent-skills-standard/laravel-testing`, `HoangNguyen0403/agent-skills-standard/laravel-tooling`, `sickn33/agentic-awesome-skills/laravel-expert`, `sickn33/agentic-awesome-skills/laravel-security-audit`, `Junaid-PK/laravel-development-workflow/laravel-development-workflow` |
 | NestJS | `nestjs` | Mapped | `kadajett/agent-nestjs-skills/nestjs-best-practices`, `Jeffallan/claude-skills/nestjs-expert`, `Mindrally/skills/nestjs-clean-typescript`, `HoangNguyen0403/agent-skills-standard/nestjs-api-standards`, `HoangNguyen0403/agent-skills-standard/nestjs-architecture`, `HoangNguyen0403/agent-skills-standard/nestjs-bullmq`, `HoangNguyen0403/agent-skills-standard/nestjs-caching`, `HoangNguyen0403/agent-skills-standard/nestjs-configuration`, `HoangNguyen0403/agent-skills-standard/nestjs-controllers-services`, `HoangNguyen0403/agent-skills-standard/nestjs-database`, `HoangNguyen0403/agent-skills-standard/nestjs-deployment`, `HoangNguyen0403/agent-skills-standard/nestjs-documentation`, `HoangNguyen0403/agent-skills-standard/nestjs-error-handling`, `HoangNguyen0403/agent-skills-standard/nestjs-file-uploads`, `HoangNguyen0403/agent-skills-standard/nestjs-notification`, `HoangNguyen0403/agent-skills-standard/nestjs-observability`, `HoangNguyen0403/agent-skills-standard/nestjs-performance`, `HoangNguyen0403/agent-skills-standard/nestjs-real-time`, `HoangNguyen0403/agent-skills-standard/nestjs-scheduling`, `HoangNguyen0403/agent-skills-standard/nestjs-search`, `HoangNguyen0403/agent-skills-standard/nestjs-security`, `HoangNguyen0403/agent-skills-standard/nestjs-security-isolation`, `HoangNguyen0403/agent-skills-standard/nestjs-testing`, `HoangNguyen0403/agent-skills-standard/nestjs-transport` |
+| Odoo | `odoo` | Mapped | `sickn33/agentic-awesome-skills/odoo-module-developer` |
 | Phoenix | `phoenix` | Mapped | `georgeguimaraes/elixir-agent-tools/phoenix`, `Mindrally/skills/phoenix` |
+| Quarkus | `quarkus` | Mapped | `Mindrally/skills/quarkus` |
 | Requests | `requests` | Mapped | `affaan-m/everything-claude-code/python-patterns` |
 | Spring Boot | `springboot` | Mapped | `github/awesome-copilot/java-springboot`, `Jeffallan/claude-skills/spring-boot-engineer`, `Mindrally/skills/java-spring-development`, `Mindrally/skills/spring-boot`, `HoangNguyen0403/agent-skills-standard/spring-boot-api-design`, `HoangNguyen0403/agent-skills-standard/spring-boot-architecture`, `HoangNguyen0403/agent-skills-standard/spring-boot-best-practices`, `HoangNguyen0403/agent-skills-standard/spring-boot-data-access`, `HoangNguyen0403/agent-skills-standard/spring-boot-deployment`, `HoangNguyen0403/agent-skills-standard/spring-boot-microservices`, `HoangNguyen0403/agent-skills-standard/spring-boot-observability`, `HoangNguyen0403/agent-skills-standard/spring-boot-scheduling`, `HoangNguyen0403/agent-skills-standard/spring-boot-security`, `HoangNguyen0403/agent-skills-standard/spring-boot-testing` |
 | Symfony | `symfony` | Mapped | `smnandre/symfony-ux-skills/symfony-ux` |
@@ -110,13 +112,17 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Azure | `azure` | Mapped | `microsoft/github-copilot-for-azure/azure-deploy`, `microsoft/github-copilot-for-azure/azure-ai`, `microsoft/github-copilot-for-azure/azure-diagnostics`, `github/awesome-copilot/azure-architecture-autopilot`, `github/awesome-copilot/azure-deployment-preflight`, `github/awesome-copilot/azure-developer-cli`, `github/awesome-copilot/azure-pricing`, `github/awesome-copilot/azure-resource-health-diagnose`, `github/awesome-copilot/azure-resource-visualizer`, `github/awesome-copilot/azure-well-architected-review`, `github/awesome-copilot/az-cost-optimize`, `Mindrally/skills/azure`, `sickn33/agentic-awesome-skills/azure-devops` |
 | Cloudflare | `cloudflare` | Mapped | `cloudflare/skills/cloudflare`, `cloudflare/skills/wrangler`, `cloudflare/skills/workers-best-practices`, `cloudflare/skills/web-perf`, `openai/skills/cloudflare-deploy`, `Mindrally/skills/cloudflare-development` |
 | Durable Objects | `cloudflare-durable-objects` | Mapped | `cloudflare/skills/durable-objects` |
+| Datadog | `datadog` | Mapped | `sickn33/agentic-awesome-skills/datadog` |
 | Dependabot | `dependabot` | Mapped | `cli/cli/dependabot-triager`, `github/awesome-copilot/dependabot` |
 | Docker | `docker` | Mapped | `docker/skills/docker-project-foundations`, `github/awesome-copilot/multi-stage-dockerfile`, `Mindrally/skills/docker`, `sickn33/agentic-awesome-skills/docker-expert`, `sickn33/agentic-awesome-skills/docker-compose` |
 | GitHub Actions | `github-actions` | Mapped | `github/awesome-copilot/github-actions-efficiency`, `github/awesome-copilot/github-actions-hardening`, `github/awesome-copilot/github-actions-runtime-upgrade-conventions`, `github/awesome-copilot/create-github-action-workflow-specification`, `sickn33/agentic-awesome-skills/github-actions-advanced`, `sickn33/agentic-awesome-skills/github-actions-debugger`, `sickn33/agentic-awesome-skills/github-actions-templates` |
 | GitLab CI/CD | `gitlab-ci` | Mapped | `akin-ozer/cc-devops-skills/gitlab-ci-generator`, `sickn33/agentic-awesome-skills/gitlab-ci`, `sickn33/agentic-awesome-skills/gitlab-ci-patterns` |
 | Google Cloud | `google-cloud` | Mapped | `rominirani/antigravity-skills/always-verify-gcp`, `Mindrally/skills/gcp-development` |
+| Grafana Loki | `grafana-loki` | Mapped | `sickn33/agentic-awesome-skills/loki-logging` |
 | Helm | `helm` | Mapped | `TerminalSkills/skills/kubernetes-helm`, `sickn33/agentic-awesome-skills/helm-charts`, `sickn33/agentic-awesome-skills/helm-chart-scaffolding` |
 | Kubernetes | `kubernetes` | Mapped | `TerminalSkills/skills/kubernetes-helm`, `Mindrally/skills/kubernetes`, `Jeffallan/claude-skills/kubernetes-specialist`, `sickn33/agentic-awesome-skills/kubernetes-deployment`, `sickn33/agentic-awesome-skills/kubernetes-ops`, `sickn33/agentic-awesome-skills/kubernetes-architect`, `sickn33/agentic-awesome-skills/kubernetes-hardening` |
+| Kustomize | `kustomize` | Mapped | `sickn33/agentic-awesome-skills/kustomize` |
+| n8n | `n8n` | Mapped | `sickn33/agentic-awesome-skills/n8n-workflow-patterns` |
 | Pulumi | `pulumi` | Mapped | `pulumi/agent-skills/pulumi-component` |
 | Renovate | `renovate` | Mapped | `backnotprop/plannotator/review-renovate` |
 | Sentry | `sentry` | Mapped | `jeremylongshore/tons-of-skills-marketplace/sentry-performance-tracing`, `sickn33/agentic-awesome-skills/sentry-automation` |
@@ -143,6 +149,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Celery | `celery` | Mapped | `wshobson/agents/python-background-jobs` |
 | ClickHouse | `clickhouse` | Mapped | `clickhouse/agent-skills/clickhouse-architecture-advisor` |
 | Convex | `convex` | Mapped | `convex/agent-skills/convex`, `Mindrally/skills/convex`, `sickn33/agentic-awesome-skills/convex-backend` |
+| dbt | `dbt` | Mapped | `sickn33/agentic-awesome-skills/dbt-transformation-patterns` |
 | Drizzle ORM | `drizzle` | Mapped | `bobmatnyc/claude-mpm-skills/drizzle`, `Mindrally/skills/drizzle-orm`, `chaunsin/agent-skills/drizzle-migration-conflict` |
 | DuckDB | `duckdb` | Detect-only | — |
 | Firebase | `firebase` | Mapped | `firebase/agent-skills/firebase-auth-basics`, `Mindrally/skills/firebase-development`, `sickn33/agentic-awesome-skills/firebase`, `sickn33/agentic-awesome-skills/firebase-app-platform` |
@@ -162,6 +169,8 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Qdrant | `qdrant` | Mapped | `github/awesome-copilot/qdrant-clients-sdk`, `github/awesome-copilot/qdrant-deployment-options`, `github/awesome-copilot/qdrant-model-migration`, `github/awesome-copilot/qdrant-monitoring`, `github/awesome-copilot/qdrant-performance-optimization`, `github/awesome-copilot/qdrant-scaling`, `github/awesome-copilot/qdrant-search-quality`, `github/awesome-copilot/qdrant-version-upgrade` |
 | Redis | `redis` | Mapped | `redis/agent-skills/redis-core`, `Mindrally/skills/redis-best-practices`, `HoangNguyen0403/agent-skills-standard/database-redis`, `sickn33/agentic-awesome-skills/redis` |
 | Scikit-Learn | `scikit-learn` | Mapped | `davila7/claude-code-templates/scikit-learn`, `davila7/claude-code-templates/senior-data-scientist`, `Mindrally/skills/scikit-learn-best-practices` |
+| Sequelize | `sequelize` | Mapped | `Mindrally/skills/sequelize` |
+| Snowflake | `snowflake` | Mapped | `sickn33/agentic-awesome-skills/snowflake-development` |
 | SQLAlchemy | `sqlalchemy` | Mapped | `bobmatnyc/claude-mpm-skills/sqlalchemy`, `wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review` |
 | SQLite | `sqlite` | Detect-only | — |
 | Supabase | `supabase` | Mapped | `supabase/agent-skills/supabase-postgres-best-practices`, `Mindrally/skills/supabase`, `Mindrally/skills/supabase-development`, `sickn33/agentic-awesome-skills/supabase-automation` |
@@ -263,6 +272,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | ESLint | `eslint` | Mapped | `claude-dev-suite/claude-dev-suite/typescript-eslint` |
 | Husky | `husky` | Mapped | `mattpocock/skills/setup-pre-commit` |
 | Jest | `jest` | Mapped | `github/awesome-copilot/javascript-typescript-jest`, `Mindrally/skills/jest`, `HoangNguyen0403/agent-skills-standard/nextjs-testing`, `sickn33/agentic-awesome-skills/jest-skill` |
+| k6 | `k6` | Mapped | `sickn33/agentic-awesome-skills/k6-load-testing` |
 | Knip | `knip` | Mapped | `webpro/skills/configure-knip` |
 | Lefthook | `lefthook` | Detect-only | — |
 | lint-staged | `lint-staged` | Mapped | `mattpocock/skills/setup-pre-commit` |
@@ -272,6 +282,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Prettier | `prettier` | Mapped | `thebushidocollective/han/prettier-configuration` |
 | Puppeteer | `puppeteer` | Mapped | `Mindrally/skills/puppeteer-automation` |
 | Pytest | `pytest` | Mapped | `wshobson/agents/python-testing-patterns`, `github/awesome-copilot/pytest-coverage`, `Paldom/python-skills/python-testing`, `HoangNguyen0403/agent-skills-standard/python-testing`, `sickn33/agentic-awesome-skills/pytest-skill` |
+| Robot Framework | `robot-framework` | Mapped | `sickn33/agentic-awesome-skills/robot-framework-skill` |
 | RSpec | `rspec` | Mapped | `igmarin/rails-agent-skills/test-service`, `lucianghinda/superpowers-ruby/test-driven-development`, `Mindrally/skills/rspec` |
 | RuboCop | `rubocop` | Detect-only | — |
 | Ruff | `ruff` | Mapped | `github/awesome-copilot/ruff-recursive-fix`, `Paldom/python-skills/python-lint` |
@@ -291,6 +302,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Chakra UI | `chakra-ui` | Detect-only | — |
 | CodeMirror | `codemirror` | Detect-only | — |
 | D3 | `d3` | Mapped | `sickn33/agentic-awesome-skills/claude-d3js-skill` |
+| htmx | `htmx` | Mapped | `Mindrally/skills/htmx` |
 | Ink | `ink` | Detect-only | — |
 | Lit | `lit` | Detect-only | — |
 | Monaco Editor | `monaco-editor` | Detect-only | — |

@@ -16,7 +16,7 @@
   ],
   "counts": {
     "distinct_skills": 2601,
-    "technologies_with_skills": 201,
+    "technologies_with_skills": 213,
     "technologies_detect_only": 55,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
@@ -10760,7 +10760,9 @@
       "skill_name": "htmx",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "htmx"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -11724,7 +11726,9 @@
       "skill_name": "quarkus",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "quarkus"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -12119,7 +12123,9 @@
       "skill_name": "sequelize",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "sequelize"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -18461,7 +18467,9 @@
       "skill_name": "datadog",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "datadog"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -18538,7 +18546,9 @@
       "skill_name": "dbt-transformation-patterns",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dbt"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -21727,7 +21737,9 @@
       "skill_name": "k6-load-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "k6"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -21988,7 +22000,9 @@
       "skill_name": "kustomize",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kustomize"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -22566,7 +22580,9 @@
       "skill_name": "loki-logging",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "grafana-loki"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -23668,7 +23684,9 @@
       "skill_name": "n8n-workflow-patterns",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "n8n"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -24159,7 +24177,9 @@
       "skill_name": "odoo-module-developer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "odoo"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -25920,7 +25940,9 @@
       "skill_name": "robot-framework-skill",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "robot-framework"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -27250,7 +27272,9 @@
       "skill_name": "snowflake-development",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "snowflake"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }

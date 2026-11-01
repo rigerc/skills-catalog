@@ -2,7 +2,7 @@
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
   "snapshot_date": "2026-11-01",
-  "count": 1749,
+  "count": 1737,
   "skills": [
     {
       "id": "2slides/slides-generation-2slides-skills/2slides-ppt-generator",
@@ -1560,11 +1560,6 @@
       "skill_name": "html"
     },
     {
-      "id": "Mindrally/skills/htmx",
-      "repository": "Mindrally/skills",
-      "skill_name": "htmx"
-    },
-    {
       "id": "Mindrally/skills/internationalization-i18n",
       "repository": "Mindrally/skills",
       "skill_name": "internationalization-i18n"
@@ -1785,11 +1780,6 @@
       "skill_name": "python-odoo-cursor-rules"
     },
     {
-      "id": "Mindrally/skills/quarkus",
-      "repository": "Mindrally/skills",
-      "skill_name": "quarkus"
-    },
-    {
       "id": "Mindrally/skills/rabbitmq-development",
       "repository": "Mindrally/skills",
       "skill_name": "rabbitmq-development"
@@ -1873,11 +1863,6 @@
       "id": "Mindrally/skills/seo-best-practices",
       "repository": "Mindrally/skills",
       "skill_name": "seo-best-practices"
-    },
-    {
-      "id": "Mindrally/skills/sequelize",
-      "repository": "Mindrally/skills",
-      "skill_name": "sequelize"
     },
     {
       "id": "Mindrally/skills/serverless",
@@ -4165,11 +4150,6 @@
       "skill_name": "datacircle"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/datadog",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "datadog"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/datadog-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "datadog-automation"
@@ -4198,11 +4178,6 @@
       "id": "sickn33/agentic-awesome-skills/dbos-typescript",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "dbos-typescript"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/dbt-transformation-patterns",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "dbt-transformation-patterns"
     },
     {
       "id": "sickn33/agentic-awesome-skills/deepapi",
@@ -5425,11 +5400,6 @@
       "skill_name": "junta-leiloeiros"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/k6-load-testing",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "k6-load-testing"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/k8s-manifest-generator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "k8s-manifest-generator"
@@ -5518,11 +5488,6 @@
       "id": "sickn33/agentic-awesome-skills/kubestellar-console",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "kubestellar-console"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/kustomize",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "kustomize"
     },
     {
       "id": "sickn33/agentic-awesome-skills/lambdatest-agent-skills",
@@ -5763,11 +5728,6 @@
       "id": "sickn33/agentic-awesome-skills/logo-image-design",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "logo-image-design"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/loki-logging",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "loki-logging"
     },
     {
       "id": "sickn33/agentic-awesome-skills/loki-mode",
@@ -6260,11 +6220,6 @@
       "skill_name": "n8n-validation-expert"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/n8n-workflow-patterns",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "n8n-workflow-patterns"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/nap-consistency-checker",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "nap-consistency-checker"
@@ -6428,11 +6383,6 @@
       "id": "sickn33/agentic-awesome-skills/odoo-migration-helper",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "odoo-migration-helper"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/odoo-module-developer",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "odoo-module-developer"
     },
     {
       "id": "sickn33/agentic-awesome-skills/odoo-orm-expert",
@@ -7135,11 +7085,6 @@
       "skill_name": "robius-state-management"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/robot-framework-skill",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "robot-framework-skill"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/robots-txt-creator",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "robots-txt-creator"
@@ -7708,11 +7653,6 @@
       "id": "sickn33/agentic-awesome-skills/smart-git-automation",
       "repository": "sickn33/agentic-awesome-skills",
       "skill_name": "smart-git-automation"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/snowflake-development",
-      "repository": "sickn33/agentic-awesome-skills",
-      "skill_name": "snowflake-development"
     },
     {
       "id": "sickn33/agentic-awesome-skills/soc2-compliance",

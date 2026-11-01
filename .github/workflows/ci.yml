@@ -31,3 +31,5 @@ jobs:
       - name: Check for duplicate skills
         run: node scripts/check-duplicate-skills.mjs
       - run: node --test tests/*.test.mjs
+      - name: Check technology content patterns
+        run: python3 -m unittest discover -s tests -p 'test_detection_patterns.py' -v

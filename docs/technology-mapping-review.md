@@ -7,8 +7,9 @@ be removed or recommended.
 
 ## Detection coverage
 
-The new rules identify declared npm or Python dependencies, or the root
-`shopify.app.toml` file. The documentation URLs in `data/mappings.json` describe
+The new rules identify declared npm or Python dependencies, selected project
+paths, `.robot` files, and narrow source or build-file signatures. The
+documentation URLs in `data/mappings.json` describe
 the supported package names and configuration. Detection is evidence of a
 declaration, not proof of installation or execution. Other installation methods,
 including CDN scripts, globally installed tools, hosted services, and Shopify
@@ -24,15 +25,18 @@ negative fixtures are needed before claiming end-to-end detection coverage.
 
 | Technology | Candidate skill | Follow-up |
 | --- | --- | --- |
-| Quarkus | `Mindrally/skills/quarkus` | Establish precise Maven and Gradle detection and consumer fixtures. |
-| k6 | `sickn33/agentic-awesome-skills/k6-load-testing` | Verify a bounded script signature and avoid matching unrelated JavaScript. |
-| Odoo | `sickn33/agentic-awesome-skills/odoo-module-developer` | Verify a distinguishing module signature; `__manifest__.py` alone is not sufficient. |
-| n8n | `sickn33/agentic-awesome-skills/n8n-workflow-patterns` | Evaluate dependency, workflow and container signals and supported scanner scope. |
 | Argo CD | `sickn33/agentic-awesome-skills/argocd-gitops` | Verify distinctive resource declarations and bounded YAML matching. |
 
 Other unmapped skills, including Azure service and SaaS integration skills,
 still need classification and research. A hosted service may leave no reliable
 project-local signal.
+
+New Quarkus, k6, and Odoo rules use bounded content patterns and cover common
+declarations only. n8n currently detects an npm declaration, not exported
+workflow JSON or container-only installations. The Loki and Datadog rules
+recognize their named root configuration files, which can also be customized.
+These rules require consumer-side fixtures, including comment, path-scope,
+monorepo and false-positive cases, before end-to-end behavior is assured.
 
 ## Removal review candidates
 
