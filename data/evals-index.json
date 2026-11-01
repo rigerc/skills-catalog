@@ -110,6 +110,12 @@
       "has_evals": false
     },
     {
+      "id": "angular/skills/angular-developer",
+      "commit": "efe6e9ea69bc4e7165c0bf1b9b1482bea7b7f166",
+      "source_tree_sha": "efe6e9ea69bc4e7165c0bf1b9b1482bea7b7f166",
+      "has_evals": false
+    },
+    {
       "id": "antfu/skills/nuxt",
       "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
       "source_tree_sha": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b",
@@ -170,6 +176,54 @@
       "has_evals": false
     },
     {
+      "id": "astrolicious/agent-skills/astro",
+      "commit": "cb4839f3794189ebf35c55d3ba5d3876dff7acf0",
+      "source_tree_sha": "cb4839f3794189ebf35c55d3ba5d3876dff7acf0",
+      "has_evals": false
+    },
+    {
+      "id": "av/skills/preact-buildless-frontend",
+      "commit": "97482ad5bde51698ae2284f705ae93335326eda9",
+      "source_tree_sha": "97482ad5bde51698ae2284f705ae93335326eda9",
+      "has_evals": false
+    },
+    {
+      "id": "avdlee/core-data-agent-skill/core-data-expert",
+      "commit": "855ca7d0df50e82b00c12881dd9cd23c19ef5f49",
+      "source_tree_sha": "855ca7d0df50e82b00c12881dd9cd23c19ef5f49",
+      "has_evals": false
+    },
+    {
+      "id": "avdlee/swift-concurrency-agent-skill/swift-concurrency",
+      "commit": "d5770817d2622e1585b1f7eaebc791a9cb0959c8",
+      "source_tree_sha": "d5770817d2622e1585b1f7eaebc791a9cb0959c8",
+      "has_evals": false
+    },
+    {
+      "id": "avdlee/swift-testing-agent-skill/swift-testing-expert",
+      "commit": "798e9b1a2bcac164d4f0c781908199e754f0bab6",
+      "source_tree_sha": "798e9b1a2bcac164d4f0c781908199e754f0bab6",
+      "has_evals": false
+    },
+    {
+      "id": "avdlee/swiftui-agent-skill/swiftui-expert-skill",
+      "commit": "204dba7c67256a8b707ee3fbc5759a824191974f",
+      "source_tree_sha": "204dba7c67256a8b707ee3fbc5759a824191974f",
+      "has_evals": false
+    },
+    {
+      "id": "avdlee/xcode-build-optimization-agent-skill/xcode-build-orchestrator",
+      "commit": "6bd7b596cd688b1127ded00e812b1b6937ec35d6",
+      "source_tree_sha": "6bd7b596cd688b1127ded00e812b1b6937ec35d6",
+      "has_evals": false
+    },
+    {
+      "id": "backnotprop/plannotator/review-renovate",
+      "commit": "985564db6d35c475c9475bd67f097fedf17d8680",
+      "source_tree_sha": "985564db6d35c475c9475bd67f097fedf17d8680",
+      "has_evals": false
+    },
+    {
       "id": "better-auth/skills/best-practices",
       "commit": "20c9e88a5c007461a703f1c213572b073196113e",
       "source_tree_sha": "20c9e88a5c007461a703f1c213572b073196113e",
@@ -215,6 +269,18 @@
       "id": "bobmatnyc/claude-mpm-skills/sqlalchemy",
       "commit": "718070a7d622921b01687799a1f9613f36c6f615",
       "source_tree_sha": "718070a7d622921b01687799a1f9613f36c6f615",
+      "has_evals": false
+    },
+    {
+      "id": "ccheney/robust-skills/bazel",
+      "commit": "0eea7b060d12e3520556a73b15fbfa79480987d1",
+      "source_tree_sha": "0eea7b060d12e3520556a73b15fbfa79480987d1",
+      "has_evals": false
+    },
+    {
+      "id": "chaunsin/agent-skills/drizzle-migration-conflict",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "source_tree_sha": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
       "has_evals": false
     },
     {
@@ -299,6 +365,12 @@
       "id": "clerk/skills/clerk-react-router-patterns",
       "commit": "55206a48259bb327090ec5dbd22cfb5d4fa9de25",
       "source_tree_sha": "55206a48259bb327090ec5dbd22cfb5d4fa9de25",
+      "has_evals": true
+    },
+    {
+      "id": "clerk/skills/clerk-setup",
+      "commit": "b0d994e9cd954556ec747754484ad80565d67c15",
+      "source_tree_sha": "b0d994e9cd954556ec747754484ad80565d67c15",
       "has_evals": true
     },
     {
@@ -3566,6 +3638,18 @@
       "has_evals": true
     },
     {
+      "id": "pproenca/dot-skills/react-hook-form",
+      "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3",
+      "source_tree_sha": "cf93c57cac89d6fc3e4194686000411567f5caf3",
+      "has_evals": false
+    },
+    {
+      "id": "pproenca/dot-skills/zod",
+      "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3",
+      "source_tree_sha": "cf93c57cac89d6fc3e4194686000411567f5caf3",
+      "has_evals": false
+    },
+    {
       "id": "prisma/skills/prisma-cli",
       "commit": "c71e8ea254dbc5dba27af773b735679163395cf9",
       "source_tree_sha": "c71e8ea254dbc5dba27af773b735679163395cf9",
@@ -4472,6 +4556,18 @@
       "has_evals": false
     },
     {
+      "id": "stripe/ai/stripe-best-practices",
+      "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
+      "source_tree_sha": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
+      "has_evals": false
+    },
+    {
+      "id": "stripe/ai/upgrade-stripe",
+      "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
+      "source_tree_sha": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
+      "has_evals": false
+    },
+    {
       "id": "TerminalSkills/skills/kubernetes-helm",
       "commit": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
       "source_tree_sha": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
@@ -4505,6 +4601,18 @@
       "id": "vercel-labs/agent-skills/react-best-practices",
       "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
       "source_tree_sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "has_evals": false
+    },
+    {
+      "id": "vuejs-ai/skills/vue-best-practices",
+      "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
+      "source_tree_sha": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
+      "has_evals": false
+    },
+    {
+      "id": "vuejs-ai/skills/vue-pinia-best-practices",
+      "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
+      "source_tree_sha": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78",
       "has_evals": false
     },
     {
