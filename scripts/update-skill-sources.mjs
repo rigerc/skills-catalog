@@ -7,6 +7,7 @@ import {promisify} from 'node:util';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {load, render, validate} from './catalog.mjs';
+import {inspect, githubTree} from './verify-evals.mjs';
 import {parseVerifiedSource} from './check-skill-existence.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -290,10 +291,15 @@ export async function findUpdates(entries, {request, concurrency = 3} = {}) {
   return {updates, checked: entries.length - unresolved.length, unresolved};
 }
 
-export function applyUpdates(c, m, l, d, updates, now) {
+export function applyUpdates(c, m, l, d, updates, now, evalIndex = load().e, newEvidence = []) {
   const catalog = structuredClone(c);
   const mappings = structuredClone(m);
   const ledger = structuredClone(l);
+  const evals = structuredClone(evalIndex);
+  const byEvidence = new Map(newEvidence.map(e => [e.id, e]));
+  if (byEvidence.size !== newEvidence.length) throw new Error('Repeated eval evidence IDs');
+  const catalogById = new Map(catalog.skills.map(s => [s.id, s]));
+  const evalsById = new Map(evals.entries.map(e => [e.id, e]));
   const byId = new Map(updates.map(change => [change.id, change]));
   if (byId.size !== updates.length) throw new Error('Repeated updated skill IDs');
   for (const entry of ledger.entries) {
@@ -302,6 +308,13 @@ export function applyUpdates(c, m, l, d, updates, now) {
     if (entry.status !== 'verified' || entry.commit !== change.oldCommit) {
       throw new Error('Unexpected source ledger change: ' + entry.id);
     }
+    const verified = byEvidence.get(entry.id), record = evalsById.get(entry.id), skill = catalogById.get(entry.id);
+    if (!verified || verified.commit !== change.newCommit || typeof verified.has_evals !== 'boolean' || !record || !skill) {
+      throw new Error('Missing verified eval presence for updated source: ' + entry.id);
+    }
+    record.commit = verified.commit;
+    record.has_evals = verified.has_evals;
+    skill.has_evals = verified.has_evals;
     entry.commit = change.newCommit;
     entry.url = entry.url.replace('/blob/' + change.oldCommit + '/', '/blob/' + change.newCommit + '/');
     entry.checked_at = now;
@@ -311,8 +324,8 @@ export function applyUpdates(c, m, l, d, updates, now) {
     catalog.snapshot_date = now.slice(0, 10);
     mappings.snapshot_date = now.slice(0, 10);
   }
-  validate(catalog, mappings, ledger, d);
-  return {catalog, mappings, ledger};
+  validate(catalog, mappings, ledger, d, evals);
+  return {catalog, mappings, ledger, evals};
 }
 
 export function reportMarkdown({updates, checked, unresolved}) {
@@ -345,8 +358,8 @@ async function main() {
     process.exitCode = 2;
     return;
   }
-  const {c, m, l, d} = load();
-  validate(c, m, l, d);
+  const {c, m, l, d, e} = load();
+  validate(c, m, l, d, e);
   const now = new Date().toISOString();
   const result = await findUpdatesWithoutApi(l.entries);
   console.log('Upstream checks: ' + result.headLookups + ' git HEAD lookups, ' +
@@ -356,10 +369,20 @@ async function main() {
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
   if (process.env.SKILL_UPDATE_REPORT) writeFileSync(process.env.SKILL_UPDATE_REPORT, report);
   if (mode === '--write' && result.updates.length) {
-    const {catalog, mappings, ledger} = applyUpdates(c, m, l, d, result.updates, now);
+    const byId = new Map(l.entries.map(entry => [entry.id, entry]));
+    const repinned = result.updates.map(change => {
+      const current = byId.get(change.id);
+      if (!current || current.commit !== change.oldCommit) throw new Error('Missing current pin for ' + change.id);
+      return {...current, commit: change.newCommit,
+        url: current.url.replace('/blob/' + change.oldCommit + '/', '/blob/' + change.newCommit + '/')};
+    });
+    // A pin change invalidates eval evidence, even when the old marker was false.
+    const verifiedEvals = await inspect(repinned, githubTree);
+    const {catalog, mappings, ledger, evals} = applyUpdates(c, m, l, d, result.updates, now, e, verifiedEvals);
     writeFileSync(resolve(ROOT, 'data/catalog.json'), JSON.stringify(catalog, null, 2) + '\n');
     writeFileSync(resolve(ROOT, 'data/mappings.json'), JSON.stringify(mappings, null, 2) + '\n');
     writeFileSync(resolve(ROOT, 'data/catalog-source-ledger.json'), JSON.stringify(ledger, null, 2) + '\n');
+    writeFileSync(resolve(ROOT, 'data/evals-index.json'), JSON.stringify(evals, null, 2) + '\n');
     for (const [name, content] of Object.entries(render(catalog, mappings, ledger, d))) {
       writeFileSync(resolve(ROOT, name), content);
     }
