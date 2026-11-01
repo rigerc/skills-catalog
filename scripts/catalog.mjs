@@ -118,7 +118,7 @@ node scripts/unmapped.mjs --check
 node --test tests/*.test.mjs
 \`\`\`
 
-CI validates five JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
+CI validates the four canonical JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, and generated documentation. The unmapped skills index can be checked locally. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
 The four canonical source JSON files under \`data/\` are one versioned snapshot; \`data/unmapped.json\` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom \`registry.json\` format.
 `;
@@ -159,11 +159,11 @@ ${m.frontend_essentials.skill_ids.map(code).join(", ")}
 };
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const [cmd,...extra]=process.argv.slice(2);
- if(extra.length||!['--check','--write','--validate'].includes(cmd)){console.error('Usage: node scripts/catalog.mjs --check|--write|--validate');process.exitCode=2}
+ if(extra.some(x=>x!=='--skip-unmapped')||extra.length>1||!['--check','--write','--validate'].includes(cmd)||extra.length&&cmd!=='--check'){console.error('Usage: node scripts/catalog.mjs --check [--skip-unmapped] | --write | --validate');process.exitCode=2}
  else try{
   const {c,m,l,d}=load();const result=validate(c,m,l,d);
   if(cmd!=='--validate'){const docs=render(c,m,l,d);const stale=[];
-   for(const [name,output] of Object.entries(docs)){const path=resolve(root,name);
+   for(const [name,output] of Object.entries(docs)){if(name==='data/unmapped.json'&&extra.includes('--skip-unmapped'))continue;const path=resolve(root,name);
     if(cmd==='--write')writeFileSync(path,output,'utf8');
     else {let old;try{old=readFileSync(path,'utf8')}catch{old=null}if(old!==output)stale.push(name)}}
    if(stale.length)throw Error('Generated documents out of date: '+stale.join(', ')+'. Run node scripts/catalog.mjs --write.')}
