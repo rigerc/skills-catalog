@@ -34,7 +34,7 @@ for(const skill of manifest.skills){
    fail('stale eligible skill '+skill.id);
  if(!quality.eligible&&(!Array.isArray(quality.quarantine_reasons)||!quality.quarantine_reasons.length))
    fail('quarantine missing reasons '+skill.id);
- if(source&&(!source.url.includes('/blob/'+source.commit+'/')||!source.path.endsWith('/SKILL.md')))
+ if(source&&(!source.url.includes('/blob/'+source.commit+'/')||!(source.path==='SKILL.md'||source.path.endsWith('/SKILL.md'))))
    fail('source pin mismatch '+skill.id);
 }
 for(const tech of manifest.technologies)
