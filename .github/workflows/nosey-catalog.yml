@@ -37,6 +37,7 @@ jobs:
         run: |
           node scripts/quality.mjs --check
           node scripts/evaluate-skills.mjs --check
+          node scripts/open-jev-check.mjs
       - name: Check duplicate sources
         run: node scripts/check-duplicate-skills.mjs
       - name: Run existing Node and Python tests
