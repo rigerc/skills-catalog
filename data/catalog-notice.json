@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "commit": "56de695e3f8476a213c1bfe8067b2295937d69fb",
-  "sequence": 6,
+  "commit": "c4711f606dde7172f77a16c3f409f74232460434",
+  "sequence": 7,
   "reviewed": true,
   "files": [
     {
       "path": "catalog.json",
-      "sha256": "581ee19fd0e8974a6442de454affa727f0c9d8ae814a41a487c26f67a551e7b0"
+      "sha256": "a81ea6397e675abc8d7270cd6dc6295ec02403ca4fc88545b2b0369601da60d3"
     },
     {
       "path": "mappings.json",
-      "sha256": "128df9bfeebe56371997bf1ac1a6bb2f0bd05ee7aa5bbcdbfb3c6936eac7f8e1"
+      "sha256": "53539da531c499f2c27210b9cba70c3ac12562b6888239208850e13d4f60d0c8"
     },
     {
       "path": "technology-detection-rules.json",
-      "sha256": "aaf4252fa2023a885c5fede9cebfeab4df6534b88d440a1ee772e58f9ec16edf"
+      "sha256": "01ef4d305e2c851babb8f8ae6642cb7a3ed53defbfb71dc9a8bfb7be91c4608f"
     },
     {
       "path": "catalog-source-ledger.json",
