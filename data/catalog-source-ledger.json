@@ -1,9 +1,33 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-11-01T02:00:44.282Z",
+  "audited_at": "2026-11-01T02:32:06.298Z",
   "release_blocked": false,
   "unresolved_count": 0,
   "entries": [
+    {
+      "id": "2slides/slides-generation-2slides-skills/2slides-ppt-generator",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/2slides/slides-generation-2slides-skills/blob/a8b986a556b27d8006b42ae6cded2e822e150674/SKILL.md",
+      "commit": "a8b986a556b27d8006b42ae6cded2e822e150674",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "addyosmani/agent-skills/browser-testing-with-devtools",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/addyosmani/agent-skills/blob/8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e/skills/browser-testing-with-devtools/SKILL.md",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "addyosmani/agent-skills/using-agent-skills",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/addyosmani/agent-skills/blob/8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e/skills/using-agent-skills/SKILL.md",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
     {
       "id": "addyosmani/web-quality-skills/accessibility",
       "batch": 1,
@@ -85,6 +109,14 @@
       "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b"
     },
     {
+      "id": "agentbody/skills/people-data",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/agentbody/skills/blob/2aba22eb7b8b63adf5f98de67a40a2e17d80bc38/skills/people-data/SKILL.md",
+      "commit": "2aba22eb7b8b63adf5f98de67a40a2e17d80bc38",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "aj-geddes/useful-ai-prompts/flask-api-development",
       "batch": 1,
       "status": "verified",
@@ -115,6 +147,38 @@
       "checked_at": "2026-10-28T02:34:59.913Z",
       "url": "https://github.com/akin-ozer/cc-devops-skills/blob/276af751e659315aaf56d3ad13d7c26f4e72e28a/devops-skills-plugin/skills/makefile-generator/SKILL.md",
       "commit": "276af751e659315aaf56d3ad13d7c26f4e72e28a"
+    },
+    {
+      "id": "alapha888/session-handoff-kit/session-handoff",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/alapha888/session-handoff-kit/blob/0ce03c20669b668606c90ba49ebad80d6fbdcfe0/SKILL.md",
+      "commit": "0ce03c20669b668606c90ba49ebad80d6fbdcfe0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "alexyc9381/shark-skill/shark",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/alexyc9381/shark-skill/blob/9800fb3b13be67a0ab49ea05d120c6a90b3e2b6d/skills/shark/SKILL.md",
+      "commit": "9800fb3b13be67a0ab49ea05d120c6a90b3e2b6d",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "alfredtech2026/shopify-app-review-brief/shopify-review-triage",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/alfredtech2026/shopify-app-review-brief/blob/d0ba0611a6ee36af9fbff80452e6f31b1f04d2fa/docs/skills/shopify-review-triage/SKILL.md",
+      "commit": "d0ba0611a6ee36af9fbff80452e6f31b1f04d2fa",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "amElnagdy/review-skills/debate-review",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/amElnagdy/review-skills/blob/3cfce3963b4d4d99a8b9059f1ece6726405b7bd3/skills/debate-review/SKILL.md",
+      "commit": "3cfce3963b4d4d99a8b9059f1ece6726405b7bd3",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "angular/angular/adev-writing-guide",
@@ -197,6 +261,22 @@
       "commit": "8886fe2d385d3644cbb47e46ae9cb1cf09307d3b"
     },
     {
+      "id": "Antheurus/anywrite/anywrite",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Antheurus/anywrite/blob/1f7bbf7f15edba3b88b689054bc152538ffbda65/SKILL.md",
+      "commit": "1f7bbf7f15edba3b88b689054bc152538ffbda65",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "Antheurus/sshepherd/sshepherd",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Antheurus/sshepherd/blob/492ae7b40da6965363ab0a8656be24326fa5a99b/SKILL.md",
+      "commit": "492ae7b40da6965363ab0a8656be24326fa5a99b",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "anthropics/skills/claude-api",
       "batch": 1,
       "status": "verified",
@@ -219,6 +299,14 @@
       "checked_at": "2026-10-28T02:35:00.544Z",
       "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/webapp-testing/SKILL.md",
       "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+    },
+    {
+      "id": "aomi-labs/skills/aomi-transact",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/aomi-labs/skills/blob/0f17a9d30b9787b2245b115e287842ef8b1d8ec8/aomi-transact/SKILL.md",
+      "commit": "0f17a9d30b9787b2245b115e287842ef8b1d8ec8",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "apollographql/skills/graphql-operations",
@@ -293,12 +381,156 @@
       "commit": "6bd7b596cd688b1127ded00e812b1b6937ec35d6"
     },
     {
+      "id": "awss1i/assay/assay",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/awss1i/assay/blob/2e3109827a6382ef5d82fc73333b6b5f2d6577b2/plugins/assay/skills/checking-a-page/SKILL.md",
+      "commit": "2e3109827a6382ef5d82fc73333b6b5f2d6577b2",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "backnotprop/plannotator/review-renovate",
       "batch": 1,
       "status": "verified",
       "checked_at": "2026-10-28T02:35:01.540Z",
       "url": "https://github.com/backnotprop/plannotator/blob/985564db6d35c475c9475bd67f097fedf17d8680/.agents/skills/review-renovate/SKILL.md",
       "commit": "985564db6d35c475c9475bd67f097fedf17d8680"
+    },
+    {
+      "id": "beatra-ai/ai-headshot-generator-skill/ai-headshot-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-headshot-generator-skill/blob/8757b8920563b1ccb6193944ba79c6384fd7a848/skills/ai-headshot-studio/SKILL.md",
+      "commit": "8757b8920563b1ccb6193944ba79c6384fd7a848",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-image-generator-skill/ai-image-generation-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-image-generator-skill/blob/86abbefd47ad8a3422212edd6466a861d8d8daf4/skills/ai-image-generation-studio/SKILL.md",
+      "commit": "86abbefd47ad8a3422212edd6466a861d8d8daf4",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-logo-maker-skill/ai-logo-maker",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-logo-maker-skill/blob/90e90857620c65a11f355ba21d03d0445d0e6d59/skills/ai-logo-maker/SKILL.md",
+      "commit": "90e90857620c65a11f355ba21d03d0445d0e6d59",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-media-generator-skill/beatra",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-media-generator-skill/blob/6c9d1a4097f0ed574a7dee14697531a24a0e10b6/skills/beatra/SKILL.md",
+      "commit": "6c9d1a4097f0ed574a7dee14697531a24a0e10b6",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-music-generator-skill/music-generation-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-music-generator-skill/blob/6598ea6d36a023e2462eab2533c857de64f829ae/skills/music-generation-studio/SKILL.md",
+      "commit": "6598ea6d36a023e2462eab2533c857de64f829ae",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-podcast-voiceover-skill/ai-podcast-voiceover",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-podcast-voiceover-skill/blob/060adc8af2281c3c18d50d1d99090d4b69ab5c10/skills/ai-podcast-voiceover/SKILL.md",
+      "commit": "060adc8af2281c3c18d50d1d99090d4b69ab5c10",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-poster-maker-skill/poster-design-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-poster-maker-skill/blob/f6d657f320e45b0d05bd0bd432d293f4b5fa7379/skills/poster-design-studio/SKILL.md",
+      "commit": "f6d657f320e45b0d05bd0bd432d293f4b5fa7379",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-product-photography-skill/product-photo-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-product-photography-skill/blob/f06f3d7b37a29ef2e0b9ef5bae45302f34eb1535/skills/product-photo-studio/SKILL.md",
+      "commit": "f06f3d7b37a29ef2e0b9ef5bae45302f34eb1535",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-voice-cloning-skill/voice-cloning-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-voice-cloning-skill/blob/739cb27b0179630834dca67a879aee6360f308c9/skills/voice-cloning-studio/SKILL.md",
+      "commit": "739cb27b0179630834dca67a879aee6360f308c9",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ai-voiceover-generator-skill/voiceover-narration-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ai-voiceover-generator-skill/blob/9bd7fdbfbeec99194762ccfc433100fbffade3bd/skills/voiceover-narration-studio/SKILL.md",
+      "commit": "9bd7fdbfbeec99194762ccfc433100fbffade3bd",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/beatra-skills/beatra-ai-video-studio",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/beatra-skills/blob/0626f52f6d60e6b7e7528ab3c2f14fb2665cd6e8/skills/beatra-ai-video-studio/SKILL.md",
+      "commit": "0626f52f6d60e6b7e7528ab3c2f14fb2665cd6e8",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/ecommerce-product-images-skill/ecommerce-listing-image-set",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/ecommerce-product-images-skill/blob/5ecd6f0e1e0f5db05ab3535c2fb0bce5f5a34c4c/skills/ecommerce-listing-image-set/SKILL.md",
+      "commit": "5ecd6f0e1e0f5db05ab3535c2fb0bce5f5a34c4c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/lyrics-to-song-skill/suno-lyrics-to-song",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/lyrics-to-song-skill/blob/900f15a7e7e03b3d1f53180d945464a9109a3085/skills/suno-lyrics-to-song/SKILL.md",
+      "commit": "900f15a7e7e03b3d1f53180d945464a9109a3085",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/multilingual-voiceover-skill/ai-multilingual-dubbing",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/multilingual-voiceover-skill/blob/561cd0436686e1f7a163258967a73bfc938a56cd/skills/ai-multilingual-dubbing/SKILL.md",
+      "commit": "561cd0436686e1f7a163258967a73bfc938a56cd",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/photo-to-anime-skill/ai-photo-restyler",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/photo-to-anime-skill/blob/0bc3d42f2414ebc6f09c23e623a5cdca3b3f1f85/skills/ai-photo-restyler/SKILL.md",
+      "commit": "0bc3d42f2414ebc6f09c23e623a5cdca3b3f1f85",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/talking-avatar-video-skill/talking-avatar-video",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/talking-avatar-video-skill/blob/5d65df6ca3a201c4094138e9a6d88043f1edf130/skills/talking-avatar-video/SKILL.md",
+      "commit": "5d65df6ca3a201c4094138e9a6d88043f1edf130",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "beatra-ai/viral-video-remake-skill/viral-video-teardown-remake",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/beatra-ai/viral-video-remake-skill/blob/6980d99f261749d903ecc743a6653c736873d45a/skills/viral-video-teardown-remake/SKILL.md",
+      "commit": "6980d99f261749d903ecc743a6653c736873d45a",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "better-auth/skills/best-practices",
@@ -375,6 +607,22 @@
       "checked_at": "2026-10-28T02:35:01.970Z",
       "url": "https://github.com/ccheney/robust-skills/blob/0eea7b060d12e3520556a73b15fbfa79480987d1/skills/bazel/SKILL.md",
       "commit": "0eea7b060d12e3520556a73b15fbfa79480987d1"
+    },
+    {
+      "id": "chaunsin/agent-skills/drizzle-migration-conflict",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/chaunsin/agent-skills/blob/f26f98c32aa414b980f8ae7552a6c624c8d7f751/skills/drizzle-migration-conflict/SKILL.md",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "chaunsin/agent-skills/pre-release-review",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/chaunsin/agent-skills/blob/f26f98c32aa414b980f8ae7552a6c624c8d7f751/skills/pre-release-review/SKILL.md",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "claude-dev-suite/claude-dev-suite/radix-ui",
@@ -705,6 +953,22 @@
       "commit": "fb9bf3156f31ef859174c9f51ac859f2e5cd6bc3"
     },
     {
+      "id": "CodeShuX/mockhunter/mock-hunter",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/CodeShuX/mockhunter/blob/1c6da4d88fc86af10ed89b94eadfe9126aadee4b/skills/mockhunter/SKILL.md",
+      "commit": "1c6da4d88fc86af10ed89b94eadfe9126aadee4b",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "commitshow/production-audit/production-audit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/commitshow/production-audit/blob/12c3bd37c6318a0f8b9b6fb075be2e1ab813f4a5/.claude/skills/production-audit/SKILL.md",
+      "commit": "12c3bd37c6318a0f8b9b6fb075be2e1ab813f4a5",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "confident-ai/deepeval/deepeval-otel",
       "batch": 3,
       "status": "verified",
@@ -728,12 +992,52 @@
       ]
     },
     {
+      "id": "connerkward/lookdev-auto-skill/lookdev-auto",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/connerkward/lookdev-auto-skill/blob/f8c2fa0a5d58bb8f5d045ff8d3b7ba9e9f1d74a0/SKILL.md",
+      "commit": "f8c2fa0a5d58bb8f5d045ff8d3b7ba9e9f1d74a0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "connerkward/mcp-apple-notes/apple-notes-search",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/connerkward/mcp-apple-notes/blob/8a399dc8a31bcc7b99c5889735e256667ce54f80/skills/apple-notes-search/SKILL.md",
+      "commit": "8a399dc8a31bcc7b99c5889735e256667ce54f80",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "convex/agent-skills/convex",
       "batch": 3,
       "status": "verified",
       "checked_at": "2026-10-28T02:35:03.127Z",
       "url": "https://github.com/convex/agent-skills/blob/3d1e9c6e288a23ed5f8ff28adab300d5b62a1686/skills/convex/SKILL.md",
       "commit": "3d1e9c6e288a23ed5f8ff28adab300d5b62a1686"
+    },
+    {
+      "id": "CosmoBlk/email-marketing-bible/email-marketing-bible",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/CosmoBlk/email-marketing-bible/blob/962648c1b147652244c4e4953e96c65421a79e70/skills/email-marketing-bible/SKILL.md",
+      "commit": "962648c1b147652244c4e4953e96c65421a79e70",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "cruisekkk/time-ledger/time-ledger",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/cruisekkk/time-ledger/blob/f18ae661a065d87c8f117e86aec0195b3139bdd0/SKILL.md",
+      "commit": "f18ae661a065d87c8f117e86aec0195b3139bdd0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "cruisekkk/trading-ledger/trading-ledger",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/cruisekkk/trading-ledger/blob/990512836f13020a61960ccae9a47c51e7dd822e/SKILL.md",
+      "commit": "990512836f13020a61960ccae9a47c51e7dd822e",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "currents-dev/playwright-best-practices-skill/playwright-best-practices",
@@ -1167,6 +1471,14 @@
       "commit": "79cab5bed28b24d92c185d236feb33f5783dfeb3"
     },
     {
+      "id": "fclairamb/solidping-plugin/solidping",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/fclairamb/solidping-plugin/blob/ba030a5167d6d6fd2b8c8d92bc6bb3378cffab87/skills/solidping-monitoring/SKILL.md",
+      "commit": "ba030a5167d6d6fd2b8c8d92bc6bb3378cffab87",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "firebase/agent-skills/firebase-auth-basics",
       "batch": 3,
       "status": "verified",
@@ -1183,6 +1495,14 @@
       "commit": "a9a46fe23af001d726a05d8448d25a7188b42fdc"
     },
     {
+      "id": "FlowLLM-AI/AxonX/axonx",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/FlowLLM-AI/AxonX/blob/783dc9f454ebdc09da755ecaca1f3f6d18b675e8/skills/axonx/SKILL.md",
+      "commit": "783dc9f454ebdc09da755ecaca1f3f6d18b675e8",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "georgeguimaraes/elixir-agent-tools/elixir",
       "batch": 3,
       "status": "verified",
@@ -1197,6 +1517,14 @@
       "checked_at": "2026-10-28T02:35:06.286Z",
       "url": "https://github.com/georgeguimaraes/elixir-agent-tools/blob/ac3a5a1661a087158b39d5eb742b3c25fe3c7b44/plugins/elixir-dev/skills/phoenix/SKILL.md",
       "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44"
+    },
+    {
+      "id": "getchordlabs/chord/chord-onchain-trading",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/getchordlabs/chord/blob/00c41067e304d348b71841cb1c18910bf37e2859/skills/chord/SKILL.md",
+      "commit": "00c41067e304d348b71841cb1c18910bf37e2859",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "github/awesome-copilot/aspnet-minimal-api-openapi",
@@ -1711,12 +2039,36 @@
       "commit": "fe73fb33a09ee6562eeec7415a3f9a3bcf795177"
     },
     {
+      "id": "glukicov/slideops/slideops",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/glukicov/slideops/blob/824c3779671fc3bd05774d940693ab7409f9e377/skills/slideops/SKILL.md",
+      "commit": "824c3779671fc3bd05774d940693ab7409f9e377",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "gongdear/cline-pilot/cline-pilot",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/gongdear/cline-pilot/blob/aff85675ae2fdcca1e5824230b1be86ab4b89198/SKILL.md",
+      "commit": "aff85675ae2fdcca1e5824230b1be86ab4b89198",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "google-gemini/gemini-skills/gemini-api-dev",
       "batch": 5,
       "status": "verified",
       "checked_at": "2026-10-31T00:19:34.695Z",
       "url": "https://github.com/google-gemini/gemini-skills/blob/39d81f4c7de5e56631d07e4ea766d3fe9752ce5d/skills/gemini-api-dev/SKILL.md",
       "commit": "39d81f4c7de5e56631d07e4ea766d3fe9752ce5d"
+    },
+    {
+      "id": "gooseworks-ai/goose-skills/ad-campaign-analyzer",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/gooseworks-ai/goose-skills/blob/1add09bd8e0d057e91e25c96b9282498e2fcb2a2/skills/shared/ad-campaign-analyzer/SKILL.md",
+      "commit": "1add09bd8e0d057e91e25c96b9282498e2fcb2a2",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "greensock/gsap-skills/gsap-core",
@@ -1781,6 +2133,22 @@
       "checked_at": "2026-10-28T02:35:09.593Z",
       "url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-utils/SKILL.md",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+    },
+    {
+      "id": "Hanyuyuan6/remote-gpu-trainer/remote-gpu-trainer",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Hanyuyuan6/remote-gpu-trainer/blob/fe01c55c8bae1ccbfaf2ae7708cdca7c1fdaf785/SKILL.md",
+      "commit": "fe01c55c8bae1ccbfaf2ae7708cdca7c1fdaf785",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "harshmaur/apify-reddit-scraper-skill/apify-reddit-scraper",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/harshmaur/apify-reddit-scraper-skill/blob/5a2b85cfda62e44bf07b846c57aea7986b47e3ab/skills/apify-reddit-scraper/SKILL.md",
+      "commit": "5a2b85cfda62e44bf07b846c57aea7986b47e3ab",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "hashicorp/agent-skills/refactor-module",
@@ -4775,6 +5143,22 @@
       "commit": "ab85a061f7bcc039dac13ee193de7a4cd4388571"
     },
     {
+      "id": "jiawood2006/hermes-skills/de-ai-writer",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/jiawood2006/hermes-skills/blob/07450aa5ef29fe471ca4562ecdd613aafa40e8a0/skills/de-ai-writer/SKILL.md",
+      "commit": "07450aa5ef29fe471ca4562ecdd613aafa40e8a0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "Junaid-PK/laravel-development-workflow/laravel-development-workflow",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Junaid-PK/laravel-development-workflow/blob/e8747afc1a427ae16e70ec01ad994788e71936a4/SKILL.md",
+      "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "K-Dense-AI/scientific-agent-skills/transformers",
       "batch": null,
       "status": "verified",
@@ -5081,6 +5465,22 @@
       "commit": "2e39a3f94fb9acbd0d73f6b0aecc9f83dc14547e"
     },
     {
+      "id": "lewiswigmore/agent-skills/vscode-extension-guide-en",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/lewiswigmore/agent-skills/blob/3f72f3b284e46a4da63035ca22c40c240affad8d/skills/vscode-extension-guide-en/SKILL.md",
+      "commit": "3f72f3b284e46a4da63035ca22c40c240affad8d",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "lognorm/lognorm-mcp/lognorm",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/lognorm/lognorm-mcp/blob/74ee2ffbbf4980ca7ae2836fb3426ccc92d6c527/skills/lognorm/SKILL.md",
+      "commit": "74ee2ffbbf4980ca7ae2836fb3426ccc92d6c527",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "lucianghinda/superpowers-ruby/rails-guides",
       "batch": 6,
       "status": "verified",
@@ -5103,6 +5503,14 @@
       "checked_at": "2026-10-28T02:35:11.960Z",
       "url": "https://github.com/lucianghinda/superpowers-ruby/blob/99fac3d8bee27bab20b23d4bef6fa634738a59e8/skills/test-driven-development/SKILL.md",
       "commit": "99fac3d8bee27bab20b23d4bef6fa634738a59e8"
+    },
+    {
+      "id": "luoyuctl/agenttrace/agenttrace-session-audit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/luoyuctl/agenttrace/blob/15ed07f24f4d504dcf9c32d40caed36cd9e6c470/skills/agenttrace-session-audit/SKILL.md",
+      "commit": "15ed07f24f4d504dcf9c32d40caed36cd9e6c470",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "madteacher/mad-agents-skills/flutter-animations",
@@ -5403,6 +5811,14 @@
       "url": "https://github.com/mcollina/skills/blob/c75d70dbfbe991d8cec42aeda0b64ff14fbb9ac7/skills/fastify/SKILL.md",
       "commit": "c75d70dbfbe991d8cec42aeda0b64ff14fbb9ac7",
       "source_skill_name": "fastify-best-practices"
+    },
+    {
+      "id": "merc1305/findMate/find-complementary-founders",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/merc1305/findMate/blob/0fcdf8e841ea5cdf02a00807ac061a674fdae41a/skills/find-complementary-founders/SKILL.md",
+      "commit": "0fcdf8e841ea5cdf02a00807ac061a674fdae41a",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "microsoft/github-copilot-for-azure/azure-ai",
@@ -7300,6 +7716,78 @@
       "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
     },
     {
+      "id": "mishanefedov/skill-issue/skill-issue",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/mishanefedov/skill-issue/blob/949282fa8cfa22283806057f0277b01698839836/skills/skill-issue/SKILL.md",
+      "commit": "949282fa8cfa22283806057f0277b01698839836",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "mnemoverse/agent-memory-discipline/agent-memory-discipline",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/mnemoverse/agent-memory-discipline/blob/61d63865e079290410499c86cbf7e97edb547fdd/skills/agent-memory-discipline/SKILL.md",
+      "commit": "61d63865e079290410499c86cbf7e97edb547fdd",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "MohammadHijjawi97/since-cutoff/since-cutoff",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/MohammadHijjawi97/since-cutoff/blob/e13cf02e6b63caee81808f7933cc6fd80399a823/skills/since-cutoff/SKILL.md",
+      "commit": "e13cf02e6b63caee81808f7933cc6fd80399a823",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "moooai/parcel-coupon/parcel-coupon",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/moooai/parcel-coupon/blob/dacdde81a90e4db12063a73eae480f9c947c02d9/SKILL.md",
+      "commit": "dacdde81a90e4db12063a73eae480f9c947c02d9",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "moooai/takeout-coupon/takeout-coupon",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/moooai/takeout-coupon/blob/a4f393b891c8d7d0d81c53580651c570cd3d4e6c/SKILL.md",
+      "commit": "a4f393b891c8d7d0d81c53580651c570cd3d4e6c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "moooai/trip-coupon/trip-coupon",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/moooai/trip-coupon/blob/ca075a7bcf98d867630d29e5e6ebe418892bab26/SKILL.md",
+      "commit": "ca075a7bcf98d867630d29e5e6ebe418892bab26",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "multica-ai/andrej-karpathy-skills/andrej-karpathy",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/skills/karpathy-guidelines/SKILL.md",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "mycelos-ai/bumblebee-skill/bumblebee",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/mycelos-ai/bumblebee-skill/blob/acca2bd5e207da99437e16bf04b35d19eb5b2392/SKILL.md",
+      "commit": "acca2bd5e207da99437e16bf04b35d19eb5b2392",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "Necmttn/ax/ax-extract-workflow",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Necmttn/ax/blob/fca259c0f7accfdac756ac323924bde8732fd9c0/skills/ax-extract-workflow/SKILL.md",
+      "commit": "fca259c0f7accfdac756ac323924bde8732fd9c0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "neondatabase/agent-skills/neon-postgres",
       "batch": 6,
       "status": "verified",
@@ -7368,6 +7856,14 @@
       "checked_at": "2026-10-28T02:35:13.207Z",
       "url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/SKILL.md",
       "commit": "49f948faa9258a0c61caceaf225e179651397431"
+    },
+    {
+      "id": "Outreachgenie/outreachgenie-linkedin-mcp/outreachgenie-list-audit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp/blob/a7d6bd1a12e6671a6c8bc9b430a69e999d8504dd/skills/outreachgenie-list-audit/SKILL.md",
+      "commit": "a7d6bd1a12e6671a6c8bc9b430a69e999d8504dd",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "Paldom/python-skills/python-ci",
@@ -7474,6 +7970,30 @@
       "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3"
     },
     {
+      "id": "prateeks367/voicemoat-skills/draft-my-comments",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/draft-my-comments/SKILL.md",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "prateeks367/voicemoat-skills/get-seen-in-replies",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/get-seen-in-replies/SKILL.md",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "prateeks367/voicemoat-skills/why-did-this-post-flop",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/why-did-this-post-flop/SKILL.md",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "prisma/skills/prisma-cli",
       "batch": 7,
       "status": "verified",
@@ -7520,6 +8040,22 @@
       "checked_at": "2026-10-28T02:35:14.211Z",
       "url": "https://github.com/pymodel/react-frontend-skills/blob/b210600fdf49441ee1efeca2cbdc05599ec03019/skills/msw/SKILL.md",
       "commit": "b210600fdf49441ee1efeca2cbdc05599ec03019"
+    },
+    {
+      "id": "qinghui316/ecl-harness-engineer/ecl-harness-engineer",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/qinghui316/ecl-harness-engineer/blob/5019d056e14f844407287542ae1014283bf35c43/SKILL.md",
+      "commit": "5019d056e14f844407287542ae1014283bf35c43",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "rainmanjam/poka-yoke/poka-yoke",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/rainmanjam/poka-yoke/blob/726a575e3d48d07d908abfcbb192cae09671fff2/plugins/poka-yoke/skills/poka-yoke/SKILL.md",
+      "commit": "726a575e3d48d07d908abfcbb192cae09671fff2",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "redis/agent-skills/redis-core",
@@ -7729,6 +8265,30 @@
       "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
     },
     {
+      "id": "sandbaseai/awesome-workbuddy/skill-security-audit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/sandbaseai/awesome-workbuddy/blob/fba16cc179f2c769f000ced28140d8d2b71b9fa7/skills/skill-security-audit/SKILL.md",
+      "commit": "fba16cc179f2c769f000ced28140d8d2b71b9fa7",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "sandbaseai/cli/sandbase-mcp",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/sandbaseai/cli/blob/844c8b09e6944b31366885f5600eb29b8135a291/skills/sandbase/SKILL.md",
+      "commit": "844c8b09e6944b31366885f5600eb29b8135a291",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "Search-3D/electron-drive-skill/electron-drive-skill",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Search-3D/electron-drive-skill/blob/2db10393bd88915bb446ad77f852182957abdf89/SKILL.md",
+      "commit": "2db10393bd88915bb446ad77f852182957abdf89",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "secondsky/claude-skills/tailwind-v4-shadcn",
       "batch": 7,
       "status": "verified",
@@ -7765,13 +8325,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/007/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/2slides-ppt-generator",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/2slides-ppt-generator/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -7852,13 +8405,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ad-campaign-analyzer",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ad-campaign-analyzer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ad-creative",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -7912,13 +8458,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/agent-harness-fault-injection/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/agent-memory-discipline",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/agent-memory-discipline/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8003,13 +8542,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/agents-v2-py/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/agenttrace-session-audit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/agenttrace-session-audit/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8104,20 +8636,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-headshot-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-image-generation-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-image-generation-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-image-realism",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8139,13 +8657,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-logo-maker",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-logo-maker/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-meta-tag-writer",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8160,31 +8671,10 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ai-multilingual-dubbing",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-multilingual-dubbing/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-photo-restyler",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-photo-restyler/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/ai-pipeline-orchestration",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-pipeline-orchestration/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ai-podcast-voiceover",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ai-podcast-voiceover/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8335,13 +8825,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/andrej-karpathy",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/andrej-karpathy/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/android_ui_verification",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8412,13 +8895,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/anti-slop-design",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/anti-slop-design/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/anti-ui-slop",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8437,20 +8913,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/antigravity-workflows/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/anywrite",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/anywrite/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/aomi-transact",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/aomi-transact/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8608,13 +9070,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/apify-reddit-scraper",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/apify-reddit-scraper/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/apify-ultimate-scraper",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8640,13 +9095,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/appium-skill/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/apple-notes-search",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/apple-notes-search/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8692,13 +9140,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/assay",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/assay/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/asset-inventory",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -8731,13 +9172,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/atlas-cloud-media/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/atlas-contract",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/atlas-contract/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -8899,20 +9333,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/awt-e2e-testing/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ax-extract-workflow/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/axonx",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/axonx/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -9896,20 +10316,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/beatra",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/beatra/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/beatra-ai-video-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/beatra-ai-video-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/bevy-ecs-expert",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -10001,13 +10407,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/brendangregg-use-tsa",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/brendangregg-use-tsa/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/brevo-automation",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -10057,13 +10456,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/browser-testing-with-devtools/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/buddy-program-manager",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -10103,13 +10495,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/bullmq-specialist/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/bumblebee",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/bumblebee/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -10274,13 +10659,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/chord-onchain-trading",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/chord-onchain-trading/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/chrome-extension-developer",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -10376,13 +10754,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/clients-accounts/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/cline-pilot",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/cline-pilot/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -10729,13 +11100,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/cron-doctor",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/cron-doctor/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/cross-chain-relayer-audit",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -11013,20 +11377,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/dbt-transformation-patterns/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/de-ai-writer",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/de-ai-writer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/debate-review",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/debate-review/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -11380,20 +11730,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/draft-my-comments",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/draft-my-comments/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/drizzle-migration-conflict",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/drizzle-migration-conflict/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/dropbox-automation",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -11450,38 +11786,10 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/ecl-harness-engineer",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ecl-harness-engineer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ecommerce-listing-image-set/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/electron-drive-skill",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/electron-drive-skill/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/email-issue-fixer",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/email-issue-fixer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/email-marketing-bible",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/email-marketing-bible/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -11800,13 +12108,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/find-complementary-founders",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/find-complementary-founders/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/firebase",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -12031,13 +12332,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/frontend-lighthouse",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/frontend-lighthouse/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/frontend-mobile-development-component-scaffold",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -12105,13 +12399,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/frontend-ui-engineering/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/fsi-compliance-checker",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/fsi-compliance-checker/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -12206,13 +12493,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/geo-audit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/geo-audit/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/geo-brand-mentions",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -12252,20 +12532,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/geo-schema/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/geo-technical",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/geo-technical/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/get-seen-in-replies/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -12780,13 +13046,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/idea-os",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/idea-os/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/identity-access-management",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -13291,13 +13550,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/laravel-development-workflow",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/laravel-development-workflow/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/laravel-expert",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -13620,13 +13872,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/lognorm",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/lognorm/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/logo-image-design",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -13680,13 +13925,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/longbridge-research/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/lookdev-auto",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/lookdev-auto/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -13893,13 +14131,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/marlin-bed-leveling",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/marlin-bed-leveling/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/matplotlib",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -14082,13 +14313,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/mock-hunter",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/mock-hunter/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/model-serving-kubernetes",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -14268,13 +14492,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/multi-tenant-llm-hosting/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/music-generation-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/music-generation-studio/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -14838,13 +15055,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/open-dynamic-workflows",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/open-dynamic-workflows/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/openapi-spec-generation",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -14922,13 +15132,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/outreachgenie-list-audit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/outreachgenie-list-audit/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/page-speed-score-simulator",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -14964,24 +15167,10 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/papers-skill",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/papers-skill/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/paragraph-keyword-optimizer",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/paragraph-keyword-optimizer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/parcel-coupon",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/parcel-coupon/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -15048,13 +15237,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/people-data",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/people-data/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/people-directory",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -15101,13 +15283,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/pipedrive-automation/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/placecall",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/placecall/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -15160,13 +15335,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/poka-yoke",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/poka-yoke/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/policy-acknowledgement",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -15192,13 +15360,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/post/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/poster-design-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/poster-design-studio/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -15293,13 +15454,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/pre-release-review",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/pre-release-review/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/pre-ship-gate",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -15374,20 +15528,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/product-design-harness/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/product-photo-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/product-photo-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/production-audit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/production-audit/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -15748,13 +15888,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/remote-gpu-trainer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/remote-work-tracker",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -15934,13 +16067,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/salesforce-automation/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/sandbase-mcp",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/sandbase-mcp/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -16483,20 +16609,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/session-handoff",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/session-handoff/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/shark",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/shark/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/sharp-edges",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -16546,24 +16658,10 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/shopify-review-triage",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/shopify-review-triage/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/simplify-code",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/simplify-code/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/since-cutoff",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/since-cutoff/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -16630,13 +16728,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/skill-issue",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/skill-issue/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/skill-optimizer",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -16648,13 +16739,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/skill-scanner/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/skill-security-audit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/skill-security-audit/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -16704,13 +16788,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/slack-gif-creator/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/slideops",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/slideops/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -16788,13 +16865,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/solidity-security/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/solidping",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/solidping/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -16889,13 +16959,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/sql-sentinel",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/sql-sentinel/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/square-automation",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -16921,13 +16984,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/sred-work-summary/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/sshepherd",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/sshepherd/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -17022,13 +17078,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/suno-lyrics-to-song",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/suno-lyrics-to-song/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/supabase-automation",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -17120,38 +17169,10 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/takeout-coupon",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/takeout-coupon/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/talivia-agent-kit",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/talivia-agent-kit/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/talking-avatar-video",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/talking-avatar-video/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/tanstack-query-expert",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/tanstack-query-expert/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/tastegate",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/tastegate/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -17393,13 +17414,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/time-ledger",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/time-ledger/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/time-tracking",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -17470,13 +17484,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/trading-ledger",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/trading-ledger/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/traffic-potential-calculator",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -17516,13 +17523,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/trigger-dev/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/trip-coupon",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/trip-coupon/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -17708,13 +17708,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/using-agent-skills",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/using-agent-skills/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/using-n8n-mcp-skills",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -17740,13 +17733,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/ux-audit/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/uxkin-research",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/uxkin-research/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -17848,13 +17834,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/viral-video-teardown-remake",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/viral-video-teardown-remake/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/visibility-index-calculator",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -17880,27 +17859,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/voice-ai-development/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/voice-cloning-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/voice-cloning-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/voiceover-narration-studio",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/voiceover-narration-studio/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/vscode-extension-guide-en",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/vscode-extension-guide-en/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -18065,13 +18023,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/why-did-this-post-flop",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/why-did-this-post-flop/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/wiki-builder",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -18083,13 +18034,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/wiki-page-writer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/wiki-yylo",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/wiki-yylo/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -18177,13 +18121,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/workflow-yylo",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/workflow-yylo/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/wp-site-health-auditor",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -18254,13 +18191,6 @@
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
-      "id": "sickn33/agentic-awesome-skills/yao-meta-skill",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/yao-meta-skill/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
       "id": "sickn33/agentic-awesome-skills/yes-md",
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
@@ -18300,13 +18230,6 @@
       "status": "verified",
       "checked_at": "2026-11-01T02:00:44.282Z",
       "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/youtube-seo-optimizer/SKILL.md",
-      "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
-    },
-    {
-      "id": "sickn33/agentic-awesome-skills/youtube-transcript-skills",
-      "status": "verified",
-      "checked_at": "2026-11-01T02:00:44.282Z",
-      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/skills/youtube-transcript-skills/SKILL.md",
       "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
     },
     {
@@ -18388,6 +18311,14 @@
       "commit": "b7f6ad814a903f912962ea3cccad8c02766f753b"
     },
     {
+      "id": "Slashworks-biz/idea-os/idea-os",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Slashworks-biz/idea-os/blob/2417d626d16838efeb2a99bebe45425be63cc6d6/SKILL.md",
+      "commit": "2417d626d16838efeb2a99bebe45425be63cc6d6",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "sleekdotdesign/agent-skills/design-mobile-apps",
       "batch": 8,
       "status": "verified",
@@ -18411,6 +18342,22 @@
       "checked_at": "2026-10-28T02:35:16.129Z",
       "url": "https://github.com/spences10/svelte-skills-kit/blob/5fe49891cf19b451c846ed613712c4d9545dd24f/plugins/svelte-skills/skills/sveltekit-structure/SKILL.md",
       "commit": "5fe49891cf19b451c846ed613712c4d9545dd24f"
+    },
+    {
+      "id": "stareezy-1/frontend-architecture-skill/frontend-lighthouse",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/stareezy-1/frontend-architecture-skill/blob/d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0/skills/frontend-lighthouse/SKILL.md",
+      "commit": "d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "stas4000/tastegate/tastegate",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/stas4000/tastegate/blob/1bee778fb4550a8fb76ed1941644c81781f6a1af/tastegate/SKILL.md",
+      "commit": "1bee778fb4550a8fb76ed1941644c81781f6a1af",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "stripe/ai/stripe-best-practices",
@@ -18503,6 +18450,14 @@
       "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7"
     },
     {
+      "id": "Suraj1235/open-dynamic-workflows/open-dynamic-workflows",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/Suraj1235/open-dynamic-workflows/blob/972bb98494ea23f907df88850024bd7022b099d4/packages/openclaw-adapter/skills/open-dynamic-workflows/SKILL.md",
+      "commit": "972bb98494ea23f907df88850024bd7022b099d4",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "sveltejs/ai-tools/svelte-code-writer",
       "batch": 8,
       "status": "verified",
@@ -18536,6 +18491,30 @@
           "name": "svelte-code-writer"
         }
       ]
+    },
+    {
+      "id": "takeaseatventure/devops-skills/cron-doctor",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/takeaseatventure/devops-skills/blob/7b5f4eb40b008b030adde8afe4012141ac1f702c/skills/cron-doctor/SKILL.md",
+      "commit": "7b5f4eb40b008b030adde8afe4012141ac1f702c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "takeaseatventure/sql-sentinel/sql-sentinel",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/takeaseatventure/sql-sentinel/blob/71335dea347b9fd9c67c92ca1b302ae4f8a76435/skills/sql-sentinel/SKILL.md",
+      "commit": "71335dea347b9fd9c67c92ca1b302ae4f8a76435",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "talivia-group/agent/talivia-agent-kit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/talivia-group/agent/blob/f4ed3fc6b554ad5183a57ae13ca2a9bd5162c12a/SKILL.md",
+      "commit": "f4ed3fc6b554ad5183a57ae13ca2a9bd5162c12a",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "tanstack-skills/tanstack-skills/tanstack-start",
@@ -18587,12 +18566,44 @@
       "commit": "19caa51d5fd144ef6b2764f2332f4c856aa5d1af"
     },
     {
+      "id": "thecsdoctor/brendangregg-use-tsa-skill/brendangregg-use-tsa",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/thecsdoctor/brendangregg-use-tsa-skill/blob/b9f4dd6cebfd871551f10ab84b51b31ec459fe60/SKILL.md",
+      "commit": "b9f4dd6cebfd871551f10ab84b51b31ec459fe60",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "timwukp/agent-skills-best-practice/fsi-compliance-checker",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/timwukp/agent-skills-best-practice/blob/0a67102a22e6958154baf632b9ac4eeec7f1fa9c/skills/skills/fsi-compliance-checker/SKILL.md",
+      "commit": "0a67102a22e6958154baf632b9ac4eeec7f1fa9c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "triggerdotdev/skills/trigger-setup",
       "batch": 8,
       "status": "verified",
       "checked_at": "2026-10-28T02:35:17.002Z",
       "url": "https://github.com/triggerdotdev/skills/blob/8ef5ae6f0cac95c2995abe4c72af1ebef78bcdfd/trigger-setup/SKILL.md",
       "commit": "8ef5ae6f0cac95c2995abe4c72af1ebef78bcdfd"
+    },
+    {
+      "id": "tubeagentkit/youtube-transcript-skills/youtube-transcript-skills",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/tubeagentkit/youtube-transcript-skills/blob/97d5ad332dd3872edfb6beddda5f8587a4bfc863/skills/youtube-transcript/SKILL.md",
+      "commit": "97d5ad332dd3872edfb6beddda5f8587a4bfc863",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "uxkin/agent/uxkin-research",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/uxkin/agent/blob/eef108f538e965ce8c74f8a5616a32c59f65a405/skills/uxkin-research/SKILL.md",
+      "commit": "eef108f538e965ce8c74f8a5616a32c59f65a405",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "vamseeachanta/workspace-hub/uv-package-manager",
@@ -18685,6 +18696,14 @@
       ]
     },
     {
+      "id": "voygr-tech/placecall/placecall",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/voygr-tech/placecall/blob/534e35839c9125cdba2f1707932cf2b84bb7d2d3/skills/placecall/SKILL.md",
+      "commit": "534e35839c9125cdba2f1707932cf2b84bb7d2d3",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "vuejs-ai/skills/vue-best-practices",
       "batch": 8,
       "status": "verified",
@@ -18707,6 +18726,14 @@
       "checked_at": "2026-10-28T02:35:18.311Z",
       "url": "https://github.com/webpro/skills/blob/14c3bf406562bd4bcf0035315a116be57710b017/skills/configure-knip/SKILL.md",
       "commit": "14c3bf406562bd4bcf0035315a116be57710b017"
+    },
+    {
+      "id": "wede-wx/atlas/atlas-contract",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/wede-wx/atlas/blob/3b7922c325cc11dfe1c6b387efc20572c45374db/atlas-contract/SKILL.md",
+      "commit": "3b7922c325cc11dfe1c6b387efc20572c45374db",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review",
@@ -18837,12 +18864,76 @@
       "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
     },
     {
+      "id": "wwewtech/anti-slop-design/anti-slop-design",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/wwewtech/anti-slop-design/blob/071fd3c40a57d1e6bd6953b4d10974afb4626d04/skills/anti-slop-design/SKILL.md",
+      "commit": "071fd3c40a57d1e6bd6953b4d10974afb4626d04",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "wwewtech/marlin-bed-leveling/marlin-bed-leveling",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/wwewtech/marlin-bed-leveling/blob/c1cde84b6b37df4e490ffc6c4726cf0a0613d2f4/skills/marlin-bed-leveling/SKILL.md",
+      "commit": "c1cde84b6b37df4e490ffc6c4726cf0a0613d2f4",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "xwmxcz/papers-skill/papers-skill",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/xwmxcz/papers-skill/blob/a64c2eda2c9fc182c96e1409cde267b262dbebde/skills/papers-research/SKILL.md",
+      "commit": "a64c2eda2c9fc182c96e1409cde267b262dbebde",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "yaojingang/yao-meta-skill/yao-meta-skill",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/yaojingang/yao-meta-skill/blob/f5d8f681372edae1915991e2de0c23dc306dd30f/SKILL.md",
+      "commit": "f5d8f681372edae1915991e2de0c23dc306dd30f",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
       "id": "yonesuke/skills/polars",
       "batch": 8,
       "status": "verified",
       "checked_at": "2026-10-28T02:35:19.383Z",
       "url": "https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md",
       "commit": "1e23d345446ea8a21771192bb1b3b19a9842a97f"
+    },
+    {
+      "id": "yylo-dev/yylo-skills/wiki-yylo",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/yylo-dev/yylo-skills/blob/035023f66153d032d08da9203eb15f0cdaedb616/skills/wiki-yylo/SKILL.md",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "yylo-dev/yylo-skills/workflow-yylo",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/yylo-dev/yylo-skills/blob/035023f66153d032d08da9203eb15f0cdaedb616/skills/workflow-yylo/SKILL.md",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "zubair-trabzada/geo-seo-claude/geo-audit",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude/blob/989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c/skills/geo-audit/SKILL.md",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
+    },
+    {
+      "id": "zubair-trabzada/geo-seo-claude/geo-technical",
+      "status": "verified",
+      "checked_at": "2026-11-01T02:32:06.298Z",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude/blob/989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c/skills/geo-technical/SKILL.md",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "selection_reason": "Credited original repository and exact SKILL.md path verified at this commit, from pinned agentic-awesome-skills source-credits.json."
     },
     {
       "id": "zxkane/aws-skills/aws-sst-development",
