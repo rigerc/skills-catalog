@@ -12,6 +12,14 @@
       "credit_url": "https://github.com/2slides/slides-generation-2slides-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/ad-campaign-analyzer",
+      "name": "ad-campaign-analyzer",
+      "original_repository": "gooseworks-ai/goose-skills",
+      "commit": "1add09bd8e0d057e91e25c96b9282498e2fcb2a2",
+      "path": "skills/shared/ad-campaign-analyzer/SKILL.md",
+      "credit_url": "https://github.com/gooseworks-ai/goose-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
       "name": "ai-headshot-studio",
       "original_repository": "beatra-ai/ai-headshot-generator-skill",
@@ -76,6 +84,14 @@
       "credit_url": "https://github.com/aomi-labs/skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/apify-reddit-scraper",
+      "name": "apify-reddit-scraper",
+      "original_repository": "harshmaur/apify-reddit-scraper-skill",
+      "commit": "5a2b85cfda62e44bf07b846c57aea7986b47e3ab",
+      "path": "skills/apify-reddit-scraper/SKILL.md",
+      "credit_url": "https://github.com/harshmaur/apify-reddit-scraper-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/apple-notes-search",
       "name": "apple-notes-search",
       "original_repository": "connerkward/mcp-apple-notes",
@@ -130,6 +146,22 @@
       "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
       "path": "skills/browser-testing-with-devtools/SKILL.md",
       "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/chord-onchain-trading",
+      "name": "chord-onchain-trading",
+      "original_repository": "getchordlabs/chord",
+      "commit": "00c41067e304d348b71841cb1c18910bf37e2859",
+      "path": "skills/chord/SKILL.md",
+      "credit_url": "https://github.com/getchordlabs/chord"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/cline-pilot",
+      "name": "cline-pilot",
+      "original_repository": "gongdear/cline-pilot",
+      "commit": "aff85675ae2fdcca1e5824230b1be86ab4b89198",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/gongdear/cline-pilot"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/debate-review",
@@ -308,6 +340,22 @@
       "credit_url": "https://github.com/MohammadHijjawi97/since-cutoff"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/slideops",
+      "name": "slideops",
+      "original_repository": "glukicov/slideops",
+      "commit": "824c3779671fc3bd05774d940693ab7409f9e377",
+      "path": "skills/slideops/SKILL.md",
+      "credit_url": "https://github.com/glukicov/slideops"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/solidping",
+      "name": "solidping",
+      "original_repository": "fclairamb/solidping-plugin",
+      "commit": "ba030a5167d6d6fd2b8c8d92bc6bb3378cffab87",
+      "path": "skills/solidping-monitoring/SKILL.md",
+      "credit_url": "https://github.com/fclairamb/solidping-plugin"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/sshepherd",
       "name": "sshepherd",
       "original_repository": "Antheurus/sshepherd",
@@ -330,6 +378,22 @@
       "commit": "5d65df6ca3a201c4094138e9a6d88043f1edf130",
       "path": "skills/talking-avatar-video/SKILL.md",
       "credit_url": "https://github.com/beatra-ai/talking-avatar-video-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/time-ledger",
+      "name": "time-ledger",
+      "original_repository": "cruisekkk/time-ledger",
+      "commit": "f18ae661a065d87c8f117e86aec0195b3139bdd0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/cruisekkk/time-ledger"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/trading-ledger",
+      "name": "trading-ledger",
+      "original_repository": "cruisekkk/trading-ledger",
+      "commit": "990512836f13020a61960ccae9a47c51e7dd822e",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/cruisekkk/trading-ledger"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
