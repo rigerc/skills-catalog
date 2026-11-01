@@ -11,6 +11,8 @@ const pairs=[
   ['mappings.json','mappings.schema.json'],
   ['technology-detection-rules.json','technology-detection-rules.schema.json'],
   ['catalog-source-ledger.json','catalog-source-ledger.schema.json'],
+  ['quality.json','quality.schema.json'],
+  ['quality-waivers.json','quality-waivers.schema.json'],
   ['unmapped.json','unmapped.schema.json']
 ].filter(([file])=>file!=='unmapped.json'||!process.argv.includes('--skip-unmapped'));
 const ajv=new Ajv2020({allErrors:true,strict:true,strictRequired:false});
@@ -40,6 +42,9 @@ if(process.argv.includes('--self-test')){
     ['catalog.json',d=>{d.skills[0].id='not-a-canonical-id'},'malformed canonical skill ID'],
     ['mappings.json',d=>{d.technologies.find(t=>t.mapping_status==='mapped').skill_ids=[]},'mapped technology without recommendations'],
     ['technology-detection-rules.json',d=>{d.rules[0].signals=[{type:'path',path:'../private'}]},'unsafe scanner path'],
+    ['quality.json',d=>{d.tool.checks.push('links')},'live link checking in quality results'],
+    ['quality.json',d=>{d.schema_version=2},'unknown quality schema version'],
+    ['quality-waivers.json',d=>{d.waivers=[{id:'a/b/c',commit:'main',applies_to:['fail'],reason:'too short',reviewed_by:'x'}]},'unpinned waiver'],
     ['unmapped.json',d=>{d.skills[0].id='invalid'},'malformed unmapped skill ID'],
     ['unmapped.json',d=>{delete d.skills[0].skill_name},'incomplete unmapped entry'],
     ['unmapped.json',d=>{d.skills.push({...d.skills[0]})},'duplicated unmapped skill entry']

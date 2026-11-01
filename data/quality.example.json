@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "catalog_id": "nosey-built-in",
+  "generated_at": "2026-11-01T12:00:00Z",
+  "tool": {
+    "name": "skill-validator",
+    "version": "v1.8.0",
+    "checks": [
+      "structure",
+      "content",
+      "contamination"
+    ],
+    "flags": [
+      "--allow-extra-frontmatter"
+    ],
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "summary": {
+    "total": 3,
+    "by_status": {
+      "pass": 1,
+      "warn": 1,
+      "fail": 0,
+      "not_evaluated": 1
+    },
+    "errors": 0,
+    "warnings": 2
+  },
+  "entries": [
+    {
+      "id": "addyosmani/agent-skills/browser-testing-with-devtools",
+      "status": "pass",
+      "source": {
+        "repository": "addyosmani/agent-skills",
+        "path": "skills/browser-testing-with-devtools/SKILL.md",
+        "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+        "tree_sha": "1111111111111111111111111111111111111111"
+      },
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+      "evaluated_at": "2026-11-01T12:00:00Z",
+      "counts": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 0
+      },
+      "findings": [],
+      "metrics": {
+        "tokens": {
+          "skill_md": 1250,
+          "references": 820,
+          "other": 0,
+          "total": 2070
+        },
+        "content": {
+          "word_count": 1250,
+          "sentence_count": 96,
+          "section_count": 4,
+          "list_item_count": 12,
+          "code_block_count": 5,
+          "code_block_ratio": 0.25,
+          "code_languages": [
+            "bash",
+            "python"
+          ],
+          "imperative_count": 34,
+          "imperative_ratio": 0.35,
+          "information_density": 0.3,
+          "instruction_specificity": 0.78,
+          "strong_markers": 9,
+          "weak_markers": 2
+        },
+        "contamination": {
+          "level": "low",
+          "score": 0.05,
+          "language_mismatch": false,
+          "scope_breadth": 1
+        }
+      },
+      "validator_version": "v1.8.0",
+      "checks": [
+        "structure",
+        "content",
+        "contamination"
+      ]
+    },
+    {
+      "id": "CodeShuX/mockhunter/mock-hunter",
+      "status": "warn",
+      "source": {
+        "repository": "CodeShuX/mockhunter",
+        "path": "skills/mockhunter/SKILL.md",
+        "commit": "2222222222222222222222222222222222222222"
+      },
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+      "evaluated_at": "2026-11-01T12:00:00Z",
+      "counts": {
+        "errors": 0,
+        "warnings": 2,
+        "infos": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "category": "Frontmatter",
+          "message": "name \"mock-hunter\" does not match directory \"mockhunter\"",
+          "file": "SKILL.md"
+        },
+        {
+          "level": "warning",
+          "category": "Tokens",
+          "message": "SKILL.md body is 5,400 tokens (recommended < 5,000)",
+          "file": "SKILL.md"
+        }
+      ],
+      "metrics": {
+        "tokens": {
+          "skill_md": 5400,
+          "total": 5400
+        }
+      },
+      "validator_version": "v1.8.0",
+      "checks": [
+        "structure",
+        "content",
+        "contamination"
+      ]
+    },
+    {
+      "id": "example/removed-upstream/gone",
+      "status": "not_evaluated",
+      "source": {
+        "repository": "example/removed-upstream",
+        "path": "SKILL.md",
+        "commit": "3333333333333333333333333333333333333333"
+      },
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+      "evaluated_at": "2026-11-01T12:00:00Z",
+      "not_evaluated": {
+        "code": "auth_required",
+        "message": "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+      },
+      "validator_version": "v1.8.0",
+      "checks": [
+        "structure",
+        "content",
+        "contamination"
+      ]
+    }
+  ],
+  "coverage": {
+    "verified": 3,
+    "current": 3,
+    "stale": 0,
+    "missing": 0,
+    "orphan": 0
+  }
+}

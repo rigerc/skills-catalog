@@ -1,0 +1,520 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey skill quality results v1",
+  "description": "Deterministic, offline skill-validator results for pinned catalog skills. Shape only; cross-file invariants (ids exist in the ledger, counts match findings, summary matches entries) are enforced by scripts/quality.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_id",
+    "generated_at",
+    "tool",
+    "summary",
+    "coverage",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "version",
+        "checks",
+        "flags",
+        "config_sha256"
+      ],
+      "properties": {
+        "name": {
+          "const": "skill-validator"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"
+        },
+        "checks": {
+          "description": "Check groups that were run. 'links' (live HTTP) is deliberately excluded: it is non-deterministic and spends network quota.",
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "structure",
+              "content",
+              "contamination"
+            ]
+          }
+        },
+        "flags": {
+          "description": "Exact CLI flags passed to the validator (e.g. --allow-extra-frontmatter).",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^--[a-z][a-z-]*(?:=.+)?$"
+          }
+        },
+        "config_sha256": {
+          "description": "Hash of version + checks + flags + normalization rules. Entries whose fingerprint differs are stale.",
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total",
+        "by_status",
+        "errors",
+        "warnings"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "by_status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pass",
+            "warn",
+            "fail",
+            "not_evaluated"
+          ],
+          "properties": {
+            "pass": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "warn": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "fail": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "not_evaluated": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "errors": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "warnings": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "entries": {
+      "description": "One entry per evaluated skill, sorted by id. Passing checks are not stored.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "coverage": {
+      "description": "Coverage at generation time. Refresh PRs may lag main; reported, never enforced.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verified",
+        "current",
+        "stale",
+        "missing",
+        "orphan"
+      ],
+      "properties": {
+        "verified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "current": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stale": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "orphan": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gitsha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "status",
+        "source",
+        "fingerprint",
+        "validator_version",
+        "checks",
+        "evaluated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Canonical catalog skill id (matches catalog.json / ledger).",
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "description": "pass: no errors or warnings. warn: warnings only. fail: at least one error. not_evaluated: no verdict (see not_evaluated).",
+          "enum": [
+            "pass",
+            "warn",
+            "fail",
+            "not_evaluated"
+          ]
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "repository",
+            "path",
+            "commit"
+          ],
+          "properties": {
+            "repository": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+            },
+            "path": {
+              "description": "Repository-relative path to the skill's SKILL.md.",
+              "type": "string",
+              "pattern": "^(?:.+/)?SKILL\\.md$"
+            },
+            "commit": {
+              "$ref": "#/$defs/gitsha"
+            },
+            "tree_sha": {
+              "description": "Git tree SHA of the skill directory: a content identity independent of the commit.",
+              "$ref": "#/$defs/gitsha"
+            }
+          }
+        },
+        "fingerprint": {
+          "description": "tool.config_sha256 in force when this entry was produced.",
+          "$ref": "#/$defs/sha256"
+        },
+        "evaluated_at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "errors",
+            "warnings",
+            "infos"
+          ],
+          "properties": {
+            "errors": {
+              "$ref": "#/$defs/count"
+            },
+            "warnings": {
+              "$ref": "#/$defs/count"
+            },
+            "infos": {
+              "$ref": "#/$defs/count"
+            }
+          }
+        },
+        "findings": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/$defs/finding"
+          }
+        },
+        "findings_truncated": {
+          "description": "True when more than 200 findings were produced; counts remain exact.",
+          "type": "boolean"
+        },
+        "metrics": {
+          "$ref": "#/$defs/metrics"
+        },
+        "not_evaluated": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "code",
+            "message"
+          ],
+          "properties": {
+            "code": {
+              "enum": [
+                "upstream_missing",
+                "auth_required",
+                "fetch_failed",
+                "network_error",
+                "throttled",
+                "timeout",
+                "resource_limit",
+                "validator_crashed",
+                "unparseable_output"
+              ]
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            }
+          }
+        },
+        "validator_version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"
+        },
+        "checks": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "structure",
+              "content",
+              "contamination"
+            ]
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "status": {
+            "const": "not_evaluated"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "not_evaluated"
+        ],
+        "properties": {
+          "counts": false,
+          "findings": false,
+          "metrics": false
+        }
+      },
+      "else": {
+        "required": [
+          "counts",
+          "findings"
+        ],
+        "properties": {
+          "not_evaluated": false
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "category",
+        "message"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "error",
+            "warning",
+            "info"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "file": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tokens": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "total"
+          ],
+          "properties": {
+            "skill_md": {
+              "$ref": "#/$defs/count"
+            },
+            "references": {
+              "$ref": "#/$defs/count"
+            },
+            "other": {
+              "$ref": "#/$defs/count"
+            },
+            "total": {
+              "$ref": "#/$defs/count"
+            }
+          }
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "word_count",
+            "imperative_ratio",
+            "information_density",
+            "instruction_specificity"
+          ],
+          "properties": {
+            "word_count": {
+              "$ref": "#/$defs/count"
+            },
+            "sentence_count": {
+              "$ref": "#/$defs/count"
+            },
+            "section_count": {
+              "$ref": "#/$defs/count"
+            },
+            "list_item_count": {
+              "$ref": "#/$defs/count"
+            },
+            "code_block_count": {
+              "$ref": "#/$defs/count"
+            },
+            "code_block_ratio": {
+              "$ref": "#/$defs/ratio"
+            },
+            "code_languages": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "imperative_count": {
+              "$ref": "#/$defs/count"
+            },
+            "imperative_ratio": {
+              "$ref": "#/$defs/ratio"
+            },
+            "information_density": {
+              "$ref": "#/$defs/ratio"
+            },
+            "instruction_specificity": {
+              "$ref": "#/$defs/ratio"
+            },
+            "strong_markers": {
+              "$ref": "#/$defs/count"
+            },
+            "weak_markers": {
+              "$ref": "#/$defs/count"
+            }
+          }
+        },
+        "contamination": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "score"
+          ],
+          "properties": {
+            "level": {
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "score": {
+              "$ref": "#/$defs/ratio"
+            },
+            "language_mismatch": {
+              "type": "boolean"
+            },
+            "scope_breadth": {
+              "$ref": "#/$defs/count"
+            },
+            "primary_category": {
+              "type": "string"
+            },
+            "mismatched_categories": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "multi_interface_tools": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

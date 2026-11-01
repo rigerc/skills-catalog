@@ -1,0 +1,53 @@
+name: Skill quality gate
+# Always runs a lightweight plan step so the required status check exists on all PRs.
+# Installs the validator and downloads upstream content only for changed pins.
+# Report-only initially; enable --enforce after calibration.
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      base_sha:
+        description: 'Optional 40-character base SHA; blank compares the selected branch with main'
+        type: string
+        required: false
+permissions:
+  contents: read
+jobs:
+  gate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Plan changed pinned skills (no upstream requests)
+        id: plan
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || inputs.base_sha || '' }}
+        run: |
+          if [ -z "$BASE_SHA" ]; then
+            BASE_SHA="$(git rev-parse origin/main)"
+          fi
+          echo "base_sha=$BASE_SHA" >> "$GITHUB_OUTPUT"
+          node scripts/quality.mjs --plan --base "$BASE_SHA"
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        if: steps.plan.outputs.targets != '0'
+        with:
+          go-version: '1.25'
+          cache: false
+      - name: Install pinned skill-validator
+        if: steps.plan.outputs.targets != '0'
+        run: |
+          VERSION="$(node scripts/quality.mjs --print-version)"
+          GOBIN="$RUNNER_TEMP/bin" go install "github.com/agent-ecosystem/skill-validator/cmd/skill-validator@${VERSION}"
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+          "$RUNNER_TEMP/bin/skill-validator" --version
+      - name: Check changed pinned skills
+        if: steps.plan.outputs.targets != '0'
+        env:
+          BASE_SHA: ${{ steps.plan.outputs.base_sha }}
+        run: node scripts/quality.mjs --gate --base "$BASE_SHA" --max-groups 20 --deadline-minutes 15
