@@ -1,1 +1,3 @@
 node_modules/
+# Generated only during GitHub Pages deployment
+data/manifest.json
