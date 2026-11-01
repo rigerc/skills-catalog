@@ -118,7 +118,7 @@ nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);colo
 <div class="wrap g2" id="main">
   <aside id="flt" aria-label="Filters">
     <div class="sh"><b>Filters</b><button id="fclose">Done</button></div>
-    <fieldset class="g"><legend>Score</legend><div class="chips" data-g="min"></div></fieldset>
+    <fieldset class="g"><legend>Score</legend><div class="chips" data-g="min"></div><div class="chips" data-g="max"></div></fieldset>
     <fieldset class="g"><legend>Quality check</legend><div class="chips" data-g="qual"></div></fieldset>
     <fieldset class="g"><legend>Recommendation</legend><div class="chips" data-g="map"></div></fieldset>
     <label class="g"><b>Technology</b><select id="tech"></select></label>
@@ -141,11 +141,11 @@ nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);colo
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const get=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u+' returned '+r.status);return r.json()});
-const KEYS=['view','q','cat','tech','combo','repo','map','sort','qual','min'],DEF={view:'skills',map:'all',sort:'name'};
+const KEYS=['view','q','cat','tech','combo','repo','map','sort','qual','min','max'],DEF={view:'skills',map:'all',sort:'name'};
 const P=new URLSearchParams(location.search),S={n:60};KEYS.forEach(k=>S[k]=P.get(k)||DEF[k]||'');
 const CR=[['trigger_clarity','Trigger clarity','How clearly it says when to use the skill'],['instruction_quality','Instruction quality','How actionable the steps are'],['correctness','Correctness','How accurate the content looks'],['safety','Safety','How careful it is with risky actions'],['context_efficiency','Context efficiency','How little context it costs an agent']];
 const QL={pass:'pass',warn:'warnings',fail:'fail',not_evaluated:'not evaluated'};
-const OPT={min:[['','Any'],['4.5','4.5 and up'],['4','4 and up'],['3.5','3.5 and up']],qual:[['','Any'],['pass','Pass'],['warn','Warnings'],['fail','Fail'],['none','Not checked']],map:[['all','All'],['mapped','Recommended'],['unmapped','Not mapped']]};
+const OPT={min:[['','Any'],['4.5','4.5 and up'],['4','4 and up'],['3.5','3.5 and up']],max:[['','Any'],['3.5','Under 3.5'],['3','Under 3'],['2.5','Under 2.5']],qual:[['','Any'],['pass','Pass'],['warn','Warnings'],['fail','Fail'],['none','Not checked']],map:[['all','All'],['mapped','Recommended'],['unmapped','Not mapped']]};
 let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M,SC,Q,nScored=0;
 
 function sync(){const p=new URLSearchParams();KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname)}
@@ -175,9 +175,9 @@ function prep(C,Mp,L,Qd,Sd){
   $('#cat').innerHTML=opt('','All categories')+cats.map(c=>opt(c,c)).join('');
   $('#repo').innerHTML=opt('','All repositories')+repos.map(([r,n])=>opt(r,`${r} (${n})`)).join('');
   $('#tech').innerHTML=opt('','Any technology')+cats.map(c=>`<optgroup label="${esc(c)}">${M.technologies.filter(t=>t.category===c&&techCount.get(t.id)).sort((a,b)=>a.name.localeCompare(b.name)).map(t=>opt('t:'+t.id,`${t.name} (${techCount.get(t.id)})`)).join('')}</optgroup>`).join('').replace(/<optgroup label="[^"]*"><\/optgroup>/g,'')+`<optgroup label="Combinations">${M.combinations.filter(c=>comboCount.get(c.id)).map(c=>opt('c:'+c.id,`${c.name} (${comboCount.get(c.id)})`)).join('')}</optgroup>`;
-  $('#sort').innerHTML=opt('name','Sort: name')+opt('repo','Sort: repository')+(nScored?opt('score','Sort: highest score')+CR.map(([k,l])=>opt('s:'+k,'Sort: best '+l.toLowerCase())).join(''):'');
+  $('#sort').innerHTML=opt('name','Sort: name')+opt('repo','Sort: repository')+(nScored?opt('score','Sort: highest score')+opt('low','Sort: lowest score')+CR.map(([k,l])=>opt('s:'+k,'Sort: best '+l.toLowerCase())+opt('w:'+k,'Sort: worst '+l.toLowerCase())).join(''):'');
   $('#stack').innerHTML=[...techCount].sort((a,b)=>b[1]-a[1]).slice(0,14).map(([id])=>`<button class="c" data-f="tech" data-v="${esc(id)}" aria-pressed="false">${esc(techs.get(id).name)}</button>`).join('');
-  $$('[data-g]').forEach(g=>{const k=g.dataset.g;g.innerHTML=OPT[k].filter(([v])=>k!=='min'||nScored||!v).map(([v,t])=>`<button class="c" data-f="${k}" data-v="${v}" aria-pressed="false">${t}</button>`).join('')});
+  $$('[data-g]').forEach(g=>{const k=g.dataset.g;g.innerHTML=OPT[k].filter(([v])=>k!=='min'&&k!=='max'||nScored||!v).map(([v,t])=>`<button class="c" data-f="${k}" data-v="${v}" aria-pressed="false">${t}</button>`).join('')});
   if(!nScored)$('[data-g=min]').closest('fieldset').hidden=true;
   const n=C.counts;
   $('#sum').textContent=`${n.distinct_skills.toLocaleString()} agent skills from ${repos.length} repositories, matched to ${n.technologies_with_skills} technologies and ${n.technology_combinations} combinations.${nScored?` ${nScored} have a score so far.`:''}`;
@@ -194,6 +194,7 @@ function match(s){
   if(S.repo&&s.repository!==S.repo)return false;
   if(S.qual&&s.qs!==S.qual)return false;
   if(S.min&&!(s.sc&&s.sc.o>=+S.min))return false;
+  if(S.max&&!(s.sc&&s.sc.o<+S.max))return false;
   if(S.map==='mapped'&&!s.mapped)return false;
   if(S.map==='unmapped'&&s.mapped)return false;
   return true;
@@ -201,8 +202,11 @@ function match(s){
 function sorter(){
   const nm=(a,b)=>a.skill_name.localeCompare(b.skill_name);
   if(S.sort==='repo')return (a,b)=>a.repository.localeCompare(b.repository)||nm(a,b);
-  const v=S.sort.startsWith('s:')?s=>s.sc?.c[S.sort.slice(2)]:S.sort==='score'?s=>s.sc?.o:null;
-  return v?(a,b)=>(v(b)??-1)-(v(a)??-1)||nm(a,b):nm;
+  const key=S.sort.slice(2);
+  const v=S.sort.startsWith('s:')||S.sort.startsWith('w:')?s=>s.sc?.c[key]:S.sort==='score'||S.sort==='low'?s=>s.sc?.o:null;
+  if(!v)return nm;
+  if(S.sort==='low'||S.sort.startsWith('w:'))return (a,b)=>(v(a)??99)-(v(b)??99)||nm(a,b);
+  return (a,b)=>(v(b)??-1)-(v(a)??-1)||nm(a,b);
 }
 
 const hgt=v=>Math.round(14+(Math.min(5,Math.max(1,v))-1)/4*86);
@@ -250,6 +254,7 @@ function chips(){
   if(S.cat)o('cat',0,S.cat);
   if(S.repo)o('repo',0,S.repo);
   if(S.min)o('min',0,'Score '+S.min+'+');
+  if(S.max)o('max',0,'Under '+S.max);
   if(S.qual)o('qual',0,'Quality: '+(QL[S.qual]||'not checked'));
   if(S.map!=='all')o('map',0,S.map==='mapped'?'Recommended':'Not mapped');
   return a;
@@ -283,7 +288,7 @@ function update(){
   $$('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===S.view));
   $('#q').value=S.q;$('#sort').value=S.sort;$('#cat').value=S.cat;$('#repo').value=S.repo;
   $('#tech').value=S.combo?'c:'+S.combo:S.tech?'t:'+S.tech:'';
-  $$('[data-f]').forEach(b=>{const k=b.dataset.f;b.setAttribute('aria-pressed',(S[k]||(k==='map'?'all':''))===b.dataset.v&&(b.dataset.v!==''||k==='min'||k==='qual'||k==='map'))});
+  $$('[data-f]').forEach(b=>{const k=b.dataset.f;b.setAttribute('aria-pressed',(S[k]||(k==='map'?'all':''))===b.dataset.v&&(b.dataset.v!==''||k==='min'||k==='max'||k==='qual'||k==='map'))});
   const t=S.view==='tech';
   $('#flt').hidden=false;$('#main').classList.toggle('one',t);
   $('#stack').hidden=t;$('#fbtn').hidden=t;$('.res').hidden=t;
@@ -306,7 +311,7 @@ document.addEventListener('click',e=>{
   const v=e.target.closest('[data-view]');
   if(v){S.view=v.dataset.view;return update()}
   if(e.target.id==='more'){S.n+=120;return update()}
-  if(e.target.closest('[data-clear]')||e.target.id==='clear'){Object.assign(S,{cat:'',tech:'',combo:'',repo:'',qual:'',min:'',map:'all',n:60});return update()}
+  if(e.target.closest('[data-clear]')||e.target.id==='clear'){Object.assign(S,{cat:'',tech:'',combo:'',repo:'',qual:'',min:'',max:'',map:'all',n:60});return update()}
   if(e.target.id==='fbtn')return sheet(true);
   if(e.target.id==='fclose'||e.target.id==='apply'||e.target.id==='scrim'){sheet(false);return $('#fbtn').focus()}
   const f=e.target.closest('[data-f]');
