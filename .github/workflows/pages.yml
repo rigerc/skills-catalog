@@ -6,6 +6,10 @@ on:
       - 'site/**'
       - 'data/catalog.json'
       - 'data/mappings.json'
+      - 'data/technology-detection-rules.json'
+      - 'data/skill-metadata.json'
+      - 'scripts/manifest.mjs'
+      - 'schemas/manifest.schema.json'
       - 'data/catalog-source-ledger.json'
       - 'data/quality.json'
       - 'data/scores.json'
@@ -32,7 +36,8 @@ jobs:
         run: |
           mkdir -p _site/data
           cp site/index.html _site/
-          cp data/catalog.json data/mappings.json data/catalog-source-ledger.json data/quality.json data/scores.json _site/data/
+          MANIFEST_SOURCE_COMMIT="${{ github.sha }}" node scripts/manifest.mjs --write
+          cp data/catalog.json data/mappings.json data/catalog-source-ledger.json data/quality.json data/scores.json data/technology-detection-rules.json data/manifest.json _site/data/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
