@@ -295,7 +295,10 @@
             ]
           },
           "meta": {
-            "type": "object",
+            "type": [
+              "object",
+              "null"
+            ],
             "additionalProperties": false,
             "required": [
               "state",
