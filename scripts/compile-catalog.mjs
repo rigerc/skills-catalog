@@ -6,6 +6,7 @@ import {resolve, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {fingerprint as qualityFingerprint} from './quality.mjs';
 import {validate, load} from './catalog.mjs';
+import {evaluator as openEvaluator,report as openReport,checkReport as checkOpenReport,current as openCurrent} from './open-jev-lib.mjs';
 const ROOT=fileURLToPath(new URL('..', import.meta.url));
 const SHA40=/^[a-f0-9]{40}$/;
 const read=(name,optional=false)=>{
@@ -21,6 +22,9 @@ export function compile({revision,asOf}={}){
   const report=read('data/quality.json');
   const waivers=read('data/quality-waivers.json');
   const scores=read('data/scores.json',true);
+  const jev=openReport();checkOpenReport(jev);
+  if(jev&&jev.catalog_id!==c.catalog_id)throw Error('Open JEV catalog mismatch');
+  const jevById=new Map((jev?.entries||[]).map(e=>[e.id,e]));
   if(report.catalog_id!==c.catalog_id||!Array.isArray(report.entries)||!Array.isArray(waivers.waivers))
     throw Error('Invalid quality or waivers report');
   const expected=qualityFingerprint();
@@ -59,12 +63,16 @@ export function compile({revision,asOf}={}){
     if(waiver)quality.waiver={reason:waiver.reason,reviewed_by:waiver.reviewed_by,commit:waiver.commit,
       applies_to:target,...(waiver.expires?{expires:waiver.expires}:{})};
     const score=scoreEntries.get(s.id);
+    const experimental=jevById.get(s.id);
+    const jevCurrent=Boolean(pin&&openCurrent(experimental,pin,openEvaluator().fingerprint));
     const currentScore=Boolean(pin&&score?.status==='evaluated'&&score.source?.commit===pin.commit&&
       score.fingerprint===scores?.evaluator?.fingerprint&&Number.isFinite(score.overall_score));
     return {id:s.id,name:s.skill_name,source:pin,recommended_for:s.recommended_for,quality,
       evaluation:{status:currentScore?'current':score?'stale':'missing',
         overall_score:currentScore?score.overall_score:null,...(currentScore?{result_kind:score.result_kind,evaluator_fingerprint:score.fingerprint}:{})},
-      open_jev:{status:'missing',overall_score:null,ranking_eligible:false}};
+      open_jev:{status:jevCurrent?'current':experimental?'stale':'missing',
+        overall_score:jevCurrent?experimental.overall_score:null,ranking_eligible:false,
+        ...(jevCurrent?{evaluated_at:experimental.evaluated_at,evaluator_fingerprint:experimental.fingerprint}:{})}};
   }).sort((a,b)=>a.id.localeCompare(b.id,'en'));
   const technologies=m.technologies.map(t=>({id:t.id,name:t.name,category:t.category,mapping_status:t.mapping_status,
     skill_ids:t.skill_ids})).sort((a,b)=>a.id.localeCompare(b.id,'en'));
