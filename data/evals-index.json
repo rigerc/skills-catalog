@@ -3950,6 +3950,21 @@
       "has_evals": false
     },
     {
+      "id": "remix-run/react-router/react-router",
+      "commit": "959182edd6fe3556cec3b52ec83178d99da29ceb",
+      "has_evals": false
+    },
+    {
+      "id": "remotion-dev/skills/remotion-best-practices",
+      "commit": "30d4553ecd46fbc5212fd0ff006ae43af522158b",
+      "has_evals": false
+    },
+    {
+      "id": "rominirani/antigravity-skills/always-verify-gcp",
+      "commit": "731acca5d1aa8b0855549e1cb53bc3f84aa05e0d",
+      "has_evals": false
+    },
+    {
       "id": "samber/cc-skills-golang/golang-code-style",
       "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc",
       "source_tree_sha": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc",
@@ -4067,6 +4082,26 @@
       "id": "samber/cc-skills-golang/golang-uber-fx",
       "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc",
       "source_tree_sha": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc",
+      "has_evals": true
+    },
+    {
+      "id": "Search-3D/electron-drive-skill/electron-drive-skill",
+      "commit": "2db10393bd88915bb446ad77f852182957abdf89",
+      "has_evals": false
+    },
+    {
+      "id": "secondsky/claude-skills/tailwind-v4-shadcn",
+      "commit": "88378361314f558fb719aec0af9fd898ab36f0b2",
+      "has_evals": false
+    },
+    {
+      "id": "sergiodxa/agent-skills/ruby-on-rails-best-practices",
+      "commit": "40e21b46189d5c7de6610b68a25280af863f8775",
+      "has_evals": false
+    },
+    {
+      "id": "sharanharsoor/skills/fastmcp",
+      "commit": "f90a28d8cdf534551048b72219a14b7b7a090c5c",
       "has_evals": true
     },
     {
@@ -4832,6 +4867,26 @@
       "has_evals": false
     },
     {
+      "id": "sickn33/antigravity-awesome-skills/nodejs-best-practices",
+      "commit": "b7f6ad814a903f912962ea3cccad8c02766f753b",
+      "has_evals": false
+    },
+    {
+      "id": "sleekdotdesign/agent-skills/design-mobile-apps",
+      "commit": "fb90438ab2263b7a87cdce1ca7747d371fccb438",
+      "has_evals": false
+    },
+    {
+      "id": "smnandre/symfony-ux-skills/symfony-ux",
+      "commit": "1e99301a6255724eca9c49ce9cdb8c241771ab05",
+      "has_evals": false
+    },
+    {
+      "id": "spences10/svelte-skills-kit/sveltekit-structure",
+      "commit": "5fe49891cf19b451c846ed613712c4d9545dd24f",
+      "has_evals": false
+    },
+    {
       "id": "stripe/ai/stripe-best-practices",
       "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
       "source_tree_sha": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
@@ -4841,6 +4896,26 @@
       "id": "stripe/ai/upgrade-stripe",
       "commit": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
       "source_tree_sha": "bb4cf23be76d7073ad9560730335afedb7e04a5f",
+      "has_evals": false
+    },
+    {
+      "id": "supabase/agent-skills/supabase-postgres-best-practices",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "has_evals": false
+    },
+    {
+      "id": "sveltejs/ai-tools/svelte-code-writer",
+      "commit": "0004b5b8d40676bcf25d3abd53a2ec398d5bbede",
+      "has_evals": false
+    },
+    {
+      "id": "tanstack-skills/tanstack-skills/tanstack-start",
+      "commit": "6f5521ecbdfbfa3d54d335eba6c8b4df0b804c03",
+      "has_evals": false
+    },
+    {
+      "id": "temporalio/skill-temporal-developer/skill-temporal-developer",
+      "commit": "5f5a94d448d53e0d535a7369bf9cb7248620a0bf",
       "has_evals": false
     },
     {
@@ -4859,6 +4934,11 @@
       "id": "TerminalSkills/skills/tanstack-table",
       "commit": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
       "source_tree_sha": "3bfbf7f76459d89422eddc0e5f572ad0e6c393c9",
+      "has_evals": false
+    },
+    {
+      "id": "thebushidocollective/han/prettier-configuration",
+      "commit": "19caa51d5fd144ef6b2764f2332f4c856aa5d1af",
       "has_evals": false
     },
     {
