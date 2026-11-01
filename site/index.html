@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Skills catalog</title>
+<style>
+:root{--bg:#f4f6f9;--panel:#fff;--ink:#162033;--mute:#5a6578;--line:#d8dde6;--acc:#0a6c74;--tint:#e1f2f3;--warn:#8a5200;--bad:#a4262c}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141d;--panel:#161d2a;--ink:#e5e9f1;--mute:#95a0b4;--line:#283143;--acc:#55c4cc;--tint:#16343a;--warn:#e0a850;--bad:#ff8f8f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+header{padding:2rem 0 1rem}
+h1{font:700 2.3rem/1.1 Georgia,"Iowan Old Style",serif;margin:0 0 .6rem;letter-spacing:-.01em}
+header p{margin:.2rem 0;max-width:70ch}
+.mute,.m{color:var(--mute)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:.7rem 0}
+.bar .wrap{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+input[type=search],select{font:inherit;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.45rem .6rem}
+input[type=search]{flex:1 1 260px;min-width:0}
+.tabs{display:flex;gap:.25rem}
+button{font:inherit;color:inherit;cursor:pointer}
+.tabs button{background:none;border:1px solid var(--line);border-radius:6px;padding:.4rem .8rem}
+.tabs button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--bg);font-weight:600}
+main.wrap{display:grid;grid-template-columns:230px 1fr;gap:1.5rem;padding-top:1.2rem;padding-bottom:3rem}
+main.one{grid-template-columns:1fr}
+aside{font-size:.9rem;display:flex;flex-direction:column;gap:.9rem;align-self:start}
+aside label{display:block}
+aside .f{display:flex;flex-direction:column;gap:.3rem}
+aside select{width:100%}
+.chip{background:var(--tint);border:1px solid transparent;color:var(--ink);border-radius:99px;padding:.05rem .6rem;margin:.1rem .25rem .1rem 0;font-size:.85rem}
+.chip:hover{border-color:var(--acc)}
+.link{background:none;border:0;padding:0;color:var(--acc);text-decoration:underline}
+.count{margin:0 0 .6rem}
+details{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:.4rem}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.1rem .8rem;padding:.55rem .8rem}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--tint)}
+details[open]>summary{border-bottom:1px solid var(--line)}
+.n{font-weight:650;overflow-wrap:anywhere}
+.p{grid-column:1;font:.82rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--mute);overflow-wrap:anywhere}
+.b{grid-column:2;grid-row:1/3;align-self:center;text-align:right;font-size:.8rem;color:var(--mute)}
+.b i{font-style:normal;color:var(--acc)}
+.q{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:0 .5rem;font-size:.8rem;white-space:nowrap}
+.q[data-s=pass]{color:var(--acc);border-color:var(--acc)}
+.q[data-s=warn],.q[data-s=not_evaluated]{color:var(--warn);border-color:var(--warn)}
+.q[data-s=fail]{color:var(--bad);border-color:var(--bad)}
+.fl{margin:0;padding-left:1.1rem}
+.d{padding:.7rem .8rem}
+dl{display:grid;grid-template-columns:8.5rem 1fr;gap:.35rem .8rem;margin:0}
+dt{color:var(--mute)}dd{margin:0;overflow-wrap:anywhere}
+code{font:.85rem ui-monospace,SFMono-Regular,Menlo,monospace}
+.more{display:block;margin:1rem auto;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.5rem 1.2rem}
+section h2{font:700 1.15rem Georgia,"Iowan Old Style",serif;margin:1.6rem 0 .5rem}
+section h2:first-child{margin-top:0}
+ul.t{list-style:none;margin:0;padding:0;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+ul.t li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem .8rem;border-top:1px solid var(--line)}
+ul.t li:first-child{border-top:0}
+ul.t .s{display:block;font-size:.82rem;color:var(--mute);overflow-wrap:anywhere}
+ul.t li>:last-child{white-space:nowrap}
+.err{border:1px solid var(--warn);color:var(--warn);padding:1rem;border-radius:6px}
+@media (max-width:760px){main.wrap{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:0}dd{margin-bottom:.4rem}h1{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Skills catalog</h1>
+  <p id="sum" class="mute">Loading catalog…</p>
+  <p class="mute" style="font-size:.85rem">Source verification is historical evidence, not a live availability, compatibility, licensing, or security guarantee.</p>
+  <p id="qsum" class="mute" style="font-size:.85rem"></p>
+</header>
+<div class="bar"><div class="wrap">
+  <div class="tabs" role="group" aria-label="View">
+    <button data-view="skills">Skills</button><button data-view="tech">Technologies</button>
+  </div>
+  <input type="search" id="q" placeholder="Search skills, repositories, technologies" aria-label="Search">
+  <select id="sort" aria-label="Sort skills"><option value="name">Sort by skill name</option><option value="repo">Sort by repository</option></select>
+</div></div>
+<main class="wrap" id="main">
+  <aside id="side">
+    <div class="f"><b>Mapping</b>
+      <label><input type="radio" name="map" value="all"> All skills</label>
+      <label><input type="radio" name="map" value="mapped"> Recommended for something</label>
+      <label><input type="radio" name="map" value="unmapped"> Not yet mapped</label>
+    </div>
+    <label class="f"><b>Technology category</b><select id="cat"></select></label>
+    <label class="f"><b>Repository</b><select id="repo"></select></label>
+    <label class="f"><b>Quality check</b><select id="qual"><option value="">Any result</option><option value="pass">Pass</option><option value="warn">Warnings</option><option value="fail">Fail</option><option value="not_evaluated">Not evaluated</option><option value="none">Not checked yet</option></select></label>
+    <div id="active"></div>
+    <button class="link" id="clear" style="text-align:left">Clear all filters</button>
+  </aside>
+  <div id="out" aria-live="polite"></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const get=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u+' returned '+r.status);return r.json()});
+const KEYS=['view','q','cat','tech','combo','repo','map','sort','qual'],DEF={view:'skills',map:'all',sort:'name'};
+const P=new URLSearchParams(location.search);
+const S={n:100};KEYS.forEach(k=>S[k]=P.get(k)||DEF[k]||'');
+let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M;
+
+function sync(){
+  const p=new URLSearchParams();
+  KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});
+  const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname);
+}
+
+function prep(C,Mp,L,Q){
+  M=Mp;
+  const qm=new Map((Q?.entries||[]).map(e=>[e.id,e]));
+  techs=new Map(M.technologies.map(t=>[t.id,t]));
+  combos=new Map(M.combinations.map(c=>[c.id,c]));
+  const led=new Map(L.entries.map(e=>[e.id,e]));
+  skills=C.skills.map(s=>{
+    const r=s.recommended_for,e=led.get(s.id)||{};
+    const ts=r.technology_ids.map(i=>techs.get(i)).filter(Boolean);
+    const cs=r.combination_ids.map(i=>combos.get(i)).filter(Boolean);
+    const q=qm.get(s.id);
+    ts.forEach(t=>techCount.set(t.id,(techCount.get(t.id)||0)+1));
+    cs.forEach(c=>comboCount.set(c.id,(comboCount.get(c.id)||0)+1));
+    return {...s,ts,cs,fe:r.frontend_essential,url:e.url,commit:e.commit,why:e.selection_reason,q,qs:q?q.status:'none',
+      stale:!!q&&(q.fingerprint!==Q.tool.config_sha256||!!(e.commit&&q.source.commit!==e.commit)),
+      cats:new Set(ts.map(t=>t.category)),mapped:!!(ts.length||cs.length||r.frontend_essential),
+      hay:(s.id+' '+ts.map(t=>t.name).join(' ')+' '+cs.map(c=>c.name).join(' ')).toLowerCase()};
+  });
+  cats=[...new Set(M.technologies.map(t=>t.category))].sort();
+  const rc={};skills.forEach(s=>rc[s.repository]=(rc[s.repository]||0)+1);
+  const repos=Object.entries(rc).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+  $('#cat').innerHTML='<option value="">All categories</option>'+cats.map(c=>`<option>${esc(c)}</option>`).join('');
+  $('#repo').innerHTML='<option value="">All repositories</option>'+repos.map(([r,n])=>`<option value="${esc(r)}">${esc(r)} (${n})</option>`).join('');
+  const n=C.counts,m=skills.filter(s=>s.mapped).length;
+  $('#sum').textContent=`${n.distinct_skills.toLocaleString()} skills from ${repos.length} repositories. ${m.toLocaleString()} are recommended for ${n.technologies_with_skills} technologies and ${n.technology_combinations} combinations; ${n.technologies_detect_only} more technologies are detect-only. Snapshot ${C.snapshot_date}.`;
+  const bs=Q?.summary?.by_status;
+  $('#qsum').textContent=!Q?'Quality results could not be loaded.':qm.size?`Quality checks (${Q.tool.name} ${Q.tool.version}) cover ${qm.size.toLocaleString()} skills: ${bs.pass} pass, ${bs.warn} with warnings, ${bs.fail} fail, ${bs.not_evaluated} not evaluated. They describe upstream content quality, not security, licensing or availability.`:'Quality checks have not run on this snapshot yet. Results will appear here once data/quality.json has entries.';
+}
+
+function match(s){
+  const h=S.q.toLowerCase().split(/\s+/).filter(Boolean);
+  if(!h.every(w=>s.hay.includes(w)))return false;
+  if(S.cat&&!s.cats.has(S.cat))return false;
+  if(S.tech&&!s.ts.some(t=>t.id===S.tech))return false;
+  if(S.combo&&!s.cs.some(c=>c.id===S.combo))return false;
+  if(S.repo&&s.repository!==S.repo)return false;
+  if(S.qual&&s.qs!==S.qual)return false;
+  if(S.map==='mapped'&&!s.mapped)return false;
+  if(S.map==='unmapped'&&s.mapped)return false;
+  return true;
+}
+
+const QL={pass:'pass',warn:'warnings',fail:'fail',not_evaluated:'not evaluated'};
+function qhtml(s){
+  const q=s.q;
+  if(!q)return '<dt>Quality</dt><dd class="m">Not checked yet</dd>';
+  const ne=q.status==='not_evaluated';
+  let h=`<dt>Quality</dt><dd><span class="q" data-s="${q.status}">${QL[q.status]}</span> ${ne?esc(q.not_evaluated.message)+' ('+esc(q.not_evaluated.code)+')':q.counts.errors+' errors, '+q.counts.warnings+' warnings'}${s.stale?' <span class="m">(stale result, refreshed on the next run)</span>':''}</dd>`;
+  const f=q.findings||[];
+  if(f.length)h+=`<dt>Findings</dt><dd><ul class="fl">${f.slice(0,20).map(x=>`<li><b>${esc(x.level)}</b> ${esc(x.category)}: ${esc(x.message)}${x.file?` <span class="m">(${esc(x.file)}${x.line?':'+x.line:''})</span>`:''}</li>`).join('')}</ul>${f.length>20||q.findings_truncated?`<span class="m">Showing the first ${Math.min(20,f.length)}; the counts above are exact.</span>`:''}</dd>`;
+  const t=q.metrics?.tokens,c=q.metrics?.contamination;
+  if(t)h+=`<dt>Size</dt><dd>${t.total.toLocaleString()} tokens${t.skill_md!=null?` (${t.skill_md.toLocaleString()} in SKILL.md)`:''}</dd>`;
+  if(c)h+=`<dt>Contamination</dt><dd>${esc(c.level)}${c.language_mismatch?', language mismatch':''}</dd>`;
+  return h+`<dt>Checked</dt><dd class="m">${esc(q.evaluated_at.slice(0,10))} with validator ${esc(q.validator_version)}</dd>`;
+}
+function row(s){
+  const tags=s.ts.slice(0,2).map(t=>esc(t.name));
+  const more=s.ts.length+s.cs.length-tags.length;
+  const b=[...tags,...(more>0?['+'+more]:[]),...(s.fe?['<i>frontend essential</i>']:[])].join(', ');
+  const sr=s.source_research;
+  return `<details><summary><span class="n">${esc(s.skill_name)}</span><span class="p">${esc(s.repository)}</span><span class="b">${b}${s.q?` <span class="q" data-s="${s.qs}">${QL[s.qs]}</span>`:''}</span></summary><div class="d"><dl>
+<dt>ID</dt><dd><code>${esc(s.id)}</code></dd>
+<dt>Repository</dt><dd><a href="https://github.com/${esc(s.repository)}" rel="noopener">${esc(s.repository)}</a> <button class="link" data-k="repo" data-v="${esc(s.repository)}">only this repository</button></dd>
+${s.url?`<dt>SKILL.md</dt><dd><a href="${esc(s.url)}" rel="noopener">Pinned at ${esc((s.commit||'').slice(0,7))}</a></dd>`:'<dt>SKILL.md</dt><dd class="m">No verified source URL</dd>'}
+${s.ts.length?`<dt>Technologies</dt><dd>${s.ts.map(t=>`<button class="chip" data-k="tech" data-v="${esc(t.id)}">${esc(t.name)}</button>`).join('')}</dd>`:''}
+${s.cs.length?`<dt>Combinations</dt><dd>${s.cs.map(c=>`<button class="chip" data-k="combo" data-v="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</dd>`:''}
+${sr?`<dt>Reported</dt><dd>${esc(sr.license_reported)} license, ${esc(sr.size_reported)}, ${sr.reviewed_for_security?'security reviewed':'not security reviewed'}</dd>`:''}
+${qhtml(s)}
+${s.why?`<dt>Selection note</dt><dd>${esc(s.why)}</dd>`:''}
+</dl></div></details>`;
+}
+
+function renderSkills(){
+  const by=S.sort==='repo'?(a,b)=>a.repository.localeCompare(b.repository)||a.skill_name.localeCompare(b.skill_name):(a,b)=>a.skill_name.localeCompare(b.skill_name);
+  const L=skills.filter(match).sort(by),shown=L.slice(0,S.n);
+  $('#out').innerHTML=`<p class="count mute">${L.length.toLocaleString()} ${L.length===1?'skill':'skills'}${L.length>shown.length?`, showing ${shown.length}`:''}</p>`+
+    (shown.map(row).join('')||'<p>No skills match these filters. Clear a filter or change the search.</p>')+
+    (L.length>shown.length?`<button class="more" id="more">Show ${Math.min(200,L.length-shown.length)} more</button>`:'');
+  const a=[];
+  if(S.tech)a.push(['tech',techs.get(S.tech)?.name||S.tech]);
+  if(S.combo)a.push(['combo',combos.get(S.combo)?.name||S.combo]);
+  $('#active').innerHTML=a.map(([k,v])=>`<button class="chip" data-k="${k}" data-v="" title="Remove filter">${esc(v)} ×</button>`).join('');
+}
+
+function renderTech(){
+  const q=S.q.toLowerCase(),ok=x=>!q||x.toLowerCase().includes(q);
+  const btn=(k,id,n)=>n?`<button class="chip" data-k="${k}" data-v="${esc(id)}">${n} ${n===1?'skill':'skills'}</button>`:'<span class="m">detect only</span>';
+  let h='';
+  for(const c of cats){
+    const L=M.technologies.filter(t=>t.category===c&&ok(t.name+' '+t.id));
+    if(!L.length)continue;
+    h+=`<section><h2>${esc(c)}</h2><ul class="t">`+L.map(t=>{
+      const sig=(t.detection?.signals||[]).map(s=>s.kind+': '+(s.examples||[]).slice(0,2).join(', ')).join('; ');
+      return `<li><span><b>${esc(t.name)}</b><span class="s">${esc(sig)}</span></span>${btn('tech',t.id,techCount.get(t.id)||0)}</li>`}).join('')+'</ul></section>';
+  }
+  const C=M.combinations.filter(c=>ok(c.name+' '+c.id));
+  if(C.length)h+=`<section><h2>Combinations</h2><ul class="t">`+C.map(c=>`<li><span><b>${esc(c.name)}</b><span class="s">Requires ${esc(c.requires.join(' + '))}</span></span>${btn('combo',c.id,comboCount.get(c.id)||0)}</li>`).join('')+'</ul></section>';
+  $('#out').innerHTML=h||'<p>No technologies match this search.</p>';
+}
+
+function update(){
+  document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===S.view));
+  $('#q').value=S.q;$('#sort').value=S.sort;$('#cat').value=S.cat;$('#repo').value=S.repo;$('#qual').value=S.qual;
+  document.querySelectorAll('[name=map]').forEach(r=>r.checked=r.value===S.map);
+  const t=S.view==='tech';
+  $('#side').hidden=t;$('#sort').hidden=t;$('#main').classList.toggle('one',t);
+  t?renderTech():renderSkills();sync();
+}
+
+document.addEventListener('click',e=>{
+  const v=e.target.closest('[data-view]');
+  if(v){S.view=v.dataset.view;return update()}
+  if(e.target.id==='more'){S.n+=200;return update()}
+  if(e.target.id==='clear'){Object.assign(S,{q:'',cat:'',tech:'',combo:'',repo:'',qual:'',map:'all',n:100});return update()}
+  const b=e.target.closest('[data-k]');
+  if(b){S[b.dataset.k]=b.dataset.v;S.view='skills';S.n=100;update();scrollTo(0,0)}
+});
+$('#q').addEventListener('input',e=>{S.q=e.target.value;S.n=100;update()});
+$('#sort').addEventListener('change',e=>{S.sort=e.target.value;update()});
+$('#cat').addEventListener('change',e=>{S.cat=e.target.value;S.n=100;update()});
+$('#qual').addEventListener('change',e=>{S.qual=e.target.value;S.n=100;update()});
+$('#repo').addEventListener('change',e=>{S.repo=e.target.value;S.n=100;update()});
+document.querySelectorAll('[name=map]').forEach(r=>r.addEventListener('change',()=>{S.map=r.value;S.n=100;update()}));
+
+Promise.all([get('data/catalog.json'),get('data/mappings.json'),get('data/catalog-source-ledger.json'),get('data/quality.json').catch(()=>null)])
+  .then(([C,Mp,L,Q])=>{prep(C,Mp,L,Q);update()})
+  .catch(err=>{
+    $('#sum').textContent='';
+    $('#out').innerHTML=`<p class="err">Could not load the catalog data: ${esc(err.message)}. This page reads <code>data/catalog.json</code>, <code>data/mappings.json</code> and <code>data/catalog-source-ledger.json</code> next to it, so serve it over HTTP (for example with the Pages workflow) rather than opening the file directly.</p>`;
+  });
+</script>
+</body>
+</html>
