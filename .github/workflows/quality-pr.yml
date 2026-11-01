@@ -4,6 +4,12 @@ name: Skill quality gate
 # Report-only initially; enable --enforce after calibration.
 on:
   pull_request:
+  workflow_dispatch:
+    inputs:
+      base_sha:
+        description: 'Optional 40-character base SHA; blank compares the selected branch with main'
+        type: string
+        required: false
 permissions:
   contents: read
 jobs:
@@ -21,8 +27,13 @@ jobs:
       - name: Plan changed pinned skills (no upstream requests)
         id: plan
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: node scripts/quality.mjs --plan --base "$BASE_SHA"
+          BASE_SHA: ${{ github.event.pull_request.base.sha || inputs.base_sha || '' }}
+        run: |
+          if [ -z "$BASE_SHA" ]; then
+            BASE_SHA="$(git rev-parse origin/main)"
+          fi
+          echo "base_sha=$BASE_SHA" >> "$GITHUB_OUTPUT"
+          node scripts/quality.mjs --plan --base "$BASE_SHA"
       - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
         if: steps.plan.outputs.targets != '0'
         with:
@@ -38,5 +49,5 @@ jobs:
       - name: Check changed pinned skills
         if: steps.plan.outputs.targets != '0'
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BASE_SHA: ${{ steps.plan.outputs.base_sha }}
         run: node scripts/quality.mjs --gate --base "$BASE_SHA" --max-groups 20 --deadline-minutes 15
