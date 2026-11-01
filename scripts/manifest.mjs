@@ -233,7 +233,7 @@ export function validateManifest(manifest, inputs) {
       current.map(s => s.score.criteria[key]));
   }
   if (Buffer.byteLength(JSON.stringify(manifest)) > MAX_BYTES) {
-    throw Error('Manifest exceeds 1 MiB target');
+    throw Error('Manifest exceeds 1 MiB target: ' + Buffer.byteLength(JSON.stringify(manifest)) + ' bytes');
   }
   return true;
 }
