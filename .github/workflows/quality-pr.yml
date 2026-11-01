@@ -2,6 +2,7 @@ name: Skill quality gate
 # Always runs a lightweight plan step so the required status check exists on all PRs.
 # Installs the validator and downloads upstream content only for changed pins.
 # Report-only initially; enable --enforce after calibration.
+# Same-repository pull requests receive an updated bot comment with findings.
 on:
   pull_request:
   workflow_dispatch:
@@ -12,6 +13,7 @@ on:
         required: false
 permissions:
   contents: read
+  pull-requests: write
 jobs:
   gate:
     runs-on: ubuntu-24.04
@@ -68,4 +70,14 @@ jobs:
         if: steps.plan.outputs.targets != '0'
         env:
           BASE_SHA: ${{ steps.plan.outputs.base_sha }}
+          QUALITY_PR_REPORT_FILE: ${{ runner.temp }}/quality-pr-report.md
         run: node scripts/quality.mjs --gate --base "$BASE_SHA" --max-groups 20 --deadline-minutes 15
+      - name: Post or update PR quality results comment
+        if: ${{ always() && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && steps.plan.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          QUALITY_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          QUALITY_TARGETS: ${{ steps.plan.outputs.targets }}
+          QUALITY_PR_REPORT_FILE: ${{ runner.temp }}/quality-pr-report.md
+        run: node scripts/post-quality-comment.mjs
