@@ -20,6 +20,30 @@
       "credit_url": "https://github.com/Antheurus/anywrite"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
+      "name": "ax-extract-workflow",
+      "original_repository": "Necmttn/ax",
+      "commit": "fca259c0f7accfdac756ac323924bde8732fd9c0",
+      "path": "skills/ax-extract-workflow/SKILL.md",
+      "credit_url": "https://github.com/Necmttn/ax"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/axonx",
+      "name": "axonx",
+      "original_repository": "FlowLLM-AI/AxonX",
+      "commit": "783dc9f454ebdc09da755ecaca1f3f6d18b675e8",
+      "path": "skills/axonx/SKILL.md",
+      "credit_url": "https://github.com/FlowLLM-AI/AxonX"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/electron-drive-skill",
+      "name": "electron-drive-skill",
+      "original_repository": "Search-3D/electron-drive-skill",
+      "commit": "2db10393bd88915bb446ad77f852182957abdf89",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Search-3D/electron-drive-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/email-marketing-bible",
       "name": "email-marketing-bible",
       "original_repository": "CosmoBlk/email-marketing-bible",
@@ -28,12 +52,44 @@
       "credit_url": "https://github.com/CosmoBlk/email-marketing-bible"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/laravel-development-workflow",
+      "name": "laravel-development-workflow",
+      "original_repository": "Junaid-PK/laravel-development-workflow",
+      "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Junaid-PK/laravel-development-workflow"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/mock-hunter",
       "name": "mock-hunter",
       "original_repository": "CodeShuX/mockhunter",
       "commit": "1c6da4d88fc86af10ed89b94eadfe9126aadee4b",
       "path": "skills/mockhunter/SKILL.md",
       "credit_url": "https://github.com/CodeShuX/mockhunter"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/outreachgenie-list-audit",
+      "name": "outreachgenie-list-audit",
+      "original_repository": "Outreachgenie/outreachgenie-linkedin-mcp",
+      "commit": "a7d6bd1a12e6671a6c8bc9b430a69e999d8504dd",
+      "path": "skills/outreachgenie-list-audit/SKILL.md",
+      "credit_url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
+      "name": "remote-gpu-trainer",
+      "original_repository": "Hanyuyuan6/remote-gpu-trainer",
+      "commit": "fe01c55c8bae1ccbfaf2ae7708cdca7c1fdaf785",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Hanyuyuan6/remote-gpu-trainer"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/since-cutoff",
+      "name": "since-cutoff",
+      "original_repository": "MohammadHijjawi97/since-cutoff",
+      "commit": "e13cf02e6b63caee81808f7933cc6fd80399a823",
+      "path": "skills/since-cutoff/SKILL.md",
+      "credit_url": "https://github.com/MohammadHijjawi97/since-cutoff"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/sshepherd",
