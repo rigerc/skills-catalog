@@ -94,6 +94,7 @@ Snapshot date: **${esc(c.snapshot_date)}**. Source verification is historical ev
 - [All skills and source verification](SKILLS.md)
 - [Technology mappings and combinations](TECHNOLOGIES.md)
 - [Skill registry](data/catalog.json)
+- [Model evaluation scores](data/scores.json)
 - [Unmapped skills (generated)](data/unmapped.json)
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)

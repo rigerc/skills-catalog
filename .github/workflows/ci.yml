@@ -26,6 +26,8 @@ jobs:
       - run: node scripts/catalog.mjs --check --skip-unmapped
       - name: Check quality results invariants (offline)
         run: node scripts/quality.mjs --check
+      - name: Check model score invariants (offline)
+        run: node scripts/evaluate-skills.mjs --check
       - name: Check for duplicate skills
         run: node scripts/check-duplicate-skills.mjs
       - run: node --test tests/*.test.mjs

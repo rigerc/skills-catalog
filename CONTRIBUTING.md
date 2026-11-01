@@ -9,6 +9,7 @@ This repository is the **source of truth for Nosey's built-in catalog**. Changes
 | Add, verify, rename, or retire a skill | [Adding skills](docs/adding-skills.md) | `data/catalog.json`, `data/catalog-source-ledger.json`, and relevant mappings |
 | Detect a new technology | [Adding technologies](docs/adding-technologies.md) | `data/mappings.json`, `data/technology-detection-rules.json` |
 | Recommend skills for technologies or combinations | [Adding mappings](docs/adding-mappings.md) | `data/mappings.json`, `data/catalog.json` |
+| Evaluate skill document quality with an LLM or Jev | [Model evaluation](docs/quality.md#llm-evaluation) | `scripts/evaluate-skills.mjs`, `data/scores.json`, `schemas/scores.schema.json` |
 
 For a new technology **with** a new skill recommendation, follow all three guides. For an existing technology-to-skill association, start with the mapping guide.
 
@@ -19,8 +20,13 @@ For a new technology **with** a new skill recommendation, follow all three guide
 - **`data/technology-detection-rules.json`**: executable scanner signals for every technology. This is distinct from the descriptive examples in `mappings.json`.
 - **`data/catalog-source-ledger.json`**: one evidence record for every skill, either commit-pinned `verified` or explicitly `unresolved`.
 - **`data/unmapped.json`**: generated, alphabetized index of skills with no technology, combination, or frontend-essential mapping; do not edit manually.
+- **`data/scores.json`**: generated model evaluation results and coverage, maintained by `scripts/evaluate-skills.mjs`. Run `npm run sync:scores` to refresh coverage offline and `npm run check:scores` to check invariants. Do not edit scores by hand.
 
 The four documents form **one versioned snapshot**. Use an existing entry as the shape reference. Keep `schema_version: 1`, the shared `catalog_id`, and the matching `catalog.json` / `mappings.json` `snapshot_date` values consistent.
+
+Model scores are a separate, incremental artifact with `schema_version: 2` and the
+contract in `schemas/scores.schema.json`. Scores may lag catalog updates; schema and
+semantic checks run in CI, while full model evaluation coverage is reported only.
 
 `README.md`, `SKILLS.md`, `TECHNOLOGIES.md`, and `data/unmapped.json` are **generated**. Do not hand-edit them. If their layout or fixed explanatory text needs changing, edit `scripts/catalog.mjs` instead, then regenerate.
 
