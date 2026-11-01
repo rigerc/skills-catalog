@@ -88,15 +88,18 @@
         "properties": {
           "id": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "pattern": "^[^/\\s]+/[^/\\s]+/[^/\\s]+$"
           },
           "repository": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "pattern": "^[^/\\s]+/[^/\\s]+$"
           },
           "skill_name": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "pattern": "^[^/\\s]+$"
           },
           "skill_md_url": {
             "anyOf": [
@@ -107,7 +110,9 @@
                 "type": "string",
                 "pattern": "^https://github\\.com/.+/SKILL\\.md$"
               }
-            ]
+            ],
+            "deprecated": true,
+            "description": "Legacy optional unpinned source pointer; consumers should use the verified commit-pinned URL in catalog-source-ledger.json."
           },
           "recommended_for": {
             "type": "object",
