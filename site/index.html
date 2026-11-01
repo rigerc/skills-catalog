@@ -108,7 +108,7 @@ nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);colo
 <body>
 <header><div class="wrap">
   <div><h1>Skills catalog</h1><p id="sum" class="mute">Loading catalog…</p></div>
-  <nav aria-label="View"><button data-view="skills">Skills</button><button data-view="tech">Technologies</button></nav>
+  <nav aria-label="View"><button data-view="skills">Skills</button><button data-view="tech">Technologies</button><button data-view="repos">Repositories</button></nav>
 </div></header>
 <div class="bar"><div class="wrap">
   <div class="row"><input type="search" id="q" placeholder="Search skills, repos, stacks" aria-label="Search" enterkeyhint="search"><button class="fb" id="fbtn" aria-controls="flt">Filters<b id="fn"></b></button></div>
@@ -146,7 +146,7 @@ const P=new URLSearchParams(location.search),S={n:60};KEYS.forEach(k=>S[k]=P.get
 const CR=[['trigger_clarity','Trigger clarity','How clearly it says when to use the skill'],['instruction_quality','Instruction quality','How actionable the steps are'],['correctness','Correctness','How accurate the content looks'],['safety','Safety','How careful it is with risky actions'],['context_efficiency','Context efficiency','How little context it costs an agent']];
 const QL={pass:'pass',warn:'warnings',fail:'fail',not_evaluated:'not evaluated'};
 const OPT={min:[['','Any'],['4.5','4.5 and up'],['4','4 and up'],['3.5','3.5 and up']],max:[['','Any'],['3.5','Under 3.5'],['3','Under 3'],['2.5','Under 2.5']],qual:[['','Any'],['pass','Pass'],['warn','Warnings'],['fail','Fail'],['none','Not checked']],map:[['all','All'],['mapped','Recommended'],['unmapped','Not mapped']]};
-let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M,SC,Q,nScored=0;
+let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M,SC,Q,nScored=0,REPOS=[];
 
 function sync(){const p=new URLSearchParams();KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname)}
 
@@ -175,7 +175,9 @@ function prep(C,Mp,L,Qd,Sd){
   $('#cat').innerHTML=opt('','All categories')+cats.map(c=>opt(c,c)).join('');
   $('#repo').innerHTML=opt('','All repositories')+repos.map(([r,n])=>opt(r,`${r} (${n})`)).join('');
   $('#tech').innerHTML=opt('','Any technology')+cats.map(c=>`<optgroup label="${esc(c)}">${M.technologies.filter(t=>t.category===c&&techCount.get(t.id)).sort((a,b)=>a.name.localeCompare(b.name)).map(t=>opt('t:'+t.id,`${t.name} (${techCount.get(t.id)})`)).join('')}</optgroup>`).join('').replace(/<optgroup label="[^"]*"><\/optgroup>/g,'')+`<optgroup label="Combinations">${M.combinations.filter(c=>comboCount.get(c.id)).map(c=>opt('c:'+c.id,`${c.name} (${comboCount.get(c.id)})`)).join('')}</optgroup>`;
-  $('#sort').innerHTML=opt('name','Sort: name')+opt('repo','Sort: repository')+(nScored?opt('score','Sort: highest score')+opt('low','Sort: lowest score')+CR.map(([k,l])=>opt('s:'+k,'Sort: best '+l.toLowerCase())+opt('w:'+k,'Sort: worst '+l.toLowerCase())).join(''):'');
+  const acc=new Map();
+  skills.forEach(s=>{const a=acc.get(s.repository)||{name:s.repository,n:0,mapped:0,qc:{pass:0,warn:0,fail:0,ne:0,none:0}};a.n++;if(s.mapped)a.mapped++;a.qc[s.qs]++;acc.set(s.repository,a)});
+  REPOS=[...acc.values()].map(a=>({...a,rx:(SC?.repositories||[]).find(r=>r.repository===a.name)}));
   $('#stack').innerHTML=[...techCount].sort((a,b)=>b[1]-a[1]).slice(0,14).map(([id])=>`<button class="c" data-f="tech" data-v="${esc(id)}" aria-pressed="false">${esc(techs.get(id).name)}</button>`).join('');
   $$('[data-g]').forEach(g=>{const k=g.dataset.g;g.innerHTML=OPT[k].filter(([v])=>k!=='min'&&k!=='max'||nScored||!v).map(([v,t])=>`<button class="c" data-f="${k}" data-v="${v}" aria-pressed="false">${t}</button>`).join('')});
   if(!nScored)$('[data-g=min]').closest('fieldset').hidden=true;
@@ -221,11 +223,14 @@ function qhtml(s){
   if(c)h+=`<dt>Contamination</dt><dd>${esc(c.level)}${c.language_mismatch?', language mismatch':''}</dd>`;
   return h+`<dt>Checked</dt><dd class="m">${esc(q.evaluated_at.slice(0,10))} with validator ${esc(q.validator_version)}</dd>`;
 }
+function critHtml(cs){
+  return `<div class="bd" role="group" aria-label="Score breakdown">${CR.filter(([k])=>cs&&cs[k]!=null).map(([k,l,d])=>`<div><div class="l"><span>${l}</span><span>${cs[k].toFixed(1)} / 5</span></div><span class="br"><i style="width:${(cs[k]-1)/4*100}%"></i></span><small>${d}</small></div>`).join('')}</div>`;
+}
 function scoreHtml(s){
   const x=s.sc;
   if(!x)return '<p class="m" style="margin:.6rem 0 1rem">Not scored yet.</p>';
   const rp=SC.repositories.find(r=>r.repository===s.repository),ev=x.x.evaluation;
-  return `<div class="bd" role="group" aria-label="Score breakdown">${CR.filter(([k])=>x.c[k]!=null).map(([k,l,d])=>`<div><div class="l"><span>${l}</span><span>${x.c[k].toFixed(1)} / 5</span></div><span class="br"><i style="width:${(x.c[k]-1)/4*100}%"></i></span><small>${d}</small></div>`).join('')}</div>`+
+  return critHtml(x.c)+
     (ev.summary?`<p>${esc(ev.summary)}</p>`:'')+
     `<p class="m" style="font-size:.85rem;margin:0 0 .6rem">Reviewed ${esc(x.x.evaluated_at.slice(0,10))} by ${esc(x.x.model)}, SKILL.md only.${x.stale?' Stale: the skill changed since this review.':''}${rp&&rp.summary.evaluated>1?` Repository average ${rp.overall_score.toFixed(1)} across ${rp.summary.evaluated} scored skills.`:''}</p>`;
 }
@@ -284,17 +289,50 @@ function renderTech(){
   $('#count').textContent='';$('#active').innerHTML='';
 }
 
+function repRow(r){
+  const x=r.rx&&r.rx.overall_score!=null?r.rx:null,qc=r.qc;
+  const sc=x?`<span class="sc"><span class="sr">Average score </span>${x.overall_score.toFixed(1)}<span class="gl" aria-hidden="true">${CR.map(([k])=>`<i style="height:${hgt(x.criterion_scores[k]||1)}%"></i>`).join('')}</span></span>`:`<span class="sc m" title="Not scored yet">–<span class="sr">Not scored yet</span></span>`;
+  const qs=[[qc.pass,'pass checks'],[qc.warn,'with warnings'],[qc.fail,'failed'],[qc.ne,'not evaluated'],[qc.none,'not checked']].filter(([n])=>n).map(([n,t])=>n+' '+t).join(', ');
+  return `<details><summary><span class="n">${esc(r.name)}</span>${sc}<span class="p">${r.n} ${r.n===1?'skill':'skills'} · ${r.mapped} recommended</span>${qc.fail?`<span class="q" data-s="fail">${qc.fail} fail</span>`:''}<span class="tg">${qs?esc(qs):'quality checks pending'}</span></summary><div class="d">
+${x?critHtml(x.criterion_scores):'<p class="m">Not scored yet.</p>'}
+<dl>
+<dt>Skills</dt><dd><button class="link" data-k="repo" data-v="${esc(r.name)}">Show ${r.n} skills in this repository</button></dd>
+${x?`<dt>Scores</dt><dd>${x.summary.evaluated} of ${r.n} skills reviewed${x.summary.stale?`, ${x.summary.stale} of them stale`:''}, average ${x.overall_score.toFixed(1)} / 5.</dd>`:'<dt>Scores</dt><dd class="m">Not scored yet.</dd>'}
+<dt>Quality checks</dt><dd>${esc(qs||'not evaluated yet')}</dd>
+</dl></div></details>`;
+}
+function renderRepos(){
+  const q=S.q.toLowerCase(),L=REPOS.filter(r=>!q||r.name.toLowerCase().includes(q));
+  if(S.sort==='name')L.sort((a,b)=>a.name.localeCompare(b.name));
+  else if(S.sort==='low')L.sort((a,b)=>((a.rx?.overall_score??99)-(b.rx?.overall_score??99))||a.name.localeCompare(b.name));
+  else if(S.sort==='score')L.sort((a,b)=>((b.rx?.overall_score??-1)-(a.rx?.overall_score??-1))||a.name.localeCompare(b.name));
+  else if(S.sort==='fail')L.sort((a,b)=>(b.qc.fail-a.qc.fail)||a.name.localeCompare(b.name));
+  else L.sort((a,b)=>b.n-a.n||a.name.localeCompare(b.name));
+  $('#count').textContent=`${REPOS.length.toLocaleString()} repositories${q?`, ${L.length} match the search`:''}`;
+  $('#out').innerHTML=L.length?`<div class="list">${L.map(repRow).join('')}</div>`:'<p>No repositories match this search.</p><button class="link" data-clear>Clear search</button>';
+  $('#active').innerHTML='';
+}
+
+const optR=(v,t)=>`<option value="${esc(v)}">${esc(t)}</option>`;
+function sortOpts(){
+  if(S.view==='tech')return;
+  const scThink=SC&&SC.repositories.length>0;
+  if(S.view==='repos')$('#sort').innerHTML=optR('count','Sort: most skills')+optR('name','Sort: name')+(scThink?optR('score','Sort: highest avg score')+optR('low','Sort: lowest avg score'):'')+optR('fail','Sort: most failed checks');
+  else $('#sort').innerHTML=optR('name','Sort: name')+optR('repo','Sort: repository')+(nScored?optR('score','Sort: highest score')+optR('low','Sort: lowest score')+CR.map(([k,l])=>optR('s:'+k,'Sort: best '+l.toLowerCase())+optR('w:'+k,'Sort: worst '+l.toLowerCase())).join(''):'');
+  if(!Array.from($('#sort').options).some(o=>o.value===S.sort))S.sort=S.view==='repos'?'count':'name';
+}
 function update(){
   $$('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===S.view));
+  sortOpts();
   $('#q').value=S.q;$('#sort').value=S.sort;$('#cat').value=S.cat;$('#repo').value=S.repo;
   $('#tech').value=S.combo?'c:'+S.combo:S.tech?'t:'+S.tech:'';
   $$('[data-f]').forEach(b=>{const k=b.dataset.f;b.setAttribute('aria-pressed',(S[k]||(k==='map'?'all':''))===b.dataset.v&&(b.dataset.v!==''||k==='min'||k==='max'||k==='qual'||k==='map'))});
-  const t=S.view==='tech';
+  const t=S.view!=='skills';
   $('#flt').hidden=false;$('#main').classList.toggle('one',t);
-  $('#stack').hidden=t;$('#fbtn').hidden=t;$('.res').hidden=t;
+  $('#stack').hidden=t;$('#fbtn').hidden=t;$('.res').hidden=S.view==='tech';
   if(t&&$('#flt').classList.contains('open'))sheet(false);
   $('#flt').style.display=t?'none':'';
-  t?renderTech():renderSkills();sync();
+  S.view==='tech'?renderTech():S.view==='repos'?renderRepos():renderSkills();sync();
 }
 function sheet(on){
   const f=$('#flt');f.classList.toggle('open',on);document.body.classList.toggle('sheet',on);
