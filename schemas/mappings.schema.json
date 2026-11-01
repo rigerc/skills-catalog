@@ -205,14 +205,16 @@
             "then": {
               "properties": {
                 "skill_ids": {
-                  "minItems": 1
+                  "minItems": 1,
+                  "type": "array"
                 }
               }
             },
             "else": {
               "properties": {
                 "skill_ids": {
-                  "maxItems": 0
+                  "maxItems": 0,
+                  "type": "array"
                 }
               }
             }
