@@ -28,10 +28,12 @@ score. Results describe upstream content quality, not security, licensing or ava
 
 ## Workflows
 
-- **Skill quality gate** (every PR): always runs a network-free planning step, installing the validator and evaluating sources only for added/repinned skills. Initially report-only; use `--enforce` after calibration to block `fail`, `not_evaluated`, and unattempted targets unless waived.
-- **Refresh skill quality results** (push to main, weekly, manual): updates `data/quality.json` via PR.
+- **Skill quality gate** (every PR or manual dispatch): always runs a network-free planning step, installing the validator and evaluating sources only for added/repinned skills. For a manual run, choose a branch in **Actions > Skill quality gate > Run workflow**; by default it compares that branch against `main`, or you can supply an explicit 40-character `base_sha`. Running manually on an unchanged `main` branch evaluates no sources. Initially report-only; use `--enforce` after calibration to block `fail`, `not_evaluated`, and unattempted targets unless waived.
+- **Refresh skill quality results** (push to main, weekly, manual): updates `data/quality.json` via PR. In Actions, use **Run workflow** with `all` and `max_groups` to control the manual backfill.
   First run: dispatch repeatedly (`max_groups`) and merge each refresh PR until `missing` reaches 0. The default batch limit is 20 repository/commit groups.
 - **CI**: `node scripts/quality.mjs --check` is offline; coverage is reported, not enforced.
+
+GitHub only displays the **Run workflow** control when the workflow file exists on the repository's default branch. These manual controls become available after this feature PR is merged into `main`.
 
 ## Changing the validator or flags
 
