@@ -103,12 +103,7 @@ export function qualityOf(entry, ledger, fp) {
     file: cleanText(f.file, 300), line: f.line ?? null,
   })) : null;
   const metrics = assessed && entry.metrics ? {
-    tokens: entry.metrics.tokens ? {
-      total: entry.metrics.tokens.total,
-      skill_md: entry.metrics.tokens.skill_md ?? null,
-      references: entry.metrics.tokens.references ?? null,
-      other: entry.metrics.tokens.other ?? null,
-    } : null,
+    tokens: entry.metrics.tokens ? {total: entry.metrics.tokens.total} : null,
     contamination: entry.metrics.contamination ? {
       level: entry.metrics.contamination.level,
       score: entry.metrics.contamination.score,
