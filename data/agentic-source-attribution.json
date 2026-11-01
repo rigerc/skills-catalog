@@ -212,12 +212,28 @@
       "credit_url": "https://github.com/amElnagdy/review-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/draft-my-comments",
+      "name": "draft-my-comments",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/draft-my-comments/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/drizzle-migration-conflict",
       "name": "drizzle-migration-conflict",
       "original_repository": "chaunsin/agent-skills",
       "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
       "path": "skills/drizzle-migration-conflict/SKILL.md",
       "credit_url": "https://github.com/chaunsin/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ecl-harness-engineer",
+      "name": "ecl-harness-engineer",
+      "original_repository": "qinghui316/ecl-harness-engineer",
+      "commit": "5019d056e14f844407287542ae1014283bf35c43",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/qinghui316/ecl-harness-engineer"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
@@ -250,6 +266,22 @@
       "commit": "0fcdf8e841ea5cdf02a00807ac061a674fdae41a",
       "path": "skills/find-complementary-founders/SKILL.md",
       "credit_url": "https://github.com/merc1305/findMate"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/frontend-lighthouse",
+      "name": "frontend-lighthouse",
+      "original_repository": "stareezy-1/frontend-architecture-skill",
+      "commit": "d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0",
+      "path": "skills/frontend-lighthouse/SKILL.md",
+      "credit_url": "https://github.com/stareezy-1/frontend-architecture-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
+      "name": "get-seen-in-replies",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/get-seen-in-replies/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/idea-os",
@@ -332,6 +364,14 @@
       "credit_url": "https://github.com/agentbody/skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/poka-yoke",
+      "name": "poka-yoke",
+      "original_repository": "rainmanjam/poka-yoke",
+      "commit": "726a575e3d48d07d908abfcbb192cae09671fff2",
+      "path": "plugins/poka-yoke/skills/poka-yoke/SKILL.md",
+      "credit_url": "https://github.com/rainmanjam/poka-yoke"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/poster-design-studio",
       "name": "poster-design-studio",
       "original_repository": "beatra-ai/ai-poster-maker-skill",
@@ -372,6 +412,14 @@
       "credit_url": "https://github.com/Hanyuyuan6/remote-gpu-trainer"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/sandbase-mcp",
+      "name": "sandbase-mcp",
+      "original_repository": "sandbaseai/cli",
+      "commit": "844c8b09e6944b31366885f5600eb29b8135a291",
+      "path": "skills/sandbase/SKILL.md",
+      "credit_url": "https://github.com/sandbaseai/cli"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/session-handoff",
       "name": "session-handoff",
       "original_repository": "alapha888/session-handoff-kit",
@@ -410,6 +458,14 @@
       "commit": "949282fa8cfa22283806057f0277b01698839836",
       "path": "skills/skill-issue/SKILL.md",
       "credit_url": "https://github.com/mishanefedov/skill-issue"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/skill-security-audit",
+      "name": "skill-security-audit",
+      "original_repository": "sandbaseai/awesome-workbuddy",
+      "commit": "fba16cc179f2c769f000ced28140d8d2b71b9fa7",
+      "path": "skills/skill-security-audit/SKILL.md",
+      "credit_url": "https://github.com/sandbaseai/awesome-workbuddy"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/slideops",
@@ -458,6 +514,14 @@
       "commit": "5d65df6ca3a201c4094138e9a6d88043f1edf130",
       "path": "skills/talking-avatar-video/SKILL.md",
       "credit_url": "https://github.com/beatra-ai/talking-avatar-video-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/tastegate",
+      "name": "tastegate",
+      "original_repository": "stas4000/tastegate",
+      "commit": "1bee778fb4550a8fb76ed1941644c81781f6a1af",
+      "path": "tastegate/SKILL.md",
+      "credit_url": "https://github.com/stas4000/tastegate"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/time-ledger",
@@ -522,6 +586,14 @@
       "commit": "3f72f3b284e46a4da63035ca22c40c240affad8d",
       "path": "skills/vscode-extension-guide-en/SKILL.md",
       "credit_url": "https://github.com/lewiswigmore/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/why-did-this-post-flop",
+      "name": "why-did-this-post-flop",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/why-did-this-post-flop/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
     }
   ]
 }
