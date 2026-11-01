@@ -29,6 +29,7 @@ Snapshot date: **2026-11-01**. Source verification is historical evidence, **not
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)
 - [Provenance and unresolved-source ledger](data/catalog-source-ledger.json)
+- [Reviewed publication notice](data/catalog-notice.json)
 - [JSON Schema contracts](schemas/)
 
 ## Technology coverage
@@ -65,4 +66,4 @@ node --test tests/*.test.mjs
 
 CI validates four JSON Schemas and enforces schema versions, canonical skill IDs, mapping references, count consistency, detection rules, provenance records, generated documentation, and the unmapped skills index. A separate workflow proposes documentation regeneration PRs. Nosey's scheduled workflow proposes PRs to synchronize updates to its pinned, locally packaged snapshot.
 
-The four canonical source JSON files under `data/` are one versioned snapshot; `data/unmapped.json` is derived from them. Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom `registry.json` format.
+The four canonical source JSON files under `data/` are one versioned snapshot; `data/unmapped.json` is derived from them. `data/catalog-notice.json` publishes that snapshot to consumers as a reviewed artifact: catalog id, the git commit pin whose `data/` tree the entries describe, a monotonic `sequence` bumped on every snapshot change, and the four file sha256 values — structured by [Nosey's catalog-notice contract](https://github.com/rigerc/nosey-5). Verify it with `node scripts/notice.mjs --check`; regenerate after data changes with `node scripts/notice.mjs --write` (CI refreshes the pin through `automation/refresh-catalog-notice`). Keep skill identities, recommendation back-references, technology detection rules, and verified source identities aligned. Never invent installation URLs for unresolved entries. This built-in format is **not** Nosey's separate additive custom `registry.json` format.
