@@ -1,0 +1,49 @@
+name: Import agent-skills-standard into catalog
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/import-agent-skills-standard.mjs'
+      - '.github/workflows/import-agent-skills-standard.yml'
+      - 'data/**'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    # Only write to branches in this repository, never an untrusted fork.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: catalog-agent-skills-import-${{ github.event.pull_request.number }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Index verified pinned upstream skills
+        run: node scripts/import-agent-skills-standard.mjs
+      - name: Regenerate catalog documentation and unmapped index
+        run: node scripts/catalog.mjs --write
+      - name: Validate catalog and generated files
+        run: |
+          node scripts/catalog.mjs --check
+          node scripts/unmapped.mjs --check
+          node scripts/check-duplicate-skills.mjs
+          node --test tests/*.test.mjs
+      - name: Commit catalog snapshot to pull-request branch
+        run: |
+          git add -- data/catalog.json data/catalog-source-ledger.json data/mappings.json data/unmapped.json README.md SKILLS.md TECHNOLOGIES.md
+          if git diff --cached --quiet; then
+            echo "Catalog snapshot is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat: index 338 pinned agent-skills-standard skills"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
