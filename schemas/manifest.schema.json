@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rigerc.github.io/skills-catalog/schemas/manifest.schema.json",
+  "title": "Catalog manifest (manifest.json)",
+  "description": "File table for one catalog cohort. Lists datasets (a data file plus its schema), never skills, so its size is bounded by the dataset count (max 32), not by catalog size. Deterministic: contains no timestamps.",
+  "type": "object",
+  "required": [
+    "manifest_version",
+    "catalog_id",
+    "repository",
+    "commit",
+    "cohort_id",
+    "min_cli",
+    "rule_language",
+    "datasets"
+  ],
+  "properties": {
+    "manifest_version": { "const": 1 },
+    "catalog_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$" },
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]{1,100}/[A-Za-z0-9_.-]{1,100}$"
+    },
+    "commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "cohort_id": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "min_cli": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-[0-9A-Za-z.-]+)?$"
+    },
+    "rule_language": { "type": "integer", "minimum": 1, "maximum": 1000 },
+    "datasets": {
+      "description": "Ordered as in manifest.config.json. Unique ids are enforced by the generator and by clients (JSON Schema cannot express it for objects).",
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 32,
+      "items": { "$ref": "#/$defs/dataset" },
+      "allOf": [
+        { "contains": { "type": "object", "required": ["id"], "properties": { "id": { "const": "catalog" } } } },
+        { "contains": { "type": "object", "required": ["id"], "properties": { "id": { "const": "mappings" } } } },
+        { "contains": { "type": "object", "required": ["id"], "properties": { "id": { "const": "rules" } } } },
+        { "contains": { "type": "object", "required": ["id"], "properties": { "id": { "const": "ledger" } } } }
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "fileRef": {
+      "type": "object",
+      "required": ["path", "sha256", "bytes"],
+      "properties": {
+        "path": {
+          "description": "Repository-relative path. Only data/ and schemas/, one level deep, lowercase; traversal is impossible by construction.",
+          "type": "string",
+          "pattern": "^(data|schemas)/[a-z0-9][a-z0-9._-]*\\.json$",
+          "maxLength": 100
+        },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "bytes": {
+          "description": "Exact size in bytes. 4 MiB is the per-file hard cap shared with clients.",
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4194304
+        }
+      },
+      "additionalProperties": false
+    },
+    "dataset": {
+      "type": "object",
+      "required": ["id", "group", "required", "schema_version", "data", "schema"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{0,31}$" },
+        "group": {
+          "description": "core = needed to scan and recommend. Any other group (for example assessments) is optional and can be skipped by clients.",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{0,23}$"
+        },
+        "required": {
+          "description": "A required dataset that a client does not understand makes the cohort incompatible. An optional one is skipped.",
+          "type": "boolean"
+        },
+        "schema_version": {
+          "description": "Copied from the data file's own schema_version so clients can decide before downloading anything.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "data": { "$ref": "#/$defs/fileRef" },
+        "schema": { "$ref": "#/$defs/fileRef" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

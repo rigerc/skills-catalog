@@ -1,0 +1,50 @@
+{
+  "config_version": 1,
+  "repository": "rigerc/skills-catalog",
+  "min_cli": "0.1.0",
+  "rule_language": 1,
+  "datasets": [
+    {
+      "id": "catalog",
+      "group": "core",
+      "required": true,
+      "data": "data/catalog.json",
+      "schema": "schemas/catalog.schema.json"
+    },
+    {
+      "id": "mappings",
+      "group": "core",
+      "required": true,
+      "data": "data/mappings.json",
+      "schema": "schemas/mappings.schema.json"
+    },
+    {
+      "id": "rules",
+      "group": "core",
+      "required": true,
+      "data": "data/technology-detection-rules.json",
+      "schema": "schemas/technology-detection-rules.schema.json"
+    },
+    {
+      "id": "ledger",
+      "group": "core",
+      "required": true,
+      "data": "data/catalog-source-ledger.json",
+      "schema": "schemas/catalog-source-ledger.schema.json"
+    },
+    {
+      "id": "scores",
+      "group": "assessments",
+      "required": false,
+      "data": "data/scores.json",
+      "schema": "schemas/scores.schema.json"
+    },
+    {
+      "id": "quality",
+      "group": "assessments",
+      "required": false,
+      "data": "data/quality.json",
+      "schema": "schemas/quality.schema.json"
+    }
+  ]
+}
