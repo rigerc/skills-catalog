@@ -94,7 +94,7 @@ Snapshot date: **${esc(c.snapshot_date)}**. Source verification is historical ev
 - [All skills and source verification](SKILLS.md)
 - [Technology mappings and combinations](TECHNOLOGIES.md)
 - [Skill registry](data/catalog.json)
-- [Model evaluation scores](data/scores.json)
+- [Model evaluation scores](data/scores.json)\n- [Published skills manifest](https://rigerc.github.io/skills-catalog/data/manifest.json) (generated with the mappings and detection rules on each Pages deployment; not committed)\n- [Manifest v1 contract](docs/manifest-v1-contract.md)
 - [Unmapped skills (generated)](data/unmapped.json)
 - [Skill map](data/mappings.json)
 - [Scanner detection rules](data/technology-detection-rules.json)
