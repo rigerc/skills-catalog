@@ -61,7 +61,8 @@
         },
         "distinct_referenced_skills": {
           "type": "integer",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Legacy v1 contract: total number of catalog skills, not only skills used in mappings. Changing semantics requires a versioned migration."
         }
       }
     },
@@ -188,7 +189,35 @@
               "derived_from_display_name_not_explicit_in_specification"
             ]
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "mapping_status": {
+                  "const": "mapped"
+                }
+              },
+              "required": [
+                "mapping_status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "skill_ids": {
+                  "minItems": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "skill_ids": {
+                  "maxItems": 0
+                }
+              }
+            }
+          }
+        ]
       },
       "minItems": 0
     },
