@@ -84,6 +84,14 @@
       "credit_url": "https://github.com/beatra-ai/ai-podcast-voiceover-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/andrej-karpathy",
+      "name": "andrej-karpathy",
+      "original_repository": "multica-ai/andrej-karpathy-skills",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "path": "skills/karpathy-guidelines/SKILL.md",
+      "credit_url": "https://github.com/multica-ai/andrej-karpathy-skills"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/anywrite",
       "name": "anywrite",
       "original_repository": "Antheurus/anywrite",
@@ -162,6 +170,14 @@
       "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
       "path": "skills/browser-testing-with-devtools/SKILL.md",
       "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/bumblebee",
+      "name": "bumblebee",
+      "original_repository": "mycelos-ai/bumblebee-skill",
+      "commit": "acca2bd5e207da99437e16bf04b35d19eb5b2392",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/mycelos-ai/bumblebee-skill"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/chord-onchain-trading",
@@ -300,6 +316,14 @@
       "credit_url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/parcel-coupon",
+      "name": "parcel-coupon",
+      "original_repository": "moooai/parcel-coupon",
+      "commit": "dacdde81a90e4db12063a73eae480f9c947c02d9",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/parcel-coupon"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/people-data",
       "name": "people-data",
       "original_repository": "agentbody/skills",
@@ -420,6 +444,14 @@
       "credit_url": "https://github.com/beatra-ai/lyrics-to-song-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/takeout-coupon",
+      "name": "takeout-coupon",
+      "original_repository": "moooai/takeout-coupon",
+      "commit": "a4f393b891c8d7d0d81c53580651c570cd3d4e6c",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/takeout-coupon"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/talking-avatar-video",
       "name": "talking-avatar-video",
       "original_repository": "beatra-ai/talking-avatar-video-skill",
@@ -442,6 +474,14 @@
       "commit": "990512836f13020a61960ccae9a47c51e7dd822e",
       "path": "SKILL.md",
       "credit_url": "https://github.com/cruisekkk/trading-ledger"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/trip-coupon",
+      "name": "trip-coupon",
+      "original_repository": "moooai/trip-coupon",
+      "commit": "ca075a7bcf98d867630d29e5e6ebe418892bab26",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/trip-coupon"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
