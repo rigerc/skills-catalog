@@ -2,127 +2,168 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>Skills catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
 <style>
-:root{--bg:#f4f6f9;--panel:#fff;--ink:#162033;--mute:#5a6578;--line:#d8dde6;--acc:#0a6c74;--tint:#e1f2f3;--warn:#8a5200;--bad:#a4262c}
-@media (prefers-color-scheme:dark){:root{--bg:#0f141d;--panel:#161d2a;--ink:#e5e9f1;--mute:#95a0b4;--line:#283143;--acc:#55c4cc;--tint:#16343a;--warn:#e0a850;--bad:#ff8f8f}}
+:root{--bg:#f2f1f7;--panel:#fff;--ink:#1f1b33;--mute:#625f78;--line:#dad8e6;--acc:#4b3fd6;--on:#fff;--tint:#e9e6fb;--ok:#17724a;--warn:#8f5b00;--bad:#b3261e;--r:10px;--f:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;--d:"Bricolage Grotesque",var(--f)}
+@media (prefers-color-scheme:dark){:root{--bg:#13111e;--panel:#1c1a2c;--ink:#ecebf7;--mute:#a29fbc;--line:#332f4b;--acc:#a99fff;--on:#14122a;--tint:#2a2650;--ok:#5fd39a;--warn:#e8b25a;--bad:#ff9a92}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--f);padding-bottom:calc(4.2rem + env(safe-area-inset-bottom))}
 a{color:var(--acc)}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
 :focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
-header{padding:2rem 0 1rem}
-h1{font:700 2.3rem/1.1 Georgia,"Iowan Old Style",serif;margin:0 0 .6rem;letter-spacing:-.01em}
-header p{margin:.2rem 0;max-width:70ch}
-.mute,.m{color:var(--mute)}
-.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:.7rem 0}
-.bar .wrap{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
-input[type=search],select{font:inherit;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.45rem .6rem}
-input[type=search]{flex:1 1 260px;min-width:0}
-.tabs{display:flex;gap:.25rem}
-button{font:inherit;color:inherit;cursor:pointer}
-.tabs button{background:none;border:1px solid var(--line);border-radius:6px;padding:.4rem .8rem}
-.tabs button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--bg);font-weight:600}
-main.wrap{display:grid;grid-template-columns:230px 1fr;gap:1.5rem;padding-top:1.2rem;padding-bottom:3rem}
-main.one{grid-template-columns:1fr}
-aside{font-size:.9rem;display:flex;flex-direction:column;gap:.9rem;align-self:start}
-aside label{display:block}
-aside .f{display:flex;flex-direction:column;gap:.3rem}
-aside select{width:100%}
-.chip{background:var(--tint);border:1px solid transparent;color:var(--ink);border-radius:99px;padding:.05rem .6rem;margin:.1rem .25rem .1rem 0;font-size:.85rem}
-.chip:hover{border-color:var(--acc)}
-.link{background:none;border:0;padding:0;color:var(--acc);text-decoration:underline}
-.count{margin:0 0 .6rem}
-details{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:.4rem}
-summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.1rem .8rem;padding:.55rem .8rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1rem}
+.m,.mute{color:var(--mute)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+header{padding:calc(1.1rem + env(safe-area-inset-top)) 0 .9rem}
+h1{font:800 clamp(2rem,9vw,3.4rem)/1 var(--d);letter-spacing:-.025em;margin:0 0 .5rem}
+header p{margin:0;max-width:62ch}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;min-height:3.4rem;background:none;border:0;font-weight:700;color:var(--mute)}
+nav button[aria-pressed=true]{color:var(--acc);box-shadow:inset 0 3px var(--acc)}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding:.55rem 0}
+.row{display:flex;gap:.5rem}
+input[type=search],select{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);min-height:2.75rem;padding:0 .75rem}
+input[type=search]{flex:1;min-width:0}
+.fb{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:0 .9rem;min-height:2.75rem;font-weight:600}
+.fb b{display:inline-block;min-width:1.3rem;margin-left:.3rem;border-radius:99px;background:var(--acc);color:var(--on);font-size:.8rem;text-align:center}
+.fb b:empty{display:none}
+.stack{display:flex;gap:.4rem;overflow-x:auto;padding:.55rem 0 .1rem;scrollbar-width:none}
+.stack::-webkit-scrollbar{display:none}
+.c{flex:none;min-height:2.3rem;padding:0 .85rem;border:1px solid var(--line);border-radius:99px;background:var(--panel);white-space:nowrap}
+.c[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--on);font-weight:600}
+.t{background:var(--tint);border-color:transparent;min-height:2rem;padding:0 .7rem;margin:.15rem .3rem .15rem 0}
+.x{border-color:var(--acc)}
+main{padding:.9rem 0 2rem}
+#flt{position:fixed;inset:auto 0 0 0;max-height:88dvh;overflow:auto;z-index:40;background:var(--panel);border-radius:18px 18px 0 0;padding:.9rem 1rem calc(1rem + env(safe-area-inset-bottom));transform:translateY(105%);visibility:hidden;transition:transform .25s,visibility .25s}
+#flt.open{transform:none;visibility:visible}
+@media (prefers-reduced-motion:reduce){#flt{transition:none}}
+#scrim{position:fixed;inset:0;background:#0008;z-index:30;display:none}
+body.sheet #scrim{display:block}
+.sh{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.sh b{font:700 1.3rem var(--d)}
+.sh button{background:none;border:0;min-height:2.75rem;padding:0 .5rem;color:var(--acc);font-weight:600}
+.g{margin:0 0 1rem;padding:0;border:0}
+.g legend,.g>b{font-weight:700;padding:0;margin-bottom:.4rem;display:block}
+.g .chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.g select{width:100%}
+.apply{position:sticky;bottom:0;width:100%;min-height:3rem;border:0;border-radius:var(--r);background:var(--acc);color:var(--on);font-weight:700}
+.res{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.res select{max-width:58%}
+.act{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem;margin-bottom:.6rem}
+.link{background:none;border:0;padding:.4rem .2rem;color:var(--acc);text-decoration:underline}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+details+details{border-top:1px solid var(--line)}
+details[open]{background:color-mix(in srgb,var(--tint) 35%,var(--panel))}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.1rem .8rem;padding:.7rem .9rem;min-height:3.4rem}
 summary::-webkit-details-marker{display:none}
-summary:hover{background:var(--tint)}
-details[open]>summary{border-bottom:1px solid var(--line)}
-.n{font-weight:650;overflow-wrap:anywhere}
-.p{grid-column:1;font:.82rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--mute);overflow-wrap:anywhere}
-.b{grid-column:2;grid-row:1/3;align-self:center;text-align:right;font-size:.8rem;color:var(--mute)}
-.b i{font-style:normal;color:var(--acc)}
-.q{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:0 .5rem;font-size:.8rem;white-space:nowrap}
-.q[data-s=pass]{color:var(--acc);border-color:var(--acc)}
+.n{font:700 1.05rem/1.25 var(--d);overflow-wrap:anywhere}
+.p{color:var(--mute);font-size:.88rem;overflow-wrap:anywhere}
+.tg{grid-column:1/3;font-size:.85rem;color:var(--mute)}
+.sc{grid-column:2;grid-row:1;display:flex;align-items:center;gap:.4rem;font-weight:700;justify-self:end}
+.gl{display:inline-flex;align-items:flex-end;gap:2px;height:1.2rem}
+.gl i{display:block;width:4px;background:var(--acc);border-radius:1px}
+.q{grid-column:2;grid-row:2;justify-self:end;align-self:center;border:1px solid var(--line);border-radius:99px;padding:0 .5rem;font-size:.78rem;white-space:nowrap}
+.q[data-s=pass]{color:var(--ok);border-color:var(--ok)}
 .q[data-s=warn],.q[data-s=not_evaluated]{color:var(--warn);border-color:var(--warn)}
 .q[data-s=fail]{color:var(--bad);border-color:var(--bad)}
-.fl{margin:0;padding-left:1.1rem}
-.d{padding:.7rem .8rem}
-dl{display:grid;grid-template-columns:8.5rem 1fr;gap:.35rem .8rem;margin:0}
-dt{color:var(--mute)}dd{margin:0;overflow-wrap:anywhere}
+.d{padding:.2rem .9rem 1rem}
+.bd{display:grid;gap:.7rem;margin:.4rem 0 1rem}
+.bd small{display:block;color:var(--mute);font-size:.8rem}
+.bd .l{display:flex;justify-content:space-between;gap:1rem;font-weight:600}
+.br{display:block;height:6px;border-radius:3px;background:var(--line);margin:.25rem 0 .15rem}
+.br i{display:block;height:100%;border-radius:3px;background:var(--acc)}
+dl{display:grid;grid-template-columns:1fr;gap:0;margin:0}
+dt{color:var(--mute);font-size:.85rem;margin-top:.6rem}
+dd{margin:0;overflow-wrap:anywhere}
+.fl{margin:.2rem 0 0;padding-left:1.1rem}
 code{font:.85rem ui-monospace,SFMono-Regular,Menlo,monospace}
-.more{display:block;margin:1rem auto;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.5rem 1.2rem}
-section h2{font:700 1.15rem Georgia,"Iowan Old Style",serif;margin:1.6rem 0 .5rem}
-section h2:first-child{margin-top:0}
-ul.t{list-style:none;margin:0;padding:0;background:var(--panel);border:1px solid var(--line);border-radius:6px}
-ul.t li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem .8rem;border-top:1px solid var(--line)}
-ul.t li:first-child{border-top:0}
-ul.t .s{display:block;font-size:.82rem;color:var(--mute);overflow-wrap:anywhere}
-ul.t li>:last-child{white-space:nowrap}
-.err{border:1px solid var(--warn);color:var(--warn);padding:1rem;border-radius:6px}
-@media (max-width:760px){main.wrap{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:0}dd{margin-bottom:.4rem}h1{font-size:1.8rem}}
+.more{display:block;width:100%;min-height:3rem;margin:1rem 0;background:var(--panel);border:1px solid var(--line);border-radius:var(--r)}
+.cat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);margin-bottom:.6rem}
+.cat+.cat{border-top:1px solid var(--line)}
+.cat>summary{font:700 1.05rem var(--d);display:flex;justify-content:space-between}
+.cat ul{list-style:none;margin:0;padding:0}
+.cat li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.55rem .9rem;border-top:1px solid var(--line)}
+.cat .s{display:block;font-size:.82rem;color:var(--mute);overflow-wrap:anywhere}
+.about{margin-top:1.5rem;font-size:.9rem;color:var(--mute)}
+.about summary{display:block;min-height:0;padding:.5rem 0;color:var(--ink);font-weight:600}
+.err{border:1px solid var(--warn);color:var(--warn);padding:1rem;border-radius:var(--r)}
+@media (min-width:900px){
+body{padding-bottom:2rem}
+header .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem}
+nav{position:static;display:inline-flex;gap:.4rem;border:0;background:none;padding:0}
+nav button{flex:none;min-height:2.5rem;padding:0 1.1rem;border:1px solid var(--line);border-radius:99px;box-shadow:none!important}
+nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.wrap.g2{display:grid;grid-template-columns:250px 1fr;gap:1.5rem;align-items:start}
+.wrap.g2.one{grid-template-columns:1fr}
+#flt{position:sticky;inset:auto;top:6.8rem;max-height:calc(100dvh - 8rem);transform:none;visibility:visible;z-index:1;border:1px solid var(--line);border-radius:var(--r);padding:1rem}
+#scrim,.fb,.sh button,.apply{display:none!important}
+}
 </style>
 </head>
 <body>
-<header class="wrap">
-  <h1>Skills catalog</h1>
-  <p id="sum" class="mute">Loading catalog…</p>
-  <p class="mute" style="font-size:.85rem">Source verification is historical evidence, not a live availability, compatibility, licensing, or security guarantee.</p>
-  <p id="qsum" class="mute" style="font-size:.85rem"></p>
-</header>
+<header><div class="wrap">
+  <div><h1>Skills catalog</h1><p id="sum" class="mute">Loading catalog…</p></div>
+  <nav aria-label="View"><button data-view="skills">Skills</button><button data-view="tech">Technologies</button></nav>
+</div></header>
 <div class="bar"><div class="wrap">
-  <div class="tabs" role="group" aria-label="View">
-    <button data-view="skills">Skills</button><button data-view="tech">Technologies</button>
-  </div>
-  <input type="search" id="q" placeholder="Search skills, repositories, technologies" aria-label="Search">
-  <select id="sort" aria-label="Sort skills"><option value="name">Sort by skill name</option><option value="repo">Sort by repository</option></select>
+  <div class="row"><input type="search" id="q" placeholder="Search skills, repos, stacks" aria-label="Search" enterkeyhint="search"><button class="fb" id="fbtn" aria-controls="flt">Filters<b id="fn"></b></button></div>
+  <div class="stack" id="stack" aria-label="Popular technologies"></div>
 </div></div>
-<main class="wrap" id="main">
-  <aside id="side">
-    <div class="f"><b>Mapping</b>
-      <label><input type="radio" name="map" value="all"> All skills</label>
-      <label><input type="radio" name="map" value="mapped"> Recommended for something</label>
-      <label><input type="radio" name="map" value="unmapped"> Not yet mapped</label>
-    </div>
-    <label class="f"><b>Technology category</b><select id="cat"></select></label>
-    <label class="f"><b>Repository</b><select id="repo"></select></label>
-    <label class="f"><b>Quality check</b><select id="qual"><option value="">Any result</option><option value="pass">Pass</option><option value="warn">Warnings</option><option value="fail">Fail</option><option value="not_evaluated">Not evaluated</option><option value="none">Not checked yet</option></select></label>
-    <div id="active"></div>
-    <button class="link" id="clear" style="text-align:left">Clear all filters</button>
+<div id="scrim"></div>
+<div class="wrap g2" id="main">
+  <aside id="flt" aria-label="Filters">
+    <div class="sh"><b>Filters</b><button id="fclose">Done</button></div>
+    <fieldset class="g"><legend>Score</legend><div class="chips" data-g="min"></div></fieldset>
+    <fieldset class="g"><legend>Quality check</legend><div class="chips" data-g="qual"></div></fieldset>
+    <fieldset class="g"><legend>Recommendation</legend><div class="chips" data-g="map"></div></fieldset>
+    <label class="g"><b>Technology</b><select id="tech"></select></label>
+    <label class="g"><b>Category</b><select id="cat"></select></label>
+    <label class="g"><b>Repository</b><select id="repo"></select></label>
+    <button class="link" id="clear">Clear all filters</button>
+    <button class="apply" id="apply">Show skills</button>
   </aside>
-  <div id="out" aria-live="polite"></div>
-</main>
+  <div>
+    <div class="res"><span id="count" class="mute" aria-live="polite"></span><select id="sort" aria-label="Sort skills"></select></div>
+    <div class="act" id="active"></div>
+    <div id="out"></div>
+    <details class="about"><summary>About these data</summary>
+      <p>Source verification is historical evidence, not a live availability, compatibility, licensing, or security guarantee.</p>
+      <p id="qsum"></p><p id="ssum"></p>
+    </details>
+  </div>
+</div>
 <script>
-const $=s=>document.querySelector(s);
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const get=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u+' returned '+r.status);return r.json()});
-const KEYS=['view','q','cat','tech','combo','repo','map','sort','qual'],DEF={view:'skills',map:'all',sort:'name'};
-const P=new URLSearchParams(location.search);
-const S={n:100};KEYS.forEach(k=>S[k]=P.get(k)||DEF[k]||'');
-let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M;
+const KEYS=['view','q','cat','tech','combo','repo','map','sort','qual','min'],DEF={view:'skills',map:'all',sort:'name'};
+const P=new URLSearchParams(location.search),S={n:60};KEYS.forEach(k=>S[k]=P.get(k)||DEF[k]||'');
+const CR=[['trigger_clarity','Trigger clarity','How clearly it says when to use the skill'],['instruction_quality','Instruction quality','How actionable the steps are'],['correctness','Correctness','How accurate the content looks'],['safety','Safety','How careful it is with risky actions'],['context_efficiency','Context efficiency','How little context it costs an agent']];
+const QL={pass:'pass',warn:'warnings',fail:'fail',not_evaluated:'not evaluated'};
+const OPT={min:[['','Any'],['4.5','4.5 and up'],['4','4 and up'],['3.5','3.5 and up']],qual:[['','Any'],['pass','Pass'],['warn','Warnings'],['fail','Fail'],['none','Not checked']],map:[['all','All'],['mapped','Recommended'],['unmapped','Not mapped']]};
+let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M,SC,Q,nScored=0;
 
-function sync(){
-  const p=new URLSearchParams();
-  KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});
-  const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname);
-}
+function sync(){const p=new URLSearchParams();KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname)}
 
-function prep(C,Mp,L,Q){
-  M=Mp;
+function prep(C,Mp,L,Qd,Sd){
+  M=Mp;Q=Qd;SC=Sd;
   const qm=new Map((Q?.entries||[]).map(e=>[e.id,e]));
-  techs=new Map(M.technologies.map(t=>[t.id,t]));
-  combos=new Map(M.combinations.map(c=>[c.id,c]));
+  const se=new Map((SC?.entries||[]).filter(e=>e.status==='evaluated').map(e=>[e.id,e]));
+  techs=new Map(M.technologies.map(t=>[t.id,t]));combos=new Map(M.combinations.map(c=>[c.id,c]));
   const led=new Map(L.entries.map(e=>[e.id,e]));
   skills=C.skills.map(s=>{
     const r=s.recommended_for,e=led.get(s.id)||{};
-    const ts=r.technology_ids.map(i=>techs.get(i)).filter(Boolean);
-    const cs=r.combination_ids.map(i=>combos.get(i)).filter(Boolean);
-    const q=qm.get(s.id);
-    ts.forEach(t=>techCount.set(t.id,(techCount.get(t.id)||0)+1));
-    cs.forEach(c=>comboCount.set(c.id,(comboCount.get(c.id)||0)+1));
-    return {...s,ts,cs,fe:r.frontend_essential,url:e.url,commit:e.commit,why:e.selection_reason,q,qs:q?q.status:'none',
+    const ts=r.technology_ids.map(i=>techs.get(i)).filter(Boolean),cs=r.combination_ids.map(i=>combos.get(i)).filter(Boolean);
+    const q=qm.get(s.id),x=se.get(s.id);
+    ts.forEach(t=>techCount.set(t.id,(techCount.get(t.id)||0)+1));cs.forEach(c=>comboCount.set(c.id,(comboCount.get(c.id)||0)+1));
+    const sc=x&&{o:x.overall_score,c:Object.fromEntries(Object.entries(x.evaluation.scores).map(([k,v])=>[k,v.score])),x,stale:x.fingerprint!==SC.evaluator.fingerprint||!!(e.commit&&x.source.commit!==e.commit)};
+    if(sc)nScored++;
+    return {...s,ts,cs,fe:r.frontend_essential,url:e.url,commit:e.commit,why:e.selection_reason,q,qs:q?q.status:'none',sc,
       stale:!!q&&(q.fingerprint!==Q.tool.config_sha256||!!(e.commit&&q.source.commit!==e.commit)),
       cats:new Set(ts.map(t=>t.category)),mapped:!!(ts.length||cs.length||r.frontend_essential),
       hay:(s.id+' '+ts.map(t=>t.name).join(' ')+' '+cs.map(c=>c.name).join(' ')).toLowerCase()};
@@ -130,114 +171,161 @@ function prep(C,Mp,L,Q){
   cats=[...new Set(M.technologies.map(t=>t.category))].sort();
   const rc={};skills.forEach(s=>rc[s.repository]=(rc[s.repository]||0)+1);
   const repos=Object.entries(rc).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
-  $('#cat').innerHTML='<option value="">All categories</option>'+cats.map(c=>`<option>${esc(c)}</option>`).join('');
-  $('#repo').innerHTML='<option value="">All repositories</option>'+repos.map(([r,n])=>`<option value="${esc(r)}">${esc(r)} (${n})</option>`).join('');
-  const n=C.counts,m=skills.filter(s=>s.mapped).length;
-  $('#sum').textContent=`${n.distinct_skills.toLocaleString()} skills from ${repos.length} repositories. ${m.toLocaleString()} are recommended for ${n.technologies_with_skills} technologies and ${n.technology_combinations} combinations; ${n.technologies_detect_only} more technologies are detect-only. Snapshot ${C.snapshot_date}.`;
+  const opt=(v,t)=>`<option value="${esc(v)}">${esc(t)}</option>`;
+  $('#cat').innerHTML=opt('','All categories')+cats.map(c=>opt(c,c)).join('');
+  $('#repo').innerHTML=opt('','All repositories')+repos.map(([r,n])=>opt(r,`${r} (${n})`)).join('');
+  $('#tech').innerHTML=opt('','Any technology')+cats.map(c=>`<optgroup label="${esc(c)}">${M.technologies.filter(t=>t.category===c&&techCount.get(t.id)).sort((a,b)=>a.name.localeCompare(b.name)).map(t=>opt('t:'+t.id,`${t.name} (${techCount.get(t.id)})`)).join('')}</optgroup>`).join('').replace(/<optgroup label="[^"]*"><\/optgroup>/g,'')+`<optgroup label="Combinations">${M.combinations.filter(c=>comboCount.get(c.id)).map(c=>opt('c:'+c.id,`${c.name} (${comboCount.get(c.id)})`)).join('')}</optgroup>`;
+  $('#sort').innerHTML=opt('name','Sort: name')+opt('repo','Sort: repository')+(nScored?opt('score','Sort: highest score')+CR.map(([k,l])=>opt('s:'+k,'Sort: best '+l.toLowerCase())).join(''):'');
+  $('#stack').innerHTML=[...techCount].sort((a,b)=>b[1]-a[1]).slice(0,14).map(([id])=>`<button class="c" data-f="tech" data-v="${esc(id)}" aria-pressed="false">${esc(techs.get(id).name)}</button>`).join('');
+  $$('[data-g]').forEach(g=>{const k=g.dataset.g;g.innerHTML=OPT[k].filter(([v])=>k!=='min'||nScored||!v).map(([v,t])=>`<button class="c" data-f="${k}" data-v="${v}" aria-pressed="false">${t}</button>`).join('')});
+  if(!nScored)$('[data-g=min]').closest('fieldset').hidden=true;
+  const n=C.counts;
+  $('#sum').textContent=`${n.distinct_skills.toLocaleString()} agent skills from ${repos.length} repositories, matched to ${n.technologies_with_skills} technologies and ${n.technology_combinations} combinations.${nScored?` ${nScored} have a score so far.`:''}`;
   const bs=Q?.summary?.by_status;
-  $('#qsum').textContent=!Q?'Quality results could not be loaded.':qm.size?`Quality checks (${Q.tool.name} ${Q.tool.version}) cover ${qm.size.toLocaleString()} skills: ${bs.pass} pass, ${bs.warn} with warnings, ${bs.fail} fail, ${bs.not_evaluated} not evaluated. They describe upstream content quality, not security, licensing or availability.`:'Quality checks have not run on this snapshot yet. Results will appear here once data/quality.json has entries.';
+  $('#qsum').textContent=!Q?'Quality results could not be loaded.':qm.size?`Quality checks (${Q.tool.name} ${Q.tool.version}) cover ${qm.size.toLocaleString()} skills: ${bs.pass} pass, ${bs.warn} with warnings, ${bs.fail} fail, ${bs.not_evaluated} not evaluated. They describe upstream content quality, not security, licensing or availability.`:'Quality checks have not run on this snapshot yet.';
+  $('#ssum').textContent=!SC?'Scores could not be loaded.':`Scores come from an automated review (${SC.evaluator.model}) of each skill’s SKILL.md only: ${SC.summary.evaluated} of ${SC.summary.total} reviewed so far, 1 to 5 on five criteria. They are not runtime or security certification.`;
 }
 
 function match(s){
-  const h=S.q.toLowerCase().split(/\s+/).filter(Boolean);
-  if(!h.every(w=>s.hay.includes(w)))return false;
+  if(!S.q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>s.hay.includes(w)))return false;
   if(S.cat&&!s.cats.has(S.cat))return false;
   if(S.tech&&!s.ts.some(t=>t.id===S.tech))return false;
   if(S.combo&&!s.cs.some(c=>c.id===S.combo))return false;
   if(S.repo&&s.repository!==S.repo)return false;
   if(S.qual&&s.qs!==S.qual)return false;
+  if(S.min&&!(s.sc&&s.sc.o>=+S.min))return false;
   if(S.map==='mapped'&&!s.mapped)return false;
   if(S.map==='unmapped'&&s.mapped)return false;
   return true;
 }
+function sorter(){
+  const nm=(a,b)=>a.skill_name.localeCompare(b.skill_name);
+  if(S.sort==='repo')return (a,b)=>a.repository.localeCompare(b.repository)||nm(a,b);
+  const v=S.sort.startsWith('s:')?s=>s.sc?.c[S.sort.slice(2)]:S.sort==='score'?s=>s.sc?.o:null;
+  return v?(a,b)=>(v(b)??-1)-(v(a)??-1)||nm(a,b):nm;
+}
 
-const QL={pass:'pass',warn:'warnings',fail:'fail',not_evaluated:'not evaluated'};
+const hgt=v=>Math.round(14+(Math.min(5,Math.max(1,v))-1)/4*86);
 function qhtml(s){
   const q=s.q;
-  if(!q)return '<dt>Quality</dt><dd class="m">Not checked yet</dd>';
-  const ne=q.status==='not_evaluated';
-  let h=`<dt>Quality</dt><dd><span class="q" data-s="${q.status}">${QL[q.status]}</span> ${ne?esc(q.not_evaluated.message)+' ('+esc(q.not_evaluated.code)+')':q.counts.errors+' errors, '+q.counts.warnings+' warnings'}${s.stale?' <span class="m">(stale result, refreshed on the next run)</span>':''}</dd>`;
-  const f=q.findings||[];
+  if(!q)return '<dt>Quality check</dt><dd class="m">Not checked yet</dd>';
+  const ne=q.status==='not_evaluated',f=q.findings||[];
+  let h=`<dt>Quality check</dt><dd><span class="q" data-s="${q.status}" style="position:static">${QL[q.status]}</span> ${ne?esc(q.not_evaluated.message)+' ('+esc(q.not_evaluated.code)+')':q.counts.errors+' errors, '+q.counts.warnings+' warnings'}${s.stale?' <span class="m">(stale, refreshed on the next run)</span>':''}</dd>`;
   if(f.length)h+=`<dt>Findings</dt><dd><ul class="fl">${f.slice(0,20).map(x=>`<li><b>${esc(x.level)}</b> ${esc(x.category)}: ${esc(x.message)}${x.file?` <span class="m">(${esc(x.file)}${x.line?':'+x.line:''})</span>`:''}</li>`).join('')}</ul>${f.length>20||q.findings_truncated?`<span class="m">Showing the first ${Math.min(20,f.length)}; the counts above are exact.</span>`:''}</dd>`;
   const t=q.metrics?.tokens,c=q.metrics?.contamination;
   if(t)h+=`<dt>Size</dt><dd>${t.total.toLocaleString()} tokens${t.skill_md!=null?` (${t.skill_md.toLocaleString()} in SKILL.md)`:''}</dd>`;
   if(c)h+=`<dt>Contamination</dt><dd>${esc(c.level)}${c.language_mismatch?', language mismatch':''}</dd>`;
   return h+`<dt>Checked</dt><dd class="m">${esc(q.evaluated_at.slice(0,10))} with validator ${esc(q.validator_version)}</dd>`;
 }
+function scoreHtml(s){
+  const x=s.sc;
+  if(!x)return '<p class="m" style="margin:.6rem 0 1rem">Not scored yet.</p>';
+  const rp=SC.repositories.find(r=>r.repository===s.repository),ev=x.x.evaluation;
+  return `<div class="bd" role="group" aria-label="Score breakdown">${CR.filter(([k])=>x.c[k]!=null).map(([k,l,d])=>`<div><div class="l"><span>${l}</span><span>${x.c[k].toFixed(1)} / 5</span></div><span class="br"><i style="width:${(x.c[k]-1)/4*100}%"></i></span><small>${d}</small></div>`).join('')}</div>`+
+    (ev.summary?`<p>${esc(ev.summary)}</p>`:'')+
+    `<p class="m" style="font-size:.85rem;margin:0 0 .6rem">Reviewed ${esc(x.x.evaluated_at.slice(0,10))} by ${esc(x.x.model)}, SKILL.md only.${x.stale?' Stale: the skill changed since this review.':''}${rp&&rp.summary.evaluated>1?` Repository average ${rp.overall_score.toFixed(1)} across ${rp.summary.evaluated} scored skills.`:''}</p>`;
+}
 function row(s){
-  const tags=s.ts.slice(0,2).map(t=>esc(t.name));
-  const more=s.ts.length+s.cs.length-tags.length;
-  const b=[...tags,...(more>0?['+'+more]:[]),...(s.fe?['<i>frontend essential</i>']:[])].join(', ');
+  const tags=s.ts.slice(0,2).map(t=>esc(t.name)),more=s.ts.length+s.cs.length-tags.length;
+  const tg=[...tags,...(more>0?['+'+more]:[]),...(s.fe?['frontend essential']:[])].join(', ');
+  const sc=s.sc?`<span class="sc"><span class="sr">Score </span>${s.sc.o.toFixed(1)}<span class="gl" aria-hidden="true">${CR.map(([k])=>`<i style="height:${hgt(s.sc.c[k]||1)}%"></i>`).join('')}</span></span>`:`<span class="sc m" title="Not scored yet">–<span class="sr">Not scored yet</span></span>`;
   const sr=s.source_research;
-  return `<details><summary><span class="n">${esc(s.skill_name)}</span><span class="p">${esc(s.repository)}</span><span class="b">${b}${s.q?` <span class="q" data-s="${s.qs}">${QL[s.qs]}</span>`:''}</span></summary><div class="d"><dl>
+  return `<details><summary><span class="n">${esc(s.skill_name)}</span>${sc}<span class="p">${esc(s.repository)}</span>${s.q?`<span class="q" data-s="${s.qs}">${QL[s.qs]}</span>`:''}${tg?`<span class="tg">${tg}</span>`:''}</summary><div class="d">
+${scoreHtml(s)}<dl>
 <dt>ID</dt><dd><code>${esc(s.id)}</code></dd>
 <dt>Repository</dt><dd><a href="https://github.com/${esc(s.repository)}" rel="noopener">${esc(s.repository)}</a> <button class="link" data-k="repo" data-v="${esc(s.repository)}">only this repository</button></dd>
 ${s.url?`<dt>SKILL.md</dt><dd><a href="${esc(s.url)}" rel="noopener">Pinned at ${esc((s.commit||'').slice(0,7))}</a></dd>`:'<dt>SKILL.md</dt><dd class="m">No verified source URL</dd>'}
-${s.ts.length?`<dt>Technologies</dt><dd>${s.ts.map(t=>`<button class="chip" data-k="tech" data-v="${esc(t.id)}">${esc(t.name)}</button>`).join('')}</dd>`:''}
-${s.cs.length?`<dt>Combinations</dt><dd>${s.cs.map(c=>`<button class="chip" data-k="combo" data-v="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</dd>`:''}
+${s.ts.length?`<dt>Technologies</dt><dd>${s.ts.map(t=>`<button class="c t" data-k="tech" data-v="${esc(t.id)}">${esc(t.name)}</button>`).join('')}</dd>`:''}
+${s.cs.length?`<dt>Combinations</dt><dd>${s.cs.map(c=>`<button class="c t" data-k="combo" data-v="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</dd>`:''}
 ${sr?`<dt>Reported</dt><dd>${esc(sr.license_reported)} license, ${esc(sr.size_reported)}, ${sr.reviewed_for_security?'security reviewed':'not security reviewed'}</dd>`:''}
 ${qhtml(s)}
 ${s.why?`<dt>Selection note</dt><dd>${esc(s.why)}</dd>`:''}
 </dl></div></details>`;
 }
 
-function renderSkills(){
-  const by=S.sort==='repo'?(a,b)=>a.repository.localeCompare(b.repository)||a.skill_name.localeCompare(b.skill_name):(a,b)=>a.skill_name.localeCompare(b.skill_name);
-  const L=skills.filter(match).sort(by),shown=L.slice(0,S.n);
-  $('#out').innerHTML=`<p class="count mute">${L.length.toLocaleString()} ${L.length===1?'skill':'skills'}${L.length>shown.length?`, showing ${shown.length}`:''}</p>`+
-    (shown.map(row).join('')||'<p>No skills match these filters. Clear a filter or change the search.</p>')+
-    (L.length>shown.length?`<button class="more" id="more">Show ${Math.min(200,L.length-shown.length)} more</button>`:'');
-  const a=[];
-  if(S.tech)a.push(['tech',techs.get(S.tech)?.name||S.tech]);
-  if(S.combo)a.push(['combo',combos.get(S.combo)?.name||S.combo]);
-  $('#active').innerHTML=a.map(([k,v])=>`<button class="chip" data-k="${k}" data-v="" title="Remove filter">${esc(v)} ×</button>`).join('');
+function chips(){
+  const a=[],o=(k,v,l)=>a.push([k,l]);
+  if(S.tech)o('tech',0,techs.get(S.tech)?.name||S.tech);
+  if(S.combo)o('combo',0,combos.get(S.combo)?.name||S.combo);
+  if(S.cat)o('cat',0,S.cat);
+  if(S.repo)o('repo',0,S.repo);
+  if(S.min)o('min',0,'Score '+S.min+'+');
+  if(S.qual)o('qual',0,'Quality: '+(QL[S.qual]||'not checked'));
+  if(S.map!=='all')o('map',0,S.map==='mapped'?'Recommended':'Not mapped');
+  return a;
 }
-
+function renderSkills(){
+  const L=skills.filter(match).sort(sorter()),shown=L.slice(0,S.n);
+  $('#count').textContent=`${L.length.toLocaleString()} ${L.length===1?'skill':'skills'}${L.length>shown.length?`, showing ${shown.length}`:''}`;
+  $('#apply').textContent=`Show ${L.length.toLocaleString()} ${L.length===1?'skill':'skills'}`;
+  const a=chips();$('#fn').textContent=a.length||'';
+  $('#active').innerHTML=a.length?a.map(([k,l])=>`<button class="c x" data-f="${k}" data-v="" title="Remove filter">${esc(l)} ×</button>`).join('')+'<button class="link" data-clear>Clear all</button>':'';
+  $('#out').innerHTML=shown.length?`<div class="list">${shown.map(row).join('')}</div>`+(L.length>shown.length?`<button class="more" id="more">Show ${Math.min(120,L.length-shown.length)} more</button>`:''):'<p>No skills match these filters.</p><button class="link" data-clear>Clear all filters</button>';
+}
 function renderTech(){
   const q=S.q.toLowerCase(),ok=x=>!q||x.toLowerCase().includes(q);
-  const btn=(k,id,n)=>n?`<button class="chip" data-k="${k}" data-v="${esc(id)}">${n} ${n===1?'skill':'skills'}</button>`:'<span class="m">detect only</span>';
+  const btn=(k,id,n)=>n?`<button class="c t" data-k="${k}" data-v="${esc(id)}">${n} ${n===1?'skill':'skills'}</button>`:'<span class="m">detect only</span>';
   let h='';
   for(const c of cats){
     const L=M.technologies.filter(t=>t.category===c&&ok(t.name+' '+t.id));
     if(!L.length)continue;
-    h+=`<section><h2>${esc(c)}</h2><ul class="t">`+L.map(t=>{
+    h+=`<details class="cat"${q?' open':''}><summary><span>${esc(c)}</span><span class="m">${L.length}</span></summary><ul>`+L.map(t=>{
       const sig=(t.detection?.signals||[]).map(s=>s.kind+': '+(s.examples||[]).slice(0,2).join(', ')).join('; ');
-      return `<li><span><b>${esc(t.name)}</b><span class="s">${esc(sig)}</span></span>${btn('tech',t.id,techCount.get(t.id)||0)}</li>`}).join('')+'</ul></section>';
+      return `<li><span><b>${esc(t.name)}</b><span class="s">${esc(sig)}</span></span>${btn('tech',t.id,techCount.get(t.id)||0)}</li>`}).join('')+'</ul></details>';
   }
   const C=M.combinations.filter(c=>ok(c.name+' '+c.id));
-  if(C.length)h+=`<section><h2>Combinations</h2><ul class="t">`+C.map(c=>`<li><span><b>${esc(c.name)}</b><span class="s">Requires ${esc(c.requires.join(' + '))}</span></span>${btn('combo',c.id,comboCount.get(c.id)||0)}</li>`).join('')+'</ul></section>';
+  if(C.length)h+=`<details class="cat"${q?' open':''}><summary><span>Combinations</span><span class="m">${C.length}</span></summary><ul>`+C.map(c=>`<li><span><b>${esc(c.name)}</b><span class="s">Requires ${esc(c.requires.join(' + '))}</span></span>${btn('combo',c.id,comboCount.get(c.id)||0)}</li>`).join('')+'</ul></details>';
   $('#out').innerHTML=h||'<p>No technologies match this search.</p>';
+  $('#count').textContent='';$('#active').innerHTML='';
 }
 
 function update(){
-  document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===S.view));
-  $('#q').value=S.q;$('#sort').value=S.sort;$('#cat').value=S.cat;$('#repo').value=S.repo;$('#qual').value=S.qual;
-  document.querySelectorAll('[name=map]').forEach(r=>r.checked=r.value===S.map);
+  $$('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===S.view));
+  $('#q').value=S.q;$('#sort').value=S.sort;$('#cat').value=S.cat;$('#repo').value=S.repo;
+  $('#tech').value=S.combo?'c:'+S.combo:S.tech?'t:'+S.tech:'';
+  $$('[data-f]').forEach(b=>{const k=b.dataset.f;b.setAttribute('aria-pressed',(S[k]||(k==='map'?'all':''))===b.dataset.v&&(b.dataset.v!==''||k==='min'||k==='qual'||k==='map'))});
   const t=S.view==='tech';
-  $('#side').hidden=t;$('#sort').hidden=t;$('#main').classList.toggle('one',t);
+  $('#flt').hidden=false;$('#main').classList.toggle('one',t);
+  $('#stack').hidden=t;$('#fbtn').hidden=t;$('.res').hidden=t;
+  if(t&&$('#flt').classList.contains('open'))sheet(false);
+  $('#flt').style.display=t?'none':'';
   t?renderTech():renderSkills();sync();
+}
+function sheet(on){
+  const f=$('#flt');f.classList.toggle('open',on);document.body.classList.toggle('sheet',on);
+  on?(f.setAttribute('role','dialog'),f.setAttribute('aria-modal','true'),$('#fclose').focus()):(f.removeAttribute('role'),f.removeAttribute('aria-modal'));
+}
+function setF(k,v){
+  if(k==='tech'&&v&&S.tech===v)v='';
+  if(k==='tech'){S.tech=v;S.combo=''}else S[k]=v;
+  if(k==='map'&&!v)S.map='all';
+  S.n=60;update();
 }
 
 document.addEventListener('click',e=>{
   const v=e.target.closest('[data-view]');
   if(v){S.view=v.dataset.view;return update()}
-  if(e.target.id==='more'){S.n+=200;return update()}
-  if(e.target.id==='clear'){Object.assign(S,{q:'',cat:'',tech:'',combo:'',repo:'',qual:'',map:'all',n:100});return update()}
+  if(e.target.id==='more'){S.n+=120;return update()}
+  if(e.target.closest('[data-clear]')||e.target.id==='clear'){Object.assign(S,{cat:'',tech:'',combo:'',repo:'',qual:'',min:'',map:'all',n:60});return update()}
+  if(e.target.id==='fbtn')return sheet(true);
+  if(e.target.id==='fclose'||e.target.id==='apply'||e.target.id==='scrim'){sheet(false);return $('#fbtn').focus()}
+  const f=e.target.closest('[data-f]');
+  if(f)return setF(f.dataset.f,f.dataset.v);
   const b=e.target.closest('[data-k]');
-  if(b){S[b.dataset.k]=b.dataset.v;S.view='skills';S.n=100;update();scrollTo(0,0)}
+  if(b){S[b.dataset.k]=b.dataset.v;if(b.dataset.k==='tech')S.combo='';S.view='skills';S.n=60;update();scrollTo(0,0)}
 });
-$('#q').addEventListener('input',e=>{S.q=e.target.value;S.n=100;update()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#flt').classList.contains('open')){sheet(false);$('#fbtn').focus()}});
+$('#q').addEventListener('input',e=>{S.q=e.target.value;S.n=60;update()});
 $('#sort').addEventListener('change',e=>{S.sort=e.target.value;update()});
-$('#cat').addEventListener('change',e=>{S.cat=e.target.value;S.n=100;update()});
-$('#qual').addEventListener('change',e=>{S.qual=e.target.value;S.n=100;update()});
-$('#repo').addEventListener('change',e=>{S.repo=e.target.value;S.n=100;update()});
-document.querySelectorAll('[name=map]').forEach(r=>r.addEventListener('change',()=>{S.map=r.value;S.n=100;update()}));
+$('#cat').addEventListener('change',e=>setF('cat',e.target.value));
+$('#repo').addEventListener('change',e=>setF('repo',e.target.value));
+$('#tech').addEventListener('change',e=>{const v=e.target.value;S.tech=v.startsWith('t:')?v.slice(2):'';S.combo=v.startsWith('c:')?v.slice(2):'';S.n=60;update()});
 
-Promise.all([get('data/catalog.json'),get('data/mappings.json'),get('data/catalog-source-ledger.json'),get('data/quality.json').catch(()=>null)])
-  .then(([C,Mp,L,Q])=>{prep(C,Mp,L,Q);update()})
+Promise.all([get('data/catalog.json'),get('data/mappings.json'),get('data/catalog-source-ledger.json'),get('data/quality.json').catch(()=>null),get('data/scores.json').catch(()=>null)])
+  .then(([C,Mp,L,Qd,Sd])=>{prep(C,Mp,L,Qd,Sd);update()})
   .catch(err=>{
     $('#sum').textContent='';
-    $('#out').innerHTML=`<p class="err">Could not load the catalog data: ${esc(err.message)}. This page reads <code>data/catalog.json</code>, <code>data/mappings.json</code> and <code>data/catalog-source-ledger.json</code> next to it, so serve it over HTTP (for example with the Pages workflow) rather than opening the file directly.</p>`;
+    $('#out').innerHTML=`<p class="err">Could not load the catalog data: ${esc(err.message)}. This page reads files from <code>data/</code> next to it, so serve it over HTTP (for example with the Pages workflow) rather than opening the file directly.</p>`;
   });
 </script>
 </body>

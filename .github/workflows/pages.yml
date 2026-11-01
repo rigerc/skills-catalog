@@ -8,6 +8,7 @@ on:
       - 'data/mappings.json'
       - 'data/catalog-source-ledger.json'
       - 'data/quality.json'
+      - 'data/scores.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -31,7 +32,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp site/index.html _site/
-          cp data/catalog.json data/mappings.json data/catalog-source-ledger.json data/quality.json _site/data/
+          cp data/catalog.json data/mappings.json data/catalog-source-ledger.json data/quality.json data/scores.json _site/data/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
