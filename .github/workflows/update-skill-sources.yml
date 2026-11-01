@@ -22,8 +22,9 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22'
-      - name: Check upstream HEAD and raw SKILL.md files without API quota
+      - name: Check changed sources and refresh pinned eval evidence
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           SKILL_UPDATE_REPORT: ${{ runner.temp }}/skill-updates.md
         run: node scripts/update-skill-sources.mjs --write
       - name: Validate updated catalog and generated docs
@@ -39,6 +40,7 @@ jobs:
           delete-branch: true
           add-paths: |
             data/catalog-source-ledger.json
+            data/evals-index.json
             data/catalog.json
             data/mappings.json
             README.md
