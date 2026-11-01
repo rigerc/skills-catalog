@@ -13,8 +13,8 @@
   ],
   "counts": {
     "distinct_skills": 1084,
-    "technologies_with_skills": 186,
-    "technologies_detect_only": 60,
+    "technologies_with_skills": 187,
+    "technologies_detect_only": 59,
     "technology_combinations": 33,
     "frontend_essential_skills": 3
   },
@@ -3014,7 +3014,9 @@
       "skill_name": "android-agp-upgrade",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3025,7 +3027,9 @@
       "skill_name": "android-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3036,7 +3040,9 @@
       "skill_name": "android-background-work",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3047,7 +3053,9 @@
       "skill_name": "android-compose",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3058,7 +3066,9 @@
       "skill_name": "android-compose-migration",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3069,7 +3079,9 @@
       "skill_name": "android-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3080,7 +3092,9 @@
       "skill_name": "android-deployment",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3091,7 +3105,9 @@
       "skill_name": "android-design-system",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3102,7 +3118,9 @@
       "skill_name": "android-di",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3113,7 +3131,9 @@
       "skill_name": "android-edge-to-edge",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3124,7 +3144,9 @@
       "skill_name": "android-legacy-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3135,7 +3157,9 @@
       "skill_name": "android-legacy-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3146,7 +3170,9 @@
       "skill_name": "android-legacy-state",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3157,7 +3183,9 @@
       "skill_name": "android-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3168,7 +3196,9 @@
       "skill_name": "android-navigation-3",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3179,7 +3209,9 @@
       "skill_name": "android-navigation-type-safe",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3190,7 +3222,9 @@
       "skill_name": "android-networking",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3201,7 +3235,9 @@
       "skill_name": "android-notifications",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3212,7 +3248,9 @@
       "skill_name": "android-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3223,7 +3261,9 @@
       "skill_name": "android-persistence",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3234,7 +3274,9 @@
       "skill_name": "android-resources",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3245,7 +3287,9 @@
       "skill_name": "android-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3256,7 +3300,9 @@
       "skill_name": "android-state",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3267,7 +3313,9 @@
       "skill_name": "android-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3278,7 +3326,9 @@
       "skill_name": "android-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3289,7 +3339,9 @@
       "skill_name": "android-xml-views",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "android"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3300,7 +3352,9 @@
       "skill_name": "angular-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3311,7 +3365,9 @@
       "skill_name": "angular-components",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3322,7 +3378,9 @@
       "skill_name": "angular-dependency-injection",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3333,7 +3391,9 @@
       "skill_name": "angular-directives-pipes",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3344,7 +3404,9 @@
       "skill_name": "angular-forms",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3355,7 +3417,9 @@
       "skill_name": "angular-http-client",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3366,7 +3430,9 @@
       "skill_name": "angular-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3377,7 +3443,9 @@
       "skill_name": "angular-routing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3388,7 +3456,9 @@
       "skill_name": "angular-rxjs-interop",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3399,7 +3469,9 @@
       "skill_name": "angular-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3410,7 +3482,9 @@
       "skill_name": "angular-ssr",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3421,7 +3495,9 @@
       "skill_name": "angular-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3432,7 +3508,9 @@
       "skill_name": "angular-style-guide",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3443,7 +3521,9 @@
       "skill_name": "angular-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -3454,7 +3534,9 @@
       "skill_name": "angular-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "angular"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4092,7 +4174,9 @@
       "skill_name": "dart-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dart"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4103,7 +4187,9 @@
       "skill_name": "dart-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dart"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4114,7 +4200,9 @@
       "skill_name": "dart-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "dart"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4147,7 +4235,9 @@
       "skill_name": "database-mongodb",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "mongodb"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4158,7 +4248,9 @@
       "skill_name": "database-postgresql",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "postgres"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4180,7 +4272,9 @@
       "skill_name": "database-redis",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "redis"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4213,7 +4307,9 @@
       "skill_name": "flutter-auto-route-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4224,7 +4320,9 @@
       "skill_name": "flutter-bloc-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4235,7 +4333,9 @@
       "skill_name": "flutter-cicd",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4246,7 +4346,9 @@
       "skill_name": "flutter-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4257,7 +4359,9 @@
       "skill_name": "flutter-dependency-injection",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4268,7 +4372,9 @@
       "skill_name": "flutter-design-system",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4279,7 +4385,9 @@
       "skill_name": "flutter-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4290,7 +4398,9 @@
       "skill_name": "flutter-feature-based-clean-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4301,7 +4411,9 @@
       "skill_name": "flutter-getx-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4312,7 +4424,9 @@
       "skill_name": "flutter-getx-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4323,7 +4437,9 @@
       "skill_name": "flutter-go-router-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4334,7 +4450,9 @@
       "skill_name": "flutter-idiomatic-flutter",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4345,7 +4463,9 @@
       "skill_name": "flutter-layer-based-clean-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4356,7 +4476,9 @@
       "skill_name": "flutter-localization",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4367,7 +4489,9 @@
       "skill_name": "flutter-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4378,7 +4502,9 @@
       "skill_name": "flutter-notifications",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4389,7 +4515,9 @@
       "skill_name": "flutter-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4400,7 +4528,9 @@
       "skill_name": "flutter-retrofit-networking",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4411,7 +4541,9 @@
       "skill_name": "flutter-riverpod-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4422,7 +4554,9 @@
       "skill_name": "flutter-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4433,7 +4567,9 @@
       "skill_name": "flutter-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4444,7 +4580,9 @@
       "skill_name": "flutter-widgets",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "flutter"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4455,7 +4593,9 @@
       "skill_name": "golang-api-server",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4466,7 +4606,9 @@
       "skill_name": "golang-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4477,7 +4619,9 @@
       "skill_name": "golang-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4488,7 +4632,9 @@
       "skill_name": "golang-configuration",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4499,7 +4645,9 @@
       "skill_name": "golang-database",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4510,7 +4658,9 @@
       "skill_name": "golang-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4521,7 +4671,9 @@
       "skill_name": "golang-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4532,7 +4684,9 @@
       "skill_name": "golang-logging",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4543,7 +4697,9 @@
       "skill_name": "golang-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4554,7 +4710,10 @@
       "skill_name": "golang-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go",
+          "testify"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4565,7 +4724,9 @@
       "skill_name": "golang-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "go"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4719,7 +4880,9 @@
       "skill_name": "ios-swiftui",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swiftui"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4741,7 +4904,9 @@
       "skill_name": "java-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4752,7 +4917,9 @@
       "skill_name": "java-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4763,7 +4930,9 @@
       "skill_name": "java-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4774,7 +4943,9 @@
       "skill_name": "java-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4785,7 +4956,9 @@
       "skill_name": "java-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "java"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4796,7 +4969,9 @@
       "skill_name": "javascript-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "node"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4807,7 +4982,9 @@
       "skill_name": "javascript-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "node"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4818,7 +4995,9 @@
       "skill_name": "javascript-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "node"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4829,7 +5008,9 @@
       "skill_name": "kotlin-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4840,7 +5021,9 @@
       "skill_name": "kotlin-coroutines",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4851,7 +5034,9 @@
       "skill_name": "kotlin-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4862,7 +5047,9 @@
       "skill_name": "kotlin-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "kotlin"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4873,7 +5060,9 @@
       "skill_name": "laravel-api",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4884,7 +5073,9 @@
       "skill_name": "laravel-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4895,7 +5086,9 @@
       "skill_name": "laravel-background-processing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4906,7 +5099,9 @@
       "skill_name": "laravel-clean-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4917,7 +5112,9 @@
       "skill_name": "laravel-database-expert",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4928,7 +5125,9 @@
       "skill_name": "laravel-eloquent",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4939,7 +5138,9 @@
       "skill_name": "laravel-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4950,7 +5151,9 @@
       "skill_name": "laravel-sessions-middleware",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4961,7 +5164,9 @@
       "skill_name": "laravel-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4972,7 +5177,9 @@
       "skill_name": "laravel-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "laravel"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4983,7 +5190,9 @@
       "skill_name": "nestjs-api-standards",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -4994,7 +5203,9 @@
       "skill_name": "nestjs-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5005,7 +5216,10 @@
       "skill_name": "nestjs-bullmq",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "bullmq",
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5016,7 +5230,9 @@
       "skill_name": "nestjs-caching",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5027,7 +5243,9 @@
       "skill_name": "nestjs-configuration",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5038,7 +5256,9 @@
       "skill_name": "nestjs-controllers-services",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5049,7 +5269,9 @@
       "skill_name": "nestjs-database",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5060,7 +5282,9 @@
       "skill_name": "nestjs-deployment",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5071,7 +5295,9 @@
       "skill_name": "nestjs-documentation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5082,7 +5308,9 @@
       "skill_name": "nestjs-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5093,7 +5321,9 @@
       "skill_name": "nestjs-file-uploads",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5104,7 +5334,9 @@
       "skill_name": "nestjs-notification",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5115,7 +5347,9 @@
       "skill_name": "nestjs-observability",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5126,7 +5360,9 @@
       "skill_name": "nestjs-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5137,7 +5373,9 @@
       "skill_name": "nestjs-real-time",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5148,7 +5386,9 @@
       "skill_name": "nestjs-scheduling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5159,7 +5399,9 @@
       "skill_name": "nestjs-search",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5170,7 +5412,9 @@
       "skill_name": "nestjs-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5181,7 +5425,9 @@
       "skill_name": "nestjs-security-isolation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5192,7 +5438,9 @@
       "skill_name": "nestjs-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5203,7 +5451,9 @@
       "skill_name": "nestjs-transport",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nestjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5214,7 +5464,9 @@
       "skill_name": "nextjs-app-router",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5225,7 +5477,9 @@
       "skill_name": "nextjs-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5236,7 +5490,9 @@
       "skill_name": "nextjs-authentication",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5247,7 +5503,9 @@
       "skill_name": "nextjs-caching",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5258,7 +5516,9 @@
       "skill_name": "nextjs-data-access-layer",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5269,7 +5529,9 @@
       "skill_name": "nextjs-data-fetching",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5280,7 +5542,9 @@
       "skill_name": "nextjs-i18n",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5291,7 +5555,9 @@
       "skill_name": "nextjs-optimization",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5302,7 +5568,9 @@
       "skill_name": "nextjs-pages-router",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5313,7 +5581,9 @@
       "skill_name": "nextjs-rendering",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5324,7 +5594,9 @@
       "skill_name": "nextjs-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5335,7 +5607,9 @@
       "skill_name": "nextjs-server-actions",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5346,7 +5620,9 @@
       "skill_name": "nextjs-server-components",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5357,7 +5633,9 @@
       "skill_name": "nextjs-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5368,7 +5646,9 @@
       "skill_name": "nextjs-styling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5379,7 +5659,13 @@
       "skill_name": "nextjs-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "jest",
+          "msw",
+          "nextjs",
+          "playwright",
+          "vitest"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5390,7 +5676,9 @@
       "skill_name": "nextjs-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5401,7 +5689,9 @@
       "skill_name": "nextjs-upgrade",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "nextjs"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5412,7 +5702,9 @@
       "skill_name": "php-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5423,7 +5715,9 @@
       "skill_name": "php-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5434,7 +5728,9 @@
       "skill_name": "php-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5445,7 +5741,9 @@
       "skill_name": "php-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5456,7 +5754,9 @@
       "skill_name": "php-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5467,7 +5767,9 @@
       "skill_name": "php-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5478,7 +5780,9 @@
       "skill_name": "php-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "php"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5599,7 +5903,9 @@
       "skill_name": "python-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5610,7 +5916,9 @@
       "skill_name": "python-async-runtime",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5621,7 +5929,9 @@
       "skill_name": "python-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5632,7 +5942,9 @@
       "skill_name": "python-database",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5643,7 +5955,9 @@
       "skill_name": "python-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5654,7 +5968,9 @@
       "skill_name": "python-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5665,7 +5981,9 @@
       "skill_name": "python-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5676,7 +5994,10 @@
       "skill_name": "python-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "pytest",
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5687,7 +6008,9 @@
       "skill_name": "python-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "python"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5786,7 +6109,9 @@
       "skill_name": "quality-engineering-playwright-cli",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "playwright"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5797,7 +6122,9 @@
       "skill_name": "quality-engineering-playwright-pom-generation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "playwright"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5885,7 +6212,9 @@
       "skill_name": "react-component-patterns",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5896,7 +6225,9 @@
       "skill_name": "react-hooks",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5907,7 +6238,10 @@
       "skill_name": "react-native-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5918,7 +6252,10 @@
       "skill_name": "react-native-components",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5929,7 +6266,10 @@
       "skill_name": "react-native-deployment",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5940,7 +6280,10 @@
       "skill_name": "react-native-dls",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5951,7 +6294,10 @@
       "skill_name": "react-native-navigation",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5962,7 +6308,10 @@
       "skill_name": "react-native-navigation-v6",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5973,7 +6322,10 @@
       "skill_name": "react-native-notifications",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5984,7 +6336,10 @@
       "skill_name": "react-native-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -5995,7 +6350,10 @@
       "skill_name": "react-native-platform-specific",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6006,7 +6364,10 @@
       "skill_name": "react-native-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6017,7 +6378,10 @@
       "skill_name": "react-native-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6028,7 +6392,10 @@
       "skill_name": "react-native-styling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6039,7 +6406,10 @@
       "skill_name": "react-native-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "react-native"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6050,7 +6420,9 @@
       "skill_name": "react-performance",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6061,7 +6433,9 @@
       "skill_name": "react-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6072,7 +6446,9 @@
       "skill_name": "react-state-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6083,7 +6459,9 @@
       "skill_name": "react-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6094,7 +6472,9 @@
       "skill_name": "react-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6105,7 +6485,10 @@
       "skill_name": "react-typescript",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "react",
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6347,7 +6730,9 @@
       "skill_name": "spring-boot-api-design",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6358,7 +6743,9 @@
       "skill_name": "spring-boot-architecture",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6369,7 +6756,9 @@
       "skill_name": "spring-boot-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6380,7 +6769,9 @@
       "skill_name": "spring-boot-data-access",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6391,7 +6782,9 @@
       "skill_name": "spring-boot-deployment",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6402,7 +6795,9 @@
       "skill_name": "spring-boot-microservices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6413,7 +6808,9 @@
       "skill_name": "spring-boot-observability",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6424,7 +6821,9 @@
       "skill_name": "spring-boot-scheduling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6435,7 +6834,9 @@
       "skill_name": "spring-boot-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6446,7 +6847,9 @@
       "skill_name": "spring-boot-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "springboot"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6457,7 +6860,9 @@
       "skill_name": "swift-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6468,7 +6873,9 @@
       "skill_name": "swift-concurrency",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6479,7 +6886,9 @@
       "skill_name": "swift-error-handling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6490,7 +6899,9 @@
       "skill_name": "swift-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6501,7 +6912,9 @@
       "skill_name": "swift-memory-management",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6512,7 +6925,10 @@
       "skill_name": "swift-swiftui",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift",
+          "swiftui"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6523,7 +6939,9 @@
       "skill_name": "swift-testing",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6534,7 +6952,9 @@
       "skill_name": "swift-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "swift"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6688,7 +7108,9 @@
       "skill_name": "typescript-best-practices",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6699,7 +7121,9 @@
       "skill_name": "typescript-language",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6710,7 +7134,9 @@
       "skill_name": "typescript-security",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
@@ -6721,7 +7147,9 @@
       "skill_name": "typescript-tooling",
       "skill_md_url": null,
       "recommended_for": {
-        "technology_ids": [],
+        "technology_ids": [
+          "typescript"
+        ],
         "combination_ids": [],
         "frontend_essential": false
       }
