@@ -5,9 +5,9 @@
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 280,
-    "mapped_technologies": 213,
-    "detect_only_technologies": 67,
-    "combinations": 33,
+    "mapped_technologies": 214,
+    "detect_only_technologies": 66,
+    "combinations": 35,
     "distinct_referenced_skills": 2601
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
@@ -83,7 +83,7 @@
       "id": "claude-code",
       "name": "Claude Code",
       "category": "AI, LLM and MCP",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "documented_examples_only",
         "signals": [
@@ -104,7 +104,9 @@
         ],
         "raw": "path: CLAUDE.md; path: .claude/settings.json; path: .claude/settings.local.json; glob: .claude/agents/*.md"
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "mattpocock/skills/git-guardrails-claude-code"
+      ],
       "source_document": "https://code.claude.com/docs/en/settings",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -6981,6 +6983,32 @@
         "cloudflare/vinext/migrate-to-vinext"
       ],
       "source_document": "specification/04-catalog/10-technology-combinations.md"
+    },
+    {
+      "id": "cursor-nextjs-redux-typescript",
+      "name": "Cursor + Next.js + Redux + TypeScript",
+      "requires": [
+        "cursor",
+        "nextjs",
+        "redux",
+        "typescript"
+      ],
+      "skill_ids": [
+        "Mindrally/skills/nextjs-react-redux-typescript-cursor-rules"
+      ],
+      "source_document": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/nextjs-react-redux-typescript-cursor-rules/SKILL.md"
+    },
+    {
+      "id": "cursor-odoo",
+      "name": "Cursor + Odoo",
+      "requires": [
+        "cursor",
+        "odoo"
+      ],
+      "skill_ids": [
+        "Mindrally/skills/python-odoo-cursor-rules"
+      ],
+      "source_document": "https://github.com/Mindrally/skills/blob/7682ca77710e0971eab4e0ae5dddfa281aea0ba5/python-odoo-cursor-rules/SKILL.md"
     },
     {
       "id": "django-celery",

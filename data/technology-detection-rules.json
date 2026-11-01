@@ -61,8 +61,8 @@
     },
     {
       "technology_id": "claude-code",
-      "mapping_status": "detect_only",
-      "origin": "official_documentation_reviewed_2026_11_01",
+      "mapping_status": "mapped",
+      "origin": "documented_project_signals_with_reviewed_skill_mapping_2026_11_01",
       "logic": "any",
       "signals": [
         {
