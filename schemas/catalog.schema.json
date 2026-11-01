@@ -83,6 +83,7 @@
           "repository",
           "skill_name",
           "skill_md_url",
+          "has_evals",
           "recommended_for"
         ],
         "properties": {
@@ -113,6 +114,10 @@
             ],
             "deprecated": true,
             "description": "Legacy optional unpinned source pointer; consumers should use the verified commit-pinned URL in catalog-source-ledger.json."
+          },
+          "has_evals": {
+            "type": "boolean",
+            "description": "True if a tracked regular file exists under the skill\u0027s evals/ directory at the verified source commit."
           },
           "recommended_for": {
             "type": "object",
