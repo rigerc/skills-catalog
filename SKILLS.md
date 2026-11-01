@@ -3,7 +3,7 @@
 Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalog-source-ledger.json). **Verified** identifies a skill file at the recorded commit; it does not constitute a safety audit or guarantee of availability.
 
 | Canonical skill ID | Repository | Skill | Source | Evals | Technology mappings | Combinations |
-| --- | --- | --- | --- | --- | ---: | ---: |
+| --- | --- | --- | --- | --- | --- | ---: | ---: |
 | `addyosmani/web-quality-skills/accessibility` | addyosmani/web-quality-skills | accessibility | [Verified source](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/accessibility/SKILL.md) | No | 0 | 0 |
 | `addyosmani/web-quality-skills/seo` | addyosmani/web-quality-skills | seo | [Verified source](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/seo/SKILL.md) | No | 0 | 0 |
 | `affaan-m/ECC/django-celery` | affaan-m/ECC | django-celery | [Verified source](https://github.com/affaan-m/ECC/blob/25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b/skills/django-celery/SKILL.md) | No | 0 | 1 |
