@@ -92,6 +92,14 @@
       "credit_url": "https://github.com/multica-ai/andrej-karpathy-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/anti-slop-design",
+      "name": "anti-slop-design",
+      "original_repository": "wwewtech/anti-slop-design",
+      "commit": "071fd3c40a57d1e6bd6953b4d10974afb4626d04",
+      "path": "skills/anti-slop-design/SKILL.md",
+      "credit_url": "https://github.com/wwewtech/anti-slop-design"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/anywrite",
       "name": "anywrite",
       "original_repository": "Antheurus/anywrite",
@@ -130,6 +138,14 @@
       "commit": "2e3109827a6382ef5d82fc73333b6b5f2d6577b2",
       "path": "plugins/assay/skills/checking-a-page/SKILL.md",
       "credit_url": "https://github.com/awss1i/assay"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/atlas-contract",
+      "name": "atlas-contract",
+      "original_repository": "wede-wx/atlas",
+      "commit": "3b7922c325cc11dfe1c6b387efc20572c45374db",
+      "path": "atlas-contract/SKILL.md",
+      "credit_url": "https://github.com/wede-wx/atlas"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
@@ -300,6 +316,22 @@
       "credit_url": "https://github.com/timwukp/agent-skills-best-practice"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/geo-audit",
+      "name": "geo-audit",
+      "original_repository": "zubair-trabzada/geo-seo-claude",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "path": "skills/geo-audit/SKILL.md",
+      "credit_url": "https://github.com/zubair-trabzada/geo-seo-claude"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/geo-technical",
+      "name": "geo-technical",
+      "original_repository": "zubair-trabzada/geo-seo-claude",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "path": "skills/geo-technical/SKILL.md",
+      "credit_url": "https://github.com/zubair-trabzada/geo-seo-claude"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
       "name": "get-seen-in-replies",
       "original_repository": "prateeks367/voicemoat-skills",
@@ -340,6 +372,14 @@
       "credit_url": "https://github.com/connerkward/lookdev-auto-skill"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/marlin-bed-leveling",
+      "name": "marlin-bed-leveling",
+      "original_repository": "wwewtech/marlin-bed-leveling",
+      "commit": "c1cde84b6b37df4e490ffc6c4726cf0a0613d2f4",
+      "path": "skills/marlin-bed-leveling/SKILL.md",
+      "credit_url": "https://github.com/wwewtech/marlin-bed-leveling"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/mock-hunter",
       "name": "mock-hunter",
       "original_repository": "CodeShuX/mockhunter",
@@ -372,6 +412,14 @@
       "credit_url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/papers-skill",
+      "name": "papers-skill",
+      "original_repository": "xwmxcz/papers-skill",
+      "commit": "a64c2eda2c9fc182c96e1409cde267b262dbebde",
+      "path": "skills/papers-research/SKILL.md",
+      "credit_url": "https://github.com/xwmxcz/papers-skill"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/parcel-coupon",
       "name": "parcel-coupon",
       "original_repository": "moooai/parcel-coupon",
@@ -386,6 +434,14 @@
       "commit": "2aba22eb7b8b63adf5f98de67a40a2e17d80bc38",
       "path": "skills/people-data/SKILL.md",
       "credit_url": "https://github.com/agentbody/skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/placecall",
+      "name": "placecall",
+      "original_repository": "voygr-tech/placecall",
+      "commit": "534e35839c9125cdba2f1707932cf2b84bb7d2d3",
+      "path": "skills/placecall/SKILL.md",
+      "credit_url": "https://github.com/voygr-tech/placecall"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/poka-yoke",
@@ -596,6 +652,14 @@
       "credit_url": "https://github.com/addyosmani/agent-skills"
     },
     {
+      "old_id": "sickn33/agentic-awesome-skills/uxkin-research",
+      "name": "uxkin-research",
+      "original_repository": "uxkin/agent",
+      "commit": "eef108f538e965ce8c74f8a5616a32c59f65a405",
+      "path": "skills/uxkin-research/SKILL.md",
+      "credit_url": "https://github.com/uxkin/agent"
+    },
+    {
       "old_id": "sickn33/agentic-awesome-skills/viral-video-teardown-remake",
       "name": "viral-video-teardown-remake",
       "original_repository": "beatra-ai/viral-video-remake-skill",
@@ -634,6 +698,30 @@
       "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
       "path": "skills/why-did-this-post-flop/SKILL.md",
       "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/wiki-yylo",
+      "name": "wiki-yylo",
+      "original_repository": "yylo-dev/yylo-skills",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "path": "skills/wiki-yylo/SKILL.md",
+      "credit_url": "https://github.com/yylo-dev/yylo-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/workflow-yylo",
+      "name": "workflow-yylo",
+      "original_repository": "yylo-dev/yylo-skills",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "path": "skills/workflow-yylo/SKILL.md",
+      "credit_url": "https://github.com/yylo-dev/yylo-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/yao-meta-skill",
+      "name": "yao-meta-skill",
+      "original_repository": "yaojingang/yao-meta-skill",
+      "commit": "f5d8f681372edae1915991e2de0c23dc306dd30f",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/yaojingang/yao-meta-skill"
     },
     {
       "old_id": "sickn33/agentic-awesome-skills/youtube-transcript-skills",
