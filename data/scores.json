@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-01T19:41:48.126Z",
+  "generated_at": "2026-11-01T19:52:53.335Z",
   "evaluator": {
     "provider": "jev",
     "jev_endpoint": "opencode-go",
@@ -86,6 +86,1912 @@
     "pending": 860,
     "unresolved": 0
   },
+  "repositories": [
+    {
+      "repository": "addyosmani/web-quality-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 2,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 0,
+        "unresolved": 0
+      },
+      "overall_score": 4.5489999999999995,
+      "criterion_scores": {
+        "trigger_clarity": 4.74,
+        "instruction_quality": 4.38,
+        "correctness": 4.3549999999999995,
+        "safety": 4.8,
+        "context_efficiency": 4.47
+      },
+      "scored_skill_ids": [
+        "addyosmani/web-quality-skills/accessibility",
+        "addyosmani/web-quality-skills/seo"
+      ]
+    },
+    {
+      "repository": "affaan-m/ECC",
+      "summary": {
+        "total": 3,
+        "evaluated": 3,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 0,
+        "unresolved": 0
+      },
+      "overall_score": 4.505333333333334,
+      "criterion_scores": {
+        "trigger_clarity": 4.703333333333333,
+        "instruction_quality": 4.38,
+        "correctness": 3.936666666666667,
+        "safety": 4.746666666666666,
+        "context_efficiency": 4.760000000000001
+      },
+      "scored_skill_ids": [
+        "affaan-m/ECC/django-celery",
+        "affaan-m/ECC/fastapi-patterns",
+        "affaan-m/ECC/prisma-patterns"
+      ]
+    },
+    {
+      "repository": "affaan-m/everything-claude-code",
+      "summary": {
+        "total": 5,
+        "evaluated": 2,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": 4.414000000000001,
+      "criterion_scores": {
+        "trigger_clarity": 4.465,
+        "instruction_quality": 4.365,
+        "correctness": 3.745,
+        "safety": 4.76,
+        "context_efficiency": 4.734999999999999
+      },
+      "scored_skill_ids": [
+        "affaan-m/everything-claude-code/django-patterns",
+        "affaan-m/everything-claude-code/django-security"
+      ]
+    },
+    {
+      "repository": "aj-geddes/useful-ai-prompts",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "akin-ozer/cc-devops-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "angular/angular",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "angular/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "antfu/skills",
+      "summary": {
+        "total": 5,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 5,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "anthropics/skills",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "apollographql/skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "astrolicious/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "av/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "avdlee/core-data-agent-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "avdlee/swift-concurrency-agent-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "avdlee/swift-testing-agent-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "avdlee/swiftui-agent-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "avdlee/xcode-build-optimization-agent-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "backnotprop/plannotator",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "better-auth/skills",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "bobmatnyc/claude-mpm-skills",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "ccheney/robust-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "chaunsin/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "claude-dev-suite/claude-dev-suite",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "clerk/skills",
+      "summary": {
+        "total": 18,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 18,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "cli/cli",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "clickhouse/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "cloudai-x/threejs-skills",
+      "summary": {
+        "total": 11,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 11,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "cloudflare/skills",
+      "summary": {
+        "total": 7,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 7,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "cloudflare/vinext",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "confident-ai/deepeval",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "convex/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "currents-dev/playwright-best-practices-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "davila7/claude-code-templates",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "deckardger/tanstack-agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "delexw/claude-code-misc",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "denoland/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "devon-systems/hoenn",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "DmitryPogrebnoy/ruby-agent-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "docker/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "eduardo-sl/go-agent-skills",
+      "summary": {
+        "total": 34,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 34,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "ejirocodes/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "elysiajs/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "expo/skills",
+      "summary": {
+        "total": 8,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 8,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "fastapi/fastapi",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "firebase/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "firecrawl/cli",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "georgeguimaraes/elixir-agent-tools",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "github/awesome-copilot",
+      "summary": {
+        "total": 63,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 63,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "giuseppe-trisciuoglio/developer-kit",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "google-gemini/gemini-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "greensock/gsap-skills",
+      "summary": {
+        "total": 8,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 8,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "hashicorp/agent-skills",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "summary": {
+        "total": 203,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 203,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "honojs/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "hoodini/ai-agents-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "hyf0/vue-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "igmarin/rails-agent-skills",
+      "summary": {
+        "total": 6,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 6,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "igmarin/ruby-core-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "inferen-sh/skills",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "instantdb/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "jeffallan/claude-skills",
+      "summary": {
+        "total": 5,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 5,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Jeffallan/claude-skills",
+      "summary": {
+        "total": 27,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 27,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "jeremylongshore/tons-of-skills-marketplace",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Junaid-PK/laravel-development-workflow",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "kadajett/agent-nestjs-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "kepano/obsidian-skills",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "kevmoo/dash_skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "kotlin/kotlin-agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Kotlin/kotlin-agent-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "krutikJain/android-agent-skills",
+      "summary": {
+        "total": 8,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 8,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "langchain-ai/deepagents",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "langchain-ai/langchain-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "langfuse/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "laude-institute/headlong",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "lucianghinda/superpowers-ruby",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "madteacher/mad-agents-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "mastra-ai/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "mattpocock/skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "mcollina/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "microsoft/github-copilot-for-azure",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "midudev/autoskills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "mindrally/skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Mindrally/skills",
+      "summary": {
+        "total": 125,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 125,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "neondatabase/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "nodnarbnitram/claude-code-extensions",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "ombulabs/claude-code_rails-upgrade-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "openai/skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Paldom/python-skills",
+      "summary": {
+        "total": 8,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 8,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "paulrberg/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "pingdotgg/t3code",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "planetscale/database-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "pluginagentmarketplace/custom-plugin-nodejs",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "pproenca/dot-skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "prisma/skills",
+      "summary": {
+        "total": 4,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 4,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "pulumi/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "pymodel/react-frontend-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "redis/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "remix-run/react-router",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "rominirani/antigravity-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "samber/cc-skills-golang",
+      "summary": {
+        "total": 20,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 20,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "Search-3D/electron-drive-skill",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "secondsky/claude-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sergiodxa/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "shadcn/ui",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sharanharsoor/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sickn33/agentic-awesome-skills",
+      "summary": {
+        "total": 127,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 127,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sickn33/antigravity-awesome-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sleekdotdesign/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "smnandre/symfony-ux-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "spences10/svelte-skills-kit",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "stripe/ai",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "supabase/agent-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "sveltejs/ai-tools",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "tanstack-skills/tanstack-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "temporalio/skill-temporal-developer",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "TerminalSkills/skills",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "thebushidocollective/han",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "triggerdotdev/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vamseeachanta/workspace-hub",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "summary": {
+        "total": 3,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 3,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vercel-labs/json-render",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vercel/ai",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vercel/next.js",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vercel/turborepo",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vintasoftware/django-ai-plugins",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "vuejs-ai/skills",
+      "summary": {
+        "total": 2,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 2,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "webpro/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "wispbit-ai/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "wordpress/agent-skills",
+      "summary": {
+        "total": 8,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 8,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "wshobson/agents",
+      "summary": {
+        "total": 7,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 7,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "yonesuke/skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    },
+    {
+      "repository": "zxkane/aws-skills",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
+    }
+  ],
   "entries": [
     {
       "id": "addyosmani/web-quality-skills/accessibility",

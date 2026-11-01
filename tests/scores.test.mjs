@@ -4,7 +4,7 @@ import {execFileSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
-import {buildReport, checkScores, DEFAULTS, CRITERIA, evaluatorConfig, parseArgs} from '../scripts/evaluate-skills.mjs';
+import {buildReport, buildRepositoryScores, checkScores, DEFAULTS, CRITERIA, evaluatorConfig, parseArgs} from '../scripts/evaluate-skills.mjs';
 import {JEV_QUESTIONS, JEV_LIMITATIONS, jevConfig} from '../scripts/jev-evaluator.mjs';
 
 const NOW = '2026-11-01T12:00:00Z';
@@ -94,6 +94,80 @@ test('default scores path and offline mode combinations are explicit', () => {
   }
 });
 
+test('repository means weight skills equally and expose partial and empty coverage', () => {
+  const two = prose(ledger[1]);
+  two.overall_score = 2;
+  for (const score of Object.values(two.evaluation.scores)) score.score = 2;
+  const third = {...source('three'), id: 'other/skills/three'};
+  third.url = third.url.replace('acme/skills', 'other/skills');
+  const sources = [...ledger, third, source('pending')];
+  const cat = {catalog_id: 'test', skills: sources.map(({id}) => ({id, repository: id.split('/').slice(0, 2).join('/')}))};
+  const entries = new Map([prose(), two].map(entry => [entry.id, entry]));
+  const repos = buildRepositoryScores(cat, sources, entries, config);
+  assert.deepEqual(repos.map(repo => repo.repository), ['acme/skills', 'other/skills']);
+  assert.equal(repos[0].overall_score, 3);
+  assert.deepEqual(repos[0].criterion_scores, Object.fromEntries(Object.keys(CRITERIA).map(key => [key, 3])));
+  assert.deepEqual(repos[0].scored_skill_ids, ledger.map(s => s.id));
+  assert.equal(repos[0].summary.total, 3);
+  assert.equal(repos[0].summary.evaluated, 2);
+  assert.equal(repos[0].summary.pending, 1);
+  assert.equal(repos[1].overall_score, null);
+  assert.equal(repos[1].criterion_scores, null);
+  assert.deepEqual(repos[1].scored_skill_ids, []);
+  assert.deepEqual(checkScores(buildReport(cat, sources, entries, config), cat, sources).problems, []);
+  assert.deepEqual(buildRepositoryScores({...cat, skills: []}, [], entries, config), []);
+});
+
+test('repository scores exclude failed, repinned, different-evaluator, unresolved and retired skills', () => {
+  const sources = [...ledger, source('failed'), source('model'), {...source('unresolved'), status: 'unresolved'}, source('pending')];
+  const cat = {catalog_id: 'test', skills: sources.map(({id}) => ({id}))};
+  const entries = [prose(), {...prose(ledger[1]), source: {url: ledger[1].url.replace(sha, 'c'.repeat(40)), commit: 'c'.repeat(40)}},
+    {...failure(), id: sources[2].id, source: {url: sources[2].url, commit: sha}},
+    {...prose(sources[3]), fingerprint: 'd'.repeat(64)}, prose(sources[4]), prose(source('retired'))];
+  const doc = buildReport(cat, sources, new Map(entries.map(entry => [entry.id, entry])), config);
+  assert.deepEqual(doc.repositories[0].summary, {total: 6, evaluated: 1, not_evaluated: 1, stale: 2, pending: 1, unresolved: 1});
+  assert.deepEqual(doc.repositories[0].scored_skill_ids, [ledger[0].id]);
+  assert.equal(doc.repositories[0].overall_score, 4);
+  assert.deepEqual(checkScores(doc, cat, sources).problems, []);
+  const native = report([jev()], jevConfigValue);
+  assert.equal(native.repositories[0].overall_score, 3.5);
+  assert.deepEqual(checkScores(native, catalog, ledger).problems, []);
+});
+
+test('offline checks reject tampered repository means, membership, ordering and coverage', () => {
+  for (const mutate of [
+    d => {d.repositories[0].overall_score = 5;},
+    d => {d.repositories[0].criterion_scores.safety = 5;},
+    d => {d.repositories[0].summary.total++;},
+    d => {d.repositories[0].summary.evaluated = 0;},
+    d => {d.repositories[0].scored_skill_ids = [ledger[1].id];},
+    d => {d.repositories[0].repository = 'other/skills';},
+    d => {d.repositories.push(structuredClone(d.repositories[0]));},
+    d => {d.repositories = [];},
+  ]) {
+    const doc = report([prose()]); mutate(doc);
+    assert.ok(checkScores(doc, catalog, ledger).problems.length, 'accepted ' + mutate.toString());
+  }
+  const empty = report([]);
+  empty.repositories[0].overall_score = 1;
+  assert.ok(checkScores(empty, catalog, ledger).problems.length);
+  const snapshot = report([prose()]);
+  assert.deepEqual(checkScores(snapshot, {...catalog, skills: []}, []).problems, [], 'saved snapshots may lag the catalog');
+  delete snapshot.repositories;
+  assert.deepEqual(checkScores(snapshot, catalog, ledger).problems, [], 'older v2 reports remain readable');
+  if (validate) {
+    for (const mutate of [
+      d => {d.repositories[0].overall_score = 6;},
+      d => {d.repositories[0].criterion_scores.safety = -1;},
+      d => {d.repositories[0].scored_skill_ids.push(ledger[0].id);},
+      d => {delete d.repositories[0].summary;},
+    ]) {
+      const doc = report([prose()]); mutate(doc);
+      assert.equal(validate(doc), false, 'schema accepted ' + mutate.toString());
+    }
+  }
+});
+
 test('offline sync migrates legacy results, preserves scores, prunes retired skills and avoids no-op rewrites', () => {
   const dir = mkdtempSync(join(tmpdir(), 'scores-sync-'));
   try {
@@ -119,6 +193,8 @@ test('offline sync migrates legacy results, preserves scores, prunes retired ski
     assert.equal(doc.summary.evaluated, 2);
     assert.equal(doc.entries[0].evaluated_at, NOW);
     assert.equal(doc.entries[0].result_kind, 'prose_review');
+    assert.equal(doc.repositories[0].overall_score, 4);
+    assert.equal(doc.repositories[0].summary.evaluated, 2);
     assert.equal(readFileSync(join(dir, 'results/llm-evaluations.json'), 'utf8'), JSON.stringify(old));
     const modified = statSync(output).mtimeMs;
     assert.match(cli('--sync'), /No changes/);
@@ -133,6 +209,7 @@ test('offline sync migrates legacy results, preserves scores, prunes retired ski
     assert.equal(refreshed.entries.length, 1);
     assert.equal(refreshed.summary.total, 1);
     assert.equal(refreshed.summary.stale, 1);
+    assert.equal(refreshed.repositories[0].overall_score, null);
     assert.deepEqual(refreshed.entries[0], doc.entries[0], 'sync must not rewrite score provenance or values');
     cli('--check');
   } finally {rmSync(dir, {recursive: true, force: true});}

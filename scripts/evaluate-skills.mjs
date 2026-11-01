@@ -236,23 +236,57 @@ export async function reviewWithOpenCode(source, bytes, options, {exec = run, be
   } finally {rmSync(work, {recursive: true, force: true});}
 }
 
+const emptySummary = () => ({total: 0, evaluated: 0, not_evaluated: 0, stale: 0, pending: 0, unresolved: 0});
+const mean = values => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+
+function skillStatus(entry, source, config) {
+  if (source?.status !== 'verified') return 'unresolved';
+  if (!entry) return 'pending';
+  if (isCurrent(entry, source, config)) return 'evaluated';
+  if (entry.source?.url === source.url && entry.source?.commit === source.commit &&
+      entry.fingerprint === config.fingerprint && entry.status === 'not_evaluated') return 'not_evaluated';
+  return 'stale';
+}
+
+function repositoryMeans(entries) {
+  return {
+    overall_score: mean(entries.map(entry => entry.overall_score)),
+    criterion_scores: entries.length ? Object.fromEntries(Object.keys(CRITERIA).map(key =>
+      [key, mean(entries.map(entry => entry.evaluation.scores[key].score))])) : null,
+  };
+}
+
+/** Each current skill has equal weight; missing/stale scores never count as zero. */
+export function buildRepositoryScores(catalog, ledger, entries, config) {
+  const sources = new Map(ledger.map(source => [source.id, source]));
+  const groups = new Map();
+  for (const skill of catalog.skills) {
+    const repository = skill.repository ?? skill.id.split('/').slice(0, 2).join('/');
+    if (!groups.has(repository)) groups.set(repository, {summary: emptySummary(), entries: []});
+    const group = groups.get(repository);
+    const entry = entries.get(skill.id);
+    const status = skillStatus(entry, sources.get(skill.id), config);
+    group.summary.total++;
+    group.summary[status]++;
+    if (status === 'evaluated') group.entries.push(entry);
+  }
+  return [...groups].sort(([a], [b]) => a.localeCompare(b)).map(([repository, group]) => {
+    group.entries.sort((a, b) => a.id.localeCompare(b.id));
+    return {repository, summary: group.summary, ...repositoryMeans(group.entries),
+      scored_skill_ids: group.entries.map(entry => entry.id)};
+  });
+}
+
 /** A report includes the entire catalog, including pending and unresolved skills. */
 export function buildReport(catalog, ledger, entries, config, stopped = null, previous = null) {
   const sources = new Map(ledger.map(entry => [entry.id, entry]));
-  const summary = {total: catalog.skills.length, evaluated: 0, not_evaluated: 0, stale: 0, pending: 0, unresolved: 0};
+  const summary = {...emptySummary(), total: catalog.skills.length};
   for (const skill of catalog.skills) {
-    const source = sources.get(skill.id);
-    const entry = entries.get(skill.id);
-    if (source?.status !== 'verified') summary.unresolved++;
-    else if (!entry) summary.pending++;
-    else if (isCurrent(entry, source, config)) summary.evaluated++;
-    else if (entry.source?.url === source.url && entry.source?.commit === source.commit &&
-        entry.fingerprint === config.fingerprint && entry.status === 'not_evaluated') summary.not_evaluated++;
-    else summary.stale++;
+    summary[skillStatus(entries.get(skill.id), sources.get(skill.id), config)]++;
   }
   const ids = new Set(catalog.skills.map(skill => skill.id));
   const report = {schema_version: 2, catalog_id: catalog.catalog_id, generated_at: new Date().toISOString(),
-    evaluator: config, stopped, summary,
+    evaluator: config, stopped, summary, repositories: buildRepositoryScores(catalog, ledger, entries, config),
     entries: [...entries.values()].filter(entry => ids.has(entry.id)).sort((a, b) => a.id.localeCompare(b.id))};
   if (previous && JSON.stringify({...report, generated_at: null}) === JSON.stringify({...previous, generated_at: null})) {
     report.generated_at = previous.generated_at;
@@ -303,7 +337,42 @@ export function checkScores(doc, catalog, ledger) {
       if (!Number.isFinite(entry.overall_score) || Math.abs(entry.overall_score - expected) > 1e-10) throw new Error('overall score differs from rubric mean');
     } catch (error) {problems.push(entry.id + ': ' + error.message);}
   }
+  if (doc.repositories !== undefined) checkRepositoryScores(doc, problems);
   return {problems, coverage: buildReport(catalog, ledger, new Map(migrated.entries.map(e => [e.id, e])), doc.evaluator).summary};
+}
+
+// Validate the saved snapshot so later catalog edits can still report coverage offline.
+function checkRepositoryScores(doc, problems) {
+  const entries = new Map(doc.entries.map(entry => [entry.id, entry]));
+  const seen = new Set();
+  const totals = emptySummary();
+  let previous = null;
+  for (const repo of doc.repositories) {
+    try {
+      if (previous !== null && previous.localeCompare(repo.repository) >= 0) throw new Error('repositories must be uniquely sorted');
+      previous = repo.repository;
+      const counts = repo.summary;
+      if (Object.keys(totals).some(key => !Number.isInteger(counts[key]) || counts[key] < 0) ||
+          counts.total === 0 || Object.keys(totals).filter(key => key !== 'total').reduce((sum, key) => sum + counts[key], 0) !== counts.total ||
+          counts.evaluated !== repo.scored_skill_ids.length) throw new Error('invalid repository coverage');
+      for (const key of Object.keys(totals)) totals[key] += counts[key];
+      const scored = repo.scored_skill_ids.map((id, index, ids) => {
+        const entry = entries.get(id);
+        if (seen.has(id) || !id.startsWith(repo.repository + '/') || (index && ids[index - 1].localeCompare(id) >= 0) ||
+            !entry || !isCurrent(entry, entry.source, doc.evaluator)) throw new Error('invalid contributing skill: ' + id);
+        seen.add(id);
+        return entry;
+      });
+      const expected = repositoryMeans(scored);
+      const equal = (a, b) => a === b || (typeof a === 'number' && Number.isFinite(a) && typeof b === 'number' && Math.abs(a - b) <= 1e-10);
+      if (!equal(repo.overall_score, expected.overall_score) ||
+          (expected.criterion_scores === null ? repo.criterion_scores !== null :
+            Object.keys(CRITERIA).some(key => !equal(repo.criterion_scores?.[key], expected.criterion_scores[key])))) {
+        throw new Error('repository scores differ from contributing skill means');
+      }
+    } catch (error) {problems.push(repo.repository + ': ' + error.message);}
+  }
+  if (Object.keys(totals).some(key => totals[key] !== doc.summary[key])) problems.push('repository coverage does not add up to report summary');
 }
 
 export function writeScores(output, doc) {
@@ -407,7 +476,7 @@ Existing successful results are reused automatically.
 Jev uses TYPESAFE_API_KEY, OPENROUTER_API_KEY, or OPENCODE_API_KEY by endpoint.
 
   --dry-run                  Plan without network access, credentials, or writes
-  --sync                     Refresh coverage/prune retired skills offline; preserve scores
+  --sync                     Refresh coverage/repository means and prune retired skills offline
   --check                    Check saved scores offline (no API calls or writes)
   --ids a,b                  Select canonical catalog skill IDs
   --limit N                  Maximum number of pending skills to attempt
