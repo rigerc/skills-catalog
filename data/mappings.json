@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-10-31",
+  "snapshot_date": "2026-11-01",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 246,
-    "mapped_technologies": 186,
-    "detect_only_technologies": 60,
+    "mapped_technologies": 187,
+    "detect_only_technologies": 59,
     "combinations": 33,
-    "distinct_referenced_skills": 746
+    "distinct_referenced_skills": 1084
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -1115,7 +1115,12 @@
         "github/awesome-copilot/java-upgrade",
         "affaan-m/everything-claude-code/java-coding-standards",
         "Mindrally/skills/java",
-        "Jeffallan/claude-skills/java-architect"
+        "Jeffallan/claude-skills/java-architect",
+        "HoangNguyen0403/agent-skills-standard/java-best-practices",
+        "HoangNguyen0403/agent-skills-standard/java-concurrency",
+        "HoangNguyen0403/agent-skills-standard/java-language",
+        "HoangNguyen0403/agent-skills-standard/java-testing",
+        "HoangNguyen0403/agent-skills-standard/java-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1147,7 +1152,17 @@
         "jeffallan/claude-skills/laravel-specialist",
         "affaan-m/everything-claude-code/laravel-patterns",
         "Mindrally/skills/laravel",
-        "Mindrally/skills/laravel-development"
+        "Mindrally/skills/laravel-development",
+        "HoangNguyen0403/agent-skills-standard/laravel-api",
+        "HoangNguyen0403/agent-skills-standard/laravel-architecture",
+        "HoangNguyen0403/agent-skills-standard/laravel-background-processing",
+        "HoangNguyen0403/agent-skills-standard/laravel-clean-architecture",
+        "HoangNguyen0403/agent-skills-standard/laravel-database-expert",
+        "HoangNguyen0403/agent-skills-standard/laravel-eloquent",
+        "HoangNguyen0403/agent-skills-standard/laravel-security",
+        "HoangNguyen0403/agent-skills-standard/laravel-sessions-middleware",
+        "HoangNguyen0403/agent-skills-standard/laravel-testing",
+        "HoangNguyen0403/agent-skills-standard/laravel-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1172,7 +1187,28 @@
       "skill_ids": [
         "kadajett/agent-nestjs-skills/nestjs-best-practices",
         "Jeffallan/claude-skills/nestjs-expert",
-        "Mindrally/skills/nestjs-clean-typescript"
+        "Mindrally/skills/nestjs-clean-typescript",
+        "HoangNguyen0403/agent-skills-standard/nestjs-api-standards",
+        "HoangNguyen0403/agent-skills-standard/nestjs-architecture",
+        "HoangNguyen0403/agent-skills-standard/nestjs-bullmq",
+        "HoangNguyen0403/agent-skills-standard/nestjs-caching",
+        "HoangNguyen0403/agent-skills-standard/nestjs-configuration",
+        "HoangNguyen0403/agent-skills-standard/nestjs-controllers-services",
+        "HoangNguyen0403/agent-skills-standard/nestjs-database",
+        "HoangNguyen0403/agent-skills-standard/nestjs-deployment",
+        "HoangNguyen0403/agent-skills-standard/nestjs-documentation",
+        "HoangNguyen0403/agent-skills-standard/nestjs-error-handling",
+        "HoangNguyen0403/agent-skills-standard/nestjs-file-uploads",
+        "HoangNguyen0403/agent-skills-standard/nestjs-notification",
+        "HoangNguyen0403/agent-skills-standard/nestjs-observability",
+        "HoangNguyen0403/agent-skills-standard/nestjs-performance",
+        "HoangNguyen0403/agent-skills-standard/nestjs-real-time",
+        "HoangNguyen0403/agent-skills-standard/nestjs-scheduling",
+        "HoangNguyen0403/agent-skills-standard/nestjs-search",
+        "HoangNguyen0403/agent-skills-standard/nestjs-security",
+        "HoangNguyen0403/agent-skills-standard/nestjs-security-isolation",
+        "HoangNguyen0403/agent-skills-standard/nestjs-testing",
+        "HoangNguyen0403/agent-skills-standard/nestjs-transport"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1245,7 +1281,17 @@
         "github/awesome-copilot/java-springboot",
         "Jeffallan/claude-skills/spring-boot-engineer",
         "Mindrally/skills/java-spring-development",
-        "Mindrally/skills/spring-boot"
+        "Mindrally/skills/spring-boot",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-api-design",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-architecture",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-best-practices",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-data-access",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-deployment",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-microservices",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-observability",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-scheduling",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-security",
+        "HoangNguyen0403/agent-skills-standard/spring-boot-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -2438,13 +2484,15 @@
       "id": "bullmq",
       "name": "BullMQ",
       "category": "Data, databases and queues",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [],
+      "skill_ids": [
+        "HoangNguyen0403/agent-skills-standard/nestjs-bullmq"
+      ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -2676,7 +2724,8 @@
       },
       "skill_ids": [
         "hoodini/ai-agents-skills/mongodb",
-        "Mindrally/skills/mongodb-development"
+        "Mindrally/skills/mongodb-development",
+        "HoangNguyen0403/agent-skills-standard/database-mongodb"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2844,7 +2893,8 @@
         "github/awesome-copilot/postgresql-code-review",
         "github/awesome-copilot/postgresql-optimization",
         "Jeffallan/claude-skills/postgres-pro",
-        "Mindrally/skills/postgresql-best-practices"
+        "Mindrally/skills/postgresql-best-practices",
+        "HoangNguyen0403/agent-skills-standard/database-postgresql"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -2964,7 +3014,8 @@
       },
       "skill_ids": [
         "redis/agent-skills/redis-core",
-        "Mindrally/skills/redis-best-practices"
+        "Mindrally/skills/redis-best-practices",
+        "HoangNguyen0403/agent-skills-standard/database-redis"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -3239,7 +3290,18 @@
         "eduardo-sl/go-agent-skills/go-skills-router",
         "Jeffallan/claude-skills/golang-pro",
         "Mindrally/skills/go-api-development",
-        "Mindrally/skills/go-backend-microservices"
+        "Mindrally/skills/go-backend-microservices",
+        "HoangNguyen0403/agent-skills-standard/golang-api-server",
+        "HoangNguyen0403/agent-skills-standard/golang-architecture",
+        "HoangNguyen0403/agent-skills-standard/golang-concurrency",
+        "HoangNguyen0403/agent-skills-standard/golang-configuration",
+        "HoangNguyen0403/agent-skills-standard/golang-database",
+        "HoangNguyen0403/agent-skills-standard/golang-error-handling",
+        "HoangNguyen0403/agent-skills-standard/golang-language",
+        "HoangNguyen0403/agent-skills-standard/golang-logging",
+        "HoangNguyen0403/agent-skills-standard/golang-security",
+        "HoangNguyen0403/agent-skills-standard/golang-testing",
+        "HoangNguyen0403/agent-skills-standard/golang-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
       "id_provenance": "explicit_in_specification"
@@ -3524,7 +3586,8 @@
         "raw": "go: `github.com/stretchr/testify`"
       },
       "skill_ids": [
-        "samber/cc-skills-golang/golang-stretchr-testify"
+        "samber/cc-skills-golang/golang-stretchr-testify",
+        "HoangNguyen0403/agent-skills-standard/golang-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/13-go-ecosystem.md",
       "id_provenance": "explicit_in_specification"
@@ -3846,7 +3909,10 @@
       "skill_ids": [
         "wshobson/agents/nodejs-backend-patterns",
         "sickn33/antigravity-awesome-skills/nodejs-best-practices",
-        "Mindrally/skills/nodejs-development"
+        "Mindrally/skills/nodejs-development",
+        "HoangNguyen0403/agent-skills-standard/javascript-best-practices",
+        "HoangNguyen0403/agent-skills-standard/javascript-language",
+        "HoangNguyen0403/agent-skills-standard/javascript-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3871,7 +3937,14 @@
       },
       "skill_ids": [
         "jeffallan/claude-skills/php-pro",
-        "Mindrally/skills/php-development"
+        "Mindrally/skills/php-development",
+        "HoangNguyen0403/agent-skills-standard/php-best-practices",
+        "HoangNguyen0403/agent-skills-standard/php-concurrency",
+        "HoangNguyen0403/agent-skills-standard/php-error-handling",
+        "HoangNguyen0403/agent-skills-standard/php-language",
+        "HoangNguyen0403/agent-skills-standard/php-security",
+        "HoangNguyen0403/agent-skills-standard/php-testing",
+        "HoangNguyen0403/agent-skills-standard/php-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3925,7 +3998,16 @@
         "Mindrally/skills/python",
         "Jeffallan/claude-skills/python-pro",
         "Mindrally/skills/python-testing",
-        "Mindrally/skills/python-uv"
+        "Mindrally/skills/python-uv",
+        "HoangNguyen0403/agent-skills-standard/python-architecture",
+        "HoangNguyen0403/agent-skills-standard/python-async-runtime",
+        "HoangNguyen0403/agent-skills-standard/python-best-practices",
+        "HoangNguyen0403/agent-skills-standard/python-database",
+        "HoangNguyen0403/agent-skills-standard/python-error-handling",
+        "HoangNguyen0403/agent-skills-standard/python-language",
+        "HoangNguyen0403/agent-skills-standard/python-security",
+        "HoangNguyen0403/agent-skills-standard/python-testing",
+        "HoangNguyen0403/agent-skills-standard/python-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -4036,7 +4118,12 @@
       "skill_ids": [
         "wshobson/agents/typescript-advanced-types",
         "Mindrally/skills/typescript",
-        "Jeffallan/claude-skills/typescript-pro"
+        "Jeffallan/claude-skills/typescript-pro",
+        "HoangNguyen0403/agent-skills-standard/react-typescript",
+        "HoangNguyen0403/agent-skills-standard/typescript-best-practices",
+        "HoangNguyen0403/agent-skills-standard/typescript-language",
+        "HoangNguyen0403/agent-skills-standard/typescript-security",
+        "HoangNguyen0403/agent-skills-standard/typescript-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -4117,7 +4204,33 @@
         "krutikJain/android-agent-skills/android-gradle-build-logic",
         "krutikJain/android-agent-skills/android-coroutines-flow",
         "krutikJain/android-agent-skills/android-networking-retrofit-okhttp",
-        "krutikJain/android-agent-skills/android-testing-unit"
+        "krutikJain/android-agent-skills/android-testing-unit",
+        "HoangNguyen0403/agent-skills-standard/android-agp-upgrade",
+        "HoangNguyen0403/agent-skills-standard/android-architecture",
+        "HoangNguyen0403/agent-skills-standard/android-background-work",
+        "HoangNguyen0403/agent-skills-standard/android-compose",
+        "HoangNguyen0403/agent-skills-standard/android-compose-migration",
+        "HoangNguyen0403/agent-skills-standard/android-concurrency",
+        "HoangNguyen0403/agent-skills-standard/android-deployment",
+        "HoangNguyen0403/agent-skills-standard/android-design-system",
+        "HoangNguyen0403/agent-skills-standard/android-di",
+        "HoangNguyen0403/agent-skills-standard/android-edge-to-edge",
+        "HoangNguyen0403/agent-skills-standard/android-legacy-navigation",
+        "HoangNguyen0403/agent-skills-standard/android-legacy-security",
+        "HoangNguyen0403/agent-skills-standard/android-legacy-state",
+        "HoangNguyen0403/agent-skills-standard/android-navigation",
+        "HoangNguyen0403/agent-skills-standard/android-navigation-3",
+        "HoangNguyen0403/agent-skills-standard/android-navigation-type-safe",
+        "HoangNguyen0403/agent-skills-standard/android-networking",
+        "HoangNguyen0403/agent-skills-standard/android-notifications",
+        "HoangNguyen0403/agent-skills-standard/android-performance",
+        "HoangNguyen0403/agent-skills-standard/android-persistence",
+        "HoangNguyen0403/agent-skills-standard/android-resources",
+        "HoangNguyen0403/agent-skills-standard/android-security",
+        "HoangNguyen0403/agent-skills-standard/android-state",
+        "HoangNguyen0403/agent-skills-standard/android-testing",
+        "HoangNguyen0403/agent-skills-standard/android-tooling",
+        "HoangNguyen0403/agent-skills-standard/android-xml-views"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4176,7 +4289,10 @@
         "raw": "file: `pubspec.yaml`"
       },
       "skill_ids": [
-        "kevmoo/dash_skills/dart-best-practices"
+        "kevmoo/dash_skills/dart-best-practices",
+        "HoangNguyen0403/agent-skills-standard/dart-best-practices",
+        "HoangNguyen0403/agent-skills-standard/dart-language",
+        "HoangNguyen0403/agent-skills-standard/dart-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4249,7 +4365,29 @@
         "jeffallan/claude-skills/flutter-expert",
         "madteacher/mad-agents-skills/flutter-animations",
         "madteacher/mad-agents-skills/flutter-testing",
-        "Mindrally/skills/flutter"
+        "Mindrally/skills/flutter",
+        "HoangNguyen0403/agent-skills-standard/flutter-auto-route-navigation",
+        "HoangNguyen0403/agent-skills-standard/flutter-bloc-state-management",
+        "HoangNguyen0403/agent-skills-standard/flutter-cicd",
+        "HoangNguyen0403/agent-skills-standard/flutter-concurrency",
+        "HoangNguyen0403/agent-skills-standard/flutter-dependency-injection",
+        "HoangNguyen0403/agent-skills-standard/flutter-design-system",
+        "HoangNguyen0403/agent-skills-standard/flutter-error-handling",
+        "HoangNguyen0403/agent-skills-standard/flutter-feature-based-clean-architecture",
+        "HoangNguyen0403/agent-skills-standard/flutter-getx-navigation",
+        "HoangNguyen0403/agent-skills-standard/flutter-getx-state-management",
+        "HoangNguyen0403/agent-skills-standard/flutter-go-router-navigation",
+        "HoangNguyen0403/agent-skills-standard/flutter-idiomatic-flutter",
+        "HoangNguyen0403/agent-skills-standard/flutter-layer-based-clean-architecture",
+        "HoangNguyen0403/agent-skills-standard/flutter-localization",
+        "HoangNguyen0403/agent-skills-standard/flutter-navigation",
+        "HoangNguyen0403/agent-skills-standard/flutter-notifications",
+        "HoangNguyen0403/agent-skills-standard/flutter-performance",
+        "HoangNguyen0403/agent-skills-standard/flutter-retrofit-networking",
+        "HoangNguyen0403/agent-skills-standard/flutter-riverpod-state-management",
+        "HoangNguyen0403/agent-skills-standard/flutter-security",
+        "HoangNguyen0403/agent-skills-standard/flutter-testing",
+        "HoangNguyen0403/agent-skills-standard/flutter-widgets"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4273,7 +4411,11 @@
       "skill_ids": [
         "kotlin/kotlin-agent-skills/kotlin-tooling-java-to-kotlin",
         "Jeffallan/claude-skills/kotlin-specialist",
-        "Mindrally/skills/kotlin-development"
+        "Mindrally/skills/kotlin-development",
+        "HoangNguyen0403/agent-skills-standard/kotlin-best-practices",
+        "HoangNguyen0403/agent-skills-standard/kotlin-coroutines",
+        "HoangNguyen0403/agent-skills-standard/kotlin-language",
+        "HoangNguyen0403/agent-skills-standard/kotlin-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4352,7 +4494,20 @@
         "Mindrally/skills/react-native-cursor-rules",
         "Mindrally/skills/react-native-r3f",
         "Mindrally/skills/expo-react-native-typescript",
-        "Mindrally/skills/expo-react-native-javascript-best-practices"
+        "Mindrally/skills/expo-react-native-javascript-best-practices",
+        "HoangNguyen0403/agent-skills-standard/react-native-architecture",
+        "HoangNguyen0403/agent-skills-standard/react-native-components",
+        "HoangNguyen0403/agent-skills-standard/react-native-deployment",
+        "HoangNguyen0403/agent-skills-standard/react-native-dls",
+        "HoangNguyen0403/agent-skills-standard/react-native-navigation",
+        "HoangNguyen0403/agent-skills-standard/react-native-navigation-v6",
+        "HoangNguyen0403/agent-skills-standard/react-native-notifications",
+        "HoangNguyen0403/agent-skills-standard/react-native-performance",
+        "HoangNguyen0403/agent-skills-standard/react-native-platform-specific",
+        "HoangNguyen0403/agent-skills-standard/react-native-security",
+        "HoangNguyen0403/agent-skills-standard/react-native-state-management",
+        "HoangNguyen0403/agent-skills-standard/react-native-styling",
+        "HoangNguyen0403/agent-skills-standard/react-native-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4383,7 +4538,15 @@
       "skill_ids": [
         "avdlee/swift-concurrency-agent-skill/swift-concurrency",
         "Mindrally/skills/swift",
-        "Jeffallan/claude-skills/swift-expert"
+        "Jeffallan/claude-skills/swift-expert",
+        "HoangNguyen0403/agent-skills-standard/swift-best-practices",
+        "HoangNguyen0403/agent-skills-standard/swift-concurrency",
+        "HoangNguyen0403/agent-skills-standard/swift-error-handling",
+        "HoangNguyen0403/agent-skills-standard/swift-language",
+        "HoangNguyen0403/agent-skills-standard/swift-memory-management",
+        "HoangNguyen0403/agent-skills-standard/swift-swiftui",
+        "HoangNguyen0403/agent-skills-standard/swift-testing",
+        "HoangNguyen0403/agent-skills-standard/swift-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4410,7 +4573,9 @@
         "avdlee/xcode-build-optimization-agent-skill/xcode-build-orchestrator",
         "avdlee/swift-testing-agent-skill/swift-testing-expert",
         "avdlee/core-data-agent-skill/core-data-expert",
-        "Mindrally/skills/swiftui-development"
+        "Mindrally/skills/swiftui-development",
+        "HoangNguyen0403/agent-skills-standard/ios-swiftui",
+        "HoangNguyen0403/agent-skills-standard/swift-swiftui"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4725,7 +4890,8 @@
       },
       "skill_ids": [
         "github/awesome-copilot/javascript-typescript-jest",
-        "Mindrally/skills/jest"
+        "Mindrally/skills/jest",
+        "HoangNguyen0403/agent-skills-standard/nextjs-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4851,7 +5017,10 @@
         "currents-dev/playwright-best-practices-skill/playwright-best-practices",
         "Mindrally/skills/playwright",
         "Jeffallan/claude-skills/playwright-expert",
-        "Mindrally/skills/playwright-cursor-rules"
+        "Mindrally/skills/playwright-cursor-rules",
+        "HoangNguyen0403/agent-skills-standard/nextjs-testing",
+        "HoangNguyen0403/agent-skills-standard/quality-engineering-playwright-cli",
+        "HoangNguyen0403/agent-skills-standard/quality-engineering-playwright-pom-generation"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -4908,7 +5077,8 @@
       "skill_ids": [
         "wshobson/agents/python-testing-patterns",
         "github/awesome-copilot/pytest-coverage",
-        "Paldom/python-skills/python-testing"
+        "Paldom/python-skills/python-testing",
+        "HoangNguyen0403/agent-skills-standard/python-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -5052,7 +5222,8 @@
         "raw": "npm: `vitest`; file: `vitest.config.ts`, `vitest.config.js`, `vitest.config.mts`"
       },
       "skill_ids": [
-        "antfu/skills/vitest"
+        "antfu/skills/vitest",
+        "HoangNguyen0403/agent-skills-standard/nextjs-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
@@ -5102,7 +5273,22 @@
         "angular/angular/adev-writing-guide",
         "Mindrally/skills/angular",
         "Jeffallan/claude-skills/angular-architect",
-        "Mindrally/skills/angular-development"
+        "Mindrally/skills/angular-development",
+        "HoangNguyen0403/agent-skills-standard/angular-architecture",
+        "HoangNguyen0403/agent-skills-standard/angular-components",
+        "HoangNguyen0403/agent-skills-standard/angular-dependency-injection",
+        "HoangNguyen0403/agent-skills-standard/angular-directives-pipes",
+        "HoangNguyen0403/agent-skills-standard/angular-forms",
+        "HoangNguyen0403/agent-skills-standard/angular-http-client",
+        "HoangNguyen0403/agent-skills-standard/angular-performance",
+        "HoangNguyen0403/agent-skills-standard/angular-routing",
+        "HoangNguyen0403/agent-skills-standard/angular-rxjs-interop",
+        "HoangNguyen0403/agent-skills-standard/angular-security",
+        "HoangNguyen0403/agent-skills-standard/angular-ssr",
+        "HoangNguyen0403/agent-skills-standard/angular-state-management",
+        "HoangNguyen0403/agent-skills-standard/angular-style-guide",
+        "HoangNguyen0403/agent-skills-standard/angular-testing",
+        "HoangNguyen0403/agent-skills-standard/angular-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5227,7 +5413,8 @@
         "raw": "npm: `msw`"
       },
       "skill_ids": [
-        "pymodel/react-frontend-skills/msw"
+        "pymodel/react-frontend-skills/msw",
+        "HoangNguyen0403/agent-skills-standard/nextjs-testing"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5275,7 +5462,25 @@
         "vercel/next.js/next-cache-components-adoption",
         "Jeffallan/claude-skills/nextjs-developer",
         "Mindrally/skills/nextjs-react-typescript",
-        "Mindrally/skills/optimized-nextjs-typescript"
+        "Mindrally/skills/optimized-nextjs-typescript",
+        "HoangNguyen0403/agent-skills-standard/nextjs-app-router",
+        "HoangNguyen0403/agent-skills-standard/nextjs-architecture",
+        "HoangNguyen0403/agent-skills-standard/nextjs-authentication",
+        "HoangNguyen0403/agent-skills-standard/nextjs-caching",
+        "HoangNguyen0403/agent-skills-standard/nextjs-data-access-layer",
+        "HoangNguyen0403/agent-skills-standard/nextjs-data-fetching",
+        "HoangNguyen0403/agent-skills-standard/nextjs-i18n",
+        "HoangNguyen0403/agent-skills-standard/nextjs-optimization",
+        "HoangNguyen0403/agent-skills-standard/nextjs-pages-router",
+        "HoangNguyen0403/agent-skills-standard/nextjs-rendering",
+        "HoangNguyen0403/agent-skills-standard/nextjs-security",
+        "HoangNguyen0403/agent-skills-standard/nextjs-server-actions",
+        "HoangNguyen0403/agent-skills-standard/nextjs-server-components",
+        "HoangNguyen0403/agent-skills-standard/nextjs-state-management",
+        "HoangNguyen0403/agent-skills-standard/nextjs-styling",
+        "HoangNguyen0403/agent-skills-standard/nextjs-testing",
+        "HoangNguyen0403/agent-skills-standard/nextjs-tooling",
+        "HoangNguyen0403/agent-skills-standard/nextjs-upgrade"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5411,7 +5616,28 @@
         "vercel-labs/agent-skills/react-best-practices",
         "vercel-labs/agent-skills/composition-patterns",
         "Mindrally/skills/react",
-        "Jeffallan/claude-skills/react-expert"
+        "Jeffallan/claude-skills/react-expert",
+        "HoangNguyen0403/agent-skills-standard/react-component-patterns",
+        "HoangNguyen0403/agent-skills-standard/react-hooks",
+        "HoangNguyen0403/agent-skills-standard/react-native-architecture",
+        "HoangNguyen0403/agent-skills-standard/react-native-components",
+        "HoangNguyen0403/agent-skills-standard/react-native-deployment",
+        "HoangNguyen0403/agent-skills-standard/react-native-dls",
+        "HoangNguyen0403/agent-skills-standard/react-native-navigation",
+        "HoangNguyen0403/agent-skills-standard/react-native-navigation-v6",
+        "HoangNguyen0403/agent-skills-standard/react-native-notifications",
+        "HoangNguyen0403/agent-skills-standard/react-native-performance",
+        "HoangNguyen0403/agent-skills-standard/react-native-platform-specific",
+        "HoangNguyen0403/agent-skills-standard/react-native-security",
+        "HoangNguyen0403/agent-skills-standard/react-native-state-management",
+        "HoangNguyen0403/agent-skills-standard/react-native-styling",
+        "HoangNguyen0403/agent-skills-standard/react-native-testing",
+        "HoangNguyen0403/agent-skills-standard/react-performance",
+        "HoangNguyen0403/agent-skills-standard/react-security",
+        "HoangNguyen0403/agent-skills-standard/react-state-management",
+        "HoangNguyen0403/agent-skills-standard/react-testing",
+        "HoangNguyen0403/agent-skills-standard/react-tooling",
+        "HoangNguyen0403/agent-skills-standard/react-typescript"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"

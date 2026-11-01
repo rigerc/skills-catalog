@@ -1,13 +1,688 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-10-31",
-  "count": 226,
+  "snapshot_date": "2026-11-01",
+  "count": 361,
   "skills": [
     {
       "id": "eduardo-sl/go-agent-skills/git-commit",
       "repository": "eduardo-sl/go-agent-skills",
       "skill_name": "git-commit"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-accessibility",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-accessibility"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-agent-guardrails",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-agent-guardrails"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-api-design",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-api-design"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-architecture-audit",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-architecture-audit"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-architecture-diagramming",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-architecture-diagramming"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-best-practices",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-best-practices"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-book-to-skill",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-book-to-skill"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-code-review",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-code-review"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-context-optimization",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-context-optimization"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-dast-tooling",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-dast-tooling"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-debugging",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-debugging"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-decision-discipline",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-decision-discipline"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-documentation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-documentation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-error-handling",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-error-handling"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-exploit-verification",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-exploit-verification"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-family-ux",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-family-ux"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-feedback-reporter",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-feedback-reporter"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-git-collaboration",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-git-collaboration"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-learning-log",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-learning-log"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-llm-security",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-llm-security"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-mobile-animation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-mobile-animation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-mobile-ux-core",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-mobile-ux-core"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-mobile-visual-testing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-mobile-visual-testing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-observability",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-observability"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-operator-profile",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-operator-profile"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-owasp",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-owasp"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-pentest-methodology",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-pentest-methodology"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-performance-engineering",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-performance-engineering"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-protocol-enforcement",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-protocol-enforcement"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-review-policy",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-review-policy"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-sdlc-metrics",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-sdlc-metrics"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-security-audit",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-security-audit"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-security-standards",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-security-standards"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-session-retrospective",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-session-retrospective"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-skill-creator",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-skill-creator"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-software-requirements",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-software-requirements"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-stitch-design",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-stitch-design"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-store-changelog",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-store-changelog"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-subagent-driven-development",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-subagent-driven-development"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-task-complexity-routing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-task-complexity-routing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-tdd",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-tdd"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-telemetry",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-telemetry"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-ui-design",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-ui-design"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-web-visual-testing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-web-visual-testing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/common-workflow-writing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "common-workflow-writing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-authorization",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-authorization"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-detection-engineering",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-detection-engineering"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-detection-validation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-detection-validation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-engagement-planning",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-engagement-planning"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-evidence",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-evidence"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-exercise-adjudication",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-exercise-adjudication"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-exercise-control",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-exercise-control"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-framework-mapping",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-framework-mapping"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-incident-triage",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-incident-triage"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-lab-validation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-lab-validation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-scoped-validation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-scoped-validation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/cyber-threat-hunting",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "cyber-threat-hunting"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-hana",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "database-hana"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-migrations",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "database-migrations"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-query-performance",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "database-query-performance"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-schema-design",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "database-schema-design"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-transactions",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "database-transactions"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-app-lifecycle",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-app-lifecycle"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-architecture",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-architecture"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-dependency-injection",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-dependency-injection"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-deployment",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-deployment"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-design-system",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-design-system"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-localization",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-localization"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-navigation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-navigation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-networking",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-networking"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-notifications",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-notifications"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-performance",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-performance"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-persistence",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-persistence"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-security",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-security"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-state-management",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-state-management"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-ui-navigation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "ios-ui-navigation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-business-requirements",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-business-requirements"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-customer-discovery",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-customer-discovery"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-evidence",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-evidence"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-experimentation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-experimentation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-investment",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-investment"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-market-research",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-market-research"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-metrics",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-metrics"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-requirements",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-requirements"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-roadmap",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-roadmap"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/product-strategy",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "product-strategy"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-api-fuzz-testing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-api-fuzz-testing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-api-performance-testing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-api-performance-testing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-api-testing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-api-testing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-appium-mcp",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-appium-mcp"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-automation-health",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-automation-health"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-business-analysis",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-business-analysis"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-flaky-triage",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-flaky-triage"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-jira-integration",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-jira-integration"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-quality-assurance",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-quality-assurance"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-selector-stability",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-selector-stability"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-test-healing",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-test-healing"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-test-plan-authoring",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-test-plan-authoring"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-visual-baseline",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-visual-baseline"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-zephyr-coverage-analysis",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-zephyr-coverage-analysis"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-zephyr-test-generation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "quality-engineering-zephyr-test-generation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-ac-verifier",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-ac-verifier"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-architecture-guard",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-architecture-guard"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-aspm-correlator",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-aspm-correlator"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-codebase-scout",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-codebase-scout"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-confluence-searcher",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-confluence-searcher"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-integration-test-generator",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-integration-test-generator"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-jira-analyst",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-jira-analyst"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-logic-hacker",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-logic-hacker"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-mobile-reverser",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-mobile-reverser"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-pr-commenter-batch",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-pr-commenter-batch"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-pr-reviewer",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-pr-reviewer"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-security-reviewer",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-security-reviewer"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-solution-diagrammer",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-solution-diagrammer"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-system-architect",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-system-architect"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-tc-creator",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-tc-creator"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-tdd-implementer",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-tdd-implementer"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-test-gap-finder",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-test-gap-finder"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-test-healer",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-test-healer"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-test-planner",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-test-planner"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-testid-inserter",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-testid-inserter"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/specialist-zephyr-scanner",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "specialist-zephyr-scanner"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-artifact-intake",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-artifact-intake"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-building-blocks",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-building-blocks"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-case-catalog",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-case-catalog"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-communication",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-communication"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-data-architecture",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-data-architecture"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-estimation",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-estimation"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-integration-patterns",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-integration-patterns"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-interview-coaching",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-interview-coaching"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-methodology",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-methodology"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-mobile-client",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-mobile-client"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-principles",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-principles"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-resilience-ops",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-resilience-ops"
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/system-design-review",
+      "repository": "HoangNguyen0403/agent-skills-standard",
+      "skill_name": "system-design-review"
     },
     {
       "id": "Jeffallan/claude-skills/api-designer",
