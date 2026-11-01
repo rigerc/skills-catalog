@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "commit": "288a18cde0b8dd9953311ed5b91d06ba959c6a1a",
-  "sequence": 1,
+  "commit": "2abe17a1345d027f4284541b6cba3c2bc82e970b",
+  "sequence": 2,
   "reviewed": true,
   "files": [
     {
       "path": "catalog.json",
-      "sha256": "bd65dd004288d9ade91f52fb4bc9f3ab39cf4beaacda88a094422ff6b1c84332"
+      "sha256": "551f0136de8de80a3ed4438079297055dc5d523561fa67cc9231f3c2a1d3a32f"
     },
     {
       "path": "mappings.json",
-      "sha256": "f4b7b02b6f1aa24e16803ffed8ad060a50800af79da4ae3ecfa99388d73d44b6"
+      "sha256": "96cb66ad3da6a3e9ae16c717935a8347b46c204dd735303c4e8901e9ac2fd81b"
     },
     {
       "path": "technology-detection-rules.json",
-      "sha256": "90c3f9c14bde79eba8bf7cd979fd1f5fe40753a8ae5644b5880666b66c29040e"
+      "sha256": "585179421a96e43e0a2dc430ce1338bb895560e1f7bef2286e5bba435b72aea6"
     },
     {
       "path": "catalog-source-ledger.json",
-      "sha256": "5a3e1f5e72523c3a1d5990c4ca6cda2c6c5b9b26d112860ff89b70fa7d3cea99"
+      "sha256": "a42e649bad16515fe0315b4f833eac7260ca45956f09ef16b5af8cb27cb6caaa"
     }
   ]
 }
