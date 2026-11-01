@@ -27,6 +27,8 @@ The four documents form **one versioned snapshot**. Use an existing entry as the
 Model scores are a separate, incremental artifact with `schema_version: 2` and the
 contract in `schemas/scores.schema.json`. Scores may lag catalog updates; schema and
 semantic checks run in CI, while full model evaluation coverage is reported only.
+The artifact also includes repository means and their contributing skill IDs and
+coverage; `npm run sync:scores` refreshes these without model calls.
 
 `README.md`, `SKILLS.md`, `TECHNOLOGIES.md`, and `data/unmapped.json` are **generated**. Do not hand-edit them. If their layout or fixed explanatory text needs changing, edit `scripts/catalog.mjs` instead, then regenerate.
 

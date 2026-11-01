@@ -84,6 +84,13 @@
           }
         ]
       }
+    },
+    "repositories": {
+      "type": "array",
+      "description": "Per-repository means of current skill scores at generation time; absent in older v2 reports until --sync.",
+      "items": {
+        "$ref": "#/$defs/repositoryScore"
+      }
     }
   },
   "required": [
@@ -869,6 +876,87 @@
         "status",
         "error"
       ]
+    },
+    "repositoryScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "summary",
+        "overall_score",
+        "criterion_scores",
+        "scored_skill_ids"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "pattern": "^[^/]+/[^/]+$"
+        },
+        "summary": {
+          "$ref": "#/properties/summary"
+        },
+        "overall_score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "criterion_scores": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "trigger_clarity",
+                "instruction_quality",
+                "correctness",
+                "safety",
+                "context_efficiency"
+              ],
+              "properties": {
+                "trigger_clarity": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5
+                },
+                "instruction_quality": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5
+                },
+                "correctness": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5
+                },
+                "safety": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5
+                },
+                "context_efficiency": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5
+                }
+              }
+            }
+          ]
+        },
+        "scored_skill_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[^/]+/[^/]+/[^/]+$"
+          }
+        }
+      }
     }
   }
 }

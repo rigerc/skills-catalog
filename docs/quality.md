@@ -168,6 +168,28 @@ or loads the optional Jev client. Unchanged reports retain their timestamp and a
 not rewritten. Evaluation options such as `--provider` and `--limit` apply to live
 evaluation rather than these maintenance commands. CI runs schema and semantic checks.
 
+### Repository scores
+
+The `repositories` array in `data/scores.json` assigns each cataloged upstream
+repository an `overall_score` on the same 1–5 scale. It is the arithmetic mean of
+the contributing skills' saved `overall_score` values, with equal weight per skill
+and no additional rounding. `criterion_scores` contains the per-dimension means.
+For example, skills scoring 3 and 5 give their repository a score of 4.
+
+Only successful evaluations matching the current source pin and report evaluator
+fingerprint contribute. Pending, failed, unresolved, stale, and retired skills do
+not contribute; a repository with no current evaluations has `null` overall and
+criterion scores. Each row includes coverage in `summary` and the exact
+`scored_skill_ids`, so a partial sample is visible alongside its score. Coverage
+counts only skills in this catalog, not every skill available upstream. Repository
+scores summarize document reviews; they do not independently assess a repository.
+
+Live evaluation checkpoints and `npm run sync:scores` refresh these aggregates
+without additional model calls. Older version 2 reports remain readable; run
+`npm run sync:scores` to add repository scores. CI checks aggregate means,
+contributing IDs, and coverage arithmetic against the saved score snapshot, so
+later catalog changes can still be reported without forcing an evaluation run.
+
 ### Jev score evaluation
 
 Jev returns typed scores and probability distributions. It evaluates the same five

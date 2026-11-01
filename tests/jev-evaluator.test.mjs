@@ -145,6 +145,8 @@ globalThis.fetch = async (url, init) => {
     assert.equal(first.schema_version, 2);
     assert.equal(first.entries.length, 1);
     assert.equal(first.entries[0].result_kind, 'jev_scores');
+    assert.equal(first.repositories[0].overall_score, first.entries[0].overall_score);
+    assert.deepEqual(first.repositories[0].scored_skill_ids, [first.entries[0].id]);
     assert.equal(first.entries[0].cost, 0);
     assert.equal(first.summary.evaluated, 1);
     assert.equal(readFileSync(requests, 'utf8').trim().split('\n').length, 2);
