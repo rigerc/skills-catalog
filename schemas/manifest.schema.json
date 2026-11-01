@@ -690,35 +690,11 @@
                     ],
                     "additionalProperties": false,
                     "required": [
-                      "total",
-                      "skill_md",
-                      "references",
-                      "other"
+                      "total"
                     ],
                     "properties": {
                       "total": {
                         "type": "integer",
-                        "minimum": 0
-                      },
-                      "skill_md": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ],
-                        "minimum": 0
-                      },
-                      "references": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ],
-                        "minimum": 0
-                      },
-                      "other": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ],
                         "minimum": 0
                       }
                     }
