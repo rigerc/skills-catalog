@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "credits_url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/data/source-credits.json",
+  "notes": "Explicitly credited imports with an original SKILL.md path uniquely resolved at a pinned commit; other imports retain the bundle mirror.",
+  "entries": [
+    {
+      "old_id": "sickn33/agentic-awesome-skills/2slides-ppt-generator",
+      "name": "2slides-ppt-generator",
+      "original_repository": "2slides/slides-generation-2slides-skills",
+      "commit": "a8b986a556b27d8006b42ae6cded2e822e150674",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/2slides/slides-generation-2slides-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/anywrite",
+      "name": "anywrite",
+      "original_repository": "Antheurus/anywrite",
+      "commit": "1f7bbf7f15edba3b88b689054bc152538ffbda65",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Antheurus/anywrite"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/email-marketing-bible",
+      "name": "email-marketing-bible",
+      "original_repository": "CosmoBlk/email-marketing-bible",
+      "commit": "962648c1b147652244c4e4953e96c65421a79e70",
+      "path": "skills/email-marketing-bible/SKILL.md",
+      "credit_url": "https://github.com/CosmoBlk/email-marketing-bible"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/mock-hunter",
+      "name": "mock-hunter",
+      "original_repository": "CodeShuX/mockhunter",
+      "commit": "1c6da4d88fc86af10ed89b94eadfe9126aadee4b",
+      "path": "skills/mockhunter/SKILL.md",
+      "credit_url": "https://github.com/CodeShuX/mockhunter"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/sshepherd",
+      "name": "sshepherd",
+      "original_repository": "Antheurus/sshepherd",
+      "commit": "492ae7b40da6965363ab0a8656be24326fa5a99b",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Antheurus/sshepherd"
+    }
+  ]
+}
