@@ -6,12 +6,20 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 
 | Technology | ID | Status | Recommended skill IDs |
 | --- | --- | --- | --- |
+| Aider | `aider` | Detect-only | — |
 | Anthropic SDK | `anthropic-sdk` | Mapped | `anthropics/skills/claude-api` |
 | Chrome DevTools MCP | `chrome-devtools-mcp` | Detect-only | — |
+| Claude Code | `claude-code` | Detect-only | — |
+| Cline | `cline` | Detect-only | — |
 | Cloudflare Agents | `cloudflare-agents` | Mapped | `cloudflare/skills/agents-sdk`, `cloudflare/skills/sandbox-stable` |
 | Cloudflare AI | `cloudflare-ai` | Mapped | `cloudflare/skills/agents-sdk` |
 | Context7 MCP | `context7-mcp` | Mapped | `sickn33/agentic-awesome-skills/context7-auto-research` |
+| Continue | `continue` | Detect-only | — |
+| Cursor | `cursor` | Detect-only | — |
+| Devin Local | `devin-local` | Detect-only | — |
 | Firecrawl | `firecrawl` | Mapped | `firecrawl/cli/firecrawl`, `sickn33/agentic-awesome-skills/firecrawl-scraper` |
+| Gemini CLI | `gemini-cli` | Detect-only | — |
+| GitHub Copilot | `github-copilot` | Detect-only | — |
 | Google Gen AI | `google-genai` | Mapped | `google-gemini/gemini-skills/gemini-api-dev` |
 | Hugging Face | `hugging-face` | Mapped | `K-Dense-AI/scientific-agent-skills/transformers`, `sickn33/agentic-awesome-skills/hugging-face-jobs`, `sickn33/agentic-awesome-skills/hugging-face-gradio`, `sickn33/agentic-awesome-skills/hugging-face-papers`, `sickn33/agentic-awesome-skills/hugging-face-trackio` |
 | LangChain | `langchain` | Mapped | `langchain-ai/langchain-skills/langchain-rag`, `Mindrally/skills/langchain-development` |
@@ -23,11 +31,15 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Playwright MCP | `mcp-playwright` | Mapped | `anthropics/skills/webapp-testing`, `github/awesome-copilot/playwright-generate-test`, `github/awesome-copilot/playwright-explore-website`, `github/awesome-copilot/playwright-automation-fill-in-form` |
 | Model Context Protocol SDK | `mcp-sdk` | Mapped | `github/awesome-copilot/mcp-implementation-security-review`, `github/awesome-copilot/mcp-release-qa`, `Jeffallan/claude-skills/mcp-developer` |
 | OpenAI Agents SDK | `openai-agents-sdk` | Detect-only | — |
+| OpenAI Codex | `openai-codex` | Detect-only | — |
 | OpenAI Docs MCP | `openai-docs-mcp` | Detect-only | — |
 | OpenAI SDK | `openai-sdk` | Mapped | `Mindrally/skills/openai-api-development` |
+| OpenCode | `opencode` | Detect-only | — |
 | OpenTelemetry | `opentelemetry` | Mapped | `confident-ai/deepeval/deepeval-otel` |
 | Pydantic AI | `pydantic-ai` | Mapped | `sickn33/agentic-awesome-skills/pydantic-ai` |
+| Roo Code | `roo-code` | Detect-only | — |
 | Vercel AI SDK | `vercel-ai` | Mapped | `vercel/ai/use-ai-sdk`, `sickn33/agentic-awesome-skills/vercel-ai-sdk-expert` |
+| Windsurf | `windsurf` | Detect-only | — |
 
 ## Auth and payments
 
