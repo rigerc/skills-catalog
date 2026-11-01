@@ -6,7 +6,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {
   fingerprint, toolBlock, mapReport, selectTargets, skillLocation, buildDoc, serialize, checkDoc,
-  classifyGitFailure, evaluate, summarize, gateVerdict, findWaiver, coverageOf, planTrees, LIMITS, TOOL,
+  classifyGitFailure, evaluate, summarize, gateVerdict, findWaiver, coverageOf, planTrees, run, LIMITS, TOOL,
 } from '../scripts/quality.mjs';
 
 const NOW = '2026-11-01T12:00:00Z';
@@ -127,6 +127,9 @@ test('fetches full skill directories (nested files, root skills) via sparse blob
       'skills/foo/references/deep/guide.md': 'g',
       'skills/foo/scripts/run.sh': 'echo',
       'skills/foo/extra/notes.txt': 'n',
+      'skills/foo/.hidden/config.json': 'hidden',
+      'skills/foo/custom/deep/other.txt': 'arbitrary',
+      'README.md': 'repository-wide unrelated content',
       'skills/other/SKILL.md': 'x',   // not in catalog: must not be fetched
       'skills/other/big.bin': 'x',
     });
@@ -151,14 +154,15 @@ exit 2
     assert.equal(foo.status, 'warn');
     assert.equal(foo.source.tree_sha, multi.tree('skills/foo'));
     const fooFiles = foo.findings[0].message;
-    for (const f of ['skills/foo/SKILL.md'.replace('skills/foo/', ''), 'references/deep/guide.md', 'scripts/run.sh', 'extra/notes.txt']) {
+    for (const f of ['skills/foo/SKILL.md'.replace('skills/foo/', ''), 'references/deep/guide.md', 'scripts/run.sh', 'extra/notes.txt', '.hidden/config.json', 'custom/deep/other.txt']) {
       assert.ok(fooFiles.includes('./' + f), f + ' missing from ' + fooFiles);
     }
     const rootEntry = result.entries.find(e => e.id === entries[1].id);
     assert.ok(rootEntry.findings[0].message.includes('./docs/more.md'), 'root skill must fetch the whole tree');
     assert.ok(rootEntry.source.tree_sha, 'root skill records the repository tree sha');
     // The un-cataloged sibling skill was never downloaded.
-    assert.ok(!fooFiles.includes('other'));
+    assert.ok(!fooFiles.includes('./README.md'), 'unrelated root files must be excluded');
+    assert.ok(!fooFiles.includes('./skills/other'), 'unrelated sibling skills must be excluded');
     // Fetch failure for a bad commit becomes not_evaluated, not a crash.
     const bad = await evaluate(selectTargets([ledgerEntry('acme/multi', 'skills/foo/SKILL.md', sha('e'))], new Map()),
       {now: NOW, base: 'file://' + join(tmp, 'git') + '/', bin});
@@ -203,4 +207,26 @@ test('preflight rejects large files before blob checkout', {skip: !gitOk}, async
     assert.equal(out.entries[0].not_evaluated.code,'resource_limit');
     assert.equal(out.totals.resourceLimited,1);
   } finally {rmSync(tmp,{recursive:true,force:true});}
+});
+
+test('Git preflight enumerates paths without requesting blob sizes', async () => {
+  const args = [];
+  const git = async command => {
+    args.push(command);
+    return {code: 0, out: '100644 blob ' + sha('a') + '\tSKILL.md\0' +
+      '100644 blob ' + sha('b') + '\tcustom/deep/example.txt\0', err: '', timedOut: false};
+  };
+  const planned = await planTrees(git, [{dir: 'skills/first'}]);
+  assert.equal(planned.ok, true);
+  assert.equal(planned.stats.get('skills/first').files, 2);
+  assert.ok(args.every(a => !a.includes('-l')), 'ls-tree -l triggers lazy blob hydration in partial clones');
+  assert.ok(args.some(a => a.includes('FETCH_HEAD:skills/first')), 'preflight should enumerate only the selected directory');
+});
+
+test('repository evaluation respects the overall run deadline', async () => {
+  const loc = {id: 'a/b/c', repo: 'a/b', commit: sha('a'), path: 'skills/c/SKILL.md', dir: 'skills/c'};
+  const result = await evaluate([loc], {now: NOW, deadline: Date.now() - 1000});
+  assert.equal(result.fetches, 0);
+  assert.equal(result.stopped, 'deadline');
+  assert.deepEqual(result.skippedIds, [loc.id]);
 });
