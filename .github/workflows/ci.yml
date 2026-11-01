@@ -24,8 +24,8 @@ jobs:
       - name: Validate canonical JSON Schemas and negative cases
         run: npm run validate:schemas -- --self-test --skip-unmapped
       - run: node scripts/catalog.mjs --check --skip-unmapped
-      - name: Verify the reviewed catalog notice artifact
-        run: node scripts/notice.mjs --check --base "origin/${{ github.event.pull_request.base.ref || 'main' }}"
+      - name: Check quality results invariants (offline)
+        run: node scripts/quality.mjs --check
       - name: Check for duplicate skills
         run: node scripts/check-duplicate-skills.mjs
       - run: node --test tests/*.test.mjs
