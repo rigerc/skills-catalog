@@ -206,7 +206,7 @@ export function validateManifest(manifest, inputs) {
   for (const skill of skills) {
     if (ids.has(skill.id) || skill.id !== skill.repository + '/' + skill.skill_name ||
         !STATES.includes(skill.score.state) || !STATES.includes(skill.quality.state) ||
-        !['current', 'stale', 'pending', 'unresolved'].includes(skill.meta.state) ||
+        (skill.meta !== null && !['current', 'stale', 'pending', 'unresolved'].includes(skill.meta.state)) ||
         (skill.score.state === 'current' &&
          (!validNumbers(skill.score.criteria) || !Number.isFinite(skill.score.overall))) ||
         (skill.source.state === 'verified' &&
