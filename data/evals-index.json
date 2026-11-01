@@ -404,6 +404,18 @@
       "has_evals": true
     },
     {
+      "id": "cli/cli/dependabot-triager",
+      "commit": "93d24ce9ffefb6cc86bde89b50271457bb0ef9cb",
+      "source_tree_sha": "93d24ce9ffefb6cc86bde89b50271457bb0ef9cb",
+      "has_evals": false
+    },
+    {
+      "id": "clickhouse/agent-skills/clickhouse-architecture-advisor",
+      "commit": "69a8354b05b5942e5cea77b6c87be7788303fc18",
+      "source_tree_sha": "69a8354b05b5942e5cea77b6c87be7788303fc18",
+      "has_evals": false
+    },
+    {
       "id": "cloudai-x/threejs-skills/threejs-animation",
       "commit": "0e181866f095b5f06d005133876e926515390d95",
       "source_tree_sha": "0e181866f095b5f06d005133876e926515390d95",
@@ -512,6 +524,30 @@
       "has_evals": false
     },
     {
+      "id": "cloudflare/vinext/migrate-to-vinext",
+      "commit": "fb9bf3156f31ef859174c9f51ac859f2e5cd6bc3",
+      "source_tree_sha": "fb9bf3156f31ef859174c9f51ac859f2e5cd6bc3",
+      "has_evals": false
+    },
+    {
+      "id": "confident-ai/deepeval/deepeval-otel",
+      "commit": "d6cd78ac44da4623ff07c73310dfca474c212068",
+      "source_tree_sha": "d6cd78ac44da4623ff07c73310dfca474c212068",
+      "has_evals": false
+    },
+    {
+      "id": "convex/agent-skills/convex",
+      "commit": "3d1e9c6e288a23ed5f8ff28adab300d5b62a1686",
+      "source_tree_sha": "3d1e9c6e288a23ed5f8ff28adab300d5b62a1686",
+      "has_evals": false
+    },
+    {
+      "id": "currents-dev/playwright-best-practices-skill/playwright-best-practices",
+      "commit": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+      "source_tree_sha": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+      "has_evals": false
+    },
+    {
       "id": "davila7/claude-code-templates/drizzle-orm-expert",
       "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
       "source_tree_sha": "4efb68547887d2a4dd714074bd7ecb4171dc9fee",
@@ -536,6 +572,30 @@
       "has_evals": false
     },
     {
+      "id": "deckardger/tanstack-agent-skills/tanstack-query",
+      "commit": "b2fc14c974b2ca09b38de09c28237f240175205b",
+      "source_tree_sha": "b2fc14c974b2ca09b38de09c28237f240175205b",
+      "has_evals": false
+    },
+    {
+      "id": "delexw/claude-code-misc/oxlint",
+      "commit": "c729be07588f3b64a3878cc9f5e99c362388554c",
+      "source_tree_sha": "c729be07588f3b64a3878cc9f5e99c362388554c",
+      "has_evals": false
+    },
+    {
+      "id": "denoland/skills/deno",
+      "commit": "d5f6ace6b113aee71ba5286612fa1bde34c7d102",
+      "source_tree_sha": "d5f6ace6b113aee71ba5286612fa1bde34c7d102",
+      "has_evals": false
+    },
+    {
+      "id": "devon-systems/hoenn/nix",
+      "commit": "b96f381c915387c1730eef28af9b3d6bb1121018",
+      "source_tree_sha": "b96f381c915387c1730eef28af9b3d6bb1121018",
+      "has_evals": true
+    },
+    {
       "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
       "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
       "source_tree_sha": "cb2e3552a62026584003e1515ac635bc5eef45c3",
@@ -545,6 +605,12 @@
       "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline",
       "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3",
       "source_tree_sha": "cb2e3552a62026584003e1515ac635bc5eef45c3",
+      "has_evals": false
+    },
+    {
+      "id": "docker/skills/docker-project-foundations",
+      "commit": "179c9cfd04c89ae50cd5d5d68b939797a8fd03d3",
+      "source_tree_sha": "179c9cfd04c89ae50cd5d5d68b939797a8fd03d3",
       "has_evals": false
     },
     {
@@ -752,6 +818,18 @@
       "has_evals": false
     },
     {
+      "id": "ejirocodes/agent-skills/svelte5-best-practices",
+      "commit": "6e805e4cc8a4378444c791d4a08e304347152bd0",
+      "source_tree_sha": "6e805e4cc8a4378444c791d4a08e304347152bd0",
+      "has_evals": false
+    },
+    {
+      "id": "elysiajs/skills/elysia",
+      "commit": "1466d85aa4f2a0fec91f71311e65bbfa91aa7dc5",
+      "source_tree_sha": "1466d85aa4f2a0fec91f71311e65bbfa91aa7dc5",
+      "has_evals": false
+    },
+    {
       "id": "expo/skills/eas-app-stores",
       "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
       "source_tree_sha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
@@ -797,6 +875,18 @@
       "id": "expo/skills/expo-upgrade",
       "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
       "source_tree_sha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "has_evals": false
+    },
+    {
+      "id": "fastapi/fastapi/fastapi",
+      "commit": "79cab5bed28b24d92c185d236feb33f5783dfeb3",
+      "source_tree_sha": "79cab5bed28b24d92c185d236feb33f5783dfeb3",
+      "has_evals": false
+    },
+    {
+      "id": "firebase/agent-skills/firebase-auth-basics",
+      "commit": "629709b2d1193043d5508f6f1f3aa9993021da0f",
+      "source_tree_sha": "629709b2d1193043d5508f6f1f3aa9993021da0f",
       "has_evals": false
     },
     {
