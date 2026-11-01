@@ -49,7 +49,7 @@ export const TOOL = {
   name: 'skill-validator',
   version: 'v1.8.0',
   checks: ['structure', 'content', 'contamination'], // 'links' is deliberately excluded
-  flags: ['--allow-extra-frontmatter'],
+  flags: ['--allow-extra-frontmatter', '--allow-dirs=evals'],
 };
 export const MAPPER_VERSION = 2;
 

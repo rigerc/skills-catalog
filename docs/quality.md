@@ -10,6 +10,11 @@ verified, commit-pinned skill. It is generated; do not edit it by hand.
 at the pinned commit (every tracked nested file, including custom directories, not a curated list). The checkout excludes unrelated sibling skill directories. Git submodules and LFS payloads are not recursively hydrated or executed. Not run: `links`
 (live HTTP, non-deterministic, spends network quota) and LLM scoring.
 
+Both validator workflows use `--allow-extra-frontmatter` and `--allow-dirs=evals`
+from the shared `TOOL` configuration in `scripts/quality.mjs`. Extra frontmatter fields
+and the `evals/` directory are accepted without warnings; standard frontmatter fields
+and other directories still receive the usual validation.
+
 ## How it stays cheap
 
 - Git transport only: shallow partial fetch of a pinned repository+commit, followed by non-cone sparse checkout of **entire** ledger-selected skill directories, recursively. Small groups use `tree:0` and lazy tree hydration; larger groups use `blob:none`. A root-level `SKILL.md` requires a full repository-root skill checkout. Never call `git ls-tree -l`: it can fetch unrelated blobs to obtain sizes. No GitHub REST/GraphQL requests; partial checkout can still require multiple Git requests.
