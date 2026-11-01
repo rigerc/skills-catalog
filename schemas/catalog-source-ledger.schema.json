@@ -132,13 +132,32 @@
                 "checked_at",
                 "url",
                 "commit"
-              ]
+              ],
+              "not": {
+                "required": [
+                  "reason"
+                ]
+              }
             },
             "else": {
               "type": "object",
               "required": [
                 "reason"
-              ]
+              ],
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "url"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "commit"
+                    ]
+                  }
+                ]
+              }
             }
           }
         ]
