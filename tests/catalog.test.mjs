@@ -7,3 +7,21 @@ test('missing detection rejected',()=>{const {c,m,l,d}=load();d.rules.pop();asse
 test('unverified source cannot pretend to be verified',()=>{const {c,m,l,d}=load();const e=l.entries.find(x=>x.status==='verified');e.url='https://github.com/a/b/blob/main/SKILL.md';e.commit='bad';assert.throws(()=>validate(c,m,l,d),/bad verified source/)});
 test('duplicate skill rejected',()=>{const {c,m,l,d}=load();c.skills.push(structuredClone(c.skills[0]));assert.throws(()=>validate(c,m,l,d),/duplicate/)});
 test('clean catalog has no unresolved sources or empty mapping combinations',()=>{const {c,m,l,d}=load();assert.equal(l.unresolved_count,0);assert.equal(l.release_blocked,false);assert.ok(l.entries.every(e=>e.status==='verified'));assert.ok(m.combinations.every(x=>x.skill_ids.length>0));assert.equal(m.technologies.find(x=>x.id==='numpy').mapping_status,'mapped');assert.equal(m.technologies.find(x=>x.id==='storybook').mapping_status,'mapped');assert.ok(m.technologies.find(x=>x.id==='numpy').skill_ids.some(id=>id.toLowerCase()==='mindrally/skills/numpy-best-practices'));assert.ok(m.technologies.find(x=>x.id==='storybook').skill_ids.some(id=>id.toLowerCase()==='mindrally/skills/storybook'));assert.equal(validate(c,m,l,d).unresolved,0)});
+
+test('pinned eval markers are validated against source evidence',()=>{
+  const {c,m,l,d,e}=load();
+  assert.equal(e.entries.length,c.skills.length);
+  assert.ok(e.entries.some(x=>x.has_evals));
+  assert.ok(e.entries.some(x=>!x.has_evals));
+  assert.equal(validate(c,m,l,d,e).skills,c.skills.length);
+  c.skills[0].has_evals=!c.skills[0].has_evals;
+  assert.throws(()=>validate(c,m,l,d,e),/eval marker\/evidence mismatch/);
+});
+test('missing and repinned eval evidence are rejected',()=>{
+  const {c,m,l,d,e}=load();
+  e.entries[0].commit='f'.repeat(40);
+  assert.throws(()=>validate(c,m,l,d,e),/eval source pin mismatch/);
+  e.entries[0].commit=l.entries.find(x=>x.id===e.entries[0].id).commit;
+  e.entries.pop();
+  assert.throws(()=>validate(c,m,l,d,e),/missing eval evidence/);
+});
