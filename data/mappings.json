@@ -4,9 +4,9 @@
   "snapshot_date": "2026-11-01",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
-    "technologies": 268,
+    "technologies": 280,
     "mapped_technologies": 213,
-    "detect_only_technologies": 55,
+    "detect_only_technologies": 67,
     "combinations": 33,
     "distinct_referenced_skills": 2601
   },
@@ -15,6 +15,27 @@
     "affaan-m/everything-claude-code": "affaan-m/ECC"
   },
   "technologies": [
+    {
+      "id": "aider",
+      "name": "Aider",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".aider.conf.yml"
+            ]
+          }
+        ],
+        "raw": "path: .aider.conf.yml"
+      },
+      "skill_ids": [],
+      "source_document": "https://aider.chat/docs/config/aider_conf.html",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
     {
       "id": "anthropic-sdk",
       "name": "Anthropic SDK",
@@ -56,6 +77,63 @@
       },
       "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              "CLAUDE.md",
+              ".claude/settings.json",
+              ".claude/settings.local.json"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".claude/agents/*.md"
+            ]
+          }
+        ],
+        "raw": "path: CLAUDE.md; path: .claude/settings.json; path: .claude/settings.local.json; glob: .claude/agents/*.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://code.claude.com/docs/en/settings",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".clinerules"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".clinerules/*.md",
+              ".cline/rules/*.md"
+            ]
+          }
+        ],
+        "raw": "path: .clinerules; glob: .clinerules/*.md; glob: .cline/rules/*.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://github.com/cline/cline/blob/main/docs/customization/cline-rules.mdx",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
@@ -127,6 +205,88 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
+      "id": "continue",
+      "name": "Continue",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "glob",
+            "examples": [
+              ".continue/rules/*.md"
+            ]
+          },
+          {
+            "kind": "path",
+            "examples": [
+              ".continue/config.yaml",
+              ".continue/config.json"
+            ]
+          }
+        ],
+        "raw": "glob: .continue/rules/*.md; path: .continue/config.yaml; path: .continue/config.json"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.continue.dev/customize/deep-dives/rules",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".cursorrules"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".cursor/rules/*.mdc"
+            ]
+          }
+        ],
+        "raw": "path: .cursorrules; glob: .cursor/rules/*.mdc"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.cursor.com/context/rules-for-ai",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "devin-local",
+      "name": "Devin Local",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".devin/global_rules.md"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".devin/rules/*.md"
+            ]
+          }
+        ],
+        "raw": "path: .devin/global_rules.md; glob: .devin/rules/*.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.devin.ai/desktop/devin-local/customizations",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
       "id": "firecrawl",
       "name": "Firecrawl",
       "category": "AI, LLM and MCP",
@@ -155,6 +315,56 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              "GEMINI.md",
+              ".gemini/settings.json"
+            ]
+          }
+        ],
+        "raw": "path: GEMINI.md; path: .gemini/settings.json"
+      },
+      "skill_ids": [],
+      "source_document": "https://geminicli.com/docs/reference/configuration/",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".github/copilot-instructions.md"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".github/instructions/*.instructions.md",
+              ".github/agents/*.agent.md"
+            ]
+          }
+        ],
+        "raw": "path: .github/copilot-instructions.md; glob: .github/instructions/*.instructions.md; glob: .github/agents/*.agent.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.github.com/en/copilot/concepts/prompting-and-context/custom-instructions",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
       "id": "google-genai",
@@ -358,6 +568,31 @@
       "id_provenance": "explicit_in_specification"
     },
     {
+      "id": "mcp-playwright",
+      "name": "Playwright MCP",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "mcp_server_config",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "MCP server config"
+      },
+      "skill_ids": [
+        "anthropics/skills/webapp-testing",
+        "github/awesome-copilot/playwright-generate-test",
+        "github/awesome-copilot/playwright-explore-website",
+        "github/awesome-copilot/playwright-automation-fill-in-form"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
       "id": "mcp-sdk",
       "name": "Model Context Protocol SDK",
       "category": "AI, LLM and MCP",
@@ -403,6 +638,34 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
+      "id": "openai-codex",
+      "name": "OpenAI Codex",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".codex/config.toml",
+              ".codex/hooks.json"
+            ]
+          },
+          {
+            "kind": "npm",
+            "examples": [
+              "@openai/codex"
+            ]
+          }
+        ],
+        "raw": "path: .codex/config.toml; path: .codex/hooks.json; npm: @openai/codex"
+      },
+      "skill_ids": [],
+      "source_document": "https://developers.openai.com/plugins/build/plugins",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
       "id": "openai-docs-mcp",
       "name": "OpenAI Docs MCP",
       "category": "AI, LLM and MCP",
@@ -430,6 +693,34 @@
         "Mindrally/skills/openai-api-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              "opencode.json",
+              "opencode.jsonc"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".opencode/agents/*.md"
+            ]
+          }
+        ],
+        "raw": "path: opencode.json; path: opencode.jsonc; glob: .opencode/agents/*.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.opencode.ai/docs/config/",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
@@ -465,31 +756,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "mcp-playwright",
-      "name": "Playwright MCP",
-      "category": "AI, LLM and MCP",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "mcp_server_config",
-            "examples": [],
-            "details_documented": false
-          }
-        ],
-        "raw": "MCP server config"
-      },
-      "skill_ids": [
-        "anthropics/skills/webapp-testing",
-        "github/awesome-copilot/playwright-generate-test",
-        "github/awesome-copilot/playwright-explore-website",
-        "github/awesome-copilot/playwright-automation-fill-in-form"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
       "id": "pydantic-ai",
       "name": "Pydantic AI",
       "category": "AI, LLM and MCP",
@@ -503,6 +769,34 @@
         "sickn33/agentic-awesome-skills/pydantic-ai"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "roo-code",
+      "name": "Roo Code",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".roorules"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".roo/rules/*.md",
+              ".roo/rules-*/*.md"
+            ]
+          }
+        ],
+        "raw": "path: .roorules; glob: .roo/rules/*.md; glob: .roo/rules-*/*.md"
+      },
+      "skill_ids": [],
+      "source_document": "https://github.com/RooCodeInc/Roo-Code/blob/main/apps/docs/docs/features/custom-instructions.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
@@ -531,6 +825,34 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "AI, LLM and MCP",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "path",
+            "examples": [
+              ".windsurfrules",
+              ".windsurf/hooks.json"
+            ]
+          },
+          {
+            "kind": "glob",
+            "examples": [
+              ".windsurf/rules/*.md"
+            ]
+          }
+        ],
+        "raw": "path: .windsurfrules; glob: .windsurf/rules/*.md; path: .windsurf/hooks.json"
+      },
+      "skill_ids": [],
+      "source_document": "https://docs.devin.ai/desktop/devin-local/customizations",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
       "id": "auth-js",

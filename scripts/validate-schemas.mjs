@@ -38,7 +38,7 @@ if(process.argv.includes('--self-test')){
     ['catalog-source-ledger.json',d=>{d.entries[0]={id:d.entries[0].id,status:'unresolved'}},'unresolved entry without reason'],
     ['catalog-source-ledger.json',d=>{d.entries[0].reason='stale status'},'verified source carrying unresolved reason'],
     ['catalog.json',d=>{d.skills[0].id='not-a-canonical-id'},'malformed canonical skill ID'],
-    ['mappings.json',d=>{d.technologies[0].skill_ids=[]},'mapped technology without recommendations'],
+    ['mappings.json',d=>{d.technologies.find(t=>t.mapping_status==='mapped').skill_ids=[]},'mapped technology without recommendations'],
     ['technology-detection-rules.json',d=>{d.rules[0].signals=[{type:'path',path:'../private'}]},'unsafe scanner path'],
     ['unmapped.json',d=>{d.skills[0].id='invalid'},'malformed unmapped skill ID'],
     ['unmapped.json',d=>{delete d.skills[0].skill_name},'incomplete unmapped entry'],

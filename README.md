@@ -13,7 +13,7 @@ Nosey synchronizes a commit-pinned copy from this repository into its packaged b
 | Skills | **2601** |
 | Skills without mappings | **1737** |
 | Mapped technologies | **213** |
-| Detect-only technologies | **55** |
+| Detect-only technologies | **67** |
 | Combinations | **33** |
 | Verified skill sources | **2601** |
 | Unresolved sources | **0** |
@@ -35,7 +35,7 @@ Snapshot date: **2026-11-01**. Source verification is historical evidence, **not
 
 | Category | Technologies | Mapped | Detect-only |
 | --- | ---: | ---: | ---: |
-| AI, LLM and MCP | 22 | 18 | 4 |
+| AI, LLM and MCP | 34 | 18 | 16 |
 | Auth and payments | 6 | 5 | 1 |
 | Backend frameworks and APIs | 27 | 25 | 2 |
 | Build tools, monorepos and release | 27 | 12 | 15 |

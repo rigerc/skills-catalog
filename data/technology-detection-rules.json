@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "provenance": "Draft, authored from supplied mappings.json plus new derived signals on 2026-10-28; locally fixture-tested; not production-repository validated; mapping_status updated for 20 technologies given explicit skill references, signals unchanged",
+  "provenance": "Draft, authored from supplied mappings.json plus new derived signals on 2026-10-28; locally fixture-tested; not production-repository validated; mapping_status updated for 20 technologies given explicit skill references, signals unchanged; 12 additional AI coding agent detectors from project configuration documentation, detect-only, 2026-11-01",
   "policy": {
     "case_sensitive_package_names": true,
     "py_package_normalization": "PEP503",
@@ -13,6 +13,18 @@
     "evidence": "positive signal with project-relative file; no confidence percent"
   },
   "rules": [
+    {
+      "technology_id": "aider",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".aider.conf.yml"
+        }
+      ]
+    },
     {
       "technology_id": "anthropic-sdk",
       "mapping_status": "mapped",
@@ -44,6 +56,50 @@
         {
           "type": "mcp_package",
           "name": "@anthropic-ai/chrome-devtools-mcp"
+        }
+      ]
+    },
+    {
+      "technology_id": "claude-code",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "CLAUDE.md"
+        },
+        {
+          "type": "path",
+          "path": ".claude/settings.json"
+        },
+        {
+          "type": "path",
+          "path": ".claude/settings.local.json"
+        },
+        {
+          "type": "glob",
+          "pattern": ".claude/agents/*.md"
+        }
+      ]
+    },
+    {
+      "technology_id": "cline",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".clinerules"
+        },
+        {
+          "type": "glob",
+          "pattern": ".clinerules/*.md"
+        },
+        {
+          "type": "glob",
+          "pattern": ".cline/rules/*.md"
         }
       ]
     },
@@ -90,6 +146,58 @@
       ]
     },
     {
+      "technology_id": "continue",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "glob",
+          "pattern": ".continue/rules/*.md"
+        },
+        {
+          "type": "path",
+          "path": ".continue/config.yaml"
+        },
+        {
+          "type": "path",
+          "path": ".continue/config.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "cursor",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".cursorrules"
+        },
+        {
+          "type": "glob",
+          "pattern": ".cursor/rules/*.mdc"
+        }
+      ]
+    },
+    {
+      "technology_id": "devin-local",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".devin/global_rules.md"
+        },
+        {
+          "type": "glob",
+          "pattern": ".devin/rules/*.md"
+        }
+      ]
+    },
+    {
       "technology_id": "firecrawl",
       "mapping_status": "mapped",
       "origin": "documented_examples_plus_derived_supplements",
@@ -104,6 +212,42 @@
           "type": "dependency",
           "ecosystem": "py",
           "name": "firecrawl-py"
+        }
+      ]
+    },
+    {
+      "technology_id": "gemini-cli",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "GEMINI.md"
+        },
+        {
+          "type": "path",
+          "path": ".gemini/settings.json"
+        }
+      ]
+    },
+    {
+      "technology_id": "github-copilot",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".github/copilot-instructions.md"
+        },
+        {
+          "type": "glob",
+          "pattern": ".github/instructions/*.instructions.md"
+        },
+        {
+          "type": "glob",
+          "pattern": ".github/agents/*.agent.md"
         }
       ]
     },
@@ -292,6 +436,22 @@
       ]
     },
     {
+      "technology_id": "mcp-playwright",
+      "mapping_status": "mapped",
+      "origin": "documented_examples_plus_derived_supplements",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "mcp_package",
+          "name": "@playwright/mcp"
+        },
+        {
+          "type": "mcp_package",
+          "name": "@playwright/test-mcp"
+        }
+      ]
+    },
+    {
       "technology_id": "mcp-sdk",
       "mapping_status": "mapped",
       "origin": "documented_examples_plus_derived_supplements",
@@ -333,6 +493,27 @@
       ]
     },
     {
+      "technology_id": "openai-codex",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".codex/config.toml"
+        },
+        {
+          "type": "path",
+          "path": ".codex/hooks.json"
+        },
+        {
+          "type": "dependency",
+          "ecosystem": "npm",
+          "name": "@openai/codex"
+        }
+      ]
+    },
+    {
       "technology_id": "openai-docs-mcp",
       "mapping_status": "detect_only",
       "origin": "derived_and_review_required",
@@ -363,6 +544,26 @@
           "type": "dependency",
           "ecosystem": "npm",
           "name": "openai"
+        }
+      ]
+    },
+    {
+      "technology_id": "opencode",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": "opencode.json"
+        },
+        {
+          "type": "path",
+          "path": "opencode.jsonc"
+        },
+        {
+          "type": "glob",
+          "pattern": ".opencode/agents/*.md"
         }
       ]
     },
@@ -400,22 +601,6 @@
       ]
     },
     {
-      "technology_id": "mcp-playwright",
-      "mapping_status": "mapped",
-      "origin": "documented_examples_plus_derived_supplements",
-      "logic": "any",
-      "signals": [
-        {
-          "type": "mcp_package",
-          "name": "@playwright/mcp"
-        },
-        {
-          "type": "mcp_package",
-          "name": "@playwright/test-mcp"
-        }
-      ]
-    },
-    {
       "technology_id": "pydantic-ai",
       "mapping_status": "mapped",
       "origin": "derived_and_review_required",
@@ -430,6 +615,26 @@
           "type": "dependency",
           "ecosystem": "py",
           "name": "pydantic-ai-slim"
+        }
+      ]
+    },
+    {
+      "technology_id": "roo-code",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".roorules"
+        },
+        {
+          "type": "glob",
+          "pattern": ".roo/rules/*.md"
+        },
+        {
+          "type": "glob",
+          "pattern": ".roo/rules-*/*.md"
         }
       ]
     },
@@ -453,6 +658,26 @@
           "type": "dependency",
           "ecosystem": "npm",
           "name": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "technology_id": "windsurf",
+      "mapping_status": "detect_only",
+      "origin": "official_documentation_reviewed_2026_11_01",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "path",
+          "path": ".windsurfrules"
+        },
+        {
+          "type": "glob",
+          "pattern": ".windsurf/rules/*.md"
+        },
+        {
+          "type": "path",
+          "path": ".windsurf/hooks.json"
         }
       ]
     },
