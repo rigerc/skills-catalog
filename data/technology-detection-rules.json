@@ -417,7 +417,7 @@
     },
     {
       "technology_id": "pydantic-ai",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -1259,7 +1259,7 @@
     },
     {
       "technology_id": "mise",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -2343,7 +2343,7 @@
     },
     {
       "technology_id": "inngest",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -3138,7 +3138,7 @@
     },
     {
       "technology_id": "haskell",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -3267,7 +3267,7 @@
     },
     {
       "technology_id": "powershell",
-      "mapping_status": "detect_only",
+      "mapping_status": "mapped",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
