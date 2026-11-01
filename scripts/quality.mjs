@@ -625,7 +625,7 @@ export function prCommentMarkdown(entries, {fetches = 0, skippedIds = [], stoppe
     }));
     for (const id of skippedIds) reportRows.push({id, status: 'not attempted', errors: '—',
       warnings: '—', finding: stopped ?? 'run incomplete'});
-    const cellSafe = value => cell(value).replace(/[\[\]]/g, '').replace(/@/g, '@\\u200b');
+    const cellSafe = value => cell(value).replace(/[\[\]]/g, '').replace(/@/g, '@' + String.fromCharCode(0x200b));
     for (const item of reportRows.slice(0, 60)) lines.push(
       '| ' + cellSafe(item.id) + ' | ' + cellSafe(item.status) + ' | ' + item.errors +
       ' | ' + item.warnings + ' | ' + cellSafe(item.finding) + ' |');
@@ -633,7 +633,7 @@ export function prCommentMarkdown(entries, {fetches = 0, skippedIds = [], stoppe
       ' additional skills** omitted; see the workflow logs.');
   }
   lines.push('', 'Quality results are not a security, licensing, or availability audit.');
-  return lines.join('\\n') + '\\n';
+  return lines.join('\n') + '\n';
 }
 
 /* ---------- waivers and PR gate ---------- */
