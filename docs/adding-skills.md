@@ -69,6 +69,21 @@ Add its ID to one or more `mappings.json.technologies[].skill_ids` or `combinati
 
 If the skill is deliberately index-only, leave its recommendation arrays empty and explain why in the PR. Avoid broad frontend-essentials behavior unless the skill is appropriate for most web projects.
 
+## Eval availability
+
+Every catalog skill has a required `has_evals` boolean. It is **true** only when
+the verified upstream commit contains at least one tracked regular file under
+the skill's own `evals/` directory (including nested files). An empty directory,
+symlink, or another skill's evals do not count.
+
+Do not set this marker by guesswork. After adding or repinning a verified source,
+run `node scripts/verify-evals.mjs --write` with a `GITHUB_TOKEN` or `GH_TOKEN`
+for authenticated GitHub tree reads. This updates `data/evals-index.json` and
+`data/catalog.json`; run `node scripts/catalog.mjs --write` to regenerate
+`SKILLS.md`. Validation compares each marker with its commit-pinned evidence.
+CI additionally rechecks the actual upstream Git trees using
+`node scripts/verify-evals.mjs --check` (nothing upstream is executed).
+
 ## 5. Update counts and validate
 
 - In `catalog.json.counts`, adjust `distinct_skills` (+1 for a net new skill); `technologies_with_skills` and `technologies_detect_only` change only if a technology switches mapping status; `technology_combinations` changes only if a combination was added or removed; `frontend_essential_skills` changes only when that list changes.
