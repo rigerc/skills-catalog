@@ -6,10 +6,10 @@ services:
     build:
       context: .
       args:
-        # Kev source ref for the image. The released Kev-4B checkpoint is pinned
-        # separately as jaredpalmer/kev-4b@v1.0 in the container command.
+        # Kev source ref for the image. The released Kev-0.8B checkpoint is pinned
+        # separately as jaredpalmer/kev-0.8b@v1.0 in the container command.
         KEV_GIT_REF: ${KEV_GIT_REF:-kev-1.0}
-    image: skills-catalog-kev-4b
+    image: skills-catalog-kev
     # Loopback-only: the evaluator talks to http://127.0.0.1:8009. The container binds
     # 0.0.0.0 internally; the host never exposes 8009 beyond the loopback interface.
     ports:
@@ -24,7 +24,7 @@ services:
       # Optional: fp32 serves the exact evaluation path instead of the bf16 default.
       KEV_DTYPE: ${KEV_DTYPE:-}
     volumes:
-      # Persistent Hugging Face cache: the ~10 GB Kev-4B checkpoint is downloaded once.
+      # Persistent Hugging Face cache: the Kev-0.8B checkpoint (about 3 GB with the base) is downloaded once.
       - kev-model-cache:/models/huggingface
     restart: unless-stopped
     healthcheck:

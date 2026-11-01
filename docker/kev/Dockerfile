@@ -1,4 +1,4 @@
-# Serves Kev-4B (Kev 1.0) as a local System One-compatible inference server.
+# Serves Kev-0.8B (Kev 1.0) as a local System One-compatible inference server.
 # Kev is installed from its GitHub source at a pinned ref: the PyPI package named
 # `kev` is an unrelated K.E.V. ORM and must not be used.
 ARG KEV_GIT_REF=kev-1.0
@@ -27,7 +27,7 @@ WORKDIR /kev
 
 # --device cuda fails instead of falling back to CPU (kev.serve --device semantics).
 CMD ["uv", "run", "--extra", "serve", "--no-dev", "python", "-m", "kev.serve", \
-     "--run", "jaredpalmer/kev-4b@v1.0", "--device", "cuda", "--host", "0.0.0.0", "--port", "8009"]
+     "--run", "jaredpalmer/kev-0.8b@v1.0", "--device", "cuda", "--host", "0.0.0.0", "--port", "8009"]
 
 HEALTHCHECK --interval=30s --timeout=10s --retries=20 --start-period=30m \
  CMD ["python", "-c", "import json,os,urllib.request; headers=({'Authorization':'Bearer '+os.environ.get('KEV_API_KEY')} if os.environ.get('KEV_API_KEY') else {}); request=urllib.request.Request('http://127.0.0.1:8009/v1/models', headers=headers); json.load(urllib.request.urlopen(request, timeout=9))"]

@@ -291,7 +291,9 @@ does not run automatically in CI or change the canonical quality data.
 ### Local Kev evaluation (Docker)
 
 The `kev` Jev endpoint runs the same five-dimension score contract against a
-locally hosted [Kev](https://github.com/jaredpalmer/kev) 1.0 checkpoint. Kev
+locally hosted [Kev](https://github.com/jaredpalmer/kev) 1.0 checkpoint
+(Kev-0.8B; Kev-4B would need a GPU with more memory and a matching evaluator
+pin in `scripts/jev-evaluator.mjs`). Kev
 implements TypeSafe's System One API, so the evaluator reuses the existing Jev
 questions, response validation, score transformation, and checkpointing instead
 of a separate pipeline. No TypeSafe, OpenRouter, or OpenCode credential is
@@ -304,11 +306,11 @@ docker compose -f docker/kev/compose.yaml up -d --build
 ```
 
 Requirements: Linux Docker with the NVIDIA Container Toolkit and a CUDA GPU
-(an L40S is the reference GPU for Kev-4B; the first start downloads roughly
-10 GB of weights into the persistent `kev-model-cache` volume). See
+(any 4 GB GPU or larger serves Kev-0.8B; the first start downloads roughly
+3 GB of weights into the persistent `kev-model-cache` volume). See
 [`docker/kev/README.md`](../docker/kev/README.md) for details. The container
 
-- serves `jaredpalmer/kev-4b@v1.0` (Hub revision `139fdd94`), installed from the
+- serves `jaredpalmer/kev-0.8b@v1.0` (Hub revision `9a45d25e`), installed from the
   Kev GitHub source at the pinned `kev-1.0` ref — never from the unrelated PyPI
   package named `kev`;
 - runs with `--device cuda`, which fails instead of falling back to CPU;
@@ -327,11 +329,11 @@ npm run evaluate:skills -- --provider jev --jev-endpoint kev --dry-run
 
 # Start with a sample.
 npm run evaluate:skills -- --provider jev --jev-endpoint kev --limit 10 \
-  --output results/kev-4b-evaluations.json
+  --output results/kev-0.8b-evaluations.json
 
 # All remaining skills, resuming successful scores automatically.
 npm run evaluate:skills -- --provider jev --jev-endpoint kev \
-  --output results/kev-4b-evaluations.json
+  --output results/kev-0.8b-evaluations.json
 
 # Custom base URL (for example, a remote LAN host).
 npm run evaluate:skills -- --provider jev --jev-endpoint kev \
@@ -349,7 +351,7 @@ live in their own report, exactly like other Jev endpoints.
 Before the first skill request of a run, the evaluator reads `GET /v1/models`
 and refuses to evaluate unless the server reports
 
-- the pinned checkpoint run `jaredpalmer/kev-4b@v1.0`,
+- the pinned checkpoint run `jaredpalmer/kev-0.8b@v1.0`,
 - a CUDA device, and
 - `truncate_states: false`.
 
@@ -386,7 +388,7 @@ over-limit 422 from `KEV_TRUNCATE_STATES=0` fails only the affected skill.
   -f docker/kev/compose.yaml up -d --build`. The evaluator never continues on
   CPU or MPS for this endpoint.
 - **"kev_checkpoint_mismatch"** — the server is running a different `--run`;
-  restart it with the pinned `jaredpalmer/kev-4b@v1.0`.
+  restart it with the pinned `jaredpalmer/kev-0.8b@v1.0`.
 - **HTTP 422** on evaluation — the skill document is longer than the server's
   context; the skill is skipped (never truncated). The scored mean-level and
   distributions themselves remain the model's answers.

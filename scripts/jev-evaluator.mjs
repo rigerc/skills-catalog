@@ -16,10 +16,10 @@ export const JEV_ENDPOINTS = {
     endpoint: 'http://127.0.0.1:8009/v1/systemone', billing: 'local Kev-4B inference, no service cost', contextErrors: true},
 };
 
-/** Docker-hosted Kev-4B serving defaults (docker/kev/compose.yaml); see docs/quality.md. */
+/** Docker-hosted Kev-0.8B serving defaults (docker/kev/compose.yaml); see docs/quality.md. */
 export const KEV_DEFAULT_BASE_URL = 'http://127.0.0.1:8009';
-export const KEV_CHECKPOINT = 'jaredpalmer/kev-4b@v1.0';   // the `--run` argument of the pinned serving image
-export const KEV_CHECKPOINT_REVISION = '139fdd94';          // documented Hub revision of the Kev-4B Kev 1.0 weights
+export const KEV_CHECKPOINT = 'jaredpalmer/kev-0.8b@v1.0';  // the `--run` argument of the pinned serving image
+export const KEV_CHECKPOINT_REVISION = '9a45d25e';          // documented Hub revision of the Kev-0.8B Kev 1.0 weights
 export function kevBaseUrl(options = {}) {
   const raw = options.kevBaseUrl ?? KEV_DEFAULT_BASE_URL;
   let url;

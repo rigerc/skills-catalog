@@ -28,7 +28,7 @@ function payload(extra = {}) {
 }
 const kevOptions = extra => opts('kev', extra);
 const servingCard = overrides => ({models: ['kev-latest', 'jev-latest'].map(name => ({name,
-  run: 'jaredpalmer/kev-4b@v1.0', base: 'Qwen/Qwen3.5-4B-Base', device: 'cuda', backend: 'torch',
+  run: KEV_CHECKPOINT, base: 'Qwen/Qwen3.5-0.8B-Base', device: 'cuda', backend: 'torch',
   dtype: 'torch.bfloat16', temperature: 2.41, max_state_tokens: 65536, truncate_states: false, ...overrides}))});
 // GET /v1/models is a kev-only verification step; POST /v1/systemone answers the five questions.
 const kevFetch = (card = servingCard()) => async (url, init) => init.method === 'GET' ?
@@ -130,7 +130,7 @@ test('all endpoints receive five typed questions and only their selected credent
       assert.equal(entry.response_id, 'request-kev');
       assert.equal(entry.server_provenance.checkpoint, KEV_CHECKPOINT);
       assert.equal(entry.server_provenance.device, 'cuda');
-      assert.equal(entry.server_provenance.run, 'jaredpalmer/kev-4b@v1.0');
+      assert.equal(entry.server_provenance.run, 'jaredpalmer/kev-0.8b@v1.0');
       assert.equal(entry.server_provenance.truncate_states, false);
       assert.equal(report.evaluator.kev.checkpoint, KEV_CHECKPOINT);
       assert.equal(report.evaluator.kev.base_url, 'http://127.0.0.1:8009');
@@ -488,12 +488,12 @@ test('Kev borne verification failures stop before any skill request', async () =
     ['malformed models response', async () => Response.json({models: 'kev-latest'}), 'kev_checkpoint'],
     ['empty models response', async () => Response.json({models: []}), 'kev_checkpoint'],
     ['other checkpoint', async () => Response.json(servingCard({run: 'jaredpalmer/kev-9b@v2.0'})), 'kev_checkpoint_mismatch'],
-    ['unpinned kev-4b revision', async () => Response.json(servingCard({run: 'jaredpalmer/kev-4b'})), 'kev_checkpoint_mismatch'],
+    ['unpinned kev-0.8b revision', async () => Response.json(servingCard({run: 'jaredpalmer/kev-0.8b'})), 'kev_checkpoint_mismatch'],
     ['non-CUDA device', async () => Response.json(servingCard({device: 'mps', backend: 'mlx'})), 'kev_device'],
     ['truncation enabled', async () => Response.json(servingCard({truncate_states: true})), 'kev_truncation'],
   ]) await expectFailure(name, card, code);
   const standalone = [];
-  for (const [card, code] of [[servingCard({run: 'jaredpalmer/kev-4b'}), 'kev_checkpoint_mismatch'],
+  for (const [card, code] of [[servingCard({run: 'jaredpalmer/kev-0.8b'}), 'kev_checkpoint_mismatch'],
     [servingCard({device: 'mps', backend: 'mlx'}), 'kev_device']]) {
     assert.throws(() => kevProvenance(card, kevModelsEndpoint({})), error => error.code === code);
     standalone.push(card);

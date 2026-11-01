@@ -1,6 +1,6 @@
-# Kev-4B serving container
+# Kev-0.8B serving container
 
-Runs [Kev](https://github.com/jaredpalmer/kev) 1.0 (Kev-4B) as a local
+Runs [Kev](https://github.com/jaredpalmer/kev) 1.0 (Kev-0.8B) as a local
 System One-compatible inference server for the skill evaluator. Kev is installed
 from its GitHub source at a pinned release ref — never `pip install kev`, which
 is an unrelated K.E.V. ORM package.
@@ -12,8 +12,8 @@ docker compose -f docker/kev/compose.yaml up -d --build
 ```
 
 Requirements: Docker with the NVIDIA Container Toolkit and one CUDA GPU
-(L40S or better is recommended; the first start downloads the Kev-4B weights,
-roughly 10 GB, into the persistent `kev-model-cache` volume). The server binds
+(any 4 GB GPU or larger; the first start downloads the Kev-0.8B weights,
+roughly 3 GB, into the persistent `kev-model-cache` volume). The server binds
 to `127.0.0.1:8009` on the host only.
 
 Verify, then smoke test:
