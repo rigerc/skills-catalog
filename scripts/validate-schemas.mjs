@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
+import {buildManifest,loadInputs} from './manifest.mjs';
 
 const root=fileURLToPath(new URL('..',import.meta.url));
 const pairs=[
@@ -14,6 +15,7 @@ const pairs=[
   ['quality.json','quality.schema.json'],
   ['quality-waivers.json','quality-waivers.schema.json'],
   ['scores.json','scores.schema.json'],
+  ['manifest.json','manifest.schema.json'],
   ['unmapped.json','unmapped.schema.json']
 ].filter(([file])=>file!=='unmapped.json'||!process.argv.includes('--skip-unmapped'));
 const ajv=new Ajv2020({allErrors:true,strict:true,strictRequired:false});
@@ -24,7 +26,9 @@ for(const [file,schemaName] of pairs){
 }
 let failures=0;
 for(const [file] of pairs){
-  const data=JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
+  const data=file==='manifest.json'
+    ? buildManifest(loadInputs(root),'0'.repeat(40))
+    : JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
   const validate=validators.get(file);
   if(!validate(data)){
     console.error(file+': '+ajv.errorsText(validate.errors,{separator:'; '}));
@@ -49,6 +53,10 @@ if(process.argv.includes('--self-test')){
     ['scores.json',d=>{d.summary.pending=-1},'negative score coverage'],
     ['scores.json',d=>{d.evaluator.fingerprint='invalid'},'invalid score fingerprint'],
     ['scores.json',d=>{d.entries=[{id:'a/b/c',status:'evaluated'}]},'score without provenance or rubric'],
+    ['manifest.json',d=>{d.manifest_version=2},'unsupported manifest version'],
+    ['manifest.json',d=>{d.skills[0].score.state='unknown'},'unknown manifest score state'],
+    ['manifest.json',d=>{delete d.skills[0].source.commit},'manifest skill lacking source commit'],
+    ['manifest.json',d=>{d.integrity.mappings='not-a-hash'},'invalid companion file hash'],
     ['quality-waivers.json',d=>{d.waivers=[{id:'a/b/c',commit:'main',applies_to:['fail'],reason:'too short',reviewed_by:'x'}]},'unpinned waiver'],
     ['unmapped.json',d=>{d.skills[0].id='invalid'},'malformed unmapped skill ID'],
     ['unmapped.json',d=>{delete d.skills[0].skill_name},'incomplete unmapped entry'],
@@ -56,7 +64,9 @@ if(process.argv.includes('--self-test')){
   ];
   for(const [file,mutate,label] of samples){
     if(!validators.has(file))continue;
-    const data=JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
+    const data=file==='manifest.json'
+      ? buildManifest(loadInputs(root),'0'.repeat(40))
+      : JSON.parse(readFileSync(resolve(root,'data',file),'utf8'));
     // Negative cases need an entry even when the generated index is empty.
     if(file==='unmapped.json'){
       data.skills=[{id:'example/skills/example',repository:'example/skills',skill_name:'example'}];
