@@ -75,13 +75,21 @@ test('refuses truncated API trees and request errors', async () => {
 
 test('updates selected source pins without mutating other skills', () => {
   const old = entry('alpha'), unchanged = entry('beta');
-  const {c, m, l, d} = load();
+  const {c, m, l, d, e} = load();
   // Apply a real fixture entry so catalog schema/mappings remain valid.
   const target = l.entries.find(x => x.status === 'verified');
   const next = 'f'.repeat(40);
   const changes = [{id: target.id, oldCommit: target.commit, newCommit: next}];
-  const result = applyUpdates(c, m, l, d, changes, '2026-10-31T11:00:00.000Z');
+  assert.throws(() => applyUpdates(c, m, l, d, changes, '2026-10-31T11:00:00.000Z', e, []),
+    /Missing verified eval presence/);
+  const oldEval = e.entries.find(x => x.id === target.id);
+  const verified = [{id: target.id, commit: next, has_evals: !oldEval.has_evals}];
+  const result = applyUpdates(c, m, l, d, changes, '2026-10-31T11:00:00.000Z', e, verified);
   assert.equal(result.ledger.entries.find(x => x.id === target.id).commit, next);
+  assert.equal(result.evals.entries.find(x => x.id === target.id).commit, next);
+  assert.equal(result.evals.entries.find(x => x.id === target.id).has_evals, !oldEval.has_evals);
+  assert.equal(result.catalog.skills.find(x => x.id === target.id).has_evals, !oldEval.has_evals);
+  assert.equal(e.entries.find(x => x.id === target.id).commit, target.commit);
   assert.equal(l.entries.find(x => x.id === target.id).commit, target.commit);
   assert.equal(result.catalog.snapshot_date, '2026-10-31');
   assert.equal(result.mappings.snapshot_date, '2026-10-31');
