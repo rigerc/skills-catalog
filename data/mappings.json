@@ -5,10 +5,10 @@
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
     "technologies": 246,
-    "mapped_technologies": 192,
-    "detect_only_technologies": 54,
+    "mapped_technologies": 189,
+    "detect_only_technologies": 57,
     "combinations": 33,
-    "distinct_referenced_skills": 3594
+    "distinct_referenced_skills": 2601
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -195,7 +195,6 @@
       },
       "skill_ids": [
         "K-Dense-AI/scientific-agent-skills/transformers",
-        "sickn33/agentic-awesome-skills/hugging-face-cli",
         "sickn33/agentic-awesome-skills/hugging-face-jobs",
         "sickn33/agentic-awesome-skills/hugging-face-gradio",
         "sickn33/agentic-awesome-skills/hugging-face-papers",
@@ -238,8 +237,7 @@
       },
       "skill_ids": [
         "langchain-ai/langchain-skills/langchain-rag",
-        "Mindrally/skills/langchain-development",
-        "sickn33/agentic-awesome-skills/langchain-architecture"
+        "Mindrally/skills/langchain-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
@@ -459,8 +457,7 @@
         "raw": "npm: `@opentelemetry/api`, `@opentelemetry/sdk-node`, `@opentelemetry/sdk-trace-node`; py: `opentelemetry-api`, `opentelemetry-sdk`"
       },
       "skill_ids": [
-        "confident-ai/deepeval/deepeval-otel",
-        "sickn33/agentic-awesome-skills/opentelemetry"
+        "confident-ai/deepeval/deepeval-otel"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/08-ai-llm-mcp.md",
       "id_provenance": "explicit_in_specification"
@@ -845,8 +842,7 @@
         "github/awesome-copilot/csharp-mstest",
         "github/awesome-copilot/csharp-tunit",
         "Jeffallan/claude-skills/csharp-developer",
-        "Mindrally/skills/c-sharp",
-        "sickn33/agentic-awesome-skills/csharp-pro"
+        "Mindrally/skills/c-sharp"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1433,8 +1429,7 @@
         "raw": "file: `MODULE.bazel`, `WORKSPACE.bazel`, `WORKSPACE` +2"
       },
       "skill_ids": [
-        "ccheney/robust-skills/bazel",
-        "sickn33/agentic-awesome-skills/bazel-build-optimization"
+        "ccheney/robust-skills/bazel"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "explicit_in_specification"
@@ -1633,8 +1628,7 @@
         "raw": ""
       },
       "skill_ids": [
-        "Mindrally/skills/nx",
-        "sickn33/agentic-awesome-skills/nx-workspace-patterns"
+        "Mindrally/skills/nx"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -1778,8 +1772,7 @@
       },
       "skill_ids": [
         "vercel/turborepo/turborepo",
-        "Mindrally/skills/turborepo",
-        "sickn33/agentic-awesome-skills/turborepo-caching"
+        "Mindrally/skills/turborepo"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "explicit_in_specification"
@@ -1925,9 +1918,7 @@
         "github/awesome-copilot/aws-resource-query",
         "github/awesome-copilot/aws-well-architected-review",
         "Mindrally/skills/aws-development",
-        "sickn33/agentic-awesome-skills/aws-cdk-development",
-        "sickn33/agentic-awesome-skills/aws-cost-optimization",
-        "sickn33/agentic-awesome-skills/aws-serverless-eda"
+        "sickn33/agentic-awesome-skills/aws-cdk-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2009,12 +2000,7 @@
         "cloudflare/skills/workers-best-practices",
         "cloudflare/skills/web-perf",
         "openai/skills/cloudflare-deploy",
-        "Mindrally/skills/cloudflare-development",
-        "sickn33/agentic-awesome-skills/cloudflare-workers-expert",
-        "sickn33/agentic-awesome-skills/cloudflare-r2",
-        "sickn33/agentic-awesome-skills/cloudflare-pages",
-        "sickn33/agentic-awesome-skills/cloudflare-workers",
-        "sickn33/agentic-awesome-skills/cloudflare-zero-trust"
+        "Mindrally/skills/cloudflare-development"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2069,8 +2055,7 @@
         "github/awesome-copilot/multi-stage-dockerfile",
         "Mindrally/skills/docker",
         "sickn33/agentic-awesome-skills/docker-expert",
-        "sickn33/agentic-awesome-skills/docker-compose",
-        "sickn33/agentic-awesome-skills/docker-management"
+        "sickn33/agentic-awesome-skills/docker-compose"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2119,7 +2104,6 @@
         "github/awesome-copilot/github-actions-hardening",
         "github/awesome-copilot/github-actions-runtime-upgrade-conventions",
         "github/awesome-copilot/create-github-action-workflow-specification",
-        "sickn33/agentic-awesome-skills/github-actions",
         "sickn33/agentic-awesome-skills/github-actions-advanced",
         "sickn33/agentic-awesome-skills/github-actions-debugger",
         "sickn33/agentic-awesome-skills/github-actions-templates"
@@ -2368,10 +2352,7 @@
         "wshobson/agents/terraform-module-library",
         "Mindrally/skills/terraform",
         "Jeffallan/claude-skills/terraform-engineer",
-        "sickn33/agentic-awesome-skills/terraform-skill",
         "sickn33/agentic-awesome-skills/terraform-infrastructure",
-        "sickn33/agentic-awesome-skills/terraform-aws",
-        "sickn33/agentic-awesome-skills/terraform-gcp",
         "sickn33/agentic-awesome-skills/terraform-azure"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
@@ -2511,10 +2492,7 @@
         "raw": "npm: `remotion`, `@remotion/cli`"
       },
       "skill_ids": [
-        "remotion-dev/skills/remotion-best-practices",
-        "sickn33/agentic-awesome-skills/remotion",
-        "sickn33/agentic-awesome-skills/remotion-create",
-        "sickn33/agentic-awesome-skills/remotion-captions"
+        "remotion-dev/skills/remotion-best-practices"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
       "id_provenance": "explicit_in_specification"
@@ -2547,8 +2525,7 @@
         "cloudai-x/threejs-skills/threejs-lighting",
         "cloudai-x/threejs-skills/threejs-textures",
         "cloudai-x/threejs-skills/threejs-loaders",
-        "Mindrally/skills/three-js",
-        "sickn33/agentic-awesome-skills/threejs-skills"
+        "Mindrally/skills/three-js"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
       "id_provenance": "explicit_in_specification"
@@ -2732,15 +2709,13 @@
       "id": "inngest",
       "name": "Inngest",
       "category": "Data, databases and queues",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/inngest"
-      ],
+      "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -3106,8 +3081,7 @@
         "redis/agent-skills/redis-core",
         "Mindrally/skills/redis-best-practices",
         "HoangNguyen0403/agent-skills-standard/database-redis",
-        "sickn33/agentic-awesome-skills/redis",
-        "sickn33/agentic-awesome-skills/redis-cli"
+        "sickn33/agentic-awesome-skills/redis"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
@@ -3785,8 +3759,7 @@
       "skill_ids": [
         "wshobson/agents/bash-defensive-patterns",
         "Mindrally/skills/bash-scripting",
-        "sickn33/agentic-awesome-skills/bash-pro",
-        "sickn33/agentic-awesome-skills/bash-linux"
+        "sickn33/agentic-awesome-skills/bash-pro"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3887,8 +3860,7 @@
       },
       "skill_ids": [
         "georgeguimaraes/elixir-agent-tools/elixir",
-        "Mindrally/skills/elixir",
-        "sickn33/agentic-awesome-skills/elixir-pro"
+        "Mindrally/skills/elixir"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "explicit_in_specification"
@@ -3911,15 +3883,13 @@
       "id": "haskell",
       "name": "Haskell",
       "category": "Languages, runtimes and scripting",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/haskell-pro"
-      ],
+      "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -4062,15 +4032,13 @@
       "id": "powershell",
       "name": "PowerShell",
       "category": "Languages, runtimes and scripting",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "detection": {
         "coverage": "undocumented",
         "signals": [],
         "raw": ""
       },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/powershell-windows"
-      ],
+      "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
@@ -4544,8 +4512,7 @@
         "HoangNguyen0403/agent-skills-standard/kotlin-best-practices",
         "HoangNguyen0403/agent-skills-standard/kotlin-coroutines",
         "HoangNguyen0403/agent-skills-standard/kotlin-language",
-        "HoangNguyen0403/agent-skills-standard/kotlin-tooling",
-        "sickn33/agentic-awesome-skills/kotlin-coroutines-expert"
+        "HoangNguyen0403/agent-skills-standard/kotlin-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4596,8 +4563,7 @@
         "kepano/obsidian-skills/json-canvas",
         "kepano/obsidian-skills/obsidian-bases",
         "kepano/obsidian-skills/obsidian-cli",
-        "kepano/obsidian-skills/obsidian-markdown",
-        "sickn33/agentic-awesome-skills/obsidian-clipper-template-creator"
+        "kepano/obsidian-skills/obsidian-markdown"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -4678,8 +4644,7 @@
         "HoangNguyen0403/agent-skills-standard/swift-memory-management",
         "HoangNguyen0403/agent-skills-standard/swift-swiftui",
         "HoangNguyen0403/agent-skills-standard/swift-testing",
-        "HoangNguyen0403/agent-skills-standard/swift-tooling",
-        "sickn33/agentic-awesome-skills/swift-concurrency-expert"
+        "HoangNguyen0403/agent-skills-standard/swift-tooling"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/02-mobile-desktop-extensions.md",
       "id_provenance": "explicit_in_specification"
@@ -5433,9 +5398,7 @@
         "HoangNguyen0403/agent-skills-standard/angular-style-guide",
         "HoangNguyen0403/agent-skills-standard/angular-testing",
         "HoangNguyen0403/agent-skills-standard/angular-tooling",
-        "sickn33/agentic-awesome-skills/angular-ui-patterns",
-        "sickn33/agentic-awesome-skills/angular-best-practices",
-        "sickn33/agentic-awesome-skills/angular-migration"
+        "sickn33/agentic-awesome-skills/angular-ui-patterns"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
@@ -5741,8 +5704,7 @@
         "raw": ""
       },
       "skill_ids": [
-        "claude-dev-suite/claude-dev-suite/radix-ui",
-        "sickn33/agentic-awesome-skills/radix-ui-design-system"
+        "claude-dev-suite/claude-dev-suite/radix-ui"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
@@ -6032,9 +5994,7 @@
       },
       "skill_ids": [
         "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns",
-        "Mindrally/skills/tailwindcss",
-        "sickn33/agentic-awesome-skills/tailwind-patterns",
-        "sickn33/agentic-awesome-skills/tailwind-design-system"
+        "Mindrally/skills/tailwindcss"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"

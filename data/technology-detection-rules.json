@@ -2343,7 +2343,7 @@
     },
     {
       "technology_id": "inngest",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -3138,7 +3138,7 @@
     },
     {
       "technology_id": "haskell",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [
@@ -3267,7 +3267,7 @@
     },
     {
       "technology_id": "powershell",
-      "mapping_status": "mapped",
+      "mapping_status": "detect_only",
       "origin": "derived_and_review_required",
       "logic": "any",
       "signals": [

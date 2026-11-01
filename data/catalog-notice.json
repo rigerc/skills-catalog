@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "commit": "2abe17a1345d027f4284541b6cba3c2bc82e970b",
-  "sequence": 2,
+  "commit": "b241b7d7531e1ab84621089dac996c82b4d6c3cb",
+  "sequence": 3,
   "reviewed": true,
   "files": [
     {
       "path": "catalog.json",
-      "sha256": "551f0136de8de80a3ed4438079297055dc5d523561fa67cc9231f3c2a1d3a32f"
+      "sha256": "2937cc9b883bdc3355a91a96656db70f14bdbeb91edb9ee3736a4b307aa8b1c8"
     },
     {
       "path": "mappings.json",
-      "sha256": "96cb66ad3da6a3e9ae16c717935a8347b46c204dd735303c4e8901e9ac2fd81b"
+      "sha256": "c60d56f6d914bd79a2fe68bbcc629d3c323359183524c233354508085abb4c2a"
     },
     {
       "path": "technology-detection-rules.json",
-      "sha256": "585179421a96e43e0a2dc430ce1338bb895560e1f7bef2286e5bba435b72aea6"
+      "sha256": "a45c74410d78ef7a532210e4f449b6c12eb81154d171798353d37b4e97f9d6c8"
     },
     {
       "path": "catalog-source-ledger.json",
-      "sha256": "a42e649bad16515fe0315b4f833eac7260ca45956f09ef16b5af8cb27cb6caaa"
+      "sha256": "1fd01eea8071195a6eafab1be2966e84087c9dfcebe4b331664becb6690454a5"
     }
   ]
 }
