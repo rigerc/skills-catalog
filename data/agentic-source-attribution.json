@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "credits_url": "https://github.com/sickn33/agentic-awesome-skills/blob/1ed5976b000fc0df2910d32ed33717794da1bee2/data/source-credits.json",
+  "notes": "Explicit source-credits.json attributions from the pinned bundle snapshot. entries contain original skill files resolved at immutable commits; unresolved_credits have no uniquely confirmed original SKILL.md path and retain the commit-pinned bundle mirror as install source.",
+  "entries": [
+    {
+      "old_id": "sickn33/agentic-awesome-skills/2slides-ppt-generator",
+      "name": "2slides-ppt-generator",
+      "original_repository": "2slides/slides-generation-2slides-skills",
+      "commit": "a8b986a556b27d8006b42ae6cded2e822e150674",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/2slides/slides-generation-2slides-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ad-campaign-analyzer",
+      "name": "ad-campaign-analyzer",
+      "original_repository": "gooseworks-ai/goose-skills",
+      "commit": "1add09bd8e0d057e91e25c96b9282498e2fcb2a2",
+      "path": "skills/shared/ad-campaign-analyzer/SKILL.md",
+      "credit_url": "https://github.com/gooseworks-ai/goose-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agent-memory-discipline",
+      "name": "agent-memory-discipline",
+      "original_repository": "mnemoverse/agent-memory-discipline",
+      "commit": "61d63865e079290410499c86cbf7e97edb547fdd",
+      "path": "skills/agent-memory-discipline/SKILL.md",
+      "credit_url": "https://github.com/mnemoverse/agent-memory-discipline"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agenttrace-session-audit",
+      "name": "agenttrace-session-audit",
+      "original_repository": "luoyuctl/agenttrace",
+      "commit": "15ed07f24f4d504dcf9c32d40caed36cd9e6c470",
+      "path": "skills/agenttrace-session-audit/SKILL.md",
+      "credit_url": "https://github.com/luoyuctl/agenttrace"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-headshot-studio",
+      "name": "ai-headshot-studio",
+      "original_repository": "beatra-ai/ai-headshot-generator-skill",
+      "commit": "8757b8920563b1ccb6193944ba79c6384fd7a848",
+      "path": "skills/ai-headshot-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-headshot-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-image-generation-studio",
+      "name": "ai-image-generation-studio",
+      "original_repository": "beatra-ai/ai-image-generator-skill",
+      "commit": "86abbefd47ad8a3422212edd6466a861d8d8daf4",
+      "path": "skills/ai-image-generation-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-image-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-logo-maker",
+      "name": "ai-logo-maker",
+      "original_repository": "beatra-ai/ai-logo-maker-skill",
+      "commit": "90e90857620c65a11f355ba21d03d0445d0e6d59",
+      "path": "skills/ai-logo-maker/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-logo-maker-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-multilingual-dubbing",
+      "name": "ai-multilingual-dubbing",
+      "original_repository": "beatra-ai/multilingual-voiceover-skill",
+      "commit": "561cd0436686e1f7a163258967a73bfc938a56cd",
+      "path": "skills/ai-multilingual-dubbing/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/multilingual-voiceover-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-photo-restyler",
+      "name": "ai-photo-restyler",
+      "original_repository": "beatra-ai/photo-to-anime-skill",
+      "commit": "0bc3d42f2414ebc6f09c23e623a5cdca3b3f1f85",
+      "path": "skills/ai-photo-restyler/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/photo-to-anime-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ai-podcast-voiceover",
+      "name": "ai-podcast-voiceover",
+      "original_repository": "beatra-ai/ai-podcast-voiceover-skill",
+      "commit": "060adc8af2281c3c18d50d1d99090d4b69ab5c10",
+      "path": "skills/ai-podcast-voiceover/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-podcast-voiceover-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/andrej-karpathy",
+      "name": "andrej-karpathy",
+      "original_repository": "multica-ai/andrej-karpathy-skills",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "path": "skills/karpathy-guidelines/SKILL.md",
+      "credit_url": "https://github.com/multica-ai/andrej-karpathy-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/anti-slop-design",
+      "name": "anti-slop-design",
+      "original_repository": "wwewtech/anti-slop-design",
+      "commit": "071fd3c40a57d1e6bd6953b4d10974afb4626d04",
+      "path": "skills/anti-slop-design/SKILL.md",
+      "credit_url": "https://github.com/wwewtech/anti-slop-design"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/anywrite",
+      "name": "anywrite",
+      "original_repository": "Antheurus/anywrite",
+      "commit": "1f7bbf7f15edba3b88b689054bc152538ffbda65",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Antheurus/anywrite"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/aomi-transact",
+      "name": "aomi-transact",
+      "original_repository": "aomi-labs/skills",
+      "commit": "0f17a9d30b9787b2245b115e287842ef8b1d8ec8",
+      "path": "aomi-transact/SKILL.md",
+      "credit_url": "https://github.com/aomi-labs/skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/apify-reddit-scraper",
+      "name": "apify-reddit-scraper",
+      "original_repository": "harshmaur/apify-reddit-scraper-skill",
+      "commit": "5a2b85cfda62e44bf07b846c57aea7986b47e3ab",
+      "path": "skills/apify-reddit-scraper/SKILL.md",
+      "credit_url": "https://github.com/harshmaur/apify-reddit-scraper-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/apple-notes-search",
+      "name": "apple-notes-search",
+      "original_repository": "connerkward/mcp-apple-notes",
+      "commit": "8a399dc8a31bcc7b99c5889735e256667ce54f80",
+      "path": "skills/apple-notes-search/SKILL.md",
+      "credit_url": "https://github.com/connerkward/mcp-apple-notes"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/assay",
+      "name": "assay",
+      "original_repository": "awss1i/assay",
+      "commit": "2e3109827a6382ef5d82fc73333b6b5f2d6577b2",
+      "path": "plugins/assay/skills/checking-a-page/SKILL.md",
+      "credit_url": "https://github.com/awss1i/assay"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/atlas-contract",
+      "name": "atlas-contract",
+      "original_repository": "wede-wx/atlas",
+      "commit": "3b7922c325cc11dfe1c6b387efc20572c45374db",
+      "path": "atlas-contract/SKILL.md",
+      "credit_url": "https://github.com/wede-wx/atlas"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ax-extract-workflow",
+      "name": "ax-extract-workflow",
+      "original_repository": "Necmttn/ax",
+      "commit": "fca259c0f7accfdac756ac323924bde8732fd9c0",
+      "path": "skills/ax-extract-workflow/SKILL.md",
+      "credit_url": "https://github.com/Necmttn/ax"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/axonx",
+      "name": "axonx",
+      "original_repository": "FlowLLM-AI/AxonX",
+      "commit": "783dc9f454ebdc09da755ecaca1f3f6d18b675e8",
+      "path": "skills/axonx/SKILL.md",
+      "credit_url": "https://github.com/FlowLLM-AI/AxonX"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/beatra",
+      "name": "beatra",
+      "original_repository": "beatra-ai/ai-media-generator-skill",
+      "commit": "6c9d1a4097f0ed574a7dee14697531a24a0e10b6",
+      "path": "skills/beatra/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-media-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/beatra-ai-video-studio",
+      "name": "beatra-ai-video-studio",
+      "original_repository": "beatra-ai/beatra-skills",
+      "commit": "0626f52f6d60e6b7e7528ab3c2f14fb2665cd6e8",
+      "path": "skills/beatra-ai-video-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/beatra-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/brendangregg-use-tsa",
+      "name": "brendangregg-use-tsa",
+      "original_repository": "thecsdoctor/brendangregg-use-tsa-skill",
+      "commit": "b9f4dd6cebfd871551f10ab84b51b31ec459fe60",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/thecsdoctor/brendangregg-use-tsa-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/browser-testing-with-devtools",
+      "name": "browser-testing-with-devtools",
+      "original_repository": "addyosmani/agent-skills",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "path": "skills/browser-testing-with-devtools/SKILL.md",
+      "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/bumblebee",
+      "name": "bumblebee",
+      "original_repository": "mycelos-ai/bumblebee-skill",
+      "commit": "acca2bd5e207da99437e16bf04b35d19eb5b2392",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/mycelos-ai/bumblebee-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/chord-onchain-trading",
+      "name": "chord-onchain-trading",
+      "original_repository": "getchordlabs/chord",
+      "commit": "00c41067e304d348b71841cb1c18910bf37e2859",
+      "path": "skills/chord/SKILL.md",
+      "credit_url": "https://github.com/getchordlabs/chord/tree/main/skills/chord"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/cline-pilot",
+      "name": "cline-pilot",
+      "original_repository": "gongdear/cline-pilot",
+      "commit": "aff85675ae2fdcca1e5824230b1be86ab4b89198",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/gongdear/cline-pilot"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/cron-doctor",
+      "name": "cron-doctor",
+      "original_repository": "takeaseatventure/devops-skills",
+      "commit": "7b5f4eb40b008b030adde8afe4012141ac1f702c",
+      "path": "skills/cron-doctor/SKILL.md",
+      "credit_url": "https://github.com/takeaseatventure/devops-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/de-ai-writer",
+      "name": "de-ai-writer",
+      "original_repository": "jiawood2006/hermes-skills",
+      "commit": "07450aa5ef29fe471ca4562ecdd613aafa40e8a0",
+      "path": "skills/de-ai-writer/SKILL.md",
+      "credit_url": "https://github.com/jiawood2006/hermes-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/debate-review",
+      "name": "debate-review",
+      "original_repository": "amElnagdy/review-skills",
+      "commit": "3cfce3963b4d4d99a8b9059f1ece6726405b7bd3",
+      "path": "skills/debate-review/SKILL.md",
+      "credit_url": "https://github.com/amElnagdy/review-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/draft-my-comments",
+      "name": "draft-my-comments",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/draft-my-comments/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/drizzle-migration-conflict",
+      "name": "drizzle-migration-conflict",
+      "original_repository": "chaunsin/agent-skills",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "path": "skills/drizzle-migration-conflict/SKILL.md",
+      "credit_url": "https://github.com/chaunsin/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ecl-harness-engineer",
+      "name": "ecl-harness-engineer",
+      "original_repository": "qinghui316/ecl-harness-engineer",
+      "commit": "5019d056e14f844407287542ae1014283bf35c43",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/qinghui316/ecl-harness-engineer"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ecommerce-listing-image-set",
+      "name": "ecommerce-listing-image-set",
+      "original_repository": "beatra-ai/ecommerce-product-images-skill",
+      "commit": "5ecd6f0e1e0f5db05ab3535c2fb0bce5f5a34c4c",
+      "path": "skills/ecommerce-listing-image-set/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ecommerce-product-images-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/electron-drive-skill",
+      "name": "electron-drive-skill",
+      "original_repository": "Search-3D/electron-drive-skill",
+      "commit": "2db10393bd88915bb446ad77f852182957abdf89",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Search-3D/electron-drive-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/email-marketing-bible",
+      "name": "email-marketing-bible",
+      "original_repository": "CosmoBlk/email-marketing-bible",
+      "commit": "962648c1b147652244c4e4953e96c65421a79e70",
+      "path": "skills/email-marketing-bible/SKILL.md",
+      "credit_url": "https://github.com/CosmoBlk/email-marketing-bible"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/find-complementary-founders",
+      "name": "find-complementary-founders",
+      "original_repository": "merc1305/findMate",
+      "commit": "0fcdf8e841ea5cdf02a00807ac061a674fdae41a",
+      "path": "skills/find-complementary-founders/SKILL.md",
+      "credit_url": "https://github.com/merc1305/findMate"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/frontend-lighthouse",
+      "name": "frontend-lighthouse",
+      "original_repository": "stareezy-1/frontend-architecture-skill",
+      "commit": "d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0",
+      "path": "skills/frontend-lighthouse/SKILL.md",
+      "credit_url": "https://github.com/stareezy-1/frontend-architecture-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/fsi-compliance-checker",
+      "name": "fsi-compliance-checker",
+      "original_repository": "timwukp/agent-skills-best-practice",
+      "commit": "0a67102a22e6958154baf632b9ac4eeec7f1fa9c",
+      "path": "skills/skills/fsi-compliance-checker/SKILL.md",
+      "credit_url": "https://github.com/timwukp/agent-skills-best-practice"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/geo-audit",
+      "name": "geo-audit",
+      "original_repository": "zubair-trabzada/geo-seo-claude",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "path": "skills/geo-audit/SKILL.md",
+      "credit_url": "https://github.com/zubair-trabzada/geo-seo-claude"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/geo-technical",
+      "name": "geo-technical",
+      "original_repository": "zubair-trabzada/geo-seo-claude",
+      "commit": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "path": "skills/geo-technical/SKILL.md",
+      "credit_url": "https://github.com/zubair-trabzada/geo-seo-claude"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/get-seen-in-replies",
+      "name": "get-seen-in-replies",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/get-seen-in-replies/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/idea-os",
+      "name": "idea-os",
+      "original_repository": "Slashworks-biz/idea-os",
+      "commit": "2417d626d16838efeb2a99bebe45425be63cc6d6",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Slashworks-biz/idea-os"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/laravel-development-workflow",
+      "name": "laravel-development-workflow",
+      "original_repository": "Junaid-PK/laravel-development-workflow",
+      "commit": "e8747afc1a427ae16e70ec01ad994788e71936a4",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Junaid-PK/laravel-development-workflow"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lognorm",
+      "name": "lognorm",
+      "original_repository": "lognorm/lognorm-mcp",
+      "commit": "74ee2ffbbf4980ca7ae2836fb3426ccc92d6c527",
+      "path": "skills/lognorm/SKILL.md",
+      "credit_url": "https://github.com/lognorm/lognorm-mcp"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lookdev-auto",
+      "name": "lookdev-auto",
+      "original_repository": "connerkward/lookdev-auto-skill",
+      "commit": "f8c2fa0a5d58bb8f5d045ff8d3b7ba9e9f1d74a0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/connerkward/lookdev-auto-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/marlin-bed-leveling",
+      "name": "marlin-bed-leveling",
+      "original_repository": "wwewtech/marlin-bed-leveling",
+      "commit": "c1cde84b6b37df4e490ffc6c4726cf0a0613d2f4",
+      "path": "skills/marlin-bed-leveling/SKILL.md",
+      "credit_url": "https://github.com/wwewtech/marlin-bed-leveling"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/mock-hunter",
+      "name": "mock-hunter",
+      "original_repository": "CodeShuX/mockhunter",
+      "commit": "1c6da4d88fc86af10ed89b94eadfe9126aadee4b",
+      "path": "skills/mockhunter/SKILL.md",
+      "credit_url": "https://github.com/CodeShuX/mockhunter"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/music-generation-studio",
+      "name": "music-generation-studio",
+      "original_repository": "beatra-ai/ai-music-generator-skill",
+      "commit": "6598ea6d36a023e2462eab2533c857de64f829ae",
+      "path": "skills/music-generation-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-music-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/open-dynamic-workflows",
+      "name": "open-dynamic-workflows",
+      "original_repository": "Suraj1235/open-dynamic-workflows",
+      "commit": "972bb98494ea23f907df88850024bd7022b099d4",
+      "path": "packages/openclaw-adapter/skills/open-dynamic-workflows/SKILL.md",
+      "credit_url": "https://github.com/Suraj1235/open-dynamic-workflows"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/outreachgenie-list-audit",
+      "name": "outreachgenie-list-audit",
+      "original_repository": "Outreachgenie/outreachgenie-linkedin-mcp",
+      "commit": "a7d6bd1a12e6671a6c8bc9b430a69e999d8504dd",
+      "path": "skills/outreachgenie-list-audit/SKILL.md",
+      "credit_url": "https://github.com/Outreachgenie/outreachgenie-linkedin-mcp"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/papers-skill",
+      "name": "papers-skill",
+      "original_repository": "xwmxcz/papers-skill",
+      "commit": "a64c2eda2c9fc182c96e1409cde267b262dbebde",
+      "path": "skills/papers-research/SKILL.md",
+      "credit_url": "https://github.com/xwmxcz/papers-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/parcel-coupon",
+      "name": "parcel-coupon",
+      "original_repository": "moooai/parcel-coupon",
+      "commit": "dacdde81a90e4db12063a73eae480f9c947c02d9",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/parcel-coupon"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/people-data",
+      "name": "people-data",
+      "original_repository": "agentbody/skills",
+      "commit": "2aba22eb7b8b63adf5f98de67a40a2e17d80bc38",
+      "path": "skills/people-data/SKILL.md",
+      "credit_url": "https://github.com/agentbody/skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/placecall",
+      "name": "placecall",
+      "original_repository": "voygr-tech/placecall",
+      "commit": "534e35839c9125cdba2f1707932cf2b84bb7d2d3",
+      "path": "skills/placecall/SKILL.md",
+      "credit_url": "https://github.com/voygr-tech/placecall"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/poka-yoke",
+      "name": "poka-yoke",
+      "original_repository": "rainmanjam/poka-yoke",
+      "commit": "726a575e3d48d07d908abfcbb192cae09671fff2",
+      "path": "plugins/poka-yoke/skills/poka-yoke/SKILL.md",
+      "credit_url": "https://github.com/rainmanjam/poka-yoke"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/poster-design-studio",
+      "name": "poster-design-studio",
+      "original_repository": "beatra-ai/ai-poster-maker-skill",
+      "commit": "f6d657f320e45b0d05bd0bd432d293f4b5fa7379",
+      "path": "skills/poster-design-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-poster-maker-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/pre-release-review",
+      "name": "pre-release-review",
+      "original_repository": "chaunsin/agent-skills",
+      "commit": "f26f98c32aa414b980f8ae7552a6c624c8d7f751",
+      "path": "skills/pre-release-review/SKILL.md",
+      "credit_url": "https://github.com/chaunsin/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/product-photo-studio",
+      "name": "product-photo-studio",
+      "original_repository": "beatra-ai/ai-product-photography-skill",
+      "commit": "f06f3d7b37a29ef2e0b9ef5bae45302f34eb1535",
+      "path": "skills/product-photo-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-product-photography-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/production-audit",
+      "name": "production-audit",
+      "original_repository": "commitshow/production-audit",
+      "commit": "12c3bd37c6318a0f8b9b6fb075be2e1ab813f4a5",
+      "path": ".claude/skills/production-audit/SKILL.md",
+      "credit_url": "https://github.com/commitshow/production-audit"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/remote-gpu-trainer",
+      "name": "remote-gpu-trainer",
+      "original_repository": "Hanyuyuan6/remote-gpu-trainer",
+      "commit": "fe01c55c8bae1ccbfaf2ae7708cdca7c1fdaf785",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Hanyuyuan6/remote-gpu-trainer"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/sandbase-mcp",
+      "name": "sandbase-mcp",
+      "original_repository": "sandbaseai/cli",
+      "commit": "844c8b09e6944b31366885f5600eb29b8135a291",
+      "path": "skills/sandbase/SKILL.md",
+      "credit_url": "https://github.com/sandbaseai/cli"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/session-handoff",
+      "name": "session-handoff",
+      "original_repository": "alapha888/session-handoff-kit",
+      "commit": "0ce03c20669b668606c90ba49ebad80d6fbdcfe0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/alapha888/session-handoff-kit"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shark",
+      "name": "shark",
+      "original_repository": "alexyc9381/shark-skill",
+      "commit": "9800fb3b13be67a0ab49ea05d120c6a90b3e2b6d",
+      "path": "skills/shark/SKILL.md",
+      "credit_url": "https://github.com/alexyc9381/shark-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shopify-review-triage",
+      "name": "shopify-review-triage",
+      "original_repository": "alfredtech2026/shopify-app-review-brief",
+      "commit": "d0ba0611a6ee36af9fbff80452e6f31b1f04d2fa",
+      "path": "docs/skills/shopify-review-triage/SKILL.md",
+      "credit_url": "https://github.com/alfredtech2026/shopify-app-review-brief"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/since-cutoff",
+      "name": "since-cutoff",
+      "original_repository": "MohammadHijjawi97/since-cutoff",
+      "commit": "e13cf02e6b63caee81808f7933cc6fd80399a823",
+      "path": "skills/since-cutoff/SKILL.md",
+      "credit_url": "https://github.com/MohammadHijjawi97/since-cutoff"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/skill-issue",
+      "name": "skill-issue",
+      "original_repository": "mishanefedov/skill-issue",
+      "commit": "949282fa8cfa22283806057f0277b01698839836",
+      "path": "skills/skill-issue/SKILL.md",
+      "credit_url": "https://github.com/mishanefedov/skill-issue"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/skill-security-audit",
+      "name": "skill-security-audit",
+      "original_repository": "sandbaseai/awesome-workbuddy",
+      "commit": "fba16cc179f2c769f000ced28140d8d2b71b9fa7",
+      "path": "skills/skill-security-audit/SKILL.md",
+      "credit_url": "https://github.com/sandbaseai/awesome-workbuddy"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/slideops",
+      "name": "slideops",
+      "original_repository": "glukicov/slideops",
+      "commit": "824c3779671fc3bd05774d940693ab7409f9e377",
+      "path": "skills/slideops/SKILL.md",
+      "credit_url": "https://github.com/glukicov/slideops"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/solidping",
+      "name": "solidping",
+      "original_repository": "fclairamb/solidping-plugin",
+      "commit": "ba030a5167d6d6fd2b8c8d92bc6bb3378cffab87",
+      "path": "skills/solidping-monitoring/SKILL.md",
+      "credit_url": "https://github.com/fclairamb/solidping-plugin/tree/main/skills/solidping-monitoring"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/sql-sentinel",
+      "name": "sql-sentinel",
+      "original_repository": "takeaseatventure/sql-sentinel",
+      "commit": "71335dea347b9fd9c67c92ca1b302ae4f8a76435",
+      "path": "skills/sql-sentinel/SKILL.md",
+      "credit_url": "https://github.com/takeaseatventure/sql-sentinel"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/sshepherd",
+      "name": "sshepherd",
+      "original_repository": "Antheurus/sshepherd",
+      "commit": "492ae7b40da6965363ab0a8656be24326fa5a99b",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/Antheurus/sshepherd"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/suno-lyrics-to-song",
+      "name": "suno-lyrics-to-song",
+      "original_repository": "beatra-ai/lyrics-to-song-skill",
+      "commit": "900f15a7e7e03b3d1f53180d945464a9109a3085",
+      "path": "skills/suno-lyrics-to-song/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/lyrics-to-song-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/takeout-coupon",
+      "name": "takeout-coupon",
+      "original_repository": "moooai/takeout-coupon",
+      "commit": "a4f393b891c8d7d0d81c53580651c570cd3d4e6c",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/takeout-coupon"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/talivia-agent-kit",
+      "name": "talivia-agent-kit",
+      "original_repository": "talivia-group/agent",
+      "commit": "f4ed3fc6b554ad5183a57ae13ca2a9bd5162c12a",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/talivia-group/agent"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/talking-avatar-video",
+      "name": "talking-avatar-video",
+      "original_repository": "beatra-ai/talking-avatar-video-skill",
+      "commit": "5d65df6ca3a201c4094138e9a6d88043f1edf130",
+      "path": "skills/talking-avatar-video/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/talking-avatar-video-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/tastegate",
+      "name": "tastegate",
+      "original_repository": "stas4000/tastegate",
+      "commit": "1bee778fb4550a8fb76ed1941644c81781f6a1af",
+      "path": "tastegate/SKILL.md",
+      "credit_url": "https://github.com/stas4000/tastegate"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/time-ledger",
+      "name": "time-ledger",
+      "original_repository": "cruisekkk/time-ledger",
+      "commit": "f18ae661a065d87c8f117e86aec0195b3139bdd0",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/cruisekkk/time-ledger"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/trading-ledger",
+      "name": "trading-ledger",
+      "original_repository": "cruisekkk/trading-ledger",
+      "commit": "990512836f13020a61960ccae9a47c51e7dd822e",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/cruisekkk/trading-ledger"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/trip-coupon",
+      "name": "trip-coupon",
+      "original_repository": "moooai/trip-coupon",
+      "commit": "ca075a7bcf98d867630d29e5e6ebe418892bab26",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/moooai/trip-coupon"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/using-agent-skills",
+      "name": "using-agent-skills",
+      "original_repository": "addyosmani/agent-skills",
+      "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "path": "skills/using-agent-skills/SKILL.md",
+      "credit_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/uxkin-research",
+      "name": "uxkin-research",
+      "original_repository": "uxkin/agent",
+      "commit": "eef108f538e965ce8c74f8a5616a32c59f65a405",
+      "path": "skills/uxkin-research/SKILL.md",
+      "credit_url": "https://github.com/uxkin/agent"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/viral-video-teardown-remake",
+      "name": "viral-video-teardown-remake",
+      "original_repository": "beatra-ai/viral-video-remake-skill",
+      "commit": "6980d99f261749d903ecc743a6653c736873d45a",
+      "path": "skills/viral-video-teardown-remake/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/viral-video-remake-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/voice-cloning-studio",
+      "name": "voice-cloning-studio",
+      "original_repository": "beatra-ai/ai-voice-cloning-skill",
+      "commit": "739cb27b0179630834dca67a879aee6360f308c9",
+      "path": "skills/voice-cloning-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-voice-cloning-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/voiceover-narration-studio",
+      "name": "voiceover-narration-studio",
+      "original_repository": "beatra-ai/ai-voiceover-generator-skill",
+      "commit": "9bd7fdbfbeec99194762ccfc433100fbffade3bd",
+      "path": "skills/voiceover-narration-studio/SKILL.md",
+      "credit_url": "https://github.com/beatra-ai/ai-voiceover-generator-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/vscode-extension-guide-en",
+      "name": "vscode-extension-guide-en",
+      "original_repository": "lewiswigmore/agent-skills",
+      "commit": "3f72f3b284e46a4da63035ca22c40c240affad8d",
+      "path": "skills/vscode-extension-guide-en/SKILL.md",
+      "credit_url": "https://github.com/lewiswigmore/agent-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/why-did-this-post-flop",
+      "name": "why-did-this-post-flop",
+      "original_repository": "prateeks367/voicemoat-skills",
+      "commit": "7623a3effbee426554e8c5df55e77f3479fd0ec0",
+      "path": "skills/why-did-this-post-flop/SKILL.md",
+      "credit_url": "https://github.com/prateeks367/voicemoat-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/wiki-yylo",
+      "name": "wiki-yylo",
+      "original_repository": "yylo-dev/yylo-skills",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "path": "skills/wiki-yylo/SKILL.md",
+      "credit_url": "https://github.com/yylo-dev/yylo-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/workflow-yylo",
+      "name": "workflow-yylo",
+      "original_repository": "yylo-dev/yylo-skills",
+      "commit": "035023f66153d032d08da9203eb15f0cdaedb616",
+      "path": "skills/workflow-yylo/SKILL.md",
+      "credit_url": "https://github.com/yylo-dev/yylo-skills"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/yao-meta-skill",
+      "name": "yao-meta-skill",
+      "original_repository": "yaojingang/yao-meta-skill",
+      "commit": "f5d8f681372edae1915991e2de0c23dc306dd30f",
+      "path": "SKILL.md",
+      "credit_url": "https://github.com/yaojingang/yao-meta-skill"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/youtube-transcript-skills",
+      "name": "youtube-transcript-skills",
+      "original_repository": "tubeagentkit/youtube-transcript-skills",
+      "commit": "97d5ad332dd3872edfb6beddda5f8587a4bfc863",
+      "path": "skills/youtube-transcript/SKILL.md",
+      "credit_url": "https://github.com/tubeagentkit/youtube-transcript-skills"
+    }
+  ],
+  "unresolved_credits": [
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agentic-test-audit",
+      "credited_repository": "timini/agentic-verification",
+      "credit_url": "https://github.com/timini/agentic-verification",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agentic-verify",
+      "credited_repository": "timini/agentic-verification",
+      "credit_url": "https://github.com/timini/agentic-verification",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/agy-auto",
+      "credited_repository": "onkarbadve/agy-auto",
+      "credit_url": "https://github.com/onkarbadve/agy-auto",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/altorank",
+      "credited_repository": "AltoRank/altorank",
+      "credit_url": "https://github.com/AltoRank/altorank",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/anti-ui-slop",
+      "credited_repository": "uizze/uizze",
+      "credit_url": "https://github.com/uizze/uizze",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/atlas-cloud-media",
+      "credited_repository": null,
+      "credit_url": null,
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/busabase",
+      "credited_repository": "busabase/skills",
+      "credit_url": "https://github.com/busabase/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ckw-design",
+      "credited_repository": "connerkward/ckw-design-skill",
+      "credit_url": "https://github.com/connerkward/ckw-design-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/curlshot",
+      "credited_repository": "SergiuPogor/curlshot-mcp",
+      "credit_url": "https://github.com/SergiuPogor/curlshot-mcp/tree/main/skills/curlshot",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/daily-gift",
+      "credited_repository": "openclaw/skills",
+      "credit_url": "https://github.com/openclaw/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/five-axis-code-review",
+      "credited_repository": "alapha888/agent-skills-en",
+      "credit_url": "https://github.com/alapha888/agent-skills-en",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/helium-mcp",
+      "credited_repository": "connerlambden/helium-mcp",
+      "credit_url": "https://github.com/connerlambden/helium-mcp",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lemmaly",
+      "credited_repository": "morsechimwai/lemmaly",
+      "credit_url": "https://github.com/morsechimwai/lemmaly",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkdigest-social-link-reader",
+      "credited_repository": "jcaiagent7143-ui/linkdigest-mcp",
+      "credit_url": "https://github.com/jcaiagent7143-ui/linkdigest-mcp",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkedin-content-generator",
+      "credited_repository": "sarveshtalele/linkedin-content-skill",
+      "credit_url": "https://github.com/sarveshtalele/linkedin-content-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/linkedin-post-writer",
+      "credited_repository": "sergebulaev/linkedin-skills",
+      "credit_url": "https://github.com/sergebulaev/linkedin-skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lintlang-audit",
+      "credited_repository": "hermes-labs-ai/lintlang",
+      "credit_url": "https://github.com/hermes-labs-ai/lintlang",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/lovable-cleanup",
+      "credited_repository": "whoisabhishekadhikari/lovable-cleanup",
+      "credit_url": "https://github.com/whoisabhishekadhikari/lovable-cleanup",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/mirrord",
+      "credited_repository": "metalbear-co/skills",
+      "credit_url": "https://github.com/metalbear-co/skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/nika",
+      "credited_repository": "supernovae-st/nika-agents",
+      "credit_url": "https://github.com/supernovae-st/nika-agents",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/nsfw-ai-spicyapi",
+      "credited_repository": "Spicy-API/nsfw-ai-skill",
+      "credit_url": "https://github.com/Spicy-API/nsfw-ai-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/ontoly-software-graph",
+      "credited_repository": "0xsarwagya/ontoly",
+      "credit_url": "https://github.com/0xsarwagya/ontoly",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/pptx-deck-creation",
+      "credited_repository": "kimtth/agent-pptify-kit",
+      "credit_url": "https://github.com/kimtth/agent-pptify-kit",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/pre-ship-gate",
+      "credited_repository": "Sharrmavishal/operating-kit",
+      "credit_url": "https://github.com/Sharrmavishal/operating-kit",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/recsys-pipeline-architect",
+      "credited_repository": "mturac/recsys-pipeline-architect",
+      "credit_url": "https://github.com/mturac/recsys-pipeline-architect",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/riffkit",
+      "credited_repository": "riffkit/skill",
+      "credit_url": "https://github.com/riffkit/skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/scarf-single-cell",
+      "credited_repository": "NygenAnalytics/scarf",
+      "credit_url": "https://github.com/NygenAnalytics/scarf",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/screenstudio-alt",
+      "credited_repository": "connerkward/screenstudio-alternative-skill",
+      "credit_url": "https://github.com/connerkward/screenstudio-alternative-skill",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/seo-drift",
+      "credited_repository": "nowork-studio/NotFair",
+      "credit_url": "https://github.com/nowork-studio/NotFair",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/shipvela-publish",
+      "credited_repository": "stefanautomateed/shipvela-codex",
+      "credit_url": "https://github.com/stefanautomateed/shipvela-codex",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/system-prompt-lookup",
+      "credited_repository": "Continuum-AI-Corp/OrcaPromptVault",
+      "credit_url": "https://github.com/Continuum-AI-Corp/OrcaPromptVault",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/testdriver-e2e-testing",
+      "credited_repository": "testdriverai/testdriverai",
+      "credit_url": "https://github.com/testdriverai/testdriverai",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/tree-ring-memory",
+      "credited_repository": "TerminallyLazy/Tree-Ring-Memory",
+      "credit_url": "https://github.com/TerminallyLazy/Tree-Ring-Memory",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/unship",
+      "credited_repository": "mbenhard/unship",
+      "credit_url": "https://github.com/mbenhard/unship",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/us-property-data",
+      "credited_repository": "ZeroPointRepo/zillow-skills",
+      "credit_url": "https://github.com/ZeroPointRepo/zillow-skills",
+      "status": "source_file_unresolved"
+    },
+    {
+      "old_id": "sickn33/agentic-awesome-skills/youtube-full",
+      "credited_repository": "ZeroPointRepo/youtube-skills",
+      "credit_url": "https://github.com/ZeroPointRepo/youtube-skills",
+      "status": "source_file_unresolved"
+    }
+  ]
+}
