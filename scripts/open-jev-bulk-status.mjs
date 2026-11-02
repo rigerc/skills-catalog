@@ -32,10 +32,6 @@ export function summarize({source,results,prior={completed_batches:0},accepted=0
     updated_at:now,status:reason},
     should_dispatch,should_open_pr:!should_dispatch};
 }
-function writeOutput(name,value){
-  if(process.env.GITHUB_OUTPUT)import('node:fs').then(({appendFileSync})=>
-    appendFileSync(process.env.GITHUB_OUTPUT,name+'='+value+'\n'));
-}
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  try {
   const a=args(process.argv.slice(2)),p=resolve(ROOT,PROGRESS_PATH);
