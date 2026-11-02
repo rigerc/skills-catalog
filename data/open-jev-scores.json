@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T02:22:28Z",
+  "generated_at": "2026-11-02T02:41:01Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -15687,6 +15687,2566 @@
         "context_efficiency": {
           "score": 5,
           "confidence": 0.2771,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-dls",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-dls/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "794206e9811b3145cbc10cd82e50a97e506be5b15dceeeeb2b38064fbf11e036",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:23:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2623,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3752,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3014,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3094,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2728,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "926574f803227d95c9761334f7d92ecefbecb7b45cc3064912152a4806002272",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:23:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2875,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3765,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2841,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3706,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2854,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-navigation-v6",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-navigation-v6/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d7a9486e8b32ae533506b0d88626e14da6029239a6d631577ccced4562d8619e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:23:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.275,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3842,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2821,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3277,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2837,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-notifications",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-notifications/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8adb53e180f23f0ab2435e383958b748d7102fed333d72c9b98fd48c71b26207",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:23:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2601,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3956,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3113,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2895,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2934,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a61753697ec2632d050b457669e78a57997e326112f30481eaa53a78d4447eb6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:24:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3185,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3734,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2859,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2762,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2811,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-platform-specific",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-platform-specific/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d18edebc109775f4bccdf189a6afe56fb0de5c1442feeb10fc32c181e7d30040",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:24:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2856,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3918,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3021,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3644,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2748,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "73a51a43fa426389bd2aea9447ff310c6ceffb3a4d37b240ef89a8f29ba7e0d1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:24:57Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3112,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3509,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2817,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3269,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2846,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "578f3de7747150a1ca244de7f0e008286e05c4353e53bc673a97b4c396fbbd5b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:24:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2896,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3906,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2476,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3795,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3158,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-styling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-styling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8411d5d633547c03dd8ba81d1f15bda9f86283393861dc2d06b92f194094f35f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:25:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2688,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3641,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3275,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3493,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2934,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "01d099b7182e7e416d7b87bd6707b4382f55e3be53cfad1e49155543f4463627",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:25:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2859,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5104,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2716,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2916,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2859,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0014ee2bb65de962f58692d30d733921fa5c127dbd56c788195837740919a835",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:26:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3127,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4106,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2987,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3681,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2908,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f158055ab6b54fea2f55df41840bd5850179177490262a7b7b388014ea80c7a9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:26:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3388,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3722,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2792,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.283,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c367b628d270fe17fcb492aab086af1c85dea605eabedda87a788c7acb73f053",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:26:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2249,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3183,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2615,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3034,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2876,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "28f99f2a5522590364786a80b0e7c4e3bda1edcf5d0e6efedd6b2bd7d046b708",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:26:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2705,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4058,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2588,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.254,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3504,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "96ad463a75e2f0543dbc66878ec88b034886e0845c4b83fc1e38d9b158448fae",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:27:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2452,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3924,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2593,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3696,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2882,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-typescript",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-typescript/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "24405286b5fe5bf6d88ec598ec73d26b36b511559dd18e65e2449ade28ff1fee",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:27:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2854,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3578,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2531,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3316,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2684,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-api-design",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-api-design/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "026877ad01a76c2ebdbb5ba8089b25f0fa42ac8aa8d2a8ac4b54803db64d2092",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:27:42Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2768,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4392,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2815,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3604,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2841,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "04d62dc0ecda174f7579d61a0cd29b54269b43f76bcbf998b6f48b11987161a8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:27:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2634,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3502,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2652,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3213,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3402,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6b474be6cfa299b55f0104c8251f2de2ba5f2a756ccf2619956cfbe086f90cb3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:28:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.295,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4488,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2653,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2794,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3031,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-data-access",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-data-access/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "59125bf15ebec84c944d31f18921698690a30a1f31aec9a569d40266409f0e51",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:28:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3106,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3636,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2625,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3755,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2834,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-deployment/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "196c072031dbc0c9cb1c9e0cfaeb9bcde0a178d8d31fcacb964490d5afca92f3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:28:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2967,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3497,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2679,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3719,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2673,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-microservices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-microservices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "712e72cfe3e6385bc0959e9d993027b05343f4c1cbbdb8ac928b60eadaaa4201",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:28:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2793,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3746,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2931,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3608,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2649,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-observability",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-observability/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c119635ea1eb7627d464b6a0de9b1f77ec38dc7a43d170b819a844252d201497",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:29:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2767,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4225,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.266,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3562,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2571,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-scheduling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-scheduling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "26caadb8d331d8442c09478ecca117b1226a63f21401199b41e503ab9f054c60",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:29:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2823,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4607,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2906,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3597,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2671,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b629eb3e0cad8bb4aac975623ca36109f66d0ac6c8b5fcd0e63fb436e574e5ca",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:29:57Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2941,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3782,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3165,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3319,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3002,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/spring-boot-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/spring-boot/spring-boot-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8114d61e400a4087a6d02bf993de0120e268609aff74630052b153074a39f139",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:29:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2968,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4397,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2411,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2734,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2815,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "bd5f0b8a891fe572929d565cfc7b5358bd35f97752a1750298de24eda101e140",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:30:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5069,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2861,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.301,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2735,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b23a94674c90ebcf9035c9ae585a3ed90be0f415f56036024c6a471f56a63309",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:30:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.31,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.465,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2864,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3811,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2993,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "81806e60e87533a77e9e1111109327c3661e1afce4409d2de6453a1eb0c73575",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:31:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2782,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4066,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2676,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3387,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2606,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5dff0167841d11daf8840bf992b7a322a4366d8637be8d427d34c87b6a5a51c3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:31:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3129,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3547,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2916,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3422,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2803,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-memory-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-memory-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6f225845b74484922990294977ae7a62f959887a982745c5e9e0eb8e1cf3fa12",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:31:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2988,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4844,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3383,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3448,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2775,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-swiftui",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-swiftui/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ea59ffdf3646dfb7f45291ea373d82b3f7e8a9ed61017b2fd855cc86807bad70",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:31:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2925,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4394,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2424,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3093,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2859,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "359f7a68c924afccc823893385f7f0bb733d68519a3769d99e9f7190d0aefab7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:32:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2514,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4535,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2586,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2874,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3132,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/swift-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/swift/swift-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a9400712b42be2a714af147eb90ec40b96d9b095c360f5427e05488987ff2fd2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:32:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2912,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.336,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3257,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2743,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/typescript-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/typescript/typescript-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ef35ad528a09395e0f439e0e2fc70e69f9b1da7732149e2d0e234be23d500b0a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:32:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3258,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4138,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2809,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3407,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.248,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/typescript-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/typescript/typescript-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5dbacb158389d8c88a1239324c10cf84cbb688f7ca88f3920671d25d71f91866",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:32:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2561,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4622,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2599,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3194,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3007,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/typescript-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/typescript/typescript-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "48dc0167fcdc5099ebe6f3d971fdede79be8ee5f1cf1edad73b2babd5fe32be3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:33:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2499,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4062,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2662,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3464,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2877,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/typescript-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/typescript/typescript-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f388172d1e7564bea69a69d51bc41897a23b6ae319856e87f128349467dae30e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:33:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3474,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2456,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3277,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2679,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "honojs/skills/hono",
+      "status": "evaluated",
+      "source": {
+        "repository": "honojs/skills",
+        "path": "skills/hono/SKILL.md",
+        "commit": "e54ce51f6effaeb574ebd2629e89e086e14a2db3"
+      },
+      "input_sha256": "bd09f39234ff6004b44788991b1208027b2ae132a6cc306a58d7cca087fb8c6c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:33:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.2377,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.381,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2665,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2796,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3426,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3
+    },
+    {
+      "id": "hoodini/ai-agents-skills/mongodb",
+      "status": "evaluated",
+      "source": {
+        "repository": "hoodini/ai-agents-skills",
+        "path": "skills/mongodb/SKILL.md",
+        "commit": "20aebb8eef3801e369829efbdb8ec23d0900c0a8"
+      },
+      "input_sha256": "8942850b5c246715d01fcb50d98bc3ae6b3fb66f3b02264f58d633b96c025f78",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:33:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2812,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4305,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2507,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2814,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.261,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "hyf0/vue-skills/vue-debug-guides",
+      "status": "evaluated",
+      "source": {
+        "repository": "hyf0/vue-skills",
+        "path": "skills/vue-debug-guides/SKILL.md",
+        "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78"
+      },
+      "input_sha256": "7e16c92d2a221fbd99c44456ada0c32cc4606b1f49a352b10e0ebdc046d50f8f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:34:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.309,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4094,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3163,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3316,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2546,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "igmarin/rails-agent-skills/apply-stack-conventions",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/apply-stack-conventions/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "01dc7c66d68947bff81cb03eb396941c2b5ade5a5c25efcd89b82079311c5efa",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:34:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3152,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4006,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2491,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2975,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3405,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "igmarin/rails-agent-skills/implement-background-job",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/implement-background-job/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "0e2a71311bb3e2762ab906429dab81a461efd999858ec04ea724631518ced169",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:35:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2484,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4594,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.261,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3105,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2766,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "igmarin/rails-agent-skills/plan-tests",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/plan-tests/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "994d977f8b1e1da9f6f5cdfb26074e4105f42825d7c27f0ff3a2c6d46eb8d9ad",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:35:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.318,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4528,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2475,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4209,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3008,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "igmarin/rails-agent-skills/review-migration",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/review-migration/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "22a7b361f3d6cfb3b53d7d65c6f0478efa5a7caba96138bfa3bb43ca647b7ce1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:35:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3449,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4229,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.265,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3154,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3193,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "igmarin/rails-agent-skills/security-check",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/security-check/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "f78a31a77b02c7d9993ee409e01c27b67987ec3a30545c76970261920dfa59e1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:35:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3289,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4034,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2371,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2715,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3343,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "igmarin/rails-agent-skills/test-service",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/rails-agent-skills",
+        "path": "skills/test-service/SKILL.md",
+        "commit": "03195c52ee7760f1713df6c099181dd9764478ac"
+      },
+      "input_sha256": "3488165b70c93deadecf72288496d2f46a059da7b20083cffbe133f20d210275",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:36:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3237,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4453,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2918,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3392,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2526,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "igmarin/ruby-core-skills/triage-bug",
+      "status": "evaluated",
+      "source": {
+        "repository": "igmarin/ruby-core-skills",
+        "path": "skills/triage-bug/SKILL.md",
+        "commit": "01b4c2080b10f0979e743dddef10817f4e931b57"
+      },
+      "input_sha256": "731e27a3579deec68ba33381474438bdfb222a4d4f759f70a09147707f1a95da",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:36:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2522,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.472,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2563,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2527,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "inferen-sh/skills/elevenlabs-music",
+      "status": "evaluated",
+      "source": {
+        "repository": "inferen-sh/skills",
+        "path": "tools/audio/elevenlabs-music/SKILL.md",
+        "commit": "0cbf91c26ada28702c79962406286f0c14292150"
+      },
+      "input_sha256": "95ddae603fb84a118a6301e5be298102c185cc80a24a72152a09b44fbc5a5774",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:36:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3146,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4118,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2673,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3913,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3316,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "inferen-sh/skills/elevenlabs-tts",
+      "status": "evaluated",
+      "source": {
+        "repository": "inferen-sh/skills",
+        "path": "tools/audio/elevenlabs-tts/SKILL.md",
+        "commit": "0cbf91c26ada28702c79962406286f0c14292150"
+      },
+      "input_sha256": "3ab0d328926e5ae0778db91c177c9c05cd2ca6edd3a70d654e91bb7bc649c64a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:36:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2342,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4247,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2801,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2786,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "inferen-sh/skills/python-executor",
+      "status": "evaluated",
+      "source": {
+        "repository": "inferen-sh/skills",
+        "path": "tools/utilities/python-executor/SKILL.md",
+        "commit": "0cbf91c26ada28702c79962406286f0c14292150"
+      },
+      "input_sha256": "07b9c819e9fc35546b8660b4b05a139a0b370711ab655436f329c1aebad97674",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:37:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2836,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4049,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2679,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3466,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2813,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "instantdb/skills/instantdb",
+      "status": "evaluated",
+      "source": {
+        "repository": "instantdb/skills",
+        "path": "skills/instantdb/SKILL.md",
+        "commit": "b80dea74f99ffb7a8d0726805d63ec97a1e4b5cd"
+      },
+      "input_sha256": "be6314cd9fb7c919b5f2b4babf7626857fa9dd788ef4e806235e82a27dc964ff",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:37:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3247,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.426,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2942,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3482,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3317,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/angular-architect",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/angular-architect/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "a1cef4522ef9b1c26e8202879baf7d2df284e6df3dc736e90739d1fca195657a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:37:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3182,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4951,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2652,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2969,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2851,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "jeffallan/claude-skills/cpp-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "jeffallan/claude-skills",
+        "path": "skills/cpp-pro/SKILL.md",
+        "commit": "190e05a380b624187f5770451e1f41b9187cb63c"
+      },
+      "input_sha256": "53017f862c526df6080210a1a00e6678c2cd5382b5d1a51026bf3b0bde7f7ed2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:38:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2703,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4637,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2843,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3698,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3325,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Jeffallan/claude-skills/csharp-developer",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/csharp-developer/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "31b274ba70980b4dbf69ccfb93f96c470ebf7201e9b050af8caf516212462d7a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:38:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2747,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3691,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2567,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3433,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3366,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/django-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/django-expert/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "0107de33b8bfbf91ba64e09be529c9bf176883cfd89c534065eefba17cd631ae",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:38:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2992,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4047,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2904,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3452,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3372,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/dotnet-core-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/dotnet-core-expert/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "97dd528d8986a25812813baa5c6cc06e2d6eab0055907e41ec01411bf74fe87e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:39:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3775,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4788,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.251,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3568,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3171,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/fastapi-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/fastapi-expert/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "aec3e59f351cdbafe1260dd65bfb23480918d2df1357b7fd7a9b7a32855e08d9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:39:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.34,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3864,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2862,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.319,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2788,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "jeffallan/claude-skills/flutter-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "jeffallan/claude-skills",
+        "path": "skills/flutter-expert/SKILL.md",
+        "commit": "190e05a380b624187f5770451e1f41b9187cb63c"
+      },
+      "input_sha256": "79b80928e5220637cf0a99e070f167dd2f3a6fa6a9bc6372875d3216a5199e9c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:39:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3685,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4584,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2911,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2886,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3368,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/golang-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/golang-pro/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "056e7141e481d24656202c80ca1c86c6f971b663d594dbfef17bb6e1faabdca2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:39:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3115,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.425,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3409,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2758,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/graphql-architect",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/graphql-architect/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "48f2b8c386de38961810bc9849fdf8cef6d82ee1f68d0f13554e4efec4c704fe",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:40:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3757,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4097,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2846,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.336,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3072,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/java-architect",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/java-architect/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "6f229adf2c6042a7e762f82d372e828547cf1876e6a9a6451ee4b81a25cb468c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:40:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3657,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3956,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2753,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3635,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2758,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/kotlin-specialist",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/kotlin-specialist/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "aad72ccc56c540cfc96860267fda368b10f5fb537ff7c8899fe5701a5ae63e48",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:40:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.332,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4085,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2784,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3432,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3337,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Jeffallan/claude-skills/kubernetes-specialist",
+      "status": "evaluated",
+      "source": {
+        "repository": "Jeffallan/claude-skills",
+        "path": "skills/kubernetes-specialist/SKILL.md",
+        "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3"
+      },
+      "input_sha256": "4fa03569789141e52e6cd4d42922c84c7ef2dc299de5fc3aea4ceed506140d56",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:40:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2417,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3768,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2699,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3196,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2829,
           "mode": "model"
         }
       },
