@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T04:30:38Z",
+  "generated_at": "2026-11-02T04:38:46Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -33607,6 +33607,1086 @@
         "context_efficiency": {
           "score": 5,
           "confidence": 0.3129,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "vercel-labs/agent-skills/react-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "vercel-labs/agent-skills",
+        "path": "skills/react-best-practices/SKILL.md",
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+      },
+      "input_sha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:31:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2971,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5102,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2596,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2879,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2884,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "vercel-labs/json-render/react-three-fiber",
+      "status": "evaluated",
+      "source": {
+        "repository": "vercel-labs/json-render",
+        "path": "skills/react-three-fiber/SKILL.md",
+        "commit": "c6f73d7d5f69acb80fc89faefd12c0865c8603d1"
+      },
+      "input_sha256": "f1120aeaf7cf695838b4daa37879403b007014babaf7ec3fed1eaafc7fb61593",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:31:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2891,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3506,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2512,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2977,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3067,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "vercel/ai/use-ai-sdk",
+      "status": "evaluated",
+      "source": {
+        "repository": "vercel/ai",
+        "path": "skills/use-ai-sdk/SKILL.md",
+        "commit": "50da4c5b04cf9fd39c51d60808127c72b2adfd80"
+      },
+      "input_sha256": "6bc642319c4ecbf9fbd59cef783b02174d4bd663c010703a6a6b80bda855b32d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:31:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2418,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4311,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2646,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3164,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "vercel/next.js/next-cache-components-adoption",
+      "status": "evaluated",
+      "source": {
+        "repository": "vercel/next.js",
+        "path": "skills/next-cache-components-adoption/SKILL.md",
+        "commit": "7356b0bcb5f22371c15dcb413afe5fb28412f52d"
+      },
+      "input_sha256": "20bd3022e370fff23f3c3956c7f02e79edcee451a6533aa8d98f7e0fce40e35e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:32:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2934,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4664,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2742,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2914,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2957,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "vercel/turborepo/turborepo",
+      "status": "evaluated",
+      "source": {
+        "repository": "vercel/turborepo",
+        "path": "skills/turborepo/SKILL.md",
+        "commit": "edace46216977186c109f26c9dd6137179d4a704"
+      },
+      "input_sha256": "e475e520f1822f0de4ca5fbbfd37906949db67d35b038f2b8a76ef4c95c13c53",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:32:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2768,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3548,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3014,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3155,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3635,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "vintasoftware/django-ai-plugins/django-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "vintasoftware/django-ai-plugins",
+        "path": "skills/django-expert/SKILL.md",
+        "commit": "b8af2688d994747666e6a793d441365807d6772f"
+      },
+      "input_sha256": "a4919acb26157e182b2d5da524f85efa8c837eaeff3596cbeadf8ec6b61702bb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:32:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3125,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3943,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.271,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3125,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2786,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "vuejs-ai/skills/vue-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "vuejs-ai/skills",
+        "path": "skills/vue-best-practices/SKILL.md",
+        "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78"
+      },
+      "input_sha256": "3a601da4b2cc46b1712fcedb1ce434f0c263e29c2a8193ccf84dcbd0b7c03378",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:33:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3074,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4528,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2324,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3373,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2978,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "vuejs-ai/skills/vue-pinia-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "vuejs-ai/skills",
+        "path": "skills/vue-pinia-best-practices/SKILL.md",
+        "commit": "198f0cd8f7f9c0a3d9b566ccc16de6677519ee78"
+      },
+      "input_sha256": "70c5fae1e97d1df1d7a1207ad1df606d0c7375855f0c1cb0c9c94351931ab862",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:33:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2922,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3538,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3358,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "webpro/skills/configure-knip",
+      "status": "evaluated",
+      "source": {
+        "repository": "webpro/skills",
+        "path": "skills/configure-knip/SKILL.md",
+        "commit": "14c3bf406562bd4bcf0035315a116be57710b017"
+      },
+      "input_sha256": "078e3dffe9ec5f953c333c32f8dba4bcaab4b86cae0b7c96939b0fddec1c8e7c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:33:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2933,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.43,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 1,
+          "confidence": 0.2383,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3055,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3149,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "wispbit-ai/skills/sqlalchemy-alembic-expert-best-practices-code-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "wispbit-ai/skills",
+        "path": "skills/sqlalchemy-alembic-expert-best-practices-code-review/SKILL.md",
+        "commit": "8b2c7d0ceca0204634dd308970629c4cd4a5a05f"
+      },
+      "input_sha256": "9f23bc2d6d666cab46c35660454cd3443742dad662ef80a4c95d147f3a19a648",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:33:36Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3513,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4293,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.28,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3274,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2637,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wordpress-router",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wordpress-router/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "691647fe83b870e2da0a937645459dd152a42c29383763f651ab5f6d8beae4f4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:34:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3316,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4099,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2476,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2852,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4644,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wp-block-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-block-development/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "d0db3166a84e2efeaa56a697f2b9879be96893bb8dc24f45438f444503699b36",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:34:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3017,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4421,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2992,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2879,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4477,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wp-block-themes",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-block-themes/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "ae92ea0d67010c0e68a798dfd9ca8d196e66fa9602414bfa7fcca00dc1a95fa5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:34:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2344,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4157,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2618,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3113,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3032,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "wordpress/agent-skills/wp-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-performance/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "778eeed6d38c8584a04556cb4d6083369d83085a580dc2c7fac7c3de2409635d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:34:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3151,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4729,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2521,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2797,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2953,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "wordpress/agent-skills/wp-plugin-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-plugin-development/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "a9b8af653897ac150e52de1430ad0c51cefe19553ac932c48cfc54639270c5bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:35:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2935,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4699,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2788,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.315,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2747,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wp-project-triage",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-project-triage/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "6475b01679576ded3113a5d12f08b789c1def02249f0fcdd23d119593e72ce5c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:35:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3187,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.422,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.235,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2763,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3449,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wp-rest-api",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-rest-api/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "46c17297230f9f8f0f43f273277dad4d2fd4bee9849ae95cdcce8ae4cc04bb5b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:35:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3645,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.517,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2606,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3122,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2666,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wordpress/agent-skills/wp-wpcli-and-ops",
+      "status": "evaluated",
+      "source": {
+        "repository": "wordpress/agent-skills",
+        "path": "skills/wp-wpcli-and-ops/SKILL.md",
+        "commit": "eff3785fc28c4380d172094518c66a6a997c95d4"
+      },
+      "input_sha256": "0d3e3524058326ff05bc47acb104a5a12035a155968bd685549b59f992ec3045",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:35:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3035,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4519,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2994,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2991,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2861,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wshobson/agents/bash-defensive-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/shell-scripting/skills/bash-defensive-patterns/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "741b42d1fa3167f2131a17f3e0fe891e93be4fc87aa3c19e1de5fd26d763f711",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:36:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2823,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4297,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2611,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3297,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.287,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wshobson/agents/fastapi-templates",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/api-scaffolding/skills/fastapi-templates/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "dba8e1287ae03591198ea0ea638bb9862ec3c7b5cbdeb1163368f3ebc9487cb6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:36:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.258,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3587,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2533,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2846,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2848,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wshobson/agents/nodejs-backend-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/javascript-typescript/skills/nodejs-backend-patterns/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "d52e1150accdc27e916f0962c9ba0872fcbe8a7d849d905dcc795c0f9d05aeae",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:36:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2974,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4437,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3328,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.332,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2955,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "wshobson/agents/python-background-jobs",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/python-development/skills/python-background-jobs/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "ea99e3f1d4df0e0c7260e3d6436003ea980c55d8b1ad6950ba63048491eb531e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:36:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2983,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4304,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2662,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3167,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2958,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "wshobson/agents/python-testing-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/python-development/skills/python-testing-patterns/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "a1020718f31629c2a5b20731cad1804dbb81b18800495c5cebdf16e6cac9c175",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:37:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2673,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4292,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2713,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3648,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2975,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "wshobson/agents/terraform-module-library",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/cloud-infrastructure/skills/terraform-module-library/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "4bf215264e4e485a47a57a72f56d0da6a3e207ec3160535f838f5b1d4ba771b3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:37:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2494,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.388,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.26,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3094,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2944,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "wshobson/agents/typescript-advanced-types",
+      "status": "evaluated",
+      "source": {
+        "repository": "wshobson/agents",
+        "path": "plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06"
+      },
+      "input_sha256": "c32101c65134d94ef1a3305ef486020b57be6408f97ed952c9c560e3fe04188d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:38:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3095,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4457,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2469,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3016,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2793,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "yonesuke/skills/polars",
+      "status": "evaluated",
+      "source": {
+        "repository": "yonesuke/skills",
+        "path": "polars/SKILL.md",
+        "commit": "1e23d345446ea8a21771192bb1b3b19a9842a97f"
+      },
+      "input_sha256": "665c43d48e055808aeae82e3c4668025249eeb20cf237f104417df5aff30913e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:38:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2841,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3502,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.269,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3059,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3258,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "zxkane/aws-skills/aws-sst-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "zxkane/aws-skills",
+        "path": "plugins/aws-iac/skills/aws-sst-development/SKILL.md",
+        "commit": "68530c6f296ccd2f5e99c79782f3e0fbf962c51a"
+      },
+      "input_sha256": "04a576d60b9da1899418ec0eb32a34d738120ca8d1ced2f74c6b843471a003fd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:38:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.283,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4796,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2305,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3125,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3264,
           "mode": "model"
         }
       },
