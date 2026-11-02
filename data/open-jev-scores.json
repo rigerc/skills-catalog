@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T01:08:31Z",
+  "generated_at": "2026-11-02T01:27:12Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -5451,6 +5451,2566 @@
         }
       },
       "overall_score": 4.4
+    },
+    {
+      "id": "ejirocodes/agent-skills/svelte5-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "ejirocodes/agent-skills",
+        "path": "svelte/skills/svelte5-best-practices/SKILL.md",
+        "commit": "6e805e4cc8a4378444c791d4a08e304347152bd0"
+      },
+      "input_sha256": "eeb2be3e32085d47ad5938afd6e96b2a4f9fd9e073ca27ec3f6df32371689b7c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:09:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3095,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4012,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2823,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2952,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2483,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "elysiajs/skills/elysia",
+      "status": "evaluated",
+      "source": {
+        "repository": "elysiajs/skills",
+        "path": "elysia/SKILL.md",
+        "commit": "1466d85aa4f2a0fec91f71311e65bbfa91aa7dc5"
+      },
+      "input_sha256": "b96c53efb2edbe63b7f34675e499ba165311d992f24dd3bbe8ac40a79fec411b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:09:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3415,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4601,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2553,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2883,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3047,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "expo/skills/eas-app-stores",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/eas-app-stores/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "1c7ee5a20438b30566321d4605baa9f813da8c7f846cc524a1ef5bfc4651aecc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:09:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3274,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3867,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2875,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3372,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2515,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "expo/skills/eas-hosting",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/eas-hosting/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "be26ce05ecd047a07faa3a716daccc9839b31563246461ec19a60591bd62be72",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:10:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3199,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4531,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2668,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3077,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3039,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "expo/skills/eas-workflows",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/eas-workflows/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "d5a31e9b4f228c74c54c79d2e377c9a72e907267ebbe4ba3d75037ae271121cd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:10:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3599,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4318,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2593,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3155,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2751,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "expo/skills/expo-data-fetching",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/expo-data-fetching/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "b592a1d7ad181af36ad99209007659b20e6ae05f34f25b95b3b3d30e19c65e51",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:10:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3476,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3851,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2877,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3205,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3049,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "expo/skills/expo-dev-client",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/expo-dev-client/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "aef70e6f0fcfb9c80337f2e529da19d440ba0627622376cdc61ab2563525651b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:10:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3238,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4398,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3509,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3522,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3464,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "expo/skills/expo-dom",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/expo-dom/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "b4811b11869fd00ee4338c9ec97e0e1daf5f1c605ff46cb5c88a370d239ca23e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:11:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2829,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3973,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2784,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2855,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.303,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "expo/skills/expo-native-ui",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/expo-native-ui/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "a54ee681808bdeece32d9219ce74b5e4f86156d76cc6d00fb21ac2633f44c64f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:11:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2971,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4804,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2746,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.314,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3983,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "expo/skills/expo-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "expo/skills",
+        "path": "plugins/expo/skills/expo-upgrade/SKILL.md",
+        "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c"
+      },
+      "input_sha256": "8e9201265d48eba88d9e08a1a364466c8a90b09beb3d0fe5430d94bad38f51e0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:11:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3613,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4347,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2792,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3064,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3188,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "fastapi/fastapi/fastapi",
+      "status": "evaluated",
+      "source": {
+        "repository": "fastapi/fastapi",
+        "path": "fastapi/.agents/skills/fastapi/SKILL.md",
+        "commit": "79cab5bed28b24d92c185d236feb33f5783dfeb3"
+      },
+      "input_sha256": "353cf43e70602453ba902a800f3c03f0b6c2e71130cfc0da0f1f60764d47defe",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:12:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.2473,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3934,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2877,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2944,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2795,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "firebase/agent-skills/firebase-auth-basics",
+      "status": "evaluated",
+      "source": {
+        "repository": "firebase/agent-skills",
+        "path": "skills/firebase-auth-basics/SKILL.md",
+        "commit": "629709b2d1193043d5508f6f1f3aa9993021da0f"
+      },
+      "input_sha256": "247aea2de7ef99b5fac1151082821bebee0b3153f385f640f28f09eba38c8c0b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:12:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3193,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4479,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2422,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3271,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2521,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "firecrawl/cli/firecrawl",
+      "status": "evaluated",
+      "source": {
+        "repository": "firecrawl/cli",
+        "path": "skills/firecrawl/SKILL.md",
+        "commit": "a9a46fe23af001d726a05d8448d25a7188b42fdc"
+      },
+      "input_sha256": "bb8af1c77b34a14e6d1d43587d3611af5f6b0c2cd89e0da997be1c53dfc58ef8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:12:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2755,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3672,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2678,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2982,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/elixir",
+      "status": "evaluated",
+      "source": {
+        "repository": "georgeguimaraes/elixir-agent-tools",
+        "path": "plugins/elixir-dev/skills/elixir/SKILL.md",
+        "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44"
+      },
+      "input_sha256": "92389a2a4e77b3778c8f26da0cac3a612a0b77537317b722a70dd8143d93f7bd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:12:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2777,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4653,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2467,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2983,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2868,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "georgeguimaraes/elixir-agent-tools/phoenix",
+      "status": "evaluated",
+      "source": {
+        "repository": "georgeguimaraes/elixir-agent-tools",
+        "path": "plugins/elixir-dev/skills/phoenix/SKILL.md",
+        "commit": "ac3a5a1661a087158b39d5eb742b3c25fe3c7b44"
+      },
+      "input_sha256": "b72274453cc7e464af8c6b25d95d926707df4b08b535649b069bfa46c8bbb463",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:13:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2857,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4708,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2631,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3343,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2687,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/aspnet-minimal-api-openapi",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aspnet-minimal-api-openapi/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "16e632ce8cb514d413e968811a2e07b8e0f1e97c6e2e93174efd6cec2e49e86f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:13:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4259,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2497,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3613,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2977,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "github/awesome-copilot/aws-cloudwatch-investigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aws-cloudwatch-investigation/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "e278e755854bb81bcce39e41395aaae189f49aa6f4397d8723dd1a01518b1526",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:13:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3311,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4053,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2947,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.32,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4279,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/aws-cost-optimize",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aws-cost-optimize/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "e289482d227558774a220b79cf00c03340d1d35b3ffc2a4703659dd67a719e4d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:13:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.334,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4145,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.248,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3309,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3279,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/aws-resource-health-diagnose",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aws-resource-health-diagnose/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "80bb83b79e74c7f4b97994f89e4feb821bb68868e4809dcffbdbc9d2dc3f00cc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:14:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2827,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3677,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2385,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3371,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.369,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "github/awesome-copilot/aws-resource-query",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aws-resource-query/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "bf92899618f707b0c6439e0255e352486821b3eead6e9dbba4a585306c456e5f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:14:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3609,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4081,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2429,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2952,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3289,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/aws-well-architected-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/aws-well-architected-review/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "bc37c276c66c3305cdbafb766cbdadc153deb69e45e5eb009e2aca904f6359b2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:14:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3499,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4593,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2489,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3214,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.276,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/az-cost-optimize",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/az-cost-optimize/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "d27f8311b57d02dedd48a0d563be0964dc458578e4de51b4730516b4e8083829",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:15:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.286,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3982,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2756,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3195,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2453,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/azure-architecture-autopilot",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-architecture-autopilot/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "5306e06c35079bcb267e3696f0d40fbf2b7b804e6b3d34f255c3fbc45ae64cda",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:15:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2727,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3986,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2603,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3143,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3824,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/azure-deployment-preflight",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-deployment-preflight/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "dab815a49ff9fda7d48631c40df7e2540bb3fa7ba1cce63ce219aaa0a830b6a1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:15:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4102,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2832,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2959,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2856,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/azure-developer-cli",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-developer-cli/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "a8fd747555cc310c8f33a2a77095a50bd6b1b1ef354594ca91c172e19ecaf93e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:16:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2235,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3909,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2367,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3739,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3247,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/azure-pricing",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-pricing/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "905bd90f658435e9812dca1aa613675fce948ad878e29c9f1bbe19b237edc3ee",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:16:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.2599,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3986,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3019,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3472,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3454,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/azure-resource-health-diagnose",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-resource-health-diagnose/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "b23ce684d839475f5ae397ce6d1973106f481d4a73d40bc1bebb45012a6ff436",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:16:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2998,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4265,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2657,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3076,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2767,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/azure-resource-visualizer",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-resource-visualizer/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "c22324fcf556d4441320a49360fafe4707440b0c376d7f15ce97f12dd233fe04",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:16:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2988,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4348,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2583,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3022,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2794,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3
+    },
+    {
+      "id": "github/awesome-copilot/azure-well-architected-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/azure-well-architected-review/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "bac39e11c6f91cba8c65227986e27bd8f1c25c43680f24a737cb92cc1ac51a0a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:17:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4194,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2812,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3173,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/batch-files",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/batch-files/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "64915b51fab7af2111809a3c787fcf572d3944dcc1310d2478e97e3f9df5ee3c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:17:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2528,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4385,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2517,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2892,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3334,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/containerize-aspnetcore",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/containerize-aspnetcore/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "ad4057ce6e1cca41005e1955df84e121d6b760a8d259e55ca9d051c679df37e0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:17:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3667,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4416,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2998,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3041,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3242,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/create-github-action-workflow-specification",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/create-github-action-workflow-specification/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "25b57a8e4ed35e2e640dc9f6f255dc6c8f86574b98d2abc5153b5a8c9b22491c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:18:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2754,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4313,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3015,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3034,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.328,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/csharp-async",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-async/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "d52c0812a3e4325ab0d89aebd074efe5e6246e722522180f8613ef3c72a72acc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:18:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2697,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4325,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2417,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3696,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.369,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/csharp-docs",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-docs/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "ddcc59c5f0320af04a59ba090b8e6490ce537aad2d8b2667fdf386686d037826",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:18:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3196,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.447,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2689,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.326,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2915,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/csharp-mstest",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-mstest/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "325e70e82f3edecb7312a7e504a89e87c8fb684c8f2aa55df6f29905ef1bf859",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:18:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4341,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2474,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3161,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2775,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/csharp-nunit",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-nunit/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "f03540e3fc328ca1325293a7339e2268f2cbf0d5698a2741b79dabb1c94335ba",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:19:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2819,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4164,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2458,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3272,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2725,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/csharp-tunit",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-tunit/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "60bda4de96d73461f44acea9ef0978a5b4eadb0a1d764fd0398b66a75bfd2e03",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:19:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2579,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.41,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2576,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3361,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2862,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/csharp-xunit",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/csharp-xunit/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "7a2d020e24a5788c4999c05c86902599bb31a5df70b2595b37c00beb802cdb49",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:19:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3037,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4168,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2729,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3052,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3058,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/cypress-flake-fixer",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/cypress-flake-fixer/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "bbcc3720a59fcb3b9be0658c8b705e1e3c4aacabb81dd34d72913c1720924663",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:19:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.253,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4733,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2461,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4012,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3483,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/dependabot",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/dependabot/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "2b5f3af7d8a5555d330d4d72ba9ad6140e85215d006dd9d7a92ee0dae76bbf82",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:20:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2337,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3611,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2696,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3305,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3502,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/dotnet-best-practices/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "3181f44dfc866313c96cd784a7f003b4b109836a6f02648f95b3323e73e85d62",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:20:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3584,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4539,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2929,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3181,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2993,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-design-pattern-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/dotnet-design-pattern-review/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "e94f172c8e6cb96d962fe9f67d64c1b2b9886ef078eda4d41c9fc3e9dcbfa97b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:20:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.339,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4635,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2708,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3627,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2696,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-timezone",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/dotnet-timezone/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "9514bd6f6e227171ae762460697e19ac545d88be6400171bfd085819717c093c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:21:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3046,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3817,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2778,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3253,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3052,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/dotnet-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/dotnet-upgrade/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "9e3e789579cc333971b04deaa3627e4e6fadfa2ad237f60a63730c34e8554587",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:21:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2761,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4373,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2703,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3133,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2828,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/fluentui-blazor",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/fluentui-blazor/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "d23fbc5dfb9a1580f930652bdfbf8c891edbaaa3bf162fb4904de9cba74f01b0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:21:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2876,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3981,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2689,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.286,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.3174,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-efficiency",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/github-actions-efficiency/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "9c41e860468e5c88d83ab6eec70c585b0f122facec2632ea65497b3389139e43",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:21:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3265,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4174,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2892,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3562,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3731,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-hardening",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/github-actions-hardening/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "31a8e7483d978e6267941edefebbe42aaa946bb3d43c9095aa3db343d4a8ff06",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:22:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2653,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4394,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2669,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3181,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3203,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "github/awesome-copilot/github-actions-runtime-upgrade-conventions",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/github-actions-runtime-upgrade-conventions/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "b964b4609e9b7ca8bbe394d4232e4f8bff122813e09433ccda1c4356f79c98eb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:22:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.4187,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.495,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2849,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2946,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3256,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/java-debugging",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-debugging/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "8e560a340a759da9775db0971925260407471fa1646746057fe41137568d3968",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:22:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3245,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4217,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.25,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2975,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.286,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/java-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-development/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "80a0915669a4df7a3c181ff03ed8122fccc00ee2079031dbdc7d6114fbe7cf0d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:23:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3265,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4133,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.244,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3359,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2977,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/java-diagnostics",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-diagnostics/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "fd663676fb1d5fd86c6546052068af085a5a7e8eb2b09e15e94a103a3bce1b61",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:23:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.272,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.454,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2459,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3215,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3415,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/java-docs",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-docs/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "efc6ef95b4af71c8cf1a4f127c06e9f260e314dda81ba1862f140eef09956cec",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:23:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3328,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.399,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2417,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3055,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3912,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/java-junit",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-junit/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "836790283679a14b3e1c78ff2f5f596361f4b8155077355f4afa343a4355c537",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:23:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3247,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.441,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.279,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3359,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4169,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "github/awesome-copilot/java-springboot",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-springboot/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "574898202ce298557226c49d35036a6e9e66a1cb205ea15c44db298e6d74e3bd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:24:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3014,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4586,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2532,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.284,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2768,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/java-testcontainers",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-testcontainers/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "24c1122661b2b0408770559b40fd7f847cbe83c3e82861c758bfe1cd3d24d5b9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:24:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3155,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3776,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2506,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2794,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2736,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/java-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/java-upgrade/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "c443266cc8c77ddefbfaa12ec013c87db4647bfa76353111c994b49e50a61702",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:24:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 2,
+          "confidence": 0.2448,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4833,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2426,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3125,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2941,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.2
+    },
+    {
+      "id": "github/awesome-copilot/javascript-typescript-jest",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/javascript-typescript-jest/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "cb9a552dfe63cae4f310b27067ba28351b59ad17e83a9e1c5ff23c542ce6fdd8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:25:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3087,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4156,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2716,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3147,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3229,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/mcp-implementation-security-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/mcp-implementation-security-review/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "8974ffc89746dd2bf947069d6a162120df8f81fdf0a1ca31b3bb1781cf8bb31f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:25:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.266,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4006,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3157,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3401,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2743,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/mcp-release-qa",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/mcp-release-qa/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "36b5a18d8dde6e3e02300d986853d7a953e6d712357191bbb571ce179d70113e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:25:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2639,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4462,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2581,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3324,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2895,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/multi-stage-dockerfile",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/multi-stage-dockerfile/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "7dfea7d31f3744930cb07869e15a79f90dbd47d2ddc56d165715fbd257db9ba7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:25:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4518,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.254,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3032,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.298,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/nuget-manager",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/nuget-manager/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "0da298a7ede2c1267b2e9eca0ad394f9df7296689d010bbbc7cd818ed4a59567",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:26:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2724,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4264,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2521,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3271,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2462,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3
+    },
+    {
+      "id": "github/awesome-copilot/playwright-automation-fill-in-form",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/playwright-automation-fill-in-form/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "ed10ea649ed942b29707738ceb78de7f1a5bfddafe348d23b2ef81e8e3a4b80b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:26:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2561,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3198,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2806,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2936,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3089,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/playwright-explore-website",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/playwright-explore-website/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "1496280e250b5b79c2c3081f093fa1fea22ac19a2fdc05074589875cdd9f55d3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:26:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3045,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3505,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2837,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3298,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3088,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/playwright-generate-test",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/playwright-generate-test/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "79dbb1a49fc5a6502788ccba1a4bd30769a017a1cc31d9db329d1326ea3d898f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:26:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2565,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3785,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2518,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3327,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3438,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
     }
   ]
 }
