@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "completed_batches": 9,
-  "current_evaluations": 584,
+  "completed_batches": 10,
+  "current_evaluations": 648,
   "verified_skills": 867,
-  "remaining": 283,
+  "remaining": 219,
   "accepted_last_batch": 64,
-  "run_id": "41380600532",
-  "updated_at": "2026-11-02T03:18:04.028Z",
+  "run_id": "41382335906",
+  "updated_at": "2026-11-02T03:36:03.559Z",
   "status": "continuing"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T03:18:03Z",
+  "generated_at": "2026-11-02T03:36:03Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -23371,6 +23371,2566 @@
         }
       },
       "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/php-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "php-development/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "3396b85e1e300f9170d3c6517a7bcc7c1fcec79126b541d80235d88e4e967ed6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:18:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2864,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3989,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2767,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3411,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2996,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/playwright",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "playwright/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "527958d40ebe6d13d9cb365bfc1b563655382b9d79c2a6ce1edb18c37a0f5113",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:18:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3336,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4559,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2776,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2969,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2613,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/playwright-cursor-rules",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "playwright-cursor-rules/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "219bc8cedbc20a6aa8f30d57fd3d02390ad2d298e3ccb5be10906e3ccbbec120",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:19:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2509,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4196,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2684,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3071,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/postgresql-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "postgresql-best-practices/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "77bfa60c38b83a735f47c754a860a32f03763cdd3dbdbb1a6bece0c490256cb5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:19:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3145,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4187,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2902,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2938,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2628,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/prisma",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "prisma/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "e7f9085ad46fe4ba50d400ca5adf02bb5b6651e7c8beddfe41accda35ee385fd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:19:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3026,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4086,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2986,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3373,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3096,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/prisma-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "prisma-development/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "261ce7e30750383ba6374b82611df5f519501b07be70467915e8d9b3269efef9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:19:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3205,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4247,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2533,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3366,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3565,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Mindrally/skills/puppeteer-automation",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "puppeteer-automation/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "75167de9cdd1d758271f21f4ef4aceaadfbde0ae3c5b889d20915ec5faf27d83",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:20:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2899,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4268,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2361,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3245,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.31,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/pyspark-etl",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "pyspark-etl/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "0b3c3f31b5a34d1ef27026a3abdcb6efe0e1d67e6df8c7d235b905ad050d0132",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:20:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3447,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4828,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2649,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2971,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2785,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/python",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "python/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "1a5cc069c82227fca8c5b4cee11ebd651893c5bd5251dbeb80b57194ebc14df7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:20:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2742,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4535,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2768,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3179,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2976,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/python-odoo-cursor-rules",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "python-odoo-cursor-rules/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "7914279f11c76ce7b6994f870d8c736682b55f673395068b172dca47692c053f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:20:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3942,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2997,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.331,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.34,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/python-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "python-testing/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "f62daf92df63943130b58850e7bc855d677f4ab1f4fc57002fc04e990505f4a0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:21:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2338,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3728,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2698,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2972,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3079,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/python-uv",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "python-uv/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "8903135fb3b1205d47b546af96803116571c4f10b8939a8ce1111c40ca355ede",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:21:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2621,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3561,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3316,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3214,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3328,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/pytorch",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "pytorch/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "9598bfc586f7f33f41fbe77c39e6678e85de87e285188320463a95790020ea93",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:21:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2855,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4261,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2538,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3062,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3179,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/quarkus",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "quarkus/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "1d231c44434ee4452a89ae6fa196e131aa99724d2b73da01784844d8798acdf8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:21:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.282,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4035,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2633,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3323,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2869,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/react",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "react/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "7c8e9af7521d2baadcaeda82a38c35f223e65831b1789449eca9a046d157efcd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:22:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2943,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.394,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2856,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3257,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3225,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/react-native-cursor-rules",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "react-native-cursor-rules/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "ca9c58efdaf1df0dad3310e759a138a56da650d2028d6cd352116856c6e89601",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:22:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2865,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4118,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2557,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2964,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2845,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/react-native-r3f",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "react-native-r3f/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "d271db3a5eb510a1815938238d9c3adaccf59480fa29f72500bb6dfffbd7fea8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:22:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2858,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4429,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2436,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2994,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2789,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/react-query",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "react-query/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "acccecd2b920991d1a20b7ea0a1d8ceab6c2f2cf088efc83a7cdf05f894bed87",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:23:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3036,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3759,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.262,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 3,
+          "confidence": 0.2587,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3412,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "Mindrally/skills/react-router-v7",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "react-router-v7/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "f7e9c28a9adb9637727538f6c4b612502334a7933d3c7b9de58ba4140496b6ad",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:23:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2513,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4406,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2283,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2631,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2581,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/redis-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "redis-best-practices/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "30232bb249839c596680f310a299cadfccf967fc71669b4ee527cff25cf0b16c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:23:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2994,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3919,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2548,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3073,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2891,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/redux-toolkit",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "redux-toolkit/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "3d21837ba9a72df2b4a24b49a6ab85b439adb7c7a71f3d424071ba5622bf96ce",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:23:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.255,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4276,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2319,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.294,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2956,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/rest-api-django",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "rest-api-django/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "fa38d91b60523b25b78e0905c56e350c6aa1168aa163f43d23aaad2e83788ad4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:24:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2996,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3803,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.278,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3232,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.296,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/rollup-bundler",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "rollup-bundler/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "c983f881e546fb5dd09028e1d307e6ed5d2dc1dbe57e1030d6f7afdbd4a5dfe4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:24:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3804,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4079,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2755,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.331,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3245,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/rspec",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "rspec/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "1754ffcb1a72f6534219669f22dd404d2dc8d976cbae9dd0417a6c2e46a8989f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:24:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2739,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.38,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.285,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3042,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3215,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/ruby",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "ruby/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "9bf0066368acb45b9e3769dc322d3b9dbfa2320ed1fe9b31a7e803cd751ae85a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:25:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3414,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4399,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2601,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3385,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2945,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/ruby-rails",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "ruby-rails/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "faeaa847f4e121afa32cb907c1ec428693b31bf664a51ba55eb865c1786faddb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:25:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3561,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4616,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2775,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3643,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3733,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "Mindrally/skills/rust",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "rust/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "8c3e1db4a427a5cbd82582fbadc9170184bcbcca3a1aabe8e4b0ac5b9eca1e49",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:25:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2859,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3991,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2654,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3201,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3388,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/scikit-learn-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "scikit-learn-best-practices/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "5f6eeaa5abed48542766c78676fd475fe9240dc49e6cf7fb3f73d07ba72e99ec",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:25:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3203,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3937,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.253,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2741,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3263,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/selenium-automation",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "selenium-automation/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "687dde9e25916c7d9b9031b002627061e26d8109ad4bd58dbc6d070ccb8fad1b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:26:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3203,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3936,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2845,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2535,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/sequelize",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "sequelize/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "3735699ac2d1d228ce24fa9c574c7bfc0279e40dcc762a6798ad944268260be0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:26:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2651,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4175,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2453,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2731,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2608,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/spring-boot",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "spring-boot/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "864f1088b5bef278937549ffc5621b1cde3b6ecc69541089fc1acd2f9ba608b9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:26:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3189,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.386,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.268,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.354,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2773,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/storybook",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "storybook/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "ef018fa42917ff3b7212e4db391bd1ce3f4c14cad0fc8ac338262090d0fbf450",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:26:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.313,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3925,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2602,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2661,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2434,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/stripe",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "stripe/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "d4fa0055f611233210704f79f7ee6511c2678e5e426cdcbc9450960eacd651ad",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:27:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3529,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4053,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2695,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3355,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2935,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Mindrally/skills/supabase",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "supabase/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "40b06ac4e380a09d9874573feef0806c7db76b6b9313bb67010a850f10a39d83",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:27:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3068,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3942,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2955,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2898,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/supabase-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "supabase-development/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "c59bcef8fe460a1a8346c48f701ba9fa72b7042e90d719caa86ee67307e89249",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:27:57Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3086,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4051,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2777,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3253,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2767,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/svelte",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "svelte/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "6ceeb237de216fc3e9ab0585a399cf09318113b05133e04c2c4f44fac720f720",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:28:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.286,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4377,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2495,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3321,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2592,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Mindrally/skills/sveltekit",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "sveltekit/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "0362edf5bc6c6022776b1eefcaa6c4f413c8101839aee5e00305f429b7664a9e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:28:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2706,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4619,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.239,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3174,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2986,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/swift",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "swift/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "7668483d1e6598f5c3b7b84f9711f7d58508c2447896f1b21a1203e558da4b31",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:28:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2519,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3979,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2884,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3196,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3268,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/swiftui-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "swiftui-development/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "f000b8f4701298c6f668c94564203804e21bc2a8c61e454c558a1d404ce21173",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:29:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.39,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.493,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2935,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3701,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3194,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/tailwindcss",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "tailwindcss/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "1f3687cbd2066432bbce423b0275f909532603f9b76b8b06a193b6267668ce29",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:29:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3088,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3942,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2884,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3246,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2959,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/tanstack-query",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "tanstack-query/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "d7388dd92233629937c2f5955c551900bcef10fa220ba81855a96a426d4d50fb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:29:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3046,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4774,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2735,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3042,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2931,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Mindrally/skills/tanstack-start",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "tanstack-start/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "31559129b4ba1d0e4559941342a2fd8f108c3de7a3c12954d262be13169b23d4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:29:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3664,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5052,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2566,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3116,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3209,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/tauri-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "tauri-development/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "7a9ad7f8e947c4c807c71e641579c3558b962596929cf8cc70f547e472b0bb66",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:30:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3668,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4237,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2971,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3056,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2505,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/tensorflow-deep-learning",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "tensorflow-deep-learning/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "28c6716dad0d7764275aaa3d8e1c8130add30b34e3adf4e5a3180f4169df154d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:30:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2666,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3935,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2554,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2752,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4198,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/terraform",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "terraform/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "1ce7f57fc984917a79b6f4293a74599cd4a6b0571e106c619762a6cd09ab11da",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:30:36Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2815,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4322,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3035,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2967,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3327,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/three-js",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "three-js/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "dff396f8dae7810653e84a53bbb68a66ffe645a6609ee13a7c52e3bf3b078e41",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:30:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3114,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4385,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2893,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3427,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2827,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/trpc",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "trpc/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "81f13da0f6b2a89f8d9f6bd3d594ba5bd8084bb9bf4e643e340fb3422d01a38c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:31:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3264,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.467,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2789,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3812,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3242,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Mindrally/skills/turborepo",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "turborepo/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "fc090b340b80ee9a57c5866c2fed712940ae119fa027035e8b539f7733a851c2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:31:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2744,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3675,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2839,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.322,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3501,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/typescript",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "typescript/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "c14f97e42b3916411c3f118965d5f13ab48ee986d40d053315cc2493a9315eb0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:31:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.298,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4048,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2854,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3444,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3082,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/vite",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "vite/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "9425ffe8ba0f7b80a7b7dc04a92222e64b3e5274e0bfba0cbdab19cb988b260d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:32:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2505,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3919,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.233,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2815,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2771,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/vue-pinia",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "vue-pinia/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "0978f35c0675887570848ff7671bf82357e9777f2363e84a64a66ca9231b4681",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:32:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.3514,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4432,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2267,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2996,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4145,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/vue-typescript",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "vue-typescript/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "2a6ec11efebb03f94c5a045345f3c7dc8135e801ef9b2d29be9f511fc80e391e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:32:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2717,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4085,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2461,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3471,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2633,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Mindrally/skills/vuejs-typescript-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "vuejs-typescript-best-practices/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "c88fe4091eb66868996ecf3d2dbc10ba10cd869058b2d1895971ea9d5960b123",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:33:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2795,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.505,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2953,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3241,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2776,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/webpack-bundler",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "webpack-bundler/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "79de4d298492825f4397d3bea9d3ea2f72d11464fa2b56fc23d161a002816d68",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:33:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3564,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.418,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2864,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3322,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2862,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Mindrally/skills/wordpress",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "wordpress/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "5f5ddc9c45c88f07f3609e0696f0cd9bae8325d7ee980dcb18a21dc7b40b2bed",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:33:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3061,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.352,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2679,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3406,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3249,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/zod-schema-validation",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "zod-schema-validation/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "7dde79eb8825c5d449bb15af0cdffe3c6922683716279025702360ee24a6db46",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:33:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3185,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.386,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2506,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2861,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2627,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Mindrally/skills/zustand-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "Mindrally/skills",
+        "path": "zustand-state-management/SKILL.md",
+        "commit": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5"
+      },
+      "input_sha256": "929757a68d338de342f26401572a90542346b30a1aa41eb05061dfe6165566be",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:34:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2889,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4204,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2381,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.321,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2854,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "neondatabase/agent-skills/neon-postgres",
+      "status": "evaluated",
+      "source": {
+        "repository": "neondatabase/agent-skills",
+        "path": "skills/neon-postgres/SKILL.md",
+        "commit": "d3da7cb5436edbb2bc8c00747fafd31ddf0644f4"
+      },
+      "input_sha256": "d3fbd270d1897cec7f24cf31d48bec9607ede334fe53754ff7a4db7a96ee3fe2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:34:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3529,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4839,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.255,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2712,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2682,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "nodnarbnitram/claude-code-extensions/tauri-v2",
+      "status": "evaluated",
+      "source": {
+        "repository": "nodnarbnitram/claude-code-extensions",
+        "path": ".claude/skills/tauri-v2/SKILL.md",
+        "commit": "35e7f7deae689e12b94f9c242b8f59efe0f66476"
+      },
+      "input_sha256": "86b21fe8d43992247891f28249c615cd2284307b0ca539f7a2a3b82698974bb9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:34:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3001,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4311,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2703,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3403,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3069,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "ombulabs/claude-code_rails-upgrade-skill",
+        "path": "rails-upgrade/SKILL.md",
+        "commit": "83e05bc7e697c20aaa1bc6be7df0eec0ef39d51e"
+      },
+      "input_sha256": "792653ee07a09a2e74817da2274c419642ebaf3fa13ec9bfd079fd64b564f88d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:34:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2667,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5385,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2693,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4132,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2963,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "openai/skills/aspnet-core",
+      "status": "evaluated",
+      "source": {
+        "repository": "openai/skills",
+        "path": "skills/.curated/aspnet-core/SKILL.md",
+        "commit": "49f948faa9258a0c61caceaf225e179651397431"
+      },
+      "input_sha256": "1f487ef3565e5ac1ee6c93cbeb9ac666292b30285877c82ddb0a77c9777fe92f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:35:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3552,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.368,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.3326,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3425,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.32,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "openai/skills/cloudflare-deploy",
+      "status": "evaluated",
+      "source": {
+        "repository": "openai/skills",
+        "path": "skills/.curated/cloudflare-deploy/SKILL.md",
+        "commit": "49f948faa9258a0c61caceaf225e179651397431"
+      },
+      "input_sha256": "d7632537cf19be17cf33d2c696b9d9c2ea3ee51026030e9b203d5b9255e75b15",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:35:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3456,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4569,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2385,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3437,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2967,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Paldom/python-skills/python-ci",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-ci/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "565975ed1c82b1590168661d2985e67169028e95a7cf99900b3399dc373678e0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:35:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3161,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4245,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2643,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2921,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4169,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Paldom/python-skills/python-lint",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-lint/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "814be250025a7b95c7b13bc5053113cc0cd84b7dbe861deb390758b805571182",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:35:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3219,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4115,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2405,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4041,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3157,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
     }
   ]
 }
