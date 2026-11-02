@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nosey compiled runtime manifest v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "manifest_version",
+    "catalog_id",
+    "source_revision",
+    "minimum_nosey_version",
+    "required_capabilities",
+    "scan_policy",
+    "repository_aliases",
+    "mcp_scan_context",
+    "frontend_essentials",
+    "skills",
+    "technologies",
+    "combinations",
+    "rules",
+    "counts"
+  ],
+  "properties": {
+    "manifest_version": {
+      "type": "object",
+      "required": [
+        "major",
+        "minor"
+      ],
+      "properties": {
+        "major": {
+          "const": 1
+        },
+        "minor": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "catalog_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "minimum_nosey_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "required_capabilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "dependency",
+          "mcp_package",
+          "path",
+          "glob",
+          "content",
+          "extension",
+          "frontend_essentials",
+          "mcp_scan_context"
+        ]
+      }
+    },
+    "scan_policy": {
+      "type": "object"
+    },
+    "repository_aliases": {
+      "type": "object"
+    },
+    "mcp_scan_context": {
+      "type": "object"
+    },
+    "frontend_essentials": {
+      "type": "object",
+      "required": [
+        "skill_ids"
+      ],
+      "properties": {
+        "skill_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "source",
+          "recommended_for",
+          "quality",
+          "evaluation"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "repository",
+                  "commit",
+                  "path",
+                  "url"
+                ],
+                "properties": {
+                  "repository": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "commit": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{40}$"
+                  },
+                  "path": {
+                    "type": "string",
+                    "pattern": "SKILL\\.md$"
+                  },
+                  "url": {
+                    "type": "string",
+                    "pattern": "^https://github\\.com/"
+                  }
+                }
+              }
+            ]
+          },
+          "recommended_for": {
+            "type": "object"
+          },
+          "quality": {
+            "type": "object",
+            "required": [
+              "status",
+              "freshness",
+              "eligible",
+              "waiver_applied"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "pass",
+                  "warn",
+                  "fail",
+                  "not_evaluated"
+                ]
+              },
+              "freshness": {
+                "enum": [
+                  "current",
+                  "stale",
+                  "missing"
+                ]
+              },
+              "eligible": {
+                "type": "boolean"
+              },
+              "waiver_applied": {
+                "type": "boolean"
+              },
+              "quarantine_reasons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "evaluation": {
+            "type": "object",
+            "required": [
+              "status",
+              "overall_score"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "current",
+                  "stale",
+                  "missing"
+                ]
+              },
+              "overall_score": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 5
+              }
+            }
+          }
+        }
+      }
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "mapping_status",
+          "skill_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "mapping_status": {
+            "enum": [
+              "mapped",
+              "detect_only"
+            ]
+          },
+          "skill_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "combinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "requires",
+          "skill_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "skill_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "technology_id",
+          "signals"
+        ],
+        "properties": {
+          "technology_id": {
+            "type": "string"
+          },
+          "signals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "type"
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "dependency",
+                    "path",
+                    "glob",
+                    "extension",
+                    "content",
+                    "mcp_package"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "skills",
+        "eligible_skills",
+        "quarantined_skills",
+        "technologies",
+        "combinations",
+        "rules"
+      ],
+      "properties": {
+        "skills": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "eligible_skills": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quarantined_skills": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "technologies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "combinations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rules": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
