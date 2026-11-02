@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T03:36:03Z",
+  "generated_at": "2026-11-02T03:54:45Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -25927,6 +25927,2566 @@
         "context_efficiency": {
           "score": 5,
           "confidence": 0.3157,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Paldom/python-skills/python-packaging",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-packaging/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "be4ed14adf5a8cef59d5fc1a2b8da3162bdff651e5671bba99d9193af30d62f3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:36:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2489,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4888,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2431,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3493,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3144,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Paldom/python-skills/python-precommit",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-precommit/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "038665372e6de5463c99412448e48d1d59e3e3280ab5e56f0ddc5ddcbf5b367a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:36:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.333,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5094,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2429,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3213,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2615,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "Paldom/python-skills/python-release",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-release/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "2ee337d6508a60990c44d247f96f044c71fb5826a85467db9098fe06c3df060d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:37:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2676,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5224,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3239,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2879,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2853,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Paldom/python-skills/python-supply-chain",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-supply-chain/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "460758338fcf730dc4cb68d282bad17f17e565eadd1a53ff9e0408845f8714f7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:37:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3177,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5125,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2779,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3005,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3522,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "Paldom/python-skills/python-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-testing/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "9e0459634b6ad19c8d93931914b4b71aa46b9461fcdf134e7ed0705b8c891a46",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:37:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2989,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4475,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2534,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2964,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3358,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "Paldom/python-skills/python-typing",
+      "status": "evaluated",
+      "source": {
+        "repository": "Paldom/python-skills",
+        "path": "skills/python-typing/SKILL.md",
+        "commit": "70aa0cf9926285dbef6ac39bc36990ece230cd09"
+      },
+      "input_sha256": "d9c7a3116085e2f3a1ad9503c81c6c5b345c48e621b95af7860a068d64d18597",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:38:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2324,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4392,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2244,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3239,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3406,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "paulrberg/agent-skills/cli-just",
+      "status": "evaluated",
+      "source": {
+        "repository": "paulrberg/agent-skills",
+        "path": "skills/cli-just/SKILL.md",
+        "commit": "b6abe0d3fc63e5c1cf4d786f42722b2ce545e23a"
+      },
+      "input_sha256": "07e2a4b3671e734283e1ef6aeccedb4fdff6ddd7aaed01f008eb18428ba0e7e3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:38:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3039,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4353,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2563,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3148,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3756,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "pingdotgg/t3code/changesets",
+      "status": "evaluated",
+      "source": {
+        "repository": "pingdotgg/t3code",
+        "path": ".repos/effect-smol/.agents/skills/changesets/SKILL.md",
+        "commit": "67661cfbb57fd353845c6f3c8c96663560031d1e"
+      },
+      "input_sha256": "c28b2a72be12d71c38482b05bd9c7a1312c83dcb5af768c648fd172f2e9cc1e7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:38:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4256,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2546,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3458,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2784,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "planetscale/database-skills/mysql",
+      "status": "evaluated",
+      "source": {
+        "repository": "planetscale/database-skills",
+        "path": "skills/mysql/SKILL.md",
+        "commit": "f6ed002d03084cb39c01d1d58904d47a36f5322a"
+      },
+      "input_sha256": "e4ea38add289809904805cc9e078a9b84a8fd8184da277466717aee8c51dc110",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:39:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3436,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4635,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2492,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2729,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2923,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "pluginagentmarketplace/custom-plugin-nodejs/express-rest-api",
+      "status": "evaluated",
+      "source": {
+        "repository": "pluginagentmarketplace/custom-plugin-nodejs",
+        "path": "skills/express-rest-api/SKILL.md",
+        "commit": "adbdacbf26cb29a5008f06af6f1bb601d5aa56f2"
+      },
+      "input_sha256": "7f1e39b4d61c11ee1b845ccceae911d84ca9d9211fbf216bbdaff85e25574a70",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:39:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2698,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3757,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2483,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2876,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3058,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "pproenca/dot-skills/react-hook-form",
+      "status": "evaluated",
+      "source": {
+        "repository": "pproenca/dot-skills",
+        "path": "skills/.curated/react-hook-form/SKILL.md",
+        "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3"
+      },
+      "input_sha256": "cb317557846187cef84db9148e16994df1d7fc2be702bfb2ad85a720a333f2c3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:39:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3279,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4969,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.247,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3401,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2738,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "pproenca/dot-skills/zod",
+      "status": "evaluated",
+      "source": {
+        "repository": "pproenca/dot-skills",
+        "path": "skills/.curated/zod/SKILL.md",
+        "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3"
+      },
+      "input_sha256": "245fc4ab7341a8ac0864c9535e2a6d782aaf012ba6975a36cd51240bcf82e443",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:39:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.293,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3907,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2962,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3049,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2789,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "prisma/skills/prisma-cli",
+      "status": "evaluated",
+      "source": {
+        "repository": "prisma/skills",
+        "path": "prisma-cli/SKILL.md",
+        "commit": "c71e8ea254dbc5dba27af773b735679163395cf9"
+      },
+      "input_sha256": "e20d1a307dd836ede8c3ac5f8cdd4f91d77cc6f09ee9b0621bd2efde295ae229",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:40:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.27,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3787,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2657,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3036,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3798,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "prisma/skills/prisma-client-api",
+      "status": "evaluated",
+      "source": {
+        "repository": "prisma/skills",
+        "path": "prisma-client-api/SKILL.md",
+        "commit": "c71e8ea254dbc5dba27af773b735679163395cf9"
+      },
+      "input_sha256": "d033821313dc64b2b7dee120c6904b7d4457813e3b9c82d9584f7dee74baabe4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:40:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3147,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4976,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2942,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3312,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3751,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "prisma/skills/prisma-database-setup",
+      "status": "evaluated",
+      "source": {
+        "repository": "prisma/skills",
+        "path": "prisma-database-setup/SKILL.md",
+        "commit": "c71e8ea254dbc5dba27af773b735679163395cf9"
+      },
+      "input_sha256": "f1f95a5f596ad4260649a20e56cf77f1d24222b56ba6f7b12b24ec6e5ac39477",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:40:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.269,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3143,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.283,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3178,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "prisma/skills/prisma-postgres",
+      "status": "evaluated",
+      "source": {
+        "repository": "prisma/skills",
+        "path": "prisma-postgres/SKILL.md",
+        "commit": "c71e8ea254dbc5dba27af773b735679163395cf9"
+      },
+      "input_sha256": "f8d565a1bc2f598ccfce6b0f9e9adcb3450ad65639e3e969a1e0d03e2d349c82",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:41:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2743,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3239,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2765,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.28,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3361,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "pulumi/agent-skills/pulumi-component",
+      "status": "evaluated",
+      "source": {
+        "repository": "pulumi/agent-skills",
+        "path": "pulumi/skills/pulumi-component/SKILL.md",
+        "commit": "2517e28e4bc029424e9c9ee48016394296be0f6a"
+      },
+      "input_sha256": "eef36cb66dfcaf062ac2ef97b4ce050b04afa680f3c76c4e536659a686481cac",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:41:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2943,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4776,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2353,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3083,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2981,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "pymodel/react-frontend-skills/msw",
+      "status": "evaluated",
+      "source": {
+        "repository": "pymodel/react-frontend-skills",
+        "path": "skills/msw/SKILL.md",
+        "commit": "b210600fdf49441ee1efeca2cbdc05599ec03019"
+      },
+      "input_sha256": "73cb20d7e0e21cdaa09e947cb7220109cc69a1f53bb42136182d45dc210fb898",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:41:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2616,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4102,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2442,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2813,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2655,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "redis/agent-skills/redis-core",
+      "status": "evaluated",
+      "source": {
+        "repository": "redis/agent-skills",
+        "path": "skills/redis-core/SKILL.md",
+        "commit": "a84871d065f398fed55e1633f66b66f731eb4e2b"
+      },
+      "input_sha256": "7ab1000e7a1548c4f82179ea1d5a57ced43851e6a924ac647cecd822015b81a7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:42:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2751,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.356,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2597,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2799,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2536,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "remix-run/react-router/react-router",
+      "status": "evaluated",
+      "source": {
+        "repository": "remix-run/react-router",
+        "path": ".agents/skills/react-router/SKILL.md",
+        "commit": "959182edd6fe3556cec3b52ec83178d99da29ceb"
+      },
+      "input_sha256": "a9b77003a8fc807dd894aa7aef2fb11f516ade90fbc73be81dd34cbc44df504f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:42:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3619,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4295,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2901,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3205,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2364,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "remotion-dev/skills/remotion-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "remotion-dev/skills",
+        "path": "skills/remotion-best-practices/SKILL.md",
+        "commit": "30d4553ecd46fbc5212fd0ff006ae43af522158b"
+      },
+      "input_sha256": "b4cfddd463ca44b6127aac813c5f8330f5fe2587f516af5ddfdb0fda453cf8eb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:42:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3074,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5445,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3614,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3359,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3525,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "rominirani/antigravity-skills/always-verify-gcp",
+      "status": "evaluated",
+      "source": {
+        "repository": "rominirani/antigravity-skills",
+        "path": "gemini-cli-skills/always-verify-gcp/SKILL.md",
+        "commit": "731acca5d1aa8b0855549e1cb53bc3f84aa05e0d"
+      },
+      "input_sha256": "f64564c038cfc623696a3f77b5033496c9a48f2734111fa620ae41f3bcfe22d8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:42:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3002,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5041,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2725,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.349,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.291,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-code-style",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-code-style/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "1c53d6b8405fc2992b92524d4782c826845916d64f90a5af483b9401865b9a76",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:43:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3576,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4654,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2873,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2694,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2644,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-error-handling/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "536c25e624c3cf3def98962d9f89db07b258cde6c9e7fd17009a9eb204ba631f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:43:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3883,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5017,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.262,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3276,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2483,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-google-wire",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-google-wire/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "3815eb855fbfe8bad1e6c092f7f5e3609c7f3551c7385e8e7c420369185de6cf",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:43:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2754,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3742,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2475,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2942,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2748,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-graphql",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-graphql/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "98c62367ab8bd4e5b58d0765f8cf26133198e11715c5b938b4e810a1b03e3867",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:43:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2658,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5326,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2737,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3293,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2968,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-grpc",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-grpc/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "d8732f0761893ce1140d6861b9138090980651cea6f4e73e10b54e6755cf1160",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:44:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2367,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3776,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2784,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.353,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3624,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-do",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-do/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "1cb03d08b0222156cdab90b961f3774db54b4af02901103b769f858f88a8e5d2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:44:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2897,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.388,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2572,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.327,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.282,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-hot",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-hot/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "96f8bdb1affbc84e1701608bc54cb8ac76e3432c089d2b9d3a7fe63fa187f916",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:44:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2464,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4691,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2602,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3431,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2626,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-lo",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-lo/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "1388c16bd1116ece044f83c44ae5908252609400a0f9b9d28523068b9ffa4319",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:45:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2342,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3646,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2555,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.311,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.269,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-mo",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-mo/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "552843bc00e43d778386548d611f6d3a484e0a4b3dd7eb7fd0b5d4f23210c789",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:45:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2573,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4275,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2633,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3235,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.3028,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-oops",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-oops/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "7eec5d648467953ac7a5a0187810c0485f4fea6ae54ff284c3aed2ac090adddd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:45:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3082,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.406,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2699,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3304,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2767,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-ro",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-ro/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "28fb7b4db9ab6982354f7be39e8b0727e4a4b3dcd87c9c2add1046841d27122b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:46:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2621,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4279,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3421,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2596,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-samber-slog",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-samber-slog/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "54235bd7bc6dc9005d79eab614211939c6e686de00bf05d10343a03a92a97fd8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:46:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2844,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3348,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2399,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2926,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2706,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-security/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "8bcc0f7ff7d196aa498e0305b81c28f60c6e50a358626360f526c0cacc760bc4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:46:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.305,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4501,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.3072,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3362,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2831,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-spf13-cobra",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-spf13-cobra/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "f77b93e6f14c3c0f4b168bb97c617d2866064964c2909c2cd817181190fe51ff",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:46:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3653,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5036,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2336,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2814,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2896,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-spf13-viper",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-spf13-viper/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "d2f42c2c44457b391070865e154df3dd87509479536872fdf892ab0cd629dba4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:47:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3433,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4758,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2489,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3429,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2525,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-stretchr-testify",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-stretchr-testify/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "e0e681bafd39acc6edb6c9d06c53add7b42e10d93a7f0dd546dde67a23d3f1bf",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:47:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3156,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4516,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2659,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3314,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.259,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-swagger",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-swagger/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "537126ccf09bf25f4edae6e0fac2bbb7d4ffbd157edadf17e7a6d2e03d19a93e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:47:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2956,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4127,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2594,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.352,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.312,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-testing/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "55eea3ed4536df0c95fc1247382d3027d45b1d1af0a94fc9de653debae5df0f2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:47:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3236,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3972,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2947,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2845,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2776,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-uber-dig",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-uber-dig/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "6dd33a3826275f6adaa7cf62a87c481ceb9253466f9cf71a5f02ceb5e357c1af",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:48:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3068,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3885,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2533,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3441,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3181,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "samber/cc-skills-golang/golang-uber-fx",
+      "status": "evaluated",
+      "source": {
+        "repository": "samber/cc-skills-golang",
+        "path": "skills/golang-uber-fx/SKILL.md",
+        "commit": "246b6c4c1ab3077dee114beb9ade3bb0527dfebc"
+      },
+      "input_sha256": "9de3192cc61f8407e2121f582005b0c589ede70951761f43176f4312c41ae259",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:48:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3657,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4217,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2491,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3651,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2654,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "Search-3D/electron-drive-skill/electron-drive-skill",
+      "status": "evaluated",
+      "source": {
+        "repository": "Search-3D/electron-drive-skill",
+        "path": "SKILL.md",
+        "commit": "2db10393bd88915bb446ad77f852182957abdf89"
+      },
+      "input_sha256": "18a1da30a4351ea93d0ed0b06497c773b909a475d6948343e3cf652d2cfcd153",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:48:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3204,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4664,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2272,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3231,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3316,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "secondsky/claude-skills/tailwind-v4-shadcn",
+      "status": "evaluated",
+      "source": {
+        "repository": "secondsky/claude-skills",
+        "path": "plugins/tailwind-v4-shadcn/skills/tailwind-v4-shadcn/SKILL.md",
+        "commit": "88378361314f558fb719aec0af9fd898ab36f0b2"
+      },
+      "input_sha256": "39d77c20c339537e45f907c2079986eecf86c8e1301b6979980d4dbd7c41daf0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:48:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.29,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.405,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2295,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2696,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3147,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sergiodxa/agent-skills/ruby-on-rails-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "sergiodxa/agent-skills",
+        "path": "skills/ruby-on-rails-best-practices/SKILL.md",
+        "commit": "40e21b46189d5c7de6610b68a25280af863f8775"
+      },
+      "input_sha256": "19c15ffa43e6307171389d44e3374eff32d807832e8521d0ea01535a82401237",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:49:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3289,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4492,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3066,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.351,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2442,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "shadcn/ui/shadcn",
+      "status": "evaluated",
+      "source": {
+        "repository": "shadcn/ui",
+        "path": "skills/shadcn/SKILL.md",
+        "commit": "96da9cc7f1aa10580a3741664e2a77c721206c00"
+      },
+      "input_sha256": "93951e5e83f616a3e046491c00d770bd54c0a64164706cd1191822a233d27592",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:49:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2721,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4056,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2686,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2867,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3653,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sharanharsoor/skills/fastmcp",
+      "status": "evaluated",
+      "source": {
+        "repository": "sharanharsoor/skills",
+        "path": "fastmcp/SKILL.md",
+        "commit": "f90a28d8cdf534551048b72219a14b7b7a090c5c"
+      },
+      "input_sha256": "c1ab7e9de4dd6b4feefef6d7d40f74b78297162bdd825d3d930a6340995dc123",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:49:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3139,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4468,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2505,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4181,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2922,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/airflow-dag-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/airflow-dag-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "94a41e7557ed0038de304d942691a6f432f6a29b82dc096e7c1f265b74fc332c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:49:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.277,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3904,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2654,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3394,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2353,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/android-cli",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/android-cli/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "88812b533d1014bfeaa93536a80565a9fd28bd3332f09008d5bad38819cf3a0f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:50:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2577,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4457,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2864,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2872,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2776,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/android-dev",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/android-dev/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "c8ca5603699011777eb483848c8fffb5a933620ac930c98b6eddd185e5f60c3d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:50:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3262,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.427,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2443,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3209,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3329,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/android-jetpack-compose-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/android-jetpack-compose-expert/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "ea2e08ed0823786e8e4976cb8257479102c3a8cec9c7b470caf8afb0d7dd3140",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:50:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2749,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4252,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3374,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.297,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/android-ui-journey-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/android-ui-journey-testing/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "a9d076f83de45e0a192ec4e5cf43d87ea15f9569a95a9d4e1143432c7f24d988",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:51:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3262,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.474,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2342,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2723,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3545,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/angular-ui-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/angular-ui-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "20b95e02b3f71164dd27f0537d184c292a112f2f6a07158f423c26e5118de789",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:51:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2826,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3733,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2409,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3262,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3331,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/aws-cdk-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/aws-cdk-development/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "e0de34c600fbe6e9598e3fc36125cb7a2ce1d25e72e7478dea05b39be4e3c9ed",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:51:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3244,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4138,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2839,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3275,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2523,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/azure-devops",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/azure-devops/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "11cc16ebb914019249286c15197e0eaced4de5d7965bf405812e1aaf80a80244",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:51:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.279,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3932,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2855,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3303,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3096,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/bash-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/bash-pro/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "06b4847be75fabd4119808b82a1bceff50b27e242cb2e402e9b65d713c056685",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:52:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2319,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4975,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2413,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3272,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.275,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/bullmq-specialist",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/bullmq-specialist/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "e920488da031e9acc65142fb28702c81c124c3da8f704313dfe13644cbe0cbd0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:52:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2824,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.435,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2578,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3227,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2631,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/bun-development",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/bun-development/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "84b7f6405fb4e4f45b397d16efc917e52e3e4c79a62260d78f5609684db755b4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:52:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3199,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3766,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2721,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3129,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3663,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/chrome-extension-developer",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/chrome-extension-developer/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "494209919fd7be108f592233326cd9039fef0df18488899cc338b845e8d4db93",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:52:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2718,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.386,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2381,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3138,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.288,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/claude-d3js-skill",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/claude-d3js-skill/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "b0a0ddd807be00e1a77a3994c59560d74640cb5c3b218ba016c8daab5765f690",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:53:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2797,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4282,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2468,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3226,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3588,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/clerk-auth",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/clerk-auth/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "96f7e04ebff5f527a807e318435eb3811663590b1518644ccee85f90451554c5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:53:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5536,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.3201,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3276,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3361,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/context7-auto-research",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/context7-auto-research/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "0ca79bfaedea57837844f44918207d6a43d8cf2cecc03ff481513a0fa670b351",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:53:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2933,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5451,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2859,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3294,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2849,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/convex-backend",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/convex-backend/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "1f1140a91ccc9094eb98ef0589b111ef5d35e9079c1ffb1520af16f758764209",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:54:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2534,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4105,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2495,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2988,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2449,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/cypress-skill",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/cypress-skill/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "d913539230779d15defa09b848cbb0a4c63b3990a36c04682befb5623545518e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:54:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2239,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4278,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.27,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.282,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2639,
           "mode": "model"
         }
       },
