@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T01:45:27Z",
+  "generated_at": "2026-11-02T02:03:33Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -10571,6 +10571,2566 @@
         }
       },
       "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "9e931d660961f6e6eead923579f83e8bc1b4f1b99bf71a86597463ecf523fb33",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:46:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2612,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.358,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3006,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3635,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2521,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-style-guide",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-style-guide/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "506d13cfcb43e842fe82b4f8985226eb239d155e529f3dd912a330dd76692710",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:46:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3049,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3697,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2311,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3237,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2519,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "22d69740120001bae9acee0f84f399c4c40df3fcdaa2053ca56d1b0e9dca7c8b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:46:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2386,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3602,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2875,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2529,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2429,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "bc2f9df4bd593e6d05b0e2270e91948a402e3000eb46a3d5c6579e9b03963470",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:46:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.284,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3983,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2527,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3216,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2806,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/dart-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/dart/dart-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0fa978e8e0157a68abd1f462c94d4a27e6c3f1b8615aac2fe5e9a2f48cc4f69b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:47:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3103,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.472,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2593,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3241,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3126,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/dart-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/dart/dart-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d794bc9ac9503e0cd60922a537f03c1d4ac5a563b184c84e61073929c2bce826",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:47:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2944,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4724,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2655,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3488,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2977,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/dart-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/dart/dart-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "72e569bf3d991bf89bab09101e7350146d022c8c4772011b4140ccdfe725800f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:47:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2808,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3962,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2471,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3387,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3208,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-mongodb",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/database/database-mongodb/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ded5abadd265f2384bcdc05450c9c7175766f831fdfc7ff17f44912df74d8bc7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:47:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2761,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4554,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.251,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.348,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3083,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-postgresql",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/database/database-postgresql/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "4dedcbca4dd3cd01ae7dca1b58813d29f43dbc38891f92e6c10667ccf054a8bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:48:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3302,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3972,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3047,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3362,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2915,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/database-redis",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/database/database-redis/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "db9e11405c7c34c456b3e9ce97542e29d3645f98aecddc4c13fe7443b44b6ac9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:48:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3218,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3433,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2601,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3168,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3591,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-auto-route-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-auto-route-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "2ce856eb3e628b9b82a4ff10dd9b0ec48ce850d60d54e97e2ed51ce4aa92534a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:48:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2904,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3785,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3015,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3262,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2669,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-bloc-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-bloc-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f61dbd24ea35f2e7ecbbb35232f690b229a34ecb1009d40a38198c452f17dbb2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:49:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3033,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4653,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2634,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2891,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-cicd",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-cicd/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d24830b0bea252c8db3147fd302b4652229b81a4168e52f35fa8c376c9e89088",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:49:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2744,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3723,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2605,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3567,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.275,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b4add4aaf0b8d24a7d05f9f2c39ba82eaaa6af393ed79de2add1a9484d91c5e1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:49:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3146,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4927,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.253,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3137,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2735,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-dependency-injection",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-dependency-injection/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f9904eda11390e9f10b8c99e698594530334f7cd6e0e645c490826ea4107f6ae",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:49:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3247,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4327,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2902,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3109,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3182,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-design-system",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-design-system/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "81757bb1059820e9db082a30d2aa3a08c58995ffa709d9d293fe7f769fb872ad",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:50:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3389,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4573,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2492,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2889,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.267,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5eb50540da805df61914cf11e5aca441fcf16e9ca5dea23e2fe842b598a40c96",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:50:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2541,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3836,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2738,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3257,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3064,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-feature-based-clean-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-feature-based-clean-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "abf763a2defe2108e208b556f9cba2d5c172912a634f71a387ff2b12bb6db0e4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:50:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3436,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3978,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2785,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3404,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.254,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-getx-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-getx-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a236d014d23319c732943a456311c059578cc82cc94b04c418c02d572dd75463",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:50:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.298,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3557,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2705,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3481,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3317,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-getx-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-getx-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "7369711c31a9e15046ee375ef05d51d05e7a154bcab773a8929f7473f0ef600d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:51:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3064,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3564,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2648,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3121,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2833,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-go-router-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-go-router-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "656ecc7eac419710b7c755742f4db4fd6357b97dc3441d28f4b3c347f56c6b4f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:51:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.294,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3808,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2566,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2901,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2627,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-idiomatic-flutter",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-idiomatic-flutter/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a292165fdd649a077ab0569ff5ccf1fc214fddaa1ecab3703592eefc0f145ef2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:51:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2659,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3551,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2458,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.303,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3112,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-layer-based-clean-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-layer-based-clean-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "36f1aed832b57305adaff8e553bdb6c40ae758d4b166b3d12ad59f8042931557",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:52:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3071,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3884,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2478,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2895,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2535,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-localization",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-localization/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "1dc6e5a4fa5cf6c43c0f53f30ff54e3e30d7db150074f4614139eadcf33a5e2a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:52:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.342,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.443,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2839,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.336,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2732,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6f583f73339570303c08b5bf1c340c58ed78e387e3ed361c6a504fa577dab8e7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:52:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3199,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4942,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2798,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.335,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2845,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-notifications",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-notifications/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ea3151e41b9d222167c6e4168447fc6d32395a9fa0187673ec15dfa4f2ee06c8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:53:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3088,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4052,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2959,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3365,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3036,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "74f9b3cd1002c26683090a4c8d0957ab8d989e89e336506659c95f79b66ed39c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:53:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2899,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4065,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2632,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3443,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3056,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-retrofit-networking",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-retrofit-networking/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8c318f920d7b762eeccf8f1c101daad0ffb85c8dc2ccf529b2a8470c483f42fb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:53:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2637,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4015,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2667,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3182,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2707,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-riverpod-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-riverpod-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a4270b9a83a1cf5350f8b83aa8a3d76b796623502966b5ee6431edeeff7102c7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:53:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3199,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3825,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3032,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3652,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "4725cea93082343a6c6691feab3b533819384678eaf4f25cecf298843a3c76ee",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:54:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2948,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3376,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2768,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3331,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.273,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "21c1626c0b7747d96300fba461c0b788b295f9258523479179d8f78cbe3b6503",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:54:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3143,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.392,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3421,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2873,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/flutter-widgets",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/flutter/flutter-widgets/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "633a66b3b08dc4f306fca88ddf07c37c4a46c5849c306e50f50bc202e830e79a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:54:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3491,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4576,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2956,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3291,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3655,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-api-server",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-api-server/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "820fd306aca8cb04bd0f640be7029eae20568ef714d13a4376c6ee03a2a53103",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:54:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3344,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4322,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2244,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.297,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3608,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "760b1a244ef23b24a42df53dfc196c3631a53504065e4d6e3b678a62a648e18e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:55:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2931,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4373,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3104,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2827,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6b96c5b2e458e448277abaf75bba8b29443f6cf31ee747d1597221d5a49f87a7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:55:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2512,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4601,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.264,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3266,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2986,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-configuration",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-configuration/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ffa1abc2f929ecf4dd4e72de84fbcd0fdfee069e0acf9883d608bfa9cc94d0f1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:55:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2959,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4776,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2645,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.37,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2933,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-database",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-database/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f68ae8a9094891777f8b20c7b6102620f4482a1aa2ef8a97cdfedbc686d6b49a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:55:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3369,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5172,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2444,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3309,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8ec1ced9c2e19494778943617b7dc21526f8ec21d5c2e9d25c9276d07812b98d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:56:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2759,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4144,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3101,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2867,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2846,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "35937015e006533cc12b5f9f530e0c0e120e13d8e6d288870acb493f97aff961",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:56:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3129,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4191,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2793,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3153,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2968,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-logging",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-logging/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "7dc99544ba7688115ea84bd8c7443ff2e680a1d5b07b3fe16456d5ebe1b78cd6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:56:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.3217,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.367,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2892,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3026,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.336,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "e05095b7078ece828e7ab3423d57866d96eed2f94f777fff11e2f1207e21db46",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:56:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2929,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4032,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2492,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3904,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2926,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "1456e0ce3ae2c4457652939e84dea18bac39fa091bc1e46dc7fd3c8316521df9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:57:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.309,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.466,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2654,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2832,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3597,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/golang-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/golang/golang-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6fc1f64a4f8e7799d19d286bdec6ff6e0147858577fd9f75a9b4fe951334450c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:57:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2399,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4149,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2713,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2782,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/ios-swiftui",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/ios/ios-swiftui/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "bb7572f3f6fabc7d03cd097649b7d73d9d35860ae97829fd49e85c6d5115f900",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:57:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2868,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.446,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2626,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3534,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2632,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/java-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/java/java-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "01178dcbc93fe1d5ed2123dfd76254d7413f3d00941463a8975999fed42310b1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:57:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2597,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4484,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2799,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3256,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2878,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/java-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/java/java-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8ee2b6f50419f3bb90f0b95a61203a5dc2e2333afff86a5b95b455a17aec380e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:58:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2844,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4062,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2814,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2992,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3049,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/java-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/java/java-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a3a1d022a2a39e8f550f10d792f237b4bb487058222a86a2a95c9826dc9f65fb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:58:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3106,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3719,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2582,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2967,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2866,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/java-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/java/java-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "451a3ca9325e45ab109200c223ee5ad9260166882abd5e34ac3d71689a6d3dba",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:59:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2465,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4304,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2432,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2961,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3017,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/java-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/java/java-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "69f455988877b70bce478f1f9bf8e502b6dc07b6f20b38aef457f23ba4457ba0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:59:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3319,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4285,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2494,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3219,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/javascript-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/javascript/javascript-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "4b6644c7fa93e71fd90921041f471bfebc146ef91be65bdb239ecece1ecca7e6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:59:36Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2791,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3512,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3682,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3207,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/javascript-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/javascript/javascript-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b48fb14e0253df3e53f3c10d9c16d34028012509446f00a102ba72405864c277",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:59:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3256,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4212,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3965,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.37,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/javascript-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/javascript/javascript-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "12ad377fa69799d9d8fe56f17bf869d5f2676af612a9df1a797d6cc49a041a8e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:00:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2842,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4071,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2937,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3701,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.298,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/kotlin-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/kotlin/kotlin-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6234522fd8601548cc96a5e7b7e5d7ea2e1c16f61305dfb5681a4b6b53fd1c17",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:00:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2372,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4019,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2966,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3072,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2826,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/kotlin-coroutines",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/kotlin/kotlin-coroutines/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "1c76743e4410a5e2118986ae80dc03e14b7d43f031ed3aeaa3ef19d1e519fa66",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:00:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2653,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3509,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3588,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3021,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3294,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/kotlin-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/kotlin/kotlin-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "62abc7b2f16290a0bc4fccbc5097c45e6477ddef7b8da3bf0e6bc6babdf96365",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:00:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.332,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4692,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2575,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3299,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2823,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/kotlin-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/kotlin/kotlin-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d75587919b7c75afb7c3d5b79b0df50a7cd6cd6b2ae88834d760aed7b5ddfe71",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:01:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2691,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3671,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.327,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2795,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2876,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-api",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-api/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0fa33e807980f1b37af5fefe01823361dcdcfef19b19e891869fd41bac6cf81b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:01:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3379,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3895,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.239,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3296,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3545,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ed075f1fd1244f591207c284e6c11724dc64df2294ebfac946247ad1dcb77ab4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:01:42Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.321,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4599,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3181,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3613,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2817,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-background-processing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-background-processing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b3a402b2ab3e110dd9c8aa1f264631be73f33c9e890aa8ec2cfce82100f155c5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:01:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2968,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4956,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.237,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3201,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2757,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-clean-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-clean-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "616faa7945a0b51d844c3bce0365e4979ab1e59bde217542196ba140ed996c7c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:02:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3166,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4512,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2611,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3411,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3537,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-database-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-database-expert/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "e4877771b36670897f5dc73552369cab4d2d544640a918f100e33c260e1c5d9f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:02:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2648,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4352,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2534,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.328,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2832,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-eloquent",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-eloquent/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "352ba8ed93386750ae7495646b59b28814d200336855dbc63627a4f0cd7f916f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:02:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3242,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4842,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2509,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3391,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3045,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ffd5f7c9a33e0df72e056d540f74b42ee878d57a2b78d3ab3d17d27b43ad2380",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:03:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3507,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4128,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2924,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.333,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3001,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-sessions-middleware",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-sessions-middleware/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f2a964d33f8a9552defb1c3a8b4bffcc6885d1a727b35eb3992e00b5b33d97bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:03:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2675,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3876,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2523,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3519,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2573,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
     }
   ]
 }
