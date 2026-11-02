@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T03:54:45Z",
+  "generated_at": "2026-11-02T04:12:36Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -28487,6 +28487,2566 @@
         "context_efficiency": {
           "score": 5,
           "confidence": 0.2639,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/datadog",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/datadog/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "3250d7c7de69489269b5da7e9d63c855457ef697946a368280919035e5a90844",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:55:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2651,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4278,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2281,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3306,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2799,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/dbt-transformation-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/dbt-transformation-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "790c01f022b4fbf7a9b79be71f9cf1da7d3a311f31a786dfd4574e30431012c4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:55:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2919,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3761,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2488,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3192,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3295,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/django-access-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/django-access-review/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "dd2a96dcb2c5b523c7f35a52901d6002be7ab5897480eaa8c51d8698b8025c6b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:56:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3204,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4454,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2501,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3744,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2571,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/django-perf-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/django-perf-review/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "39c51cea9235739e23f96b1e52327b62dd99cb963f4d37e198bab8633a634c86",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:55:57Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3161,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4989,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2278,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2773,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2911,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/django-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/django-pro/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "4694bac4666d69d896e7b666d4abce8b45188ab0de11c96021f7fd1b14e4bee9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:56:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3382,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4402,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2562,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.326,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/docker-compose",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/docker-compose/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "a5891b6cad526dc2aae64171262687b1d2244fc152bb73484b863df3f55d9894",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:56:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3228,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4161,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2975,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2927,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3297,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/docker-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/docker-expert/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "b207e304eb6772c5bb2f890086d3b7712b958699bddf7f198cabefbc91c16301",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:57:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3396,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4787,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2405,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3337,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3087,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/dotnet-architect",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/dotnet-architect/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "b28075b099c500c64b4d6355f64441c864fadee4d0eb785e9275568dcccceb8a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:57:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3199,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4084,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2734,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3066,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3047,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/dotnet-backend",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/dotnet-backend/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "d4ef82b98384dbef4b2cecb04bd446ee336f8981db626ae8c1f3ed5e30f68b8d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:57:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.306,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4961,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2673,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3316,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2668,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/dotnet-backend-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/dotnet-backend-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "7d598dcc950b790a408a318a2a8e507ffa4b139eea25cc02100df15c6fc7262e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:57:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2752,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4605,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.24,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3315,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2696,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/expo-cicd-workflows",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/expo-cicd-workflows/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "e4eb3cb705369572edd3b51566b21558513299b98925253a539814b3fcf5bfac",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:58:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3893,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4998,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2457,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3403,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3529,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/expo-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/expo-deployment/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "cd7add20d74d598b632d740b5136f3a99b7cfe8e439dc404bd773d0d8e91614a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:58:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3694,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4315,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2792,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3161,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3171,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/expo-module",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/expo-module/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "8f0de33a0f95946a8bfd7cf375b4bba18d7d3556205abc9da62e4cf96f51dc76",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:58:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2584,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4434,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2676,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.351,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2938,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/expo-observe",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/expo-observe/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "ab470cf51a6ea00b9bd3831dae3c785fb4e26bed7e3ad3ffc100ee7be736989a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:58:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.307,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3841,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2759,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2893,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2995,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/expo-ui",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/expo-ui/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "50befddb552a17d9329b082a16868c2fdfe99cbbc6e6950dcb1b99a1bcce2368",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:59:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.316,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4796,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2685,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3985,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.272,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/fastapi-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/fastapi-pro/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "5beef01a81f4571fa7ff6fc8ac5c83902c2b16ce5588de737734fd650e11ccfe",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:59:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3448,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4041,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2923,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3087,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2757,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/fastapi-router-py",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/fastapi-router-py/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "27cfd334e71ffc6b1c3cbc6e8e4c7bf173e3b0664680dc80e7c27982a32b0924",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:59:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3119,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3828,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2501,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2852,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3538,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/firebase",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/firebase/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "0834f9dc107c6199340e8b91498fbad5bb78a64387686c9dd73ca836c4e57f0f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T03:59:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2988,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3917,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2517,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3634,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3407,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/firebase-app-platform",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/firebase-app-platform/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "d49a75b2b5ef19b9346e24b08313e9983251533611cd8fa0330a761deb74ac2c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:00:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3201,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3669,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.304,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3374,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2773,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/firecrawl-scraper",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/firecrawl-scraper/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "53a0802f427b38eddaff5526736f95b86e1503e5e80174bb85065b3a49e1967c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:00:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2903,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4951,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.26,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3154,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2842,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/github-actions-advanced",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/github-actions-advanced/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "2829abc98063b0366a2fc8fdb1a2e0fbeeb5bfaddcbef6165d7637e5b755c462",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:00:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2853,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4898,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2742,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3489,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2684,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/github-actions-debugger",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/github-actions-debugger/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "84844f331799f5d22a00c2a66311aff1e9587bc951af174c9486e963aa9d407e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:01:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3613,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4795,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.273,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2681,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3299,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/github-actions-templates",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/github-actions-templates/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "efa8104db74febab0c3805bbe1adf17eeca834aa067fa5a914d09607de90e6b4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:01:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.301,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3802,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2878,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3546,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3412,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/gitlab-ci",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/gitlab-ci/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "d3bb6d70097f6665f08a6f7a92721d62727bbd417b2819f26fc2f2bf0384e18c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:01:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3018,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4361,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2381,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3703,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3185,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/gitlab-ci-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/gitlab-ci-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "6a938988281a2418e985835cf7dcd03896ae772325b2f420eeaacd94023dfdcb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:02:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2924,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4201,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2376,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3289,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2927,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/go-concurrency-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/go-concurrency-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "d8c25de9abddf2ff610324b240c02c6a944c17e85fe729ff1d4bf643b16a1e68",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:02:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2723,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3839,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2917,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3148,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2868,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/go-in-depth",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/go-in-depth/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "a995aca3b8735022611f99ed12da4f7f0508caa0f2ff3aaaddc19dfd9104cf25",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:02:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3326,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4024,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2443,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3163,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3052,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/go-playwright",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/go-playwright/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "6a9959eeb6c254b381b543e8738b7d057e6b29d1f282ee11e8d583849febcd26",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:02:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3172,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4044,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2554,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.34,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4081,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/go-rod-master",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/go-rod-master/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "0f19990a91f3050449d426a4f69a3278c4b5d7424d98650a28b3b062aa8d4bf8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:03:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3056,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4161,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2641,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3124,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2735,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/go-rust-reverse",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/go-rust-reverse/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "da8a6051105ea04b595a8ad1381a130c4377b43f57bd7776fce0f6f31b57d45a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:03:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2821,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.405,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2986,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3478,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2684,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/graphql-schema",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/graphql-schema/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "9a5761209d7d1a5d8ae819664f974167324eb66e2dacd83d4f9d0db090471c40",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:03:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2549,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.391,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2492,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3728,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2872,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/grpc-golang",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/grpc-golang/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "7169e8613825caad57ccd23e0dce8bd9da12f4514e2727b4329b6201bf73bc42",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:03:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3254,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4074,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.257,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2858,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2826,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/helm-chart-scaffolding",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/helm-chart-scaffolding/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "ba23f31cb761ff6e8d7a4e8ba277ab5eff56a37e02b2a2d6d237d26f4c25baa3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:04:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2839,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4394,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.27,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3135,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3038,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/helm-charts",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/helm-charts/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "7b490d8a51f47a2ce861b0a71564e0ca4c536d83156959cecc42ee6f85e4140f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:04:28Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3981,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4773,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2598,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3155,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3176,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/hugging-face-gradio",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/hugging-face-gradio/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "b75218a9b339a2d44010e808e9d1839720b32710254ccf3be76a1e4ad5bf8761",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:04:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3006,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4065,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2354,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2746,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3504,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/hugging-face-jobs",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/hugging-face-jobs/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "096dbd3bb86384378601395157b41c8617c5df9afef8e2b56a6e32ae951a3f15",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:04:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2623,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5226,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2407,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3652,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3482,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/hugging-face-papers",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/hugging-face-papers/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "b09e6480128f7e3d17bf144d200651e60dfdf04acaef5a7ddd495fec3c26933f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:05:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3429,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4614,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.249,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2876,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.29,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/hugging-face-trackio",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/hugging-face-trackio/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "4fe2896ddb57439268e3ff52d12f2eb64c3987d49ca716842b8eca1b117ac524",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:05:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3251,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4737,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2583,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3181,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.272,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/java-pro",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/java-pro/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "3ddaf9d01fa0fb2ea6a5931cff16de872a43779622ed367f25fa1a8847efb080",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:05:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3028,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4139,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.272,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3483,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2764,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/jest-skill",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/jest-skill/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "382078fc12b2b61cdb411604719d35f444f4f78fc8e0ad75379866457f50266c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:05:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3587,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5039,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2327,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2854,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3497,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/k6-load-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/k6-load-testing/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "ffbe9da0e5503297785536e4b9bd2638c803323656aa908ae6c6c844173b5714",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:06:07Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2473,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4997,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2407,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.279,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.303,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/kubernetes-architect",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/kubernetes-architect/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "554bfcef85a961c19b56902cdbfc756260cfc41d64c219009c3e00b98265c2fd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:06:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2963,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4066,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2524,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3714,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/kubernetes-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/kubernetes-deployment/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "056ef9a27b9a1baf88478c91dd2dceb70a0bcde7c611f58056d9b6368a6792a4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:06:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3743,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4492,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2488,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2789,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3083,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/kubernetes-hardening",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/kubernetes-hardening/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "a7522e50731f6ea632fcfa9d0ffe8df8b9d778080897d93eade847f531cf3d9c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:07:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.289,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4053,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2965,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3368,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3318,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/kubernetes-ops",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/kubernetes-ops/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "cb9976954639e40be6402613fe1333de8d631d47ecd3960f32e39fd8bd7781af",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:07:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3282,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4301,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2633,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3037,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2781,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/kustomize",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/kustomize/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "8b50c1ef2a03a60d7b90daa8a2c6ea4f080c797b8cfec9a05fe9783d933eb8b7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:07:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2833,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4722,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2781,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3349,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3084,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/langgraph",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/langgraph/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "48b9e6ab97d201e9f736ac0dc75245465d8b4d12b43be6b5822b6f9e5d242024",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:07:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.332,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3948,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2503,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3363,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2949,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/laravel-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/laravel-expert/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "71abc83eebdd7cb9d704c00d3cd0d7aa6edb26d02f253f3c98395be6db1e6804",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:08:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3391,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4658,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2952,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3345,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3114,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/laravel-security-audit",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/laravel-security-audit/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "0f3270f77fa6b95626a21e30f39cd70ef50f62a08633e0629ab0ec8b298f2a12",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:08:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3879,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4426,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2926,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3151,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2666,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/loki-logging",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/loki-logging/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "ab3bfc8fb798113eb6195c3bea29099c3ed82796fe67a06501e2a465c46d5170",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:08:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3247,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4135,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 3,
+          "confidence": 0.2281,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3274,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3381,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/mise-configurator",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/mise-configurator/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "3f2f38d3331127977cc54f9cddcb8e3baaf70afc120ab5c3fd80f41d95d7d336",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:09:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3171,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4401,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2544,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2766,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3484,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/n8n-workflow-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/n8n-workflow-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "66860f0772297de5512fe69b02395db91e70104ca78f7744d5b457e02454f47a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:09:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.352,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4806,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2581,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3338,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3207,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/neon-ai-gateway",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/neon-ai-gateway/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "fbb9b47d1c3c3b65889299e09f4b66fd251013199bcf5676cedb0bc2ca559c68",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:09:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3038,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5731,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2488,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3236,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3062,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/neon-functions",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/neon-functions/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "234a1c378278018d111e2e6fe4b06f17ddabfe86180bdf25fa4850be9d78769f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:09:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3328,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4017,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2365,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2752,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3494,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/neon-object-storage",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/neon-object-storage/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "84c620ea3c5c53e1b7135195d2ae7953acb76bdf6233cc52627ebfea248785b9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:10:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2615,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4795,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2458,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2552,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/neon-postgres-branches",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/neon-postgres-branches/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "2c88d72039a5d1580bec4567178d895f6a0f60d065eff12d0275ba522880aaad",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:10:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3277,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3598,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2536,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3557,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2589,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/neon-postgres-egress-optimizer",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/neon-postgres-egress-optimizer/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "675f8541c06b9d8545970c6b28fe7b567fedd123d4c217826932001ea9eb7e5b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:10:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2821,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3214,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2656,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 3,
+          "confidence": 0.238,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2877,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/nextjs-app-router-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/nextjs-app-router-patterns/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "9cac63755b145c04656015145c145d9e5a3b541ff36440c18252d06166cee01e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:10:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2779,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3806,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2742,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3345,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3146,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/nextjs-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/nextjs-best-practices/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "eef2f8a7ca4ea476b67462989a99bd14d27fa44da9ca09aaa6ea5257194c56dd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:11:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3143,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3618,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2723,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3421,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3454,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/nextjs-seo-indexing",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/nextjs-seo-indexing/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "9c4c5d400d15d6ae84d1a670af43dc1df7a0cb11eca005957a5808ae1c65950b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:11:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2939,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4752,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2625,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2602,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2888,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/nextjs-supabase-auth",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/nextjs-supabase-auth/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "627f89f687ca103a992fe5d27f07d90bbb786d10c8766cefde4a58aeaf853126",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:11:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2556,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4305,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2483,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3201,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2788,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/odoo-module-developer",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/odoo-module-developer/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "abba6e95c0f655f5529dce0cd109cc5b0401e029a3f9da4ec861dd227f8c1663",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:11:52Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2774,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.413,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2534,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3585,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2911,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/playwright-java",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/playwright-java/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "f6d780b0eac0c82f84d8e0956e50f32623c2323cef879af880dd304fd8c839c1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:12:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3051,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4706,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2878,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3204,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3606,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills/playwright-skill",
+      "status": "evaluated",
+      "source": {
+        "repository": "sickn33/agentic-awesome-skills",
+        "path": "skills/playwright-skill/SKILL.md",
+        "commit": "1ed5976b000fc0df2910d32ed33717794da1bee2"
+      },
+      "input_sha256": "fab17fbcc9ec49eecb032761129b61f996d5c03c18336291cd460e83bc2f3153",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T04:12:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2909,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4317,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2769,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3306,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2747,
           "mode": "model"
         }
       },
