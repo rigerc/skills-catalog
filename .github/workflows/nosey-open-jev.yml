@@ -1,8 +1,12 @@
 name: Open JEV — experimental incremental skill evaluation
 
 on:
-  # Manual canary only until output and policy are reviewed. Enable scheduled
-  # incremental runs after the first successful, labeled calibration set.
+  # One-skill canary on this workflow's merge; future changes to the workflow
+  # can rerun a single canary. The schedule remains disabled until calibration.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nosey-open-jev.yml'
   workflow_dispatch:
     inputs:
       max_skills:
@@ -28,7 +32,7 @@ jobs:
           node-version: '22'
       - id: plan
         env:
-          MAX_SKILLS: ${{ inputs.max_skills || '8' }}
+          MAX_SKILLS: ${{ inputs.max_skills || '1' }}
         run: node scripts/open-jev-plan.mjs --limit "$MAX_SKILLS" --out .nosey-eval/plan.json
 
   evaluate:
@@ -38,7 +42,7 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
-    continue-on-error: true
+    continue-on-error: false
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
