@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T00:50:12Z",
+  "generated_at": "2026-11-02T01:08:31Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -2891,6 +2891,2566 @@
         }
       },
       "overall_score": 3.4
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-interaction",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-interaction/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "46f60f3235aa11f2b89320cc2fb5b0adc167f3e8f0c717ba60ad1b006b41621f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:50:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3662,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4247,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2996,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3188,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3719,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-lighting",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-lighting/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "f12faf79625a7f42952124a5456d338e8399a65e16326c1a6a3239aa8e5ce489",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:50:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2865,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4042,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2704,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.297,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3834,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-loaders",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-loaders/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "ddf6ed2d7dfc809ce722482541fe88af7d349cd8066a4617fabaea865a2a831d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:51:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3111,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.452,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2405,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.312,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3603,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-materials",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-materials/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "7d17cefac80196f3dd5068e2042e66244073925d24a55b7ca77534d594c5bc81",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:51:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3398,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5037,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2561,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2956,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3875,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-postprocessing",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-postprocessing/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "0063f5f544215748ed666d878f1d69112094e662792228445a3ab9a56d209fb1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:51:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3517,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4673,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2717,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3029,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.339,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-react-three-fiber",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-react-three-fiber/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "07c0f09516dce50c91c3d23c5baca83c35d161e1abe3d8460782aba56e9476fa",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:52:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2487,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3997,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2787,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3292,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2842,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-shaders",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-shaders/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "8dc55ed6cc348abaad60851ae9f3f5ebcc6e3027dd7f7a55acc1832c73f11bca",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:52:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3405,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4647,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2579,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3475,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3877,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "cloudai-x/threejs-skills/threejs-textures",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudai-x/threejs-skills",
+        "path": "skills/threejs-textures/SKILL.md",
+        "commit": "0e181866f095b5f06d005133876e926515390d95"
+      },
+      "input_sha256": "43b4fde95cf9fe42b05f38fe6a6c6d5f36eb062cb15b3fd21a0eed376a5d1d9b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:52:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3227,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4384,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2636,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2776,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.33,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "cloudflare/skills/agents-sdk",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/agents-sdk/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "9bda4bd3adc5ab09e30c19ea6b9a0bf673f0a4b190bf7624fc1b0dc5f1fcf9c1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:52:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.344,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3792,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2661,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3044,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3257,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudflare/skills/cloudflare",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/cloudflare/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "4ae6ab64ba0c08d3f469bd33ed7ea18166288fcc03f34d114dc2394b534bd153",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:53:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3387,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5151,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2422,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.399,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3006,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudflare/skills/durable-objects",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/durable-objects/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "ef690603d7d998a25ba9748c79f399bb75d943fe1955ba258167116c101ef98c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:53:21Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3097,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3988,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2727,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3446,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2982,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "cloudflare/skills/sandbox-stable",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/sandbox-stable/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "be65d5c94fc2baf862b5025a9782188af226778e1a2126dfe8681e2501d8ae0a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:53:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3436,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.416,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2602,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3432,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.275,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudflare/skills/web-perf",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/web-perf/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "0160c9e7f1b73eb80347efd899a6082219d43bb9de30424667c8017628a48469",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:53:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3146,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4123,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2866,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2727,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2974,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudflare/skills/workers-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/workers-best-practices/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "01c452fd0b6b3caeb4c3b06f87893e52d8e95e32f691911c1644060e00dafa0e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:54:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2902,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4137,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2766,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2998,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2644,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "cloudflare/skills/wrangler",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/skills",
+        "path": "skills/wrangler/SKILL.md",
+        "commit": "e44f580f9c4fa3bf268e284ae7706c7954ba31fd"
+      },
+      "input_sha256": "a39de5c69f50e88759736a6ec7ad07f402c15f7a58a3224bcf979dce42013b13",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:54:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3067,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3749,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2717,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2991,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3333,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "cloudflare/vinext/migrate-to-vinext",
+      "status": "evaluated",
+      "source": {
+        "repository": "cloudflare/vinext",
+        "path": ".agents/skills/migrate-to-vinext/SKILL.md",
+        "commit": "fb9bf3156f31ef859174c9f51ac859f2e5cd6bc3"
+      },
+      "input_sha256": "fc59d0a03e17a31f3295cd49de9391b2ed5fd58f9888018d20620204efed0b9f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:54:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2342,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4297,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2926,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3372,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.302,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "confident-ai/deepeval/deepeval-otel",
+      "status": "evaluated",
+      "source": {
+        "repository": "confident-ai/deepeval",
+        "path": "skills/deepeval-otel/SKILL.md",
+        "commit": "d6cd78ac44da4623ff07c73310dfca474c212068"
+      },
+      "input_sha256": "9e95202077975af1bd663ede79e6408c857ed20cf5b0e93d95139a213e029535",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:55:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2844,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3779,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3218,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3179,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2906,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "convex/agent-skills/convex",
+      "status": "evaluated",
+      "source": {
+        "repository": "convex/agent-skills",
+        "path": "skills/convex/SKILL.md",
+        "commit": "3d1e9c6e288a23ed5f8ff28adab300d5b62a1686"
+      },
+      "input_sha256": "35608f235686f602c8aee455a168c16b8df4e857fbfee634e14deaa72dee15eb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:55:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2804,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5197,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2875,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3071,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4307,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "currents-dev/playwright-best-practices-skill/playwright-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "currents-dev/playwright-best-practices-skill",
+        "path": "playwright-best-practices/SKILL.md",
+        "commit": "283d5cbc5d11aac1abda058b16ad22c317d54dc0"
+      },
+      "input_sha256": "42684b93abd595551d6f4b6949b951645503baa445aefa76aa2f0d52ddda2bf7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:55:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.267,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3665,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2332,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3102,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3363,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "davila7/claude-code-templates/drizzle-orm-expert",
+      "status": "evaluated",
+      "source": {
+        "repository": "davila7/claude-code-templates",
+        "path": "cli-tool/components/skills/web-development/drizzle-orm-expert/SKILL.md",
+        "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee"
+      },
+      "input_sha256": "8271e1556cccbf744a9c97656fc2780c5534d960eb3cce637fce518cac3ff84d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:55:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.4007,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4915,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2564,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3529,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.299,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "davila7/claude-code-templates/react-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "davila7/claude-code-templates",
+        "path": "cli-tool/components/skills/web-development/react-state-management/SKILL.md",
+        "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee"
+      },
+      "input_sha256": "acd3af33bcb0717c657fa7853574bb478fa20a15992e1ed8b028212e33a96b1b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:56:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2839,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3989,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2448,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3285,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3813,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "davila7/claude-code-templates/scikit-learn",
+      "status": "evaluated",
+      "source": {
+        "repository": "davila7/claude-code-templates",
+        "path": "cli-tool/components/skills/scientific/scikit-learn/SKILL.md",
+        "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee"
+      },
+      "input_sha256": "d3a430a730af3b366cbec1b4d3a4dcb3beb486b23696a21ed8c20f0ea0aa051e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:56:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3526,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4553,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2744,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3561,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.383,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "davila7/claude-code-templates/senior-data-scientist",
+      "status": "evaluated",
+      "source": {
+        "repository": "davila7/claude-code-templates",
+        "path": "cli-tool/components/skills/development/senior-data-scientist/SKILL.md",
+        "commit": "4efb68547887d2a4dd714074bd7ecb4171dc9fee"
+      },
+      "input_sha256": "1e6974ea60451055b3b11ff8b12d6bbb8ef90ab2bf973830718271c8ed53de06",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:56:36Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3527,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.405,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3125,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3033,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2556,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "deckardger/tanstack-agent-skills/tanstack-query",
+      "status": "evaluated",
+      "source": {
+        "repository": "deckardger/tanstack-agent-skills",
+        "path": "skills/tanstack-query/SKILL.md",
+        "commit": "b2fc14c974b2ca09b38de09c28237f240175205b"
+      },
+      "input_sha256": "410d81ee0451a56724f76e119cafb5570ac560848b3de6429e23f3f6443e3d44",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:57:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2727,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4411,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2604,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.344,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2768,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "delexw/claude-code-misc/oxlint",
+      "status": "evaluated",
+      "source": {
+        "repository": "delexw/claude-code-misc",
+        "path": "skills/oxlint/SKILL.md",
+        "commit": "c729be07588f3b64a3878cc9f5e99c362388554c"
+      },
+      "input_sha256": "2bb36d27249b172283e96ec4a877fb11230d7f73293a666da3adaeca65df9b31",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:57:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2957,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.506,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2614,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3666,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2619,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "denoland/skills/deno",
+      "status": "evaluated",
+      "source": {
+        "repository": "denoland/skills",
+        "path": "skills/deno/SKILL.md",
+        "commit": "d5f6ace6b113aee71ba5286612fa1bde34c7d102"
+      },
+      "input_sha256": "96bcaefb9ec0b388fcf0fbffbc7aa5d566860076f706ab3972f7f5fc59494527",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:57:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2731,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4434,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2569,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2947,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2913,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "devon-systems/hoenn/nix",
+      "status": "evaluated",
+      "source": {
+        "repository": "devon-systems/hoenn",
+        "path": "nix/modules/aly/skills/nix/SKILL.md",
+        "commit": "b96f381c915387c1730eef28af9b3d6bb1121018"
+      },
+      "input_sha256": "51990b55551fb54571ab8fd8db006e317cf58308ff014182b05ecbfbac7993f2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:57:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3264,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3886,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2355,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3425,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.308,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet",
+      "status": "evaluated",
+      "source": {
+        "repository": "DmitryPogrebnoy/ruby-agent-skills",
+        "path": "plugins/ruby-type-signature-skills/skills/generating-sorbet/SKILL.md",
+        "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3"
+      },
+      "input_sha256": "e10757e2a782c85f256678981c88493045fceaee158e5ecc87d17581d9abe2aa",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:58:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3222,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4159,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2965,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3099,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3307,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "DmitryPogrebnoy/ruby-agent-skills/generating-sorbet-inline",
+      "status": "evaluated",
+      "source": {
+        "repository": "DmitryPogrebnoy/ruby-agent-skills",
+        "path": "plugins/ruby-type-signature-skills/skills/generating-sorbet-inline/SKILL.md",
+        "commit": "cb2e3552a62026584003e1515ac635bc5eef45c3"
+      },
+      "input_sha256": "815fa5527ed8d7a4513d0f24c7ebab55afd73da01c532564c2b175348eb4be80",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:58:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2645,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4398,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2773,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3632,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2551,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "docker/skills/docker-project-foundations",
+      "status": "evaluated",
+      "source": {
+        "repository": "docker/skills",
+        "path": "skills/docker-project-foundations/SKILL.md",
+        "commit": "179c9cfd04c89ae50cd5d5d68b939797a8fd03d3"
+      },
+      "input_sha256": "7868b8c28106f9dab4e6b29c964c684e5797647d71da455cf8e966186cbbc279",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:58:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2372,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3919,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2464,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3343,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2774,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-api-design",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-api-design/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "9df3dc84c04bc816aa2accfc56e34b1d8a81a974d72c3b4ba53a1a1504471391",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:58:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3315,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4761,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2648,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2981,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3196,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-architecture-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-architecture-review/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "8508b139e82aa97ba8db69d3be7c98933bb146c338367144a8d7a86d2eb8c39a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:59:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3373,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4771,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2394,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3139,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3597,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-binary-size",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-binary-size/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "3bf1993aef45de1873a4f8ed2c98e10d38f525484aa5709a01a040373dcdd253",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:59:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3545,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4607,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2792,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3589,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.325,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-build-release",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-build-release/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "935534eafb25e714918506a84e02b59a5633e1401dc4792cb2ecb58fda040bf9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:59:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3315,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4442,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2434,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3122,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2945,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-ci",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-ci/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "02e68def37b945df0d87946e0809be14323e4be6a2337439cfa1340abc3489cb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T00:59:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2798,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4943,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2497,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2815,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3004,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-cli",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-cli/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "17c1d646ab9b26306df8f3087b3d53a45f4c63511d20f78ab606654b00746320",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:00:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.36,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.441,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2445,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2685,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3393,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-code-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-code-review/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "8876436576fd3217550333dc1d811ef9a333792456b66743e9f705bdae6f0925",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:00:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3061,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3948,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2625,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3962,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2681,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-coding-standards",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-coding-standards/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "b89b5c91fe9937056369481c621adfa781b6d6a19e36d704214d03e9937f83d7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:00:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.241,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4437,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2885,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2987,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2783,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-concurrency-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-concurrency-review/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "eb10a9635bac7af72ad487982610de80ff8a7aba94a4971cacd47029736fce9b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:01:06Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2885,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5142,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2745,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2798,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3506,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-context",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-context/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "6ce0d6b66ba0f24ce145359dce584eab70b26891a36525abbea542bfe260a31e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:01:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3145,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3999,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2481,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3145,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3361,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-data-structures",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-data-structures/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "9d6e5d028ef2cc1deda6ab23df07701316ba8e3531ed9884a3f4f9951bb52d9f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:01:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.3166,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4677,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2905,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3029,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2438,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-database",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(data)/go-database/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "c39fc14c00512fdae512b7eed3ae4c013e3231a9e1afa0b15987eacea427f749",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:01:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3086,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4368,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2669,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2532,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2844,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-defensive-coding",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-defensive-coding/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "2538375d835d015231ce669b2fc6da8bcff7d79764e72f7cd769fd6c43ecf1ce",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:02:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2302,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5395,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2622,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3045,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2606,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-audit",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-dependency-audit/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "164e365668310e7d3c15a6de582bc2a21f7259f84d1344d914a2624834c94b29",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:02:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3083,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4482,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2605,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2701,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2909,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-dependency-injection",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-dependency-injection/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "cf019bd816f233d7b4c91c8df3a84cafb229571831bb4ab671b56348c003bc6f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:02:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3227,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4356,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2346,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3093,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3212,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-design-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-design-patterns/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "0f9d95232eb58f9dcf41cd5f4a75650a93148d53fb046e83c43d6faf976a5f59",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:03:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3272,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4349,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2954,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3493,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 4,
+          "confidence": 0.2271,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-documentation",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-documentation/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "8549c2c5e6cf230a164938f51f319378da00685ea20c90b24ab94624b7857c1c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:03:39Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2703,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.488,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2606,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3079,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2738,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-error-handling/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "d268ef5f4f2763893744f70d22928266cd4bd227c88e439394526b9bb0e8c455",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:03:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3286,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4192,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2459,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2825,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3281,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-graphql",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-graphql/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "5c098d93a706eecd13dc8b9df11ab179367d113ed367b9fabe73baea595dc8cc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:04:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2851,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3973,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3012,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3936,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3414,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-grpc",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-grpc/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "7b84236aa0dc157fc1e935a582fa7e86bafe8b4ff0592e0cccb88012ac56824d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:04:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3325,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3937,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2746,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3304,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.331,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-interface-design",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-interface-design/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "281442fb4785d0f0df4b9efc9a2adf7dc9193097d9d31b297d9c2a29e4fcb0dc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:04:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3297,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3815,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.296,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2953,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2667,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-modernize",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-modernize/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "86634fa5f54c7d8fea0a578e3ffb1e02fa3d4d3db5b411ce30604d32d39dd1c0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:04:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2857,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4233,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2663,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3304,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3167,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-naming",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(code-quality)/go-naming/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "bbba7f27875cc0427705f646e01fe585708234054e36051b9ad96e3dcd82a001",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:05:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2769,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4742,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2371,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3406,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2968,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-observability",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-observability/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "3c27bfe31d2f0555246a09e3f3ffe9bbe3f79ebe992f0bba7873cbc9334e730c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:05:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3148,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4542,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2754,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.334,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3089,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-openapi",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-openapi/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "399a4e7304baa62a2d851d39042a55da424c4df2c46471bba52c6c5c6f2aef58",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:05:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3128,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3582,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2604,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2814,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3907,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-performance-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-performance-review/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "f555a2a71e09d2a1b0c9528ceedb5f6e68e89cc756a7f87d74a2e90eee1d8f5a",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:06:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2752,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4781,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.248,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3093,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3043,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-project-layout",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(architecture)/go-project-layout/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "c35b418f2f70d79f02ce51c00f0cf1c5dc3e4551c0446acabbf44c5ca27436ba",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:06:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3062,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5296,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2443,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3809,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3125,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-refactoring",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-refactoring/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "78e450119b98983bfaa99a1bf42f882715c8d2851823b31c00dbfcef961e3ca0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:06:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2808,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4701,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2486,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3238,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2539,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-security-audit",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-security-audit/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "afe11117fc58dac237e148f278dafa620100bdf8ef5ab88bfc766037e0050bd8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:07:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3486,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.456,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2671,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3649,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3057,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-semantic-tools",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-semantic-tools/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "574d3a8ee0f0da50cb3cbe3c74118cf09c829be8489aa302ff131c61b8c86b22",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:07:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3254,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3978,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2774,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3074,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2641,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-skills-router",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(workflow)/go-skills-router/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "39b8c6dbed24b916143b40a4a40f5db80d39be2ac00b10d8fd89425f6e4dc28e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:07:42Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3024,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3806,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2993,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2686,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.24,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-quality",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(testing)/go-test-quality/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "0761efe4f97589ab2e07c6b2b5bc6033d76d13fbc160617b7d1ae24d6f1779a2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:07:46Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2635,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4097,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2849,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 3,
+          "confidence": 0.2698,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3732,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-test-table-driven",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(testing)/go-test-table-driven/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "9f151e3d4a9d7e8e586858ea0b2b88bd460d3ef70c137db11fed8ea519a0e6b3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:08:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3288,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5008,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2517,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3531,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3261,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "eduardo-sl/go-agent-skills/go-troubleshooting",
+      "status": "evaluated",
+      "source": {
+        "repository": "eduardo-sl/go-agent-skills",
+        "path": "skills/(safety)/go-troubleshooting/SKILL.md",
+        "commit": "e25b517bbd0c11db35f75a83a14f18848c1abdb0"
+      },
+      "input_sha256": "89758cd8b8d4569086fe990314b0206be1e5eb8ed658d7bdea148f4e1da23968",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:08:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3244,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4622,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2642,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3031,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2906,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
     }
   ]
 }
