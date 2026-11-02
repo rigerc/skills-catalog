@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T01:27:12Z",
+  "generated_at": "2026-11-02T01:45:27Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -8011,6 +8011,2566 @@
         }
       },
       "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/postgresql-code-review",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/postgresql-code-review/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "5c2f68120440692ae4b030b17e2a3553c1204d63ee871d6d994c6925b1f874cb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:27:57Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2921,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3998,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2702,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3097,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2944,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/postgresql-optimization",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/postgresql-optimization/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "9b511a7d706302761a7700cd6b87df9793650fa7f7f3299fe33243fc339e3c9f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:27:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2917,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4239,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2821,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.323,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2529,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/pytest-coverage",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/pytest-coverage/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "3778add8809c5aac585ab764090f46e7cfdb009ae3fc9fb308710538627970f9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:28:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2723,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4032,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2456,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3379,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3439,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/python-pypi-package-builder",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/python-pypi-package-builder/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "a936499b350cc292fead873345f54893c2e91c46ce0bae8620bd2f1734376f3e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:28:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3056,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3946,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.25,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3886,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3392,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-clients-sdk",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-clients-sdk/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "eac9386970303787ccff5ce65f77e2bc51286a07b27977a8fba1f256f4c95426",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:29:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2946,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4813,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2444,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4045,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2932,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-deployment-options",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-deployment-options/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "31afa639420a3434cc8c48039b38820e8248e1ba47074b3f58a724e73af20516",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:29:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3528,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4391,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2748,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2854,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2624,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-model-migration",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-model-migration/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "811cc59e1b1f421449e898f4e2e3f6d4b43fd220af2d544aaed0e7e134639b07",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:29:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3178,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3637,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.279,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.327,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4849,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-monitoring",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-monitoring/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "5264e89c01d4e02fb3db9ad9bebd0132c7de951a249c1ebc93d863a834529af2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:29:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2567,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.38,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2893,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3348,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3292,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-performance-optimization",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-performance-optimization/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "5323301ea670baa98623e53f8c363845f6edde59a2f0f88e0c6e948d61438a3f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:30:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 2,
+          "confidence": 0.2473,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3494,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2963,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3318,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2928,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-scaling",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-scaling/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "6dee402516b353fec38f39eeb8aacf9aa96b504bdd9d3fa5977f96163c642bcf",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:30:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2922,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3961,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2792,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3541,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3513,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-search-quality",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-search-quality/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "3af84e9019065cd90cc79210c5833153fc62acdcf55bda359ab7876809be0803",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:30:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2915,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3985,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2934,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3315,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.335,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "github/awesome-copilot/qdrant-version-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/qdrant-version-upgrade/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "1a6722e67b24970d52ef94386e162e97f4b4c10eb1599d6d0165050df2ba4993",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:30:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2918,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4014,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2328,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.333,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2943,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/ruff-recursive-fix",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/ruff-recursive-fix/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "92151e328fbccab628de9496797fce39636555e65dd7434687751673b4b57f8c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:31:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3221,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4159,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2746,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2971,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2554,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "github/awesome-copilot/terraform-azurerm-set-diff-analyzer",
+      "status": "evaluated",
+      "source": {
+        "repository": "github/awesome-copilot",
+        "path": "skills/terraform-azurerm-set-diff-analyzer/SKILL.md",
+        "commit": "98b45a78d3ed316e78f005b60594d5c4a50588e3"
+      },
+      "input_sha256": "b7efae1dd84de6f644daeac4e6f2f6a7f281b5edf68bb864fb79bb36cd3c4195",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:31:27Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.356,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3925,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2784,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2933,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2766,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "giuseppe-trisciuoglio/developer-kit/tailwind-css-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "giuseppe-trisciuoglio/developer-kit",
+        "path": "plugins/developer-kit-typescript/skills/tailwind-css-patterns/SKILL.md",
+        "commit": "fe73fb33a09ee6562eeec7415a3f9a3bcf795177"
+      },
+      "input_sha256": "63984406824ef934b457d34db25a5892b5375a82e31845159e6e97179c5acf4c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:31:54Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2367,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4387,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2464,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.326,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3044,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "google-gemini/gemini-skills/gemini-api-dev",
+      "status": "evaluated",
+      "source": {
+        "repository": "google-gemini/gemini-skills",
+        "path": "skills/gemini-api-dev/SKILL.md",
+        "commit": "39d81f4c7de5e56631d07e4ea766d3fe9752ce5d"
+      },
+      "input_sha256": "aad59c38747c467911007d90b5a75707baa3bc662c129f5e94e8c6e4d9e407ae",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:31:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2537,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4113,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2371,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3458,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2721,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-core",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-core/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:32:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3224,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5215,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2973,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3187,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3015,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-frameworks",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-frameworks/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:32:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2576,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4301,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.245,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3094,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2685,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-performance/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:33:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3028,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.5043,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2406,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3922,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2614,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-plugins",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-plugins/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:32:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2893,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.454,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2657,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3699,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.272,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-react",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-react/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:33:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3376,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4032,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2644,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3646,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2402,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-scrolltrigger",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-scrolltrigger/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:33:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2649,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4676,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2788,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3269,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3142,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-timeline",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-timeline/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:34:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2647,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3892,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2413,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.299,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2912,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "greensock/gsap-skills/gsap-utils",
+      "status": "evaluated",
+      "source": {
+        "repository": "greensock/gsap-skills",
+        "path": "skills/gsap-utils/SKILL.md",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      },
+      "input_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:34:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.317,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3274,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2309,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 3,
+          "confidence": 0.2661,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3453,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "hashicorp/agent-skills/refactor-module",
+      "status": "evaluated",
+      "source": {
+        "repository": "hashicorp/agent-skills",
+        "path": "plugins/terraform/skills/refactor-module/SKILL.md",
+        "commit": "f706481af9b8fedb66de909f6243ad29601afa0c"
+      },
+      "input_sha256": "da0b9f3599ed0e513a92b57f0c0ff3fad3168ba461215a9197ebbffe4e0d538f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:34:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2724,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4116,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2778,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3257,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2641,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-stacks",
+      "status": "evaluated",
+      "source": {
+        "repository": "hashicorp/agent-skills",
+        "path": "plugins/terraform/skills/terraform-stacks/SKILL.md",
+        "commit": "f706481af9b8fedb66de909f6243ad29601afa0c"
+      },
+      "input_sha256": "2ccf67ec434439133b83b7905c8846e4f7b1fd99c360b35f884f189ffcb8e091",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:34:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3076,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4375,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2772,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3352,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3928,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "hashicorp/agent-skills/terraform-style-guide",
+      "status": "evaluated",
+      "source": {
+        "repository": "hashicorp/agent-skills",
+        "path": "plugins/terraform/skills/terraform-style-guide/SKILL.md",
+        "commit": "f706481af9b8fedb66de909f6243ad29601afa0c"
+      },
+      "input_sha256": "3a5c2e06a1daa07600d03f48328d1479284e7a9d59d66b2663693ca972080e22",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:35:08Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.2467,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4054,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2612,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3319,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3015,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-agp-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-agp-upgrade/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "1122aa59d8c8b8fdc95dc831171f3344627a3aab112007837319b25605f8fdb8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:35:18Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2776,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4197,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2657,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3231,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2735,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "e1ac27b81c528b3e2c888fad0129ebe37363b5f563289e73964e70985c468083",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:35:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3135,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3843,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2505,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3323,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2931,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-background-work",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-background-work/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a761344be79f71b944f4911096232647213c58574c4ffed70a44f4acde6e03bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:35:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2964,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4367,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3076,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.339,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2553,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-compose",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-compose/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "9abd1954edba8451bf035a470294141c9e50f3465b4a3aa587e4039a04f56d78",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:36:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3026,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3492,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2663,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3183,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.348,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-compose-migration",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-compose-migration/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "14f3a0950e8dae1ad035b542e39a114861f31e7f5a282a30a0816a09e76b6a03",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:36:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3286,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4528,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2598,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3872,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3186,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "9ce59f05b7698e2d994e66d2ffb70c4d2ff5e8287be198614ed663fec69cab51",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:36:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2821,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4431,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3025,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2962,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2975,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-deployment/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "10a6cbab51f091b2d2ea8d6b181543c60a941cadb875c90182effd6ff73cac0e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:37:04Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2984,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.428,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2592,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3688,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2816,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-design-system",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-design-system/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "2316033833619c61c3b4bde98b4ca6bab342c680c733c68ba28ee52ae0bb66fc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:37:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2925,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.385,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2958,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3491,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.277,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-di",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-di/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "65cf43e9d9988a99d43d1f91656d5410a47ef6ec9cbbbbf826aec995661a55f7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:37:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2799,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4509,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2834,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3918,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3052,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-edge-to-edge",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-edge-to-edge/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6125b2ec9cc73bfb637ad49cbdda0b235dcfb3ce8c04d1e7e8cadb97a0696095",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:37:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2672,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.456,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2691,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2677,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2764,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-legacy-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-legacy-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a0e7329c45949be4ada4b79c78490c0308f42ccd07edf673e6109170d184f245",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:38:12Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2656,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3841,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3009,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3588,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3075,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-legacy-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-legacy-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8c0433780309972c27a286c843515d0049743bf9ff9ec50a7727606cb71fb578",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:38:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2648,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4244,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.267,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.4063,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.284,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-legacy-state",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-legacy-state/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "793aece1e0622b1e13020a1583373a6b029566a75d30ff762f88d8e95125248e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:38:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2642,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4127,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2846,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3555,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2817,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-navigation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-navigation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "7bc0e315f3b12e81285c9c3996f0e3bb20059bc2dd3f337200ce40a813d08c91",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:38:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3118,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3922,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2598,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3552,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3348,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-navigation-3",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-navigation-3/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8d88c06ca530ccefb905438ec6cdeaded8dd476796538cf923d185593f1d0c5c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:39:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2671,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4376,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2529,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3404,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2657,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-navigation-type-safe",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-navigation-type-safe/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "43801b5b84ec6ce09abba4cd55f11052a645621c49a7d8f97522841a2176fdc2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:39:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2794,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3656,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2553,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3639,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2911,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-networking",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-networking/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5e743db12e057f2aae369f6b3e52284f0fe4160e28e73c5cad75f0606a87f5d5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:39:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3294,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.396,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.271,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3704,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2795,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-notifications",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-notifications/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "44a943984b0b9018a518714e235e746d4bc03f8828d25a1425499493956e5883",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:39:50Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2987,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4882,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2576,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3613,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2909,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ae17768cafde8ccbd1a490b0c0f7f30027cc3718fddcd0895d07ad044b6ddacf",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:40:25Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2798,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3965,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2656,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3678,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3044,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-persistence",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-persistence/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "88df62719893fbd7ee6ccc3417af6f082fc33a34ece12aaa67ed579e6fc39c88",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:40:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2501,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3668,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3109,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3773,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2736,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-resources",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-resources/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "566a2505cb2a729739a3ba73abab5735c325c76999b85ecf74c1d6a4ad912b4b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:40:53Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3277,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4126,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2751,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3401,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3125,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "4de285f5aca2c68749ff8660717ae837b73da3bdb159b391f9bb210f56fb9f4b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:40:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3006,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3717,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2919,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3319,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2979,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-state",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-state/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "03d18ac7ea8705571af39f5680ab7e7b78d33f481939d71bb479d87ea78dbbe5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:41:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2524,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4062,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2452,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4789,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3019,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "2cf9658809579214e07f69d7976799f68ef79cffc7f0012e03ae4b9b1da5d515",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:41:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2948,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4533,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2563,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3695,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3435,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f4b4758561ffaf3ab74a6676ac92f316aec215c9d303c6a5e1486d4e899718b9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:42:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 2,
+          "confidence": 0.2485,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3843,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2887,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3478,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2833,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/android-xml-views",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/android/android-xml-views/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b1d8ef8e6653a446dac9eaae5bd73c06e0a010804153abdfae8c4551e94253cd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:42:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3078,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4221,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2745,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.322,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2921,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "fee3a42e0a542f0c5f7b142dbaddd048a0fa9e5f1f8d1b63434bb13004f8e8db",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:42:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2825,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3819,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.238,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3594,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2459,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-components",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-components/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "41650e971770f8bf3df47e1ce69334f059b09283ec56b65fe37811a401f3a114",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:42:37Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2886,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4504,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2551,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.355,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2687,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-dependency-injection",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-dependency-injection/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "cfe820eb771fe6c95a97858fe28a22d576762e5f8a54360ec8fff725697de2bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:43:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3989,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.448,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3001,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3214,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2947,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-directives-pipes",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-directives-pipes/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "108535d6e293ca6a0842bc810c612401a0d1fb4b438ec561c7916fd8393b537e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:43:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2809,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4407,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2731,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3292,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2782,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-forms",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-forms/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "bb494ab19e20be4d485fc5db49178e65283559754c28b2f477db9a41b3b47358",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:43:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2808,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3789,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.277,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3633,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3421,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-http-client",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-http-client/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "695be28ded950d14df375623e8ccc5e5aefa5881280c1e704587a5d3870611f6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:44:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3225,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4249,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2479,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3166,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2949,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "99bc64c0e0c27c53c83ba22bd21330874be106e7f4f1722af271cea9da4522b0",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:44:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3053,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4565,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2722,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2994,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.304,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-routing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-routing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "36c17a34d19fc203751bafc63f51ad07b153f3c9e82cb60abe28118512e521a4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:44:40Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2725,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3738,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2644,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.326,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2828,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-rxjs-interop",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-rxjs-interop/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "73b48f00d3c2d5ebc20b09c6e57761b9565b5360fa33d5ec8db0b21bc1c4b4bf",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:44:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2976,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3969,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3139,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3647,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2762,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5f727d664542486be5fc9088deda7c3290d3d4b5f98876d9bb46d035bb285919",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:45:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2892,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4013,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2353,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3326,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2762,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/angular-ssr",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/angular/angular-ssr/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "29d4c08b91cbad3cd88084d7a200c31cf68812eff4bc509af0c41181736a400e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T01:45:16Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3054,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.381,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2482,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3809,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2998,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
     }
   ]
 }
