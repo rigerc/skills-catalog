@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-02T02:03:33Z",
+  "generated_at": "2026-11-02T02:22:28Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -13127,6 +13127,2566 @@
         "context_efficiency": {
           "score": 5,
           "confidence": 0.2573,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6a73add62cdf685685b83f35346197847530b6e28f4f44aab9e29dd04578024b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:04:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2972,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4377,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2987,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3388,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3241,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/laravel-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/laravel/laravel-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d8f04155565c7a18e11cbbfb3b5118d6f205ffa3b3ec1ef4d36f7df3890673b5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:04:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.284,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3825,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2413,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3304,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3108,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-api-standards",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-api-standards/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6e8dfeb05fe499c346c4e0ee40edbd6a448a41a84d476c2cb1c2c73983cd4131",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:04:55Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2557,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3931,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2463,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3022,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2949,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "b8ce5b6b13778caf299126c4ae542b78b9f0cf5accaabf4fe0e4d58121665b90",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:04:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3364,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.471,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2475,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3795,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2403,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-bullmq",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-bullmq/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6f4fc60d42551f5dfa1390d35d00b79c70ce200e6169d531cac9ae8180232aeb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:05:30Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2684,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4221,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2958,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.288,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2458,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-caching",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-caching/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d56f31b6483aeeb72b97c6764588b5ae4f24f861a4a1f3b9cbc8385c5e5b098b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:05:32Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2705,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4784,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2263,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3495,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.285,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-configuration",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-configuration/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6e59689c597394c7050462dcd74452a991724c7612bf481694f63a7d3b23215c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:06:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3084,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.387,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2529,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3019,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2803,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-controllers-services",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-controllers-services/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8ee108590e0d63c207ea2a074e3274f8745d256d054dfed6b78a0ed5d2c64d93",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:06:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2755,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4132,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2725,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2819,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2535,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-database",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-database/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f3d8987a68df82af4fe5b7dd69e3bd95591432fcb1ef3587cd0f76e8ec1650bc",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:06:36Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.315,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4463,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2451,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3339,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3165,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-deployment/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "e919d7a00846fa02f917d13365465c3f0c64450522a5aaebc3deb37840d2607d",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:06:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3049,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4529,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2472,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3006,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2481,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-documentation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-documentation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "3dc2afa3211cca9317cd4da509e2e6529994d6d2856ceb6c0716f6a3b577540c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:07:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.329,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4083,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2859,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3389,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2877,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0e8c9c3444ecfc87179c2178052cb69e180ec36523fe3c357bd43e18e10326cd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:07:14Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3084,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3894,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2425,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3098,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2855,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-file-uploads",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-file-uploads/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8f7913bcbdea2ee7ba2d000468528c95188c45dbaaec12611ef5815b5f759647",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:07:45Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2913,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.392,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2942,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3164,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3244,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-notification",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-notification/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "1fc3cc43f0bf10beefdc9967fb24e824c2a12679b77ef3f691090fc78f54b1c8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:07:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3062,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3677,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3083,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3163,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2656,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-observability",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-observability/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "90cbbb557c1c1f6d5daee417bf25fc829f9707e6127d1281d046b3ca1c1e9d03",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:08:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2643,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3563,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2724,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3388,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2641,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-performance",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-performance/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "468a037e1036369390d157357bd63e6cba40cd920b0c9e8fcf2de0a028687c50",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:08:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3051,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4499,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2641,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3369,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3469,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-real-time",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-real-time/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "94325150bae990e2831ac2239f3027c7cedf4bdd59269794723d28ed403873a3",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:09:03Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2574,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3996,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2332,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3306,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3857,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-scheduling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-scheduling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0a00eb3705a5b219508ac9aecdbc0910fb51992f15d9045f5856f00cc0cdcc85",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:09:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3068,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3894,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.28,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3321,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2948,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-search",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-search/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c58c0668d16f53712899d9017465a8e237f0d24ef57cea1fe560e93fa9a04e68",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:09:29Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2608,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.393,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.278,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3179,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3008,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "fb6e8ce8082cfd3db73fdd4d9b4b055f04d43c20334df7446c87fa1a30edb03c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:09:42Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3066,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3879,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2681,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2934,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2618,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-security-isolation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-security-isolation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c43c802fa02ee070ba6eada1173d55ff632f8766099d35415e767651141507f8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:10:02Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2605,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3575,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2715,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3385,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2743,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "784d471a48ec23ed727ed213d84f9b0781cb236db30277f717f609ad550c3a7e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:10:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2503,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4585,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2607,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.324,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3167,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nestjs-transport",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nestjs/nestjs-transport/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6077371f6f72f113e480463c6f9c462818c87cf9e95e4af74608cc0ae3d04c01",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:10:35Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2945,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4449,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.307,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3529,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2787,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-app-router",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-app-router/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "9d9d2bbf26b0768f2a61d756923793757a141ece83376c7f2d8f6316e4b40d45",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:10:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.289,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4869,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2695,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3375,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2811,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "9e383442d73690cbf3f6a93aa70dd0b9623b89e52e665d2328c3cacf2f882393",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:11:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3016,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4242,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2572,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3972,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2533,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-authentication",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-authentication/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d58f39e4d5b851532b59417a6a08eb3fd564145f0ed482be14834a35eb064a86",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:11:22Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2823,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4009,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2658,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3454,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3059,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-caching",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-caching/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "23ae51f20f9dc9b88e99e56b7b65e447a1d3c85d61428a66bcb282d33f115518",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:11:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3136,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3993,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2695,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2864,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3068,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-data-access-layer",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-data-access-layer/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "2adc1e283b9be28ac88361066aab3738f1397506686a1911f4f8044709d18dcb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:11:58Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.3073,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4441,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2389,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3906,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3184,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-data-fetching",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-data-fetching/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "ac3bc58c19a9fe57ea59680ba381d1040493a76516241022bb423594a2a415eb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:12:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3023,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4772,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2708,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.323,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3393,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-i18n",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-i18n/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "3e5f64f4969766d17961db80487f06f08b9bc200daf4ee850300984455299f44",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:12:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3238,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3865,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2595,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2928,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.353,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-optimization",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-optimization/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "7dfd4c3dd7b8146c974a9e7620e88e0bdafd078a556b8870fd75f59a9297c113",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:12:48Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3483,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.433,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2711,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3083,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3102,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-pages-router",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-pages-router/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "47db5a44695527842b809d553e5c1b097228119f1feac718afc6ed66a3205298",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:13:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2633,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4681,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2465,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3104,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3174,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-rendering",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-rendering/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "7a9e9d8dc8d1b4e291da81a97ced2f1c0b5eb7a11dd52ca4bc674b47982ba220",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:13:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2873,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3506,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.264,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3038,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2937,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "be713864b1030d0836fda8bfdf1456ca0c559f0996e35703cc000b316ac56732",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:13:43Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3334,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4565,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2569,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3071,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2667,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-server-actions",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-server-actions/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "276d27332da6fef1dc903e3d079d2ec16fcccbc5d409a5d9faba8fc7c2e7e302",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:14:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3319,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4191,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.242,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2715,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3564,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-server-components",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-server-components/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "3054ad0902e0cee750d14f7fce0c1266d866bf64b4481c31e16729b16f487cd9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:14:13Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3401,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4637,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2912,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3266,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2507,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-state-management",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-state-management/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "96b51fdec2c34080eb22506b57bc37e67e19e1bb789c3ac403a16cc61e1047cd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:14:38Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2836,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4011,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3016,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3175,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3733,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-styling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-styling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5c46fc4d447fb62cf52af64ba90b67f0705930ad070a3682fe1239e1a9696d82",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:14:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3248,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4235,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.282,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3659,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.271,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c5a8def879e0c0c0adce0be07c720e0c8df6025c77a2af99c15f1101ef7b23d2",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:15:11Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2917,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3607,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2625,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.289,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2827,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c828c0ebf519c24875d5f42d8517aab1ee1874bd3353fa9996365d7e84e81f1b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:15:24Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.294,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3765,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2888,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3313,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2793,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/nextjs-upgrade",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/nextjs/nextjs-upgrade/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "e1c201a963b054ed2bf5a3c62c95f75479e2ef391c2e3c8bfd854652567981f8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:15:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 1,
+          "confidence": 0.2221,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3508,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2566,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3344,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2664,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "6bd74bcf794e9f992bfdc3cbcf29392d5111db8d94e5c26b487b7461e8d308eb",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:15:59Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2874,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4506,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2644,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2893,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2426,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-concurrency",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-concurrency/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "5b142c476a896d618e26bd033a702045720b791f79fc2940caa32f478379f411",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:16:20Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3309,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4476,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2448,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.406,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2626,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "626902832a561649ba5b2b077bd4f0fcc47c3db38e6ade7a56e76b98b88c954f",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:16:34Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2744,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3342,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2455,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3506,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2672,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f6b9da66cdc2d67b07acf54ccf741db8e8c6080464ce50af4e90b0f98b5630f6",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:16:56Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.303,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3955,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2632,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.4099,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3117,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "834462d5f7e86836907363c5fe73cd5fae82467e49f66cf5db19e6ba1da32ee8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:17:10Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2674,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4071,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2485,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3088,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3348,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "32bb6e4cadb84a27e78c17589d3b779c5e3a3917a0eab11256bfd88ce3cbdfea",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:17:31Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2478,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3461,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2781,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2431,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 2,
+          "confidence": 0.2952,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/php-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/php/php-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d041efb7502acb7a1672cf00a47675b762dfe6c3fdf85a7e32ab1b8a7ef66f30",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:17:51Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 3,
+          "confidence": 0.2708,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4027,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2643,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3208,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2886,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "0dd802d9a9c0b6d9ddb3c015e6dfacc4d0a36b25cf697bed7262c3bf5ffa3dc1",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:18:09Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2978,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3544,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3368,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3342,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2796,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-async-runtime",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-async-runtime/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "dae6571c6dcde301a326db339be466ddc8d9e411305fc601c8242ca591ed26bd",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:18:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2553,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.391,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.27,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3038,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2728,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-best-practices",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-best-practices/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "506947afa323e316b85dd9eb1e409fdbfb6e1e6aaec84571ef01cd79dcebdef7",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:18:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2785,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4395,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3074,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3202,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2791,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-database",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-database/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a864b074a0d290f701783ebf01077085cce3b2c449290e4252576b1ac6fdb130",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:18:47Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3024,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4586,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3235,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.2958,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3078,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-error-handling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-error-handling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "a82e94fe1ac46606e53d607499a16f6f1eb7f5057ee491496d610462b751d7ec",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:19:23Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.272,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4636,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2854,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3644,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2745,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-language",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-language/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "930c3d23e0d1a1871555602eebb2e100d22363fb093f42e2b649f10823a489d8",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:19:15Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3145,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4065,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.254,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3679,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3106,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-security",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-security/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "661b0df259a42ce984d7deb1f232a181c1ef7e7b1eadd2f6956b84809e64a2fe",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:19:44Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2869,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4536,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2567,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3577,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2844,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-testing",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-testing/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "f390d592213721df279a2985cbd7f8976b6065c3f1a0eaab1f01279ec9518b4b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:20:00Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3374,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.406,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2478,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.2924,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 3,
+          "confidence": 0.2509,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.8
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/python-tooling",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/python/python-tooling/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "3a325fd497bfdf7bd2801f9e121ab4f8283622bf2129eefb55c8537c9f058b07",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:20:19Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2758,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4318,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2623,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3121,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2886,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-playwright-cli",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/quality-engineering/quality-engineering-playwright-cli/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "d7ce8a85e71008bfa5ba8eb04ddaec6a8cd80a906db08e5fcc1a8f22d3edd8e5",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:20:33Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2511,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4229,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2756,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3089,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.4316,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/quality-engineering-playwright-pom-generation",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/quality-engineering/quality-engineering-playwright-pom-generation/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "058b2e596c2e5e848b8f572837b2f6caa0279b4aec31dd036be1613fd8cab4e9",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:20:49Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3184,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4552,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 2,
+          "confidence": 0.2847,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.295,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.3831,
+          "mode": "model"
+        }
+      },
+      "overall_score": 3.6
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-component-patterns",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-component-patterns/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "88658f43a994757b3c7d922e9b1e0772252044ca525b8f2f88f217cea3b3529e",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:21:05Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.3272,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4475,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2714,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3005,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2608,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-hooks",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react/react-hooks/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "db51d97849137ffe57f3d666870d6c8ca4e1a44664e6ce27baed57f0f85d858c",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:21:26Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2993,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4238,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2347,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 5,
+          "confidence": 0.3431,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2794,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-architecture",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-architecture/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "21374669e482067dbf326d73196021b12c340e7425998d34d54692f9979d53c4",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:21:41Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 5,
+          "confidence": 0.272,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4221,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.3009,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3301,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2896,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.4
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-components",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-components/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "8f1658df2a1dcc3a8353ed7ca7c4a1acdbf4451fbb7339a14e0f72028868b027",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:22:01Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.2892,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.4243,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2433,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3456,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2771,
+          "mode": "model"
+        }
+      },
+      "overall_score": 4.2
+    },
+    {
+      "id": "HoangNguyen0403/agent-skills-standard/react-native-deployment",
+      "status": "evaluated",
+      "source": {
+        "repository": "HoangNguyen0403/agent-skills-standard",
+        "path": "skills/react-native/react-native-deployment/SKILL.md",
+        "commit": "a5465a69cdcf3210ca37c10a435ae66a401eb4fb"
+      },
+      "input_sha256": "c9bb87103e266d46b6e0f09f879cba1d7450b84913e02e99eb1173bb70708a6b",
+      "fingerprint": "947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17",
+      "evaluated_at": "2026-11-02T02:22:17Z",
+      "scores": {
+        "trigger_clarity": {
+          "score": 4,
+          "confidence": 0.261,
+          "mode": "model"
+        },
+        "instruction_quality": {
+          "score": 3,
+          "confidence": 0.3931,
+          "mode": "model"
+        },
+        "correctness": {
+          "score": 5,
+          "confidence": 0.2781,
+          "mode": "model"
+        },
+        "safety": {
+          "score": 4,
+          "confidence": 0.3575,
+          "mode": "model"
+        },
+        "context_efficiency": {
+          "score": 5,
+          "confidence": 0.2771,
           "mode": "model"
         }
       },
