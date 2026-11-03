@@ -1,9 +1,11 @@
-# Justfile for scripts/evaluate-skills.mjs: all evaluators and the local Kev stack.
+# Justfile for the legacy comparison evaluators (scripts/evaluate-skills.mjs, schema v2
+# via schemas/legacy-scores.schema.json) and the local Kev stack. Canonical data/scores.json
+# is maintained by the Open JEV pipeline; legacy runs always write results/*.
 # `just --list` shows everything; run targets from the repository root.
 #
 # Environment overrides: KEV_DIR (kev checkout), KEV_RUN (serving checkpoint,
 # must match KEV_CHECKPOINT in scripts/jev-evaluator.mjs), KEV_PORT, KEV_BASE_URL,
-# KEV_OUTPUT (the kev results file), OPENAI_OUTPUT (data/scores.json).
+# KEV_OUTPUT (the kev results file), OPENAI_OUTPUT (results/legacy-evaluations.json).
 #
 # Credentials per endpoint: OPENAI_API_KEY|OPENROUTER_API_KEY (chat), TYPESAFE_API_KEY,
 # OPENROUTER_API_KEY, OPENCODE_API_KEY (cloud Jev); the local kev endpoint needs none.
@@ -55,7 +57,7 @@ default:
 # Evaluate with the default OpenAI chat evaluator (output override: OPENAI_OUTPUT)
 @eval-openai *args:
     node scripts/evaluate-skills.mjs --provider openai \
-        --output {{env_var_or_default("OPENAI_OUTPUT", "data/scores.json")}} "$@"
+        --output {{env_var_or_default("OPENAI_OUTPUT", "results/legacy-evaluations.json")}} "$@"
 
 # Evaluate with the OpenRouter chat evaluator (OPENROUTER_API_KEY)
 @eval-openrouter *args:
@@ -86,8 +88,8 @@ default:
 @kev-plan *args:
     node scripts/evaluate-skills.mjs --provider jev --jev-endpoint kev --dry-run "$@"
 
-# Offline --check against any saved report file (default: data/scores.json)
-@check-report file='data/scores.json':
+# Offline --check against any saved legacy/OpenJEV-adjacent report file
+@check-report file='results/legacy-evaluations.json':
     node scripts/evaluate-skills.mjs --check --output {{file}}
 
 # Offline --dry-run plan with the default provider selection
@@ -99,13 +101,17 @@ default:
     node scripts/evaluate-skills.mjs --check \
         --output {{env_var_or_default("KEV_OUTPUT", "results/kev-0.8b-evaluations.json")}}
 
-# Check the canonical catalog scores
+# Offline check of the canonical Open JEV scores
 @check:
-    node scripts/evaluate-skills.mjs --check --output data/scores.json
+    npm run check:scores
 
-# Refresh canonical coverage offline (--sync), no API calls
+# Refresh canonical coverage offline (prunes retired IDs, refreshes means)
 @sync:
-    node scripts/evaluate-skills.mjs --sync --output data/scores.json
+    npm run sync:scores
+
+# Legacy report offline maintenance (uses KEV_OUTPUT-derived legacy file by default)
+@legacy-sync *args:
+    node scripts/evaluate-skills.mjs --sync         --output {{env_var_or_default("LEGACY_OUTPUT", "results/legacy-evaluations.json")}} "$@"
 
 # Validate all data files against their JSON Schemas
 @validate:
