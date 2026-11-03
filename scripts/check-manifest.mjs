@@ -34,6 +34,14 @@ for(const skill of manifest.skills){
    fail('stale eligible skill '+skill.id);
  if(!quality.eligible&&(!Array.isArray(quality.quarantine_reasons)||!quality.quarantine_reasons.length))
    fail('quarantine missing reasons '+skill.id);
+ if(manifest.manifest_version.minor>=1){
+   const evaluation=skill.evaluation,alias=skill.open_jev;
+   if((evaluation.status==='current')!==(evaluation.overall_score!==null))fail('evaluation status/score mismatch '+skill.id);
+   if(evaluation.status==='current'&&(evaluation.result_kind!=='open_jev_scores'||!evaluation.evaluator_fingerprint))
+     fail('invalid primary Open JEV evaluation '+skill.id);
+   if(alias&&(alias.status!==evaluation.status||alias.overall_score!==evaluation.overall_score||
+     alias.evaluator_fingerprint!==evaluation.evaluator_fingerprint))fail('Open JEV compatibility alias differs '+skill.id);
+ }
  if(source&&(!source.url.includes('/blob/'+source.commit+'/')||!(source.path==='SKILL.md'||source.path.endsWith('/SKILL.md'))))
    fail('source pin mismatch '+skill.id);
 }

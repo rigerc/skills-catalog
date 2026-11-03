@@ -74,6 +74,7 @@ If the skill is deliberately index-only, leave its recommendation arrays empty a
 - In `catalog.json.counts`, adjust `distinct_skills` (+1 for a net new skill); `technologies_with_skills` and `technologies_detect_only` change only if a technology switches mapping status; `technology_combinations` changes only if a combination was added or removed; `frontend_essential_skills` changes only when that list changes.
 - In `mappings.json.counts`, adjust `distinct_referenced_skills` (+1 for a new catalog skill in the current v1 count contract), plus technology/combination counts when relevant.
 - Keep `catalog.json.snapshot_date` and `mappings.json.snapshot_date` equal when refreshing the snapshot; update `catalog-source-ledger.json.unresolved_count` if the unresolved total changed.
+- Run `npm run sync:scores` to refresh model-score coverage and repository means after catalog/source edits; it does not call the model. Include `data/scores.json` in the PR.
 - Run the commands in [CONTRIBUTING.md](../CONTRIBUTING.md#local-workflow). Generated `SKILLS.md` will pick up the entry automatically.
 
 ## Updating or retiring a skill

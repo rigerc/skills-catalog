@@ -28,6 +28,8 @@ jobs:
         run: node scripts/update-skill-sources.mjs --write
       - name: Validate updated catalog and generated docs
         run: |
+          npm run sync:scores
+          npm run check:scores
           node scripts/catalog.mjs --check
           node --test tests/*.test.mjs
       - name: Open or update a review PR when sources changed
@@ -38,6 +40,7 @@ jobs:
           base: main
           delete-branch: true
           add-paths: |
+            data/scores.json
             data/catalog-source-ledger.json
             data/catalog.json
             data/mappings.json

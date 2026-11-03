@@ -1,19 +1,18 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {evaluator,DIMENSIONS} from '../scripts/open-jev-lib.mjs';
+import {evaluator,DIMENSIONS,buildReport} from '../scripts/open-jev-lib.mjs';
 import {normalize} from '../scripts/open-jev-normalize.mjs';
 import {MAX_BATCHES,summarize} from '../scripts/open-jev-bulk-status.mjs';
 const pin=(id)=>({id,status:'verified',commit:'b'.repeat(40),
   url:'https://github.com/acme/skills/blob/'+('b'.repeat(40))+'/'+id+'/SKILL.md'});
-const fake=(ids)=>({catalog:{catalog_id:'nosey-built-in'},
-  entries:new Map(ids.map(id=>[id,pin(id)]))});
-const meta=(id)=>({id,source:{repository:'acme/skills',path:id+'/SKILL.md',
+const fake=(ids)=>({catalog:{catalog_id:'nosey-built-in',skills:ids.map(id=>({id:'acme/skills/'+id}))},
+  entries:new Map(ids.map(id=>['acme/skills/'+id,{...pin(id),id:'acme/skills/'+id}]))});
+const meta=(id)=>({id:'acme/skills/'+id,source:{repository:'acme/skills',path:id+'/SKILL.md',
   commit:'b'.repeat(40)},input_sha256:'c'.repeat(64),fingerprint:evaluator().fingerprint});
 const raw=()=>({workflow:null,decisions:Object.fromEntries(DIMENSIONS.map(d=>[d,{
   type:'score',mode:'model',answer:3,confidence:0.9,
   distribution:{0:0.02,1:0.04,2:0.08,3:0.8,4:0.06}}]))});
-const doc=(rows)=>({schema_version:1,catalog_id:'nosey-built-in',
-  generated_at:'2026-11-02T00:00:00Z',evaluator:evaluator(),entries:rows});
+const doc=rows=>buildReport(rows,fake(['one','two']),{now:'2026-11-02T00:00:00Z'});
 test('bulk evaluator continues from a pin-current partial report',()=>{
  const a=normalize(meta('one'),raw()),p=summarize({
   source:fake(['one','two']),results:doc([a]),accepted:1,prior:{completed_batches:3},runId:'run42'});

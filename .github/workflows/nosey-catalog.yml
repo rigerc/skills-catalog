@@ -36,8 +36,9 @@ jobs:
       - name: Check deterministic quality and model report invariants
         run: |
           node scripts/quality.mjs --check
-          node scripts/evaluate-skills.mjs --check
-          node scripts/open-jev-check.mjs
+          npm run check:scores
+          npm run sync:scores
+          git diff --exit-code -- data/scores.json
       - name: Check duplicate sources
         run: node scripts/check-duplicate-skills.mjs
       - name: Run existing Node and Python tests

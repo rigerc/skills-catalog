@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-/** Model review of pinned SKILL.md files. Node.js 22+; Jev uses an optional package. */
+/** Legacy comparison reviews of pinned SKILL.md files; canonical scores are maintained by Open JEV. */
 import {createHash} from 'node:crypto';
-import {existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync} from 'node:fs';
+import {existsSync, mkdirSync, mkdtempSync, readFileSync, realpathSync, renameSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
-import {dirname, resolve} from 'node:path';
+import {basename, dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {sourceCoordinates} from './check-changed-skill-sources.mjs';
 import {readRawSkill} from './update-skill-sources.mjs';
@@ -30,7 +30,7 @@ export const DEFAULTS = {
   provider: 'openai', model: 'gpt-6-luna', reasoningEffort: 'medium',
   maxOutputTokens: 8192, maxFileBytes: 200000, concurrency: 2,
   requestSpacing: 1000, retries: 3, timeoutSeconds: 180,
-  output: resolve(ROOT, 'data/scores.json'),
+  output: resolve(ROOT, 'results/legacy-evaluations.json'),
   opencodeBin: 'opencode',
   jevEndpoint: 'typesafe',
 };
@@ -375,7 +375,23 @@ function checkRepositoryScores(doc, problems) {
   if (Object.keys(totals).some(key => totals[key] !== doc.summary[key])) problems.push('repository coverage does not add up to report summary');
 }
 
+export function assertLegacyOutput(output) {
+  const canonical = resolve(ROOT, 'data/scores.json');
+  const target = resolve(output);
+  let ancestor = target;
+  const suffix = [];
+  while (!existsSync(ancestor)) {
+    suffix.unshift(basename(ancestor));
+    ancestor = dirname(ancestor);
+  }
+  const realTarget = resolve(realpathSync(ancestor), ...suffix);
+  if (target === canonical || realTarget === (existsSync(canonical) ? realpathSync(canonical) : canonical)) {
+    throw new Error('Legacy evaluators cannot write canonical data/scores.json; use Open JEV');
+  }
+}
+
 export function writeScores(output, doc) {
+  assertLegacyOutput(output);
   const text = JSON.stringify(doc, null, 2) + '\n';
   if (existsSync(output) && readFileSync(output, 'utf8') === text) return false;
   mkdirSync(dirname(output), {recursive: true});
@@ -487,7 +503,7 @@ Jev uses TYPESAFE_API_KEY, OPENROUTER_API_KEY, or OPENCODE_API_KEY by endpoint.
                              Jev: jev-1.14.0; typesafe/jev-1.14; jev-1.13-free by endpoint
   --opencode-bin PATH        OpenCode 2+ executable for free models (default: opencode)
   --reasoning-effort EFFORT   Chat only; default: medium (none, low, medium, high, xhigh, max)
-  --output PATH              Default: data/scores.json
+  --output PATH              Explicit noncanonical output required
   --concurrency N            Default: 2
   --request-spacing MS       Minimum interval between request starts (default: 1000)
   --retries N                Retries on provider HTTP 429/5xx (default: 3)
@@ -560,13 +576,14 @@ export function parseArgs(argv) {
 async function main(argv) {
   const options = parseArgs(argv);
   if (options.help) {console.log(HELP); return;}
+  if (!options.dryRun && !argv.includes('--output')) throw new Error('Legacy evaluation requires explicit noncanonical --output PATH');
+  assertLegacyOutput(options.output);
   const catalog = JSON.parse(readFileSync(resolve(ROOT, 'data/catalog.json'), 'utf8'));
   const ledger = JSON.parse(readFileSync(resolve(ROOT, 'data/catalog-source-ledger.json'), 'utf8')).entries;
   const ids = new Set(catalog.skills.map(skill => skill.id));
   for (const id of options.ids ?? []) if (!ids.has(id)) throw new Error('Unknown skill ID: ' + id);
   const output = resolve(options.output);
-  const legacy = resolve(ROOT, 'results/llm-evaluations.json');
-  const input = !existsSync(output) && output === DEFAULTS.output && existsSync(legacy) && !options.check ? legacy : output;
+  const input = output;
   const previous = existsSync(input) ? JSON.parse(readFileSync(input, 'utf8')) : null;
   if (options.check) {
     if (!previous) throw new Error(output + ' is missing; run --sync to initialize it');

@@ -8,8 +8,7 @@ verified, commit-pinned skill. It is generated; do not edit it by hand.
 
 `structure`, `content` and `contamination` checks, per skill, on the **full skill directory**
 at the pinned commit (every tracked nested file, including custom directories, not a curated list). The checkout excludes unrelated sibling skill directories. Git submodules and LFS payloads are not recursively hydrated or executed. Not run: `links`
-(live HTTP, non-deterministic, spends network quota) and LLM scoring. An optional,
-separate LLM review script is described below.
+(live HTTP, non-deterministic, spends network quota) and LLM scoring. Canonical model scores are maintained separately by Open JEV as described below.
 
 Both validator workflows use `--allow-extra-frontmatter` and `--allow-dirs=evals`
 from the shared `TOOL` configuration in `scripts/quality.mjs`. Extra frontmatter fields
@@ -50,240 +49,129 @@ The metadata-only preflight counts Git-tracked paths inside selected directories
 
 Reviewed exceptions are stored in `data/quality-waivers.json`, bound to a skill ID, pinned commit, and applicable status. They require a rationale and reviewer, and should usually have an expiry date. A new commit requires new review.
 
-## LLM evaluation
+## Canonical Open JEV scores
 
-`scripts/evaluate-skills.mjs` reviews every skill in `data/catalog.json`, using the
-verified, commit-pinned `SKILL.md` URL in `data/catalog-source-ledger.json`. It uses
-Node.js 22+; prose providers need no packages, and Jev uses an optional package.
-The default provider is OpenAI, using
-[`gpt-6-luna`](https://developers.openai.com/api/docs/models/gpt-6-luna) with
-[`medium` reasoning effort](https://developers.openai.com/api/docs/guides/reasoning).
-OpenAI requests use the Responses API and strict
-[Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses).
+[`data/scores.json`](../data/scores.json), validated by
+[`schemas/scores.schema.json`](../schemas/scores.schema.json), is the sole maintained
+model score report. Open JEV replaces the previous HTTP/SDK evaluator results.
+The migration imports the completed evaluation report from [PR #47](https://github.com/rigerc/skills-catalog/pull/47),
+commit `e54886ce3e678a922ca0aa196c04de8a1dfd3184`: **867 evaluated, zero pending**.
+All source pins and evaluator fingerprints match the current catalog. Previous
+provider scores are recoverable in Git history. The completed 14-batch progress
+record is retained, so workflows can resume without repeating this evaluation.
 
-Set `OPENAI_API_KEY` in your environment, then run:
+The pinned [Open JEV action](../.github/workflows/nosey-open-jev.yml) uses
+`model-v1` and [five score questions](../config/open-jev-questions.json): trigger
+clarity, instruction quality, correctness, safety, and context efficiency. Class
+indices 0–4 become integer scores 1–5; the overall score is their equal-weight
+mean. Confidence is model-reported, not measured accuracy. Saved results contain
+scores and confidence, without written reasons, recommendations or distributions.
 
-```sh
-# Offline plan: no credentials, network requests, or file writes.
-npm run evaluate:skills -- --dry-run
+Only the **first 4,000 UTF-16 code units of SKILL.md** enter the model state.
+The saved `input_sha256` hashes the full downloaded bytes, not the submitted
+excerpt. Historical rows do not record whether a particular document was truncated.
+Supporting files, runtime behavior and factual claims are not independently checked.
+Scores drive the site's normal score display, filters, sorting and repository
+averages. They do not change static quality gates or installation eligibility.
+`ranking_calibrated: false` honestly records the absence of calibration evidence;
+it does not prevent selecting Open JEV as the main evaluator.
 
-# Start with a sample.
-npm run evaluate:skills -- --limit 10
+### Evaluate and maintain
 
-# Evaluate all remaining skills, resuming successful reviews automatically.
-npm run evaluate:skills
-
-# Explicit model configuration and selected skills.
-node scripts/evaluate-skills.mjs --provider openai --model gpt-6-luna \
-  --reasoning-effort medium --ids addyosmani/web-quality-skills/accessibility
-
-# OpenRouter: set OPENROUTER_API_KEY. Defaults to openai/gpt-6-luna.
-npm run evaluate:skills -- --provider openrouter --limit 10 \
-  --output results/openrouter-evaluations.json
-
-# OpenCode: free DeepSeek V4.1 Flash through the installed OpenCode 2+ CLI.
-# No evaluation API key is needed for this route. "opencode" is also accepted.
-npm run evaluate:skills -- --provider opencode-go --limit 10 \
-  --output results/opencode-free-evaluations.json
-
-# Optional Go subscription API: set OPENCODE_GO_API_KEY (or OPENCODE_API_KEY).
-# Requires explicitly choosing a subscription model instead of the free default.
-npm run evaluate:skills -- --provider opencode-go --model deepseek-v4.1-flash \
-  --limit 10 --output results/opencode-go-evaluations.json
-```
-
-OpenRouter uses its [Chat Completions API with Structured Outputs](https://openrouter.ai/docs/guides/features/structured-outputs)
-and requires routes that support the supplied parameters. Specify another supported
-model with its full OpenRouter ID via `--model`. Its default reasoning effort is medium.
-
-OpenCode defaults to `deepseek-v4.1-flash-free`. The [OpenCode inference documentation](https://opencode.ai/v2/docs/console/api/inference/#authentication)
-restricts free chat models to OpenCode itself; third-party API clients receive HTTP 403.
-The script therefore invokes the real OpenCode CLI for free models. It does not spoof
-the client, substitute the subscription model, or fall back to a paid route. The free
-offer is [time-limited](https://opencode.ai/v2/docs/console/models/#free-models) and subject
-to OpenCode availability and limits. Install OpenCode 2+ first; `--opencode-bin` changes
-the executable path.
-
-Each CLI review runs in a temporary directory with separate configuration/data/cache
-directories, a dedicated agent, all tool permissions denied, one agent step, and sharing
-disabled. The source document is attached as data. The temporary files are removed
-afterward. CLI JSON event output must include a completed response; text is validated
-against the same evaluation schema. The CLI route requests JSON through the prompt,
-rather than server-enforced Structured Outputs, and does not automatically retry failures.
-
-An explicit non-free model uses the [Go subscription API](https://opencode.ai/v2/docs/console/go/#endpoints)
-with `OPENCODE_GO_API_KEY`, falling back to `OPENCODE_API_KEY` only when that variable
-is absent. The Go adapter uses Chat Completions JSON-object mode and validates the
-schema locally. DeepSeek reasoning maps `none` to disabled thinking, `low` to low,
-`medium`/`high`/`xhigh` to high, and `max` to max, following its
-[native reasoning controls](https://api-docs.deepseek.com/guides/thinking_mode/).
-The effective DeepSeek effort and transport are recorded in the evaluator configuration.
-
-This sends each downloaded document to the selected provider and consumes its usage
-allowance or incurs API charges, except for available free models. Source downloads
-use raw GitHub URLs rather than the GitHub REST/GraphQL APIs. Source documents are
-treated as untrusted text and their commands are never executed. Only `SKILL.md`
-is supplied: supporting references, scripts, assets, and runtime behavior are not
-evaluated. Reviews are subjective and may vary between runs.
-
-Each prose review scores trigger clarity, instruction quality, correctness, safety, and
-context efficiency from 1–5, with a reason for each score, an arithmetic mean,
-strengths, improvements, and limitations. These judgments are separate from the
-offline validator results and do not certify security or factual correctness.
-
-Results default to [`data/scores.json`](../data/scores.json), with the versioned
-contract in [`schemas/scores.schema.json`](../schemas/scores.schema.json).
-`--output` selects an alternate file with the same report format. Results include
-source URL/commit, content hash, evaluator fingerprint, returned model/response ID,
-token usage, and catalog-wide coverage. Successful results are reused only when
-the source pin, model, reasoning effort, rubric, schema, and output-token budget
-match. Errors are retried on the next run. `--force` refreshes cached reviews;
-`--limit` caps pending attempts, and `--ids` selects canonical catalog IDs.
-Use separate output files to retain reviews from multiple models.
-
-The default file is maintained incrementally: each attempt is atomically checkpointed,
-successful matching scores are reused, and retired catalog entries are removed when
-the report is refreshed. If `data/scores.json` is missing, the script imports the old
-`results/llm-evaluations.json` report when present, retaining its scores and provenance.
-The legacy file is left intact. Coverage may be incomplete; missing results are never
-filled with fabricated scores.
-
-Maintain or check the saved artifact without credentials or network access:
+Node.js 22+ is required. Planning and maintenance need no credentials, optional
+client, network access or model execution:
 
 ```sh
-# Initialize the file, migrate legacy results, or refresh coverage after catalog edits.
+# Offline selection of missing/stale pinned skills; writes workflow matrix inputs.
+npm run evaluate:skills -- --limit 8 --out /tmp/open-jev-plan.json
+
+# Refresh coverage and repository means after catalog/source changes.
 npm run sync:scores
-
-# Check fingerprints, score means, distributions, ordering, and summary consistency.
 npm run check:scores
-
-# Validate the full JSON Schema contract, including scores.json.
-npm run validate:schemas -- --self-test
+npm run validate:schemas -- --self-test --skip-unmapped
 ```
 
-`--sync` preserves the saved evaluator and score values, updates coverage, and prunes
-retired IDs. `--check` reports current coverage without requiring full coverage or
-forcing old score snapshots to match new source pins. Neither command calls an API
-or loads the optional Jev client. Unchanged reports retain their timestamp and are
-not rewritten. Evaluation options such as `--provider` and `--limit` apply to live
-evaluation rather than these maintenance commands. CI runs schema and semantic checks.
+Run **Open JEV — incremental canonical skill evaluation** in Actions to evaluate
+up to 64 pending/stale skills (default eight). **Open JEV — complete remaining
+verified skills** evaluates batches of 64, at most two parallel jobs and 20 batches.
+The existing main-push trigger remains; no schedule is enabled. Self-dispatch stops
+when complete, when a batch accepts no new results, or when its budget is exhausted.
+Review the progress PR before starting another bulk budget; manual incremental
+runs remain available for an explicitly bounded follow-up.
 
-### Repository scores
+Both workflows serialize through one concurrency group and checkpoint to
+`automation/open-jev-full-evaluation`. They restore report data onto the current
+main scripts/catalog, merge successes, validate scores and open/update a review PR.
+They check the base commit and use an explicit push lease, so a changed branch
+fails the update rather than losing results. A failed update needs a rerun.
+No workflow writes scores directly to main. Failed evaluations leave the skill
+pending (or preserve stale evidence); they never become zero or fabricated scores.
 
-The `repositories` array in `data/scores.json` assigns each cataloged upstream
-repository an `overall_score` on the same 1–5 scale. It is the arithmetic mean of
-the contributing skills' saved `overall_score` values, with equal weight per skill
-and no additional rounding. `criterion_scores` contains the per-dimension means.
-For example, skills scoring 3 and 5 give their repository a score of 4.
+`sync:scores` prunes retired IDs and refreshes coverage while retaining score values
+and provenance. Source repository, exact path, commit and inference fingerprint
+must match for a current evaluation. Stale evidence remains inspectable but does not
+contribute to current averages or score sorting/filtering. No-op sync retains the
+report timestamp and file bytes. CI requires stored coverage/aggregates to match
+the current catalog; include the synced report with catalog/source changes.
 
-Only successful evaluations matching the current source pin and report evaluator
-fingerprint contribute. Pending, failed, unresolved, stale, and retired skills do
-not contribute; a repository with no current evaluations has `null` overall and
-criterion scores. Each row includes coverage in `summary` and the exact
-`scored_skill_ids`, so a partial sample is visible alongside its score. Coverage
-counts only skills in this catalog, not every skill available upstream. Repository
-scores summarize document reviews; they do not independently assess a repository.
+### Report and compatibility
 
-Live evaluation checkpoints and `npm run sync:scores` refresh these aggregates
-without additional model calls. Older version 2 reports remain readable; run
-`npm run sync:scores` to add repository scores. CI checks aggregate means,
-contributing IDs, and coverage arithmetic against the saved score snapshot, so
-later catalog changes can still be reported without forcing an evaluation run.
+Canonical schema v3 has one evaluator and one entry per evaluated skill.
+`result_kind: "open_jev_scores"` distinguishes these results from legacy SDK Jev.
+Entries use `evaluation.scores`, pinned source URL/commit, full-document hash,
+evaluation time and the original inference fingerprint. Rubric/action/model/input
+policy changes invalidate cached evaluations; moving the file or changing report
+format does not. Metadata retains the full questions and excerpt policy so its
+fingerprint can be verified offline.
 
-### Jev score evaluation
+The `repositories` array includes each catalog repository's coverage, arithmetic
+mean `overall_score`, per-dimension `criterion_scores`, and exact `scored_skill_ids`.
+Each current skill contributes equally. Pending, unresolved, stale and retired
+skills do not contribute; empty means are `null`, not zero. Coverage describes this
+catalog's sample, not every skill in an upstream repository.
 
-Jev returns typed scores and probability distributions. It evaluates the same five
-dimensions without writing reasons, summaries, strengths, or recommendations.
-Install its pinned optional client (version `0.1.1`) with:
+The manifest keeps its existing `evaluation` shape and uses Open JEV as the main
+score. Manifest v1.1 retains `open_jev` as a deprecated compatibility alias, populated
+from the same canonical entry. Its old `ranking_eligible: false` flag applies only
+to that legacy extension; new consumers use `evaluation`. There is no second input
+report. The existing Pages `data/scores.json` URL publishes v3; strict external
+score consumers must update their schema.
+
+For explicit migration of a saved standalone Open JEV v1 report:
 
 ```sh
-npm install --ignore-scripts --no-package-lock --include=optional
+node scripts/open-jev-scores.mjs --import /path/to/saved-open-jev-v1.json
 ```
 
-The client is loaded only for live Jev evaluation. Existing providers and every
-`--dry-run` work without it. Select the Jev endpoint independently of the chat provider:
+This command replaces canonical results; it never imports the previous provider's
+scores. `--import-checkpoint PATH` merges a v3 or standalone-v1 checkpoint with the
+current report, retaining newer current evidence. Workflow resume supports old
+progress branches containing the standalone filename without checking out their
+scripts or catalog. Completed-batch accounting is retained.
+
+### Legacy provider comparisons
+
+The old HTTP/SDK evaluators remain available as `evaluate:legacy` for explicit
+comparison runs. They require `--output` outside the canonical path and cannot
+write `data/scores.json` through aliases or maintenance flags. Their reports use
+[`legacy-scores.schema.json`](../schemas/legacy-scores.schema.json), not canonical v3.
+No legacy report is automatically imported into production scores.
 
 ```sh
-# Direct TypeSafe: set TYPESAFE_API_KEY. Default model: jev-1.14.0.
-npm run evaluate:skills -- --provider jev --limit 10 \
-  --output results/jev-evaluations.json
+# Offline preview; live invocation requires the selected provider's credentials.
+npm run evaluate:legacy -- --provider openai --dry-run \
+  --output results/openai-comparison.json
 
-# OpenRouter: set OPENROUTER_API_KEY. Default model: typesafe/jev-1.14.
-# This route has paid input and free output.
-npm run evaluate:skills -- --provider jev --jev-endpoint openrouter --limit 10 \
-  --output results/jev-openrouter-evaluations.json
+# Optional SDK Jev (install optional dependencies first), separate from Open JEV.
+npm run evaluate:legacy -- --provider jev --jev-endpoint opencode-go --limit 10 \
+  --output results/jev-comparison.json
 
-# OpenCode Console: set OPENCODE_API_KEY. Default model: jev-1.13-free.
-npm run evaluate:skills -- --provider jev --jev-endpoint opencode-go --limit 10 \
-  --output results/jev-opencode-free-evaluations.json
-
-# Plan the entire catalog offline, without a key or the optional client.
-npm run evaluate:skills -- --provider jev --jev-endpoint opencode-go --dry-run
+node scripts/evaluate-skills.mjs --sync --output results/jev-comparison.json
 ```
 
-Remove `--limit 10` to process all remaining skills. Each endpoint reads only its
-documented key variable; there is no fallback to another endpoint's credential.
-`--jev-endpoint` applies to `--provider jev`. The existing
-`--provider opencode-go` continues to select the DeepSeek chat evaluator.
-
-TypeSafe uses its [System One endpoint](https://docs.typesafe.ai/api/system-one).
-OpenRouter uses its [compatible System One endpoint](https://openrouter.ai/docs/guides/community/typesafe-sdk),
-`https://openrouter.ai/api/v1/systemone`. OpenCode uses its documented
-[Jev endpoint](https://opencode.ai/v2/docs/console/models/#jev),
-`https://opencode.ai/inference/systemone/v1/systemone`, with the limited-time free
-`jev-1.13-free` model. Although the selector is named `opencode-go`, this Jev route
-belongs to OpenCode Console. It uses the typed HTTP API and requires no OpenCode CLI.
-Paid Jev model overrides are rejected for that route; access or quota failures never
-switch it to paid Jev or OpenRouter.
-
-One request contains the document and five independently described, five-level
-[Score questions](https://docs.typesafe.ai/primitives/score). Native fractional
-scores range from 0–4; the report preserves them as `native_score` and exposes
-`score = native_score + 1` on a 1–5 scale. The overall score is the equal-weight
-mean, with rounding only in console output. Per-level probabilities, matching
-legends, and optional confidence are preserved. Probability totals must be within
-`0.001` of one. These distributions describe Jev's judgment, not verified correctness.
-
-Jev results use `result_kind: "jev_scores"`, while chat results use
-`result_kind: "prose_review"`. Reports now write `schema_version: 2`. Version 1
-prose reports are read and migrated in memory without changing their successful
-cache fingerprints; dry runs never persist migration. Jev cache identity includes
-the endpoint, requested model, client/adapter versions, complete questions, score
-transformation, and validation configuration. Explicitly using a moving alias such
-as `jev-latest` requires `--force` when you want fresh results after an upstream change.
-
-The package redacts state before sending it. Reports retain the downloaded document
-hash, `original_state_sha256`, and `submitted_state_sha256` so the source and submitted
-content are distinguishable. Reports never store the source text or request body.
-The returned model, endpoint, request ID, and usage/cost are recorded when available;
-missing metadata stays unknown, and a real reported zero cost is preserved.
-
-An upstream `source: "fallback"`, malformed distribution, or missing rubric answer
-is `not_evaluated`. HTTP authentication/credit/model errors and exhausted rate limits
-stop dispatch while preserving checkpoints. HTTP 529 overloads use the normal retry
-policy. Document/context limits fail only the affected skill without truncating it
-or enabling long context automatically. A byte limit does not guarantee that a
-document fits the model's token context.
-
-Jev does not accept chat `--reasoning-effort` or `--max-output-tokens` options;
-explicitly passing either is an error. The normal source/concurrency/timeout/retry
-options still apply. All Jev tests use fixtures or injected HTTP responses; no live
-Jev evaluation or paid API call is needed for verification.
-
-The report is atomically checkpointed after each attempt. Missing/unresolved sources,
-oversized documents, refusals, incomplete responses, and malformed output are recorded
-as `not_evaluated`, never as successful reviews. Coverage distinguishes evaluated,
-failed, pending, stale, and unresolved skills. Selected runs retain other saved entries.
-
-Defaults are two concurrent skills, one second between request starts, three retries
-for provider HTTP 429/5xx, a 180-second provider request/CLI timeout, 8,192 output tokens
-(including reasoning), and a 200,000-byte source limit. `--help` lists overrides.
-Oversized documents are skipped rather than truncated. Authentication/configuration
-errors and exhausted rate limits stop new requests and preserve progress. Retry-After
-delays longer than 60 seconds also stop the run. Network timeouts are recorded without
-automatically repeating potentially billed requests; rerunning retries them.
-
-Exit codes: `0` for a successful run or offline plan, `1` for configuration/report errors,
-`2` for a stopped run or a report containing failed/unresolved skills. Pending skills
-from an intentional `--limit` or `--ids` selection do not cause an error. This script
-does not run automatically in CI or change the canonical quality data.
+Legacy providers retain their own options and cache behavior; use
+`npm run evaluate:legacy -- --help`. OpenAI uses `OPENAI_API_KEY`, OpenRouter uses
+`OPENROUTER_API_KEY`, and SDK Jev reads its selected endpoint's key
+(`TYPESAFE_API_KEY`, `OPENROUTER_API_KEY`, or `OPENCODE_API_KEY`). These optional
+comparisons are outside the canonical evaluation workflows and may consume a
+provider's usage allowance. No live inference is needed for repository tests.

@@ -5,10 +5,11 @@
   "type": "module",
   "description": "Canonical data contracts and source catalog for Nosey",
   "scripts": {
-    "evaluate:skills": "node scripts/evaluate-skills.mjs",
-    "sync:scores": "node scripts/evaluate-skills.mjs --sync",
-    "check:scores": "node scripts/evaluate-skills.mjs --check",
-    "validate:schemas": "node scripts/validate-schemas.mjs"
+    "evaluate:skills": "node scripts/open-jev-plan.mjs",
+    "sync:scores": "node scripts/open-jev-scores.mjs --sync",
+    "check:scores": "node scripts/open-jev-scores.mjs --check",
+    "validate:schemas": "node scripts/validate-schemas.mjs",
+    "evaluate:legacy": "node scripts/evaluate-skills.mjs"
   },
   "devDependencies": {
     "ajv": "8.17.1"

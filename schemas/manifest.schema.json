@@ -204,6 +204,26 @@
                 ],
                 "minimum": 1,
                 "maximum": 5
+              },
+              "result_kind": {
+                "enum": [
+                  "prose_review",
+                  "jev_scores",
+                  "open_jev_scores"
+                ]
+              },
+              "evaluator_fingerprint": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            }
+          },
+          "open_jev": {
+            "type": "object",
+            "description": "Deprecated v1 compatibility alias of evaluation. Its historical ranking_eligible flag does not govern primary evaluation scores.",
+            "properties": {
+              "ranking_eligible": {
+                "const": false
               }
             }
           }
