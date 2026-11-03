@@ -1,0 +1,193 @@
+name: Open JEV — complete remaining verified skills
+
+# A merge into main starts the first bounded batch. GitHub workflow_dispatch
+# (allowed from GITHUB_TOKEN) queues the next batch only after a successful
+# checkpoint. No scheduled run or unbounded retry loop is left enabled.
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nosey-open-jev-bulk.yml'
+      - 'scripts/open-jev-bulk-status.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: open-jev-canonical-scores
+  cancel-in-progress: false
+
+env:
+  PROGRESS_BRANCH: automation/open-jev-full-evaluation
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Resume from the latest validated progress checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin "$PROGRESS_BRANCH" >/dev/null; then
+            git fetch origin "$PROGRESS_BRANCH:refs/remotes/origin/$PROGRESS_BRANCH"
+            node scripts/open-jev-resume.mjs --ref "refs/remotes/origin/$PROGRESS_BRANCH" --require-budget true
+          fi
+          npm run sync:scores
+          npm run check:scores
+      - id: plan
+        run: node scripts/open-jev-plan.mjs --limit 64 --out .nosey-eval/plan.json
+      - name: Report selected jobs
+        run: |
+          node -e "let p=require('./.nosey-eval/plan.json'); console.log('Selected '+p.count+'; remaining after this batch '+p.remaining)"
+
+  evaluate:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Fetch bounded, commit-pinned SKILL.md as inert data
+        env:
+          SKILL_ID: ${{ matrix.id }}
+        run: node scripts/open-jev-prepare.mjs --id "$SKILL_ID" --out .nosey-eval/state.json --meta .nosey-eval/meta.json
+      - id: jev
+        name: Evaluate with SHA-pinned Open JEV model-v1
+        uses: intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b
+        with:
+          state-file: .nosey-eval/state.json
+          questions-file: config/open-jev-questions.json
+          model-release: model-v1
+      - name: Verify and normalize all five typed scores
+        env:
+          RESULT_FILE: ${{ steps.jev.outputs.result-file }}
+          RESULT_KEY: ${{ matrix.key }}
+        run: node scripts/open-jev-normalize.mjs --meta .nosey-eval/meta.json --result "$RESULT_FILE" --out ".nosey-eval/results/$RESULT_KEY.json"
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: open-jev-bulk-result-${{ matrix.key }}
+          path: .nosey-eval/results/*.json
+          retention-days: 30
+
+  checkpoint:
+    needs: [plan, evaluate]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Restore or initialize persistent evaluation branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin "$PROGRESS_BRANCH" >/dev/null; then
+            git fetch origin "$PROGRESS_BRANCH:refs/remotes/origin/$PROGRESS_BRANCH"
+            node scripts/open-jev-resume.mjs --ref "refs/remotes/origin/$PROGRESS_BRANCH" --require-budget true
+          fi
+          git switch --create "$PROGRESS_BRANCH"
+          npm run sync:scores
+      - name: Retrieve successful, normalized score artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: open-jev-bulk-result-*
+          path: .nosey-eval/results
+          merge-multiple: true
+        continue-on-error: true
+      - id: merge
+        name: Merge only scores matching catalog pins and evaluator fingerprint
+        run: |
+          node scripts/open-jev-merge.mjs --dir .nosey-eval/results --out data/scores.json
+          npm run check:scores
+      - id: progress
+        if: needs.plan.outputs.count != '0'
+        name: Record checkpoint and enforce 20-batch budget
+        shell: bash
+        env:
+          ACCEPTED: ${{ steps.merge.outputs.accepted }}
+        run: |
+          set -euo pipefail
+          node scripts/open-jev-bulk-status.mjs --accepted "$ACCEPTED"
+          node scripts/catalog.mjs --check
+      - id: commit
+        name: Commit validated evidence to isolated progress branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/scores.json .github/open-jev-bulk-progress.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: checkpoint Open JEV bulk evaluation run $GITHUB_RUN_ID"
+          test "$(git rev-parse HEAD^)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
+          PROGRESS_HEAD="$(git rev-parse --verify "refs/remotes/origin/$PROGRESS_BRANCH" 2>/dev/null || true)"
+          git push --force-with-lease="refs/heads/$PROGRESS_BRANCH:$PROGRESS_HEAD" origin "HEAD:refs/heads/$PROGRESS_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Queue the next batch only when progress was made
+        if: steps.progress.outputs.continue == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/actions/workflows/nosey-open-jev-bulk.yml/dispatches" -f ref=main
+          echo "Queued another 64-skill batch; ${{ steps.progress.outputs.remaining }} remain."
+      - name: Submit full or partial report as review-only PR
+        if: steps.commit.outputs.changed == 'true' && (needs.plan.outputs.count == '0' || steps.progress.outputs.finish == 'true')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          COMPLETED="$(node -p 'require("./data/scores.json").summary.evaluated')"
+          REMAINING="$(node -p 'const s=require("./data/scores.json").summary; s.pending+s.stale')"
+          {
+            echo 'Open JEV incremental bulk results, source-pin and evaluator-fingerprint validated.'
+            echo
+            echo "Completed: $COMPLETED skills."
+            echo "Remaining: $REMAINING skills."
+            echo "Stop reason: ${{ steps.progress.outputs.status || 'completed' }}."
+            echo
+            echo 'Updates canonical skill scores, coverage and repository means.'
+            echo 'Model scores are not security certification or installation policy.'
+            echo 'Do not merge without independent CI checks and human review.'
+          } > /tmp/open-jev-bulk-pr.md
+          PR_NUMBER="$(gh pr list --base main --head "$PROGRESS_BRANCH" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$PR_NUMBER" ]; then
+            gh pr edit "$PR_NUMBER" --title 'data: review canonical Open JEV evaluation results' --body-file /tmp/open-jev-bulk-pr.md
+          else
+            gh pr create --base main --head "$PROGRESS_BRANCH" --title 'data: review canonical Open JEV evaluation results' --body-file /tmp/open-jev-bulk-pr.md
+          fi

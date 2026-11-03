@@ -27,7 +27,7 @@ const json = value => Response.json(value);
 const catalog = (...entries) => ({catalog_id: 'test', skills: entries.map(({id}) => ({id}))});
 const noSleep = async () => {};
 
-test('CLI defaults to OpenAI GPT-6 Luna with medium reasoning and validates options', () => {
+test('legacy CLI defaults to OpenAI GPT-6 Luna with medium reasoning and validates options', () => {
   assert.equal(parseArgs([]).model, 'gpt-6-luna');
   assert.equal(parseArgs([]).reasoningEffort, 'medium');
   assert.equal(parseArgs([]).provider, 'openai');

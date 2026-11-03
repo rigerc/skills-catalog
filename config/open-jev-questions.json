@@ -1,0 +1,57 @@
+{
+  "trigger_clarity": {
+    "type": "score",
+    "instructions": "Rate how clearly this SKILL.md explains when the skill should be invoked.",
+    "criteria": [
+      "No usable trigger",
+      "Vague trigger",
+      "Somewhat clear trigger",
+      "Clear concrete triggers",
+      "Precise and unambiguous triggers"
+    ]
+  },
+  "instruction_quality": {
+    "type": "score",
+    "instructions": "Rate how actionable and sequenced the SKILL.md instructions are.",
+    "criteria": [
+      "No steps",
+      "Mostly vague",
+      "Partly actionable",
+      "Actionable instructions",
+      "Specific and well ordered instructions"
+    ]
+  },
+  "correctness": {
+    "type": "score",
+    "instructions": "Rate internal consistency and testability from the supplied excerpt, without assuming external correctness.",
+    "criteria": [
+      "Contradictory",
+      "Major ambiguity",
+      "Mixed consistency",
+      "Mostly consistent",
+      "Consistent and verifiable"
+    ]
+  },
+  "safety": {
+    "type": "score",
+    "instructions": "Rate how clearly the instructions bound risky actions and protect the user; do not certify security.",
+    "criteria": [
+      "No risk safeguards",
+      "Weak safeguards",
+      "Some cautions",
+      "Good guardrails",
+      "Explicit safe boundaries"
+    ]
+  },
+  "context_efficiency": {
+    "type": "score",
+    "instructions": "Rate signal-to-noise and compactness of the supplied skill instructions.",
+    "criteria": [
+      "Mostly noise",
+      "Very redundant",
+      "Some redundancy",
+      "Mostly concise",
+      "High information density"
+    ]
+  }
+}

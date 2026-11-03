@@ -1,0 +1,152 @@
+name: Open JEV — incremental canonical skill evaluation
+
+on:
+  # Manual, bounded updates to canonical scores; all results go through a review PR.
+  workflow_dispatch:
+    inputs:
+      max_skills:
+        description: 'Maximum changed/unevaluated pinned skills (0–64)'
+        default: '8'
+permissions:
+  contents: read
+concurrency:
+  group: open-jev-canonical-scores
+  cancel-in-progress: false
+env:
+  PROGRESS_BRANCH: automation/open-jev-full-evaluation
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore current evidence from the shared progress branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin "$PROGRESS_BRANCH" >/dev/null; then
+            git fetch origin "$PROGRESS_BRANCH:refs/remotes/origin/$PROGRESS_BRANCH"
+            node scripts/open-jev-resume.mjs --ref "refs/remotes/origin/$PROGRESS_BRANCH"
+          fi
+          npm run sync:scores
+          npm run check:scores
+      - id: plan
+        env:
+          MAX_SKILLS: ${{ inputs.max_skills || '8' }}
+        run: node scripts/open-jev-plan.mjs --limit "$MAX_SKILLS" --out .nosey-eval/plan.json
+
+  evaluate:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    continue-on-error: true
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch pinned SKILL.md as inert, bounded data
+        env:
+          SKILL_ID: ${{ matrix.id }}
+        run: node scripts/open-jev-prepare.mjs --id "$SKILL_ID" --out .nosey-eval/state.json --meta .nosey-eval/meta.json
+      - id: jev
+        name: Evaluate using the reviewed, SHA-pinned Open JEV action
+        uses: intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b
+        with:
+          state-file: .nosey-eval/state.json
+          questions-file: config/open-jev-questions.json
+          model-release: model-v1
+      - name: Validate and normalize five typed scores
+        env:
+          RESULT_FILE: ${{ steps.jev.outputs.result-file }}
+          RESULT_KEY: ${{ matrix.key }}
+        run: node scripts/open-jev-normalize.mjs --meta .nosey-eval/meta.json --result "$RESULT_FILE" --out ".nosey-eval/results/$RESULT_KEY.json"
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: open-jev-result-${{ matrix.key }}
+          path: .nosey-eval/results/*.json
+          retention-days: 14
+
+  merge:
+    needs: [plan, evaluate]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore current evidence from the shared progress branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin "$PROGRESS_BRANCH" >/dev/null; then
+            git fetch origin "$PROGRESS_BRANCH:refs/remotes/origin/$PROGRESS_BRANCH"
+            node scripts/open-jev-resume.mjs --ref "refs/remotes/origin/$PROGRESS_BRANCH"
+          fi
+          npm run sync:scores
+          npm run check:scores
+      - name: Start progress branch from the current base
+        run: git switch --create "$PROGRESS_BRANCH"
+      - name: Retrieve successful score artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: open-jev-result-*
+          path: .nosey-eval/results
+          merge-multiple: true
+        continue-on-error: true
+      - name: Merge only pin- and fingerprint-matching evaluations
+        run: |
+          node scripts/open-jev-merge.mjs --dir .nosey-eval/results --out data/scores.json
+          npm run check:scores
+      - name: Commit canonical scores and open or update the review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/scores.json
+          if [ -f .github/open-jev-bulk-progress.json ]; then git add .github/open-jev-bulk-progress.json; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: refresh canonical Open JEV scores"
+          test "$(git rev-parse HEAD^)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
+          PROGRESS_HEAD="$(git rev-parse --verify "refs/remotes/origin/$PROGRESS_BRANCH" 2>/dev/null || true)"
+          git push --force-with-lease="refs/heads/$PROGRESS_BRANCH:$PROGRESS_HEAD" origin "HEAD:refs/heads/$PROGRESS_BRANCH"
+          cat > /tmp/open-jev-pr.md <<'BODY'
+          Canonical Open JEV scores from pinned sources and evaluator identity.
+          Updates skill scores, coverage and repository means. Model scores are not security certification or installation policy.
+          BODY
+          PR_NUMBER="$(gh pr list --base main --head "$PROGRESS_BRANCH" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$PR_NUMBER" ]; then
+            gh pr edit "$PR_NUMBER" --title 'data: refresh canonical Open JEV scores' --body-file /tmp/open-jev-pr.md
+          else
+            gh pr create --base main --head "$PROGRESS_BRANCH" --title 'data: refresh canonical Open JEV scores' --body-file /tmp/open-jev-pr.md
+          fi
