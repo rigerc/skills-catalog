@@ -9,6 +9,8 @@ import {compile} from '../scripts/compile-catalog.mjs';
 import {buildReport,sources} from '../scripts/open-jev-lib.mjs';
 const read=name=>JSON.parse(readFileSync('data/'+name+'.json'));
 const catalog=read('catalog'),mappings=read('mappings'),ledger=read('catalog-source-ledger'),scores=read('scores');
+// Rendering tests need current-score fixtures even when saved evaluations await a new rubric run.
+const currentScores=()=>buildReport(scores.entries.map(e=>({...e,fingerprint:scores.evaluator.fingerprint})),sources());
 function site(report=scores,sourceLedger=ledger){
  const nodes=new Map();
  const document={querySelector:key=>{
@@ -21,7 +23,7 @@ function site(report=scores,sourceLedger=ledger){
  return {context,nodes,run:code=>runInContext(code,context)};
 }
 test('main site displays Open JEV confidence and scope and uses scores for filters and sorting',()=>{
- const ui=site();
+ const scores=currentScores(),ui=site(scores);
  assert.equal(ui.run('nScored'),scores.summary.evaluated);
  assert.match(ui.nodes.get('#ssum').textContent,/Open JEV \(model-v1\).*4,000 UTF-16/);
  assert.match(ui.run('scoreHtml(skills.find(s=>s.sc))'),/Model confidence/);
@@ -32,6 +34,7 @@ test('main site displays Open JEV confidence and scope and uses scores for filte
  assert.equal(ui.run('REPOS.filter(r=>r.rx?.overall_score!=null).length'),scores.repositories.filter(r=>r.overall_score!=null).length);
 });
 test('site excludes stale scores from current counts, filters and ordering and handles empty/legacy reports',()=>{
+ const scores=currentScores();
  const changed=structuredClone(ledger),id=scores.entries[0].id;
  changed.entries.find(e=>e.id===id).url=changed.entries.find(e=>e.id===id).url.replace('/SKILL.md','/moved/SKILL.md');
  const ui=site(scores,changed);assert.equal(ui.run('nScored'),scores.summary.evaluated-1);
@@ -48,6 +51,13 @@ test('manifest main evaluation and compatibility alias use the same canonical re
  assert.equal(manifest.skills.filter(s=>s.evaluation.status==='current').length,scores.summary.evaluated);
  for(const e of scores.entries){
   const skill=manifest.skills.find(s=>s.id===e.id);
+  if(e.fingerprint!==scores.evaluator.fingerprint){
+   assert.equal(skill.evaluation.status,'stale');
+   assert.equal(skill.evaluation.overall_score,null);
+   assert.equal(skill.open_jev.status,'stale');
+   assert.equal(skill.open_jev.overall_score,null);
+   continue;
+  }
   assert.equal(skill.evaluation.overall_score,e.overall_score);
   assert.equal(skill.evaluation.result_kind,'open_jev_scores');
   assert.equal(skill.open_jev.overall_score,skill.evaluation.overall_score);

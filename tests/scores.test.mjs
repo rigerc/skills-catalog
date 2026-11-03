@@ -41,11 +41,11 @@ test('canonical v3 schema accepts Open JEV and rejects legacy providers and fabr
 });
 
 test('standalone import replaces scores without changing inference identity or values',()=>{
- const row=entry(),migrated=importLegacy(legacy([row]),source());
+ const row=entry(),input=legacy([row]),migrated=importLegacy(input,source());
  assert.equal(migrated.schema_version,3);assert.deepEqual(migrated.entries,[row]);
  assert.deepEqual(migrated.summary,{total:2,evaluated:1,not_evaluated:0,stale:0,pending:1,unresolved:0});
  assert.equal(migrated.generated_at,NOW);
- assert.equal(migrated.evaluator.fingerprint,'947999d07f3b653df55434a69d2be731eac1d5e79fcec332b8988b1767a26b17');
+ assert.equal(migrated.evaluator.fingerprint,input.evaluator.fingerprint);
  checkReport(migrated,source());
  for(const mutate of [d=>{d.schema_version=2;},d=>{d.evaluator.provider='jev';},d=>{d.catalog_id='other';},
   d=>{d.evaluator.questions_sha256='c'.repeat(64);},d=>{d.entries.push(d.entries[0]);}]){
