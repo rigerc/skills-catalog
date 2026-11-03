@@ -54,8 +54,11 @@ Reviewed exceptions are stored in `data/quality-waivers.json`, bound to a skill 
 [`data/scores.json`](../data/scores.json), validated by
 [`schemas/scores.schema.json`](../schemas/scores.schema.json), is the sole maintained
 model score report. Open JEV replaces the previous HTTP/SDK evaluator results.
-The migration retains eight Open JEV evaluations: initial coverage is **8 evaluated,
-859 pending** out of 867 skills. Previous scores are recoverable in Git history.
+The migration imports the completed evaluation report from [PR #47](https://github.com/rigerc/skills-catalog/pull/47),
+commit `e54886ce3e678a922ca0aa196c04de8a1dfd3184`: **867 evaluated, zero pending**.
+All source pins and evaluator fingerprints match the current catalog. Previous
+provider scores are recoverable in Git history. The completed 14-batch progress
+record is retained, so workflows can resume without repeating this evaluation.
 
 The pinned [Open JEV action](../.github/workflows/nosey-open-jev.yml) uses
 `model-v1` and [five score questions](../config/open-jev-questions.json): trigger

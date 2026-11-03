@@ -27,7 +27,6 @@ test('main site displays Open JEV confidence and scope and uses scores for filte
  assert.match(ui.run('scoreHtml(skills.find(s=>s.sc))'),/Model confidence/);
  assert.match(ui.run('scoreHtml(skills.find(s=>s.sc))'),/Reviewed \d{4}-\d{2}-\d{2} by Open JEV model-v1/);
  assert.doesNotMatch(ui.run('scoreHtml(skills.find(s=>s.sc))'),/undefined|NaN/);
- assert.match(ui.run('scoreHtml(skills.find(s=>!s.sc))'),/Not scored yet/);
  ui.run("S.min='4'");assert.equal(ui.run('skills.filter(match).every(s=>s.sc.o>=4)'),true);
  ui.run("S.sort='score'");assert.equal(ui.run('skills.slice().sort(sorter())[0].sc.o'),Math.max(...scores.entries.map(e=>e.overall_score)));
  assert.equal(ui.run('REPOS.filter(r=>r.rx?.overall_score!=null).length'),scores.repositories.filter(r=>r.overall_score!=null).length);

@@ -11,7 +11,7 @@ coverage, repository aggregates and explicit standalone-v1 import.
 **Acceptance criteria:**
 - [x] Canonical v3 accepts only Open JEV results; conversion preserves saved values, provenance and inference fingerprint without inventing missing fields.
 - [x] Freshness checks and coverage/means handle pending, unresolved, stale and retired skills; invalid identities, dimensions, metadata and duplicate IDs fail.
-- [x] Offline migration is atomic and repeatable; eight saved entries produce eight evaluated and 859 pending for the current catalog.
+- [x] Offline migration is atomic and repeatable; the completed remote report produces 867 evaluated and zero pending for the current catalog.
 
 **Verification:** `node --test tests/scores.test.mjs tests/open-jev-pipeline.test.mjs`;
 add migration fixtures and invalid/empty/stale/aggregate cases.
@@ -91,11 +91,11 @@ Run the offline migration after code changes are ready and remove obsolete runti
 artifacts. Previous primary scores remain recoverable in Git history.
 
 **Acceptance criteria:**
-- [x] `data/scores.json` contains the eight Open JEV evaluations with recalculated coverage/means, replacing all prior-provider results.
+- [x] `data/scores.json` contains all 867 Open JEV evaluations from PR #47 with recalculated coverage/means, replacing all prior-provider results.
 - [x] `data/open-jev-scores.json` and its obsolete standalone schema are removed; only intentional compatibility import code and migration fixtures/docs reference the old path.
 - [x] Repeated canonical sync is byte-identical and canonical checks/schema validation pass.
 
-**Verification:** Compare all eight scores/provenance against the migration input;
+**Verification:** Compare all imported scores/provenance against the PR #47 migration input;
 run `npm run sync:scores` twice, `npm run check:scores`, schema validation and
 `rg -n 'open-jev-scores\.json' scripts tests schemas .github docs package.json site`.
 **Dependencies:** Tasks 3–4. **Scope:** Medium.
@@ -140,8 +140,8 @@ verification and Pages staging checks in temporary output directories. Verify
 - 131 Node tests passed on both the local runtime and CI's Node 22.23.4 runtime.
 - Three Python detection-pattern tests passed.
 - Canonical schema validation and negative fixtures passed; score checks passed.
-- Two sync runs were byte-identical to the migrated report; all eight imported
-  Open JEV score payloads/provenance were compared with the original standalone input.
+- Initial eight-entry migration: two sync runs were byte-identical and all
+  imported score payloads/provenance matched the original standalone input.
 - Catalog/generated docs, unmapped index, quality invariants and duplicate checks passed.
 - Fixed-revision compilation produced identical manifests twice; manifest checks
   and Pages staging/verification passed, with 593 quality-eligible skills unchanged.
@@ -151,3 +151,18 @@ verification and Pages staging checks in temporary output directories. Verify
   stale/empty states, manifest aliases, old/new checkpoint imports and Git report
   output larger than 1 MiB. Legacy-output protection includes a symlink alias.
 - No live evaluation, workflow dispatch, paid inference or deployment was performed.
+
+## Completed remote report import (2026-11-03)
+
+Imported [PR #47](https://github.com/rigerc/skills-catalog/pull/47) at commit
+`e54886ce3e678a922ca0aa196c04de8a1dfd3184` through the checkpoint migration path.
+All 867 entries match current source pins and evaluator identity; coverage is now
+867 evaluated, zero pending/stale/unresolved. The completed 14-batch progress ledger
+is preserved. No new inference was run.
+
+Follow-up verification: all 867 canonical entries, provenance, coverage and repository
+means match the completed PR #47 report after conversion. Canonical checks, schema
+negative fixtures and no-op sync passed. All 131 Node tests passed on both runtimes;
+the empty-state test no longer assumes the production catalog contains an unscored
+skill. Deterministic full-report manifest compilation and Pages validation passed;
+the planner selects zero remaining skills.

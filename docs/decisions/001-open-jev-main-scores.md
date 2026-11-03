@@ -12,8 +12,11 @@ produces it through reviewed incremental/bulk workflow PRs. Old evaluators requi
 explicit alternate outputs and cannot write the canonical path. Format migration
 preserves the original inference fingerprint, keeping saved Open JEV results valid.
 
-Coverage initially falls from 150 scored skills to eight, with 859 pending. Old
-scores remain in Git history, not as a production fallback. Open JEV now supplies
+The initial migration used eight scores. The completed report from
+[PR #47](https://github.com/rigerc/skills-catalog/pull/47), commit
+`e54886ce3e678a922ca0aa196c04de8a1dfd3184`, supplies all 867 current evaluations;
+its completed 14-batch progress ledger is retained. Old provider scores remain in
+Git history, not as a production fallback. Open JEV now supplies
 normal score display, filters, sorting and repository means. No calibration claim
 is added, and static quality eligibility remains independent.
 

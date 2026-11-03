@@ -13,15 +13,16 @@ averages, and manifest evaluation. No supplementary report or dual-evaluator joi
 
 ## Findings
 
-Repository snapshot inspected on 2026-11-03:
+Original local snapshot inspected on 2026-11-03 (before importing the completed remote report):
 
 - The catalog contains 867 skills. Main scores contain 150 successful evaluations,
   two failed attempts, and 715 pending skills. Open JEV contains eight current
   evaluations, all overlapping existing successful main evaluations.
-- Replacing with available Open JEV results initially produces eight scored skills
-  and 859 pending skills. The other 142 previously scored skills become pending;
-  the old evaluator's two failures do not carry over. Additional Open JEV runs fill
-  coverage incrementally; do not keep old scores as fallback.
+- Remote report follow-up: [PR #47](https://github.com/rigerc/skills-catalog/pull/47),
+  commit `e54886ce3e678a922ca0aa196c04de8a1dfd3184`, contains 867 evaluations
+  matching the current pins and evaluator. Import that report and its completed
+  14-batch progress ledger instead of shipping only the eight local results.
+  Final coverage is 867 evaluated, zero pending; no legacy-provider fallback.
 - Main schema v2 assumes a single evaluator, `evaluation.scores`, pinned source
   URLs, coverage, and repository aggregates. Open JEV v1 uses a different evaluator
   fingerprint, structured repository/path/commit sources, and integer dimension
@@ -171,8 +172,8 @@ v3. Tasks and explicit acceptance criteria are in [todo.md](todo.md).
 
 ## Release verification
 
-- Migration retains all eight saved Open JEV score payloads and their provenance;
-  expected initial coverage is eight evaluated, 859 pending, zero legacy failures.
+- Migration retains all 867 saved Open JEV score payloads and their provenance
+  from PR #47; final coverage is 867 evaluated, zero pending and zero legacy failures.
 - Fixtures cover old/new reports, invalid metadata, duplicate IDs, exact dimensions,
   changed pins/paths/fingerprints, missing report, stale/retired skills, null means,
   malformed responses and partial/no-success evaluation batches.
@@ -189,9 +190,9 @@ v3. Tasks and explicit acceptance criteria are in [todo.md](todo.md).
 
 ## Risks
 
-Coverage initially drops from 150 to eight. Display actual coverage and use the
-resumable Open JEV workflows to fill it. Retaining previous scores would hide the
-replacement and is outside this plan. Old strict schema consumers require the
+The completed remote report resolves the initial local coverage gap. All 867
+entries must match current catalog pins and evaluator identity before import.
+Retaining previous-provider scores as fallback is outside this plan. Old strict schema consumers require the
 v3 contract. A format-only migration must preserve evaluator fingerprints to avoid
 needless reevaluation. Existing bulk branches and concurrent producers require
 explicit migration and conflict handling rather than blind report replacement.
