@@ -151,7 +151,8 @@ let skills=[],techs,combos,cats=[],techCount=new Map(),comboCount=new Map(),M,SC
 function sync(){const p=new URLSearchParams();KEYS.forEach(k=>{if(S[k]&&S[k]!==DEF[k])p.set(k,S[k])});const s=p.toString();history.replaceState(null,'',s?'?'+s:location.pathname)}
 
 function prep(C,Mp,L,Qd,Sd){
-  M=Mp;Q=Qd;SC=Sd;
+  M=Mp;Q=Qd;SC=Sd?.schema_version===3&&Sd.evaluator?.provider==='open-jev-action'?Sd:null;
+  nScored=0;techCount.clear();comboCount.clear();
   const qm=new Map((Q?.entries||[]).map(e=>[e.id,e]));
   const se=new Map((SC?.entries||[]).filter(e=>e.status==='evaluated').map(e=>[e.id,e]));
   techs=new Map(M.technologies.map(t=>[t.id,t]));combos=new Map(M.combinations.map(c=>[c.id,c]));
@@ -161,8 +162,8 @@ function prep(C,Mp,L,Qd,Sd){
     const ts=r.technology_ids.map(i=>techs.get(i)).filter(Boolean),cs=r.combination_ids.map(i=>combos.get(i)).filter(Boolean);
     const q=qm.get(s.id),x=se.get(s.id);
     ts.forEach(t=>techCount.set(t.id,(techCount.get(t.id)||0)+1));cs.forEach(c=>comboCount.set(c.id,(comboCount.get(c.id)||0)+1));
-    const sc=x&&{o:x.overall_score,c:Object.fromEntries(Object.entries(x.evaluation.scores).map(([k,v])=>[k,v.score])),x,stale:x.fingerprint!==SC.evaluator.fingerprint||!!(e.commit&&x.source.commit!==e.commit)};
-    if(sc)nScored++;
+    const sc=x&&{o:x.overall_score,c:Object.fromEntries(Object.entries(x.evaluation.scores).map(([k,v])=>[k,v.score])),x,stale:e.status!=='verified'||x.fingerprint!==SC.evaluator.fingerprint||x.source.commit!==e.commit||x.source.url.toLowerCase().split('/blob/')[0]!==e.url?.toLowerCase().split('/blob/')[0]||x.source.url.split('/blob/')[1]!==e.url?.split('/blob/')[1]};
+    if(sc&&!sc.stale)nScored++;
     return {...s,ts,cs,fe:r.frontend_essential,url:e.url,commit:e.commit,why:e.selection_reason,q,qs:q?q.status:'none',sc,
       stale:!!q&&(q.fingerprint!==Q.tool.config_sha256||!!(e.commit&&q.source.commit!==e.commit)),
       cats:new Set(ts.map(t=>t.category)),mapped:!!(ts.length||cs.length||r.frontend_essential),
@@ -185,7 +186,7 @@ function prep(C,Mp,L,Qd,Sd){
   $('#sum').textContent=`${n.distinct_skills.toLocaleString()} agent skills from ${repos.length} repositories, matched to ${n.technologies_with_skills} technologies and ${n.technology_combinations} combinations.${nScored?` ${nScored} have a score so far.`:''}`;
   const bs=Q?.summary?.by_status;
   $('#qsum').textContent=!Q?'Quality results could not be loaded.':qm.size?`Quality checks (${Q.tool.name} ${Q.tool.version}) cover ${qm.size.toLocaleString()} skills: ${bs.pass} pass, ${bs.warn} with warnings, ${bs.fail} fail, ${bs.not_evaluated} not evaluated. They describe upstream content quality, not security, licensing or availability.`:'Quality checks have not run on this snapshot yet.';
-  $('#ssum').textContent=!SC?'Scores could not be loaded.':`Scores come from an automated review (${SC.evaluator.model}) of each skill’s SKILL.md only: ${SC.summary.evaluated} of ${SC.summary.total} reviewed so far, 1 to 5 on five criteria. They are not runtime or security certification.`;
+  $('#ssum').textContent=!SC?'Scores could not be loaded.':`Scores come from Open JEV (${SC.evaluator.model_release}), reviewing at most the first ${SC.evaluator.state_limit_code_units.toLocaleString()} UTF-16 code units of SKILL.md: ${SC.summary.evaluated} of ${SC.summary.total} reviewed so far, 1 to 5 on five criteria. They are not runtime or security certification.`;
 }
 
 function match(s){
@@ -195,8 +196,8 @@ function match(s){
   if(S.combo&&!s.cs.some(c=>c.id===S.combo))return false;
   if(S.repo&&s.repository!==S.repo)return false;
   if(S.qual&&s.qs!==S.qual)return false;
-  if(S.min&&!(s.sc&&s.sc.o>=+S.min))return false;
-  if(S.max&&!(s.sc&&s.sc.o<+S.max))return false;
+  if(S.min&&!(s.sc&&!s.sc.stale&&s.sc.o>=+S.min))return false;
+  if(S.max&&!(s.sc&&!s.sc.stale&&s.sc.o<+S.max))return false;
   if(S.map==='mapped'&&!s.mapped)return false;
   if(S.map==='unmapped'&&s.mapped)return false;
   return true;
@@ -205,7 +206,7 @@ function sorter(){
   const nm=(a,b)=>a.skill_name.localeCompare(b.skill_name);
   if(S.sort==='repo')return (a,b)=>a.repository.localeCompare(b.repository)||nm(a,b);
   const key=S.sort.slice(2);
-  const v=S.sort.startsWith('s:')||S.sort.startsWith('w:')?s=>s.sc?.c[key]:S.sort==='score'||S.sort==='low'?s=>s.sc?.o:null;
+  const v=S.sort.startsWith('s:')||S.sort.startsWith('w:')?s=>s.sc&&!s.sc.stale?s.sc.c[key]:undefined:S.sort==='score'||S.sort==='low'?s=>s.sc&&!s.sc.stale?s.sc.o:undefined:null;
   if(!v)return nm;
   if(S.sort==='low'||S.sort.startsWith('w:'))return (a,b)=>(v(a)??99)-(v(b)??99)||nm(a,b);
   return (a,b)=>(v(b)??-1)-(v(a)??-1)||nm(a,b);
@@ -223,16 +224,16 @@ function qhtml(s){
   if(c)h+=`<dt>Contamination</dt><dd>${esc(c.level)}${c.language_mismatch?', language mismatch':''}</dd>`;
   return h+`<dt>Checked</dt><dd class="m">${esc(q.evaluated_at.slice(0,10))} with validator ${esc(q.validator_version)}</dd>`;
 }
-function critHtml(cs){
-  return `<div class="bd" role="group" aria-label="Score breakdown">${CR.filter(([k])=>cs&&cs[k]!=null).map(([k,l,d])=>`<div><div class="l"><span>${l}</span><span>${cs[k].toFixed(1)} / 5</span></div><span class="br"><i style="width:${(cs[k]-1)/4*100}%"></i></span><small>${d}</small></div>`).join('')}</div>`;
+function critHtml(cs,confidence){
+  return `<div class="bd" role="group" aria-label="Score breakdown">${CR.filter(([k])=>cs&&cs[k]!=null).map(([k,l,d])=>`<div><div class="l"><span>${l}</span><span>${cs[k].toFixed(1)} / 5</span></div><span class="br"><i style="width:${(cs[k]-1)/4*100}%"></i></span><small>${d}${confidence?.[k]!=null?` · Model confidence ${(confidence[k]*100).toFixed(0)}%`:''}</small></div>`).join('')}</div>`;
 }
 function scoreHtml(s){
   const x=s.sc;
   if(!x)return '<p class="m" style="margin:.6rem 0 1rem">Not scored yet.</p>';
-  const rp=SC.repositories.find(r=>r.repository===s.repository),ev=x.x.evaluation;
-  return critHtml(x.c)+
+  const rp=SC.repositories?.find(r=>r.repository===s.repository),ev=x.x.evaluation;
+  return critHtml(x.c,Object.fromEntries(Object.entries(ev.scores).map(([k,v])=>[k,v.confidence])))+
     (ev.summary?`<p>${esc(ev.summary)}</p>`:'')+
-    `<p class="m" style="font-size:.85rem;margin:0 0 .6rem">Reviewed ${esc(x.x.evaluated_at.slice(0,10))} by ${esc(x.x.model)}, SKILL.md only.${x.stale?' Stale: the skill changed since this review.':''}${rp&&rp.summary.evaluated>1?` Repository average ${rp.overall_score.toFixed(1)} across ${rp.summary.evaluated} scored skills.`:''}</p>`;
+    `<p class="m" style="font-size:.85rem;margin:0 0 .6rem">Reviewed ${esc(x.x.evaluated_at.slice(0,10))} by Open JEV ${esc(SC.evaluator.model_release)}. Reviews at most the first ${SC.evaluator.state_limit_code_units.toLocaleString()} UTF-16 code units of SKILL.md; supporting files are not assessed.${x.stale?' Stale: the source or evaluator changed since this review.':''}${rp&&rp.summary.evaluated>1?` Repository average ${rp.overall_score.toFixed(1)} across ${rp.summary.evaluated} scored skills.`:''}</p>`;
 }
 function row(s){
   const tags=s.ts.slice(0,2).map(t=>esc(t.name)),more=s.ts.length+s.cs.length-tags.length;
@@ -316,7 +317,7 @@ function renderRepos(){
 const optR=(v,t)=>`<option value="${esc(v)}">${esc(t)}</option>`;
 function sortOpts(){
   if(S.view==='tech')return;
-  const scThink=SC&&SC.repositories.length>0;
+  const scThink=SC&&SC.repositories?.some(r=>r.overall_score!=null);
   if(S.view==='repos')$('#sort').innerHTML=optR('count','Sort: most skills')+optR('name','Sort: name')+(scThink?optR('score','Sort: highest avg score')+optR('low','Sort: lowest avg score'):'')+optR('fail','Sort: most failed checks');
   else $('#sort').innerHTML=optR('name','Sort: name')+optR('repo','Sort: repository')+(nScored?optR('score','Sort: highest score')+optR('low','Sort: lowest score')+CR.map(([k,l])=>optR('s:'+k,'Sort: best '+l.toLowerCase())+optR('w:'+k,'Sort: worst '+l.toLowerCase())).join(''):'');
   if(!Array.from($('#sort').options).some(o=>o.value===S.sort))S.sort=S.view==='repos'?'count':'name';

@@ -1,270 +1,197 @@
-# Plan: Jev as a skill evaluator
+# Plan: Replace main scores with Open JEV
 
-Status: implemented and verified offline. See [todo.md](todo.md) for completed tasks and verification.
+Status: implemented; verification recorded in [todo.md](todo.md). Updated per user direction: Open JEV replaces the
+existing scores and becomes the canonical evaluator. Implementation tasks:
+[todo.md](todo.md).
 
-## Scope
+## Outcome
 
-Add `--provider jev` to `scripts/evaluate-skills.mjs`, using
-`@aitofy/jev-awesome-skills` to evaluate the same pinned `SKILL.md` documents as
-the existing providers. The user confirmed evaluator support, rather than importing
-the upstream repository's skills into the catalog.
+Make `data/scores.json` the single maintained score report, populated by Open JEV.
+Replace existing evaluator results, update evaluation/maintenance scripts and CI,
+and use Open JEV for the site's normal score display, filters, sorting, repository
+averages, and manifest evaluation. No supplementary report or dual-evaluator join.
 
-Keep the current OpenAI default. Reuse source verification, selection, concurrency,
-request pacing, bounded reads, checkpointing, and resume behavior.
+## Findings
 
-Also support Jev through OpenRouter using `typesafe/jev-1.14`, with paid input
-and free output. The user authorized paid input for this route; no free-model
-availability prerequisite applies.
+Repository snapshot inspected on 2026-11-03:
 
-Add an `opencode-go` Jev endpoint selector using OpenCode's limited-time free
-`jev-1.13-free` model. Keep this route free; paid-input authorization applies to
-the separately selected OpenRouter route.
+- The catalog contains 867 skills. Main scores contain 150 successful evaluations,
+  two failed attempts, and 715 pending skills. Open JEV contains eight current
+  evaluations, all overlapping existing successful main evaluations.
+- Replacing with available Open JEV results initially produces eight scored skills
+  and 859 pending skills. The other 142 previously scored skills become pending;
+  the old evaluator's two failures do not carry over. Additional Open JEV runs fill
+  coverage incrementally; do not keep old scores as fallback.
+- Main schema v2 assumes a single evaluator, `evaluation.scores`, pinned source
+  URLs, coverage, and repository aggregates. Open JEV v1 uses a different evaluator
+  fingerprint, structured repository/path/commit sources, and integer dimension
+  scores with confidence/mode, without prose or saved probability distributions.
+- Open JEV prepares the first 4,000 JavaScript string code units of each document.
+  `input_sha256` hashes the full source bytes, not the excerpt. Historical entries
+  do not establish whether an individual source was truncated.
+- The compiler currently emits both primary `evaluation` and experimental
+  `open_jev`. The site reads only main scores. Both Open JEV workflows, their
+  planner and bulk progress scripts currently use the standalone report path.
+- `evaluate-skills.mjs` currently owns main sync/check and can write a different
+  provider to main. Its generic fingerprint check and Jev distribution validator
+  cannot validate Open JEV entries without explicit dispatch.
 
-## Findings and sources
+Sources: [main scores](../data/scores.json), [Open JEV scores](../data/open-jev-scores.json),
+[main evaluator](../scripts/evaluate-skills.mjs), [Open JEV library](../scripts/open-jev-lib.mjs),
+[input preparation](../scripts/open-jev-prepare.mjs), [planner](../scripts/open-jev-plan.mjs),
+[merger](../scripts/open-jev-merge.mjs), [bulk progress](../scripts/open-jev-bulk-status.mjs),
+[compiler](../scripts/compile-catalog.mjs), [site](../site/index.html),
+[incremental workflow](../.github/workflows/nosey-open-jev.yml),
+[bulk workflow](../.github/workflows/nosey-open-jev-bulk.yml),
+[catalog CI](../.github/workflows/nosey-catalog.yml).
 
-Reviewed upstream HEAD `544f447cc1f2c1a9a967ce1368a3017be98efb20`.
-Its [package manifest](https://github.com/aitofy-dev/jev-awesome-skills/blob/544f447cc1f2c1a9a967ce1368a3017be98efb20/package.json)
-declares version `0.1.1`. Its public exports include `judge`, `buildRequest`, and
-`decideFixture`. The [client](https://github.com/aitofy-dev/jev-awesome-skills/blob/544f447cc1f2c1a9a967ce1368a3017be98efb20/src/judge.ts)
-reads `TYPESAFE_API_KEY`, calls `https://api.typesafe.ai/v1/systemone`, and returns
-`ok: false, source: "fallback"` on missing credentials, transport failures, or
-invalid answers. The [CLI](https://github.com/aitofy-dev/jev-awesome-skills/blob/544f447cc1f2c1a9a967ce1368a3017be98efb20/src/cli.ts)
-exits successfully for these fallback judgments; exit status alone cannot establish success.
+## Canonical report contract
 
-[TypeSafe's Score documentation](https://docs.typesafe.ai/primitives/score)
-defines zero-based ordered levels, fractional scores, level probabilities, and
-confidence. [Composite scoring](https://docs.typesafe.ai/patterns/composite-scoring)
-supports evaluating dimensions separately and combining them in application code.
-The existing prose schema requires integer scores and written reasons, so Jev
-needs its own result type.
+Use schema v3 for canonical scores so the evaluator replacement and changed result
+contract are explicit. Retain the useful report layout: `catalog_id`,
+`generated_at`, `evaluator`, `stopped`, `summary`, `entries`, and `repositories`.
+Use one entry per skill, `result_kind: "open_jev_scores"`, `evaluation.scores`, and
+pinned `source.url` / `source.commit` to minimize consumer changes. Preserve all
+five existing integer 1–5 scores, confidence/mode, overall means, source identity,
+full-document hash, evaluation timestamp, and original evaluator fingerprint.
 
-[Model documentation](https://docs.typesafe.ai/models) currently lists
-`jev-1.14.0`, with a 32k per-question and 64k per-request context by default.
-The package uses `jev-latest`; aliases can change, so use the versioned model
-by default for reproducible saved results. Allow `--model` overrides and record
-the requested and returned IDs.
+Record Open JEV's action SHA, model release, question hash, state format, excerpt
+limit, and explicit limitation in report metadata. Keep the existing inference
+fingerprint unchanged during the format/path migration: changing the report shape
+must not discard valid cached evaluations. Use Open JEV's own fingerprint formula
+for cache identity, rather than the old report's generic config hash rule.
 
-### OpenRouter findings (2026-11-01)
+Do not fabricate prose, distributions, native fractional scores, submitted-state
+hashes, or per-document truncation flags. Keep score arithmetic unchanged: the
+producer already converts native class indices to integer 1–5 scores.
 
-The [OpenRouter Jev guide](https://openrouter.ai/docs/guides/community/jev)
-documents the Decisions endpoint `POST https://openrouter.ai/api/alpha/decisions`.
-Its [TypeSafe compatibility guide](https://openrouter.ai/docs/guides/community/typesafe-sdk)
-also documents `POST https://openrouter.ai/api/v1/systemone`, which accepts the
-same state/questions contract and is the planned endpoint for the existing
-package's injected transport. Neither route is Chat Completions.
+The canonical schema accepts Open JEV only. Retain legacy schemas/validators where
+needed for explicitly requested noncanonical provider outputs; they must not let
+legacy reports pass canonical CI. Resolve schema references consistently across
+the validator and tests if splitting the old contract into a legacy schema.
 
-The [Jev 1.14 model page](https://openrouter.ai/typesafe/jev-1.14) lists
-$0.042 per million input tokens and $0 output tokens. Live endpoint metadata for
-`typesafe/jev-1.14` returned prompt pricing `0.000000042` dollars/token and
-completion pricing `0`. This is the selected OpenRouter model. Record actual
-usage and cost when returned; published prices are informational and can change.
+## Replacement and script ownership
 
-The ordinary `/api/v1/models` response did not list these decision models, while
-their per-model endpoint metadata was available. Use documented decision-model
-discovery or `/api/v1/models/{author}/{slug}/endpoints` when checking availability
-or pricing rather than inferring absence from the chat-oriented model list alone.
+- Add an explicit, offline one-time migration that validates standalone Open JEV
+  v1, converts it to canonical v3, computes coverage/repository aggregates against
+  the current catalog and ledger, and replaces `data/scores.json` atomically.
+  The former primary scores remain available in Git history.
+- After migration, planner, library, merger, checker and bulk status read/write
+  `data/scores.json` directly. Remove `data/open-jev-scores.json` and retire its
+  schema once the migration fixture and all callers are updated. There is one
+  report to checkpoint, publish and review.
+- Reuse shared pure helpers for normalization, freshness, summary and aggregate
+  calculation. Match ID, repository (case insensitive), exact path, pinned commit,
+  and expected evaluator fingerprint. Reject malformed/duplicate entries; retain
+  stale evidence for inspection, exclude it from means, and prune retired IDs on
+  sync. Summaries include pending and unresolved catalog skills.
+- Route `sync:scores` and `check:scores` through canonical Open JEV maintenance;
+  preserve offline behavior, atomic writes, stable ordering and unchanged output
+  bytes/timestamps on no-op sync. Sync must never call inference.
+- Make `evaluate:skills` the documented Open JEV entry point: its default is an
+  offline planner emitting the existing matrix/state workflow inputs, with clear
+  instructions to run the incremental/bulk evaluation workflow. Do not silently
+  run the former OpenAI default or attempt an unsupported local action runner.
+- Keep the old HTTP/SDK providers available through an explicitly named legacy
+  command and explicit noncanonical `--output`; reject writes to the canonical
+  path, including `--sync`, `--force`, and fallback import paths. Remove the old
+  `results/llm-evaluations.json` automatic canonical import. Legacy output readers
+  can remain for comparison without participating in production scores.
+- Harden semantic checks for evaluator metadata, exact dimension coverage, finite
+  scores/confidence, valid timestamps, pinned source identity, aggregate means,
+  contribution IDs, and summary arithmetic. Do not treat failures as scores.
 
-### OpenCode findings (2026-11-01)
+## Consumers and score policy
 
-The [OpenCode Jev documentation](https://opencode.ai/v2/docs/console/models/#jev)
-lists `jev-1.13-free` at
-`POST https://opencode.ai/inference/systemone/v1/systemone`, using an OpenCode
-Console API key. It explicitly permits replacing `jev-1.13` with `jev-1.13-free`
-for the limited-time free offer; the pricing table lists free input and output.
+Open JEV replaces the main score in the existing UI and `skills[].evaluation` in
+the manifest. Normal score filters, sorting and repository averages use current
+Open JEV results. Remove the independent experimental input and compiler read path. Keep evaluator/model/date, five dimensions, confidence and excerpt
+scope visible; support empty and stale states without assuming prose fields.
 
-This is a Console System One route. The [Go subscription model list](https://opencode.ai/v2/docs/console/go/)
-does not list Jev, so `opencode-go` is our endpoint selector name, not evidence
-that Jev has a separate Go subscription endpoint. Do not invent a `/go/` URL.
-The public model-list response inspected during planning omitted Jev; the
-documented Jev endpoint is the source for its contract, with live access still
-subject to authentication, availability, and quotas.
+Promotion is the user's policy choice, not a claim of model calibration. Remove
+experimental-only restrictions that block main score use; do not relabel
+`ranking_calibrated: false` as true without evidence. If retained, document this
+metadata as calibration status, separate from primary-score selection. Static
+quality gates and installation eligibility remain governed by existing quality
+checks, not the model score.
 
-## Decisions
+Keep the existing manifest `evaluation` shape and add the new result kind to its
+schema enum. Manifest v1.1 retains `open_jev` as a deprecated compatibility alias
+from the same canonical entry, avoiding a field removal or minimum-consumer bump.
+Its historical ranking flag does not govern the primary evaluation. Existing v1
+manifest result kinds remain schema-readable for archived manifests.
+Pages keeps the existing `data/scores.json` URL and publishes the replacement.
 
-### Integration
+## CI and evaluation workflows
 
-- Add the exact package version as an optional dependency, after checking that
-  the published `0.1.1` package contains the reviewed exports and built ESM files.
-  Dynamically import it only for Jev. Existing providers must still work without it.
-- Put the adapter and Jev-specific rubric in `scripts/jev-evaluator.mjs`.
-  Use `judge` and its injectable transport rather than the CLI or a second Jev client.
-  The injected transport supplies the evaluator's existing HTTP controls and captures
-  metadata the package otherwise omits from its `Judgment` object.
-- Read `TYPESAFE_API_KEY` for direct Jev, `OPENROUTER_API_KEY` for OpenRouter,
-  and `OPENCODE_API_KEY` for OpenCode's Jev endpoint. Fail before downloading
-  sources when the selected key is missing. Keep `--dry-run` offline,
-  credential-free, and independent of the optional package.
-- Use `jev-1.14.0` as the initial default, subject to verifying the current official
-  contract when implementation starts. Do not send chat reasoning/output-token parameters.
-  Reject explicit `--reasoning-effort` or `--max-output-tokens` for Jev with a useful
-  explanation; inherited defaults from other providers must not cause an error.
+1. Incremental evaluation: plan from canonical scores, prepare pinned input, run
+   the same SHA-pinned action/model and rubric, normalize to the new entry shape,
+   merge successful current entries into canonical scores, refresh aggregates,
+   run canonical checks, and open a PR containing `data/scores.json`.
+2. Bulk evaluation: restore canonical scores from the progress branch, plan only
+   missing/stale verified skills, checkpoint canonical scores and the progress
+   ledger together, and preserve 64-skill batches, bounded concurrency, 20-batch
+   budget, partial successes, no-progress stop, and resumability.
+3. Existing progress branches may contain only standalone v1 results. Add a
+   bounded compatibility path that imports that report when canonical v3 is absent
+   (an old v2 file is not a usable Open JEV checkpoint), preserves completed-batch
+   accounting, and never treats old-provider scores as completed Open JEV work.
+4. Validate checkpoints against the current base's catalog, source pins and rubric
+   before merging; stale progress branches must not restore outdated scripts or
+   catalog data. Coordinate incremental and bulk writers through shared workflow
+   concurrency or explicit base/head checks and re-merge before committing.
+5. Update report paths, restore commands, commit allowlists, workflow names, PR
+   text, summary counts and historical experimental/non-ranking comments. Keep
+   evaluation updates PR-based. Do not add a schedule or remove batch limits.
+6. Catalog CI runs v3 schema negative fixtures and Open JEV semantics, checks
+   generated coverage/aggregate parity via no-op sync, tests all score consumers,
+   compiles twice, verifies manifests and stages Pages. It must reject old-provider
+   canonical reports and references to the retired runtime input path.
 
-### OpenRouter endpoint and model selection
+Implementation of these workflows prepares future evaluation. Implementation and verification start no workflow, live evaluation, deployment,
+or paid request. The pre-existing main-push bulk trigger remains in place.
 
-- Add `--jev-endpoint typesafe|openrouter|opencode-go`, defaulting to `typesafe`, for
-  `--provider jev`. Keep the existing OpenRouter chat provider behavior intact.
-- For `openrouter`, send the same five-question Jev body to the fixed
-  `https://openrouter.ai/api/v1/systemone` endpoint, using the package's injectable
-  transport. The documented `/api/alpha/decisions` route is an alternative if
-  compatibility testing requires it; any endpoint choice must be recorded and tested.
-- Default to the full OpenRouter ID `typesafe/jev-1.14`. Keep the direct
-  `jev-1.14.0` default scoped to TypeSafe and select defaults independently of
-  CLI argument order. Allow an explicit `--model` override for another Jev version.
-- Paid input is authorized. Do not require a zero-priced route, a `:free` suffix,
-  or a free-only price cap. Do not silently substitute Jev Router, a chat model,
-  another decision model, or the direct TypeSafe endpoint.
-- Validate Jev model selection and preserve requested/returned IDs and real
-  usage/cost metadata. Handle unavailable models and insufficient OpenRouter
-  credit as clear errors while retaining completed checkpoints.
-- Pass the selected OpenRouter key to `judge` through a scoped environment object
-  and the overridden transport. Do not change process-wide environment variables,
-  read the TypeSafe key as a fallback, or forward credentials to another host.
-- A dry run describes the selected endpoint, model, and paid-input billing
-  without fetching model metadata or opening a network connection.
+## Implementation order
 
-### OpenCode free Jev endpoint
+1. Canonical v3 schema, shared normalization/aggregate helpers and migration.
+2. Canonical evaluation/maintenance commands and legacy write protection.
+3. Incremental/bulk workflow conversion, progress-branch migration and concurrency.
+4. Main-score UI, manifest and Pages consumer updates.
+5. Migrate committed scores and retire the standalone artifact/schema.
+6. Documentation, full offline verification and final review.
 
-- Select it with `--provider jev --jev-endpoint opencode-go`. Default to
-  `jev-1.13-free`, independently of argument order. Keep existing
-  `--provider opencode-go` chat/DeepSeek behavior intact.
-- Use the documented `https://opencode.ai/inference/systemone/v1/systemone`
-  endpoint with the same five-question request and package-backed parsing through
-  an injected transport. Do not use Chat Completions or the OpenCode chat CLI;
-  Jev returns typed answers without generated prose.
-- Authenticate with `OPENCODE_API_KEY`, the documented Console key variable.
-  Pass it through a scoped `judge` environment and the OpenCode-only transport;
-  do not read TypeSafe/OpenRouter credentials as fallback or mutate process-wide
-  environment variables.
-- Keep this endpoint on the free Jev model. Reject a paid `jev-1.13` override
-  unless the user separately authorizes it. Never switch to paid Jev, OpenRouter,
-  a subscription model, or another evaluator when free capacity is unavailable.
-- Treat 401/403, exhausted quota/429, removed models, and expired free offers as
-  explicit failures that preserve completed checkpoints. Do not spoof an OpenCode
-  client identity to bypass access restrictions.
-- Record the selected endpoint, free model ID, returned model, and available
-  usage/cost metadata. Preserve actual reported zero cost, but do not synthesize
-  zero when metadata is absent. Explain that the free offer is time-limited.
-- Keep dry runs fully offline and add separate examples/output files for this route.
+Review adjustments implemented: a shared progress branch/concurrency group avoids
+divergent producer PRs; checkpoint restore imports data onto current base scripts;
+zero-job plans still publish restored/migrated evidence without spending a batch;
+source-update PRs sync coverage; and Git report reads allow up to 16 MiB so a full
+867-skill checkpoint is not limited by the default 1 MiB subprocess buffer.
 
-### Questions and scoring
+Do not replace committed scores until the scripts, consumers and CI can handle
+v3. Tasks and explicit acceptance criteria are in [todo.md](todo.md).
 
-- Make one request per skill with five `score` questions: trigger clarity,
-  instruction quality, correctness, safety, and context efficiency.
-- Give each question five concrete, independent level descriptions. Include the
-  dimension in its instructions; question IDs alone do not communicate the rubric.
-- Supply the pinned document and source identity in `state`. Treat document contents
-  as untrusted data, with trusted evaluation instructions in the questions.
-- Preserve native scores on 0–4 and their complete legends/probabilities. Expose
-  `score = native_score + 1` on a fractional 1–5 display scale, without rounding the
-  native value. Compute the equal-weight mean in code; rounding is presentation only.
-- Do not generate reasons, strengths, improvements, or model-written summaries.
-  Record a static limitation explaining that Jev provides scores without prose and
-  only the document was assessed. Do not invoke a second model to supply feedback.
+## Release verification
 
-### Result contract and cache
+- Migration retains all eight saved Open JEV score payloads and their provenance;
+  expected initial coverage is eight evaluated, 859 pending, zero legacy failures.
+- Fixtures cover old/new reports, invalid metadata, duplicate IDs, exact dimensions,
+  changed pins/paths/fingerprints, missing report, stale/retired skills, null means,
+  malformed responses and partial/no-success evaluation batches.
+- Resume tests cover both standalone-v1 and canonical-v3 progress checkpoints,
+  batch accounting and base changes. Old provider results never satisfy Open JEV
+  cache lookup, and legacy commands cannot overwrite canonical scores.
+- Check and sync run offline; repeated sync is byte-identical. Repository means
+  and contributing skill IDs contain only current Open JEV evaluations.
+- Site score details, filters, sorting, repository view and empty/stale states use
+  Open JEV. Compiler output is deterministic and manifest compatibility is explicit.
+- Run focused tests and all Node tests; schema negative fixtures; canonical score,
+  catalog and quality checks; the CI Python tests; fixed-revision compile-twice,
+  manifest and Pages verification; and `git diff --check`.
 
-- Introduce report schema version 2 with discriminated entry results: `prose_review`
-  and `jev_scores`. Keep existing prose result fields intact. Add validation dispatch
-  rather than weakening the existing strict prose validator.
-- Load version 1 reports as prose reviews and preserve their cache fingerprints;
-  migrate in memory and write version 2 only through normal checkpointing.
-- A Jev result is successful only when `ok === true`, `source === "jev"`, and all five
-  expected score answers validate. Check exact question coverage, answer types, finite
-  scores in 0–4, matching rubric levels, and probabilities in 0–1 summing approximately
-  to one. Define and test a numeric tolerance for serialization precision.
-- Preserve optional confidence and actual returned model. Capture real usage/request
-  metadata from transport when present; absent values remain null/omitted, never zero.
-- Fingerprint the package and adapter versions, requested model, complete questions,
-  scoring transformation, and result schema. Include the Jev endpoint, full upstream
-  model ID, and transport adapter version so TypeSafe, OpenRouter, and OpenCode
-  caches cannot collide.
-  Keep source pin/content identity as today.
-  Document that explicitly using a mutable alias requires `--force` to refresh cached
-  results after an upstream change; pinning the default avoids this ambiguity.
-- Record both original document and submitted-state hashes, because the package's
-  request builder redacts state. Do not claim the redacted input is byte-identical
-  to the downloaded document.
+## Risks
 
-### Failures and limits
-
-- Turn every fallback into `not_evaluated`. Never fabricate a score or switch providers.
-- An unavailable OpenRouter Jev model, insufficient credit, authentication error,
-  or exhausted rate limit preserves checkpoints without changing models or endpoints.
-- OpenCode's free route preserves checkpoints on access/quota failures and never
-  inherits the permission to use paid input granted for OpenRouter.
-- Preserve typed transport failures outside `judge`, which catches exceptions, so
-  authentication errors and exhausted rate limits still stop dispatch correctly.
-- Honor existing timeouts, pacing, retry count, Retry-After handling, and checkpointing.
-  Retry transient HTTP failures, including TypeSafe's documented 529 overload response.
-  Do not automatically repeat ambiguous network timeouts.
-- Treat oversized/context-exceeded inputs as per-skill failures. Keep the document
-  intact: no silent truncation, chunking, or opt-in long-context header.
-  A byte limit alone does not guarantee fitting the per-question token context.
-- Use [official request rules](https://docs.typesafe.ai/api/errors) when classifying
-  HTTP failures. Keep all logs and saved errors free of credentials.
-
-## Ordered work
-
-The detailed acceptance criteria and verification steps are in [todo.md](todo.md).
-
-1. Define the versioned Jev result contract and legacy report handling.
-2. Add the package-backed adapter, questions, and offline score fixtures.
-3. Wire provider selection, credentials, transport controls, and resumable reports.
-4. Add the OpenRouter endpoint, paid-input Jev default, and endpoint-specific tests.
-5. Add the OpenCode free Jev endpoint, credential selection, and quota/fallback tests.
-6. Exercise failure cases, input limits, metadata, and provider regressions.
-7. Document installation and usage; run the final offline checks.
-
-Checkpoint after tasks 1–2: result validation and score conversion work offline.
-Checkpoint after tasks 3–6: all three endpoints work with injected transport;
-OpenRouter paid-input responses, OpenCode free-quota failures, and cache isolation
-are covered.
-Final checkpoint: documentation and all existing provider tests pass.
-
-## Risks and boundaries
-
-- Package parsing is less strict than this evaluator needs: validate completeness,
-  score ranges, and probability distributions again at the adapter boundary.
-- Scores from different providers are not calibrated to be interchangeable. Preserve
-  provider identity and rubric details; any quality comparison needs a labeled sample.
-- The optional dependency is a new requirement only for Jev. Pin it and avoid an
-  implicit download through `npx` during evaluation.
-- OpenRouter bills input tokens for the selected Jev model. Record returned costs
-  when available and describe pricing accurately; no free-model discovery is required.
-- OpenCode's `jev-1.13-free` offer may expire or exhaust its quota. Preserve the
-  free-only selection and return a clear failure rather than switching routes.
-- No catalog imports, automatic quality gates, proceed/ask/stop policy, or bulk live
-  evaluations are part of this change. Pure score questions need no action-policy branch.
-
-## Implemented usage
-
-```sh
-npm run evaluate:skills -- --provider jev --dry-run
-
-# With the optional package installed and TYPESAFE_API_KEY set:
-npm run evaluate:skills -- --provider jev --limit 10 \
-  --output results/jev-evaluations.json
-
-npm run evaluate:skills -- --provider jev \
-  --output results/jev-evaluations.json
-
-# OpenRouter: paid input, free output. Defaults to typesafe/jev-1.14.
-# Requires OPENROUTER_API_KEY; no TYPESAFE_API_KEY is needed for this route.
-npm run evaluate:skills -- --provider jev --jev-endpoint openrouter \
-  --limit 10 --output results/jev-openrouter-evaluations.json
-
-# Explicit version selection:
-npm run evaluate:skills -- --provider jev --jev-endpoint openrouter \
-  --model typesafe/jev-1.14 --output results/jev-openrouter-evaluations.json
-
-# OpenCode: limited-time free Jev; requires OPENCODE_API_KEY.
-# Defaults to jev-1.13-free on the Console System One endpoint.
-npm run evaluate:skills -- --provider jev --jev-endpoint opencode-go \
-  --limit 10 --output results/jev-opencode-free-evaluations.json
-
-node scripts/evaluate-skills.mjs --provider jev --jev-endpoint opencode-go --dry-run
-```
-
-Implementation uses `scripts/jev-evaluator.mjs` and shared HTTP controls in
-`scripts/evaluation-http.mjs`. The pinned optional package was verified and installed
-with lifecycle scripts disabled. No live Jev inference or paid API request was made.
+Coverage initially drops from 150 to eight. Display actual coverage and use the
+resumable Open JEV workflows to fill it. Retaining previous scores would hide the
+replacement and is outside this plan. Old strict schema consumers require the
+v3 contract. A format-only migration must preserve evaluator fingerprints to avoid
+needless reevaluation. Existing bulk branches and concurrent producers require
+explicit migration and conflict handling rather than blind report replacement.

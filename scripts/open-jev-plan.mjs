@@ -18,7 +18,10 @@ export function plan({limit=8}={}){
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  try{
-  const a=args(process.argv.slice(2)),result=plan({limit:Number(a.limit??8)});
+  if(process.argv.includes('--help')){console.log('Open JEV offline planner: --limit 0..64 --out PATH. Run nosey-open-jev.yml or nosey-open-jev-bulk.yml in Actions to evaluate the plan.');process.exit(0);}
+  const a=args(process.argv.slice(2));
+  for(const key of Object.keys(a))if(!['limit','out'].includes(key))throw Error('Unknown planner option --'+key);
+  const result=plan({limit:Number(a.limit??8)});
   const path=resolve(ROOT,a.out??'.nosey-eval/plan.json');mkdirSync(dirname(path),{recursive:true});
   writeFileSync(path,JSON.stringify(result,null,2)+'\n');
   if(process.env.GITHUB_OUTPUT)appendFileSync(process.env.GITHUB_OUTPUT,'matrix='+JSON.stringify({include:result.include})+'\ncount='+result.count+'\n');

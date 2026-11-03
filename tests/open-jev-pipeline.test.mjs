@@ -21,7 +21,7 @@ test('Open JEV normalizes all five dimensions from 0–4 to 1–5',()=>{
  const row=normalize(meta,raw());
  assert.equal(row.overall_score,3);
  assert.equal(row.status,'evaluated');
- assert.equal(row.scores.safety.score,3);
+ assert.equal(row.evaluation.scores.safety.score,3);
 });
 test('Open JEV refuses malformed, absent or non-model answers',()=>{
  const missing=raw();delete missing.decisions.safety;
@@ -37,13 +37,13 @@ test('Incremental planning can inspect the canonical index without HTTP or model
  assert.throws(()=>plan({limit:65}),/Limit must be/);
 });
 test('Only current, verified pins enter merged report',()=>{
- const catalog={catalog_id:'nosey-built-in'},valid=normalize(meta,raw());
+ const catalog={catalog_id:'nosey-built-in',skills:[{id:meta.id}]},valid=normalize(meta,raw());
  const source={catalog,entries:new Map([[meta.id,{id:meta.id,status:'verified',
   commit:meta.source.commit,url:'https://github.com/example/skills/blob/'+meta.source.commit+'/foo/SKILL.md'}]])};
  const result=merge([valid],null,source);
  assert.equal(result.accepted,1);
  assert.equal(result.next.entries.length,1);
  assert.equal(result.next.evaluator.ranking_calibrated,false);
- const bad=merge([{...valid,source:{...valid.source,commit:'f'.repeat(40)}}],null,source);
+ const bad=merge([{...valid,source:{...valid.source,url:valid.source.url.replace(meta.source.commit,'f'.repeat(40)),commit:'f'.repeat(40)}}],null,source);
  assert.equal(bad.accepted,0);
 });

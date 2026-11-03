@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Bounded, resumable Open JEV bulk orchestration on an isolated branch.
- *  Never changes canonical scores in main or promotes model scores to ranking.
+ *  Checkpoints canonical scores for PR review; never writes directly to main.
  */
 import {existsSync,readFileSync} from 'node:fs';
 import {resolve} from 'node:path';

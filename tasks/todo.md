@@ -1,196 +1,153 @@
-# Jev evaluator tasks
+# Open JEV replacement tasks
 
-Implementation and offline verification are complete. Design and sources: [plan.md](plan.md).
+Status: implemented and verified offline. Design: [plan.md](plan.md).
+Open JEV replaces the existing scores and owns the canonical evaluation pipeline.
 
-## Task 1: Define Jev results and report compatibility
+## Task 1: Define canonical Open JEV v3 and offline migration
 
-- [x] Add `prose_review` / `jev_scores` result discrimination and report version 2.
-- [x] Load existing version 1 reports without invalidating successful prose caches.
-- [x] Validate all five fractional scores, native values, legends, distributions,
-  and optional confidence; reject missing, extra, malformed, or non-finite answers.
+Adapt Open JEV results to the main report layout and implement strict validation,
+coverage, repository aggregates and explicit standalone-v1 import.
 
-**Acceptance criteria:** Existing prose validation stays strict; fixture results keep
-native fractional values; legacy cached reviews remain reusable.
+**Acceptance criteria:**
+- [x] Canonical v3 accepts only Open JEV results; conversion preserves saved values, provenance and inference fingerprint without inventing missing fields.
+- [x] Freshness checks and coverage/means handle pending, unresolved, stale and retired skills; invalid identities, dimensions, metadata and duplicate IDs fail.
+- [x] Offline migration is atomic and repeatable; eight saved entries produce eight evaluated and 859 pending for the current catalog.
 
-**Verification:** Add version 1 migration, score conversion, distribution precision,
-and invalid-response tests; run `node --test tests/evaluate-skills.test.mjs`.
+**Verification:** `node --test tests/scores.test.mjs tests/open-jev-pipeline.test.mjs`;
+add migration fixtures and invalid/empty/stale/aggregate cases.
+**Dependencies:** None. **Scope:** Medium.
+**Likely files:** `schemas/scores.schema.json`, `scripts/open-jev-lib.mjs`,
+`scripts/open-jev-normalize.mjs`, `scripts/open-jev-merge.mjs`, `tests/scores.test.mjs`.
+Split pure report helpers into a module if necessary; keep task changes focused.
 
-**Dependencies:** None.
+## Task 2: Give Open JEV ownership of canonical commands
 
-**Likely files:** `scripts/evaluate-skills.mjs`, `tests/evaluate-skills.test.mjs`.
-**Scope:** Small.
+Move planner/checker/progress reads to canonical scores; route package commands to
+Open JEV and isolate the old evaluator's alternate-output support.
 
-## Task 2: Add the package-backed Jev adapter
+**Acceptance criteria:**
+- [x] `sync:scores` and `check:scores` maintain/check v3 offline with no-op byte stability; planner and bulk accounting use current Open JEV entries.
+- [x] `evaluate:skills` defaults to the Open JEV plan/workflow route and documents how inference runs; it never defaults to the old provider.
+- [x] Every legacy write path requires an explicit noncanonical output and rejects the canonical path; automatic legacy canonical import is removed.
 
-- [x] Verify the published package matches the reviewed exports, then pin `0.1.1`
-  as an optional dependency and import it lazily.
-- [x] Build five versioned score questions with concrete five-level rubrics and
-  untrusted document state; use `buildRequest` / `judge` from the package.
-- [x] Convert genuine Jev answers into score-only results and map every fallback
-  to a failure. Preserve native data and original/submitted-state hashes.
+**Verification:** Focused score/provider/planner/bulk tests; test command routing,
+missing inputs, custom output isolation, forbidden canonical writes and offline behavior.
+**Dependencies:** Task 1. **Scope:** Two focused subtasks.
+**2a likely files:** `scripts/open-jev-plan.mjs`, `scripts/open-jev-check.mjs`,
+`scripts/open-jev-bulk-status.mjs`, `scripts/open-jev-lib.mjs`, `tests/open-jev-bulk.test.mjs`.
+**2b likely files:** `package.json`, `scripts/evaluate-skills.mjs`,
+`tests/evaluate-skills.test.mjs`, `tests/scores.test.mjs`.
 
-**Acceptance criteria:** One request covers all dimensions; no fabricated prose;
-the other providers and offline planning work without the package installed.
+## Checkpoint: Canonical pipeline
 
-**Verification:** Test with injected judge/transport dependencies and upstream-compatible
-fixtures, including fractional scores and redacted state. Run
-`node --test tests/jev-evaluator.test.mjs`.
+- [x] Canonical commands operate on v3 fixtures and preserve the existing Open JEV cache.
+- [x] Old-provider commands cannot replace production scores.
 
-**Dependencies:** Task 1.
+## Task 3: Update incremental and bulk evaluation CI
 
-**Likely files:** `package.json`, `scripts/jev-evaluator.mjs`,
-`tests/jev-evaluator.test.mjs`.
-**Scope:** Medium.
+Write canonical scores directly, migrate resumable progress, and update main CI.
 
-## Checkpoint: Offline contract and adapter
+**Acceptance criteria:**
+- [x] Both producer workflows plan/merge/check/commit `data/scores.json`; old progress branches import standalone v1 without losing batch accounting.
+- [x] Partial success, no-progress stop, existing batch/concurrency limits and PR review remain; stale bases and concurrent writers cannot silently lose results.
+- [x] Catalog CI validates v3, negative fixtures, semantic/aggregate parity and no-op sync, and rejects legacy canonical data.
 
-- [x] Tasks 1–2 pass using fixtures; no API credential or live call is needed.
+**Verification:** `node --test tests/open-jev-pipeline.test.mjs tests/open-jev-bulk.test.mjs`;
+add old/new checkpoint and concurrent/base-change fixtures; inspect all workflow
+restore paths, commit allowlists and PR text without dispatching live workflows.
+**Dependencies:** Task 2. **Scope:** Two focused subtasks.
+**3a likely files:** `.github/workflows/nosey-open-jev.yml`,
+`.github/workflows/nosey-open-jev-bulk.yml`, `tests/open-jev-pipeline.test.mjs`,
+`tests/open-jev-bulk.test.mjs`.
+**3b likely files:** `.github/workflows/nosey-catalog.yml`,
+`scripts/validate-schemas.mjs`, `tests/scores.test.mjs`.
 
-## Task 3: Integrate Jev with the evaluation runner
+## Task 4: Use Open JEV as the main score everywhere
 
-- [x] Add `--provider jev`, the versioned default model, and provider-specific
-  `TYPESAFE_API_KEY` handling before source downloads.
-- [x] Connect an injected transport with pacing, retry/timeout controls, metadata
-  capture, and typed errors that survive the package's fallback behavior.
-- [x] Include Jev question/package/adapter/schema versions in fingerprints; route
-  progress reporting, report validation, checkpoints, and resume through the new result kind.
+Adapt the compiler and existing UI to canonical Open JEV entries, and remove the
+independent experimental input path while preserving the manifest compatibility alias.
 
-**Acceptance criteria:** `--dry-run` performs no requests or writes; missing keys and
-unsupported explicit chat options fail clearly; successful Jev results resume correctly.
+**Acceptance criteria:**
+- [x] Skill/repository score displays, filters and sorting use Open JEV; dates, confidence, excerpt limitations and empty/stale states work without prose.
+- [x] Manifest `evaluation` uses Open JEV; `open_jev` is retained as a deprecated alias from the same entry in manifest v1.1, preserving existing consumers.
+- [x] Repository aggregates, Pages URL, deterministic compilation and static quality eligibility remain correct; no unsupported calibration claim is introduced.
 
-**Verification:** Exercise end-to-end mocked source and Jev requests, cache reuse,
-model/rubric invalidation, atomic checkpoints, and all existing provider tests.
+**Verification:** Behavioral consumer fixtures, `node --test tests/scores.test.mjs tests/stage-pages.test.mjs`,
+fixed-revision compile-twice, manifest validation and Pages staging.
+**Dependencies:** Tasks 1–2. **Scope:** Two focused subtasks.
+**4a likely files:** `scripts/compile-catalog.mjs`, `schemas/manifest.schema.json`,
+`scripts/check-manifest.mjs`, focused manifest tests.
+**4b likely files:** `site/index.html`, `tests/stage-pages.test.mjs`,
+focused score-presentation tests if needed.
 
-**Dependencies:** Tasks 1–2.
+## Checkpoint: Ready to replace data
 
-**Likely files:** `scripts/evaluate-skills.mjs`, `scripts/jev-evaluator.mjs`,
-`tests/evaluate-skills.test.mjs`, `tests/jev-evaluator.test.mjs`.
-**Scope:** Medium.
+- [x] Producers, consumers and CI understand the same v3 contract.
+- [x] Resume migration and manifest compatibility have explicit test coverage.
 
-## Task 4: Add OpenRouter endpoint support with paid-input Jev
+## Task 5: Replace committed scores and retire the standalone report
 
-- [x] Add `--jev-endpoint typesafe|openrouter|opencode-go` and send the OpenRouter route to
-  `https://openrouter.ai/api/v1/systemone` through the shared package-backed adapter.
-  Use only `OPENROUTER_API_KEY` for this endpoint and keep existing chat routing intact.
-- [x] Default OpenRouter to `typesafe/jev-1.14` with paid input and free output.
-  Keep TypeSafe's `jev-1.14.0` default separate, support explicit Jev model overrides,
-  and select defaults independently of argument order. No free-model check is required.
-- [x] Include endpoint/model/adapter version in fingerprints and saved provenance.
-  Preserve actual usage and cost when returned; add fixtures for successful paid-input
-  responses, unavailable models, insufficient credit, and missing optional metadata.
+Run the offline migration after code changes are ready and remove obsolete runtime
+artifacts. Previous primary scores remain recoverable in Git history.
 
-**Acceptance criteria:** OpenRouter uses the Jev question/score contract, correct
-host and credentials, and isolated caches. Paid-input Jev responses are accepted;
-credit/model failures remain clear and never trigger a different model or endpoint.
+**Acceptance criteria:**
+- [x] `data/scores.json` contains the eight Open JEV evaluations with recalculated coverage/means, replacing all prior-provider results.
+- [x] `data/open-jev-scores.json` and its obsolete standalone schema are removed; only intentional compatibility import code and migration fixtures/docs reference the old path.
+- [x] Repeated canonical sync is byte-identical and canonical checks/schema validation pass.
 
-**Verification:** Mock paid-input Jev responses, zero-cost output, actual cost metadata,
-missing usage, 402 credit errors, 429 limits, and unavailable model responses. Assert
-a dry run needs no key/package/network and no free-model metadata request occurs.
-Test default selection in both argument orders and the alternative Decisions endpoint if used.
+**Verification:** Compare all eight scores/provenance against the migration input;
+run `npm run sync:scores` twice, `npm run check:scores`, schema validation and
+`rg -n 'open-jev-scores\.json' scripts tests schemas .github docs package.json site`.
+**Dependencies:** Tasks 3–4. **Scope:** Medium.
+**Likely files:** `data/scores.json`, `data/open-jev-scores.json` (delete),
+`schemas/open-jev-scores.schema.json` (delete), migration fixtures/tests.
 
-**Dependencies:** Tasks 2–3.
+## Task 6: Document and verify the replacement
 
-**Likely files:** `scripts/evaluate-skills.mjs`, `scripts/jev-evaluator.mjs`,
-`tests/evaluate-skills.test.mjs`, `tests/jev-evaluator.test.mjs`.
-**Scope:** Medium.
+Update evaluator usage, canonical schema, workflow ownership, primary score policy,
+coverage expectations and legacy alternate-output instructions.
 
-## Task 5: Add OpenCode free Jev through the opencode-go selector
-
-- [x] Wire `--provider jev --jev-endpoint opencode-go` to
-  `https://opencode.ai/inference/systemone/v1/systemone`, defaulting to
-  `jev-1.13-free` and authenticating only with `OPENCODE_API_KEY`.
-- [x] Reuse the package-backed request/parser, score validation, pacing, checkpoints,
-  and metadata handling. Include the OpenCode endpoint/free model in cache identity.
-  Keep existing OpenCode chat/DeepSeek behavior intact.
-- [x] Preserve the free model on access/quota/model failures; reject paid overrides
-  and forbid automatic fallback to paid Jev or the authorized paid OpenRouter route.
-
-**Acceptance criteria:** The documented Console Jev endpoint receives all five score
-questions with the correct key/model. Free results validate and resume correctly;
-401/403/429 and expired offers preserve progress without paid fallback.
-
-**Verification:** Use injected transport fixtures for native fractional scores,
-reported zero cost, absent cost, incorrect keys/hosts, missing models, expired free
-offers, and exhausted quotas. Test default selection in both argument orders and
-cache isolation from direct TypeSafe/OpenRouter results. Assert no chat API or CLI
-is invoked, and dry runs need no key/package/network.
-
-**Dependencies:** Tasks 2–3; Task 4 establishes the shared endpoint selector.
-
-**Likely files:** `scripts/evaluate-skills.mjs`, `scripts/jev-evaluator.mjs`,
-`tests/evaluate-skills.test.mjs`, `tests/jev-evaluator.test.mjs`.
-**Scope:** Medium.
-
-## Task 6: Verify failure handling and context limits
-
-- [x] Cover fallback results, HTTP-200 malformed answers, missing question IDs,
-  invalid distributions, unknown metadata, and missing usage.
-- [x] Test 401, 402, 403, 429 with Retry-After, 529/5xx, and timeouts across all endpoints, including preservation
-  of progress when dispatch stops and redaction of credentials.
-- [x] Test byte-limit and model-context failures without truncating input, switching
-  providers, enabling long context, or repeating ambiguous network requests.
-
-**Acceptance criteria:** A fallback never counts as evaluated; failure scope matches
-the error; original provider behavior remains unchanged.
-
-**Verification:** Run the focused Jev tests and `node --test tests/*.test.mjs`.
-Assertions use deterministic fixtures, not exact probabilities from live models.
-
-**Dependencies:** Tasks 3–5.
-
-**Likely files:** `scripts/jev-evaluator.mjs`, `tests/jev-evaluator.test.mjs`,
-`tests/evaluate-skills.test.mjs`.
-**Scope:** Medium.
-
-## Checkpoint: Integrated provider
-
-- [x] Tasks 3–6 pass with injected transport and all existing providers remain green.
-- [x] Paid-input OpenRouter Jev succeeds with fixtures; credit/model failures preserve checkpoints.
-- [x] Free OpenCode Jev succeeds with fixtures; access/quota failures never switch to paid inference.
-
-## Task 7: Document and validate the completed feature
-
-- [x] Document optional installation, endpoint-specific `TYPESAFE_API_KEY` /
-  `OPENROUTER_API_KEY` / `OPENCODE_API_KEY`, model selection, score-only results, fractional scale,
-  limits, and separate output files for each Jev endpoint.
-- [x] Document version 1 report compatibility, cache identity, mutable model aliases,
-  and absent prose feedback; update CLI help examples.
-- [x] Run the full offline checks and inspect the diff for accidental catalog changes.
-- [x] Document OpenRouter's `typesafe/jev-1.14` default, paid input/free output billing,
-  and actual cost metadata. Remove free-model availability prerequisites from usage guidance.
-- [x] Document OpenCode's `jev-1.13-free` default, limited-time free offer, Console
-  System One endpoint, quota failures, and lack of automatic paid fallback.
-
-**Acceptance criteria:** A contributor can install and run Jev from the documented
-commands; verification requires no paid API calls; canonical catalog data stays unchanged.
+**Acceptance criteria:**
+- [x] Documentation describes Open JEV as the main evaluator and explains excerpt scope, actual coverage and resumable evaluation commands.
+- [x] No production documentation or workflow still describes a separate experimental score input or the old evaluator as canonical.
+- [x] Required offline tests/checks pass and final diff contains only the intended replacement.
 
 **Verification:**
-
 ```sh
-node scripts/evaluate-skills.mjs --provider jev --dry-run
-node scripts/evaluate-skills.mjs --provider jev --jev-endpoint openrouter --model typesafe/jev-1.14 --dry-run
-node scripts/evaluate-skills.mjs --provider jev --jev-endpoint opencode-go --model jev-1.13-free --dry-run
 node --test tests/*.test.mjs
+python3 -m unittest discover -s tests -p 'test_detection_patterns.py' -v
+npm run validate:schemas -- --self-test --skip-unmapped
+npm run check:scores
 node scripts/catalog.mjs --check
 node scripts/quality.mjs --check
 git diff --check
 ```
+Also run the catalog workflow's fixed-revision compile-twice comparison, manifest
+verification and Pages staging checks in temporary output directories. Verify
+`evaluate:skills` planning and score maintenance require no credentials or network.
+**Dependencies:** Task 5. **Scope:** Medium.
+**Likely files:** `docs/quality.md`, generated documentation source
+`scripts/catalog.mjs` if links/text change, `README.md` via its generator,
+`tasks/plan.md`, `tasks/todo.md`.
 
-**Dependencies:** Tasks 1–6.
+## Checkpoint: Complete
 
-**Likely files:** `docs/quality.md`, `scripts/evaluate-skills.mjs`, `CONTRIBUTING.md`.
-**Scope:** Medium.
+- [x] Open JEV is the sole canonical score source across scripts, CI, UI and manifest.
+- [x] All acceptance criteria and verification results are recorded; changes are ready for review.
 
-## Final checkpoint
+## Verification results (2026-11-03)
 
-- [x] All acceptance criteria pass; the documented offline commands work.
-- [x] No invented Jev feedback, successful fallbacks, implicit provider switch,
-  paid fallback from free OpenCode Jev, or automatically triggered bulk live evaluation.
-- [x] Implementation is ready for review.
-
-## Verification record
-
-- Verified published `@aitofy/jev-awesome-skills@0.1.1` exports and SHA-512 integrity; installed with lifecycle scripts disabled.
-- Fixture tests cover all three endpoints, real-package parsing/redaction, CLI persistence/resume, legacy report migration, retries, context limits, and no paid fallback from OpenCode.
-- Catalog, quality, and JSON Schema checks pass. No canonical catalog data changed.
-- No live Jev inference or paid API request was made.
+- 131 Node tests passed on both the local runtime and CI's Node 22.23.4 runtime.
+- Three Python detection-pattern tests passed.
+- Canonical schema validation and negative fixtures passed; score checks passed.
+- Two sync runs were byte-identical to the migrated report; all eight imported
+  Open JEV score payloads/provenance were compared with the original standalone input.
+- Catalog/generated docs, unmapped index, quality invariants and duplicate checks passed.
+- Fixed-revision compilation produced identical manifests twice; manifest checks
+  and Pages staging/verification passed, with 593 quality-eligible skills unchanged.
+- Actionlint, YAML parsing and embedded shell syntax checks passed for all four
+  changed workflows. The scoped UI detector returned no findings.
+- Consumer tests cover primary scores, confidence/scope copy, filtering/sorting,
+  stale/empty states, manifest aliases, old/new checkpoint imports and Git report
+  output larger than 1 MiB. Legacy-output protection includes a symlink alias.
+- No live evaluation, workflow dispatch, paid inference or deployment was performed.

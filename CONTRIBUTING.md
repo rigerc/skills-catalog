@@ -63,6 +63,8 @@ Requires Node.js **22+**, with no npm install needed.
    node scripts/catalog.mjs --validate
    node scripts/check-duplicate-skills.mjs
    node scripts/catalog.mjs --write
+   npm run sync:scores
+   npm run check:scores
    node scripts/catalog.mjs --check
    node scripts/unmapped.mjs --check
    node --test tests/*.test.mjs
