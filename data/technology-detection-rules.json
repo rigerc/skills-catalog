@@ -907,6 +907,12 @@
           "type": "dependency",
           "ecosystem": "npm",
           "name": "@microsoft/aspnetcore"
+        },
+        {
+          "type": "content",
+          "path_glob": "*.csproj",
+          "regex": "<Project\\b[^>]*\\bSdk\\s*=\\s*[\"']Microsoft\\.NET\\.Sdk\\.Web[\"']",
+          "case_sensitive": true
         }
       ]
     },
@@ -1582,6 +1588,10 @@
           "path_glob": "pyproject.toml",
           "regex": "(?m)^\\s*\\[tool\\.poetry\\]\\s*$",
           "case_sensitive": false
+        },
+        {
+          "type": "path",
+          "path": "poetry.lock"
         }
       ]
     },
@@ -2051,6 +2061,34 @@
         {
           "type": "path",
           "path": "Dockerfile.prod"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/Dockerfile"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/Dockerfile.dev"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/Dockerfile.prod"
+        },
+        {
+          "type": "path",
+          "path": "compose.yaml"
+        },
+        {
+          "type": "path",
+          "path": "compose.yml"
+        },
+        {
+          "type": "path",
+          "path": "docker-compose.yaml"
+        },
+        {
+          "type": "path",
+          "path": "docker-compose.yml"
         }
       ]
     },
@@ -2152,6 +2190,10 @@
         {
           "type": "glob",
           "pattern": "charts/*/Chart.yaml"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/Chart.yaml"
         }
       ]
     },
@@ -2322,6 +2364,14 @@
         {
           "type": "path",
           "path": "main.tf"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/*.tf"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/*.tf.json"
         }
       ]
     },
@@ -3471,6 +3521,10 @@
         {
           "type": "path",
           "path": ".nvmrc"
+        },
+        {
+          "type": "path",
+          "path": ".node-version"
         }
       ]
     },
@@ -3543,6 +3597,10 @@
         {
           "type": "path",
           "path": "setup.cfg"
+        },
+        {
+          "type": "path",
+          "path": ".python-version"
         }
       ]
     },
@@ -3591,6 +3649,14 @@
         {
           "type": "path",
           "path": "Cargo.toml"
+        },
+        {
+          "type": "path",
+          "path": "rust-toolchain.toml"
+        },
+        {
+          "type": "path",
+          "path": "rust-toolchain"
         }
       ]
     },
@@ -4154,6 +4220,22 @@
         {
           "type": "path",
           "path": ".eslintrc.js"
+        },
+        {
+          "type": "path",
+          "path": "eslint.config.ts"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc.cjs"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc.yaml"
+        },
+        {
+          "type": "path",
+          "path": ".eslintrc.yml"
         }
       ]
     },
@@ -4323,6 +4405,18 @@
         {
           "type": "path",
           "path": "playwright.config.js"
+        },
+        {
+          "type": "path",
+          "path": "playwright.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "playwright.config.mts"
+        },
+        {
+          "type": "path",
+          "path": "playwright.config.cjs"
         }
       ]
     },
@@ -4390,6 +4484,16 @@
           "type": "dependency",
           "ecosystem": "py",
           "name": "pytest"
+        },
+        {
+          "type": "path",
+          "path": "pytest.ini"
+        },
+        {
+          "type": "content",
+          "path_glob": "pyproject.toml",
+          "regex": "(?m)^\\s*\\[tool\\.pytest\\.ini_options\\]\\s*(?:#.*)?$",
+          "case_sensitive": false
         }
       ]
     },
@@ -4503,6 +4607,18 @@
         {
           "type": "path",
           "path": "vitest.config.mts"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.mjs"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.cjs"
+        },
+        {
+          "type": "path",
+          "path": "vitest.config.cts"
         }
       ]
     },
@@ -5460,6 +5576,14 @@
         {
           "type": "glob",
           "pattern": "**/kustomization.yaml"
+        },
+        {
+          "type": "path",
+          "path": "kustomization.yml"
+        },
+        {
+          "type": "glob",
+          "pattern": "**/kustomization.yml"
         }
       ]
     },
