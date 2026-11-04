@@ -52,6 +52,11 @@ for(const combo of manifest.combinations){
  for(const id of combo.requires)if(!techIds.has(id))fail('unknown required technology '+id);
 }
 for(const r of manifest.rules)if(!techIds.has(r.technology_id))fail('unknown detection rule');
+for(const signal of manifest.rules.flatMap(r=>r.signals)){
+ if(!manifest.required_capabilities.includes(signal.type))fail('missing detection capability '+signal.type);
+ if(signal.type==='command'&&signal.regex!==undefined)
+  try{new RegExp(signal.regex);}catch{fail('invalid command output regex');}
+}
 const threshold=args.includes('--minimum-eligible-ratio')?Number(v('--minimum-eligible-ratio')):null;
 if(threshold!==null&&(!Number.isFinite(threshold)||threshold<0||threshold>1||
  eligible.length/Math.max(1,ids.size)<threshold))

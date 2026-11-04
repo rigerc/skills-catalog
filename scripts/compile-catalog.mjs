@@ -14,11 +14,12 @@ const read=(name,optional=false)=>{
   catch(error){if(optional&&error.code==='ENOENT')return null;throw error;}
 };
 const unique=(xs,label)=>{if(new Set(xs).size!==xs.length)throw Error('Duplicate '+label);};
-export function compile({revision,asOf}={}){
+export const minimumNoseyVersion=rules=>rules.some(r=>r.signals.some(s=>s.type==='command'))?'0.6.0-dev.0':'0.5.0';
+export function compile({revision,asOf,catalog}={}){
   if(!SHA40.test(revision||''))throw Error('revision must be a full commit SHA');
   if(!/^\d{4}-\d{2}-\d{2}$/.test(asOf||'')||new Date(asOf+'T00:00:00Z').toISOString().slice(0,10)!==asOf)
     throw Error('as-of must be an actual YYYY-MM-DD calendar date');
-  const {c,m,l,d}=load();validate(c,m,l,d);
+  const {c,m,l,d}=catalog??load();validate(c,m,l,d);
   const report=read('data/quality.json');
   const waivers=read('data/quality-waivers.json');
   const scores=read('data/scores.json',true);
@@ -89,7 +90,7 @@ export function compile({revision,asOf}={}){
     quarantined_skills:skills.filter(s=>!s.quality.eligible).length,
     technologies:technologies.length,combinations:combinations.length,rules:rules.length};
   return {manifest_version:{major:1,minor:1},catalog_id:c.catalog_id,source_revision:revision,
-    minimum_nosey_version:'0.5.0',required_capabilities,scan_policy:d.policy,
+    minimum_nosey_version:minimumNoseyVersion(rules),required_capabilities,scan_policy:d.policy,
     repository_aliases:m.repository_aliases,mcp_scan_context:m.mcp_scan_context,
     frontend_essentials:m.frontend_essentials,skills,technologies,combinations,rules,counts};
 }

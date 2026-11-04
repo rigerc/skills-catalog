@@ -53,8 +53,19 @@ export const validate=function validate(c,m,l,d){
   for(const r of rules){const t=technologies.find(t=>t.id===r.technology_id);
     if(!t||t.mapping_status!==r.mapping_status)fail("detection status/technology mismatch "+r.technology_id);
     if(r.logic!=="any"||!r.signals?.length)fail("invalid detection rule "+r.technology_id);
-    for(const s of r.signals??[]){if(!["dependency","path","glob","extension","content","mcp_package"].includes(s.type))fail("unknown signal "+s.type);
-      if(s.type==="content"&&(typeof s.regex!=="string"||s.regex.length>512))fail("invalid content signal "+r.technology_id)}}
+    for(const s of r.signals??[]){if(!["dependency","path","glob","extension","content","mcp_package","command"].includes(s.type))fail("unknown signal "+s.type);
+      if(s.type==="content"&&(typeof s.regex!=="string"||s.regex.length>512))fail("invalid content signal "+r.technology_id);
+      if(s.type==='command'){
+        if(typeof s.name!=='string'||!/^[A-Za-z0-9][A-Za-z0-9._+-]{0,127}$/.test(s.name))fail('invalid command name '+r.technology_id);
+        if(s.args!==undefined&&(!Array.isArray(s.args)||s.args.length>32||s.args.some(a=>typeof a!=='string'||a.length>1024||a.includes('\0'))))fail('invalid command args '+r.technology_id);
+        if(s.regex!==undefined){
+          if(typeof s.regex!=='string'||!s.regex.length||s.regex.length>1024||s.args===undefined)fail('invalid command output regex '+r.technology_id);
+          else try{new RegExp(s.regex,s.case_sensitive===false?'i':'');}catch{fail('invalid command output regex '+r.technology_id);}
+        }
+        if(s.stream!==undefined&&(!['stdout','stderr','combined'].includes(s.stream)||s.regex===undefined)||
+          s.case_sensitive!==undefined&&(typeof s.case_sensitive!=='boolean'||s.regex===undefined))fail('invalid command output options '+r.technology_id);
+      }
+    }}
   for(const id of techIDs)if(!ruleIDs.has(id))fail("missing detection rule "+id);
   if(err.length)throw Error("Catalog validation failed:\n"+err.slice(0,20).join("\n")+(err.length>20?"\n...more":""));
   return{skills:skills.length,technologies:technologies.length,mapped:mapped.length,detect_only:unmapped.length,combinations:combinations.length,verified,unresolved};
