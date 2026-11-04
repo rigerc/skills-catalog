@@ -65,8 +65,27 @@ Each technology needs exactly one rule with the same `technology_id` and `mappin
 | `extension` | `{"type":"extension","suffix":".exampleco"}` | Unambiguous, dedicated file extension |
 | `content` | `{"type":"content","path_glob":"**/*.config.js","regex":"examplecoPayments","case_sensitive":true}` | Bounded read of relevant files, with a precise regular expression |
 | `mcp_package` | `{"type":"mcp_package","name":"@exampleco/mcp-server"}` | An enabled MCP server package |
+| `command` | `{"type":"command","name":"docker"}` | An executable available on the scanning machine's `PATH`; requires Nosey 0.6.0-dev.0 or newer |
 
 All the snippets above are **illustrative**; require project evidence before merging. Use simple, bounded `content` expressions. Avoid broad patterns such as `package.json`, `README.md`, `*.js`, or `react` standing alone. Existing scanner scope, ignore rules, read limits, and enabled-MCP semantics still apply; signals are not arbitrary shell commands.
+
+### Command availability and output
+
+A `command` signal with only `name` checks for an executable without running it. To execute a noninteractive probe and match output, supply a literal argument array and a regex:
+
+```json
+{"type":"command","name":"docker","args":["--version"],"regex":"^Docker version \\d+\\.","case_sensitive":true}
+```
+
+The command must exit successfully. `regex` requires `args`; omitting the regex accepts any successful exit. An explicit empty `args` array runs the program with no arguments. `stream` defaults to `stdout`; `stderr` and `combined` (stdout followed by stderr) are also supported. Regex matching is multiline and case-insensitive by default. Capture groups are not extracted as fields.
+
+Nosey runs commands directly, with no shell, in the scanned project's directory and environment. Command names cannot contain paths, spaces, or shell expressions. Shell aliases/functions are unavailable; Windows `.cmd`/`.bat` files can be detected but cannot be executed. Only author trusted, noninteractive, read-only probes: explicit command signals execute installed programs, while the policy forbids implicit execution of project source code.
+
+Runtime limits are 32 distinct probes per scan, two seconds per execution, ten seconds of total probe work, and 64 KiB per output stream. Identical name/argument probes run once per scan. Missing commands and output mismatches are ordinary non-matches; execution failures and exhausted limits produce diagnostics. Evidence records the executable path; output is hashed into the scan fingerprint and is not stored as evidence. Regex execution uses Nosey's isolated, timed worker.
+
+Command availability describes the scanning machine and does not prove project usage or service readiness. Since `logic: "any"` makes each signal independently sufficient, adding an availability signal to Docker would detect it in every project on a machine with Docker installed. Prefer project signals when recommending skills for a specific repository. Existing shipped rules therefore retain their project evidence.
+
+The compiler declares the `command` capability and raises `minimum_nosey_version` to `0.6.0-dev.0` whenever a rule uses it. Older consumers reject these manifests. This is a development contract; it does not assert compatibility with a released 0.6.0 consumer.
 
 ## 4. Add recommended skills, if applicable
 

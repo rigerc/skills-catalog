@@ -46,7 +46,7 @@
     },
     "minimum_nosey_version": {
       "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"
     },
     "required_capabilities": {
       "type": "array",
@@ -60,7 +60,8 @@
           "content",
           "extension",
           "frontend_essentials",
-          "mcp_scan_context"
+          "mcp_scan_context",
+          "command"
         ]
       }
     },
@@ -317,10 +318,76 @@
                     "glob",
                     "extension",
                     "content",
-                    "mcp_package"
+                    "mcp_package",
+                    "command"
                   ]
                 }
-              }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "command"
+                      }
+                    }
+                  },
+                  "then": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "name"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "command"
+                      },
+                      "name": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128,
+                        "pattern": "^[A-Za-z0-9][A-Za-z0-9._+-]*$"
+                      },
+                      "args": {
+                        "type": "array",
+                        "maxItems": 32,
+                        "items": {
+                          "type": "string",
+                          "maxLength": 1024,
+                          "pattern": "^[^\\u0000]*$"
+                        }
+                      },
+                      "regex": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1024
+                      },
+                      "stream": {
+                        "enum": [
+                          "stdout",
+                          "stderr",
+                          "combined"
+                        ]
+                      },
+                      "case_sensitive": {
+                        "type": "boolean"
+                      }
+                    },
+                    "dependentRequired": {
+                      "regex": [
+                        "args"
+                      ],
+                      "stream": [
+                        "regex"
+                      ],
+                      "case_sensitive": [
+                        "regex"
+                      ]
+                    }
+                  }
+                }
+              ]
             }
           }
         }
