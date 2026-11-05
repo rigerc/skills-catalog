@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-11-01",
+  "snapshot_date": "2026-11-05",
   "source": "Nosey modular product specification; October 27 snapshot plus October 28 curated stack patch; October 28 user-supplied technology skill mappings; 2026-11-01 pinned agent-skills-standard develop import; 2026-11-01 pinned sickn33/agentic-awesome-skills v20.3.0 bundle-selected top-level import (data/bundles.json at 1ed5976b000fc0df2910d32ed33717794da1bee2); original-source attribution for 91 imports from pinned upstream source-credits.json",
   "remote_availability": "not_checked",
   "notes": [
@@ -16,8 +16,8 @@
     "2026-11-01: Removed all skills without a forward mapping from a technology, combination or frontend essentials; retained mapped skills and their verified sources."
   ],
   "counts": {
-    "distinct_skills": 867,
-    "technologies_with_skills": 214,
+    "distinct_skills": 876,
+    "technologies_with_skills": 222,
     "technologies_detect_only": 66,
     "technology_combinations": 35,
     "frontend_essential_skills": 3
@@ -10996,6 +10996,130 @@
       "recommended_for": {
         "technology_ids": [
           "prettier"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-bubbles",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-bubbles",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-bubbles"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-bubbletea",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-bubbletea",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-bubbletea"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-ecosystem",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-ecosystem",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-bubbles",
+          "charm-bubbletea",
+          "charm-glamour",
+          "charm-gum",
+          "charm-huh",
+          "charm-lipgloss",
+          "charm-log",
+          "charm-vhs"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-glamour",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-glamour",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-glamour"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-gum",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-gum",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-gum"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-huh",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-huh",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-huh"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-lipgloss",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-lipgloss",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-lipgloss"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-log",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-log",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-log"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-vhs",
+      "repository": "tpscloud/charmedimsure",
+      "skill_name": "charmed-vhs",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "charm-vhs"
         ],
         "combination_ids": [],
         "frontend_essential": false
