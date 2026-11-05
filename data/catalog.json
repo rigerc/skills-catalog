@@ -16,8 +16,8 @@
     "2026-11-01: Removed all skills without a forward mapping from a technology, combination or frontend essentials; retained mapped skills and their verified sources."
   ],
   "counts": {
-    "distinct_skills": 876,
-    "technologies_with_skills": 222,
+    "distinct_skills": 877,
+    "technologies_with_skills": 223,
     "technologies_detect_only": 66,
     "technology_combinations": 35,
     "frontend_essential_skills": 3
@@ -5852,6 +5852,19 @@
       "recommended_for": {
         "technology_ids": [
           "instantdb"
+        ],
+        "combination_ids": [],
+        "frontend_essential": false
+      }
+    },
+    {
+      "id": "ishan5ain/tuiweave-agent-kit/tuiweave-app-builder",
+      "repository": "ishan5ain/tuiweave-agent-kit",
+      "skill_name": "tuiweave-app-builder",
+      "skill_md_url": null,
+      "recommended_for": {
+        "technology_ids": [
+          "tuiweave"
         ],
         "combination_ids": [],
         "frontend_essential": false

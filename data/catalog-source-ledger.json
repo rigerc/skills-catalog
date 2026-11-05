@@ -3341,6 +3341,13 @@
       "commit": "b80dea74f99ffb7a8d0726805d63ec97a1e4b5cd"
     },
     {
+      "id": "ishan5ain/tuiweave-agent-kit/tuiweave-app-builder",
+      "status": "verified",
+      "checked_at": "2026-11-05T22:05:40.294Z",
+      "url": "https://github.com/ishan5ain/tuiweave-agent-kit/blob/bfe0f1dc15f442da86346a575dde062671736a39/skills/tuiweave-app-builder/SKILL.md",
+      "commit": "bfe0f1dc15f442da86346a575dde062671736a39"
+    },
+    {
       "id": "Jeffallan/claude-skills/angular-architect",
       "status": "verified",
       "checked_at": "2026-10-30T23:57:40.687Z",

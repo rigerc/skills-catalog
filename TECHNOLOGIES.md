@@ -218,6 +218,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | samber/slog | `samber-slog` | Mapped | `samber/cc-skills-golang/golang-samber-slog` |
 | Swagger | `swagger` | Mapped | `samber/cc-skills-golang/golang-swagger` |
 | Testify | `testify` | Mapped | `samber/cc-skills-golang/golang-stretchr-testify`, `HoangNguyen0403/agent-skills-standard/golang-testing` |
+| TuiWeave | `tuiweave` | Mapped | `ishan5ain/tuiweave-agent-kit/tuiweave-app-builder` |
 | Uber Dig | `uber-dig` | Mapped | `samber/cc-skills-golang/golang-uber-dig` |
 | Uber Fx | `uber-fx` | Mapped | `samber/cc-skills-golang/golang-uber-fx` |
 | Viper | `viper` | Mapped | `samber/cc-skills-golang/golang-spf13-viper` |
