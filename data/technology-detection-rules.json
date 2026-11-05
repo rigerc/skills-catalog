@@ -5696,6 +5696,116 @@
           "path": "loki.yaml"
         }
       ]
+    },
+    {
+      "technology_id": "charm-bubbles",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/bubbles/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-bubbletea",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/bubbletea/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-glamour",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/glamour/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-gum",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "content",
+          "path_glob": "**/*.sh",
+          "regex": "\\bgum\\s+(?:choose|filter|confirm|input|write|file|spin|table|pager|style|join|format|log)\\b",
+          "case_sensitive": true
+        },
+        {
+          "type": "content",
+          "path_glob": "**/Makefile",
+          "regex": "\\bgum\\s+(?:choose|filter|confirm|input|write|file|spin|table|pager|style|join|format|log)\\b",
+          "case_sensitive": true
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-huh",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/huh/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-lipgloss",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/lipgloss/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-log",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "charm.land/log/v2"
+        }
+      ]
+    },
+    {
+      "technology_id": "charm-vhs",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "extension",
+          "suffix": ".tape"
+        }
+      ]
     }
   ]
 }

@@ -45,6 +45,6 @@ test('all three skills leave the unmapped index and catalog remains valid', () =
   const unmapped = new Set(findUnmappedSkills(c,m).map(s => s.id));
   for (const id of [guardrail,cursorNext,cursorOdoo]) assert.equal(unmapped.has(id),false,id);
   assert.equal(m.counts.combinations,35);
-  assert.equal(m.counts.mapped_technologies,214);
-  assert.equal(m.counts.detect_only_technologies,66);
+  assert.equal(m.counts.mapped_technologies, m.technologies.filter(t => t.mapping_status === 'mapped').length);
+  assert.equal(m.counts.detect_only_technologies, m.technologies.filter(t => t.mapping_status === 'detect_only').length);
 });

@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "catalog_id": "nosey-built-in",
-  "snapshot_date": "2026-11-01",
+  "snapshot_date": "2026-11-05",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
-    "technologies": 280,
-    "mapped_technologies": 214,
+    "technologies": 288,
+    "mapped_technologies": 222,
     "detect_only_technologies": 66,
     "combinations": 35,
-    "distinct_referenced_skills": 867
+    "distinct_referenced_skills": 876
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -6928,6 +6928,200 @@
         "sickn33/agentic-awesome-skills/loki-logging"
       ],
       "source_document": "https://grafana.com/docs/loki/latest/configure/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-gum",
+      "name": "Gum CLI (Charm)",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content",
+            "examples": [
+              "gum choose",
+              "gum confirm",
+              "gum input"
+            ]
+          }
+        ],
+        "raw": "shell: gum subcommand invocation"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-gum",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/gum",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-vhs",
+      "name": "VHS terminal recorder (Charm)",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "extension",
+            "examples": [
+              ".tape"
+            ]
+          }
+        ],
+        "raw": "extension: .tape"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-vhs",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/vhs",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-bubbles",
+      "name": "Bubbles (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/bubbles/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/bubbles/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-bubbles",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/bubbles",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-bubbletea",
+      "name": "Bubble Tea (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/bubbletea/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/bubbletea/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-bubbletea",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/bubbletea",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-glamour",
+      "name": "Glamour (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/glamour/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/glamour/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-glamour",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/glamour",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-huh",
+      "name": "Huh (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/huh/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/huh/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-huh",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/huh",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-lipgloss",
+      "name": "Lip Gloss (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/lipgloss/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/lipgloss/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-lipgloss",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/lipgloss",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-log",
+      "name": "Charm Log",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/log/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/log/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-log",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/log",
       "id_provenance": "author_defined"
     }
   ],
