@@ -91,6 +91,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Babel | `babel` | Detect-only | — |
 | Bazel | `bazel` | Mapped | `ccheney/robust-skills/bazel` |
 | Changesets | `changesets` | Mapped | `pingdotgg/t3code/changesets` |
+| Gum CLI (Charm) | `charm-gum` | Mapped | `tpscloud/charmedimsure/charmed-gum`, `tpscloud/charmedimsure/charmed-ecosystem` |
 | CMake | `cmake` | Detect-only | — |
 | direnv | `direnv` | Detect-only | — |
 | esbuild | `esbuild` | Mapped | `Mindrally/skills/esbuild-bundler` |
@@ -147,6 +148,7 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 | Technology | ID | Status | Recommended skill IDs |
 | --- | --- | --- | --- |
 | React Three Fiber | `@react-three/fiber` | Mapped | `cloudai-x/threejs-skills/threejs-react-three-fiber` |
+| VHS terminal recorder (Charm) | `charm-vhs` | Mapped | `tpscloud/charmedimsure/charmed-vhs`, `tpscloud/charmedimsure/charmed-ecosystem` |
 | ElevenLabs | `elevenlabs` | Mapped | `inferen-sh/skills/elevenlabs-tts`, `inferen-sh/skills/elevenlabs-music` |
 | GSAP | `gsap` | Mapped | `greensock/gsap-skills/gsap-core`, `greensock/gsap-skills/gsap-scrolltrigger`, `greensock/gsap-skills/gsap-performance`, `greensock/gsap-skills/gsap-plugins`, `greensock/gsap-skills/gsap-timeline`, `greensock/gsap-skills/gsap-utils`, `greensock/gsap-skills/gsap-frameworks`, `Mindrally/skills/gsap` |
 | Remotion | `remotion` | Mapped | `remotion-dev/skills/remotion-best-practices` |
@@ -195,6 +197,12 @@ Generated from [mappings.json](data/mappings.json). Actual scanner signals are i
 
 | Technology | ID | Status | Recommended skill IDs |
 | --- | --- | --- | --- |
+| Bubbles (Charm) | `charm-bubbles` | Mapped | `tpscloud/charmedimsure/charmed-bubbles`, `tpscloud/charmedimsure/charmed-ecosystem` |
+| Bubble Tea (Charm) | `charm-bubbletea` | Mapped | `tpscloud/charmedimsure/charmed-bubbletea`, `tpscloud/charmedimsure/charmed-ecosystem` |
+| Glamour (Charm) | `charm-glamour` | Mapped | `tpscloud/charmedimsure/charmed-glamour`, `tpscloud/charmedimsure/charmed-ecosystem` |
+| Huh (Charm) | `charm-huh` | Mapped | `tpscloud/charmedimsure/charmed-huh`, `tpscloud/charmedimsure/charmed-ecosystem` |
+| Lip Gloss (Charm) | `charm-lipgloss` | Mapped | `tpscloud/charmedimsure/charmed-lipgloss`, `tpscloud/charmedimsure/charmed-ecosystem` |
+| Charm Log | `charm-log` | Mapped | `tpscloud/charmedimsure/charmed-log`, `tpscloud/charmedimsure/charmed-ecosystem` |
 | Cobra | `cobra` | Mapped | `samber/cc-skills-golang/golang-spf13-cobra` |
 | Gin | `gin` | Detect-only | — |
 | Go | `go` | Mapped | `samber/cc-skills-golang/golang-code-style`, `samber/cc-skills-golang/golang-error-handling`, `samber/cc-skills-golang/golang-security`, `samber/cc-skills-golang/golang-testing`, `Mindrally/skills/go`, `eduardo-sl/go-agent-skills/go-api-design`, `eduardo-sl/go-agent-skills/go-architecture-review`, `eduardo-sl/go-agent-skills/go-cli`, `eduardo-sl/go-agent-skills/go-dependency-injection`, `eduardo-sl/go-agent-skills/go-design-patterns`, `eduardo-sl/go-agent-skills/go-graphql`, `eduardo-sl/go-agent-skills/go-grpc`, `eduardo-sl/go-agent-skills/go-interface-design`, `eduardo-sl/go-agent-skills/go-openapi`, `eduardo-sl/go-agent-skills/go-project-layout`, `eduardo-sl/go-agent-skills/go-code-review`, `eduardo-sl/go-agent-skills/go-coding-standards`, `eduardo-sl/go-agent-skills/go-context`, `eduardo-sl/go-agent-skills/go-data-structures`, `eduardo-sl/go-agent-skills/go-documentation`, `eduardo-sl/go-agent-skills/go-error-handling`, `eduardo-sl/go-agent-skills/go-modernize`, `eduardo-sl/go-agent-skills/go-naming`, `eduardo-sl/go-agent-skills/go-database`, `eduardo-sl/go-agent-skills/go-concurrency-review`, `eduardo-sl/go-agent-skills/go-defensive-coding`, `eduardo-sl/go-agent-skills/go-observability`, `eduardo-sl/go-agent-skills/go-performance-review`, `eduardo-sl/go-agent-skills/go-security-audit`, `eduardo-sl/go-agent-skills/go-troubleshooting`, `eduardo-sl/go-agent-skills/go-test-quality`, `eduardo-sl/go-agent-skills/go-test-table-driven`, `eduardo-sl/go-agent-skills/go-binary-size`, `eduardo-sl/go-agent-skills/go-build-release`, `eduardo-sl/go-agent-skills/go-ci`, `eduardo-sl/go-agent-skills/go-dependency-audit`, `eduardo-sl/go-agent-skills/go-refactoring`, `eduardo-sl/go-agent-skills/go-semantic-tools`, `eduardo-sl/go-agent-skills/go-skills-router`, `Jeffallan/claude-skills/golang-pro`, `Mindrally/skills/go-api-development`, `Mindrally/skills/go-backend-microservices`, `HoangNguyen0403/agent-skills-standard/golang-api-server`, `HoangNguyen0403/agent-skills-standard/golang-architecture`, `HoangNguyen0403/agent-skills-standard/golang-concurrency`, `HoangNguyen0403/agent-skills-standard/golang-configuration`, `HoangNguyen0403/agent-skills-standard/golang-database`, `HoangNguyen0403/agent-skills-standard/golang-error-handling`, `HoangNguyen0403/agent-skills-standard/golang-language`, `HoangNguyen0403/agent-skills-standard/golang-logging`, `HoangNguyen0403/agent-skills-standard/golang-security`, `HoangNguyen0403/agent-skills-standard/golang-testing`, `HoangNguyen0403/agent-skills-standard/golang-tooling`, `sickn33/agentic-awesome-skills/go-concurrency-patterns`, `sickn33/agentic-awesome-skills/go-in-depth`, `sickn33/agentic-awesome-skills/go-rust-reverse`, `sickn33/agentic-awesome-skills/go-playwright`, `sickn33/agentic-awesome-skills/go-rod-master` |
