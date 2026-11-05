@@ -840,6 +840,15 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `TerminalSkills/skills/recharts` | TerminalSkills/skills | recharts | [Verified source](https://github.com/TerminalSkills/skills/blob/3bfbf7f76459d89422eddc0e5f572ad0e6c393c9/skills/recharts/SKILL.md) | 1 | 0 |
 | `TerminalSkills/skills/tanstack-table` | TerminalSkills/skills | tanstack-table | [Verified source](https://github.com/TerminalSkills/skills/blob/3bfbf7f76459d89422eddc0e5f572ad0e6c393c9/skills/tanstack-table/SKILL.md) | 1 | 0 |
 | `thebushidocollective/han/prettier-configuration` | thebushidocollective/han | prettier-configuration | [Verified source](https://github.com/thebushidocollective/han/blob/19caa51d5fd144ef6b2764f2332f4c856aa5d1af/plugins/validation/prettier/skills/prettier-configuration/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-bubbles` | tpscloud/charmedimsure | charmed-bubbles | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-bubbles/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-bubbletea` | tpscloud/charmedimsure | charmed-bubbletea | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-bubbletea/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-ecosystem` | tpscloud/charmedimsure | charmed-ecosystem | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-ecosystem/SKILL.md) | 8 | 0 |
+| `tpscloud/charmedimsure/charmed-glamour` | tpscloud/charmedimsure | charmed-glamour | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-glamour/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-gum` | tpscloud/charmedimsure | charmed-gum | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-gum/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-huh` | tpscloud/charmedimsure | charmed-huh | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-huh/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-lipgloss` | tpscloud/charmedimsure | charmed-lipgloss | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-lipgloss/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-log` | tpscloud/charmedimsure | charmed-log | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-log/SKILL.md) | 1 | 0 |
+| `tpscloud/charmedimsure/charmed-vhs` | tpscloud/charmedimsure | charmed-vhs | [Verified source](https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-vhs/SKILL.md) | 1 | 0 |
 | `triggerdotdev/skills/trigger-setup` | triggerdotdev/skills | trigger-setup | [Verified source](https://github.com/triggerdotdev/skills/blob/8ef5ae6f0cac95c2995abe4c72af1ebef78bcdfd/trigger-setup/SKILL.md) | 1 | 0 |
 | `vamseeachanta/workspace-hub/uv-package-manager` | vamseeachanta/workspace-hub | uv-package-manager | [Verified source](https://github.com/vamseeachanta/workspace-hub/blob/b046b633edc1509cd5a04e34894814e02922c1db/.agents/skills/development/devtools/uv-package-manager/SKILL.md) | 1 | 0 |
 | `vercel-labs/agent-skills/composition-patterns` | vercel-labs/agent-skills | composition-patterns | [Verified source](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/composition-patterns/SKILL.md) | 1 | 0 |
@@ -872,4 +881,4 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `yonesuke/skills/polars` | yonesuke/skills | polars | [Verified source](https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md) | 1 | 0 |
 | `zxkane/aws-skills/aws-sst-development` | zxkane/aws-skills | aws-sst-development | [Verified source](https://github.com/zxkane/aws-skills/blob/68530c6f296ccd2f5e99c79782f3e0fbf962c51a/plugins/aws-iac/skills/aws-sst-development/SKILL.md) | 1 | 0 |
 
-**867 skills** · 867 verified · 0 unresolved.
+**876 skills** · 876 verified · 0 unresolved.
