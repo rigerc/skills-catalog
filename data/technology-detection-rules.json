@@ -5806,6 +5806,19 @@
           "suffix": ".tape"
         }
       ]
+    },
+    {
+      "technology_id": "tuiweave",
+      "mapping_status": "mapped",
+      "origin": "upstream_docs_reviewed_2026_11_05",
+      "logic": "any",
+      "signals": [
+        {
+          "type": "dependency",
+          "ecosystem": "go",
+          "name": "github.com/ishan5ain/tuiweave"
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "catalog_id": "nosey-built-in",
-  "generated_at": "2026-11-05T21:34:01.438Z",
+  "generated_at": "2026-11-05T22:05:40.298Z",
   "evaluator": {
     "provider": "open-jev-action",
     "action_ref": "intikhab49/open-jev-typed-decision-engine@4c3c85ee6238f24a464c9285d1786aabc51a753b",
@@ -72,11 +72,11 @@
   },
   "stopped": null,
   "summary": {
-    "total": 876,
+    "total": 877,
     "evaluated": 867,
     "not_evaluated": 0,
     "stale": 0,
-    "pending": 9,
+    "pending": 10,
     "unresolved": 0
   },
   "entries": [
@@ -38199,6 +38199,20 @@
       "scored_skill_ids": [
         "instantdb/skills/instantdb"
       ]
+    },
+    {
+      "repository": "ishan5ain/tuiweave-agent-kit",
+      "summary": {
+        "total": 1,
+        "evaluated": 0,
+        "not_evaluated": 0,
+        "stale": 0,
+        "pending": 1,
+        "unresolved": 0
+      },
+      "overall_score": null,
+      "criterion_scores": null,
+      "scored_skill_ids": []
     },
     {
       "repository": "jeffallan/claude-skills",

@@ -448,6 +448,7 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `inferen-sh/skills/elevenlabs-tts` | inferen-sh/skills | elevenlabs-tts | [Verified source](https://github.com/inferen-sh/skills/blob/0cbf91c26ada28702c79962406286f0c14292150/tools/audio/elevenlabs-tts/SKILL.md) | 1 | 0 |
 | `inferen-sh/skills/python-executor` | inferen-sh/skills | python-executor | [Verified source](https://github.com/inferen-sh/skills/blob/0cbf91c26ada28702c79962406286f0c14292150/tools/utilities/python-executor/SKILL.md) | 1 | 0 |
 | `instantdb/skills/instantdb` | instantdb/skills | instantdb | [Verified source](https://github.com/instantdb/skills/blob/b80dea74f99ffb7a8d0726805d63ec97a1e4b5cd/skills/instantdb/SKILL.md) | 1 | 0 |
+| `ishan5ain/tuiweave-agent-kit/tuiweave-app-builder` | ishan5ain/tuiweave-agent-kit | tuiweave-app-builder | [Verified source](https://github.com/ishan5ain/tuiweave-agent-kit/blob/bfe0f1dc15f442da86346a575dde062671736a39/skills/tuiweave-app-builder/SKILL.md) | 1 | 0 |
 | `Jeffallan/claude-skills/angular-architect` | Jeffallan/claude-skills | angular-architect | [Verified source](https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/angular-architect/SKILL.md) | 1 | 0 |
 | `jeffallan/claude-skills/cpp-pro` | jeffallan/claude-skills | cpp-pro | [Verified source](https://github.com/jeffallan/claude-skills/blob/190e05a380b624187f5770451e1f41b9187cb63c/skills/cpp-pro/SKILL.md) | 1 | 0 |
 | `Jeffallan/claude-skills/csharp-developer` | Jeffallan/claude-skills | csharp-developer | [Verified source](https://github.com/Jeffallan/claude-skills/blob/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/csharp-developer/SKILL.md) | 1 | 0 |
@@ -881,4 +882,4 @@ Generated from [catalog.json](data/catalog.json) and [source ledger](data/catalo
 | `yonesuke/skills/polars` | yonesuke/skills | polars | [Verified source](https://github.com/yonesuke/skills/blob/1e23d345446ea8a21771192bb1b3b19a9842a97f/polars/SKILL.md) | 1 | 0 |
 | `zxkane/aws-skills/aws-sst-development` | zxkane/aws-skills | aws-sst-development | [Verified source](https://github.com/zxkane/aws-skills/blob/68530c6f296ccd2f5e99c79782f3e0fbf962c51a/plugins/aws-iac/skills/aws-sst-development/SKILL.md) | 1 | 0 |
 
-**876 skills** · 876 verified · 0 unresolved.
+**877 skills** · 877 verified · 0 unresolved.

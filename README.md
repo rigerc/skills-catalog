@@ -12,12 +12,12 @@ Nosey 0.5.0 consumes validated digest-pinned manifests published by this catalog
 
 | Metric | Total |
 | --- | ---: |
-| Skills | **876** |
+| Skills | **877** |
 | Skills without mappings | **0** |
-| Mapped technologies | **222** |
+| Mapped technologies | **223** |
 | Detect-only technologies | **66** |
 | Combinations | **35** |
-| Verified skill sources | **876** |
+| Verified skill sources | **877** |
 | Unresolved sources | **0** |
 
 Snapshot date: **2026-11-05**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
@@ -45,7 +45,7 @@ Snapshot date: **2026-11-05**. Source verification is historical evidence, **not
 | Cloud, infrastructure and CI/CD | 21 | 21 | 0 |
 | Creative, media and graphics | 6 | 6 | 0 |
 | Data, databases and queues | 34 | 31 | 3 |
-| Go ecosystem | 24 | 23 | 1 |
+| Go ecosystem | 25 | 24 | 1 |
 | Languages, runtimes and scripting | 23 | 14 | 9 |
 | Mobile, desktop and extensions | 15 | 13 | 2 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |

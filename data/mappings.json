@@ -4,11 +4,11 @@
   "snapshot_date": "2026-11-05",
   "source": "Nosey modular product specification; October 28 user-supplied skill mappings",
   "counts": {
-    "technologies": 288,
-    "mapped_technologies": 222,
+    "technologies": 289,
+    "mapped_technologies": 223,
     "detect_only_technologies": 66,
     "combinations": 35,
-    "distinct_referenced_skills": 876
+    "distinct_referenced_skills": 877
   },
   "detection_coverage_note": "Mapped technologies have only the evidence examples published in the source summary, not guaranteed exhaustive detector definitions. Detect-only technologies lack documented per-technology criteria; their generated IDs are provisional.",
   "repository_aliases": {
@@ -7122,6 +7122,29 @@
         "tpscloud/charmedimsure/charmed-ecosystem"
       ],
       "source_document": "https://github.com/charmbracelet/log",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "tuiweave",
+      "name": "TuiWeave",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "github.com/ishan5ain/tuiweave"
+            ]
+          }
+        ],
+        "raw": "go: `github.com/ishan5ain/tuiweave`"
+      },
+      "skill_ids": [
+        "ishan5ain/tuiweave-agent-kit/tuiweave-app-builder"
+      ],
+      "source_document": "https://github.com/ishan5ain/tuiweave/blob/main/README.md",
       "id_provenance": "author_defined"
     }
   ],
