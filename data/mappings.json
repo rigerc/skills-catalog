@@ -873,29 +873,6 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
-      "id": "auth0",
-      "name": "Auth0",
-      "category": "Auth and payments",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "npm",
-            "examples": [
-              "@auth0/auth0-react"
-            ]
-          }
-        ],
-        "raw": "npm: @auth0/auth0-react"
-      },
-      "skill_ids": [
-        "Mindrally/skills/auth0-authentication"
-      ],
-      "source_document": "https://developer.auth0.com/resources/guides/spa/react/basic-authentication/v17-javascript-react-router-5",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "better-auth",
       "name": "Better Auth",
       "category": "Auth and payments",
@@ -1028,8 +1005,109 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
+      "id": "dotnet",
+      "name": ".NET",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "global.json",
+              "NuGet.Config",
+              "Directory.Build.props"
+            ],
+            "additional_unlisted_examples": 1
+          },
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "file: `global.json`, `NuGet.Config`, `Directory.Build.props` +1; content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/dotnet-best-practices",
+        "github/awesome-copilot/dotnet-design-pattern-review",
+        "github/awesome-copilot/dotnet-upgrade",
+        "github/awesome-copilot/dotnet-timezone",
+        "github/awesome-copilot/nuget-manager",
+        "Mindrally/skills/dotnet",
+        "Jeffallan/claude-skills/dotnet-core-expert",
+        "sickn33/agentic-awesome-skills/dotnet-backend-patterns",
+        "sickn33/agentic-awesome-skills/dotnet-backend",
+        "sickn33/agentic-awesome-skills/dotnet-architect"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
       "id": "adonisjs",
       "name": "AdonisJS",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "aspnetcore",
+      "name": "ASP.NET Core",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/containerize-aspnetcore",
+        "openai/skills/aspnet-core",
+        "Jeffallan/claude-skills/dotnet-core-expert",
+        "Mindrally/skills/aspnet-core"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "aspnet-minimal-api",
+      "name": "ASP.NET Minimal API",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/aspnet-minimal-api-openapi"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "axum",
+      "name": "Axum",
       "category": "Backend frameworks and APIs",
       "mapping_status": "detect_only",
       "detection": {
@@ -1063,67 +1141,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "aspnet-minimal-api",
-      "name": "ASP.NET Minimal API",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "content_match",
-            "examples": [],
-            "details_documented": false
-          }
-        ],
-        "raw": "content match"
-      },
-      "skill_ids": [
-        "github/awesome-copilot/aspnet-minimal-api-openapi"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "aspnetcore",
-      "name": "ASP.NET Core",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "content_match",
-            "examples": [],
-            "details_documented": false
-          }
-        ],
-        "raw": "content match"
-      },
-      "skill_ids": [
-        "github/awesome-copilot/containerize-aspnetcore",
-        "openai/skills/aspnet-core",
-        "Jeffallan/claude-skills/dotnet-core-expert",
-        "Mindrally/skills/aspnet-core"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "axum",
-      "name": "Axum",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "detect_only",
-      "detection": {
-        "coverage": "undocumented",
-        "signals": [],
-        "raw": ""
-      },
-      "skill_ids": [],
-      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
-      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
       "id": "csharp",
@@ -1190,46 +1207,6 @@
         "sickn33/agentic-awesome-skills/django-pro",
         "sickn33/agentic-awesome-skills/django-perf-review",
         "sickn33/agentic-awesome-skills/django-access-review"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "dotnet",
-      "name": ".NET",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "file",
-            "examples": [
-              "global.json",
-              "NuGet.Config",
-              "Directory.Build.props"
-            ],
-            "additional_unlisted_examples": 1
-          },
-          {
-            "kind": "content_match",
-            "examples": [],
-            "details_documented": false
-          }
-        ],
-        "raw": "file: `global.json`, `NuGet.Config`, `Directory.Build.props` +1; content match"
-      },
-      "skill_ids": [
-        "github/awesome-copilot/dotnet-best-practices",
-        "github/awesome-copilot/dotnet-design-pattern-review",
-        "github/awesome-copilot/dotnet-upgrade",
-        "github/awesome-copilot/dotnet-timezone",
-        "github/awesome-copilot/nuget-manager",
-        "Mindrally/skills/dotnet",
-        "Jeffallan/claude-skills/dotnet-core-expert",
-        "sickn33/agentic-awesome-skills/dotnet-backend-patterns",
-        "sickn33/agentic-awesome-skills/dotnet-backend",
-        "sickn33/agentic-awesome-skills/dotnet-architect"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
@@ -1589,22 +1566,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "odoo",
-      "name": "Odoo",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "Python imports from odoo"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/odoo-module-developer"
-      ],
-      "source_document": "https://github.com/odoo/documentation/blob/20.0/content/developer/reference/backend/module.rst",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "phoenix",
       "name": "Phoenix",
       "category": "Backend frameworks and APIs",
@@ -1627,22 +1588,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/05-backend-frameworks-apis.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "quarkus",
-      "name": "Quarkus",
-      "category": "Backend frameworks and APIs",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "Quarkus Maven plugin or Gradle dependency"
-      },
-      "skill_ids": [
-        "Mindrally/skills/quarkus"
-      ],
-      "source_document": "https://quarkus.io/guides/maven-tooling",
-      "id_provenance": "author_defined"
     },
     {
       "id": "requests",
@@ -1845,32 +1790,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "charm-gum",
-      "name": "Gum CLI (Charm)",
-      "category": "Build tools, monorepos and release",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "content",
-            "examples": [
-              "gum choose",
-              "gum confirm",
-              "gum input"
-            ]
-          }
-        ],
-        "raw": "shell: gum subcommand invocation"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-gum",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/gum",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "cmake",
       "name": "CMake",
       "category": "Build tools, monorepos and release",
@@ -1915,32 +1834,6 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
-      "id": "just",
-      "name": "Just",
-      "category": "Build tools, monorepos and release",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "file",
-            "examples": [
-              "justfile",
-              "Justfile",
-              "JUSTFILE"
-            ],
-            "additional_unlisted_examples": 1
-          }
-        ],
-        "raw": "file: `justfile`, `Justfile`, `JUSTFILE` +1"
-      },
-      "skill_ids": [
-        "paulrberg/agent-skills/cli-just"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
       "id": "make",
       "name": "GNU Make / Make",
       "category": "Build tools, monorepos and release",
@@ -1962,6 +1855,32 @@
       },
       "skill_ids": [
         "akin-ozer/cc-devops-skills/makefile-generator"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "just",
+      "name": "Just",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "justfile",
+              "Justfile",
+              "JUSTFILE"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "file: `justfile`, `Justfile`, `JUSTFILE` +1"
+      },
+      "skill_ids": [
+        "paulrberg/agent-skills/cli-just"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/11-build-monorepos-release.md",
       "id_provenance": "explicit_in_specification"
@@ -2413,44 +2332,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "cloudflare-durable-objects",
-      "name": "Durable Objects",
-      "category": "Cloud, infrastructure and CI/CD",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "content_match",
-            "examples": [],
-            "details_documented": false
-          }
-        ],
-        "raw": "content match"
-      },
-      "skill_ids": [
-        "cloudflare/skills/durable-objects"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "datadog",
-      "name": "Datadog",
-      "category": "Cloud, infrastructure and CI/CD",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "datadog.yaml agent configuration"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/datadog"
-      ],
-      "source_document": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "dependabot",
       "name": "Dependabot",
       "category": "Cloud, infrastructure and CI/CD",
@@ -2501,6 +2382,28 @@
         "Mindrally/skills/docker",
         "sickn33/agentic-awesome-skills/docker-expert",
         "sickn33/agentic-awesome-skills/docker-compose"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "cloudflare-durable-objects",
+      "name": "Durable Objects",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content_match",
+            "examples": [],
+            "details_documented": false
+          }
+        ],
+        "raw": "content match"
+      },
+      "skill_ids": [
+        "cloudflare/skills/durable-objects"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "explicit_in_specification"
@@ -2594,22 +2497,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "grafana-loki",
-      "name": "Grafana Loki",
-      "category": "Cloud, infrastructure and CI/CD",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "loki.yaml configuration"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/loki-logging"
-      ],
-      "source_document": "https://grafana.com/docs/loki/latest/configure/",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "helm",
       "name": "Helm",
       "category": "Cloud, infrastructure and CI/CD",
@@ -2648,38 +2535,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/09-cloud-infrastructure-cicd.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
-    },
-    {
-      "id": "kustomize",
-      "name": "Kustomize",
-      "category": "Cloud, infrastructure and CI/CD",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "kustomization.yaml"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/kustomize"
-      ],
-      "source_document": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "n8n",
-      "name": "n8n",
-      "category": "Cloud, infrastructure and CI/CD",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "npm: n8n"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/n8n-workflow-patterns"
-      ],
-      "source_document": "https://github.com/n8n-io/n8n-docs/blob/main/docs/connect/create-nodes/deploy-your-node/install-private-nodes.md",
-      "id_provenance": "author_defined"
     },
     {
       "id": "pulumi",
@@ -2861,53 +2716,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "@react-three/fiber",
-      "name": "React Three Fiber",
-      "category": "Creative, media and graphics",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "npm",
-            "examples": [
-              "@react-three/fiber"
-            ]
-          }
-        ],
-        "raw": "npm: `@react-three/fiber`"
-      },
-      "skill_ids": [
-        "cloudai-x/threejs-skills/threejs-react-three-fiber"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "charm-vhs",
-      "name": "VHS terminal recorder (Charm)",
-      "category": "Creative, media and graphics",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "extension",
-            "examples": [
-              ".tape"
-            ]
-          }
-        ],
-        "raw": "extension: .tape"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-vhs",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/vhs",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "elevenlabs",
       "name": "ElevenLabs",
       "category": "Creative, media and graphics",
@@ -2969,6 +2777,29 @@
       "id_provenance": "explicit_in_specification"
     },
     {
+      "id": "@react-three/fiber",
+      "name": "React Three Fiber",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@react-three/fiber"
+            ]
+          }
+        ],
+        "raw": "npm: `@react-three/fiber`"
+      },
+      "skill_ids": [
+        "cloudai-x/threejs-skills/threejs-react-three-fiber"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
       "id": "remotion",
       "name": "Remotion",
       "category": "Creative, media and graphics",
@@ -3024,29 +2855,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/03-creative-media-graphics.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "apache-airflow",
-      "name": "Apache Airflow",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "py",
-            "examples": [
-              "apache-airflow"
-            ]
-          }
-        ],
-        "raw": "py: apache-airflow"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/airflow-dag-patterns"
-      ],
-      "source_document": "https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html",
-      "id_provenance": "author_defined"
     },
     {
       "id": "bullmq",
@@ -3148,22 +2956,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "dbt",
-      "name": "dbt",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "dbt_project.yml or Python dbt-core"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/dbt-transformation-patterns"
-      ],
-      "source_document": "https://docs.getdbt.com/reference/dbt_project.yml",
-      "id_provenance": "author_defined"
     },
     {
       "id": "drizzle",
@@ -3551,52 +3343,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "pyspark",
-      "name": "PySpark",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "py",
-            "examples": [
-              "pyspark"
-            ]
-          }
-        ],
-        "raw": "py: pyspark"
-      },
-      "skill_ids": [
-        "Mindrally/skills/pyspark-etl"
-      ],
-      "source_document": "https://spark.apache.org/docs/latest/api/python/getting_started/install.html",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "pytorch",
-      "name": "PyTorch",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "py",
-            "examples": [
-              "torch"
-            ]
-          }
-        ],
-        "raw": "py: torch"
-      },
-      "skill_ids": [
-        "Mindrally/skills/pytorch"
-      ],
-      "source_document": "https://pytorch.org/get-started/locally/",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "qdrant",
       "name": "Qdrant",
       "category": "Data, databases and queues",
@@ -3690,38 +3436,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "sequelize",
-      "name": "Sequelize",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "npm: sequelize"
-      },
-      "skill_ids": [
-        "Mindrally/skills/sequelize"
-      ],
-      "source_document": "https://sequelize.org/docs/v6/getting-started/",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "snowflake",
-      "name": "Snowflake",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "Python snowflake-connector-python"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/snowflake-development"
-      ],
-      "source_document": "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector-install",
-      "id_provenance": "author_defined"
     },
     {
       "id": "sqlalchemy",
@@ -3829,30 +3543,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "tensorflow",
-      "name": "TensorFlow",
-      "category": "Data, databases and queues",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "py",
-            "examples": [
-              "tensorflow",
-              "tensorflow-cpu"
-            ]
-          }
-        ],
-        "raw": "py: tensorflow, tensorflow-cpu"
-      },
-      "skill_ids": [
-        "Mindrally/skills/tensorflow-deep-learning"
-      ],
-      "source_document": "https://www.tensorflow.org/install/pip",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "trigger-dev",
       "name": "Trigger.dev",
       "category": "Data, databases and queues",
@@ -3900,150 +3590,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/06-data-databases-queues.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "charm-bubbles",
-      "name": "Bubbles (Charm)",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/bubbles/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/bubbles/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-bubbles",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/bubbles",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "charm-bubbletea",
-      "name": "Bubble Tea (Charm)",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/bubbletea/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/bubbletea/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-bubbletea",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/bubbletea",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "charm-glamour",
-      "name": "Glamour (Charm)",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/glamour/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/glamour/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-glamour",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/glamour",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "charm-huh",
-      "name": "Huh (Charm)",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/huh/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/huh/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-huh",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/huh",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "charm-lipgloss",
-      "name": "Lip Gloss (Charm)",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/lipgloss/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/lipgloss/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-lipgloss",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/lipgloss",
-      "id_provenance": "author_defined"
-    },
-    {
-      "id": "charm-log",
-      "name": "Charm Log",
-      "category": "Go ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "go",
-            "examples": [
-              "charm.land/log/v2"
-            ]
-          }
-        ],
-        "raw": "go: charm.land/log/v2"
-      },
-      "skill_ids": [
-        "tpscloud/charmedimsure/charmed-log",
-        "tpscloud/charmedimsure/charmed-ecosystem"
-      ],
-      "source_document": "https://github.com/charmbracelet/log",
-      "id_provenance": "author_defined"
     },
     {
       "id": "cobra",
@@ -4545,30 +4091,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "batch",
-      "name": "Windows batch",
-      "category": "Languages, runtimes and scripting",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "ext",
-            "examples": [
-              ".bat",
-              ".cmd"
-            ]
-          }
-        ],
-        "raw": "ext: `.bat`, `.cmd`"
-      },
-      "skill_ids": [
-        "github/awesome-copilot/batch-files"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
       "id": "bun",
       "name": "Bun",
       "category": "Languages, runtimes and scripting",
@@ -5031,6 +4553,30 @@
       "skill_ids": [],
       "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "batch",
+      "name": "Windows batch",
+      "category": "Languages, runtimes and scripting",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "ext",
+            "examples": [
+              ".bat",
+              ".cmd"
+            ]
+          }
+        ],
+        "raw": "ext: `.bat`, `.cmd`"
+      },
+      "skill_ids": [
+        "github/awesome-copilot/batch-files"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/04-languages-runtimes-scripting.md",
+      "id_provenance": "explicit_in_specification"
     },
     {
       "id": "zsh",
@@ -5551,6 +5097,32 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
+      "id": "redis-ruby",
+      "name": "Redis (Ruby)",
+      "category": "Ruby on Rails ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "gem",
+            "examples": [
+              "redis",
+              "sidekiq",
+              "resque"
+            ],
+            "additional_unlisted_examples": 1
+          }
+        ],
+        "raw": "gem: `redis`, `sidekiq`, `resque` +1"
+      },
+      "skill_ids": [
+        "redis/agent-skills/redis-core"
+      ],
+      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
+      "id_provenance": "explicit_in_specification"
+    },
+    {
       "id": "rails",
       "name": "Ruby on Rails",
       "category": "Ruby on Rails ecosystem",
@@ -5584,32 +5156,6 @@
         "ombulabs/claude-code_rails-upgrade-skill/rails-upgrade",
         "Jeffallan/claude-skills/rails-expert",
         "Mindrally/skills/ruby-rails"
-      ],
-      "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
-      "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "redis-ruby",
-      "name": "Redis (Ruby)",
-      "category": "Ruby on Rails ecosystem",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "gem",
-            "examples": [
-              "redis",
-              "sidekiq",
-              "resque"
-            ],
-            "additional_unlisted_examples": 1
-          }
-        ],
-        "raw": "gem: `redis`, `sidekiq`, `resque` +1"
-      },
-      "skill_ids": [
-        "redis/agent-skills/redis-core"
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/12-ruby-on-rails.md",
       "id_provenance": "explicit_in_specification"
@@ -5782,22 +5328,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "k6",
-      "name": "k6",
-      "category": "Testing and quality",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "JavaScript or TypeScript imports of k6 modules"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/k6-load-testing"
-      ],
-      "source_document": "https://github.com/grafana/k6-docs/blob/main/docs/sources/k6/v2.3.x/get-started/write-your-first-test.md",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "knip",
       "name": "Knip",
       "category": "Testing and quality",
@@ -5961,30 +5491,6 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
-      "id": "puppeteer",
-      "name": "Puppeteer",
-      "category": "Testing and quality",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "npm",
-            "examples": [
-              "puppeteer",
-              "puppeteer-core"
-            ]
-          }
-        ],
-        "raw": "npm: puppeteer, puppeteer-core"
-      },
-      "skill_ids": [
-        "Mindrally/skills/puppeteer-automation"
-      ],
-      "source_document": "https://pptr.dev/guides/installation",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "pytest",
       "name": "Pytest",
       "category": "Testing and quality",
@@ -6010,22 +5516,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/10-testing-quality.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "robot-framework",
-      "name": "Robot Framework",
-      "category": "Testing and quality",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "Python robotframework or .robot files"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/robot-framework-skill"
-      ],
-      "source_document": "https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide",
-      "id_provenance": "author_defined"
     },
     {
       "id": "rspec",
@@ -6110,29 +5600,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "selenium",
-      "name": "Selenium",
-      "category": "Testing and quality",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "py",
-            "examples": [
-              "selenium"
-            ]
-          }
-        ],
-        "raw": "py: selenium"
-      },
-      "skill_ids": [
-        "Mindrally/skills/selenium-automation"
-      ],
-      "source_document": "https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries/",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "sorbet",
       "name": "Sorbet",
       "category": "Testing and quality",
@@ -6211,29 +5678,6 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
-      "id": "alpine-js",
-      "name": "Alpine.js",
-      "category": "Web frameworks, UI and styling",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "npm",
-            "examples": [
-              "alpinejs"
-            ]
-          }
-        ],
-        "raw": "npm: alpinejs"
-      },
-      "skill_ids": [
-        "Mindrally/skills/alpine-js"
-      ],
-      "source_document": "https://www.alpinejs.dev/essentials/installation",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "angular",
       "name": "Angular",
       "category": "Web frameworks, UI and styling",
@@ -6284,29 +5728,6 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
-    },
-    {
-      "id": "anime-js",
-      "name": "Anime.js",
-      "category": "Web frameworks, UI and styling",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "npm",
-            "examples": [
-              "animejs"
-            ]
-          }
-        ],
-        "raw": "npm: animejs"
-      },
-      "skill_ids": [
-        "Mindrally/skills/anime-js"
-      ],
-      "source_document": "https://animejs.com/documentation/getting-started/installation",
-      "id_provenance": "author_defined"
     },
     {
       "id": "astro",
@@ -6385,22 +5806,6 @@
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
-      "id": "htmx",
-      "name": "htmx",
-      "category": "Web frameworks, UI and styling",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [],
-        "raw": "npm: htmx.org"
-      },
-      "skill_ids": [
-        "Mindrally/skills/htmx"
-      ],
-      "source_document": "https://htmx.org/docs/",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "ink",
       "name": "Ink",
       "category": "Web frameworks, UI and styling",
@@ -6417,20 +5822,6 @@
     {
       "id": "lit",
       "name": "Lit",
-      "category": "Web frameworks, UI and styling",
-      "mapping_status": "detect_only",
-      "detection": {
-        "coverage": "undocumented",
-        "signals": [],
-        "raw": ""
-      },
-      "skill_ids": [],
-      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
-      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
-    },
-    {
-      "id": "monaco-editor",
-      "name": "Monaco Editor",
       "category": "Web frameworks, UI and styling",
       "mapping_status": "detect_only",
       "detection": {
@@ -6465,6 +5856,20 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "explicit_in_specification"
+    },
+    {
+      "id": "monaco-editor",
+      "name": "Monaco Editor",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "detect_only",
+      "detection": {
+        "coverage": "undocumented",
+        "signals": [],
+        "raw": ""
+      },
+      "skill_ids": [],
+      "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
+      "id_provenance": "derived_from_display_name_not_explicit_in_specification"
     },
     {
       "id": "nextjs",
@@ -6804,29 +6209,6 @@
       "id_provenance": "explicit_in_specification"
     },
     {
-      "id": "shopify",
-      "name": "Shopify",
-      "category": "Web frameworks, UI and styling",
-      "mapping_status": "mapped",
-      "detection": {
-        "coverage": "documented_examples_only",
-        "signals": [
-          {
-            "kind": "file",
-            "examples": [
-              "shopify.app.toml"
-            ]
-          }
-        ],
-        "raw": "file: shopify.app.toml"
-      },
-      "skill_ids": [
-        "sickn33/agentic-awesome-skills/shopify-development"
-      ],
-      "source_document": "https://shopify.dev/docs/apps/build/cli-for-apps/app-structure",
-      "id_provenance": "author_defined"
-    },
-    {
       "id": "solidjs",
       "name": "SolidJS",
       "category": "Web frameworks, UI and styling",
@@ -7123,6 +6505,624 @@
       ],
       "source_document": "specification/04-catalog/09-technology-mappings/01-web-ui-styling.md",
       "id_provenance": "derived_from_display_name_not_explicit_in_specification"
+    },
+    {
+      "id": "alpine-js",
+      "name": "Alpine.js",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "alpinejs"
+            ]
+          }
+        ],
+        "raw": "npm: alpinejs"
+      },
+      "skill_ids": [
+        "Mindrally/skills/alpine-js"
+      ],
+      "source_document": "https://www.alpinejs.dev/essentials/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "anime-js",
+      "name": "Anime.js",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "animejs"
+            ]
+          }
+        ],
+        "raw": "npm: animejs"
+      },
+      "skill_ids": [
+        "Mindrally/skills/anime-js"
+      ],
+      "source_document": "https://animejs.com/documentation/getting-started/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0",
+      "category": "Auth and payments",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "@auth0/auth0-react"
+            ]
+          }
+        ],
+        "raw": "npm: @auth0/auth0-react"
+      },
+      "skill_ids": [
+        "Mindrally/skills/auth0-authentication"
+      ],
+      "source_document": "https://developer.auth0.com/resources/guides/spa/react/basic-authentication/v17-javascript-react-router-5",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "pyspark",
+      "name": "PySpark",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "pyspark"
+            ]
+          }
+        ],
+        "raw": "py: pyspark"
+      },
+      "skill_ids": [
+        "Mindrally/skills/pyspark-etl"
+      ],
+      "source_document": "https://spark.apache.org/docs/latest/api/python/getting_started/install.html",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "torch"
+            ]
+          }
+        ],
+        "raw": "py: torch"
+      },
+      "skill_ids": [
+        "Mindrally/skills/pytorch"
+      ],
+      "source_document": "https://pytorch.org/get-started/locally/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "tensorflow",
+              "tensorflow-cpu"
+            ]
+          }
+        ],
+        "raw": "py: tensorflow, tensorflow-cpu"
+      },
+      "skill_ids": [
+        "Mindrally/skills/tensorflow-deep-learning"
+      ],
+      "source_document": "https://www.tensorflow.org/install/pip",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "selenium"
+            ]
+          }
+        ],
+        "raw": "py: selenium"
+      },
+      "skill_ids": [
+        "Mindrally/skills/selenium-automation"
+      ],
+      "source_document": "https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "npm",
+            "examples": [
+              "puppeteer",
+              "puppeteer-core"
+            ]
+          }
+        ],
+        "raw": "npm: puppeteer, puppeteer-core"
+      },
+      "skill_ids": [
+        "Mindrally/skills/puppeteer-automation"
+      ],
+      "source_document": "https://pptr.dev/guides/installation",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "apache-airflow",
+      "name": "Apache Airflow",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "py",
+            "examples": [
+              "apache-airflow"
+            ]
+          }
+        ],
+        "raw": "py: apache-airflow"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/airflow-dag-patterns"
+      ],
+      "source_document": "https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "file",
+            "examples": [
+              "shopify.app.toml"
+            ]
+          }
+        ],
+        "raw": "file: shopify.app.toml"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/shopify-development"
+      ],
+      "source_document": "https://shopify.dev/docs/apps/build/cli-for-apps/app-structure",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "dbt_project.yml or Python dbt-core"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/dbt-transformation-patterns"
+      ],
+      "source_document": "https://docs.getdbt.com/reference/dbt_project.yml",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "sequelize",
+      "name": "Sequelize",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: sequelize"
+      },
+      "skill_ids": [
+        "Mindrally/skills/sequelize"
+      ],
+      "source_document": "https://sequelize.org/docs/v6/getting-started/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "htmx",
+      "name": "htmx",
+      "category": "Web frameworks, UI and styling",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: htmx.org"
+      },
+      "skill_ids": [
+        "Mindrally/skills/htmx"
+      ],
+      "source_document": "https://htmx.org/docs/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "robot-framework",
+      "name": "Robot Framework",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python robotframework or .robot files"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/robot-framework-skill"
+      ],
+      "source_document": "https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "kustomize",
+      "name": "Kustomize",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "kustomization.yaml"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/kustomize"
+      ],
+      "source_document": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "category": "Data, databases and queues",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python snowflake-connector-python"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/snowflake-development"
+      ],
+      "source_document": "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector-install",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "npm: n8n"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/n8n-workflow-patterns"
+      ],
+      "source_document": "https://github.com/n8n-io/n8n-docs/blob/main/docs/connect/create-nodes/deploy-your-node/install-private-nodes.md",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "odoo",
+      "name": "Odoo",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Python imports from odoo"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/odoo-module-developer"
+      ],
+      "source_document": "https://github.com/odoo/documentation/blob/20.0/content/developer/reference/backend/module.rst",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "k6",
+      "name": "k6",
+      "category": "Testing and quality",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "JavaScript or TypeScript imports of k6 modules"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/k6-load-testing"
+      ],
+      "source_document": "https://github.com/grafana/k6-docs/blob/main/docs/sources/k6/v2.3.x/get-started/write-your-first-test.md",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "quarkus",
+      "name": "Quarkus",
+      "category": "Backend frameworks and APIs",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "Quarkus Maven plugin or Gradle dependency"
+      },
+      "skill_ids": [
+        "Mindrally/skills/quarkus"
+      ],
+      "source_document": "https://quarkus.io/guides/maven-tooling",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "datadog.yaml agent configuration"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/datadog"
+      ],
+      "source_document": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "grafana-loki",
+      "name": "Grafana Loki",
+      "category": "Cloud, infrastructure and CI/CD",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [],
+        "raw": "loki.yaml configuration"
+      },
+      "skill_ids": [
+        "sickn33/agentic-awesome-skills/loki-logging"
+      ],
+      "source_document": "https://grafana.com/docs/loki/latest/configure/",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-gum",
+      "name": "Gum CLI (Charm)",
+      "category": "Build tools, monorepos and release",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "content",
+            "examples": [
+              "gum choose",
+              "gum confirm",
+              "gum input"
+            ]
+          }
+        ],
+        "raw": "shell: gum subcommand invocation"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-gum",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/gum",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-vhs",
+      "name": "VHS terminal recorder (Charm)",
+      "category": "Creative, media and graphics",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "extension",
+            "examples": [
+              ".tape"
+            ]
+          }
+        ],
+        "raw": "extension: .tape"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-vhs",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/vhs",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-bubbles",
+      "name": "Bubbles (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/bubbles/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/bubbles/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-bubbles",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/bubbles",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-bubbletea",
+      "name": "Bubble Tea (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/bubbletea/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/bubbletea/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-bubbletea",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/bubbletea",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-glamour",
+      "name": "Glamour (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/glamour/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/glamour/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-glamour",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/glamour",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-huh",
+      "name": "Huh (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/huh/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/huh/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-huh",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/huh",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-lipgloss",
+      "name": "Lip Gloss (Charm)",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/lipgloss/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/lipgloss/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-lipgloss",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/lipgloss",
+      "id_provenance": "author_defined"
+    },
+    {
+      "id": "charm-log",
+      "name": "Charm Log",
+      "category": "Go ecosystem",
+      "mapping_status": "mapped",
+      "detection": {
+        "coverage": "documented_examples_only",
+        "signals": [
+          {
+            "kind": "go",
+            "examples": [
+              "charm.land/log/v2"
+            ]
+          }
+        ],
+        "raw": "go: charm.land/log/v2"
+      },
+      "skill_ids": [
+        "tpscloud/charmedimsure/charmed-log",
+        "tpscloud/charmedimsure/charmed-ecosystem"
+      ],
+      "source_document": "https://github.com/charmbracelet/log",
+      "id_provenance": "author_defined"
     }
   ],
   "combinations": [
