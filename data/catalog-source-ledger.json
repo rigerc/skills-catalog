@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "audited_at": "2026-11-01T02:32:06.298Z",
+  "audited_at": "2026-11-05T21:30:10.021Z",
   "release_blocked": false,
   "unresolved_count": 0,
   "entries": [
@@ -6450,6 +6450,69 @@
       "checked_at": "2026-10-28T02:35:16.969Z",
       "url": "https://github.com/thebushidocollective/han/blob/19caa51d5fd144ef6b2764f2332f4c856aa5d1af/plugins/validation/prettier/skills/prettier-configuration/SKILL.md",
       "commit": "19caa51d5fd144ef6b2764f2332f4c856aa5d1af"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-bubbles",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-bubbles/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-bubbletea",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-bubbletea/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-ecosystem",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-ecosystem/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-glamour",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-glamour/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-gum",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-gum/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-huh",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-huh/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-lipgloss",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-lipgloss/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-log",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-log/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
+    },
+    {
+      "id": "tpscloud/charmedimsure/charmed-vhs",
+      "status": "verified",
+      "checked_at": "2026-11-05T21:30:10.021Z",
+      "url": "https://github.com/tpscloud/charmedimsure/blob/fb054b67470c585ed8724e3f49376cc6b6f1b783/skills/charmed-vhs/SKILL.md",
+      "commit": "fb054b67470c585ed8724e3f49376cc6b6f1b783"
     },
     {
       "id": "triggerdotdev/skills/trigger-setup",
