@@ -12,15 +12,15 @@ Nosey 0.5.0 consumes validated digest-pinned manifests published by this catalog
 
 | Metric | Total |
 | --- | ---: |
-| Skills | **867** |
+| Skills | **876** |
 | Skills without mappings | **0** |
-| Mapped technologies | **214** |
+| Mapped technologies | **222** |
 | Detect-only technologies | **66** |
 | Combinations | **35** |
-| Verified skill sources | **867** |
+| Verified skill sources | **876** |
 | Unresolved sources | **0** |
 
-Snapshot date: **2026-11-01**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
+Snapshot date: **2026-11-05**. Source verification is historical evidence, **not** a live availability, compatibility, licensing, or security guarantee. Unresolved sources are not considered installable.
 
 ## Browse the data
 
@@ -41,11 +41,11 @@ Snapshot date: **2026-11-01**. Source verification is historical evidence, **not
 | AI, LLM and MCP | 34 | 19 | 15 |
 | Auth and payments | 6 | 5 | 1 |
 | Backend frameworks and APIs | 27 | 25 | 2 |
-| Build tools, monorepos and release | 27 | 12 | 15 |
+| Build tools, monorepos and release | 28 | 13 | 15 |
 | Cloud, infrastructure and CI/CD | 21 | 21 | 0 |
-| Creative, media and graphics | 5 | 5 | 0 |
+| Creative, media and graphics | 6 | 6 | 0 |
 | Data, databases and queues | 34 | 31 | 3 |
-| Go ecosystem | 18 | 17 | 1 |
+| Go ecosystem | 24 | 23 | 1 |
 | Languages, runtimes and scripting | 23 | 14 | 9 |
 | Mobile, desktop and extensions | 15 | 13 | 2 |
 | Ruby on Rails ecosystem | 6 | 3 | 3 |
